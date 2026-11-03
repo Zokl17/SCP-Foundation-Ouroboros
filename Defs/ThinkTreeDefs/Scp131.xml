@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThinkTreeDef>
+    <defName>SCP_131Wander</defName>
+    <thinkRoot Class="ThinkNode_Priority">
+      <subNodes>
+        <li Class="ScpFoundation.Anomalies.JobGiver_Scp131Follow" />
+        <li Class="JobGiver_WanderColony" />
+      </subNodes>
+    </thinkRoot>
+  </ThinkTreeDef>
+</Defs>

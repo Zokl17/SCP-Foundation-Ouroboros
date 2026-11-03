@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <QuestScriptDef>
+    <defName>SCP_OuroborosSignalResearch</defName>
+    <rootSelectionWeight>0</rootSelectionWeight><rootMinPoints>0</rootMinPoints>
+    <questNameRules><rulesStrings><li>questName->Analyze the answering signal</li></rulesStrings></questNameRules>
+    <questDescriptionRules><rulesStrings><li>questDescription->Your colonists decrypted the sealed signal transponder at a research bench. The Foundation has opened its follow-up assignment. Assign a Level 4 Foundation researcher with Intellectual skill 12 or higher to a powered Foundation terminal through Terminal → Event journal → Foundation archive → final SCP-882 report. Six accumulated hours of work will isolate the source. Interrupted work keeps its progress.</li></rulesStrings></questDescriptionRules>
+    <root Class="QuestNode_Sequence"><nodes>
+      <li Class="QuestNode_GetMap" />
+      <li Class="ScpFoundation.Storytelling.QuestNode_ScpSignalResearch" />
+      <li Class="QuestNode_Signal"><inSignal>ScpSignalAnalyzed</inSignal>
+        <node Class="QuestNode_End"><outcome>Success</outcome></node>
+      </li>
+    </nodes></root>
+  </QuestScriptDef>
+  <QuestScriptDef>
+    <defName>SCP_OuroborosSignalSite</defName>
+    <rootSelectionWeight>0</rootSelectionWeight><rootMinPoints>0</rootMinPoints>
+    <questNameRules><rulesStrings><li>questName->Trace the answering signal</li></rulesStrings></questNameRules>
+    <questDescriptionRules><rulesStrings><li>questDescription->After the O5-7 report, the Foundation identified a deserted relay. Send a caravan to the marked site. Select its recorder and choose Extract transponder, or select a colonist and right-click it. The colonist will carry the module home, where it can be decrypted at a research bench. No Church personnel are at this relay.</li></rulesStrings></questDescriptionRules>
+    <root Class="QuestNode_Sequence"><nodes>
+      <li Class="QuestNode_GetMap" />
+      <li Class="QuestNode_GetSiteTile"><storeAs>siteTile</storeAs><preferCloserTiles>true</preferCloserTiles></li>
+      <li Class="ScpFoundation.Storytelling.QuestNode_ScpSignalSiteSetup" />
+      <li Class="QuestNode_GetDefaultSitePartsParams"><tile>$siteTile</tile><faction>$siteFaction</faction>
+        <sitePartDefs>$sitePartDefs</sitePartDefs><storeSitePartsParamsAs>sitePartsParams</storeSitePartsParamsAs>
+      </li>
+      <li Class="QuestNode_GenerateSite"><sitePartsParams>$sitePartsParams</sitePartsParams>
+        <faction>$siteFaction</faction><tile>$siteTile</tile><storeAs>site</storeAs>
+        <worldObjectDef>SCP_OuroborosSignalSite</worldObjectDef>
+      </li>
+      <li Class="QuestNode_SpawnWorldObjects"><worldObjects>$site</worldObjects></li>
+      <li Class="ScpFoundation.Storytelling.QuestNode_ScpSignalSiteTrack" />
+      <li Class="QuestNode_WorldObjectTimeout"><worldObject>$site</worldObject>
+        <isQuestTimeout>true</isQuestTimeout><delayTicks>1200000</delayTicks>
+        <inSignalDisable>site.MapGenerated</inSignalDisable><destroyOnCleanup>false</destroyOnCleanup>
+        <node Class="QuestNode_End"><outcome>Fail</outcome></node>
+      </li>
+      <li Class="QuestNode_Signal"><inSignal>ScpSignalRecorderRecovered</inSignal>
+        <node Class="QuestNode_End"><outcome>Success</outcome></node>
+      </li>
+      <li Class="QuestNode_Signal"><inSignal>ScpSignalRecorderLost</inSignal>
+        <node Class="QuestNode_End"><outcome>Fail</outcome></node>
+      </li>
+    </nodes></root>
+  </QuestScriptDef>
+</Defs>

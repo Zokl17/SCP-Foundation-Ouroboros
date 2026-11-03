@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef Name="SCPModularGroundTurretBase" ParentName="BuildingBase" Abstract="True">
+    <thingClass>ScpFoundation.Runtime.Building_ModularGroundTurret</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData><texPath>Things/Building/Security/ScpQuadCannon_Base</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>(2.5,2.5)</drawSize></graphicData>
+    <uiIconPath>Things/Building/Security/ScpQuadCannon_Base</uiIconPath>
+    <size>(2,2)</size><altitudeLayer>Building</altitudeLayer><minifiedDef>MinifiedThing</minifiedDef>
+    <stealable>false</stealable><rotatable>false</rotatable><tickerType>Normal</tickerType>
+    <passability>PassThroughOnly</passability><pathCost>55</pathCost><fillPercent>0.65</fillPercent>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>SCPFoundation</designationCategory>
+    <thingCategories><li>BuildingsSecurity</li></thingCategories>
+    <researchPrerequisites><li>SCP_FoundationSpecialArmament</li><li>GunTurrets</li></researchPrerequisites>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <statBases><MaxHitPoints>500</MaxHitPoints><WorkToBuild>12000</WorkToBuild><Mass>240</Mass><Flammability>0.1</Flammability><Beauty>-12</Beauty><ShootingAccuracyTurret>0.88</ShootingAccuracyTurret></statBases>
+    <costList><Steel>280</Steel><Plasteel>55</Plasteel><ComponentIndustrial>10</ComponentIndustrial><ComponentSpacer>2</ComponentSpacer></costList>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Power"><compClass>CompPowerTrader</compClass><basePowerConsumption>650</basePowerConsumption></li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="CompProperties_Stunnable"><affectedDamageDefs><li>EMP</li></affectedDamageDefs></li>
+    </comps>
+    <building><combatPower>150</combatPower><ai_combatDangerous>true</ai_combatDangerous><turretBurstCooldownTime>3</turretBurstCooldownTime><turretTopDrawSize>2.8</turretTopDrawSize><turretTopOffset>(0,0.2)</turretTopOffset></building>
+    <placeWorkers><li>PlaceWorker_TurretTop</li><li>PlaceWorker_ShowTurretRadius</li></placeWorkers>
+  </ThingDef>
+
+  <ThingDef ParentName="SCPModularGroundTurretBase">
+    <defName>SCP_GroundTurretMount</defName><label>Foundation modular turret mount</label>
+    <description>An empty powered mounting platform. Select it after construction to install either a quad autocannon or a minigun module.</description>
+    <thingClass>ScpFoundation.Runtime.Building_ModularTurretMount</thingClass>
+    <uiOrder>232</uiOrder><building><combatPower>0</combatPower></building>
+    <placeWorkers Inherit="false" />
+  </ThingDef>
+  <ThingDef ParentName="SCPModularGroundTurretBase">
+    <defName>SCP_GroundQuadTurret</defName><label>Foundation quad autocannon</label>
+    <description>A low-profile four-barrel ground-defense module on a powered common mount. The module can be swapped for a minigun without rebuilding the emplacement.</description>
+    <designationCategory Inherit="false"/><building><turretGunDef>SCP_GunGroundQuad</turretGunDef></building>
+  </ThingDef>
+  <ThingDef ParentName="SCPModularGroundTurretBase">
+    <defName>SCP_GroundMinigunTurret</defName><label>Foundation minigun turret</label>
+    <description>A sustained-fire minigun module on the same powered ground-defense mount. The module can be swapped for four autocannons.</description>
+    <designationCategory Inherit="false"/><building><turretGunDef>SCP_GunGroundMinigun</turretGunDef></building>
+  </ThingDef>
+  <ThingDef ParentName="SCPModularGroundTurretBase">
+    <defName>SCP_GroundNavalTripleTurret</defName><label>Foundation triple naval cannon</label>
+    <description>A heavy three-barrel naval-style gun head fitted to the modular ground-defense mount.</description>
+    <designationCategory Inherit="false"/>
+    <building><turretGunDef>SCP_GunGroundNavalTriple</turretGunDef><turretTopDrawSize>3.4</turretTopDrawSize></building>
+  </ThingDef>
+  <ThingDef ParentName="SCPModularGroundTurretBase">
+    <defName>SCP_GroundSingleCannonTurret</defName><label>Foundation single heavy cannon</label>
+    <description>A single long-barreled heavy cannon with armored housing and recoil braces, fitted to the modular ground-defense mount.</description>
+    <designationCategory Inherit="false"/>
+    <building><turretGunDef>SCP_GunGroundSingleCannon</turretGunDef><turretTopDrawSize>2.9</turretTopDrawSize></building>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseWeaponTurret">
+    <defName>SCP_GunGroundQuad</defName><label>quad autocannon module</label>
+    <graphicData><texPath>Things/Building/Security/ScpGroundQuad_TopV2</texPath><graphicClass>Graphic_Single</graphicClass></graphicData>
+    <statBases><AccuracyTouch>0.85</AccuracyTouch><AccuracyShort>0.82</AccuracyShort><AccuracyMedium>0.75</AccuracyMedium><AccuracyLong>0.6</AccuracyLong><RangedWeapon_Cooldown>3</RangedWeapon_Cooldown><Mass>35</Mass></statBases>
+    <verbs><li><verbClass>Verb_Shoot</verbClass><defaultProjectile>SCP_ProjectileGroundQuad</defaultProjectile><warmupTime>1.5</warmupTime><range>32.9</range><minRange>3.9</minRange><burstShotCount>4</burstShotCount><ticksBetweenBurstShots>15</ticksBetweenBurstShots><soundCast>Shot_Autocannon</soundCast><muzzleFlashScale>10</muzzleFlashScale></li></verbs>
+  </ThingDef>
+  <ThingDef ParentName="BaseWeaponTurret">
+    <defName>SCP_GunGroundMinigun</defName><label>minigun module</label>
+    <graphicData><texPath>Things/Building/Security/ScpGroundMinigun_TopV3</texPath><graphicClass>Graphic_Single</graphicClass></graphicData>
+    <statBases><AccuracyTouch>0.75</AccuracyTouch><AccuracyShort>0.7</AccuracyShort><AccuracyMedium>0.58</AccuracyMedium><AccuracyLong>0.38</AccuracyLong><RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown><Mass>25</Mass></statBases>
+    <verbs><li><verbClass>Verb_Shoot</verbClass><defaultProjectile>SCP_ProjectileGroundMinigun</defaultProjectile><warmupTime>1.2</warmupTime><range>26.9</range><minRange>2.9</minRange><burstShotCount>12</burstShotCount><ticksBetweenBurstShots>3</ticksBetweenBurstShots><soundCast>Shot_Minigun</soundCast><muzzleFlashScale>5</muzzleFlashScale></li></verbs>
+  </ThingDef>
+  <ThingDef ParentName="BaseWeaponTurret">
+    <defName>SCP_GunGroundNavalTriple</defName><label>triple naval cannon module</label>
+    <graphicData><texPath>Things/Building/Security/ScpGroundNavalTriple_Top</texPath><graphicClass>Graphic_Single</graphicClass></graphicData>
+    <statBases><AccuracyTouch>0.82</AccuracyTouch><AccuracyShort>0.8</AccuracyShort><AccuracyMedium>0.75</AccuracyMedium><AccuracyLong>0.65</AccuracyLong><RangedWeapon_Cooldown>7</RangedWeapon_Cooldown><Mass>70</Mass></statBases>
+    <verbs><li><verbClass>Verb_Shoot</verbClass><defaultProjectile>SCP_ProjectileGroundNavalTriple</defaultProjectile><warmupTime>2.5</warmupTime><range>40.9</range><minRange>5.9</minRange><burstShotCount>3</burstShotCount><ticksBetweenBurstShots>22</ticksBetweenBurstShots><soundCast>Shot_Autocannon</soundCast><muzzleFlashScale>12</muzzleFlashScale></li></verbs>
+  </ThingDef>
+  <ThingDef ParentName="BaseWeaponTurret">
+    <defName>SCP_GunGroundSingleCannon</defName><label>single heavy cannon module</label>
+    <graphicData><texPath>Things/Building/Security/ScpGroundSingleCannon_Top</texPath><graphicClass>Graphic_Single</graphicClass></graphicData>
+    <statBases><AccuracyTouch>0.84</AccuracyTouch><AccuracyShort>0.82</AccuracyShort><AccuracyMedium>0.76</AccuracyMedium><AccuracyLong>0.68</AccuracyLong><RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown><Mass>50</Mass></statBases>
+    <verbs><li><verbClass>Verb_Shoot</verbClass><defaultProjectile>SCP_ProjectileGroundSingleCannon</defaultProjectile><warmupTime>1.8</warmupTime><range>42.9</range><minRange>4.9</minRange><burstShotCount>1</burstShotCount><soundCast>Shot_Autocannon</soundCast><muzzleFlashScale>11</muzzleFlashScale></li></verbs>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>SCP_ProjectileGroundQuad</defName><label>Foundation autocannon shell</label>
+    <thingClass>ScpFoundation.Runtime.Projectile_FoundationTurretBullet</thingClass>
+    <graphicData><texPath>Things/Projectile/ScpShotgunPellet</texPath><graphicClass>Graphic_Single</graphicClass></graphicData>
+    <projectile><damageDef>Bullet</damageDef><damageAmountBase>27</damageAmountBase><speed>88</speed></projectile>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>SCP_ProjectileGroundMinigun</defName><label>Foundation minigun bullet</label>
+    <thingClass>ScpFoundation.Runtime.Projectile_FoundationTurretBullet</thingClass>
+    <graphicData><texPath>Things/Projectile/ScpShotgunPellet</texPath><graphicClass>Graphic_Single</graphicClass></graphicData>
+    <projectile><damageDef>Bullet</damageDef><damageAmountBase>10</damageAmountBase><speed>70</speed></projectile>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>SCP_ProjectileGroundNavalTriple</defName><label>Foundation heavy cannon shell</label>
+    <thingClass>ScpFoundation.Runtime.Projectile_FoundationTurretBullet</thingClass>
+    <graphicData><texPath>Things/Projectile/ScpShotgunPellet</texPath><graphicClass>Graphic_Single</graphicClass></graphicData>
+    <projectile><damageDef>Bullet</damageDef><damageAmountBase>50</damageAmountBase><speed>90</speed></projectile>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>SCP_ProjectileGroundSingleCannon</defName><label>Foundation single cannon shell</label>
+    <thingClass>ScpFoundation.Runtime.Projectile_FoundationTurretBullet</thingClass>
+    <graphicData><texPath>Things/Projectile/ScpShotgunPellet</texPath><graphicClass>Graphic_Single</graphicClass></graphicData>
+    <projectile><damageDef>Bullet</damageDef><damageAmountBase>52</damageAmountBase><speed>90</speed></projectile>
+  </ThingDef>
+</Defs>

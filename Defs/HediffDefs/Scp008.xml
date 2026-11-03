@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <HediffDef>
+    <defName>SCP_008Infection</defName>
+    <label>SCP-008 infection</label>
+    <description>An aggressive prion infection acquired through contaminated body fluids entering a wound or mucous membrane. It does not spread through air or water. SCP-500 can cure it.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <isBad>true</isBad><isInfection>true</isInfection><makesSickThought>true</makesSickThought>
+    <lethalSeverity>1</lethalSeverity><tendable>false</tendable>
+    <initialSeverity>0.05</initialSeverity>
+    <comps><li Class="HediffCompProperties_SeverityPerDay"><severityPerDay>0.42</severityPerDay></li></comps>
+    <stages>
+      <li><minSeverity>0</minSeverity><label>incubating</label></li>
+      <li><minSeverity>0.2</minSeverity><label>feverish</label><painOffset>0.12</painOffset><capMods><li><capacity>Consciousness</capacity><offset>-0.15</offset></li></capMods></li>
+      <li><minSeverity>0.55</minSeverity><label>neurological damage</label><painOffset>0.25</painOffset><capMods><li><capacity>Consciousness</capacity><offset>-0.4</offset></li><li><capacity>Moving</capacity><offset>-0.35</offset></li></capMods></li>
+      <li><minSeverity>0.85</minSeverity><label>terminal</label><capMods><li><capacity>Consciousness</capacity><setMax>0.1</setMax></li></capMods></li>
+    </stages>
+  </HediffDef>
+</Defs>

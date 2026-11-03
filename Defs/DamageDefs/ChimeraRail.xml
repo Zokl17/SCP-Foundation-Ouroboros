@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <DamageDef ParentName="Bullet">
+    <defName>SCP_ChimeraRailImpact</defName>
+    <label>railgun impact</label>
+    <workerClass>ScpFoundation.Runtime.DamageWorker_ChimeraRail</workerClass>
+  </DamageDef>
+</Defs>

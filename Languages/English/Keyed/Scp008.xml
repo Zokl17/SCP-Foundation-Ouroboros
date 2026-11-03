@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_008ExposureTitle>SCP-008 exposure</SCP_008ExposureTitle>
+  <SCP_008ExposureBody>{PAWN} contracted SCP-008 when infected fluid entered a wound. Isolate the patient. The agent does not spread through air or water.</SCP_008ExposureBody>
+  <SCP_008LabBreachTitle>GOC laboratory breach</SCP_008LabBreachTitle>
+  <SCP_008LabBreachBody>The laboratory door has been breached. Three gorehulks and two bulbfreaks have escaped from an experimental compartment. One scientist is already infected with SCP-008. The intact sample is sealed in a separate case.</SCP_008LabBreachBody>
+  <SCP_008RecoveredTitle>SCP-008 sample recovered</SCP_008RecoveredTitle>
+  <SCP_008RecoveredBody>The sealed case has reached your colony. Prepare a roofed, cooled laboratory and a containment post before studying it. If safe containment cannot be established, the Foundation will transfer the sample to Site G2.</SCP_008RecoveredBody>
+  <SCP_008DestroyedTitle>SCP-008 sample destroyed</SCP_008DestroyedTitle>
+  <SCP_008DestroyedBody>The only surviving SCP-008 sample at the GOC facility has been destroyed. The Foundation confirms no viable material remains in the laboratory.</SCP_008DestroyedBody>
+  <SCP_008BioLabRequirement>Powered decontamination unit in the same laboratory</SCP_008BioLabRequirement>
+  <SCP_008TransferWarningTitle>SCP-008 preparation deadline</SCP_008TransferWarningTitle>
+  <SCP_008TransferWarningBody>The Foundation allows five days to establish safe containment and research conditions for SCP-008. Otherwise it will transfer the sample to Site G2.</SCP_008TransferWarningBody>
+  <SCP_008TransferredTitle>SCP-008 transferred to Site G2</SCP_008TransferredTitle>
+  <SCP_008TransferredBody>The preparation deadline has passed. The Foundation has moved SCP-008 to Site G2 because safe containment was not established.</SCP_008TransferredBody>
+  <SCP_008QuestOffered>The SCP-008 recovery quest is available.</SCP_008QuestOffered>
+  <SCP_008QuestUnavailable>Could not offer the SCP-008 quest. Check Anomaly, the SCP-650 encounter, and Foundation contact.</SCP_008QuestUnavailable>
+  <SCP_008DebugCaseSpawned>The SCP-008 case was placed near the selected cell.</SCP_008DebugCaseSpawned>
+  <SCP_008ObservedReport>The initial inspection confirms a viable SCP-008 sample in the sealed case. No airborne or waterborne transmission has been observed.</SCP_008ObservedReport>
+  <SCP_008PartialReport>Infected fluid entering a wound or mucous membrane causes rapidly progressing neurological damage. Safe handling requires cooling, sealed protective clothing and decontamination.</SCP_008PartialReport>
+  <SCP_008DocumentedReport>Research confirms contact transmission and lethal disease progression. SCP-500 removes the infection. The GOC flesh experiments are not a normal effect of SCP-008.</SCP_008DocumentedReport>
+</LanguageData>

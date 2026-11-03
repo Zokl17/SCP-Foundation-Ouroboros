@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef>
+    <defName>SCP_067Pen</defName>
+    <label>SCP-067 fountain pen</label>
+    <description>An oak fountain pen with a pale green finish and a red stripe. Once secured on a containment post, a colonist can let it guide their hand to produce an intricate drawing.</description>
+    <thingClass>ThingWithComps</thingClass><category>Item</category><altitudeLayer>Item</altitudeLayer>
+    <tickerType>Rare</tickerType><selectable>true</selectable><stackLimit>1</stackLimit>
+    <alwaysHaulable>true</alwaysHaulable><designateHaulable>false</designateHaulable><rotatable>false</rotatable>
+    <graphicData><texPath>Things/Item/ScpArtifacts/Scp067Pen</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>0.8</drawSize></graphicData>
+    <statBases><MaxHitPoints>60</MaxHitPoints><Mass>0.1</Mass><MarketValue>0</MarketValue><Flammability>1</Flammability></statBases>
+    <tradeability>None</tradeability>
+    <comps>
+      <li Class="ScpFoundation.Runtime.CompProperties_Scp"><anomaly>SCP_Anomaly067</anomaly><requireCapture>true</requireCapture></li>
+      <li Class="ScpFoundation.Interactions.CompProperties_ScpInteraction" />
+      <li Class="ScpFoundation.Anomalies.CompProperties_Scp067" />
+    </comps>
+  </ThingDef>
+  <ThingDef>
+    <defName>SCP_067Drawing</defName>
+    <label>SCP-067 drawing</label>
+    <description>An intricate ink drawing produced while holding SCP-067. It is valuable and can be displayed in a room, but it is not safe to assume its subject is imaginary.</description>
+    <thingClass>ThingWithComps</thingClass><category>Item</category><altitudeLayer>Item</altitudeLayer>
+    <selectable>true</selectable><stackLimit>1</stackLimit><rotatable>false</rotatable>
+    <alwaysHaulable>true</alwaysHaulable>
+    <graphicData><texPath>Things/Item/ScpArtifacts/Scp067Drawing</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>0.85</drawSize></graphicData>
+    <statBases><MaxHitPoints>30</MaxHitPoints><Mass>0.2</Mass><MarketValue>450</MarketValue><Beauty>10</Beauty><Flammability>1</Flammability><DeteriorationRate>2</DeteriorationRate></statBases>
+  </ThingDef>
+  <!-- Keep the original def for drawings already present in saved games. New sessions create one of the three defs below. -->
+  <ThingDef>
+    <defName>SCP_067DrawingGood</defName>
+    <label>SCP-067 drawing: impossible corridor</label>
+    <description>A door opens onto a corridor that cannot fit behind it. A silhouette waits at the far end.</description>
+    <thingClass>ThingWithComps</thingClass><category>Item</category><altitudeLayer>Item</altitudeLayer>
+    <selectable>true</selectable><stackLimit>1</stackLimit><rotatable>false</rotatable><alwaysHaulable>true</alwaysHaulable>
+    <graphicData><texPath>Things/Item/ScpArtifacts/Scp067DrawingGood</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>0.85</drawSize></graphicData>
+    <statBases><MaxHitPoints>30</MaxHitPoints><Mass>0.2</Mass><MarketValue>720</MarketValue><Beauty>10</Beauty><Flammability>1</Flammability><DeteriorationRate>2</DeteriorationRate></statBases>
+    <comps><li><compClass>CompQuality</compClass></li></comps>
+  </ThingDef>
+  <ThingDef>
+    <defName>SCP_067DrawingExcellent</defName>
+    <label>SCP-067 drawing: watching mechanism</label>
+    <description>An unblinking eye floats inside broken clockwork rings. Its gaze follows the observer.</description>
+    <thingClass>ThingWithComps</thingClass><category>Item</category><altitudeLayer>Item</altitudeLayer>
+    <selectable>true</selectable><stackLimit>1</stackLimit><rotatable>false</rotatable><alwaysHaulable>true</alwaysHaulable>
+    <graphicData><texPath>Things/Item/ScpArtifacts/Scp067DrawingExcellent</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>0.85</drawSize></graphicData>
+    <statBases><MaxHitPoints>30</MaxHitPoints><Mass>0.2</Mass><MarketValue>800</MarketValue><Beauty>10</Beauty><Flammability>1</Flammability><DeteriorationRate>2</DeteriorationRate></statBases>
+    <comps><li><compClass>CompQuality</compClass></li></comps>
+  </ThingDef>
+  <ThingDef>
+    <defName>SCP_067DrawingLegendary</defName>
+    <label>SCP-067 drawing: grasping hands</label>
+    <description>Interwoven hands reach through impossible arches. The longer one looks, the more hands appear.</description>
+    <thingClass>ThingWithComps</thingClass><category>Item</category><altitudeLayer>Item</altitudeLayer>
+    <selectable>true</selectable><stackLimit>1</stackLimit><rotatable>false</rotatable><alwaysHaulable>true</alwaysHaulable>
+    <graphicData><texPath>Things/Item/ScpArtifacts/Scp067Drawing</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>0.85</drawSize></graphicData>
+    <statBases><MaxHitPoints>30</MaxHitPoints><Mass>0.2</Mass><MarketValue>300</MarketValue><Beauty>10</Beauty><Flammability>1</Flammability><DeteriorationRate>2</DeteriorationRate></statBases>
+    <comps><li><compClass>CompQuality</compClass></li></comps>
+  </ThingDef>
+  <ThingDef ParentName="ApparelBase">
+    <defName>SCP_262Coat</defName>
+    <tickerType>Normal</tickerType>
+    <label>SCP-262 coat</label>
+    <description>A military greatcoat. Four human arms of differing appearances can reach from its dark lining. They increase work speed by 250%, help evade close attacks, and can hold a second ranged weapon.</description>
+    <graphicData><texPath>Things/Item/ScpArtifacts/Scp262Coat</texPath><graphicClass>Graphic_Single</graphicClass><shaderType>Cutout</shaderType><drawSize>1.0</drawSize><color>(0.67,0.45,0.28)</color></graphicData>
+    <statBases><MaxHitPoints>220</MaxHitPoints><Mass>2</Mass><MarketValue>2200</MarketValue><Flammability>1</Flammability><EquipDelay>3</EquipDelay></statBases>
+    <equippedStatOffsets><WorkSpeedGlobal>2.5</WorkSpeedGlobal><MeleeDodgeChance>5</MeleeDodgeChance></equippedStatOffsets>
+    <tradeability>None</tradeability><stackLimit>1</stackLimit><burnableByRecipe>false</burnableByRecipe><smeltable>false</smeltable>
+    <apparel>
+      <bodyPartGroups><li>Torso</li><li>Neck</li><li>Shoulders</li><li>Arms</li><li>Legs</li></bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Duster/Duster</wornGraphicPath>
+      <shellRenderedBehindHead>true</shellRenderedBehindHead>
+      <layers><li>Shell</li></layers><tags><li>SCP_262Only</li></tags>
+    </apparel>
+    <comps>
+      <li Class="ScpFoundation.Runtime.CompProperties_Scp"><anomaly>SCP_Anomaly262</anomaly><requireCapture>true</requireCapture></li>
+      <li Class="ScpFoundation.Interactions.CompProperties_ScpInteraction" />
+      <li Class="ScpFoundation.Anomalies.CompProperties_Scp262ExtraWeapon" />
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="BuildingBase">
+    <defName>SCP_262Hanger</defName><label>SCP-262 containment hanger</label>
+    <description>A dedicated stand for holding and studying SCP-262. The coat must be placed here before its effects can be documented.</description>
+    <graphicData><texPath>Things/Building/Scp262Hanger</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>1.1</drawSize></graphicData>
+    <altitudeLayer>FloorEmplacement</altitudeLayer><passability>Standable</passability><fillPercent>0</fillPercent>
+    <building><isEdifice>false</isEdifice></building>
+    <rotatable>false</rotatable><designationCategory>SCPFoundation</designationCategory><uiOrder>1210</uiOrder>
+      <researchPrerequisites><li>SCP_262HangerResearch</li></researchPrerequisites>
+    <statBases><MaxHitPoints>180</MaxHitPoints><WorkToBuild>1200</WorkToBuild><Flammability>0</Flammability></statBases>
+    <costList><Steel>35</Steel><WoodLog>20</WoodLog></costList>
+    <placeWorkers><li>ScpFoundation.Interactions.PlaceWorker_ScpHomePost</li></placeWorkers>
+    <comps><li Class="ScpFoundation.Interactions.CompProperties_ScpPost" /></comps>
+  </ThingDef>
+</Defs>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_TestAnomaly.label>тестовая аномалия содержания</SCP_TestAnomaly.label>
+  <SCP_TestAnomaly.description>Оригинальный неканонический стенд для разработки. Его требования проверяют общую систему содержания.</SCP_TestAnomaly.description>
+</LanguageData>

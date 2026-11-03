@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <JobDef>
+    <defName>SCP_OuroborosReadTransponder</defName>
+    <driverClass>JobDriver_UseItemResearchBench</driverClass>
+    <reportString>decrypting signal transponder.</reportString>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+</Defs>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Lightweight.label>облегчённый корпус</Lightweight.label>
+  <ToxRounds.label>токсический состав</ToxRounds.label>
+  <PiercingRounds.label>пласталевый сердечник</PiercingRounds.label>
+  <IncendiaryRounds.label>усиленная зажигательная смесь</IncendiaryRounds.label>
+  <EMPRounds.label>ЭМИ-обмотка</EMPRounds.label>
+  <HollowPointRounds.label>экспансивный профиль</HollowPointRounds.label>
+  <HighPowerRounds.label>усиленный патронник</HighPowerRounds.label>
+  <ToxPellets.label>токсическая смесь</ToxPellets.label>
+  <IncendiaryPellets.label>зажигательная смесь</IncendiaryPellets.label>
+  <BirdshotPellets.label>дробовой рассеиватель</BirdshotPellets.label>
+  <PiercingArrows.label>пробивной наконечник</PiercingArrows.label>
+  <ParalyticArrows.label>парализующий состав</ParalyticArrows.label>
+  <BroadheadArrows.label>лезвийный наконечник</BroadheadArrows.label>
+  <LightweightArrows.label>облегчённое оперение</LightweightArrows.label>
+  <OversizedRounds.label>утяжелённый сердечник</OversizedRounds.label>
+</LanguageData>

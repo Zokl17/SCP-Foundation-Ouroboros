@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <IncidentDef>
+    <defName>SCP_Discover682</defName><label>SCP-682 found</label>
+    <workerClass>ScpFoundation.Anomalies.IncidentWorker_Discover682</workerClass>
+    <category>Misc</category><targetTags><li>Map_PlayerHome</li></targetTags>
+    <baseChance>0</baseChance><earliestDay>45</earliestDay><minPopulation>4</minPopulation><minRefireDays>90</minRefireDays>
+    <letterDef>ThreatBig</letterDef><letterLabel>Incapacitated SCP-682 found</letterLabel>
+    <letterText>An enormous injured reptile has been found. It is recovering quickly. Move it to a prepared containment post while it is incapacitated; it cannot be destroyed by ordinary damage.</letterText>
+  </IncidentDef>
+</Defs>

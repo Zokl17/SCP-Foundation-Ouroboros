@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_ChaosSalvageRaid.questNameRules.rulesStrings><li>questName->Рейд на базу Повстанцев Хаоса</li></SCP_ChaosSalvageRaid.questNameRules.rulesStrings>
+  <SCP_ChaosSalvageRaid.questDescriptionRules.rulesStrings><li>questDescription->Повстанцы Хаоса только что разграбили Зону-16. После их налёта объект был уничтожен, а похищенное вывезли на укреплённую базу среди свалки. Это поручение открывает исследование сейфа для SCP-127. Её защищают 25 бойцов: 10 пулемётчиков в экзоброне и 15 стрелков с автоматами. В комнате с пласталевыми стенами лежат SCP-127, две таблетки SCP-500 и медицинские препараты. Разгромите гарнизон и верните имущество Фонда.</li></SCP_ChaosSalvageRaid.questDescriptionRules.rulesStrings>
+</LanguageData>

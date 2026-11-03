@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <RulePackDef>
+    <defName>SCP_NamerChaosSettlement</defName>
+    <rulePack>
+      <rulesStrings><li>r_name->[chaos_site]</li></rulesStrings>
+      <rulesFiles><li>chaos_site->Names/ChaosSites</li></rulesFiles>
+    </rulePack>
+  </RulePackDef>
+</Defs>

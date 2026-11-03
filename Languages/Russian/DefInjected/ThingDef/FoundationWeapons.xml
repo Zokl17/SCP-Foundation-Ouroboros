@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_Nu7HKCarbine.label>карабин HK416</SCP_Nu7HKCarbine.label>
+  <SCP_Nu7HKCarbine.description>Компактный карабин с коротким ходом поршня, стандартизированный для стрелковых групп Ну-7. Оптический прицел, управляемая очередь из трёх выстрелов и жёсткое цевьё обеспечивают точность при быстром движении по повреждённым комплексам.</SCP_Nu7HKCarbine.description>
+  <SCP_Nu7LightMachineGun.label>ручной пулемёт M249</SCP_Nu7LightMachineGun.label>
+  <SCP_Nu7LightMachineGun.description>Скорострельный пулемёт калибра 5,56 мм для огневых групп Ну-7. Закрытый короб питает длинные очереди, но каждая пуля слабее против брони, чем у ПКП Повстанцев.</SCP_Nu7LightMachineGun.description>
+  <SCP_ProjectileNu7M249Round.label>пуля M249</SCP_ProjectileNu7M249Round.label>
+  <SCP_ProjectileSpasTwelve.label>картечь SPAS-12</SCP_ProjectileSpasTwelve.label>
+  <SCP_FoundationSpasTwelve.label>боевой дробовик SPAS-12</SCP_FoundationSpasTwelve.label>
+  <SCP_FoundationSpasTwelve.description>Надёжный полуавтоматический боевой дробовик для групп содержания Фонда. Быстрый повторный выстрел и тяжёлая картечь уничтожают цели в коридорах, но эффективность оружия резко падает на большой дистанции.</SCP_FoundationSpasTwelve.description>
+  <SCP_ProjectileEMPRifle.label>ЭМИ-импульс Фонда</SCP_ProjectileEMPRifle.label>
+  <SCP_FoundationEMPRifle.label>ЭМИ-винтовка Фонда</SCP_FoundationEMPRifle.label>
+  <SCP_FoundationEMPRifle.description>Винтовка Фонда с магнитно ускоренными пулями. Попадания наносят обычный урон и создают короткий ЭМИ-импульс, который оглушает механоидов и отключает запитанные устройства. Прямое попадание в человека с тремя и более имплантами может вызвать мозговой шок.</SCP_FoundationEMPRifle.description>
+  <SCP_ProjectileTranqDart.label>транквилизаторный дротик Фонда</SCP_ProjectileTranqDart.label>
+  <SCP_FoundationTranqRifle.label>транквилизаторная винтовка Фонда</SCP_FoundationTranqRifle.label>
+  <SCP_FoundationTranqRifle.description>Точная пневматическая винтовка для захвата живых субъектов с минимальным повреждением тканей. Дротики накапливают быстродействующий седативный эффект в организме: цель размером с человека обычно теряет сознание после трёх попаданий, а крупным существам требуется пропорционально больше. На механоидов препарат не действует.</SCP_FoundationTranqRifle.description>
+  <SCP_ProjectileContainmentNet.label>контейнер удерживающей сети</SCP_ProjectileContainmentNet.label>
+  <SCP_FoundationNetLauncher.label>пусковая установка удерживающей сети Фонда</SCP_FoundationNetLauncher.label>
+  <SCP_FoundationNetLauncher.description>Короткодействующая пневматическая установка, раскрывающая вокруг цели утяжелённую удерживающую сеть. Одно попадание обездвиживает субъекта размером с человека примерно на три часа почти без травм. Крупные существа сохраняют подвижность, пока в них не попадёт достаточно сетей, поэтому установка полезна для захвата, но ненадёжна как обычное боевое оружие.</SCP_FoundationNetLauncher.description>
+</LanguageData>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="BuildingBase">
+    <defName>SCP_TestFixture</defName>
+    <label>containment test fixture</label>
+    <description>A non-canon development object. Spawn through the SCP Foundation developer actions. This fixture does not represent an SCP Wiki article.</description>
+    <thingClass>Building</thingClass>
+    <tickerType>Rare</tickerType>
+    <graphicData>
+      <texPath>Things/Building/ScpTestFixture</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <size>(1,1)</size>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.4</fillPercent>
+    <statBases><MaxHitPoints>200</MaxHitPoints><Flammability>0</Flammability><MarketValue>0</MarketValue><Mass>20</Mass></statBases>
+    <comps>
+      <li Class="CompProperties_Power"><compClass>CompPowerTrader</compClass><basePowerConsumption>100</basePowerConsumption></li>
+      <li Class="ScpFoundation.Runtime.CompProperties_Scp"><anomaly>SCP_TestAnomaly</anomaly></li>
+    </comps>
+  </ThingDef>
+</Defs>

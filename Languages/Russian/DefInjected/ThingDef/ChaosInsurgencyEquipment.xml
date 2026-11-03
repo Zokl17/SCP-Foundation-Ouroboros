@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_ChaosAssaultArmor.label>штурмовая броня Повстанцев</SCP_ChaosAssaultArmor.label>
+  <SCP_ChaosAssaultArmor.description>Прочный зелёно-хаки бронежилет штурмовых ячеек Повстанцев Хаоса. Многослойные бронепанели, боковые ленты MOLLE и три подсумка с магазинами защищают торс и держат боеприпасы под рукой без громоздкости силовой брони.</SCP_ChaosAssaultArmor.description>
+  <SCP_ChaosHeavyExosuit.label>кустарный экзокостюм Повстанцев</SCP_ChaosHeavyExosuit.label>
+  <SCP_ChaosHeavyExosuit.description>Предельно практичный силовой костюм, собранный из украденных бронеплит, мастерских приводов и снятых с другой техники деталей охлаждения. Большой открытый вентилятор охлаждает левую сторону, а две светящиеся синие трубки обслуживают правую. Несовместимые пластины приклёпаны и приварены там, где для них нашлось место.</SCP_ChaosHeavyExosuit.description>
+  <SCP_ChaosHeavyHelmet.label>кустарный шлем экзокостюма</SCP_ChaosHeavyHelmet.label>
+  <SCP_ChaosHeavyHelmet.description>Герметичный шлем силовой брони, построенный вокруг грубого клёпаного лицевого щитка. Непрямая оптика и толстый корпус дают защиту уровня катафрактской брони без малейшей заботы об изяществе или стандартизации.</SCP_ChaosHeavyHelmet.description>
+  <SCP_ChaosAKGrenadier.label>АК Повстанцев с подствольником</SCP_ChaosAKGrenadier.label>
+  <SCP_ChaosAKGrenadier.description>Изношенный автомат семейства АК, перебранный оружейниками Повстанцев Хаоса и снабжённый компактным подствольным гранатомётом. Несмотря на грубый ремонт, автомат остаётся надёжным.</SCP_ChaosAKGrenadier.description>
+  <SCP_ChaosLightMachineGun.label>пулемёт ПКП Повстанцев</SCP_ChaosLightMachineGun.label>
+  <SCP_ChaosLightMachineGun.description>Тяжёлый пулемёт ПКП калибра 7,62 мм для групп подавления Повстанцев. Стреляет медленнее M249 Фонда, зато его пули наносят больше урона и лучше пробивают броню.</SCP_ChaosLightMachineGun.description>
+  <SCP_ProjectileChaosPKP.label>пуля ПКП</SCP_ProjectileChaosPKP.label>
+</LanguageData>

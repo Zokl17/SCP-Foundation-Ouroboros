@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <IncidentDef>
+    <defName>SCP_Discover055</defName><label>Foundation anomaly coordinates</label>
+    <workerClass>ScpFoundation.Anomalies.IncidentWorker_Discover055</workerClass><category>Misc</category>
+    <targetTags><li>Map_PlayerHome</li></targetTags><baseChance>0</baseChance><minRefireDays>0</minRefireDays>
+  </IncidentDef>
+</Defs>

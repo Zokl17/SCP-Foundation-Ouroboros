@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_OuroborosSignalResearch.questNameRules.rulesStrings><li>questName->Анализ ответного сигнала</li></SCP_OuroborosSignalResearch.questNameRules.rulesStrings>
+  <SCP_OuroborosSignalResearch.questDescriptionRules.rulesStrings><li>questDescription->Колонисты расшифровали запечатанный передатчик за исследовательским столом. Фонд открыл отдельное поручение. Назначьте исследователя с допуском Фонда 4 и навыком «Умственный труд» от 12 для работы у запитанного терминала. Нужно шесть накопленных часов; прерывание работы сохраняет прогресс. Назначение доступно в Терминал → Журнал событий → Архив Фонда → итоговый протокол SCP-882.</li></SCP_OuroborosSignalResearch.questDescriptionRules.rulesStrings>
+  <SCP_OuroborosSignalSite.questNameRules.rulesStrings><li>questName->След ответного сигнала</li></SCP_OuroborosSignalSite.questNameRules.rulesStrings>
+  <SCP_OuroborosSignalSite.questDescriptionRules.rulesStrings><li>questDescription->После отчёта O5-7 Фонд нашёл безлюдный ретранслятор. Отправьте караван по отмеченным координатам. Выберите записывающее устройство и нажмите «Извлечь передатчик» либо выберите колониста и нажмите ПКМ. Колонист увезёт модуль домой; там его можно расшифровать за исследовательским столом. Бойцов Церкви на этой карте нет.</li></SCP_OuroborosSignalSite.questDescriptionRules.rulesStrings>
+</LanguageData>

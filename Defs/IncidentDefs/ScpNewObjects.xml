@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <IncidentDef><defName>SCP_Discover012</defName><label>SCP-012 found</label>
+    <workerClass>ScpFoundation.Anomalies.IncidentWorker_DiscoverSmallArtifacts</workerClass><category>Misc</category>
+    <targetTags><li>Map_PlayerHome</li></targetTags><baseChance>0</baseChance><earliestDay>20</earliestDay><minPopulation>2</minPopulation><minRefireDays>90</minRefireDays>
+    <letterDef>NegativeEvent</letterDef><letterLabel>SCP-012 found</letterLabel><letterText>Unfinished sheet music lies near the colony. Keep it in a dark, secure room.</letterText></IncidentDef>
+  <IncidentDef><defName>SCP_Discover914</defName><label>SCP-914 found</label>
+    <workerClass>ScpFoundation.Anomalies.IncidentWorker_DiscoverSmallArtifacts</workerClass><category>Misc</category>
+    <targetTags><li>Map_PlayerHome</li></targetTags><baseChance>0.025</baseChance><earliestDay>35</earliestDay><minPopulation>3</minPopulation><minRefireDays>120</minRefireDays>
+    <letterDef>NeutralEvent</letterDef><letterLabel>SCP-914 found</letterLabel><letterText>A vast clockwork machine stands near the colony. Its five settings transform objects placed by its intake.</letterText></IncidentDef>
+  <IncidentDef><defName>SCP_Discover513</defName><label>lost muffalo with SCP-513</label>
+    <workerClass>ScpFoundation.Anomalies.IncidentWorker_Scp513Muffalo</workerClass><category>Misc</category>
+    <targetTags><li>Map_PlayerHome</li></targetTags><baseChance>0.05</baseChance><earliestDay>25</earliestDay><minPopulation>2</minPopulation><minRefireDays>90</minRefireDays>
+    <letterDef>NegativeEvent</letterDef><letterLabel>A bell on a lost muffalo</letterLabel><letterText>A pack muffalo has strayed near the colony with a rusty bell in its cargo. Every five hours the bell may ring and haunt anyone who hears it. Recover or isolate it before the animal leaves.</letterText></IncidentDef>
+  <IncidentDef><defName>SCP_Discover207</defName><label>SCP-207 visitor</label>
+    <workerClass>ScpFoundation.Storytelling.IncidentWorker_Scp207Visitor</workerClass><questScriptDef>SCP_207Visitor</questScriptDef><category>Misc</category>
+    <targetTags><li>Map_PlayerHome</li></targetTags><baseChance>0.05</baseChance><earliestDay>25</earliestDay><minPopulation>2</minPopulation><minRefireDays>90</minRefireDays>
+    <letterDef>NeutralEvent</letterDef><letterLabel>A very fast stranger</letterLabel><letterText>A stranger says an unusual drink made him impossibly fast. The effect is killing him. Do not drink the bottle he carries.</letterText></IncidentDef>
+</Defs>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ARTKIT_PlacementDenied>Placement failed: the entire area including operator cells must fit on the map, with safe nearby destinations outside it for pawns. A gallery uses 20x16 cells. Successful placement deletes obstacles and replaces terrain.</ARTKIT_PlacementDenied>
+  <ARTKIT_GalleryPlaced>Art v1 gallery placed: 14 assets, separate open/closed samples, four camera and console orientations, and a wall/door alignment strip. These are visual samples only.</ARTKIT_GalleryPlaced>
+</LanguageData>

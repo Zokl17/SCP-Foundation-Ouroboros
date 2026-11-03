@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="MoteBase">
+    <defName>SCP_106CapturePortal</defName>
+    <altitudeLayer>MoteLow</altitudeLayer>
+    <mote><fadeInTime>0.12</fadeInTime><solidTime>0.2</solidTime><fadeOutTime>0.8</fadeOutTime><needsMaintenance>true</needsMaintenance></mote>
+    <graphicData><texPath>Things/Mote/Scp106GroundPortal</texPath><drawSize>(2.6,1.75)</drawSize></graphicData>
+  </ThingDef>
+  <ThingDef ParentName="MoteBase">
+    <defName>SCP_106WallPortal</defName>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote><fadeInTime>0.1</fadeInTime><solidTime>0.2</solidTime><fadeOutTime>0.8</fadeOutTime><needsMaintenance>true</needsMaintenance></mote>
+    <graphicData><texPath>Things/Mote/Scp106WallPortal</texPath><drawSize>(1.3,1.45)</drawSize></graphicData>
+  </ThingDef>
+  <ThingDef ParentName="MoteBase">
+    <defName>SCP_106GroundPortal</defName>
+    <altitudeLayer>MoteLow</altitudeLayer>
+    <mote><fadeInTime>0.08</fadeInTime><solidTime>0.2</solidTime><fadeOutTime>0.8</fadeOutTime><needsMaintenance>true</needsMaintenance></mote>
+    <graphicData><texPath>Things/Mote/Scp106GroundPortal</texPath><drawSize>(1.35,0.9)</drawSize></graphicData>
+  </ThingDef>
+  <ThingDef ParentName="MoteBase">
+    <defName>SCP_106GroundExit</defName>
+    <altitudeLayer>MoteLow</altitudeLayer>
+    <mote><fadeInTime>0.04</fadeInTime><solidTime>1.5</solidTime><fadeOutTime>1.4</fadeOutTime></mote>
+    <graphicData><texPath>Things/Mote/Scp106GroundPortal</texPath><drawSize>(1.35,0.9)</drawSize></graphicData>
+  </ThingDef>
+</Defs>

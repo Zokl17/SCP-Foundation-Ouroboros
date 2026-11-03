@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef>
+    <defName>SCP_079Computer</defName>
+    <label>SCP-079 computer</label>
+    <description>A sentient 1978 microcomputer with a monochrome display and a short memory. Keep it isolated from every communications network. Interviews are recorded manually in the Foundation terminal.</description>
+    <thingClass>ThingWithComps</thingClass><category>Item</category><altitudeLayer>Item</altitudeLayer>
+    <tickerType>Rare</tickerType><selectable>true</selectable><stackLimit>1</stackLimit>
+    <alwaysHaulable>true</alwaysHaulable><designateHaulable>false</designateHaulable><rotatable>false</rotatable>
+    <graphicData><texPath>Things/Item/ScpArtifacts/Scp079Computer</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>1.25</drawSize></graphicData>
+    <statBases><MaxHitPoints>180</MaxHitPoints><Mass>18</Mass><MarketValue>0</MarketValue><Flammability>0.3</Flammability></statBases>
+    <tradeability>None</tradeability>
+    <comps>
+      <li Class="ScpFoundation.Runtime.CompProperties_Scp"><anomaly>SCP_Anomaly079</anomaly><requireCapture>true</requireCapture></li>
+      <li Class="ScpFoundation.Interactions.CompProperties_ScpInteraction" />
+      <li Class="ScpFoundation.Anomalies.CompProperties_Scp079" />
+    </comps>
+  </ThingDef>
+</Defs>

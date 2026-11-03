@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <QuestScriptDef>
+    <defName>SCP_106Recovery</defName>
+    <rootSelectionWeight>0.12</rootSelectionWeight>
+    <rootMinPoints>600</rootMinPoints>
+    <expireDaysRange>5~8</expireDaysRange>
+    <questNameRules><rulesStrings><li>questName->Contain SCP-106</li></rulesStrings></questNameRules>
+    <questDescriptionRules><rulesStrings>
+      <li>questDescription->A nearby Foundation sector has lost containment of SCP-106. This assignment unlocks a 300-point chamber research project. Research it, prepare an empty powered containment chamber, then activate the Larry return protocol and choose a colonist or prisoner as bait. The bait will remain inside. SCP-106 appears after loading, approaches slowly and can pass through walls with a delay. Once it reaches the chamber, it is contained and the bait dies.</li>
+    </rulesStrings></questDescriptionRules>
+    <root Class="QuestNode_Sequence"><nodes>
+      <li Class="QuestNode_GetMap" />
+      <li Class="ScpFoundation.Storytelling.QuestNode_Scp106Recovery" />
+      <li Class="QuestNode_Signal">
+        <inSignal>Scp106Captured</inSignal>
+        <node Class="QuestNode_Sequence"><nodes>
+          <li Class="QuestNode_Letter"><label TKey="SCP_106RecoveryCompleteTitle">SCP-106 contained</label><text TKey="SCP_106RecoveryCompleteBody">SCP-106 entered the prepared chamber. The bait died during containment.</text></li>
+          <li Class="QuestNode_End"><outcome>Success</outcome></li>
+        </nodes></node>
+      </li>
+      <li Class="QuestNode_Signal">
+        <inSignal>Scp106Escaped</inSignal>
+        <node Class="QuestNode_Sequence"><nodes>
+          <li Class="QuestNode_Letter"><label TKey="SCP_106RecoveryEscapedTitle">SCP-106 lost</label><text TKey="SCP_106RecoveryEscapedBody">SCP-106 has left the map without being contained. The Foundation may try another recovery operation.</text></li>
+          <li Class="QuestNode_End"><outcome>Fail</outcome></li>
+        </nodes></node>
+      </li>
+    </nodes></root>
+  </QuestScriptDef>
+</Defs>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <IncidentDef>
+    <defName>SCP_Discover173</defName><label>SCP-173 sighted</label>
+    <workerClass>ScpFoundation.Anomalies.IncidentWorker_Discover173</workerClass>
+    <category>Misc</category><targetTags><li>Map_PlayerHome</li></targetTags>
+    <baseChance>0</baseChance><earliestDay>12</earliestDay><minPopulation>3</minPopulation><minRefireDays>60</minRefireDays>
+    <letterDef>ThreatBig</letterDef><letterLabel>SCP-173 sighted</letterLabel>
+    <letterText>A concrete sculpture has been spotted near the colony. Keep it in direct sight, prepare a lit and secure chamber, and move it to a containment post. It moves quickly when nobody is looking.</letterText>
+  </IncidentDef>
+</Defs>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ScpFoundation.Definitions.ScpDef>
+    <defName>SCP_Anomaly682</defName><label>SCP-682</label>
+    <description>An unusually resilient reptile that regenerates and attacks nearby people.</description>
+    <scpId>SCP-682</scpId><objectClass>Keter</objectClass>
+    <tags><li>Reptile</li><li>Regeneration</li><li>Hostile</li></tags>
+    <requirements>
+      <li Class="ScpFoundation.Containment.RequirementScp682AcidChamber"><id>acidChamber</id></li>
+    </requirements>
+    <breach><graceTicks>4500</graceTicks><deterministicAfterTicks>9000</deterministicAfterTicks><riskPerDay>20</riskPerDay><recoveryPerDay>10</recoveryPerDay></breach>
+    <breachEffects><li Class="ScpFoundation.Runtime.BreachEffectLetter"><bodyKey>SCP_682Breach</bodyKey></li></breachEffects>
+    <research><observedWork>45000</observedWork><partialWork>190000</partialWork><fullWork>480000</fullWork>
+      <observedReportKey>SCP_682ObservedReport</observedReportKey>
+      <partialReportKey>SCP_682PartialReport</partialReportKey>
+      <documentedReportKey>SCP_682DocumentedReport</documentedReportKey>
+      <experimentReportKeys><li>SCP_682Experiment1</li><li>SCP_682Experiment2</li><li>SCP_682Experiment3</li></experimentReportKeys>
+    </research>
+    <source><title>SCP-682</title><author>Dr Gears and Epic Phail Spy</author><url>https://scp-wiki.wikidot.com/scp-682</url><license>CC BY-SA 3.0</license></source>
+  </ScpFoundation.Definitions.ScpDef>
+</Defs>

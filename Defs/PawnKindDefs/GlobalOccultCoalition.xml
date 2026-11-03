@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <PawnKindDef ParentName="SCP_FoundationSecurityBase" Name="SCP_GocOperativeBase" Abstract="True">
+    <defaultFactionDef>SCP_GlobalOccultCoalition</defaultFactionDef>
+    <label>GOC strike operative</label>
+    <labelPlural>GOC strike operatives</labelPlural>
+    <combatPower>215</combatPower>
+    <apparelColor>(1,1,1)</apparelColor>
+    <itemQuality>Excellent</itemQuality>
+    <weaponMoney>5000~8000</weaponMoney>
+    <apparelTags Inherit="False"><li>SCP_GocBlackUniform</li></apparelTags>
+    <apparelRequired Inherit="False"><li>SCP_GocBlackSuit</li><li>SCP_GocBlackHelmet</li></apparelRequired>
+    <apparelMoney>2600~4200</apparelMoney>
+    <techHediffsChance>0.25</techHediffsChance>
+    <techHediffsMoney>1200~2800</techHediffsMoney>
+    <biocodeWeaponChance>0.35</biocodeWeaponChance>
+    <skills><li><skill>Shooting</skill><range>12~18</range></li><li><skill>Melee</skill><range>7~13</range></li></skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="SCP_GocOperativeBase">
+    <defName>SCP_GocOperative</defName>
+    <weaponTags Inherit="False"><li>AssaultRifle</li></weaponTags>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="SCP_GocOperativeBase">
+    <defName>SCP_GocHkOperative</defName>
+    <label>GOC carbine operative</label>
+    <labelPlural>GOC carbine operatives</labelPlural>
+    <weaponTags Inherit="False"><li>SCPNu7HK416</li></weaponTags>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="SCP_GocOperativeBase">
+    <defName>SCP_GocHeavyOperative</defName>
+    <label>GOC heavy operative</label>
+    <labelPlural>GOC heavy operatives</labelPlural>
+    <combatPower>285</combatPower>
+    <apparelTags Inherit="False"><li>SCP_GocWhiteSuit</li></apparelTags>
+    <apparelRequired Inherit="False"><li>SCP_GocWhiteExosuit</li><li>SCP_GocWhiteHelmet</li></apparelRequired>
+    <weaponTags Inherit="False"><li>SCPNu7M249</li></weaponTags>
+    <skills><li><skill>Shooting</skill><range>14~19</range></li><li><skill>Melee</skill><range>9~15</range></li></skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="SCP_FoundationPersonBase">
+    <defName>SCP_GocLiaison</defName>
+    <initialWillRange>2~5</initialWillRange><initialResistanceRange>14~24</initialResistanceRange>
+    <defaultFactionDef>SCP_GlobalOccultCoalition</defaultFactionDef>
+    <label>GOC liaison officer</label>
+    <labelPlural>GOC liaison officers</labelPlural>
+    <trader>true</trader>
+    <combatPower>80</combatPower>
+    <isFighter>false</isFighter>
+    <weaponTags Inherit="False"><li>Revolver</li></weaponTags>
+    <weaponMoney>350~600</weaponMoney>
+    <apparelColor>(1,1,1)</apparelColor>
+    <apparelTags Inherit="False"><li>SCP_GocBlackUniform</li></apparelTags>
+    <apparelRequired Inherit="False"><li>SCP_GocBlackSuit</li><li>SCP_GocBlackHelmet</li></apparelRequired>
+    <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+    <apparelMoney>1700~2300</apparelMoney>
+    <skills><li><skill>Social</skill><range>9~17</range></li><li><skill>Intellectual</skill><range>6~13</range></li></skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="SCP_FoundationPersonBase">
+    <defName>SCP_GocResearcher</defName>
+    <defaultFactionDef>SCP_GlobalOccultCoalition</defaultFactionDef>
+    <label>GOC researcher</label><labelPlural>GOC researchers</labelPlural>
+    <isFighter>false</isFighter><combatPower>45</combatPower>
+    <initialWillRange>2~5</initialWillRange><initialResistanceRange>14~24</initialResistanceRange>
+    <apparelRequired><li>Apparel_BasicShirt</li><li>Apparel_Pants</li><li>SCP_ResearchCoat</li></apparelRequired>
+    <apparelMoney>600~1100</apparelMoney>
+    <skills><li><skill>Intellectual</skill><range>9~16</range></li><li><skill>Medicine</skill><range>6~12</range></li></skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="SCP_FoundationPersonBase">
+    <defName>SCP_GocCommander</defName>
+    <initialWillRange>6~9</initialWillRange><initialResistanceRange>28~42</initialResistanceRange>
+    <defaultFactionDef>SCP_GlobalOccultCoalition</defaultFactionDef>
+    <label>GOC under-secretary</label>
+    <labelPlural>GOC under-secretaries</labelPlural>
+    <factionLeader>true</factionLeader>
+    <minGenerationAge>35</minGenerationAge>
+    <combatPower>145</combatPower>
+    <apparelColor>(1,1,1)</apparelColor>
+    <apparelTags Inherit="False"><li>SCP_GocBlackUniform</li></apparelTags>
+    <isFighter>true</isFighter>
+    <itemQuality>Excellent</itemQuality>
+    <weaponTags><li>SCPNu7HK416</li></weaponTags>
+    <weaponMoney>5000~8000</weaponMoney>
+    <apparelRequired Inherit="False"><li>SCP_GocBlackSuit</li><li>SCP_GocBlackHelmet</li></apparelRequired>
+    <apparelMoney>2400~3800</apparelMoney>
+    <skills><li><skill>Social</skill><range>12~19</range></li><li><skill>Shooting</skill><range>10~16</range></li><li><skill>Intellectual</skill><range>8~15</range></li></skills>
+  </PawnKindDef>
+</Defs>

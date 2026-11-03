@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThoughtDef>
+    <defName>SCP_294BestDrink</defName><thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>2</durationDays><stackLimit>1</stackLimit>
+    <stages><li><label>the best drink I ever had</label><description>Nothing else has ever tasted so wonderful.</description><baseMoodEffect>15</baseMoodEffect></li></stages>
+  </ThoughtDef>
+</Defs>

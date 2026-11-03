@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="BuildingBase">
+    <defName>SCP_093ArchiveConsole</defName>
+    <label>red world archive</label>
+    <description>A battered terminal that still holds a partial record of the evacuation. Send a colonist to recover it.</description>
+    <thingClass>Building</thingClass><size>(1,1)</size><rotatable>false</rotatable>
+    <passability>Impassable</passability><fillPercent>1</fillPercent>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <graphicData><texPath>Things/Building/ScpFoundationTerminal</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>(1,1)</drawSize></graphicData>
+    <statBases><MaxHitPoints>180</MaxHitPoints><Flammability>0</Flammability></statBases>
+    <destroyable>false</destroyable><useHitPoints>false</useHitPoints>
+    <building><deconstructible>false</deconstructible></building>
+    <comps><li Class="ScpFoundation.Anomalies.CompProperties_Scp093Archive" /></comps>
+  </ThingDef>
+</Defs>

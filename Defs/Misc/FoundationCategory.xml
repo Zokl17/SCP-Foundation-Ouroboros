@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- RimWorld 1.6: after Structure (700), before Production (600). -->
+  <DesignationCategoryDef>
+    <defName>SCPFoundation</defName>
+    <label>Foundation</label>
+    <order>695</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+  </DesignationCategoryDef>
+</Defs>

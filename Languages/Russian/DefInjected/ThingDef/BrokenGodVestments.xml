@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_BrokenGodVestment.label>заводное облачение</SCP_BrokenGodVestment.label>
+  <SCP_BrokenGodVestment.description>Светлое облачение с латунными механизмами, которое носят служители Церкви Разбитого Бога.</SCP_BrokenGodVestment.description>
+  <SCP_BrokenGodMask.label>механическая ритуальная маска</SCP_BrokenGodMask.label>
+  <SCP_BrokenGodMask.description>Капюшон и механическая маска с латунным окуляром для адептов Церкви.</SCP_BrokenGodMask.description>
+  <SCP_BrokenGodGuardArmor.label>доспех стража реликвария</SCP_BrokenGodGuardArmor.label>
+  <SCP_BrokenGodGuardArmor.description>Латунные механические пластины поверх церемониального табарда. Стражи Церкви носят такие доспехи во время возвращения частей своего бога.</SCP_BrokenGodGuardArmor.description>
+</LanguageData>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_CollectorEstateRecovery.questNameRules.rulesStrings><li>questName->Коллекция безумца</li></SCP_CollectorEstateRecovery.questNameRules.rulesStrings>
+  <SCP_CollectorEstateRecovery.questDescriptionRules.rulesStrings><li>questDescription->По записям Фонда, одержимый коллекционер собрал в охраняемом доме четыре аномальных предмета: SCP-067, SCP-012, SCP-316 и красный диск SCP-093. Все четыре лежат в пласталевом отсеке слева от центрального зала. Это поручение открывает исследование рамы зеркала SCP-093. Доставьте предметы в колонию. Для прохода через SCP-093 разместите диск и зеркало в одной закрытой комнате. Не изучайте SCP-012 при ярком свете.</li></SCP_CollectorEstateRecovery.questDescriptionRules.rulesStrings>
+</LanguageData>

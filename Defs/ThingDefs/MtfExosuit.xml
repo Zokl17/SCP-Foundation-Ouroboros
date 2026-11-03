@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="ArmorMachineableBase">
+    <defName>SCP_MtfExosuit</defName><label>MTF XPA-M6 exosuit</label>
+    <description>A sealed graphite-black powered exosuit issued to Mobile Task Force assault teams. Its segmented plates protect the torso, arms and legs while the reinforced frame carries their weight.</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData><texPath>Things/Item/Apparel/ScpMtfExosuit</texPath><graphicClass>Graphic_Single</graphicClass><shaderType>Cutout</shaderType><drawSize>(1.2,1.2)</drawSize></graphicData>
+    <recipeMaker><researchPrerequisite>SCP_FoundationPoweredArmor</researchPrerequisite><unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <skillRequirements><Crafting>8</Crafting></skillRequirements><recipeUsers Inherit="False"><li>SCP_FoundationCoreBench</li></recipeUsers><displayPriority>214</displayPriority></recipeMaker>
+    <statBases><WorkToMake>82500</WorkToMake><MarketValue>5600</MarketValue><MaxHitPoints>650</MaxHitPoints><Mass>16</Mass><Flammability>0.35</Flammability>
+      <ArmorRating_Sharp>1.32</ArmorRating_Sharp><ArmorRating_Blunt>0.55</ArmorRating_Blunt><ArmorRating_Heat>0.66</ArmorRating_Heat>
+      <Insulation_Cold>77</Insulation_Cold><Insulation_Heat>13.2</Insulation_Heat><EquipDelay>17</EquipDelay></statBases>
+    <equippedStatOffsets><MoveSpeed>-0.5</MoveSpeed><VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.33</VacuumResistance></equippedStatOffsets>
+    <thingCategories><li>ApparelArmor</li></thingCategories>
+    <costList><Plasteel>225</Plasteel><Synthread>45</Synthread><Uranium>30</Uranium><ComponentSpacer>6</ComponentSpacer></costList>
+    <apparel><bodyPartGroups><li>Torso</li><li>Neck</li><li>Shoulders</li><li>Arms</li><li>Legs</li></bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/MtfExosuit/MtfExosuit</wornGraphicPath>
+      <drawData><scale>1.125</scale><dataSouth><offset>(0,0,-0.03)</offset></dataSouth>
+        <dataNorth><offset>(0,0,-0.03)</offset><layer>80</layer></dataNorth>
+        <dataEast><offset>(0,0,-0.03)</offset></dataEast><dataWest><offset>(0,0,-0.03)</offset></dataWest></drawData>
+      <layers><li>Middle</li><li>Shell</li></layers><tags><li>SCP_FoundationArmor</li></tags>
+      <defaultOutfitTags><li>Soldier</li><li>Spacefarer</li></defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect><soundWear>Wear_PowerArmor</soundWear><soundRemove>Remove_PowerArmor</soundRemove></apparel>
+    <colorGenerator Class="ColorGenerator_Options"><options><li><only>(1,1,1)</only></li></options></colorGenerator>
+    <tradeTags><li>HiTechArmor</li><li>Armor</li></tradeTags>
+  </ThingDef>
+  <ThingDef ParentName="ArmorHelmetMakeableBase">
+    <defName>SCP_MtfExoHelmet</defName><label>MTF XH-P6 helmet</label>
+    <description>A fully enclosed helmet for the XPA-M6 exosuit. Its angular shell, armored visor and protected communications complete the MTF assault kit.</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData><texPath>Things/Item/Apparel/ScpMtfExoHelmet</texPath><graphicClass>Graphic_Single</graphicClass><shaderType>Cutout</shaderType><drawSize>(0.95,0.95)</drawSize></graphicData>
+    <recipeMaker><researchPrerequisite>SCP_FoundationPoweredArmor</researchPrerequisite><unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+      <skillRequirements><Crafting>8</Crafting></skillRequirements><recipeUsers Inherit="False"><li>SCP_FoundationCoreBench</li></recipeUsers><displayPriority>215</displayPriority></recipeMaker>
+    <statBases><WorkToMake>28875</WorkToMake><MarketValue>2200</MarketValue><MaxHitPoints>350</MaxHitPoints><Mass>2.2</Mass><Flammability>0.35</Flammability>
+      <ArmorRating_Sharp>1.32</ArmorRating_Sharp><ArmorRating_Blunt>0.55</ArmorRating_Blunt><ArmorRating_Heat>0.66</ArmorRating_Heat>
+      <Insulation_Cold>4.4</Insulation_Cold><Insulation_Heat>2.2</Insulation_Heat><EquipDelay>6</EquipDelay></statBases>
+    <equippedStatOffsets><VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.748</VacuumResistance></equippedStatOffsets>
+    <thingCategories><li>ApparelArmor</li></thingCategories>
+    <costList><Plasteel>75</Plasteel><ComponentSpacer>2</ComponentSpacer></costList>
+    <apparel><countsAsClothingForNudity>false</countsAsClothingForNudity><bodyPartGroups><li>FullHead</li></bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/MtfExoHelmet/MtfExoHelmet</wornGraphicPath>
+      <drawData><scale>0.725</scale><dataSouth><offset>(0,0,-0.07)</offset></dataSouth>
+        <dataNorth><offset>(0,0,-0.07)</offset></dataNorth>
+        <dataEast><offset>(0.04,0,-0.08)</offset></dataEast><dataWest><offset>(-0.04,0,-0.08)</offset></dataWest></drawData>
+      <layers><li>Overhead</li></layers><tags><li>SCP_FoundationArmor</li></tags>
+      <defaultOutfitTags><li>Soldier</li><li>Spacefarer</li></defaultOutfitTags><useDeflectMetalEffect>true</useDeflectMetalEffect></apparel>
+    <colorGenerator Class="ColorGenerator_Options"><options><li><only>(1,1,1)</only></li></options></colorGenerator>
+    <tradeTags><li>HiTechArmor</li><li>Armor</li></tradeTags>
+  </ThingDef>
+</Defs>

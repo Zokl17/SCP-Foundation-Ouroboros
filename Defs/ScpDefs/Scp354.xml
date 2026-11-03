@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ScpFoundation.Definitions.ScpDef>
+    <defName>SCP_Anomaly354</defName><label>SCP-354 — Red Pool</label><scpId>SCP-354</scpId>
+    <objectClass>Keter</objectClass><archiveOnly>true</archiveOnly>
+    <description>A large, immobile pool of dark red liquid.</description>
+    <research><observedWork>30000</observedWork><partialWork>150000</partialWork><fullWork>420000</fullWork>
+      <observedReportKey>SCP_354ObservedReport</observedReportKey><partialReportKey>SCP_354PartialReport</partialReportKey><documentedReportKey>SCP_354DocumentedReport</documentedReportKey>
+      <experimentReportKeys><li>SCP_354Experiment1</li><li>SCP_354Experiment2</li><li>SCP_354Experiment3</li></experimentReportKeys></research>
+    <source><title>SCP-354</title><author>Dave Rapp</author><url>https://scp-wiki.wikidot.com/scp-354</url><license>CC BY-SA 3.0</license></source>
+  </ScpFoundation.Definitions.ScpDef>
+</Defs>

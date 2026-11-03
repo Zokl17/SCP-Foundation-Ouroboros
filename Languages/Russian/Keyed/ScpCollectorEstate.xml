@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_CollectorRecoveredTitle>Коллекция изъята</SCP_CollectorRecoveredTitle>
+  <SCP_CollectorRecoveredBody>SCP-067, SCP-012, SCP-316 и SCP-093 доставлены в колонию. Для открытия прохода разместите диск и зеркало SCP-093 в одной закрытой комнате.</SCP_CollectorRecoveredBody>
+  <SCP_CollectorQuestUnavailable>Задание с коллекцией сейчас недоступно.</SCP_CollectorQuestUnavailable>
+  <SCP_CollectorQuestOffered>Предложено задание по изъятию коллекции.</SCP_CollectorQuestOffered>
+</LanguageData>

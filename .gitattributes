@@ -1,0 +1,13 @@
+# Preserve shipped runtime files byte-for-byte (including map data).
+* -text
+*.md text eol=lf
+*.yml text eol=lf
+.gitattributes text eol=lf
+.gitignore text eol=lf
+*.bin binary
+*.png binary
+*.jpg binary
+*.ogg binary
+*.mp3 binary
+*.wav binary
+*.dll binary

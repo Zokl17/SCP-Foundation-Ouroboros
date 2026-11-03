@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_650ReturnArchived>SCP-650 передан Фонду. Полное досье и записи экспериментов сохранены для чтения.</SCP_650ReturnArchived>
+  <SCP_650ReturnArrivedTitle>Шаттл готов принять SCP-650</SCP_650ReturnArrivedTitle>
+  <SCP_650ReturnArrivedBody>Шаттл Фонда приземлился и будет ждать SCP-650. Выберите колониста, нажмите ПКМ на Чёрную статую и выберите «Погрузить SCP-650 в шаттл Фонда». Доверие начислится только после отправления с объектом.</SCP_650ReturnArrivedBody>
+  <SCP_650ReturnLoad>Погрузить SCP-650 в шаттл Фонда</SCP_650ReturnLoad>
+  <SCP_650ReturnCannotLoad>нужен свободный колонист с доступом к статуе и шаттлу</SCP_650ReturnCannotLoad>
+</LanguageData>

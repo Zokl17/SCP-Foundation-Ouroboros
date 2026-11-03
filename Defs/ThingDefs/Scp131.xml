@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Legacy items remain loadable and turn into pathfinding pawns on their next tick. -->
+  <ThingDef>
+    <defName>SCP_131A</defName><label>SCP-131-A eye pod</label>
+    <description>A curious, friendly orange eye pod. It never blinks and may follow a colonist it has befriended.</description>
+    <thingClass>ScpFoundation.Anomalies.Thing_Scp131</thingClass><category>Item</category><altitudeLayer>Item</altitudeLayer>
+    <tickerType>Normal</tickerType><selectable>true</selectable><stackLimit>1</stackLimit>
+    <alwaysHaulable>false</alwaysHaulable><designateHaulable>false</designateHaulable><rotatable>false</rotatable>
+    <passability>Standable</passability><fillPercent>0</fillPercent>
+    <graphicData><texPath>Things/Item/ScpArtifacts/Scp131A</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>(1.4,1.6)</drawSize></graphicData>
+    <statBases><Mass>2</Mass><Flammability>0</Flammability><MarketValue>0</MarketValue></statBases><tradeability>None</tradeability>
+  </ThingDef>
+  <ThingDef>
+    <defName>SCP_131B</defName><label>SCP-131-B eye pod</label>
+    <description>A curious, friendly yellow eye pod. It never blinks and may follow a colonist it has befriended.</description>
+    <thingClass>ScpFoundation.Anomalies.Thing_Scp131</thingClass><category>Item</category><altitudeLayer>Item</altitudeLayer>
+    <tickerType>Normal</tickerType><selectable>true</selectable><stackLimit>1</stackLimit>
+    <alwaysHaulable>false</alwaysHaulable><designateHaulable>false</designateHaulable><rotatable>false</rotatable>
+    <passability>Standable</passability><fillPercent>0</fillPercent>
+    <graphicData><texPath>Things/Item/ScpArtifacts/Scp131B</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>(1.4,1.6)</drawSize></graphicData>
+    <statBases><Mass>2</Mass><Flammability>0</Flammability><MarketValue>0</MarketValue></statBases><tradeability>None</tradeability>
+  </ThingDef>
+  <ThingDef ParentName="AnimalThingBase" Name="SCP_131PawnBase" Abstract="True">
+    <thingClass>ScpFoundation.Anomalies.Pawn_Scp131</thingClass>
+    <statBases><MoveSpeed>3.2</MoveSpeed><Mass>2</Mass><MarketValue>0</MarketValue><Wildness>0</Wildness><Flammability>0</Flammability></statBases>
+    <race>
+      <body>QuadrupedAnimalWithPawsAndTail</body><baseBodySize>0.25</baseBodySize><baseHealthScale>0.6</baseHealthScale>
+      <foodType>None</foodType><baseHungerRate>0</baseHungerRate><needsRest>false</needsRest>
+      <hasGenders>false</hasGenders><hasCorpse>false</hasCorpse><canBecomeShambler>false</canBecomeShambler>
+      <renderTree>Misc</renderTree><thinkTreeMain>SCP_131Wander</thinkTreeMain><thinkTreeConstant>SCP_AnomalyConstant</thinkTreeConstant>
+      <lifeStageAges Inherit="False"><li><def>AnimalAdult</def><minAge>0</minAge></li></lifeStageAges>
+    </race>
+    <tools Inherit="False" />
+    <tradeTags Inherit="False" />
+  </ThingDef>
+  <ThingDef ParentName="SCP_131PawnBase">
+    <defName>SCP_131APawn</defName><label>SCP-131-A eye pod</label>
+    <description>A friendly orange eye pod. It never blinks and can follow a familiar colonist.</description>
+  </ThingDef>
+  <ThingDef ParentName="SCP_131PawnBase">
+    <defName>SCP_131BPawn</defName><label>SCP-131-B eye pod</label>
+    <description>A friendly yellow eye pod. It never blinks and can follow a familiar colonist.</description>
+  </ThingDef>
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>SCP_131APawn</defName><label>SCP-131-A eye pod</label><race>SCP_131APawn</race><combatPower>0</combatPower><ecoSystemWeight>0</ecoSystemWeight>
+    <lifeStages><li><bodyGraphicData><texPath>Things/Item/ScpArtifacts/Scp131A</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>(1.4,1.6)</drawSize></bodyGraphicData></li></lifeStages>
+  </PawnKindDef>
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>SCP_131BPawn</defName><label>SCP-131-B eye pod</label><race>SCP_131BPawn</race><combatPower>0</combatPower><ecoSystemWeight>0</ecoSystemWeight>
+    <lifeStages><li><bodyGraphicData><texPath>Things/Item/ScpArtifacts/Scp131B</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>(1.4,1.6)</drawSize></bodyGraphicData></li></lifeStages>
+  </PawnKindDef>
+</Defs>

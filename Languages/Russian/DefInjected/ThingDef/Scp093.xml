@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_093Disc.label>диск SCP-093</SCP_093Disc.label>
+  <SCP_093Disc.description>Красный гравированный диск открывает проход через зеркало. Разместите диск и зеркало SCP-093 в одной закрытой комнате на базе, затем прикажите одной пешке приложить диск к зеркалу. Пост содержания нужен только для изучения диска.</SCP_093Disc.description>
+  <SCP_093Mirror.label>зеркало SCP-093</SCP_093Mirror.label>
+  <SCP_093Mirror.description>Пока это обычная рама. Постройте её в одной закрытой комнате с диском SCP-093 на базе. Одна пешка может приложить диск к зеркалу и войти в другой мир. После её возвращения отсоедините диск, чтобы закрыть проход.</SCP_093Mirror.description>
+  <SCP_093MirrorExit.label>обратное зеркало SCP-093</SCP_093MirrorExit.label>
+  <SCP_093MirrorExit.description>Проход обратно через зеркало SCP-093.</SCP_093MirrorExit.description>
+</LanguageData>

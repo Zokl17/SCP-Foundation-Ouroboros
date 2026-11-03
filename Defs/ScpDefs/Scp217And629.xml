@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ScpFoundation.Definitions.ScpDef>
+    <defName>SCP_Anomaly217</defName><label>SCP-217</label><scpId>SCP-217</scpId>
+    <objectClass>Keter</objectClass><archiveOnly>true</archiveOnly>
+    <description>A contagious clockwork virus. The colony holds only one sealed sample from the Church cache.</description>
+    <source><title>SCP-217</title><author>Dr Gears</author><url>https://scp-wiki.wikidot.com/scp-217</url><license>CC BY-SA 3.0</license></source>
+  </ScpFoundation.Definitions.ScpDef>
+  <ScpFoundation.Definitions.ScpDef>
+    <defName>SCP_Anomaly629</defName><label>SCP-629</label><scpId>SCP-629</scpId>
+    <objectClass>Safe</objectClass><archiveOnly>true</archiveOnly>
+    <description>Mr. Brass is a sentient modular brass humanoid. Only detached parts of his body were recovered from the Church cache.</description>
+    <research><observedWork>1200</observedWork><partialWork>3600</partialWork><fullWork>9000</fullWork>
+      <observedReportKey>SCP_629ObservedReport</observedReportKey>
+      <partialReportKey>SCP_629PartialReport</partialReportKey>
+      <documentedReportKey>SCP_629DocumentedReport</documentedReportKey>
+    </research>
+    <source><title>SCP-629</title><author>SCP Wiki contributors</author><url>https://scpfoundation.net/scp-629</url><license>CC BY-SA 3.0</license></source>
+  </ScpFoundation.Definitions.ScpDef>
+</Defs>

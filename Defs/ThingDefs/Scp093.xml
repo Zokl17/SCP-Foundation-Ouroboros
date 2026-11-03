@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef>
+    <defName>SCP_093Disc</defName><label>SCP-093 disc</label>
+    <description>A red engraved disc that permits passage through a mirror. Place the disc and an SCP-093 mirror in the same enclosed room at your colony, then order one colonist to press the disc against the mirror. A containment post is only needed to study the disc.</description>
+    <thingClass>ThingWithComps</thingClass><category>Item</category><altitudeLayer>Item</altitudeLayer>
+    <tickerType>Rare</tickerType><selectable>true</selectable><stackLimit>1</stackLimit>
+    <alwaysHaulable>true</alwaysHaulable><designateHaulable>false</designateHaulable><rotatable>false</rotatable>
+    <graphicData><texPath>Things/Item/ScpArtifacts/Scp093Disc</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>0.9</drawSize></graphicData>
+    <statBases><MaxHitPoints>120</MaxHitPoints><Mass>0.5</Mass><MarketValue>0</MarketValue><Flammability>0</Flammability></statBases>
+    <tradeability>None</tradeability>
+    <comps>
+      <li Class="ScpFoundation.Runtime.CompProperties_Scp"><anomaly>SCP_Anomaly093</anomaly><requireCapture>true</requireCapture></li>
+      <li Class="ScpFoundation.Interactions.CompProperties_ScpInteraction" />
+      <li Class="ScpFoundation.Anomalies.CompProperties_Scp093DiscEntry" />
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="BuildingBase">
+    <defName>SCP_093Mirror</defName><label>SCP-093 mirror frame</label>
+    <description>An inactive mirror frame. Build it in the same enclosed room as the SCP-093 disc at your colony. One colonist can press the disc against it and enter the other world. Detach the disc after their return to close the passage.</description>
+    <thingClass>MapPortal</thingClass><size>(1,1)</size><rotatable>false</rotatable>
+    <designationCategory>SCPFoundation</designationCategory><uiOrder>1600</uiOrder>
+    <researchPrerequisites><li>SCP_093MirrorResearch</li></researchPrerequisites>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded><passability>Standable</passability>
+    <destroyable>false</destroyable><useHitPoints>false</useHitPoints><tickerType>Normal</tickerType>
+    <graphicData><texPath>Things/Building/Scp093Mirror</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>(1.6,1.8)</drawSize></graphicData>
+    <statBases><WorkToBuild>2200</WorkToBuild><Flammability>0</Flammability></statBases>
+    <costList><Steel>80</Steel><ComponentIndustrial>4</ComponentIndustrial></costList>
+    <building><deconstructible>false</deconstructible><isTargetable>false</isTargetable></building>
+    <portal>
+      <pocketMapGenerator>SCP_093RedWorld</pocketMapGenerator><exitDef>SCP_093MirrorExit</exitDef>
+      <pocketMapSize>70</pocketMapSize>
+      <enteredLetterDef>NeutralEvent</enteredLetterDef>
+    </portal>
+    <comps><li Class="ScpFoundation.Anomalies.CompProperties_Scp093Mirror" /></comps>
+  </ThingDef>
+  <ThingDef ParentName="PocketMapExit">
+    <defName>SCP_093MirrorExit</defName><label>SCP-093 return mirror</label>
+    <description>The way back through SCP-093's mirror.</description>
+    <size>(1,1)</size><terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <graphicData><texPath>Things/Building/Scp093Mirror</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>(1.6,1.8)</drawSize></graphicData>
+  </ThingDef>
+</Defs>

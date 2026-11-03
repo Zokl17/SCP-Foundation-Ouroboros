@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_Concrete.label>бетонные блоки</SCP_Concrete.label>
+  <SCP_Concrete.description>Строительные блоки из измельчённых обломков и минерального связующего. Недорогой материал для камер содержания. Стены из этих блоков соответствуют требованию бетонных стен.</SCP_Concrete.description>
+  <SCP_Concrete.stuffProps.stuffAdjective>бетонный</SCP_Concrete.stuffProps.stuffAdjective>
+  <SCP_ConcreteMixer.label>электрическая бетономешалка</SCP_ConcreteMixer.label>
+  <SCP_ConcreteMixer.description>Крупная электрическая установка с загрузочной воронкой и вращающимся барабаном. Перерабатывает обычные каменные обломки в бетонные строительные блоки.</SCP_ConcreteMixer.description>
+</LanguageData>

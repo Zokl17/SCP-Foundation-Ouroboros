@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- The GOC reuses the stable Core outlander world, diplomacy and raid model.
+       Its dedicated anomaly-destruction operation is implemented separately. -->
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>SCP_GlobalOccultCoalition</defName>
+    <label>Global Occult Coalition</label>
+    <description>A UN-backed coalition of occult and technological organizations committed to protecting humanity from paranormal threats. The Coalition may cooperate with local authorities, but it considers the destruction of dangerous anomalies preferable to indefinite containment.</description>
+    <fixedName>Global Occult Coalition</fixedName>
+    <pawnSingular>GOC operative</pawnSingular>
+    <pawnsPlural>GOC personnel</pawnsPlural>
+    <categoryTag>SCPGlobalOccultCoalition</categoryTag>
+    <listOrderPriority>44</listOrderPriority>
+    <configurationListOrderPriority>6</configurationListOrderPriority>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <maxCountAtGameStart>1</maxCountAtGameStart>
+    <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+    <settlementGenerationWeight>0.42</settlementGenerationWeight>
+    <mustStartOneEnemy>false</mustStartOneEnemy>
+    <naturalEnemy>false</naturalEnemy>
+    <permanentEnemy>false</permanentEnemy>
+    <techLevel>Spacer</techLevel>
+    <basicMemberKind>SCP_GocOperative</basicMemberKind>
+    <fixedLeaderKinds><li>SCP_GocCommander</li></fixedLeaderKinds>
+    <leaderTitle>under-secretary</leaderTitle>
+    <leaderTitleFemale>under-secretary</leaderTitleFemale>
+    <settlementNameMaker>SCP_NamerGocSettlement</settlementNameMaker>
+    <factionIconPath>World/WorldObjects/Expanding/Town</factionIconPath>
+    <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+    <colorSpectrum>
+      <li>(0.08, 0.30, 0.50)</li>
+      <li>(0.12, 0.43, 0.68)</li>
+    </colorSpectrum>
+    <allowedCultures><li>Astropolitan</li></allowedCultures>
+    <canRequestTraders>true</canRequestTraders>
+    <canRequestMilitaryAid>true</canRequestMilitaryAid>
+    <canRequestOrbitalTrader>true</canRequestOrbitalTrader>
+    <canGenerateQuestSites>true</canGenerateQuestSites>
+    <caravanTraderKinds><li>SCP_Caravan_GocArmory</li></caravanTraderKinds>
+    <orbitalTraderKinds><li>SCP_Orbital_GocArsenal</li></orbitalTraderKinds>
+    <visitorTraderKinds><li>Visitor_Outlander_Standard</li></visitorTraderKinds>
+    <baseTraderKinds><li>SCP_Base_GocOperations</li></baseTraderKinds>
+    <pawnGroupMakers Inherit="False">
+      <li>
+        <kindDef>Combat</kindDef>
+        <options>
+          <SCP_GocOperative>12</SCP_GocOperative>
+          <SCP_GocHkOperative>7</SCP_GocHkOperative>
+          <SCP_GocHeavyOperative>5</SCP_GocHeavyOperative>
+          <SCP_GocCommander>1</SCP_GocCommander>
+        </options>
+      </li>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <SCP_GocLiaison>8</SCP_GocLiaison>
+          <SCP_GocOperative>4</SCP_GocOperative>
+          <SCP_GocHkOperative>2</SCP_GocHkOperative>
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders><SCP_GocLiaison>1</SCP_GocLiaison></traders>
+        <carriers><Muffalo>5</Muffalo><Dromedary>3</Dromedary></carriers>
+        <guards><SCP_GocOperative>10</SCP_GocOperative><SCP_GocHkOperative>6</SCP_GocHkOperative></guards>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <SCP_GocLiaison>4</SCP_GocLiaison>
+          <SCP_GocOperative>12</SCP_GocOperative>
+          <SCP_GocHkOperative>7</SCP_GocHkOperative>
+          <SCP_GocHeavyOperative>5</SCP_GocHeavyOperative>
+          <SCP_GocCommander>1</SCP_GocCommander>
+        </options>
+      </li>
+    </pawnGroupMakers>
+  </FactionDef>
+</Defs>

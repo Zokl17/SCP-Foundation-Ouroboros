@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef>
+    <defName>SCP_Statue</defName><label>black statue</label>
+    <description>A featureless dark humanoid figure. Its origin and properties require investigation.</description>
+    <thingClass>ThingWithComps</thingClass><category>Item</category><altitudeLayer>Item</altitudeLayer>
+    <tickerType>Rare</tickerType><selectable>true</selectable><stackLimit>1</stackLimit>
+    <alwaysHaulable>false</alwaysHaulable><designateHaulable>false</designateHaulable><drawGUIOverlay>true</drawGUIOverlay><rotatable>false</rotatable>
+    <graphicData><texPath>Things/Item/Scp650</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>(1.2,1.6)</drawSize></graphicData>
+    <statBases><MaxHitPoints>500</MaxHitPoints><Mass>30</Mass><Flammability>0</Flammability><MarketValue>0</MarketValue></statBases>
+    <tradeability>None</tradeability>
+    <comps>
+      <li Class="ScpFoundation.Runtime.CompProperties_Scp"><anomaly>SCP_Anomaly650</anomaly><requireCapture>true</requireCapture></li>
+      <li Class="ScpFoundation.Interactions.CompProperties_ScpInteraction" />
+      <li Class="ScpFoundation.Anomalies.CompProperties_Scp650" />
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="BuildingBase">
+    <defName>SCP_ContainmentAnchor</defName><label>containment post</label>
+    <description>A marked position for placing a captured anomaly. Build it inside a prepared chamber. It does not suppress anomalous effects or replace personnel.</description>
+    <graphicData><texPath>Things/Building/ScpAnchor</texPath><graphicClass>Graphic_Single</graphicClass></graphicData>
+    <altitudeLayer>FloorEmplacement</altitudeLayer><passability>Standable</passability><fillPercent>0</fillPercent>
+    <building><isEdifice>false</isEdifice></building>
+    <rotatable>false</rotatable><designationCategory>SCPFoundation</designationCategory><uiOrder>1200</uiOrder>
+    <researchPrerequisites><li>SCP_FoundationBasicPost</li></researchPrerequisites>
+    <statBases><MaxHitPoints>150</MaxHitPoints><WorkToBuild>1000</WorkToBuild><Flammability>0</Flammability></statBases>
+    <costList><Steel>30</Steel></costList>
+    <placeWorkers><li>ScpFoundation.Interactions.PlaceWorker_ScpHomePost</li></placeWorkers>
+    <comps><li Class="ScpFoundation.Interactions.CompProperties_ScpPost" /></comps>
+  </ThingDef>
+</Defs>

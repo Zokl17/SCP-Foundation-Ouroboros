@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <QuestScriptDef>
+    <defName>SCP_882WorkshopRaid</defName>
+    <rootSelectionWeight>0.12</rootSelectionWeight>
+    <rootMinPoints>600</rootMinPoints>
+    <expireDaysRange>5~9</expireDaysRange>
+    <questNameRules><rulesStrings><li>questName->Recover SCP-882</li></rulesStrings></questNameRules>
+    <questDescriptionRules><rulesStrings>
+      <li>questDescription->The Chaos Insurgency has found SCP-882 and occupied an abandoned workshop to study it. The Foundation traced their position and asks you to retake the site. This assignment unlocks research for its seawater reservoir. Defeat the guards, recover SCP-882 and prepare the reservoir before bringing it home.</li>
+    </rulesStrings></questDescriptionRules>
+    <root Class="QuestNode_Sequence">
+      <nodes>
+        <li Class="QuestNode_GetMap" />
+        <li Class="QuestNode_GetSiteTile"><storeAs>siteTile</storeAs><preferCloserTiles>true</preferCloserTiles></li>
+        <li Class="ScpFoundation.Storytelling.QuestNode_Scp882SiteSetup" />
+        <li Class="QuestNode_GetDefaultSitePartsParams">
+          <tile>$siteTile</tile><faction>$siteFaction</faction>
+          <sitePartDefs>$sitePartDefs</sitePartDefs><storeSitePartsParamsAs>sitePartsParams</storeSitePartsParamsAs>
+        </li>
+        <li Class="QuestNode_GenerateSite">
+          <sitePartsParams>$sitePartsParams</sitePartsParams>
+          <faction>$siteFaction</faction><tile>$siteTile</tile><storeAs>site</storeAs>
+          <worldObjectDef>SCP_882WorkshopSite</worldObjectDef>
+        </li>
+        <li Class="ScpFoundation.Storytelling.QuestNode_Scp882ClaimSite" />
+        <li Class="QuestNode_SpawnWorldObjects"><worldObjects>$site</worldObjects></li>
+        <li Class="ScpFoundation.Storytelling.QuestNode_RecordScpArrival"><number>882</number></li>
+        <li Class="QuestNode_WorldObjectTimeout">
+          <worldObject>$site</worldObject><isQuestTimeout>true</isQuestTimeout>
+          <delayTicks>1200000</delayTicks><inSignalDisable>site.MapGenerated</inSignalDisable>
+          <destroyOnCleanup>false</destroyOnCleanup>
+          <node Class="QuestNode_End"><outcome>Fail</outcome></node>
+        </li>
+        <li Class="QuestNode_Signal">
+          <inSignal>site.AllEnemiesDefeated</inSignal>
+          <node Class="QuestNode_Sequence"><nodes>
+            <li Class="QuestNode_Letter"><label TKey="SCP_882SiteSecuredLabel">SCP-882 site secured</label><text TKey="SCP_882SiteSecuredText">The insurgents have been defeated. SCP-882 is still at the site: take it with the caravan before leaving.</text></li>
+            <li Class="QuestNode_End"><outcome>Success</outcome></li>
+          </nodes></node>
+        </li>
+        <li Class="QuestNode_Signal">
+          <inSignal>site.Destroyed</inSignal>
+          <node Class="QuestNode_End"><outcome>Fail</outcome></node>
+        </li>
+      </nodes>
+    </root>
+  </QuestScriptDef>
+</Defs>

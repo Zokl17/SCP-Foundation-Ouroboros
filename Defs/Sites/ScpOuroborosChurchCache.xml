@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <SitePartDef>
+    <defName>SCP_OuroborosChurchCachePart</defName>
+    <label>Church assembly cache</label>
+    <description>A guarded cache with dangerous components linked to the 1943 assembly.</description>
+    <workerClass>SitePartWorker</workerClass>
+    <siteTexture>World/WorldObjects/Sites/Outpost</siteTexture>
+    <expandingIconTexture>World/WorldObjects/Expanding/Sites/Outpost</expandingIconTexture>
+    <requiresFaction>true</requiresFaction><considerEnteringAsAttack>true</considerEnteringAsAttack>
+    <approachOrderString>Investigate {0}</approachOrderString>
+    <approachingReportString>Investigating {0}.</approachingReportString>
+    <arrivedLetter>Church guards protect a sealed SCP-217 sample, SCP-629 components and a cipher core. Secure both cargos, copy the records and bring the containers home. Losing any target fails the mission.</arrivedLetter>
+    <arrivedLetterDef>ThreatSmall</arrivedLetterDef>
+    <minMapSize>(250, 1, 250)</minMapSize>
+    <tags><li>SCPOuroborosChurchCache</li></tags>
+  </SitePartDef>
+  <WorldObjectDef ParentName="Site">
+    <defName>SCP_OuroborosChurchCacheSite</defName><label>Church assembly cache</label>
+    <overrideMapSize>(250, 1, 250)</overrideMapSize>
+    <mapGenerator>SCP_OuroborosChurchCacheMap</mapGenerator>
+  </WorldObjectDef>
+  <MapGeneratorDef>
+    <defName>SCP_OuroborosChurchCacheMap</defName>
+    <genSteps><li>ElevationFertility</li><li>Terrain</li>
+      <li>SCP_OuroborosChurchCacheGen</li><li>FindPlayerStartSpot</li><li>Fog</li></genSteps>
+  </MapGeneratorDef>
+  <GenStepDef>
+    <defName>SCP_OuroborosChurchCacheGen</defName><order>400</order>
+    <genStep Class="ScpFoundation.Storytelling.GenStep_ScpChurchCache" />
+  </GenStepDef>
+</Defs>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <PawnKindDef ParentName="BaseMechanoidKind">
+    <defName>SCP_FoundationChimera</defName>
+    <label>Foundation Vanguard</label>
+    <race>SCP_FoundationChimera</race>
+    <defaultFactionDef>SCP_Foundation</defaultFactionDef>
+    <isFighter>false</isFighter>
+    <appearsRandomlyInCombatGroups>false</appearsRandomlyInCombatGroups>
+    <combatPower>100</combatPower>
+    <lifeStages>
+      <li><bodyGraphicData>
+        <texPath>Things/Pawn/Foundation/Chimera/Idle</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <drawSize>(6,4.125)</drawSize>
+      </bodyGraphicData></li>
+    </lifeStages>
+  </PawnKindDef>
+</Defs>

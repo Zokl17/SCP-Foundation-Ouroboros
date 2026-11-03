@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="BuildingBase">
+    <defName>SCP_354Lake</defName>
+    <label>SCP-354 red pool</label>
+    <description>A large, immobile pool of dark red liquid.</description>
+    <thingClass>ScpFoundation.Anomalies.Building_Scp354</thingClass>
+    <size>(17,11)</size><rotatable>false</rotatable><tickerType>Rare</tickerType>
+    <selectable>true</selectable><passability>Impassable</passability><fillPercent>0</fillPercent>
+    <graphicData><texPath>Things/Building/Scp354Lake</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>(17,11)</drawSize></graphicData>
+    <building><deconstructible>false</deconstructible><claimable>false</claimable><isEdifice>false</isEdifice></building>
+    <statBases><MaxHitPoints>99999</MaxHitPoints><Flammability>0</Flammability><MarketValue>0</MarketValue></statBases>
+    <tradeability>None</tradeability>
+  </ThingDef>
+</Defs>

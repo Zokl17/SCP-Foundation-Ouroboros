@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <JobDef>
+    <defName>SCP_093ReadArchive</defName>
+    <driverClass>ScpFoundation.Anomalies.JobDriver_Scp093ReadArchive</driverClass>
+    <reportString>Recovering the red world archive.</reportString>
+    <casualInterruptible>false</casualInterruptible>
+  </JobDef>
+</Defs>

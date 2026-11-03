@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <QuestScriptDef>
+    <defName>SCP_096Recovery</defName>
+    <rootSelectionWeight>0.12</rootSelectionWeight><rootMinPoints>500</rootMinPoints>
+    <expireDaysRange>5~9</expireDaysRange>
+    <questNameRules><rulesStrings><li>questName->Recover SCP-096</li></rulesStrings></questNameRules>
+    <questDescriptionRules><rulesStrings>
+      <li>questDescription->The Foundation located a breached containment outpost. Civilians appear to have seen a photograph of SCP-096; five were killed when it escaped containment. The subject remains inside the base and covers its face while calm, but anyone who sees it becomes a target. Reach the site, incapacitate SCP-096 without looking at its face, and bring it to a prepared chamber at your colony.</li>
+    </rulesStrings></questDescriptionRules>
+    <root Class="QuestNode_Sequence"><nodes>
+      <li Class="QuestNode_GetMap" />
+      <li Class="QuestNode_GetSiteTile"><storeAs>siteTile</storeAs><preferCloserTiles>true</preferCloserTiles></li>
+      <li Class="ScpFoundation.Storytelling.QuestNode_Scp096SiteSetup" />
+      <li Class="QuestNode_GetDefaultSitePartsParams">
+        <tile>$siteTile</tile><faction>$siteFaction</faction>
+        <sitePartDefs>$sitePartDefs</sitePartDefs><storeSitePartsParamsAs>sitePartsParams</storeSitePartsParamsAs>
+      </li>
+      <li Class="QuestNode_GenerateSite">
+        <sitePartsParams>$sitePartsParams</sitePartsParams><faction>$siteFaction</faction>
+        <tile>$siteTile</tile><storeAs>site</storeAs><worldObjectDef>SCP_096RecoverySite</worldObjectDef>
+      </li>
+      <li Class="QuestNode_SpawnWorldObjects"><worldObjects>$site</worldObjects></li>
+      <li Class="ScpFoundation.Storytelling.QuestNode_Scp096TrackRecovery" />
+      <li Class="ScpFoundation.Storytelling.QuestNode_RecordScpArrival"><number>096</number></li>
+      <li Class="QuestNode_WorldObjectTimeout">
+        <worldObject>$site</worldObject><isQuestTimeout>true</isQuestTimeout>
+        <delayTicks>1200000</delayTicks><inSignalDisable>site.MapGenerated</inSignalDisable>
+        <destroyOnCleanup>false</destroyOnCleanup>
+        <node Class="QuestNode_End"><outcome>Fail</outcome></node>
+      </li>
+      <li Class="QuestNode_Signal"><inSignal>Scp096Recovered</inSignal>
+        <node Class="QuestNode_Sequence"><nodes>
+          <li Class="QuestNode_Letter"><label TKey="SCP_096QuestRecoveredTitle">SCP-096 recovered</label><text TKey="SCP_096QuestRecoveredBody">SCP-096 reached your colony. Move it to a roofed containment chamber before it recovers.</text></li>
+          <li Class="QuestNode_End"><outcome>Success</outcome></li>
+        </nodes></node>
+      </li>
+      <li Class="QuestNode_Signal"><inSignal>Scp096Lost</inSignal><node Class="QuestNode_End"><outcome>Fail</outcome></node></li>
+    </nodes></root>
+  </QuestScriptDef>
+</Defs>

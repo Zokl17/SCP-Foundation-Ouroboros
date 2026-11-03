@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="BaseBullet">
+    <defName>SCP_316Light</defName><label>SCP-316 light</label>
+    <thingClass>ScpFoundation.Anomalies.Projectile_Scp316Light</thingClass>
+    <graphicData><texPath>Things/Projectile/ScpShotgunPellet</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>0.16</drawSize></graphicData>
+    <projectile><damageDef>Blunt</damageDef><damageAmountBase>0</damageAmountBase><speed>70</speed></projectile>
+  </ThingDef>
+  <ThingDef ParentName="BaseGun">
+    <defName>SCP_316Lamp</defName><label>SCP-316 — color-draining lamp</label>
+    <description>An aged bronze carbide lamp. Its dense white light gradually drains color and suppresses aggression. Three successful exposures temporarily incapacitate a living target without inflicting weapon damage.</description>
+    <graphicData><texPath>Things/Item/ScpArtifacts/Scp316Lamp</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>(0.8,0.8)</drawSize></graphicData>
+    <soundInteract>Interact_Rifle</soundInteract><tickerType>Normal</tickerType>
+    <tradeability>None</tradeability><smeltable>false</smeltable><relicChance>0</relicChance>
+    <statBases>
+      <MarketValue>1800</MarketValue><Mass>2.2</Mass>
+      <AccuracyTouch>0.95</AccuracyTouch><AccuracyShort>0.9</AccuracyShort>
+      <AccuracyMedium>0.7</AccuracyMedium><AccuracyLong>0.4</AccuracyLong>
+      <RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
+    </statBases>
+    <verbs>
+      <li><verbClass>Verb_Shoot</verbClass><hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>SCP_316Light</defaultProjectile><warmupTime>1.5</warmupTime><range>16</range>
+        <soundCast>PsychicShockLanceCast</soundCast><muzzleFlashScale>6</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags><li>SCP316Unique</li></weaponTags>
+    <comps>
+      <li Class="ScpFoundation.Runtime.CompProperties_Scp"><anomaly>SCP_Anomaly316</anomaly><requireCapture>true</requireCapture></li>
+      <li Class="ScpFoundation.Interactions.CompProperties_ScpInteraction" />
+    </comps>
+  </ThingDef>
+</Defs>

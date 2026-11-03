@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_OuroborosOpening.questNameRules.rulesStrings><li>questName->Зашифрованное досье: «Уроборос»</li></SCP_OuroborosOpening.questNameRules.rulesStrings>
+  <SCP_OuroborosOpening.questDescriptionRules.rulesStrings><li>questDescription->После установления связи с Фондом терминал получил закрытый фрагмент архива с меткой 001. Примите задание и держите терминал связи Фонда в этом поселении включённым суммарно одни сутки для расшифровки. При отключении питания работа приостанавливается. Фрагмент может объяснить, почему внутренний документ O5 скрыли от вашего объекта.</li></SCP_OuroborosOpening.questDescriptionRules.rulesStrings>
+</LanguageData>

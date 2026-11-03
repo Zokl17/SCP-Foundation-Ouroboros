@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_079Recovery.questNameRules.rulesStrings><li>questName->Изъять SCP-079</li></SCP_079Recovery.questNameRules.rulesStrings>
+  <SCP_079Recovery.questDescriptionRules.rulesStrings><li>questDescription->Фонд сообщает о серии атак на инфраструктуру по всему миру. Недавняя попытка проникнуть в засекреченный вычислительный комплекс нового поколения позволила системе защиты отследить источник: небольшой заброшенный дата-центр. Ваша зона ближе всех. Доберитесь до охраняемого здания, изымите старый компьютер и доставьте его в колонию. Не подключайте устройство к сети.</li></SCP_079Recovery.questDescriptionRules.rulesStrings>
+</LanguageData>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ScpFoundation.Definitions.ScpDef>
+    <defName>SCP_Anomaly458</defName><label>SCP-458</label><scpId>SCP-458</scpId>
+    <objectClass>Safe</objectClass><archiveOnly>true</archiveOnly>
+    <description>A cardboard pizza box that produces the preferred pizza of the person who opens it.</description>
+    <source><title>SCP-458</title><author>Palhinuk</author><url>https://scp-wiki.wikidot.com/scp-458</url><license>CC BY-SA 3.0</license></source>
+  </ScpFoundation.Definitions.ScpDef>
+</Defs>

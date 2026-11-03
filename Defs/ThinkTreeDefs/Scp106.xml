@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Constant think trees are checked during other jobs. They must not issue Wait. -->
+  <ThinkTreeDef><defName>SCP_AnomalyConstant</defName><thinkRoot Class="ThinkNode_Priority" /></ThinkTreeDef>
+  <ThinkTreeDef><defName>SCP_106Idle</defName><thinkRoot Class="ScpFoundation.Anomalies.JobGiver_Scp106Idle" /></ThinkTreeDef>
+  <ThinkTreeDef><defName>SCP_049Idle</defName><thinkRoot Class="ScpFoundation.Anomalies.JobGiver_Scp106Idle" /></ThinkTreeDef>
+</Defs>

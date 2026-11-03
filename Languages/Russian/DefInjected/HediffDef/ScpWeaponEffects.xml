@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_WeaponEnemyAnalysis.label>анализ противника</SCP_WeaponEnemyAnalysis.label>
+  <SCP_WeaponEnemyAnalysis.description>Компьютер оружия выявил уязвимости этой цели. Анализ привязан к конкретному оружию и исчезает через час без новых попаданий.</SCP_WeaponEnemyAnalysis.description>
+  <SCP_WeaponTracerMark.label>трассирующая метка</SCP_WeaponTracerMark.label>
+  <SCP_WeaponTracerMark.description>След трассирующего патрона помогает союзникам стрелка прицелиться.</SCP_WeaponTracerMark.description>
+  <SCP_WeaponCryoSlow.label>криогенное замедление</SCP_WeaponCryoSlow.label>
+  <SCP_WeaponCryoSlow.description>Попадание криогенного патрона временно замедлило движение.</SCP_WeaponCryoSlow.description>
+  <SCP_WeaponFlashConcealment.label>скрытая вспышка</SCP_WeaponFlashConcealment.label>
+  <SCP_WeaponFlashConcealment.description>После выстрела в темноте стрелка труднее обнаружить из-за отсутствия видимой вспышки.</SCP_WeaponFlashConcealment.description>
+</LanguageData>

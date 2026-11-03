@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_008GocLab.label>биологическая лаборатория ГОК</SCP_008GocLab.label>
+  <SCP_008GocLab.description>Охраняемая лаборатория ГОК с образцом SCP-008 и экспериментальными существами.</SCP_008GocLab.description>
+  <SCP_008GocLab.approachOrderString>Разведать {0}</SCP_008GocLab.approachOrderString>
+  <SCP_008GocLab.approachingReportString>Разведка: {0}.</SCP_008GocLab.approachingReportString>
+  <SCP_008GocLab.arrivedLetter>Лабораторию ГОК охраняют бойцы. Во время нападения разбилась пробирка с SCP-008 и заразила одного учёного. За дверью заперты пять подопытных существ. Уничтожьте неповреждённый образец или заберите его кейс.</SCP_008GocLab.arrivedLetter>
+</LanguageData>

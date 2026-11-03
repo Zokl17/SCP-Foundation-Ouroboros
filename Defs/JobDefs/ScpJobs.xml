@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <JobDef><defName>SCP_O5MeetingGoto</defName><driverClass>Verse.AI.JobDriver_Goto</driverClass><reportString>moving.</reportString><casualInterruptible>false</casualInterruptible><sleepCanInterrupt>false</sleepCanInterrupt><suspendable>false</suspendable></JobDef>
+  <JobDef><defName>SCP_O5MeetingWait</defName><driverClass>Verse.AI.JobDriver_Wait</driverClass><reportString>standing.</reportString><casualInterruptible>false</casualInterruptible><sleepCanInterrupt>false</sleepCanInterrupt><suspendable>false</suspendable></JobDef>
+  <JobDef><defName>SCP_Capture</defName><driverClass>ScpFoundation.Interactions.JobDriver_ScpCapture</driverClass><reportString>Transporting TargetA to containment.</reportString><casualInterruptible>false</casualInterruptible></JobDef>
+  <JobDef><defName>SCP_173Escort</defName><driverClass>ScpFoundation.Interactions.JobDriver_Scp173Escort</driverClass><reportString>Watching SCP-173 during transport.</reportString><casualInterruptible>false</casualInterruptible></JobDef>
+  <JobDef><defName>SCP_Observe</defName><driverClass>ScpFoundation.Interactions.JobDriver_ScpSession</driverClass><reportString>Observing TargetA.</reportString></JobDef>
+  <JobDef><defName>SCP_Study</defName><driverClass>ScpFoundation.Interactions.JobDriver_ScpSession</driverClass><reportString>Studying TargetA.</reportString></JobDef>
+  <JobDef><defName>SCP_Restore</defName><driverClass>ScpFoundation.Interactions.JobDriver_ScpSession</driverClass><reportString>Restoring containment of TargetA.</reportString></JobDef>
+  <JobDef><defName>SCP_Monitor</defName><driverClass>ScpFoundation.Interactions.JobDriver_ScpMonitor</driverClass><reportString>Monitoring containment cameras.</reportString></JobDef>
+  <JobDef><defName>SCP_ChaosStealObject</defName><driverClass>ScpFoundation.Interactions.JobDriver_ChaosStealObject</driverClass><reportString>Stealing TargetA.</reportString><casualInterruptible>false</casualInterruptible></JobDef>
+  <JobDef><defName>SCP_882RaidStealScp</defName><driverClass>ScpFoundation.Interactions.JobDriver_ChaosStealScp</driverClass><reportString>Recovering TargetA for the Chaos Insurgency.</reportString><casualInterruptible>false</casualInterruptible></JobDef>
+  <JobDef><defName>SCP_882Load</defName><driverClass>ScpFoundation.Anomalies.JobDriver_Scp882</driverClass><reportString>Moving SCP-882 into TargetB.</reportString></JobDef>
+  <JobDef><defName>SCP_127Store</defName><driverClass>ScpFoundation.Anomalies.JobDriver_Scp127Locker</driverClass><reportString>Storing SCP-127 in TargetA.</reportString></JobDef>
+  <JobDef><defName>SCP_127Take</defName><driverClass>ScpFoundation.Anomalies.JobDriver_Scp127Locker</driverClass><reportString>Taking SCP-127 from TargetA.</reportString></JobDef>
+  <JobDef><defName>SCP_882Inspect</defName><driverClass>ScpFoundation.Anomalies.JobDriver_Scp882</driverClass><reportString>Inspecting SCP-882 in TargetA.</reportString></JobDef>
+  <JobDef><defName>SCP_882ReplaceRopes</defName><driverClass>ScpFoundation.Anomalies.JobDriver_Scp882</driverClass><reportString>Replacing SCP-882 ropes in TargetA.</reportString></JobDef>
+  <JobDef><defName>SCP_882Unload</defName><driverClass>ScpFoundation.Anomalies.JobDriver_Scp882</driverClass><reportString>Removing SCP-882 from TargetA.</reportString></JobDef>
+  <JobDef><defName>SCP_106ProtocolBait</defName><driverClass>ScpFoundation.Anomalies.JobDriver_Scp106ProtocolBait</driverClass><reportString>Bringing TargetA to the SCP-106 containment chamber.</reportString><casualInterruptible>false</casualInterruptible></JobDef>
+  <JobDef><defName>SCP_106CarryToChamber</defName><driverClass>ScpFoundation.Anomalies.JobDriver_Scp106Carry</driverClass><reportString>Carrying SCP-106 to containment.</reportString><casualInterruptible>false</casualInterruptible></JobDef>
+  <JobDef><defName>SCP_049CarryToPost</defName><driverClass>ScpFoundation.Anomalies.JobDriver_Scp049Carry</driverClass><reportString>Carrying SCP-049 to containment.</reportString><casualInterruptible>false</casualInterruptible></JobDef>
+  <JobDef><defName>SCP_500EmergencyTreatment</defName><driverClass>ScpFoundation.Storytelling.JobDriver_Scp500EmergencyTreatment</driverClass><reportString>Administering SCP-500 to TargetA.</reportString><casualInterruptible>false</casualInterruptible></JobDef>
+  <JobDef><defName>SCP_999Hug</defName><driverClass>ScpFoundation.Anomalies.JobDriver_Scp999Hug</driverClass><reportString>Hugging SCP-999.</reportString></JobDef>
+  <JobDef><defName>SCP_294Dispense</defName><driverClass>ScpFoundation.Anomalies.JobDriver_Scp294Dispense</driverClass><reportString>Getting a drink from SCP-294.</reportString></JobDef>
+  <JobDef><defName>SCP_294Study</defName><driverClass>ScpFoundation.Anomalies.JobDriver_Scp294Research</driverClass><reportString>Studying SCP-294.</reportString></JobDef>
+  <JobDef><defName>SCP_ArchiveResearch</defName><driverClass>ScpFoundation.Knowledge.JobDriver_ScpArchiveResearch</driverClass><reportString>Researching an SCP dossier.</reportString></JobDef>
+  <JobDef><defName>SCP_OuroborosSignalResearch</defName><driverClass>ScpFoundation.Storytelling.JobDriver_ScpSignalResearch</driverClass><reportString>Analyzing the answering signal.</reportString></JobDef>
+  <JobDef><defName>SCP_OuroborosSignalRead</defName><driverClass>ScpFoundation.Storytelling.JobDriver_ScpSignalRead</driverClass><reportString>Reading the relay recording.</reportString></JobDef>
+  <JobDef><defName>SCP_294Experiment</defName><driverClass>ScpFoundation.Anomalies.JobDriver_Scp294Research</driverClass><reportString>Experimenting with SCP-294.</reportString></JobDef>
+  <JobDef><defName>SCP_294MoveToPost</defName><driverClass>ScpFoundation.Anomalies.JobDriver_Scp294Move</driverClass><reportString>Moving SCP-294 to TargetB.</reportString></JobDef>
+  <JobDef><defName>SCP_294CourierDeliver</defName><driverClass>ScpFoundation.Anomalies.JobDriver_Scp294Courier</driverClass><reportString>Delivering SCP-294 to TargetB.</reportString><casualInterruptible>false</casualInterruptible></JobDef>
+  <JobDef><defName>SCP_294GuardGoto</defName><driverClass>Verse.AI.JobDriver_Goto</driverClass><reportString>moving.</reportString><allowOpportunisticPrefix>true</allowOpportunisticPrefix><carryThingAfterJob>true</carryThingAfterJob><dropThingBeforeJob>false</dropThingBeforeJob><alwaysShowWeapon>true</alwaysShowWeapon></JobDef>
+  <JobDef><defName>SCP_294GuardWait</defName><driverClass>Verse.AI.JobDriver_Wait</driverClass><reportString>standing.</reportString><isIdle>true</isIdle><suspendable>false</suspendable><allowOpportunisticPrefix>true</allowOpportunisticPrefix><carryThingAfterJob>true</carryThingAfterJob><dropThingBeforeJob>false</dropThingBeforeJob><alwaysShowWeapon>true</alwaysShowWeapon></JobDef>
+  <JobDef><defName>SCP_504SpeechTest</defName><driverClass>ScpFoundation.Anomalies.JobDriver_Scp504SpeechTest</driverClass><reportString>Conducting a speech test near TargetA.</reportString></JobDef>
+  <JobDef><defName>SCP_067Draw</defName><driverClass>ScpFoundation.Anomalies.JobDriver_Scp067Draw</driverClass><reportString>Drawing with SCP-067.</reportString></JobDef>
+  <JobDef><defName>SCP_OpenWeaponWorkshop</defName><driverClass>ScpFoundation.Interactions.JobDriver_OpenWeaponWorkshop</driverClass><reportString>Opening the Foundation weapon workshop.</reportString></JobDef>
+</Defs>

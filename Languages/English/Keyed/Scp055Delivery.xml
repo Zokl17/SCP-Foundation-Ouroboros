@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_055CargoNoPost>A free standard containment post is required in the reserve chamber.</SCP_055CargoNoPost>
+  <SCP_055CargoPostOccupied>The post cell holds another item or has another object assigned. Clear the post.</SCP_055CargoPostOccupied>
+  <SCP_055CargoNoPath>The post work cell is unreachable or reserved by another job.</SCP_055CargoNoPath>
+  <SCP_055CargoNoCarrier>No available carrier. Check access, reservations and drafted colonists.</SCP_055CargoNoCarrier>
+  <SCP_055CargoRoomNotClosed>The post must be inside an enclosed room.</SCP_055CargoRoomNotClosed>
+  <SCP_055CargoRoomSmall>The post room is too small: {0} cells, at least {1} required.</SCP_055CargoRoomSmall>
+  <SCP_055CargoRoofMissing>The room roof is incomplete: {0} unroofed cells.</SCP_055CargoRoofMissing>
+  <SCP_055CargoRequirementMissing>Chamber requirement not met: {0}</SCP_055CargoRequirementMissing>
+  <SCP_055CargoNeedRoom>Prepare a free containment post in a fully roofed enclosed room of at least 25 cells, with concrete or Foundation walls and a Foundation two-cell armored door. Do not hold the door open.</SCP_055CargoNeedRoom>
+  <SCP_055CargoArrivedTitle>Sealed cargo delivered</SCP_055CargoArrivedTitle>
+  <SCP_055CargoArrivedBody>The Foundation delivered a wooden crate for the reserve chamber. Its paperwork says only: "Move to a containment post. Research after placement." The contents field is blank.</SCP_055CargoArrivedBody>
+  <SCP_055CargoInspect>Paperwork attached. No information about the contents. Move to a containment post in a prepared reserve chamber.</SCP_055CargoInspect>
+  <SCP_055CargoMoveDesc>Select an employee to carry the crate to a free post in a prepared reserve chamber and complete receipt. Its contents are studied separately.</SCP_055CargoMoveDesc>
+  <SCP_055CargoPlacedTitle>Cargo receipt completed</SCP_055CargoPlacedTitle>
+  <SCP_055CargoPlacedBody>The cargo is in its chamber. The paperwork is signed, but contains no description of its contents. The employee who completed receipt cannot explain what was delivered. Assign a researcher to the post for further work.</SCP_055CargoPlacedBody>
+  <SCP_055CargoRegistered>Receipt completed. Further records are available through the containment post.</SCP_055CargoRegistered>
+</LanguageData>

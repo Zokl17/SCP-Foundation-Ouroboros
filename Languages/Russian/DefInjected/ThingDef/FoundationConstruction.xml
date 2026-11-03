@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_FoundationWall.label>стена Фонда</SCP_FoundationWall.label>
+  <SCP_FoundationWall.description>Бетонная стена со стальной облицовкой. Поддерживает крышу, перекрывает проход и обзор. Подходит для содержания чёрной статуи.</SCP_FoundationWall.description>
+  <SCP_FoundationWallReinforced.label>усиленная стена Фонда</SCP_FoundationWallReinforced.label>
+  <SCP_FoundationWallReinforced.description>Усиленная бетонная стена со стальной облицовкой. Поддерживает крышу, перекрывает проход и обзор. Подходит для содержания чёрной статуи.</SCP_FoundationWallReinforced.description>
+</LanguageData>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="BigCatThingBase">
+    <defName>SCP_354Bat</defName><label>SCP-354-1 winged predator</label>
+    <description>A huge bat-like entity from the red pool. It moves rapidly and attacks with claws and fangs.</description>
+    <thingClass>ScpFoundation.Anomalies.Pawn_Scp354Creature</thingClass>
+    <statBases><MoveSpeed>7.2</MoveSpeed><ArmorRating_Sharp>0.12</ArmorRating_Sharp><Flammability>0.7</Flammability><MarketValue>0</MarketValue></statBases>
+    <tools Inherit="False">
+      <li><label>left claw</label><labelNoLocation>claw</labelNoLocation><capacities><li>Scratch</li></capacities><power>18</power><cooldownTime>1.5</cooldownTime><linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup><surpriseAttack><extraMeleeDamages><li><def>Stun</def><amount>14</amount></li></extraMeleeDamages></surpriseAttack></li>
+      <li><label>right claw</label><labelNoLocation>claw</labelNoLocation><capacities><li>Scratch</li></capacities><power>18</power><cooldownTime>1.5</cooldownTime><linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup><surpriseAttack><extraMeleeDamages><li><def>Stun</def><amount>14</amount></li></extraMeleeDamages></surpriseAttack></li>
+      <li><capacities><li>Bite</li></capacities><power>26</power><cooldownTime>2</cooldownTime><linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup><chanceFactor>0.7</chanceFactor><surpriseAttack><extraMeleeDamages><li><def>Stun</def><amount>14</amount></li></extraMeleeDamages></surpriseAttack></li>
+      <li><label>head</label><capacities><li>Blunt</li></capacities><power>14</power><cooldownTime>2</cooldownTime><linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup><ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable><chanceFactor>0.2</chanceFactor></li>
+    </tools>
+    <race><baseBodySize>1.7</baseBodySize><baseHealthScale>40.5</baseHealthScale></race>
+    <tradeTags Inherit="False" />
+  </ThingDef>
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>SCP_354Bat</defName><label>SCP-354-1 winged predator</label><race>SCP_354Bat</race>
+    <combatPower>2250</combatPower><ecoSystemWeight>0</ecoSystemWeight>
+    <lifeStages>
+      <li><bodyGraphicData><texPath>Things/Pawn/Scp354/Bat</texPath><graphicClass>Graphic_Multi</graphicClass><drawSize>1.5</drawSize></bodyGraphicData></li>
+      <li><bodyGraphicData><texPath>Things/Pawn/Scp354/Bat</texPath><graphicClass>Graphic_Multi</graphicClass><drawSize>2.3</drawSize></bodyGraphicData></li>
+      <li><bodyGraphicData><texPath>Things/Pawn/Scp354/Bat</texPath><graphicClass>Graphic_Multi</graphicClass><drawSize>3.2</drawSize></bodyGraphicData></li>
+    </lifeStages>
+  </PawnKindDef>
+  <ThingDef ParentName="BaseBear">
+    <defName>SCP_354Spined</defName><label>SCP-354-2 spined beast</label>
+    <description>A bear-sized echidna-like entity covered in razor-sharp spines. Bullets are unusually ineffective against its hide.</description>
+    <thingClass>ScpFoundation.Anomalies.Pawn_Scp354Creature</thingClass>
+    <statBases><MoveSpeed>3.6</MoveSpeed><ArmorRating_Sharp>0.9</ArmorRating_Sharp><Flammability>1.5</Flammability><MarketValue>0</MarketValue></statBases>
+    <tools Inherit="False">
+      <li><label>left claw</label><labelNoLocation>claw</labelNoLocation><capacities><li>Scratch</li></capacities><power>27</power><cooldownTime>2</cooldownTime><linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup><surpriseAttack><extraMeleeDamages><li><def>Stun</def><amount>14</amount></li></extraMeleeDamages></surpriseAttack></li>
+      <li><label>right claw</label><labelNoLocation>claw</labelNoLocation><capacities><li>Scratch</li></capacities><power>27</power><cooldownTime>2</cooldownTime><linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup><surpriseAttack><extraMeleeDamages><li><def>Stun</def><amount>14</amount></li></extraMeleeDamages></surpriseAttack></li>
+      <li><capacities><li>Bite</li></capacities><power>38</power><cooldownTime>2.6</cooldownTime><linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup><chanceFactor>0.5</chanceFactor><surpriseAttack><extraMeleeDamages><li><def>Stun</def><amount>14</amount></li></extraMeleeDamages></surpriseAttack></li>
+      <li><label>head</label><capacities><li>Blunt</li></capacities><power>18</power><cooldownTime>2</cooldownTime><linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup><ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable><chanceFactor>0.2</chanceFactor></li>
+    </tools>
+    <race><baseBodySize>2.5</baseBodySize><baseHealthScale>67.5</baseHealthScale></race>
+    <tradeTags Inherit="False" />
+  </ThingDef>
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>SCP_354Spined</defName><label>SCP-354-2 spined beast</label><race>SCP_354Spined</race>
+    <combatPower>3450</combatPower><ecoSystemWeight>0</ecoSystemWeight>
+    <lifeStages>
+      <li><bodyGraphicData><texPath>Things/Pawn/Scp354/Spined</texPath><graphicClass>Graphic_Multi</graphicClass><drawSize>1.5</drawSize></bodyGraphicData></li>
+      <li><bodyGraphicData><texPath>Things/Pawn/Scp354/Spined</texPath><graphicClass>Graphic_Multi</graphicClass><drawSize>2.3</drawSize></bodyGraphicData></li>
+      <li><bodyGraphicData><texPath>Things/Pawn/Scp354/Spined</texPath><graphicClass>Graphic_Multi</graphicClass><drawSize>3.2</drawSize></bodyGraphicData></li>
+    </lifeStages>
+  </PawnKindDef>
+  <ThingDef ParentName="BaseBear">
+    <defName>SCP_354Reptile</defName><label>SCP-354-4 reptile</label>
+    <description>A towering reptilian entity that batters the containment wall and shrugs off ordinary gunfire.</description>
+    <thingClass>ScpFoundation.Anomalies.Pawn_Scp354Creature</thingClass>
+    <statBases><MoveSpeed>4.5</MoveSpeed><ArmorRating_Sharp>0.85</ArmorRating_Sharp><Flammability>0.45</Flammability><MarketValue>0</MarketValue></statBases>
+    <tools Inherit="False">
+      <li><label>left claw</label><labelNoLocation>claw</labelNoLocation><capacities><li>Scratch</li></capacities><power>29</power><cooldownTime>2</cooldownTime><linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup><surpriseAttack><extraMeleeDamages><li><def>Stun</def><amount>14</amount></li></extraMeleeDamages></surpriseAttack></li>
+      <li><label>right claw</label><labelNoLocation>claw</labelNoLocation><capacities><li>Scratch</li></capacities><power>29</power><cooldownTime>2</cooldownTime><linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup><surpriseAttack><extraMeleeDamages><li><def>Stun</def><amount>14</amount></li></extraMeleeDamages></surpriseAttack></li>
+      <li><capacities><li>Bite</li></capacities><power>40</power><cooldownTime>2.6</cooldownTime><linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup><chanceFactor>0.5</chanceFactor><surpriseAttack><extraMeleeDamages><li><def>Stun</def><amount>14</amount></li></extraMeleeDamages></surpriseAttack></li>
+      <li><label>head</label><capacities><li>Blunt</li></capacities><power>20</power><cooldownTime>2</cooldownTime><linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup><ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable><chanceFactor>0.2</chanceFactor></li>
+    </tools>
+    <race><baseBodySize>3.2</baseBodySize><baseHealthScale>6</baseHealthScale></race>
+    <tradeTags Inherit="False" />
+  </ThingDef>
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>SCP_354Reptile</defName><label>SCP-354-4 reptile</label><race>SCP_354Reptile</race>
+    <combatPower>400</combatPower><ecoSystemWeight>0</ecoSystemWeight>
+    <lifeStages>
+      <li><bodyGraphicData><texPath>Things/Pawn/Scp354/Reptile</texPath><graphicClass>Graphic_Multi</graphicClass><drawSize>2</drawSize></bodyGraphicData></li>
+      <li><bodyGraphicData><texPath>Things/Pawn/Scp354/Reptile</texPath><graphicClass>Graphic_Multi</graphicClass><drawSize>3</drawSize></bodyGraphicData></li>
+      <li><bodyGraphicData><texPath>Things/Pawn/Scp354/Reptile</texPath><graphicClass>Graphic_Multi</graphicClass><drawSize>4</drawSize></bodyGraphicData></li>
+    </lifeStages>
+  </PawnKindDef>
+  <ThingDef ParentName="BigCatThingBase">
+    <defName>SCP_354IceCat</defName><label>SCP-354-15 ice cat</label>
+    <description>A nimble feline entity made of blue ice. It leaps at personnel and evades many ranged attacks.</description>
+    <thingClass>ScpFoundation.Anomalies.Pawn_Scp354Creature</thingClass>
+    <statBases><MoveSpeed>7.8</MoveSpeed><ArmorRating_Sharp>0.15</ArmorRating_Sharp><Flammability>0.2</Flammability><MarketValue>0</MarketValue></statBases>
+    <tools Inherit="False">
+      <li><label>left claw</label><labelNoLocation>claw</labelNoLocation><capacities><li>Scratch</li></capacities><power>18</power><cooldownTime>1.5</cooldownTime><linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup><surpriseAttack><extraMeleeDamages><li><def>Stun</def><amount>14</amount></li></extraMeleeDamages></surpriseAttack></li>
+      <li><label>right claw</label><labelNoLocation>claw</labelNoLocation><capacities><li>Scratch</li></capacities><power>18</power><cooldownTime>1.5</cooldownTime><linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup><surpriseAttack><extraMeleeDamages><li><def>Stun</def><amount>14</amount></li></extraMeleeDamages></surpriseAttack></li>
+      <li><capacities><li>Bite</li></capacities><power>26</power><cooldownTime>2</cooldownTime><linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup><chanceFactor>0.7</chanceFactor><surpriseAttack><extraMeleeDamages><li><def>Stun</def><amount>14</amount></li></extraMeleeDamages></surpriseAttack></li>
+      <li><label>head</label><capacities><li>Blunt</li></capacities><power>14</power><cooldownTime>2</cooldownTime><linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup><ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable><chanceFactor>0.2</chanceFactor></li>
+    </tools>
+    <race><baseBodySize>1.1</baseBodySize><baseHealthScale>2</baseHealthScale></race>
+    <tradeTags Inherit="False" />
+  </ThingDef>
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>SCP_354IceCat</defName><label>SCP-354-15 ice cat</label><race>SCP_354IceCat</race>
+    <combatPower>170</combatPower><ecoSystemWeight>0</ecoSystemWeight>
+    <lifeStages>
+      <li><bodyGraphicData><texPath>Things/Pawn/Scp354/IceCat</texPath><graphicClass>Graphic_Multi</graphicClass><drawSize>1</drawSize></bodyGraphicData></li>
+      <li><bodyGraphicData><texPath>Things/Pawn/Scp354/IceCat</texPath><graphicClass>Graphic_Multi</graphicClass><drawSize>1.5</drawSize></bodyGraphicData></li>
+      <li><bodyGraphicData><texPath>Things/Pawn/Scp354/IceCat</texPath><graphicClass>Graphic_Multi</graphicClass><drawSize>2.1</drawSize></bodyGraphicData></li>
+    </lifeStages>
+  </PawnKindDef>
+  <ThingDef ParentName="BigCatThingBase">
+    <defName>SCP_354MagmaCat</defName><label>SCP-354-16 magma cat</label>
+    <description>A feline entity of dark volcanic stone. It ignores personnel unless provoked and attacks SCP-354-15.</description>
+    <thingClass>ScpFoundation.Anomalies.Pawn_Scp354Creature</thingClass>
+    <statBases><MoveSpeed>4.4</MoveSpeed><ArmorRating_Sharp>0.8</ArmorRating_Sharp><Flammability>0</Flammability><MarketValue>0</MarketValue></statBases>
+    <race><baseBodySize>1.4</baseBodySize><baseHealthScale>4</baseHealthScale><predator>false</predator></race>
+    <tradeTags Inherit="False" />
+  </ThingDef>
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>SCP_354MagmaCat</defName><label>SCP-354-16 magma cat</label><race>SCP_354MagmaCat</race>
+    <combatPower>220</combatPower><ecoSystemWeight>0</ecoSystemWeight>
+    <lifeStages>
+      <li><bodyGraphicData><texPath>Things/Pawn/Scp354/MagmaCat</texPath><graphicClass>Graphic_Multi</graphicClass><drawSize>1.1</drawSize></bodyGraphicData></li>
+      <li><bodyGraphicData><texPath>Things/Pawn/Scp354/MagmaCat</texPath><graphicClass>Graphic_Multi</graphicClass><drawSize>1.6</drawSize></bodyGraphicData></li>
+      <li><bodyGraphicData><texPath>Things/Pawn/Scp354/MagmaCat</texPath><graphicClass>Graphic_Multi</graphicClass><drawSize>2.2</drawSize></bodyGraphicData></li>
+    </lifeStages>
+  </PawnKindDef>
+  <ThingDef ParentName="BuildingBase">
+    <defName>SCP_354Tentacles</defName><label>SCP-354-14 tentacles</label>
+    <description>Grasping tentacles extending from the red pool. They strike nearby personnel and eventually withdraw.</description>
+    <thingClass>ScpFoundation.Anomalies.Building_Scp354Tentacles</thingClass>
+    <size>(1,1)</size><rotatable>false</rotatable><tickerType>Rare</tickerType>
+    <passability>Standable</passability><fillPercent>0</fillPercent><selectable>true</selectable>
+    <graphicData><texPath>Things/Pawn/Scp354/Tentacles_south</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>(2.5,2.5)</drawSize></graphicData>
+    <building><isEdifice>false</isEdifice><deconstructible>false</deconstructible><claimable>false</claimable></building>
+    <statBases><MaxHitPoints>260</MaxHitPoints><Flammability>0</Flammability><MarketValue>0</MarketValue></statBases>
+    <tradeability>None</tradeability>
+  </ThingDef>
+  <ThingDef>
+    <defName>SCP_354MagmaStatue</defName><label>cooled SCP-354-16</label>
+    <description>The motionless stone remains of SCP-354-16 after its magma body cooled.</description>
+    <thingClass>ThingWithComps</thingClass><category>Item</category><altitudeLayer>Item</altitudeLayer>
+    <rotatable>false</rotatable><selectable>true</selectable><stackLimit>1</stackLimit>
+    <alwaysHaulable>true</alwaysHaulable><useHitPoints>true</useHitPoints>
+    <graphicData><texPath>Things/Pawn/Scp354/MagmaCat_south</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>(2.2,2.2)</drawSize><color>(105,105,105)</color></graphicData>
+    <statBases><MaxHitPoints>600</MaxHitPoints><Mass>35</Mass><Flammability>0</Flammability><MarketValue>0</MarketValue></statBases>
+    <tradeability>None</tradeability>
+  </ThingDef>
+</Defs>
+

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <QuestScriptDef MayRequire="Ludeon.RimWorld.Royalty">
+    <defName>SCP_O5GreenVisit</defName>
+    <rootSelectionWeight>0</rootSelectionWeight>
+    <rootMinPoints>0</rootMinPoints>
+    <questNameRules><rulesStrings><li>questName->Visit from O5-7 Green</li></rulesStrings></questNameRules>
+    <questDescriptionRules><rulesStrings><li>questDescription->O5-7 Green will visit after the SCP-882 analysis. Prepare an enclosed, fully roofed and lit meeting room of at least 30 cells with impressiveness 60 or higher, a dining table and two seats. A resident researcher with Foundation clearance 4 and Intellectual 12 must be available to accept this assignment. Green and six exosuit guards will arrive by shuttle when everything is ready. Select the researcher and right-click Green to begin the meeting. The conversation takes three accumulated hours together in the room; interruptions pause progress. Its transcript is archived after the meeting, then a shuttle retrieves the delegation.</li></rulesStrings></questDescriptionRules>
+    <root Class="QuestNode_Sequence"><nodes>
+      <li Class="QuestNode_GetMap" />
+      <li Class="ScpFoundation.Storytelling.QuestNode_ScpO5GreenVisit" />
+      <li Class="QuestNode_Signal"><inSignal>O5GreenVisitArrive</inSignal><node Class="QuestNode_Sequence"><nodes>
+        <li Class="QuestNode_SubScript"><def>Util_TransportShip_DropOff</def><parms><contents>$scpO5GreenContents</contents><owningFaction>$scpO5GreenFaction</owningFaction></parms></li>
+      </nodes></node></li>
+      <li Class="QuestNode_Signal"><inSignal>O5GreenVisitPickup</inSignal><node Class="QuestNode_Sequence"><nodes>
+        <li Class="QuestNode_SubScript"><def>Util_TransportShip_Pickup</def><parms><requiredPawns>$scpO5GreenPawns</requiredPawns><owningFaction>$scpO5GreenFaction</owningFaction><leaveDelayTicks>18000</leaveDelayTicks><leaveImmediatelyWhenSatisfied>true</leaveImmediatelyWhenSatisfied></parms></li>
+      </nodes></node></li>
+      <li Class="QuestNode_Signal"><inSignal>O5GreenVisitCompleted</inSignal><node Class="QuestNode_Sequence"><nodes>
+        <li Class="QuestNode_End"><outcome>Success</outcome></li>
+      </nodes></node></li>
+      <li Class="QuestNode_Signal"><inSignal>O5GreenVisitFailed</inSignal><node Class="QuestNode_Sequence"><nodes>
+        <li Class="QuestNode_Letter"><label TKey="SCP_O5GreenFailedTitle">O5-7 visit cancelled</label><text TKey="SCP_O5GreenFailedBody">The visit could not be completed.</text></li>
+        <li Class="QuestNode_End"><outcome>Fail</outcome></li>
+      </nodes></node></li>
+    </nodes></root>
+  </QuestScriptDef>
+</Defs>

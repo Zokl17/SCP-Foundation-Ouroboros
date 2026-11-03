@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <IncidentDef>
+    <defName>SCP_Visit131</defName><label>SCP-131 visit</label>
+    <workerClass>ScpFoundation.Anomalies.IncidentWorker_Scp131</workerClass>
+    <category>Misc</category><targetTags><li>Map_PlayerHome</li></targetTags>
+    <baseChance>0.1</baseChance><earliestDay>12</earliestDay><minPopulation>3</minPopulation><minRefireDays>60</minRefireDays>
+    <letterDef>PositiveEvent</letterDef><letterLabel>SCP-131 eye pods have arrived</letterLabel>
+    <letterText>Two friendly eye pods are circling the colony as if warning of danger. Prepare a lit, secure containment chamber now: SCP-173 may arrive in about five hours. The eye pods will try to watch it.</letterText>
+  </IncidentDef>
+</Defs>

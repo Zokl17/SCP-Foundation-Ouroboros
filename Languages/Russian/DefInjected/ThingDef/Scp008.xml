@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_008SampleCase.label>кейс с образцом SCP-008</SCP_008SampleCase.label>
+  <SCP_008SampleCase.description>Герметичный кейс с реагентами и пробиркой SCP-008. Целый кейс безопасен при переноске. Заражение возможно, если инфицированная жидкость попадёт в рану или на слизистую.</SCP_008SampleCase.description>
+  <SCP_008BioSuit.label>химзащитный костюм Фонда</SCP_008BioSuit.label>
+  <SCP_008BioSuit.description>Герметичный костюм для работы с SCP-008. Защищает от контакта с жидкостями только вместе с химзащитным капюшоном Фонда.</SCP_008BioSuit.description>
+  <SCP_008BioHelmet.label>химзащитный капюшон Фонда</SCP_008BioHelmet.label>
+  <SCP_008BioHelmet.description>Герметичный капюшон и респиратор для химзащитного костюма Фонда. Для защиты от контакта с SCP-008 нужны обе части комплекта.</SCP_008BioHelmet.description>
+</LanguageData>

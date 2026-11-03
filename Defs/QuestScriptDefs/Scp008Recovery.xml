@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <QuestScriptDef MayRequire="Ludeon.RimWorld.Anomaly">
+    <defName>SCP_008Recovery</defName>
+    <rootSelectionWeight>0.12</rootSelectionWeight><rootMinPoints>1000</rootMinPoints>
+    <expireDaysRange>5~9</expireDaysRange>
+    <questNameRules><rulesStrings><li>questName->Recover or destroy SCP-008</li></rulesStrings></questNameRules>
+    <questDescriptionRules><rulesStrings>
+      <li>questDescription->Foundation agents inside the GOC report an attempt to recreate SCP-008. Their experiments could unleash a dangerous infection. Breach the guarded GOC laboratory and either destroy the surviving sample or bring its sealed reagent case home. One scientist was exposed during the assault; avoid contact with infected body fluids and wear a sealed suit. The Foundation will move the sample to Site G2 if your colony cannot prepare secure containment for research.</li>
+    </rulesStrings></questDescriptionRules>
+    <root Class="QuestNode_Sequence"><nodes>
+      <li Class="QuestNode_GetMap" />
+      <li Class="QuestNode_GetSiteTile"><storeAs>siteTile</storeAs><preferCloserTiles>true</preferCloserTiles></li>
+      <li Class="ScpFoundation.Storytelling.QuestNode_Scp008SiteSetup" />
+      <li Class="QuestNode_GetDefaultSitePartsParams">
+        <tile>$siteTile</tile><faction>$siteFaction</faction>
+        <sitePartDefs>$sitePartDefs</sitePartDefs><storeSitePartsParamsAs>sitePartsParams</storeSitePartsParamsAs>
+      </li>
+      <li Class="QuestNode_GenerateSite">
+        <sitePartsParams>$sitePartsParams</sitePartsParams><faction>$siteFaction</faction>
+        <tile>$siteTile</tile><storeAs>site</storeAs><worldObjectDef>SCP_008RecoverySite</worldObjectDef>
+      </li>
+      <li Class="QuestNode_SpawnWorldObjects"><worldObjects>$site</worldObjects></li>
+      <li Class="ScpFoundation.Storytelling.QuestNode_Scp008TrackRecovery" />
+      <li Class="ScpFoundation.Storytelling.QuestNode_RecordScpArrival"><number>008</number></li>
+      <li Class="QuestNode_WorldObjectTimeout">
+        <worldObject>$site</worldObject><isQuestTimeout>true</isQuestTimeout>
+        <delayTicks>1200000</delayTicks><inSignalDisable>site.MapGenerated</inSignalDisable>
+        <destroyOnCleanup>false</destroyOnCleanup>
+        <node Class="QuestNode_End"><outcome>Fail</outcome></node>
+      </li>
+      <li Class="QuestNode_Signal"><inSignal>Scp008Recovered</inSignal><node Class="QuestNode_Sequence"><nodes>
+        <li Class="QuestNode_Letter"><label TKey="SCP_008RecoveredTitle">SCP-008 recovered</label><text TKey="SCP_008RecoveredBody">The sealed sample is at your colony. Keep it in a roofed, cooled laboratory at a containment post before studying it. The Foundation may transfer it to Site G2 if secure containment cannot be established.</text></li>
+        <li Class="QuestNode_End"><outcome>Success</outcome></li>
+      </nodes></node></li>
+      <li Class="QuestNode_Signal"><inSignal>Scp008Destroyed</inSignal><node Class="QuestNode_Sequence"><nodes>
+        <li Class="QuestNode_Letter"><label TKey="SCP_008DestroyedTitle">SCP-008 sample destroyed</label><text TKey="SCP_008DestroyedBody">The surviving SCP-008 sample has been destroyed. The Foundation confirms that no viable sample remains in this GOC laboratory.</text></li>
+        <li Class="QuestNode_End"><outcome>Success</outcome></li>
+      </nodes></node></li>
+      <li Class="QuestNode_Signal"><inSignal>Scp008Lost</inSignal><node Class="QuestNode_End"><outcome>Fail</outcome></node></li>
+    </nodes></root>
+  </QuestScriptDef>
+</Defs>

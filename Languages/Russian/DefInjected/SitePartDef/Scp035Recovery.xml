@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_035MaskedHost.label>странник в маске</SCP_035MaskedHost.label>
+  <SCP_035MaskedHost.description>Враждебный странник носит фарфоровую маску. Изымите её, не позволив ей захватить другого носителя.</SCP_035MaskedHost.description>
+  <SCP_035MaskedHost.approachOrderString>Изъять {0}</SCP_035MaskedHost.approachOrderString>
+  <SCP_035MaskedHost.approachingReportString>Изъятие {0}.</SCP_035MaskedHost.approachingReportString>
+  <SCP_035MaskedHost.arrivedLetter>Где-то рядом находится враждебный носитель SCP-035. Его тело быстро разлагается. Изымите маску, но не смотрите на неё слишком долго.</SCP_035MaskedHost.arrivedLetter>
+</LanguageData>

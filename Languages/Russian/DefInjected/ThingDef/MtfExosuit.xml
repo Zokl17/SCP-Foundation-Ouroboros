@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_MtfExosuit.label>экзокостюм МОГ XPA-M6</SCP_MtfExosuit.label>
+  <SCP_MtfExosuit.description>Герметичный силовой экзокостюм графитового цвета для штурмовых групп МОГ. Сегментированные бронепластины защищают торс, руки и ноги, а усиленный каркас несёт их вес.</SCP_MtfExosuit.description>
+  <SCP_MtfExoHelmet.label>шлем МОГ XH-P6</SCP_MtfExoHelmet.label>
+  <SCP_MtfExoHelmet.description>Полностью закрытый шлем экзокостюма XPA-M6. Угловатый корпус, броневизор и защищённая связь завершают штурмовой комплект МОГ.</SCP_MtfExoHelmet.description>
+</LanguageData>

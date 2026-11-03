@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ScpFoundation.Definitions.ScpDef>
+    <defName>SCP_Anomaly131</defName><label>SCP-131</label><scpId>SCP-131</scpId><objectClass>Safe</objectClass><archiveOnly>true</archiveOnly>
+    <description>A pair of friendly eye pods that never blink.</description>
+    <research><observedWork>15000</observedWork><partialWork>120000</partialWork><fullWork>360000</fullWork>
+      <observedReportKey>SCP_131ObservedReport</observedReportKey><partialReportKey>SCP_131PartialReport</partialReportKey><documentedReportKey>SCP_131DocumentedReport</documentedReportKey>
+      <experimentReportKeys><li>SCP_131Experiment1</li><li>SCP_131Experiment2</li><li>SCP_131Experiment3</li></experimentReportKeys></research>
+    <source><title>SCP-131</title><author>Unknown Author</author><url>https://scp-wiki.wikidot.com/scp-131</url><license>CC BY-SA 3.0</license></source>
+  </ScpFoundation.Definitions.ScpDef>
+  <ScpFoundation.Definitions.ScpDef>
+    <defName>SCP_Anomaly012</defName><label>SCP-012</label><scpId>SCP-012</scpId><objectClass>Euclid</objectClass>
+    <description>Unfinished score compelling visible observers to use their own blood.</description>
+    <requirements>
+      <li Class="ScpFoundation.Containment.RequirementAtPost"><id>post</id></li>
+      <li Class="ScpFoundation.Containment.RequirementRoom"><id>room</id><minCells>16</minCells><roofed>true</roofed></li>
+      <li Class="ScpFoundation.Containment.RequirementLight"><id>darkness</id><min>0</min><max>0.1</max></li>
+    </requirements>
+    <breach><graceTicks>30000</graceTicks><deterministicAfterTicks>0</deterministicAfterTicks><riskPerDay>0</riskPerDay></breach>
+    <research><observedWork>15000</observedWork><partialWork>120000</partialWork><fullWork>360000</fullWork>
+      <observedReportKey>SCP_012ObservedReport</observedReportKey><partialReportKey>SCP_012PartialReport</partialReportKey><documentedReportKey>SCP_012DocumentedReport</documentedReportKey>
+      <experimentReportKeys><li>SCP_012Experiment1</li><li>SCP_012Experiment2</li><li>SCP_012Experiment3</li></experimentReportKeys></research>
+    <source><title>SCP-012</title><author>ITIFAMCO</author><url>https://scp-wiki.wikidot.com/scp-012</url><license>CC BY-SA 3.0</license></source>
+  </ScpFoundation.Definitions.ScpDef>
+  <ScpFoundation.Definitions.ScpDef>
+    <defName>SCP_Anomaly330</defName><label>SCP-330</label><scpId>SCP-330</scpId><objectClass>Safe</objectClass>
+    <description>A bowl whose third candy taken within a day costs the taker's hands.</description>
+    <requirements><li Class="ScpFoundation.Containment.RequirementAtPost"><id>post</id></li></requirements>
+    <breach><graceTicks>30000</graceTicks><deterministicAfterTicks>0</deterministicAfterTicks><riskPerDay>0</riskPerDay></breach>
+    <research><observedWork>15000</observedWork><partialWork>120000</partialWork><fullWork>360000</fullWork>
+      <observedReportKey>SCP_330ObservedReport</observedReportKey><partialReportKey>SCP_330PartialReport</partialReportKey><documentedReportKey>SCP_330DocumentedReport</documentedReportKey>
+      <experimentReportKeys><li>SCP_330Experiment1</li><li>SCP_330Experiment2</li><li>SCP_330Experiment3</li></experimentReportKeys></research>
+    <source><title>SCP-330</title><author>Dr Kondraki</author><url>https://scp-wiki.wikidot.com/scp-330</url><license>CC BY-SA 3.0</license></source>
+  </ScpFoundation.Definitions.ScpDef>
+  <ScpFoundation.Definitions.ScpDef>
+    <defName>SCP_Anomaly914</defName><label>SCP-914</label><scpId>SCP-914</scpId><objectClass>Safe</objectClass><archiveOnly>true</archiveOnly>
+    <description>A large clockwork machine that refines objects at five settings.</description>
+    <research><observedWork>18000</observedWork><partialWork>130000</partialWork><fullWork>380000</fullWork>
+      <observedReportKey>SCP_914ObservedReport</observedReportKey><partialReportKey>SCP_914PartialReport</partialReportKey><documentedReportKey>SCP_914DocumentedReport</documentedReportKey>
+      <experimentReportKeys><li>SCP_914Experiment1</li><li>SCP_914Experiment2</li><li>SCP_914Experiment3</li></experimentReportKeys></research>
+    <source><title>SCP-914</title><author>Dr Gears</author><url>https://scp-wiki.wikidot.com/scp-914</url><license>CC BY-SA 3.0</license></source>
+  </ScpFoundation.Definitions.ScpDef>
+  <ScpFoundation.Definitions.ScpDef>
+    <defName>SCP_Anomaly513</defName><label>SCP-513</label><scpId>SCP-513</scpId><objectClass>Euclid</objectClass>
+    <description>A bell whose sound brings anxiety, sleeplessness and a persistent watcher.</description>
+    <requirements>
+      <li Class="ScpFoundation.Containment.RequirementAtPost"><id>post</id></li>
+      <li Class="ScpFoundation.Containment.RequirementRoom"><id>room</id><minCells>16</minCells><roofed>true</roofed></li>
+    </requirements>
+    <breach><graceTicks>30000</graceTicks><deterministicAfterTicks>0</deterministicAfterTicks><riskPerDay>0</riskPerDay></breach>
+    <research><observedWork>15000</observedWork><partialWork>120000</partialWork><fullWork>360000</fullWork>
+      <observedReportKey>SCP_513ObservedReport</observedReportKey><partialReportKey>SCP_513PartialReport</partialReportKey><documentedReportKey>SCP_513DocumentedReport</documentedReportKey>
+      <experimentReportKeys><li>SCP_513Experiment1</li><li>SCP_513Experiment2</li><li>SCP_513Experiment3</li></experimentReportKeys></research>
+    <source><title>SCP-513</title><author>beefwit</author><url>https://scp-wiki.wikidot.com/scp-513</url><license>CC BY-SA 3.0</license></source>
+  </ScpFoundation.Definitions.ScpDef>
+  <ScpFoundation.Definitions.ScpDef>
+    <defName>SCP_Anomaly207</defName><label>SCP-207</label><scpId>SCP-207</scpId><objectClass>Safe</objectClass>
+    <description>An anomalous cola that removes sleep and accelerates the drinker until the body fails.</description>
+    <requirements><li Class="ScpFoundation.Containment.RequirementAtPost"><id>post</id></li></requirements>
+    <breach><graceTicks>30000</graceTicks><deterministicAfterTicks>0</deterministicAfterTicks><riskPerDay>0</riskPerDay></breach>
+    <research><observedWork>15000</observedWork><partialWork>120000</partialWork><fullWork>360000</fullWork>
+      <observedReportKey>SCP_207ObservedReport</observedReportKey><partialReportKey>SCP_207PartialReport</partialReportKey><documentedReportKey>SCP_207DocumentedReport</documentedReportKey>
+      <experimentReportKeys><li>SCP_207Experiment1</li><li>SCP_207Experiment2</li><li>SCP_207Experiment3</li></experimentReportKeys></research>
+    <source><title>SCP-207</title><author>Aeish</author><url>https://scp-wiki.wikidot.com/scp-207</url><license>CC BY-SA 3.0</license></source>
+  </ScpFoundation.Definitions.ScpDef>
+</Defs>

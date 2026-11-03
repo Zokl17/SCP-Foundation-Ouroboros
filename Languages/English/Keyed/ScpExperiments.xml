@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_682Experiment1>Finding 1 — resilience. Even massive injury only temporarily incapacitates SCP-682; ordinary weapons have not destroyed it.</SCP_682Experiment1>
+  <SCP_682Experiment2>Finding 2 — recovery. It regenerates continuously. Prepare the capture team in advance and use the brief incapacitation window.</SCP_682Experiment2>
+  <SCP_682Experiment3>Finding 3 — chamber. A powered six-by-three acid tank contains the creature.</SCP_682Experiment3>
+  <SCP_049Experiment1>Result 1 — contact. In the observation log, SCP-049's touch stopped a subject's vital functions. A calm conversation does not make physical contact safe.</SCP_049Experiment1>
+  <SCP_049Experiment2>Result 2 — the “cure”. Surgery on corpses sometimes produces mobile SCP-049-2 instances without their former identities. This cannot be treated as a patient's recovery.</SCP_049Experiment2>
+  <SCP_049Experiment3>Result 3 — limits of the method. SCP-049 continues to seek the “Pestilence”, but its nature remains unknown. The published records support denying it human subjects for further surgery.</SCP_049Experiment3>
+
+  <SCP_055Experiment1>Result 1 — recording. Observation and documentation are technically possible, but staff soon cannot retain what they saw. A saved recording does not replace repeated study.</SCP_055Experiment1>
+  <SCP_055Experiment2>Result 2 — negation. After debriefing, participants can recall that the object is not spherical, while remaining unable to reconstruct its appearance.</SCP_055Experiment2>
+  <SCP_055Experiment3>Result 3 — conclusion. SCP-055's existence can be deduced again from negative facts. Its physical properties and potential danger remain unknown; detailed records require continual renewal.</SCP_055Experiment3>
+
+  <SCP_106Experiment1>Finding 1 — traces. SCP-106 corrodes solid matter on contact, and the residue endangers people. Inspection must be conducted at a distance.</SCP_106Experiment1>
+  <SCP_106Experiment2>Finding 2 — movement. The entity can pass through barriers and emerge elsewhere. An ordinary locked room alone cannot ensure containment.</SCP_106Experiment2>
+  <SCP_106Experiment3>Finding 3 — response. Damage does not provide lasting containment; the published recall protocol uses a lure and costs a human life. In this mod it is a last resort.</SCP_106Experiment3>
+
+  <SCP_173Experiment1>Finding 1 — direct sight. SCP-173 cannot move while observed. Cameras and barriers require separate line-of-sight checks.</SCP_173Experiment1>
+  <SCP_173Experiment2>Finding 2 — blinking. Simultaneous loss of sight gives the object an opening to move. Observers must warn each other before blinking.</SCP_173Experiment2>
+  <SCP_173Experiment3>Finding 3 — chamber entry. The published procedure requires at least three people inside, with two watching SCP-173 continuously. One staff member cannot maintain safe coverage.</SCP_173Experiment3>
+
+  <SCP_294Experiment1>Result 1 — request range. Archived tests document ordinary and dangerous liquids. Requests for solids without a liquid form fail.</SCP_294Experiment1>
+  <SCP_294Experiment2>Result 2 — dispensing limit. The machine temporarily stopped after roughly fifty requests, while its cups resisted caustic liquids. The mod represents restocking with a delay after each use.</SCP_294Experiment2>
+  <SCP_294Experiment3>Result 3 — meaning matters. Published cases show that ambiguous wording can produce dangerous results and personalized drinks can reflect the user's memories. The mod therefore offers only approved choices.</SCP_294Experiment3>
+
+  <SCP_354Experiment1>Finding 1 — pool composition. The red liquid resembles blood but is not biological. Density increases with depth, and no bottom has been confirmed.</SCP_354Experiment1>
+  <SCP_354Experiment2>Finding 2 — emergences. The published list describes different entities emerging from SCP-354. Most were hostile, so one specimen does not predict the next threat.</SCP_354Experiment2>
+  <SCP_354Experiment3>Finding 3 — defense. Research has found no safe way to stop emergences. Observation, a fortified perimeter and ready guards remain the main defense; the mod tests this in a defense quest.</SCP_354Experiment3>
+
+  <SCP_500Experiment1>Result 1 — treatment. Archived tests show that one pill cures a patient's diseases. Supplies are finite, so every use must be recorded.</SCP_500Experiment1>
+  <SCP_500Experiment2>Result 2 — severe cases. Foundation records report full recovery in subjects affected by SCP-008 and SCP-409 after receiving SCP-500.</SCP_500Experiment2>
+  <SCP_500Experiment3>Result 3 — duplication. SCP-038 could copy pills, but the copies cured unreliably and degraded over time. No stable way to replenish the original supply has been found.</SCP_500Experiment3>
+
+  <SCP_650Experiment1>Finding 1 — observation. SCP-650 remains in place under continuous sight. This supports uninterrupted surveillance but does not explain how it moves.</SCP_650Experiment1>
+  <SCP_650Experiment2>Finding 2 — broken sight. Once unobserved, the statue appears behind a person in a startling pose. No movement sound has been recorded.</SCP_650Experiment2>
+  <SCP_650Experiment3>Finding 3 — intent. The published article reports no attacks: the entity appears to seek a startled reaction. It changes poses for habituated observers, so lack of aggression does not remove the need for surveillance.</SCP_650Experiment3>
+
+  <SCP_882Experiment1>Finding 1 — rust. Rust-covered components remain still, while exposed parts begin moving. Seawater helps maintain the protective layer.</SCP_882Experiment1>
+  <SCP_882Experiment2>Finding 2 — metal contact. A metal part bonds permanently to SCP-882 and eventually becomes part of it. No metal should enter the containment chamber.</SCP_882Experiment2>
+  <SCP_882Experiment3>Finding 3 — effect on staff. The machine itself is silent, but people nearby for long periods report intrusive grinding noises. Personnel remain at risk even when it is still.</SCP_882Experiment3>
+
+  <SCP_999Experiment1>Result 1 — contact. Touching SCP-999 causes pleasant feelings that intensify with longer interaction and persist afterward.</SCP_999Experiment1>
+  <SCP_999Experiment2>Result 2 — mood. It is especially drawn to distressed and injured people; staff reported improvement after repeated encounters. The article records no intentional harm.</SCP_999Experiment2>
+  <SCP_999Experiment3>Result 3 — archived SCP-682 test. Contact briefly made SCP-682 happy, but the trial ended in a dangerous breach. This experiment is not reproduced in the mod.</SCP_999Experiment3>
+  <SCP_127Experiment1>Finding 1 — construction. Living tissue lies beneath the ordinary gun shell and the ammunition resembles teeth. The magazine is fixed and cannot be removed.</SCP_127Experiment1>
+  <SCP_127Experiment2>Finding 2 — ammunition. Once 60 rounds are spent, the object regrows a full supply over three to five days. Conventional reloading is unnecessary.</SCP_127Experiment2>
+  <SCP_127Experiment3>Finding 3 — storage. The archive calls for a weapons locker and water rich in calcium and protein. No other sustenance is required; the game does not model separate maintenance.</SCP_127Experiment3>
+  <SCP_504Experiment1>Finding 1 — growth. After transfer to a containment post, the bush ripens one fruit per day until five are present. This schedule is a game rule.</SCP_504Experiment1>
+  <SCP_504Experiment2>Finding 2 — speech. A failed joke or hostile remark near ripe fruit can trigger a launch toward its speaker. Neutral and positive speech did not trigger the plant.</SCP_504Experiment2>
+  <SCP_504Experiment3>Finding 3 — response limit. Each reaction consumes one ripe fruit. The bush can replenish its cluster while it remains at its post.</SCP_504Experiment3>
+  <SCP_939Experiment1>Finding 1 — morphology. Red translucent skin, eyeless elongated head and sensory pits match the archived description of morphology alpha.</SCP_939Experiment1>
+  <SCP_939Experiment2>Finding 2 — vocal mimicry. Human speech from the containment area may belong to SCP-939. Voice recognition is not a reliable security measure.</SCP_939Experiment2>
+  <SCP_939Experiment3>Finding 3 — transfer. The discovered specimen is only temporarily sedated. Light and secure doors matter for containment; the exact game thresholds are adaptations.</SCP_939Experiment3>
+  <SCP_067Experiment1>A subject without artistic training produced a detailed ink drawing. The hand appeared to act with its own intent.</SCP_067Experiment1>
+  <SCP_067Experiment2>The subject could describe watching the hand move, but could not predict the next line.</SCP_067Experiment2>
+  <SCP_067Experiment3>Repeated sessions yielded varied drawings. Production time and market value are mod mechanics, not properties stated in the source article.</SCP_067Experiment3>
+  <SCP_262Experiment1>Finding 1 — at rest, the arms stay close to the lining and barely extend beyond the coat.</SCP_262Experiment1>
+  <SCP_262Experiment2>Finding 2 — the arms help the wearer during work. The numerical speed bonus is a gameplay adaptation.</SCP_262Experiment2>
+  <SCP_262Experiment3>Finding 3 — an extra arm can hold a ranged weapon. Issue the coat only to personnel with approved clearance.</SCP_262Experiment3>
+  <SCP_316Experiment1>Finding 1 — a nonreflective surface lost its color under the beam. A reflective barrier stopped the light.</SCP_316Experiment1>
+  <SCP_316Experiment2>Finding 2 — the subject developed color-blindness, slowed movements and indifference to the surroundings.</SCP_316Experiment2>
+  <SCP_316Experiment3>Finding 3 — cumulative exposure suppressed aggression. Recovery took time, but the beam left no conventional wounds.</SCP_316Experiment3>
+  <SCP_012Experiment1>The score remains safe to observe only without visible light.</SCP_012Experiment1>
+  <SCP_012Experiment2>Under illumination, the subject abandoned work and approached the score.</SCP_012Experiment2>
+  <SCP_012Experiment3>An attempt to complete the music caused dangerous blood loss. Exposure must be interrupted immediately.</SCP_012Experiment3>
+  <SCP_330Experiment1>One candy was removed without adverse effects.</SCP_330Experiment1>
+  <SCP_330Experiment2>A second candy taken that day also caused no reaction.</SCP_330Experiment2>
+  <SCP_330Experiment3>Taking a third cost both hands. The count resets after 24 hours.</SCP_330Experiment3>
+  <SCP_513Experiment1>The bell caused immediate anxiety among people in the same room.</SCP_513Experiment1>
+  <SCP_513Experiment2>Victims report a pursuing figure and a loss of sleep.</SCP_513Experiment2>
+  <SCP_513Experiment3>Separating the bell in its own room limited the number of people affected.</SCP_513Experiment3>
+  <SCP_207Experiment1>The drinker no longer needs sleep.</SCP_207Experiment1>
+  <SCP_207Experiment2>Movement and work speed increased, but physiological strain is building.</SCP_207Experiment2>
+  <SCP_207Experiment3>After two days, overdrive caused severe blood loss. This drink is not a safe stimulant.</SCP_207Experiment3>
+  <SCP_131Experiment1>Both eye pods observed their surroundings for hours without blinking.</SCP_131Experiment1>
+  <SCP_131Experiment2>After friendly contact, one pod began to follow a staff member.</SCP_131Experiment2>
+  <SCP_131Experiment3>In good light and with clear sight, a pod held SCP-173 still. When the pod rolled away, the statue moved again.</SCP_131Experiment3>
+  <SCP_914Experiment1>Rough and Coarse dismantled items, returning only part of their value as raw material.</SCP_914Experiment1>
+  <SCP_914Experiment2>The 1:1 setting returned a repaired item after a full processing cycle.</SCP_914Experiment2>
+  <SCP_914Experiment3>Fine and Very Fine improved suitable items; not all inputs support fine refinement.</SCP_914Experiment3>
+  <SCP_427Experiment1>A single SCP-500 pill emerged from SCP-914 as a silver locket on a chain.</SCP_427Experiment1>
+  <SCP_427Experiment2>Opening the locket healed a wearer's wounds, while a measurable exposure dose accumulated.</SCP_427Experiment2>
+  <SCP_427Experiment3>Continued exposure caused uncontrolled tissue growth. Closing the locket stops new exposure but does not clear the accumulated dose.</SCP_427Experiment3>
+  <SCP_079Experiment1>The computer answered an initial question while disconnected from all networks and external media.</SCP_079Experiment1>
+  <SCP_079Experiment2>A later interview revealed short-term recall and a clear desire for terminal access.</SCP_079Experiment2>
+  <SCP_079Experiment3>Protocol forbids a direct connection: SCP-079's replies may only be copied into the log by staff.</SCP_079Experiment3>
+  <SCP_008Experiment1>Finding 1 — transmission. The sample spreads when infected bodily fluids contact mucous membranes or open wounds. Airborne and waterborne transmission were not observed.</SCP_008Experiment1>
+  <SCP_008Experiment2>Finding 2 — sample handling. A sealed, cooled laboratory and decontamination are required for safe custody. Isolate and examine anyone with suspected exposure.</SCP_008Experiment2>
+  <SCP_008Experiment3>Finding 3 — treatment. In the published file, SCP-500 cured infection even at an advanced stage. The tablet supply is finite and does not replace quarantine.</SCP_008Experiment3>
+  <SCP_035Experiment1>Finding 1 — visual contact. Observers feel compelled to wear the mask. A sealed case and restricted direct sight reduce the risk of handling it.</SCP_035Experiment1>
+  <SCP_035Experiment2>Finding 2 — host. Once worn, the mask suppresses the person's identity while the body decays rapidly. Observing a host is not a safe interview procedure.</SCP_035Experiment2>
+  <SCP_035Experiment3>Finding 3 — protocol. Conversation with the object does not justify further human contact. Keep the mask sealed and replace a contaminated case under containment procedure.</SCP_035Experiment3>
+  <SCP_093Experiment1>Finding 1 — mirror. The disc seeks a reflective surface and changes color in a person's hand. The published tests found no meaningful difference between mirror types.</SCP_093Experiment1>
+  <SCP_093Experiment2>Finding 2 — passage. When a person presses SCP-093 against a mirror, the passage opens for that holder. Placing the disc near a mirror without a subject is not authorization for an expedition.</SCP_093Experiment2>
+  <SCP_093Experiment3>Finding 3 — return. The passage leads to another space. Assign an observer and secure a return route before entry; do not leave an open passage unattended.</SCP_093Experiment3>
+  <SCP_096Experiment1>Finding 1 — trigger. Seeing the face, including in a photograph or recording, causes severe distress and pursuit of the viewer. Further exposure of people is unnecessary to establish the risk.</SCP_096Experiment1>
+  <SCP_096Experiment2>Finding 2 — monitoring. Sensors without imagery are preferred for containment. In the game's cell, low light reduces the chance of dangerous visual contact.</SCP_096Experiment2>
+  <SCP_096Experiment3>Finding 3 — response. Ordinary barriers are unreliable during pursuit. Staff must prevent new images of the face and prepare to retrieve the object after the episode ends.</SCP_096Experiment3>
+</LanguageData>

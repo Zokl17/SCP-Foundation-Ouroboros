@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <QuestScriptDef MayRequire="Ludeon.RimWorld.Royalty">
+    <defName>SCP_650Return</defName>
+    <rootSelectionWeight>0</rootSelectionWeight>
+    <rootMinPoints>0</rootMinPoints>
+    <questNameRules><rulesStrings><li>questName->Transfer SCP-650 to the Foundation</li></rulesStrings></questNameRules>
+    <questDescriptionRules><rulesStrings><li>questDescription->O5-7 Green: Your initial containment assignment, SCP-650 dossier and all experiments are complete. The Foundation offers to take the Black Statue to a permanent facility. You may keep it or accept this assignment whenever you are ready. After acceptance, a shuttle will arrive and wait without a departure deadline. Select a colonist and right-click the statue to load it aboard. The Foundation grants 10 trust when the shuttle departs with SCP-650, up to the trust limit of 100. Your dossier and access to further assignments remain available.</li></rulesStrings></questDescriptionRules>
+    <root Class="QuestNode_Sequence"><nodes>
+      <li Class="ScpFoundation.Storytelling.QuestNode_Scp650Return" />
+      <li Class="QuestNode_GenerateShuttle">
+        <storeAs>scp650ReturnShuttle</storeAs><requiredItems>$scp650ReturnItems</requiredItems>
+        <owningFaction>$scp650ReturnFaction</owningFaction><acceptColonists>false</acceptColonists>
+      </li>
+      <li Class="QuestNode_GenerateTransportShip">
+        <def>Ship_Shuttle</def><shipThing>$scp650ReturnShuttle</shipThing><storeAs>scp650ReturnShip</storeAs>
+      </li>
+      <li Class="ScpFoundation.Storytelling.QuestNode_BindScp650ReturnShuttle" />
+      <li Class="QuestNode_AddShipJob_Arrive">
+        <transportShip>$scp650ReturnShip</transportShip><map>$map</map><shipJobStartMode>Instant</shipJobStartMode>
+      </li>
+      <li Class="QuestNode_AddShipJob_Wait">
+        <jobDef>WaitForever</jobDef><transportShip>$scp650ReturnShip</transportShip>
+        <leaveImmediatelyWhenSatisfied>true</leaveImmediatelyWhenSatisfied>
+      </li>
+      <li Class="QuestNode_AddShipJob_FlyAway">
+        <transportShip>$scp650ReturnShip</transportShip><unsatisfiedDropMode>All</unsatisfiedDropMode>
+      </li>
+      <li Class="QuestNode_SendTransportShipAwayOnCleanup">
+        <transportShip>$scp650ReturnShip</transportShip><unloadContents>false</unloadContents>
+        <unsatisfiedDropMode>All</unsatisfiedDropMode>
+      </li>
+      <li Class="QuestNode_Signal"><inSignal>Scp650Returned</inSignal><node Class="QuestNode_Sequence"><nodes>
+        <li Class="QuestNode_Letter"><label TKey="SCP_650ReturnCompleteTitle">SCP-650 transferred</label><text TKey="SCP_650ReturnCompleteBody">O5-7 Green: We confirm receipt of SCP-650 aboard the transport. Your team has completed its work with this object. The Foundation grants 10 trust, up to the limit of 100. The post has been released, and the research dossier remains in your archive.</text></li>
+        <li Class="QuestNode_End"><outcome>Success</outcome></li>
+      </nodes></node></li>
+      <li Class="QuestNode_Signal"><inSignal>Scp650ReturnFailed</inSignal><node Class="QuestNode_Sequence"><nodes>
+        <li Class="QuestNode_Letter"><label TKey="SCP_650ReturnFailedTitle">SCP-650 transfer interrupted</label><text TKey="SCP_650ReturnFailedBody">SCP-650 could not be transferred to the Foundation. No trust was granted. If the statue is still at your site, restore its containment; the Foundation can offer another pickup.</text></li>
+        <li Class="QuestNode_End"><outcome>Fail</outcome></li>
+      </nodes></node></li>
+    </nodes></root>
+  </QuestScriptDef>
+</Defs>

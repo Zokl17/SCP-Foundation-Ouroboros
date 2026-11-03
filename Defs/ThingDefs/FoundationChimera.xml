@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Self-contained Foundation support drone; no Biotech overseer or energy dependency. -->
+  <ThingDef ParentName="BasePawn">
+    <defName>SCP_FoundationChimera</defName>
+    <label>Foundation Vanguard</label>
+    <description>A six-legged armored drone belonging to the Foundation.</description>
+    <thingClass>ScpFoundation.Runtime.Pawn_FoundationChimera</thingClass>
+    <drawHighlight>false</drawHighlight>
+    <graphicData>
+      <texPath>Things/Pawn/Foundation/Chimera/Idle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(9,6.1875)</drawSize>
+    </graphicData>
+    <inspectorTabs Inherit="False"><li>ITab_Pawn_Health</li></inspectorTabs>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <butcherProducts><Steel>30</Steel><Plasteel>10</Plasteel></butcherProducts>
+    <statBases>
+      <MoveSpeed>1.9</MoveSpeed>
+      <Mass>1800</Mass>
+      <MarketValue>0</MarketValue>
+      <Flammability>0</Flammability>
+      <PsychicSensitivity>0</PsychicSensitivity>
+      <ComfyTemperatureMin>-100</ComfyTemperatureMin>
+      <ComfyTemperatureMax>250</ComfyTemperatureMax>
+      <ArmorRating_Sharp>0.72</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.22</ArmorRating_Blunt>
+      <ArmorRating_Heat>2</ArmorRating_Heat>
+    </statBases>
+    <race>
+      <intelligence>ToolUser</intelligence>
+      <fleshType>Mechanoid</fleshType>
+      <body>MechanicalCentipede</body>
+      <baseBodySize>6</baseBodySize>
+      <baseHealthScale>24</baseHealthScale>
+      <thinkTreeMain>SCP_ChimeraIdle</thinkTreeMain>
+      <thinkTreeConstant>SCP_AnomalyConstant</thinkTreeConstant>
+      <needsRest>false</needsRest>
+      <hasGenders>false</hasGenders>
+      <foodType>None</foodType>
+      <lifeExpectancy>2500</lifeExpectancy>
+      <bloodDef>Filth_MachineBits</bloodDef>
+      <hasCorpse>false</hasCorpse>
+      <lifeStageAges><li><def>MechanoidFullyFormed</def><minAge>0</minAge></li></lifeStageAges>
+    </race>
+  </ThingDef>
+</Defs>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <QuestScriptDef MayRequire="Ludeon.RimWorld.Royalty">
+    <defName>SCP_682Transfer</defName><rootSelectionWeight>0.12</rootSelectionWeight><rootMinPoints>700</rootMinPoints>
+    <expireDaysRange>5~8</expireDaysRange>
+    <questNameRules><rulesStrings><li>questName->Foundation transfer: SCP-682</li></rulesStrings></questNameRules>
+    <questDescriptionRules><rulesStrings><li>questDescription->SCP-682 destroyed the Foundation's containment chambers during a breach. Epsilon-11 has subdued it, but the Foundation needs somewhere for it to stay while they rebuild. This offer unlocks research for a six-by-three hydrochloric-acid chamber. Research and build the chamber, connect its 300 W power supply, then accept the transfer. Their shuttle will unload the wounded creature and guard the area until you move it into the chamber. The Foundation grants 5 trust for containment and 15 for a documented dossier.</li></rulesStrings></questDescriptionRules>
+    <root Class="QuestNode_Sequence"><nodes>
+      <li Class="QuestNode_GetMap" />
+      <li Class="ScpFoundation.Storytelling.QuestNode_ScpCreatureTransfer"><species>682</species></li>
+      <li Class="ScpFoundation.Storytelling.QuestNode_RecordScpArrival"><number>682</number></li>
+      <li Class="QuestNode_SubScript"><def>Util_TransportShip_DropOff</def><parms><contents>$scpCreatureContents</contents><owningFaction>$scpCreatureFaction</owningFaction></parms></li>
+      <li Class="QuestNode_Signal"><inSignal>ScpCreatureSecured</inSignal><node Class="QuestNode_Sequence"><nodes>
+        <li Class="QuestNode_SubScript"><def>Util_TransportShip_Pickup</def><parms><requiredPawns>$scpCreaturePawns</requiredPawns><owningFaction>$scpCreatureFaction</owningFaction><leaveDelayTicks>18000</leaveDelayTicks><leaveImmediatelyWhenSatisfied>true</leaveImmediatelyWhenSatisfied></parms></li>
+      </nodes></node></li>
+      <li Class="QuestNode_Signal"><inSignal>ScpCreatureDocumented</inSignal><node Class="QuestNode_Sequence"><nodes>
+        <li Class="QuestNode_Letter"><label TKey="SCP_682TransferCompleteTitle">SCP-682 documented</label><text TKey="SCP_682TransferCompleteBody">The Foundation confirms SCP-682's dossier and grants another 15 trust.</text></li>
+        <li Class="QuestNode_End"><outcome>Success</outcome></li>
+      </nodes></node></li>
+      <li Class="QuestNode_Signal"><inSignal>ScpCreatureFailed</inSignal><node Class="QuestNode_Sequence"><nodes>
+        <li Class="QuestNode_Letter"><label TKey="SCP_682TransferFailedTitle">SCP-682 transfer failed</label><text TKey="SCP_682TransferFailedBody">The delivered specimen was lost before containment.</text></li>
+        <li Class="QuestNode_End"><outcome>Fail</outcome></li>
+      </nodes></node></li>
+    </nodes></root>
+  </QuestScriptDef>
+  <QuestScriptDef MayRequire="Ludeon.RimWorld.Royalty">
+    <defName>SCP_939Transfer</defName><rootSelectionWeight>0.15</rootSelectionWeight><rootMinPoints>500</rootMinPoints>
+    <expireDaysRange>5~8</expireDaysRange>
+    <questNameRules><rulesStrings><li>questName->Foundation transfer: SCP-939-1 and SCP-939-3</li></rulesStrings></questNameRules>
+    <questDescriptionRules><rulesStrings><li>questDescription->Epsilon-11 offers to deliver two sedated SCP-939 specimens, -1 and -3. Before accepting this quest, build two separate roofed chambers of at least five-by-five cells, each with its own empty containment post, reinforced Foundation walls, a closed armored door and at least 30% lighting. The squad will guard the landing area while you move each creature into its own chamber. The Foundation grants 5 trust for containment and 15 for a documented dossier.</li></rulesStrings></questDescriptionRules>
+    <root Class="QuestNode_Sequence"><nodes>
+      <li Class="QuestNode_GetMap" />
+      <li Class="ScpFoundation.Storytelling.QuestNode_ScpCreatureTransfer"><species>939</species></li>
+      <li Class="ScpFoundation.Storytelling.QuestNode_RecordScpArrival"><number>939</number></li>
+      <li Class="QuestNode_SubScript"><def>Util_TransportShip_DropOff</def><parms><contents>$scpCreatureContents</contents><owningFaction>$scpCreatureFaction</owningFaction></parms></li>
+      <li Class="QuestNode_Signal"><inSignal>ScpCreatureSecured</inSignal><node Class="QuestNode_Sequence"><nodes>
+        <li Class="QuestNode_SubScript"><def>Util_TransportShip_Pickup</def><parms><requiredPawns>$scpCreaturePawns</requiredPawns><owningFaction>$scpCreatureFaction</owningFaction><leaveDelayTicks>18000</leaveDelayTicks><leaveImmediatelyWhenSatisfied>true</leaveImmediatelyWhenSatisfied></parms></li>
+      </nodes></node></li>
+      <li Class="QuestNode_Signal"><inSignal>ScpCreatureDocumented</inSignal><node Class="QuestNode_Sequence"><nodes>
+        <li Class="QuestNode_Letter"><label TKey="SCP_939TransferCompleteTitle">SCP-939 specimens documented</label><text TKey="SCP_939TransferCompleteBody">The Foundation confirms both specimens are documented and grants another 15 trust.</text></li>
+        <li Class="QuestNode_End"><outcome>Success</outcome></li>
+      </nodes></node></li>
+      <li Class="QuestNode_Signal"><inSignal>ScpCreatureFailed</inSignal><node Class="QuestNode_Sequence"><nodes>
+        <li Class="QuestNode_Letter"><label TKey="SCP_939TransferFailedTitle">SCP-939 transfer failed</label><text TKey="SCP_939TransferFailedBody">One of the delivered specimens was lost before containment.</text></li>
+        <li Class="QuestNode_End"><outcome>Fail</outcome></li>
+      </nodes></node></li>
+    </nodes></root>
+  </QuestScriptDef>
+</Defs>

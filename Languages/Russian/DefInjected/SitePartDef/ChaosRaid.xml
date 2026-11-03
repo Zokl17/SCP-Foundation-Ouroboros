@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_ChaosRaid.label>база Повстанцев Хаоса на свалке</SCP_ChaosRaid.label>
+  <SCP_ChaosRaid.description>Укреплённая база Повстанцев Хаоса со складом за пласталевыми стенами.</SCP_ChaosRaid.description>
+  <SCP_ChaosRaid.approachOrderString>Штурмовать {0}</SCP_ChaosRaid.approachOrderString>
+  <SCP_ChaosRaid.approachingReportString>Штурмует {0}.</SCP_ChaosRaid.approachingReportString>
+  <SCP_ChaosRaid.arrivedLetter>Эту свалку удерживает хорошо вооружённый отряд Повстанцев Хаоса. В комнате с пласталевыми стенами находятся SCP-127 и редкие препараты. Разгромите охрану и заберите их.</SCP_ChaosRaid.arrivedLetter>
+</LanguageData>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef>
+    <defName>SCP_173Object</defName><label>SCP-173 sculpture</label>
+    <description>An unusual concrete-and-rebar sculpture.</description>
+    <thingClass>ScpFoundation.Anomalies.Thing_Scp173</thingClass><category>Item</category><altitudeLayer>Item</altitudeLayer><useHitPoints>true</useHitPoints>
+    <tickerType>Normal</tickerType><selectable>true</selectable><stackLimit>1</stackLimit>
+    <alwaysHaulable>false</alwaysHaulable><designateHaulable>false</designateHaulable><rotatable>false</rotatable>
+    <graphicData><texPath>Things/Item/Scp173</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>(2.2,2.8)</drawSize></graphicData>
+    <statBases><MaxHitPoints>1800</MaxHitPoints><Mass>90</Mass><Flammability>0</Flammability><MarketValue>0</MarketValue></statBases>
+    <tradeability>None</tradeability>
+    <comps>
+      <li Class="ScpFoundation.Runtime.CompProperties_Scp"><anomaly>SCP_Anomaly173</anomaly><requireCapture>true</requireCapture></li>
+      <li Class="ScpFoundation.Interactions.CompProperties_ScpInteraction" />
+      <li Class="ScpFoundation.Anomalies.CompProperties_Scp173"><moveIntervalTicks>18</moveIntervalTicks></li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="BaseFilth">
+    <defName>SCP_173BrownResidue</defName><label>brown residue</label>
+    <statBases><Beauty>-25</Beauty><Cleanliness>-5</Cleanliness></statBases>
+    <graphicData><texPath>Things/Filth/Spatter</texPath><color>(103, 70, 44, 185)</color></graphicData>
+    <filth><disappearsInDays>35~40</disappearsInDays><rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness><canFilthAttach>true</canFilthAttach>
+      <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound></filth>
+  </ThingDef>
+</Defs>

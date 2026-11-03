@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- CE supplies its own switchable VOG-25 underbarrel. Use Odyssey's native
+       reloadable weapon ability only when CE is not active. -->
+  <Operation Class="PatchOperationFindMod">
+    <mods><li>Combat Extended</li></mods>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="SCP_ChaosAKGrenadier"]</xpath>
+      <value>
+        <comps Inherit="False">
+          <li Class="CompProperties_EquippableAbilityReloadable">
+            <abilityDef>LaunchFragGrenade</abilityDef>
+            <maxCharges>1</maxCharges>
+            <soundReload>Standard_Reload</soundReload>
+            <chargeNoun>grenade</chargeNoun>
+            <ammoDef>Steel</ammoDef>
+            <ammoCountPerCharge>25</ammoCountPerCharge>
+            <baseReloadTicks>60</baseReloadTicks>
+          </li>
+          <li Class="CompProperties_Forbiddable" />
+          <li Class="CompProperties_Styleable" />
+          <li Class="CompProperties_Biocodable" />
+          <li><compClass>CompQuality</compClass></li>
+          <li Class="CompProperties_Art">
+            <nameMaker>NamerArtWeaponGun</nameMaker>
+            <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+            <minQualityForArtistic>Excellent</minQualityForArtistic>
+          </li>
+          <li Class="CompProperties_UniqueWeapon">
+            <compClass>ScpFoundation.Interactions.CompWorkshopWeaponTraits</compClass>
+            <weaponCategories>
+              <li>Ranged</li><li>BulletFiring</li><li>Gun</li>
+              <li>Rifle</li><li>Sighted</li><li>BurstFire</li>
+              <li>LowStoppingPower</li><li>Attachable</li>
+            </weaponCategories>
+          </li>
+        </comps>
+      </value>
+    </nomatch>
+  </Operation>
+</Patch>

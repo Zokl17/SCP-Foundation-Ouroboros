@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <IncidentDef>
+    <defName>SCP_GocEliminationOperation</defName>
+    <label>GOC elimination ultimatum</label>
+    <targetTags><li>Map_PlayerHome</li></targetTags>
+    <workerClass>ScpFoundation.Storytelling.IncidentWorker_GocEliminationOperation</workerClass>
+    <category>FactionArrival</category>
+    <baseChance>0.35</baseChance>
+    <minRefireDays>18</minRefireDays>
+    <requireColonistsPresent>true</requireColonistsPresent>
+  </IncidentDef>
+</Defs>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="BuildingBase">
+    <defName>SCP_682AcidChamber</defName><label>SCP-682 acid chamber</label>
+    <description>A reinforced six-by-three hydrochloric acid chamber. Keep it powered: the acid fully submerges and immobilizes SCP-682 once the incapacitated creature is placed at its center.</description>
+    <thingClass>ScpFoundation.Anomalies.Building_Scp682AcidChamber</thingClass><size>(6,3)</size><tickerType>Normal</tickerType><drawerType>RealtimeOnly</drawerType>
+    <graphicData><texPath>Things/Building/Scp682AcidChamber</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>(6.2,3.3)</drawSize></graphicData>
+    <designationCategory>SCPFoundation</designationCategory><uiOrder>1215</uiOrder>
+    <researchPrerequisites><li>SCP_682AcidContainment</li></researchPrerequisites>
+    <passability>Standable</passability><pathCost>1000</pathCost><fillPercent>0</fillPercent><rotatable>false</rotatable>
+    <building><isEdifice>false</isEdifice></building>
+    <statBases><MaxHitPoints>1600</MaxHitPoints><WorkToBuild>12000</WorkToBuild><Flammability>0</Flammability></statBases>
+    <costList><Steel>700</Steel><SCP_Concrete>250</SCP_Concrete><ComponentIndustrial>16</ComponentIndustrial></costList>
+    <placeWorkers><li>ScpFoundation.Interactions.PlaceWorker_ScpHomePost</li></placeWorkers>
+    <comps>
+      <li Class="CompProperties_Power"><compClass>CompPowerTrader</compClass><basePowerConsumption>300</basePowerConsumption></li>
+      <li Class="ScpFoundation.Interactions.CompProperties_ScpPost" />
+    </comps>
+  </ThingDef>
+</Defs>

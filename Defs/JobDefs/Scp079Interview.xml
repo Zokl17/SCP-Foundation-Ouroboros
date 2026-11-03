@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <JobDef>
+    <defName>SCP_079Interview</defName>
+    <driverClass>ScpFoundation.Storytelling.JobDriver_Scp079Interview</driverClass>
+    <reportString>Interviewing SCP-079 and recording the answer.</reportString>
+    <casualInterruptible>false</casualInterruptible>
+  </JobDef>
+</Defs>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_Visitor_FieldLiaison.label>полевой представитель Фонда</SCP_Visitor_FieldLiaison.label>
+  <SCP_Caravan_MedicalSupply.label>медицинский караван Фонда</SCP_Caravan_MedicalSupply.label>
+  <SCP_Caravan_ContainmentArmory.label>арсенал содержания Фонда</SCP_Caravan_ContainmentArmory.label>
+  <SCP_Base_RequisitionsOffice.label>отдел снабжения Фонда</SCP_Base_RequisitionsOffice.label>
+  <SCP_Orbital_SupplyVessel.label>орбитальный транспорт снабжения Фонда</SCP_Orbital_SupplyVessel.label>
+</LanguageData>

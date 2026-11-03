@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_WatchAnomaly.label>наблюдать за аномалиями</SCP_WatchAnomaly.label><SCP_WatchAnomaly.verb>наблюдать</SCP_WatchAnomaly.verb><SCP_WatchAnomaly.gerund>наблюдает</SCP_WatchAnomaly.gerund>
+  <SCP_StudyAnomaly.label>исследовать аномалии</SCP_StudyAnomaly.label><SCP_StudyAnomaly.verb>исследовать</SCP_StudyAnomaly.verb><SCP_StudyAnomaly.gerund>исследует</SCP_StudyAnomaly.gerund>
+  <SCP_MonitorConsole.label>дежурить у консоли наблюдения</SCP_MonitorConsole.label>
+  <SCP_MonitorConsole.verb>наблюдать</SCP_MonitorConsole.verb>
+  <SCP_MonitorConsole.gerund>следит за камерами</SCP_MonitorConsole.gerund>
+  <SCP_DoBillsFoundationWorkstations.label>изготавливать предметы на верстаках Фонда</SCP_DoBillsFoundationWorkstations.label>
+  <SCP_DoBillsFoundationWorkstations.verb>изготавливать на</SCP_DoBillsFoundationWorkstations.verb>
+  <SCP_DoBillsFoundationWorkstations.gerund>изготавливает на</SCP_DoBillsFoundationWorkstations.gerund>
+</LanguageData>

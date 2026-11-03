@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="ArmorMachineableBase">
+    <defName>SCP_BrokenGodVestment</defName>
+    <label>clockwork vestment</label>
+    <description>An ivory vestment reinforced with brass clockwork and worn by the Church of the Broken God.</description>
+    <techLevel>Industrial</techLevel>
+    <graphicData><texPath>Things/Item/Apparel/BrokenGodVestment</texPath><graphicClass>Graphic_Single</graphicClass><shaderType>Cutout</shaderType></graphicData>
+    <statBases><MarketValue>520</MarketValue><MaxHitPoints>260</MaxHitPoints><Mass>4.2</Mass><Flammability>0.7</Flammability><ArmorRating_Sharp>0.35</ArmorRating_Sharp><ArmorRating_Blunt>0.24</ArmorRating_Blunt><ArmorRating_Heat>0.18</ArmorRating_Heat><Insulation_Cold>24</Insulation_Cold><Insulation_Heat>16</Insulation_Heat></statBases>
+    <thingCategories><li>ApparelArmor</li></thingCategories>
+    <costList><Cloth>65</Cloth><Steel>18</Steel></costList>
+    <apparel>
+      <bodyPartGroups><li>Torso</li><li>Neck</li><li>Shoulders</li></bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/BrokenGodVestment/BrokenGodVestment</wornGraphicPath>
+      <layers><li>Shell</li></layers><tags Inherit="False"><li>SCP_BrokenGodVestment</li></tags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options"><options><li><only>(1,1,1)</only></li></options></colorGenerator>
+  </ThingDef>
+  <ThingDef ParentName="ArmorHelmetMakeableBase">
+    <defName>SCP_BrokenGodMask</defName>
+    <label>clockwork votive mask</label>
+    <description>A hood and mechanical mask with a brass ocular gear, worn by the Church's machine-augmented faithful.</description>
+    <techLevel>Industrial</techLevel>
+    <graphicData><texPath>Things/Item/Apparel/BrokenGodMask</texPath><graphicClass>Graphic_Single</graphicClass><shaderType>Cutout</shaderType></graphicData>
+    <statBases><MarketValue>340</MarketValue><MaxHitPoints>180</MaxHitPoints><Mass>1.6</Mass><Flammability>0.55</Flammability><ArmorRating_Sharp>0.38</ArmorRating_Sharp><ArmorRating_Blunt>0.26</ArmorRating_Blunt><ArmorRating_Heat>0.21</ArmorRating_Heat><Insulation_Cold>6</Insulation_Cold><Insulation_Heat>4</Insulation_Heat></statBases>
+    <costList><Cloth>20</Cloth><Steel>15</Steel><ComponentIndustrial>1</ComponentIndustrial></costList>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <bodyPartGroups><li>FullHead</li></bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/BrokenGodMask/BrokenGodMask</wornGraphicPath>
+      <layers><li>Overhead</li></layers><tags Inherit="False"><li>SCP_BrokenGodVestment</li></tags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options"><options><li><only>(1,1,1)</only></li></options></colorGenerator>
+  </ThingDef>
+  <ThingDef ParentName="ArmorMachineableBase">
+    <defName>SCP_BrokenGodGuardArmor</defName>
+    <label>reliquary guard armor</label>
+    <description>Bronze clockwork plates over a ceremonial tabard. Guards of the Broken Church wear this armor when reclaiming fragments of their god.</description>
+    <techLevel>Industrial</techLevel>
+    <graphicData><texPath>Things/Item/Apparel/BrokenGodGuardArmor</texPath><graphicClass>Graphic_Single</graphicClass><shaderType>Cutout</shaderType></graphicData>
+    <statBases><MarketValue>1550</MarketValue><MaxHitPoints>410</MaxHitPoints><Mass>10.5</Mass><Flammability>0.3</Flammability><ArmorRating_Sharp>0.95</ArmorRating_Sharp><ArmorRating_Blunt>0.45</ArmorRating_Blunt><ArmorRating_Heat>0.42</ArmorRating_Heat><Insulation_Cold>20</Insulation_Cold><Insulation_Heat>12</Insulation_Heat></statBases>
+    <equippedStatOffsets><MoveSpeed>-0.18</MoveSpeed></equippedStatOffsets>
+    <thingCategories><li>ApparelArmor</li></thingCategories>
+    <costList><Cloth>50</Cloth><Steel>85</Steel><ComponentIndustrial>4</ComponentIndustrial></costList>
+    <apparel>
+      <bodyPartGroups><li>Torso</li><li>Neck</li><li>Shoulders</li><li>Arms</li><li>Legs</li></bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/BrokenGodGuardArmor/BrokenGodGuardArmor</wornGraphicPath>
+      <layers><li>Middle</li><li>Shell</li></layers><tags Inherit="False"><li>SCP_BrokenGodVestment</li></tags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options"><options><li><only>(1,1,1)</only></li></options></colorGenerator>
+  </ThingDef>
+</Defs>

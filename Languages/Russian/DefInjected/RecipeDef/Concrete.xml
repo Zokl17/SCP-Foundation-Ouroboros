@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_MakeConcrete.label>сделать бетон из каменного обломка</SCP_MakeConcrete.label>
+  <SCP_MakeConcrete.description>Измельчить один обычный каменный обломок в заполнитель и сформовать 15 бетонных блоков.</SCP_MakeConcrete.description>
+  <SCP_MakeConcrete.jobString>Изготовление бетонных блоков.</SCP_MakeConcrete.jobString>
+</LanguageData>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <QuestScriptDef>
+    <defName>SCP_079Recovery</defName>
+    <rootSelectionWeight>0.12</rootSelectionWeight><rootMinPoints>500</rootMinPoints>
+    <expireDaysRange>5~9</expireDaysRange>
+    <questNameRules><rulesStrings><li>questName->Recover SCP-079</li></rulesStrings></questNameRules>
+    <questDescriptionRules><rulesStrings>
+      <li>questDescription->The Foundation reports a series of attacks on infrastructure across the world. A recent attempt to access a classified next-generation computer let its security systems trace the source to a small abandoned data center. Your site is the closest Foundation facility. Enter the guarded building, recover the old computer and bring it to your colony. Do not connect it to any network.</li>
+    </rulesStrings></questDescriptionRules>
+    <root Class="QuestNode_Sequence"><nodes>
+      <li Class="QuestNode_GetMap" />
+      <li Class="QuestNode_GetSiteTile"><storeAs>siteTile</storeAs><preferCloserTiles>true</preferCloserTiles></li>
+      <li Class="ScpFoundation.Storytelling.QuestNode_Scp079SiteSetup" />
+      <li Class="QuestNode_GetDefaultSitePartsParams">
+        <tile>$siteTile</tile><faction>$siteFaction</faction>
+        <sitePartDefs>$sitePartDefs</sitePartDefs><storeSitePartsParamsAs>sitePartsParams</storeSitePartsParamsAs>
+      </li>
+      <li Class="QuestNode_GenerateSite">
+        <sitePartsParams>$sitePartsParams</sitePartsParams><faction>$siteFaction</faction>
+        <tile>$siteTile</tile><storeAs>site</storeAs><worldObjectDef>SCP_079RecoverySite</worldObjectDef>
+      </li>
+      <li Class="QuestNode_SpawnWorldObjects"><worldObjects>$site</worldObjects></li>
+      <li Class="ScpFoundation.Storytelling.QuestNode_Scp079TrackRecovery" />
+      <li Class="ScpFoundation.Storytelling.QuestNode_RecordScpArrival"><number>079</number></li>
+      <li Class="QuestNode_WorldObjectTimeout">
+        <worldObject>$site</worldObject><isQuestTimeout>true</isQuestTimeout>
+        <delayTicks>1200000</delayTicks><inSignalDisable>site.MapGenerated</inSignalDisable>
+        <destroyOnCleanup>false</destroyOnCleanup>
+        <node Class="QuestNode_End"><outcome>Fail</outcome></node>
+      </li>
+      <li Class="QuestNode_Signal"><inSignal>Scp079Recovered</inSignal>
+        <node Class="QuestNode_Sequence"><nodes>
+          <li Class="QuestNode_Letter"><label TKey="SCP_079RecoveredTitle">SCP-079 recovered</label><text TKey="SCP_079RecoveredBody">The computer reached your colony. Secure it at a containment post. The Foundation terminal can record a local interview; do not connect the device to a network.</text></li>
+          <li Class="QuestNode_End"><outcome>Success</outcome></li>
+        </nodes></node>
+      </li>
+      <li Class="QuestNode_Signal"><inSignal>Scp079Lost</inSignal><node Class="QuestNode_End"><outcome>Fail</outcome></node></li>
+    </nodes></root>
+  </QuestScriptDef>
+</Defs>

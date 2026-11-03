@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="ArmorMachineableBase">
+    <defName>SCP_FoundationAssaultVest</defName>
+    <label>Foundation assault vest</label>
+    <description>A compact high-collared ballistic vest issued to Foundation tactical personnel. Textured graphite-gray fabric, visible armor plates and an integrated three-pouch load-bearing rig provide practical protection without the weight of the heavier Nu-7 armor package.</description>
+    <techLevel>Industrial</techLevel>
+    <graphicData><texPath>Things/Item/Apparel/ScpFoundationAssaultVest</texPath><graphicClass>Graphic_Single</graphicClass><shaderType>Cutout</shaderType></graphicData>
+    <recipeMaker><researchPrerequisite>SCP_FoundationTacticalArmor</researchPrerequisite><unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef><skillRequirements><Crafting>4</Crafting></skillRequirements><recipeUsers Inherit="False"><li>SCP_FoundationCoreBench</li></recipeUsers><displayPriority>209</displayPriority></recipeMaker>
+    <statBases>
+      <WorkToMake>12000</WorkToMake><MarketValue>760</MarketValue><MaxHitPoints>330</MaxHitPoints><Mass>7.2</Mass><Flammability>0.45</Flammability>
+      <ArmorRating_Sharp>0.92</ArmorRating_Sharp><ArmorRating_Blunt>0.40</ArmorRating_Blunt><ArmorRating_Heat>0.46</ArmorRating_Heat>
+      <Insulation_Cold>4</Insulation_Cold><Insulation_Heat>1</Insulation_Heat><EquipDelay>6</EquipDelay>
+    </statBases>
+    <equippedStatOffsets><MoveSpeed>-0.08</MoveSpeed></equippedStatOffsets>
+    <thingCategories><li>ApparelArmor</li></thingCategories>
+    <costList><Cloth>45</Cloth><Steel>35</Steel><ComponentIndustrial>2</ComponentIndustrial></costList>
+    <apparel>
+      <bodyPartGroups><li>Torso</li><li>Neck</li><li>Shoulders</li><li>Arms</li></bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/FoundationAssaultVest/FoundationAssaultVest</wornGraphicPath>
+      <layers><li>Middle</li><li>Shell</li></layers><tags><li>SCP_FoundationArmor</li></tags><defaultOutfitTags><li>Soldier</li></defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options"><options><li><only>(1,1,1)</only></li></options></colorGenerator>
+    <tradeTags><li>Armor</li></tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="ArmorMachineableBase">
+    <defName>SCP_Nu7Armor</defName>
+    <label>Nu-7 tactical armor</label>
+    <description>A modular tactical armor package issued to Nu-7 operators. It combines rigid torso and shoulder plates with a high collar, magazine rig, utility pouches and a hanging groin protector. Its protection exceeds a normal flak vest, but the extra coverage and carried equipment add weight.</description>
+    <techLevel>Industrial</techLevel>
+    <graphicData>
+      <texPath>Things/Item/Apparel/ScpNu7Armor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Cutout</shaderType>
+      <drawSize>0.95</drawSize>
+    </graphicData>
+    <recipeMaker>
+      <researchPrerequisite>SCP_FoundationTacticalArmor</researchPrerequisite>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <skillRequirements><Crafting>7</Crafting></skillRequirements>
+      <recipeUsers Inherit="False"><li>SCP_FoundationCoreBench</li></recipeUsers>
+      <displayPriority>210</displayPriority>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>24000</WorkToMake><MaxHitPoints>450</MaxHitPoints><Mass>7.5</Mass><Flammability>0.45</Flammability>
+      <ArmorRating_Sharp>1.166</ArmorRating_Sharp><ArmorRating_Blunt>0.495</ArmorRating_Blunt><ArmorRating_Heat>0.594</ArmorRating_Heat>
+      <Insulation_Cold>4</Insulation_Cold><Insulation_Heat>1</Insulation_Heat><EquipDelay>7</EquipDelay>
+    </statBases>
+    <equippedStatOffsets><MoveSpeed>-0.15</MoveSpeed></equippedStatOffsets>
+    <thingCategories><li>ApparelArmor</li></thingCategories>
+    <costList><Cloth>40</Cloth><Plasteel>30</Plasteel><ComponentIndustrial>3</ComponentIndustrial></costList>
+    <apparel>
+      <bodyPartGroups><li>Torso</li><li>Neck</li><li>Shoulders</li><li>Arms</li></bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Nu7Armor/Nu7Armor</wornGraphicPath>
+      <layers><li>Middle</li><li>Shell</li></layers>
+      <tags><li>SCP_FoundationArmor</li></tags>
+      <defaultOutfitTags><li>Soldier</li></defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options"><options><li><only>(1,1,1)</only></li></options></colorGenerator>
+    <tradeTags><li>Armor</li></tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="ArmorHelmetMakeableBase">
+    <defName>SCP_Nu7Helmet</defName>
+    <label>Nu-7 tactical helmet</label>
+    <description>A reinforced tactical helmet issued with Nu-7 body armor. Its shaped shell, sealed goggles and padded side protection shield the operator without the bulk of powered armor.</description>
+    <techLevel>Industrial</techLevel>
+    <graphicData>
+      <texPath>Things/Item/Apparel/ScpNu7Helmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Cutout</shaderType>
+      <drawSize>0.78</drawSize>
+    </graphicData>
+    <recipeMaker>
+      <researchPrerequisite>SCP_FoundationTacticalArmor</researchPrerequisite>
+      <unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+      <skillRequirements><Crafting>7</Crafting></skillRequirements>
+      <recipeUsers Inherit="False"><li>SCP_FoundationCoreBench</li></recipeUsers>
+      <displayPriority>211</displayPriority>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>12000</WorkToMake><MaxHitPoints>360</MaxHitPoints><Mass>1.8</Mass>
+      <ArmorRating_Sharp>1.06</ArmorRating_Sharp><ArmorRating_Blunt>0.45</ArmorRating_Blunt><ArmorRating_Heat>0.54</ArmorRating_Heat>
+      <Insulation_Cold>4</Insulation_Cold><Insulation_Heat>2</Insulation_Heat>
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+    <costList><Steel>25</Steel><Plasteel>15</Plasteel><ComponentIndustrial>2</ComponentIndustrial></costList>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <bodyPartGroups><li>FullHead</li></bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Nu7Helmet/Nu7Helmet</wornGraphicPath>
+      <layers><li>Overhead</li></layers>
+      <tags><li>SCP_FoundationArmor</li></tags>
+      <defaultOutfitTags><li>Soldier</li></defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options"><options><li><only>(1,1,1)</only></li></options></colorGenerator>
+    <tradeTags><li>Armor</li></tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="ArmorHelmetMakeableBase">
+    <defName>SCP_ScrambleVisor</defName>
+    <label>SCRAMBLE visual-protection visor</label>
+    <description>A helmet-mounted optical array issued to Foundation response teams. Four low-light lenses feed a hardened processor that detects and disrupts hazardous visual patterns before they reach the wearer. The targeting overlay improves weapon handling, while its filtered image offers limited protection from cognitohazardous and psychic influence.</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/Item/Apparel/ScpScrambleVisor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Cutout</shaderType>
+      <drawSize>0.85</drawSize>
+    </graphicData>
+    <recipeMaker>
+      <researchPrerequisite>SCP_FoundationSpecialArmament</researchPrerequisite>
+      <unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+      <skillRequirements><Crafting>8</Crafting></skillRequirements>
+      <recipeUsers Inherit="False"><li>SCP_FoundationCoreBench</li></recipeUsers>
+      <displayPriority>212</displayPriority>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>18000</WorkToMake><MaxHitPoints>100</MaxHitPoints><Mass>0.8</Mass>
+      <ArmorRating_Sharp>0.04</ArmorRating_Sharp><ArmorRating_Blunt>0.02</ArmorRating_Blunt><ArmorRating_Heat>0.05</ArmorRating_Heat>
+      <EquipDelay>0.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <ShootingAccuracyPawn>2</ShootingAccuracyPawn>
+      <PsychicSensitivity>-0.15</PsychicSensitivity>
+    </equippedStatOffsets>
+    <costList><Steel>35</Steel><Plasteel>15</Plasteel><ComponentIndustrial>5</ComponentIndustrial><ComponentSpacer>1</ComponentSpacer></costList>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <bodyPartGroups><li>Eyes</li></bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ScrambleVisor/ScrambleVisor</wornGraphicPath>
+      <layers><li>EyeCover</li></layers>
+      <tags><li>SCP_FoundationArmor</li></tags>
+      <defaultOutfitTags><li>Soldier</li></defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options"><options><li><only>(1,1,1)</only></li></options></colorGenerator>
+    <tradeTags><li>Armor</li></tradeTags>
+  </ThingDef>
+</Defs>

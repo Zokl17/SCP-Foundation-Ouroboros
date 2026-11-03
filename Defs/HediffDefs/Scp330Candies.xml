@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <HediffDef Name="SCP_330CandyEffectBase" Abstract="True">
+    <hediffClass>HediffWithComps</hediffClass><isBad>false</isBad><initialSeverity>1</initialSeverity>
+    <comps><li Class="HediffCompProperties_Disappears"><disappearsAfterTicks>15000</disappearsAfterTicks><showRemainingTime>true</showRemainingTime></li></comps>
+  </HediffDef>
+  <HediffDef ParentName="SCP_330CandyEffectBase"><defName>SCP_330CandyYellowEffect</defName><label>yellow candy</label><description>Movement speed increased for six hours.</description><stages><li><statOffsets><MoveSpeed>0.5</MoveSpeed></statOffsets></li></stages></HediffDef>
+  <HediffDef ParentName="SCP_330CandyEffectBase"><defName>SCP_330CandyGreenEffect</defName><label>green candy</label><description>Immunity gain and wound healing increased slightly for six hours.</description><stages><li><statOffsets><ImmunityGainSpeed>0.15</ImmunityGainSpeed><InjuryHealingFactor>0.15</InjuryHealingFactor></statOffsets></li></stages></HediffDef>
+  <HediffDef ParentName="SCP_330CandyEffectBase"><defName>SCP_330CandyRedEffect</defName><label>red candy</label><description>Pain is reduced and bleeding wounds gradually close for six hours.</description><hediffClass>ScpFoundation.Anomalies.Hediff_Scp330Red</hediffClass><stages><li><painFactor>0.5</painFactor></li></stages></HediffDef>
+  <HediffDef ParentName="SCP_330CandyEffectBase"><defName>SCP_330CandyPurpleEffect</defName><label>purple candy</label><description>Work speed increased for six hours.</description><stages><li><statOffsets><WorkSpeedGlobal>0.2</WorkSpeedGlobal></statOffsets></li></stages></HediffDef>
+  <HediffDef ParentName="SCP_330CandyEffectBase"><defName>SCP_330CandyBlackEffect</defName><label>black candy</label><description>Shooting accuracy and aiming speed increased for six hours.</description><stages><li><statOffsets><ShootingAccuracyPawn>4</ShootingAccuracyPawn><AimingDelayFactor>-0.4</AimingDelayFactor></statOffsets></li></stages></HediffDef>
+</Defs>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <PawnKindDef ParentName="OutlanderBase" Name="SCP_InterestGroupFighterBase" Abstract="True">
+    <initialWillRange>4~8</initialWillRange><initialResistanceRange>16~30</initialResistanceRange>
+    <isFighter>true</isFighter><combatPower>115</combatPower><itemQuality>Normal</itemQuality>
+    <weaponMoney>450~1000</weaponMoney><apparelMoney>800~1600</apparelMoney><apparelAllowHeadgearChance>0.8</apparelAllowHeadgearChance>
+    <apparelTags><li>IndustrialMilitaryBasic</li><li>IndustrialMilitaryAdvanced</li></apparelTags>
+    <skills><li><skill>Shooting</skill><range>7~14</range></li><li><skill>Melee</skill><range>6~13</range></li></skills>
+  </PawnKindDef>
+  <PawnKindDef ParentName="OutlanderBase" Name="SCP_InterestGroupTraderBase" Abstract="True">
+    <initialWillRange>2~5</initialWillRange><initialResistanceRange>12~24</initialResistanceRange>
+    <trader>true</trader><isFighter>false</isFighter><combatPower>55</combatPower><weaponTags><li>Gun</li></weaponTags>
+    <weaponMoney>250~500</weaponMoney><apparelMoney>650~1200</apparelMoney>
+    <skills><li><skill>Social</skill><range>8~16</range></li></skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="SCP_InterestGroupFighterBase" Name="SCP_ChaosAssaultBase" Abstract="True">
+    <defaultFactionDef>SCP_ChaosInsurgency</defaultFactionDef><label>Chaos Insurgency assault operative</label><labelPlural>Chaos Insurgency assault operatives</labelPlural>
+    <combatPower>190</combatPower><itemQuality>Good</itemQuality><weaponMoney>2500~4000</weaponMoney><apparelMoney>1500~2400</apparelMoney>
+    <apparelTags Inherit="False"><li>IndustrialBasic</li></apparelTags><apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <apparelRequired><li MayRequire="Ludeon.RimWorld.Biotech">Apparel_GasMask</li></apparelRequired>
+    <skills><li><skill>Shooting</skill><range>10~16</range></li><li><skill>Melee</skill><range>6~12</range></li></skills>
+  </PawnKindDef>
+  <PawnKindDef ParentName="SCP_ChaosAssaultBase"><defName>SCP_ChaosInsurgent</defName><weaponTags Inherit="False"><li>SCPChaosAKGL</li></weaponTags></PawnKindDef>
+  <PawnKindDef ParentName="SCP_ChaosAssaultBase"><defName>SCP_ChaosBreacher</defName><label>Chaos Insurgency breacher</label><labelPlural>Chaos Insurgency breachers</labelPlural><combatPower>180</combatPower><canBeSapper>true</canBeSapper><isGoodBreacher>true</isGoodBreacher><weaponTags Inherit="False"><li>GrenadeDestructive</li></weaponTags></PawnKindDef>
+  <PawnKindDef ParentName="SCP_ChaosAssaultBase"><defName>SCP_ChaosCellCommander</defName><label>Chaos Insurgency cell commander</label><labelPlural>Chaos Insurgency cell commanders</labelPlural><combatPower>250</combatPower><itemQuality>Excellent</itemQuality><weaponMoney>1000~1700</weaponMoney><weaponTags Inherit="False"><li>SCPChaosAKGL</li></weaponTags><skills><li><skill>Shooting</skill><range>13~18</range></li><li><skill>Melee</skill><range>8~14</range></li><li><skill>Social</skill><range>9~15</range></li></skills></PawnKindDef>
+  <PawnKindDef ParentName="SCP_ChaosAssaultBase">
+    <defName>SCP_ChaosHeavy</defName><label>Chaos Insurgency exosuit gunner</label><labelPlural>Chaos Insurgency exosuit gunners</labelPlural>
+    <combatPower>350</combatPower><itemQuality>Excellent</itemQuality><weaponMoney>3500~5000</weaponMoney><apparelMoney>5000~7200</apparelMoney>
+    <apparelRequired Inherit="False"><li>SCP_ChaosHeavyExosuit</li><li>SCP_ChaosHeavyHelmet</li></apparelRequired>
+    <weaponTags Inherit="False"><li>SCPChaosHeavyLMG</li></weaponTags><skills><li><skill>Shooting</skill><range>12~18</range></li><li><skill>Melee</skill><range>8~14</range></li></skills>
+  </PawnKindDef>
+  <PawnKindDef ParentName="SCP_InterestGroupTraderBase"><defName>SCP_ChaosQuartermaster</defName><defaultFactionDef>SCP_ChaosInsurgency</defaultFactionDef><label>Insurgency quartermaster</label><labelPlural>Insurgency quartermasters</labelPlural></PawnKindDef>
+
+  <!-- Prevent the free warm-layer pass from replacing required vestments and masks. -->
+  <PawnKindDef ParentName="SCP_InterestGroupFighterBase"><defName>SCP_BrokenGodZealot</defName><defaultFactionDef>SCP_ChurchBrokenGod</defaultFactionDef><label>Broken God zealot</label><labelPlural>Broken God zealots</labelPlural><combatPower>170</combatPower><weaponTags><li>IndustrialGunAdvanced</li></weaponTags><apparelMoney>1100~1900</apparelMoney><apparelTags Inherit="False"><li>IndustrialBasic</li><li>SCP_BrokenGodVestment</li></apparelTags><apparelIgnoreSeasons>true</apparelIgnoreSeasons><apparelRequired Inherit="False"><li>SCP_BrokenGodVestment</li><li>SCP_BrokenGodMask</li></apparelRequired><apparelColor>(1,1,1)</apparelColor><apparelAllowHeadgearChance>1</apparelAllowHeadgearChance><techHediffsChance>0.65</techHediffsChance><techHediffsMoney>900~2600</techHediffsMoney><techHediffsTags><li>Simple</li><li>Advanced</li></techHediffsTags></PawnKindDef>
+  <PawnKindDef ParentName="SCP_InterestGroupFighterBase"><defName>SCP_BrokenGodCantor</defName><defaultFactionDef>SCP_ChurchBrokenGod</defaultFactionDef><label>Broken God cantor</label><labelPlural>Broken God cantors</labelPlural><combatPower>185</combatPower><weaponTags Inherit="False"><li>GrenadeEMP</li></weaponTags><apparelMoney>1100~1900</apparelMoney><apparelTags Inherit="False"><li>IndustrialBasic</li><li>SCP_BrokenGodVestment</li></apparelTags><apparelIgnoreSeasons>true</apparelIgnoreSeasons><apparelRequired Inherit="False"><li>SCP_BrokenGodVestment</li><li>SCP_BrokenGodMask</li></apparelRequired><apparelColor>(1,1,1)</apparelColor><apparelAllowHeadgearChance>1</apparelAllowHeadgearChance><techHediffsChance>1</techHediffsChance><techHediffsMoney>1500~2600</techHediffsMoney><techHediffsTags><li>Simple</li><li>Advanced</li></techHediffsTags></PawnKindDef>
+  <PawnKindDef ParentName="SCP_InterestGroupFighterBase"><defName>SCP_BrokenGodGuard</defName><defaultFactionDef>SCP_ChurchBrokenGod</defaultFactionDef><label>Broken God reliquary guard</label><labelPlural>Broken God reliquary guards</labelPlural><combatPower>260</combatPower><weaponTags Inherit="False"><li>PumpShotgun</li></weaponTags><weaponMoney>600~1200</weaponMoney><apparelMoney>2100~3400</apparelMoney><apparelTags Inherit="False"><li>IndustrialBasic</li><li>SCP_BrokenGodVestment</li></apparelTags><apparelIgnoreSeasons>true</apparelIgnoreSeasons><apparelRequired Inherit="False"><li>SCP_BrokenGodGuardArmor</li><li>SCP_BrokenGodMask</li></apparelRequired><apparelColor>(1,1,1)</apparelColor><apparelAllowHeadgearChance>1</apparelAllowHeadgearChance><techHediffsChance>0.9</techHediffsChance><techHediffsMoney>1600~3400</techHediffsMoney><techHediffsTags><li>Simple</li><li>Advanced</li></techHediffsTags><skills><li><skill>Shooting</skill><range>10~16</range></li><li><skill>Melee</skill><range>8~14</range></li></skills></PawnKindDef>
+  <PawnKindDef ParentName="SCP_InterestGroupTraderBase"><defName>SCP_BrokenGodQuartermaster</defName><defaultFactionDef>SCP_ChurchBrokenGod</defaultFactionDef><label>Church reliquary keeper</label><labelPlural>Church reliquary keepers</labelPlural><apparelTags Inherit="False"><li>IndustrialBasic</li><li>SCP_BrokenGodVestment</li></apparelTags><apparelRequired Inherit="False"><li>SCP_BrokenGodVestment</li><li>SCP_BrokenGodMask</li></apparelRequired><apparelIgnoreSeasons>true</apparelIgnoreSeasons><apparelAllowHeadgearChance>1</apparelAllowHeadgearChance><apparelColor>(1,1,1)</apparelColor><apparelMoney>1100~1900</apparelMoney></PawnKindDef>
+
+  <PawnKindDef ParentName="SCP_InterestGroupFighterBase"><defName>SCP_SarkicCultist</defName><defaultFactionDef>SCP_SarkicCults</defaultFactionDef><label>Sarkic cultist</label><labelPlural>Sarkic cultists</labelPlural><combatPower>125</combatPower><weaponTags><li>NeolithicMeleeAdvanced</li><li>MedievalMeleeAdvanced</li></weaponTags><apparelTags Inherit="False"><li>IndustrialBasic</li></apparelTags></PawnKindDef>
+  <PawnKindDef ParentName="SCP_InterestGroupTraderBase"><defName>SCP_SarkicQuartermaster</defName><defaultFactionDef>SCP_SarkicCults</defaultFactionDef><label>Sarkic emissary</label><labelPlural>Sarkic emissaries</labelPlural></PawnKindDef>
+
+  <PawnKindDef ParentName="SCP_InterestGroupFighterBase"><defName>SCP_SerpentsHandAdept</defName><defaultFactionDef>SCP_SerpentsHand</defaultFactionDef><label>Serpent's Hand adept</label><labelPlural>Serpent's Hand adepts</labelPlural><combatPower>135</combatPower><weaponTags><li>Gun</li><li>MedievalMeleeAdvanced</li></weaponTags></PawnKindDef>
+  <PawnKindDef ParentName="OutlanderBase">
+    <defName>SCP_079LabGuard</defName>
+    <label>abandoned laboratory guard</label>
+    <labelPlural>abandoned laboratory guards</labelPlural>
+    <initialWillRange>4~8</initialWillRange>
+    <initialResistanceRange>16~30</initialResistanceRange>
+    <combatPower>120</combatPower>
+    <weaponTags><li>Gun</li></weaponTags>
+    <apparelMoney>1200~1700</apparelMoney>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <apparelRequired Inherit="False">
+      <li>Apparel_BasicShirt</li>
+      <li>Apparel_FlakPants</li>
+      <li>Apparel_FlakVest</li>
+      <li>Apparel_FlakJacket</li>
+    </apparelRequired>
+  </PawnKindDef>
+</Defs>

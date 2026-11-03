@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_682Object.label>SCP-682</SCP_682Object.label>
+  <SCP_682Object.description>Крупное живучее рептилоидное существо. Быстро восстанавливается, не гибнет от обычных повреждений. Перед переносом на пост содержания его необходимо временно обездвижить.</SCP_682Object.description>
+  <SCP_682AcidChamber.label>кислотная камера SCP-682</SCP_682AcidChamber.label>
+  <SCP_682AcidChamber.description>Укреплённая камера размером 6×3 клетки, наполненная соляной кислотой до полного погружения и обездвиживания SCP-682. Подключите питание и поместите обездвиженный объект в центр.</SCP_682AcidChamber.description>
+</LanguageData>

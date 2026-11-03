@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <SitePartDef>
+    <defName>SCP_CollectorEstate</defName><label>collector's estate</label>
+    <description>An obsessed collector keeps several anomalous objects in a guarded house.</description>
+    <workerClass>SitePartWorker</workerClass>
+    <siteTexture>World/WorldObjects/Sites/Outpost</siteTexture>
+    <expandingIconTexture>World/WorldObjects/Expanding/Sites/Outpost</expandingIconTexture>
+    <applyFactionColorToSiteTexture>true</applyFactionColorToSiteTexture>
+    <showFactionInInspectString>true</showFactionInInspectString><requiresFaction>true</requiresFaction>
+    <approachOrderString>Investigate {0}</approachOrderString>
+    <approachingReportString>Investigating {0}.</approachingReportString>
+    <arrivedLetter>The collector and a guard occupy the house. SCP-067, SCP-012, SCP-316 and the red SCP-093 disc are stored together in the plasteel vault west of the central hall. Recover all four objects and bring them home.</arrivedLetter>
+    <minMapSize>(250, 1, 250)</minMapSize><tags><li>SCPCollectorEstate</li></tags>
+  </SitePartDef>
+  <WorldObjectDef ParentName="Site">
+    <defName>SCP_CollectorEstateSite</defName><label>collector's estate</label>
+    <overrideMapSize>(250, 1, 250)</overrideMapSize><mapGenerator>SCP_CollectorEstateMap</mapGenerator>
+  </WorldObjectDef>
+  <MapGeneratorDef>
+    <defName>SCP_CollectorEstateMap</defName>
+    <genSteps><li>ElevationFertility</li><li>Terrain</li><li>SCP_CollectorEstate</li>
+      <li>FindPlayerStartSpot</li><li>Fog</li></genSteps>
+  </MapGeneratorDef>
+  <GenStepDef>
+    <defName>SCP_CollectorEstate</defName><order>400</order>
+    <genStep Class="ScpFoundation.Storytelling.GenStep_ScpCollectorEstate" />
+  </GenStepDef>
+</Defs>

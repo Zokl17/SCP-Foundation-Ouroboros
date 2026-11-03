@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <CombatExtended.AmmoSetDef>
+    <defName>SCP_AmmoSet_127Teeth</defName>
+    <label>SCP-127 teeth</label>
+    <ammoTypes><SCP_Ammo_127Tooth>SCP_127Tooth</SCP_Ammo_127Tooth></ammoTypes>
+  </CombatExtended.AmmoSetDef>
+  <!-- This is a CE magazine marker, not a craftable or tradable cartridge. -->
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="AmmoBase">
+    <defName>SCP_Ammo_127Tooth</defName>
+    <label>SCP-127 tooth</label>
+    <description>A tooth grown inside SCP-127's living magazine. It cannot be manufactured or loaded separately.</description>
+    <graphicData><texPath>Things/Projectile/ScpShotgunPellet</texPath><graphicClass>Graphic_Single</graphicClass></graphicData>
+    <statBases><Mass>0.01</Mass><Bulk>0.01</Bulk><MarketValue>0</MarketValue></statBases>
+    <ammoClass>ArmorPiercing</ammoClass>
+    <generateAllowChance>0</generateAllowChance>
+    <cookOffProjectile>SCP_127Tooth</cookOffProjectile>
+    <tradeTags Inherit="False" />
+    <thingCategories><li>SCP_FoundationSpecialAmmo</li></thingCategories>
+  </ThingDef>
+</Defs>

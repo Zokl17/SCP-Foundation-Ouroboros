@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef>
+    <defName>SCP_096Object</defName><label>SCP-096</label>
+    <description>A tall, emaciated humanoid that hides its face. Anyone who sees that face becomes its target.</description>
+    <thingClass>ScpFoundation.Anomalies.Thing_Scp096</thingClass>
+    <category>Item</category><altitudeLayer>Item</altitudeLayer><useHitPoints>true</useHitPoints>
+    <tickerType>Normal</tickerType><drawerType>RealtimeOnly</drawerType>
+    <selectable>true</selectable><isAutoAttackableMapObject>true</isAutoAttackableMapObject><stackLimit>1</stackLimit>
+    <alwaysHaulable>true</alwaysHaulable><designateHaulable>false</designateHaulable><rotatable>true</rotatable>
+    <graphicData><texPath>Things/Item/Scp096</texPath><graphicClass>Graphic_Multi</graphicClass><drawRotated>false</drawRotated><drawSize>(1.55,2.5)</drawSize></graphicData>
+    <statBases><MaxHitPoints>1200</MaxHitPoints><Mass>65</Mass><MarketValue>0</MarketValue><Flammability>0</Flammability></statBases>
+    <tradeability>None</tradeability>
+    <comps>
+      <li Class="ScpFoundation.Runtime.CompProperties_Scp"><anomaly>SCP_Anomaly096</anomaly><requireCapture>true</requireCapture></li>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="ScpFoundation.Interactions.CompProperties_ScpInteraction" />
+      <li Class="ScpFoundation.Anomalies.CompProperties_Scp096" />
+    </comps>
+  </ThingDef>
+</Defs>

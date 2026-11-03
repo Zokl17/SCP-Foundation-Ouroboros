@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <IncidentDef>
+    <defName>SCP_Discover504</defName><label>SCP-504 bush found</label>
+    <workerClass>ScpFoundation.Anomalies.IncidentWorker_Discover504</workerClass>
+    <category>Misc</category><targetTags><li>Map_PlayerHome</li></targetTags>
+    <baseChance>0.12</baseChance><earliestDay>5</earliestDay><minPopulation>1</minPopulation><minRefireDays>30</minRefireDays>
+    <letterDef>NeutralEvent</letterDef><letterLabel>Unusual tomato bush</letterLabel>
+    <letterText>A tomato bush has been found near the colony. Carry it to a containment post. It ripens one fruit per day, up to five; careless speech near the ripe fruit may be dangerous.</letterText>
+  </IncidentDef>
+</Defs>

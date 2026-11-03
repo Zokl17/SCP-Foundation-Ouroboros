@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <SitePartDef>
+    <defName>SCP_096HoldingCell</defName><label>breached SCP-096 facility</label>
+    <description>A containment outpost where civilians saw a photograph of SCP-096. Five bodies remain inside.</description>
+    <workerClass>SitePartWorker</workerClass>
+    <siteTexture>World/WorldObjects/Sites/Outpost</siteTexture>
+    <expandingIconTexture>World/WorldObjects/Expanding/Sites/Outpost</expandingIconTexture>
+    <applyFactionColorToSiteTexture>true</applyFactionColorToSiteTexture>
+    <showFactionInInspectString>true</showFactionInInspectString>
+    <requiresFaction>true</requiresFaction>
+    <approachOrderString>Recover {0}</approachOrderString>
+    <approachingReportString>Recovering {0}.</approachingReportString>
+    <arrivedLetter>Five civilians are dead inside the outpost. A photograph of SCP-096 appears to have caused the breach. The subject remains inside; seeing its face will trigger pursuit. Incapacitate it before transport.</arrivedLetter>
+    <minMapSize>(250, 1, 250)</minMapSize>
+    <tags><li>SCP096Recovery</li></tags>
+  </SitePartDef>
+  <WorldObjectDef ParentName="Site">
+    <defName>SCP_096RecoverySite</defName><label>breached SCP-096 facility</label>
+    <overrideMapSize>(250, 1, 250)</overrideMapSize>
+    <mapGenerator>SCP_096RecoveryMap</mapGenerator>
+  </WorldObjectDef>
+  <MapGeneratorDef>
+    <defName>SCP_096RecoveryMap</defName>
+    <genSteps>
+      <li>ElevationFertility</li><li>Terrain</li><li>SCP_096HoldingCell</li>
+      <li>FindPlayerStartSpot</li><li>Fog</li>
+    </genSteps>
+  </MapGeneratorDef>
+  <GenStepDef>
+    <defName>SCP_096HoldingCell</defName><order>400</order>
+    <genStep Class="ScpFoundation.Storytelling.GenStep_Scp096HoldingCell" />
+  </GenStepDef>
+</Defs>

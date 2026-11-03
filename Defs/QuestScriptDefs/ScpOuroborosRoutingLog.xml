@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <QuestScriptDef>
+    <defName>SCP_OuroborosRoutingLog</defName>
+    <rootSelectionWeight>0</rootSelectionWeight><rootMinPoints>0</rootMinPoints>
+    <questNameRules><rulesStrings><li>questName->Recover the lost routing log</li></rulesStrings></questNameRules>
+    <questDescriptionRules><rulesStrings>
+      <li>questDescription->Research of SCP-629's detached parts reached level 2. A Church-made plate attached to them bears a routing index that points to a former Foundation station. The Foundation has marked it on the world map. Send a caravan, extract the physical log and return it home. The record may reveal where the signal to SCP-882 first entered the network.</li>
+    </rulesStrings></questDescriptionRules>
+    <root Class="QuestNode_Sequence"><nodes>
+      <li Class="QuestNode_GetMap" />
+      <li Class="QuestNode_GetSiteTile"><storeAs>siteTile</storeAs><preferCloserTiles>true</preferCloserTiles></li>
+      <li Class="ScpFoundation.Storytelling.QuestNode_ScpRoutingLogSetup" />
+      <li Class="QuestNode_GetDefaultSitePartsParams"><tile>$siteTile</tile><faction>$siteFaction</faction>
+        <sitePartDefs>$sitePartDefs</sitePartDefs><storeSitePartsParamsAs>sitePartsParams</storeSitePartsParamsAs>
+      </li>
+      <li Class="QuestNode_GenerateSite"><sitePartsParams>$sitePartsParams</sitePartsParams>
+        <faction>$siteFaction</faction><tile>$siteTile</tile><storeAs>site</storeAs>
+        <worldObjectDef>SCP_OuroborosRoutingLogSite</worldObjectDef>
+      </li>
+      <li Class="QuestNode_SpawnWorldObjects"><worldObjects>$site</worldObjects></li>
+      <li Class="ScpFoundation.Storytelling.QuestNode_ScpRoutingLogTrack" />
+      <li Class="QuestNode_WorldObjectTimeout"><worldObject>$site</worldObject>
+        <isQuestTimeout>true</isQuestTimeout><delayTicks>1200000</delayTicks>
+        <inSignalDisable>site.MapGenerated</inSignalDisable><destroyOnCleanup>false</destroyOnCleanup>
+        <node Class="QuestNode_End"><outcome>Fail</outcome></node>
+      </li>
+      <li Class="QuestNode_Signal"><inSignal>ScpRoutingLogRecovered</inSignal>
+        <node Class="QuestNode_End"><outcome>Success</outcome></node>
+      </li>
+      <li Class="QuestNode_Signal"><inSignal>ScpRoutingLogLost</inSignal>
+        <node Class="QuestNode_End"><outcome>Fail</outcome></node>
+      </li>
+    </nodes></root>
+  </QuestScriptDef>
+</Defs>

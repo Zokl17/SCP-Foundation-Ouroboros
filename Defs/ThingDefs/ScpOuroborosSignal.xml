@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef>
+    <defName>SCP_OuroborosSignalRecorder</defName>
+    <label>signal relay recorder</label>
+    <description>A sealed recorder in the silent relay. Select it and choose Extract transponder, or select a colonist and right-click it. The colonist takes the module into their inventory; bring them back to the colony.</description>
+    <thingClass>ScpFoundation.Storytelling.Thing_ScpSignalRecorder</thingClass><category>Item</category><altitudeLayer>Item</altitudeLayer>
+    <selectable>true</selectable><stackLimit>1</stackLimit>
+    <alwaysHaulable>false</alwaysHaulable><designateHaulable>false</designateHaulable><rotatable>false</rotatable>
+    <graphicData><texPath>Things/Item/ScpArtifacts/ScpRelayRecorder</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>0.8</drawSize></graphicData>
+    <statBases><MaxHitPoints>80</MaxHitPoints><Mass>2</Mass><MarketValue>0</MarketValue><Flammability>0.2</Flammability></statBases>
+    <tradeability>None</tradeability>
+  </ThingDef>
+</Defs>

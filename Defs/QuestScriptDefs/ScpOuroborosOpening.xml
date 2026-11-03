@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <QuestScriptDef>
+    <defName>SCP_OuroborosOpening</defName>
+    <rootSelectionWeight>0</rootSelectionWeight>
+    <rootMinPoints>0</rootMinPoints>
+    <questNameRules><rulesStrings><li>questName->Encrypted dossier: Ouroboros</li></rulesStrings></questNameRules>
+    <questDescriptionRules><rulesStrings><li>questDescription->After contact with the Foundation, your terminal received a sealed archive fragment marked 001. Accept the assignment and keep a Foundation communications terminal powered at this settlement for one day of accumulated decryption time. A power outage pauses the work. The fragment may explain why an internal O5 file was hidden from your site.</li></rulesStrings></questDescriptionRules>
+    <root Class="QuestNode_Sequence"><nodes>
+      <li Class="QuestNode_GetMap" />
+      <li Class="ScpFoundation.Storytelling.QuestNode_ScpOuroborosOpening" />
+      <li Class="QuestNode_Signal"><inSignal>OuroborosOpeningDecoded</inSignal><node Class="QuestNode_Sequence"><nodes>
+        <li Class="QuestNode_Letter"><label TKey="SCP_OuroborosDecodedTitle">Project 001 fragment decoded</label><text TKey="SCP_OuroborosArchiveNotice">The complete fragment is now available in Terminal → Journal → Foundation Archive.</text></li>
+        <li Class="QuestNode_End"><outcome>Success</outcome></li>
+      </nodes></node></li>
+    </nodes></root>
+  </QuestScriptDef>
+</Defs>

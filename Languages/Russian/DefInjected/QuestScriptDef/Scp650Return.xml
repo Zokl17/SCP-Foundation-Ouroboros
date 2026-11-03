@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_650Return.questNameRules.rulesStrings><li>questName->Передача SCP-650 Фонду</li></SCP_650Return.questNameRules.rulesStrings>
+  <SCP_650Return.questDescriptionRules.rulesStrings><li>questDescription->О5-7 «Зелёная»: Первое поручение по содержанию, досье SCP-650 и все эксперименты завершены. Фонд предлагает перевести Чёрную статую в постоянный комплекс содержания. Вы можете оставить её у себя или принять это поручение, когда будете готовы. После принятия прибудет шаттл и будет ждать без ограничения по времени. Выберите колониста и нажмите ПКМ на статую для погрузки. После отправления шаттла с SCP-650 вы получите 10 доверия Фонда в пределах общего лимита 100. Досье и доступ к дальнейшим поручениям сохранятся.</li></SCP_650Return.questDescriptionRules.rulesStrings>
+  <SCP_650Return.SCP_650ReturnCompleteTitle.slateRef>SCP-650 передан Фонду</SCP_650Return.SCP_650ReturnCompleteTitle.slateRef>
+  <SCP_650Return.SCP_650ReturnCompleteBody.slateRef>О5-7 «Зелёная»: Подтверждаем приём SCP-650 на борт транспорта. Ваше подразделение завершило работу с этим объектом. Начислено 10 доверия Фонда в пределах общего лимита 100. Пост освобождён, исследовательское досье остаётся в вашем архиве.</SCP_650Return.SCP_650ReturnCompleteBody.slateRef>
+  <SCP_650Return.SCP_650ReturnFailedTitle.slateRef>Передача SCP-650 прервана</SCP_650Return.SCP_650ReturnFailedTitle.slateRef>
+  <SCP_650Return.SCP_650ReturnFailedBody.slateRef>Передать SCP-650 Фонду не удалось. Доверие не начислено. Если статуя осталась в поселении, восстановите её содержание: Фонд сможет предложить повторную перевозку.</SCP_650Return.SCP_650ReturnFailedBody.slateRef>
+</LanguageData>

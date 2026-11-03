@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ScpFoundation.Definitions.ScpDef>
+    <defName>SCP_Anomaly093</defName><label>SCP-093</label>
+    <description>An engraved disc that allows passage through a mirror into a devastated world.</description>
+    <scpId>SCP-093</scpId><objectClass>Euclid</objectClass>
+    <tags><li>Artifact</li><li>Spatial</li></tags>
+    <requirements>
+      <li Class="ScpFoundation.Containment.RequirementAtPost"><id>post</id></li>
+      <li Class="ScpFoundation.Containment.RequirementRoom"><id>room</id><minCells>16</minCells><roofed>true</roofed></li>
+    </requirements>
+    <breach><graceTicks>30000</graceTicks><deterministicAfterTicks>0</deterministicAfterTicks><riskPerDay>0</riskPerDay><recoveryPerDay>0</recoveryPerDay></breach>
+    <research><observedWork>14000</observedWork><partialWork>85000</partialWork><fullWork>260000</fullWork>
+      <observedReportKey>SCP_093ObservedReport</observedReportKey><partialReportKey>SCP_093PartialReport</partialReportKey><documentedReportKey>SCP_093DocumentedReport</documentedReportKey>
+      <experimentReportKeys><li>SCP_093Experiment1</li><li>SCP_093Experiment2</li><li>SCP_093Experiment3</li></experimentReportKeys>
+    </research>
+    <source><title>SCP-093</title><author>Unknown author; rewritten by NekoChris</author><url>https://scp-wiki.wikidot.com/scp-093</url><license>CC BY-SA 3.0</license></source>
+  </ScpFoundation.Definitions.ScpDef>
+</Defs>

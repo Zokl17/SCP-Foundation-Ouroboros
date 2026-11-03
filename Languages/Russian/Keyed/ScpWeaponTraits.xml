@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_WeaponSingleFire>Одиночный огонь</SCP_WeaponSingleFire>
+  <SCP_WeaponBurstFire>Стрельба очередями</SCP_WeaponBurstFire>
+  <SCP_WeaponFireModeDesc>Переключить режим огня установленного переводчика.</SCP_WeaponFireModeDesc>
+  <SCP_WeaponWorkshopButton>Модифицировать оружие</SCP_WeaponWorkshopButton>
+  <SCP_WeaponWorkshopButtonDesc>Выберите колониста и нажмите ПКМ по оружейному модулю. Окно модификаций откроется, когда пешка подойдёт.</SCP_WeaponWorkshopButtonDesc>
+  <SCP_WeaponWorkshopTitle>Мастерская оружия Фонда</SCP_WeaponWorkshopTitle>
+  <SCP_WeaponWorkshopHelp>Нажмите значок оружия слева: сначала оружие пешек, затем лежащее в радиусе трёх клеток. Выберите категорию и улучшение. Мобилизованная пешка сохранит оружие до конца боя. Если передумали, нажмите «Отменить улучшение».</SCP_WeaponWorkshopHelp>
+  <SCP_WeaponWorkshopCancel>Отменить улучшение</SCP_WeaponWorkshopCancel>
+  <SCP_WeaponWorkshopNoWeapon>Выбрать оружие</SCP_WeaponWorkshopNoWeapon>
+  <SCP_WeaponWorkshopInstalled>Установлено улучшений</SCP_WeaponWorkshopInstalled>
+  <SCP_WeaponWorkshopBarrel>Ствол</SCP_WeaponWorkshopBarrel>
+  <SCP_WeaponWorkshopGrip>Рукоять</SCP_WeaponWorkshopGrip>
+  <SCP_WeaponWorkshopLauncher>Подствольное</SCP_WeaponWorkshopLauncher>
+  <SCP_WeaponWorkshopAmmo>Баллистика</SCP_WeaponWorkshopAmmo>
+  <SCP_WeaponWorkshopMaterial>Материал</SCP_WeaponWorkshopMaterial>
+  <SCP_WeaponWorkshopStock>Приклад</SCP_WeaponWorkshopStock>
+  <SCP_WeaponWorkshopSights>Прицел</SCP_WeaponWorkshopSights>
+  <SCP_WeaponWorkshopMechanism>Механизм</SCP_WeaponWorkshopMechanism>
+  <SCP_WeaponWorkshopInstall>Установить</SCP_WeaponWorkshopInstall>
+  <SCP_WeaponWorkshopNoCategory>Отсутствует: для этого оружия нет улучшений в выбранной категории.</SCP_WeaponWorkshopNoCategory>
+  <SCP_WeaponWorkshopCurrentBuild>Текущая сборка</SCP_WeaponWorkshopCurrentBuild>
+  <SCP_WeaponWorkshopNoTraits>Улучшения не установлены.</SCP_WeaponWorkshopNoTraits>
+  <SCP_WeaponWorkshopCost>Материалы</SCP_WeaponWorkshopCost>
+  <SCP_WeaponWorkshopIncompatible>Несовместимо</SCP_WeaponWorkshopIncompatible>
+  <SCP_WeaponWorkshopQueued>Уже в очереди</SCP_WeaponWorkshopQueued>
+  <SCP_WeaponWorkshopResearch>Нужно исследование</SCP_WeaponWorkshopResearch>
+  <SCP_WeaponWorkshopBench>Станок недоступен</SCP_WeaponWorkshopBench>
+  <SCP_WeaponWorkshopPawn>Нет свободного колониста для работы у станка</SCP_WeaponWorkshopPawn>
+  <SCP_WeaponWorkshopSkill>Нужен навык</SCP_WeaponWorkshopSkill>
+  <SCP_WeaponWorkshopReach>Нет пути к станку</SCP_WeaponWorkshopReach>
+  <SCP_WeaponWorkshopUnavailable>Пока недоступно</SCP_WeaponWorkshopUnavailable>
+</LanguageData>

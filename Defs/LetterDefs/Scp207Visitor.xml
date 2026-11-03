@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <LetterDef ParentName="CustomChoiceLetterBase">
+    <defName>SCP_207VisitorOffer</defName>
+    <letterClass>ScpFoundation.Storytelling.ChoiceLetter_Scp207Visitor</letterClass>
+  </LetterDef>
+</Defs>

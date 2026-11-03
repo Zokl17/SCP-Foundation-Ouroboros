@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <JobDef>
+    <defName>SCP_UseSmallArtifact</defName>
+    <driverClass>ScpFoundation.Anomalies.JobDriver_ScpUseSmallArtifact</driverClass>
+    <reportString>Using an anomalous object.</reportString>
+  </JobDef>
+</Defs>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_InstallWeaponTrait_SCP_LaserTargetingUnit.label>установить ЛЦУ</SCP_InstallWeaponTrait_SCP_LaserTargetingUnit.label>
+  <SCP_InstallWeaponTrait_SCP_CarbonInserts.label>установить карбоновые вставки</SCP_InstallWeaponTrait_SCP_CarbonInserts.label>
+  <SCP_InstallWeaponTrait_SCP_LightTrigger.label>установить облегчённый спуск</SCP_InstallWeaponTrait_SCP_LightTrigger.label>
+  <SCP_InstallWeaponTrait_SCP_Compensator.label>установить компенсатор</SCP_InstallWeaponTrait_SCP_Compensator.label>
+  <SCP_InstallWeaponTrait_SCP_FoldingStock.label>установить складной приклад</SCP_InstallWeaponTrait_SCP_FoldingStock.label>
+  <SCP_InstallWeaponTrait_SCP_WeightedStock.label>установить утяжелённый приклад</SCP_InstallWeaponTrait_SCP_WeightedStock.label>
+  <SCP_InstallWeaponTrait_SCP_Bipod.label>установить сошки</SCP_InstallWeaponTrait_SCP_Bipod.label>
+  <SCP_InstallWeaponTrait_SCP_PrecisionBolt.label>установить прецизионный затвор</SCP_InstallWeaponTrait_SCP_PrecisionBolt.label>
+  <SCP_InstallWeaponTrait_SCP_FireSelector.label>установить переводчик огня</SCP_InstallWeaponTrait_SCP_FireSelector.label>
+  <SCP_InstallWeaponTrait_SCP_BurstLimiter.label>установить ограничитель очереди</SCP_InstallWeaponTrait_SCP_BurstLimiter.label>
+  <SCP_InstallWeaponTrait_SCP_Bayonet.label>установить штык</SCP_InstallWeaponTrait_SCP_Bayonet.label>
+  <SCP_InstallWeaponTrait_SCP_Suppressor.label>установить глушитель</SCP_InstallWeaponTrait_SCP_Suppressor.label>
+  <SCP_InstallWeaponTrait_SCP_FlashHider.label>установить пламегаситель</SCP_InstallWeaponTrait_SCP_FlashHider.label>
+  <SCP_InstallWeaponTrait_SCP_ThermalSight.label>установить тепловизионный прицел</SCP_InstallWeaponTrait_SCP_ThermalSight.label>
+  <SCP_InstallWeaponTrait_SCP_MotionPredictor.label>установить предиктор движения</SCP_InstallWeaponTrait_SCP_MotionPredictor.label>
+  <SCP_InstallWeaponTrait_SCP_EnemyAnalysis.label>установить анализ противника</SCP_InstallWeaponTrait_SCP_EnemyAnalysis.label>
+  <SCP_InstallWeaponTrait_SCP_FriendlyFireLock.label>установить блокировку огня по своим</SCP_InstallWeaponTrait_SCP_FriendlyFireLock.label>
+  <SCP_InstallWeaponTrait_SCP_TracerRounds.label>установить трассирующий модуль</SCP_InstallWeaponTrait_SCP_TracerRounds.label>
+  <SCP_InstallWeaponTrait_SCP_NonlethalRounds.label>установить седативный модуль</SCP_InstallWeaponTrait_SCP_NonlethalRounds.label>
+  <SCP_InstallWeaponTrait_SCP_CorrosiveRounds.label>установить коррозионный состав</SCP_InstallWeaponTrait_SCP_CorrosiveRounds.label>
+  <SCP_InstallWeaponTrait_SCP_CryoRounds.label>установить криогенный состав</SCP_InstallWeaponTrait_SCP_CryoRounds.label>
+  <SCP_InstallWeaponTrait_SCP_RicochetRounds.label>установить рикошетный профиль</SCP_InstallWeaponTrait_SCP_RicochetRounds.label>
+  <SCP_InstallWeaponTrait_SCP_ShieldBreakerRounds.label>установить резонатор щитов</SCP_InstallWeaponTrait_SCP_ShieldBreakerRounds.label>
+  <SCP_InstallWeaponTrait_SCP_BioferriteResonator.label>установить биоферритовый резонатор</SCP_InstallWeaponTrait_SCP_BioferriteResonator.label>
+</LanguageData>

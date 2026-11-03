@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef>
+    <defName>SCP_999Object</defName>
+    <label>SCP-999 — The Tickle Monster</label>
+    <description>A friendly creature resembling a cute orange amoeba.</description>
+    <thingClass>ScpFoundation.Anomalies.Thing_Scp999</thingClass>
+    <category>Item</category><altitudeLayer>Item</altitudeLayer>
+    <tickerType>Normal</tickerType><selectable>true</selectable><stackLimit>1</stackLimit>
+    <useHitPoints>false</useHitPoints><passability>Standable</passability><fillPercent>0</fillPercent>
+    <alwaysHaulable>false</alwaysHaulable><designateHaulable>false</designateHaulable>
+    <drawGUIOverlay>true</drawGUIOverlay><rotatable>false</rotatable>
+    <graphicData><texPath>Things/Item/Scp999</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>(2.0,1.4)</drawSize></graphicData>
+    <statBases><Mass>80</Mass><Flammability>0</Flammability><MarketValue>0</MarketValue></statBases>
+    <tradeability>None</tradeability>
+  </ThingDef>
+</Defs>

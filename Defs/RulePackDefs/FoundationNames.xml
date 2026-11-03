@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <RulePackDef>
+    <defName>SCP_NamerFoundationSettlement</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[foundation_site]</li>
+      </rulesStrings>
+      <rulesFiles>
+        <li>foundation_site->Names/FoundationSites</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

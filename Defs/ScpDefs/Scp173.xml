@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ScpFoundation.Definitions.ScpDef>
+    <defName>SCP_Anomaly173</defName><label>SCP-173</label>
+    <description>A concrete-and-rebar sculpture that moves outside direct observation.</description>
+    <scpId>SCP-173</scpId><objectClass>Euclid</objectClass>
+    <tags><li>Sculpture</li><li>Observational</li><li>Hostile</li></tags>
+    <requirements>
+      <li Class="ScpFoundation.Containment.RequirementRoom"><id>room</id><minCells>16</minCells><roofed>true</roofed></li>
+      <li Class="ScpFoundation.Containment.RequirementWallMaterial"><id>walls</id><allowedMaterials><li>Steel</li><li>SCP_Concrete</li></allowedMaterials><allowedWallDefs><li>SCP_FoundationWall</li><li>SCP_FoundationWallReinforced</li><li>SCPV1_GlassWall</li></allowedWallDefs></li>
+      <li Class="ScpFoundation.Containment.RequirementLight"><id>light</id><min>0.3</min><max>1</max></li>
+      <li Class="ScpFoundation.Containment.RequirementObservers"><id>observers</id><count>2</count><allowRemote>false</allowRemote></li>
+    </requirements>
+    <breach><graceTicks>4500</graceTicks><deterministicAfterTicks>9000</deterministicAfterTicks><riskPerDay>16</riskPerDay><recoveryPerDay>24</recoveryPerDay></breach>
+    <breachEffects><li Class="ScpFoundation.Runtime.BreachEffectLetter"><bodyKey>SCP_173Breach</bodyKey></li></breachEffects>
+    <research><observedWork>18000</observedWork><partialWork>130000</partialWork><fullWork>380000</fullWork>
+      <observedReportKey>SCP_173ObservedReport</observedReportKey><partialReportKey>SCP_173PartialReport</partialReportKey><documentedReportKey>SCP_173DocumentedReport</documentedReportKey>
+      <experimentReportKeys><li>SCP_173Experiment1</li><li>SCP_173Experiment2</li><li>SCP_173Experiment3</li></experimentReportKeys>
+    </research>
+    <source><title>SCP-173</title><author>Moto42</author><url>https://scp-wiki.wikidot.com/scp-173</url><license>CC BY-SA 3.0</license></source>
+  </ScpFoundation.Definitions.ScpDef>
+</Defs>

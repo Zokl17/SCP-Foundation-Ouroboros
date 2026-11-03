@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <SitePartDef>
+    <defName>SCP_079RecoveryLab</defName>
+    <label>abandoned data center</label>
+    <description>A small abandoned data center identified as the source of attacks on global infrastructure and an attempted intrusion into a classified computer.</description>
+    <workerClass>SitePartWorker</workerClass>
+    <siteTexture>World/WorldObjects/Sites/Outpost</siteTexture>
+    <expandingIconTexture>World/WorldObjects/Expanding/Sites/Outpost</expandingIconTexture>
+    <applyFactionColorToSiteTexture>true</applyFactionColorToSiteTexture>
+    <showFactionInInspectString>true</showFactionInInspectString>
+    <requiresFaction>true</requiresFaction>
+    <approachOrderString>Recover {0}</approachOrderString>
+    <approachingReportString>Recovering {0}.</approachingReportString>
+    <arrivedLetter>Armed people guard the abandoned data center. The Foundation traced the attacks to an old computer inside. Recover it and return to your settlement; do not connect it to a network.</arrivedLetter>
+    <minMapSize>(250, 1, 250)</minMapSize>
+    <tags><li>SCP079Recovery</li></tags>
+  </SitePartDef>
+  <WorldObjectDef ParentName="Site">
+    <defName>SCP_079RecoverySite</defName>
+    <label>abandoned data center</label>
+    <overrideMapSize>(250, 1, 250)</overrideMapSize>
+    <mapGenerator>SCP_079RecoveryMap</mapGenerator>
+  </WorldObjectDef>
+  <MapGeneratorDef>
+    <defName>SCP_079RecoveryMap</defName>
+    <genSteps>
+      <li>SCP_079RecoveryLab</li>
+      <li>FindPlayerStartSpot</li>
+      <li>Fog</li>
+    </genSteps>
+  </MapGeneratorDef>
+  <GenStepDef>
+    <defName>SCP_079RecoveryLab</defName><order>400</order>
+    <genStep Class="ScpFoundation.Storytelling.GenStep_Scp079RecoveryLab" />
+  </GenStepDef>
+</Defs>

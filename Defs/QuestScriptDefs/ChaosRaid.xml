@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <QuestScriptDef>
+    <defName>SCP_ChaosSalvageRaid</defName>
+    <rootSelectionWeight>0.06</rootSelectionWeight>
+    <rootMinPoints>3000</rootMinPoints>
+    <expireDaysRange>8~15</expireDaysRange>
+    <questNameRules><rulesStrings><li>questName->Raid the Chaos salvage base</li></rulesStrings></questNameRules>
+    <questDescriptionRules><rulesStrings>
+      <li>questDescription->The Chaos Insurgency has just raided Site-16. The site was destroyed in the attack, and the insurgents took their spoils to a fortified scrapyard base. This assignment unlocks research for the SCP-127 storage case. Twenty insurgents guard it: eight exosuit machine gunners and twelve AK riflemen. Break their defenses and recover SCP-127, twenty SCP-500 pills and the medical supplies from the plasteel-walled storeroom.</li>
+    </rulesStrings></questDescriptionRules>
+    <root Class="QuestNode_Sequence">
+      <nodes>
+        <li Class="QuestNode_GetMap" />
+        <li Class="QuestNode_GetSiteTile"><storeAs>siteTile</storeAs><preferCloserTiles>true</preferCloserTiles></li>
+        <li Class="ScpFoundation.Storytelling.QuestNode_ChaosRaidSiteSetup" />
+        <li Class="QuestNode_GetDefaultSitePartsParams">
+          <tile>$siteTile</tile><faction>$siteFaction</faction>
+          <sitePartDefs>$sitePartDefs</sitePartDefs><storeSitePartsParamsAs>sitePartsParams</storeSitePartsParamsAs>
+        </li>
+        <li Class="QuestNode_GenerateSite">
+          <sitePartsParams>$sitePartsParams</sitePartsParams>
+          <faction>$siteFaction</faction><tile>$siteTile</tile><storeAs>site</storeAs>
+          <worldObjectDef>SCP_ChaosRaidSite</worldObjectDef>
+        </li>
+        <li Class="ScpFoundation.Storytelling.QuestNode_Scp882ClaimSite" />
+        <li Class="QuestNode_SpawnWorldObjects"><worldObjects>$site</worldObjects></li>
+        <li Class="ScpFoundation.Storytelling.QuestNode_RecordScpArrival"><number>127</number></li>
+        <li Class="QuestNode_WorldObjectTimeout">
+          <worldObject>$site</worldObject><isQuestTimeout>true</isQuestTimeout>
+          <delayTicks>1200000</delayTicks><inSignalDisable>site.MapGenerated</inSignalDisable>
+          <destroyOnCleanup>false</destroyOnCleanup>
+          <node Class="QuestNode_End"><outcome>Fail</outcome></node>
+        </li>
+        <li Class="QuestNode_Signal">
+          <inSignal>site.AllEnemiesDefeated</inSignal>
+          <node Class="QuestNode_Sequence"><nodes>
+            <li Class="QuestNode_Letter"><label TKey="SCP_ChaosRaidSecuredLabel">Chaos salvage base secured</label><text TKey="SCP_ChaosRaidSecuredText">The insurgents are defeated. SCP-127 and the medicines remain in the plasteel storeroom; load them before leaving.</text></li>
+            <li Class="QuestNode_End"><outcome>Success</outcome></li>
+          </nodes></node>
+        </li>
+        <li Class="QuestNode_Signal">
+          <inSignal>site.Destroyed</inSignal>
+          <node Class="QuestNode_End"><outcome>Fail</outcome></node>
+        </li>
+      </nodes>
+    </root>
+  </QuestScriptDef>
+</Defs>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_Ammo_EMPCell.label>ЭМИ-ячейка Фонда</SCP_Ammo_EMPCell.label>
+  <SCP_Ammo_EMPCell.description>Герметичная ячейка высокого разряда, создающая электромагнитный импульс при попадании.</SCP_Ammo_EMPCell.description>
+  <SCP_Ammo_TranqDart.label>транквилизирующий дротик Фонда</SCP_Ammo_TranqDart.label>
+  <SCP_Ammo_TranqDart.description>Низкоэнергетический дротик с точно отмеренной дозой быстродействующего седативного препарата.</SCP_Ammo_TranqDart.description>
+  <SCP_Ammo_ContainmentNet.label>контейнер с удерживающей сетью Фонда</SCP_Ammo_ContainmentNet.label>
+  <SCP_Ammo_ContainmentNet.description>Пневматический контейнер с утяжелённой быстросъёмной удерживающей сетью.</SCP_Ammo_ContainmentNet.description>
+</LanguageData>

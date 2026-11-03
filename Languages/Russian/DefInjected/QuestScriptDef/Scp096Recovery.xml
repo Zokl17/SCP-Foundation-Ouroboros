@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_096Recovery.questNameRules.rulesStrings><li>questName->Изъять SCP-096</li></SCP_096Recovery.questNameRules.rulesStrings>
+  <SCP_096Recovery.questDescriptionRules.rulesStrings><li>questDescription->Фонд обнаружил базу после нарушения содержания SCP-096. Предположительно, гражданские увидели фотографию объекта; пятеро погибли, когда он вырвался из камеры. SCP-096 остаётся внутри базы. Пока он спокоен, он закрывает лицо руками, но любой, кто увидит его лицо, станет целью. Доберитесь до площадки, обездвижьте объект и доставьте его в подготовленную камеру колонии.</li></SCP_096Recovery.questDescriptionRules.rulesStrings>
+</LanguageData>

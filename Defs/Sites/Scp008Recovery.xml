@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <SitePartDef MayRequire="Ludeon.RimWorld.Anomaly">
+    <defName>SCP_008GocLab</defName><label>GOC biological laboratory</label>
+    <description>A guarded GOC laboratory containing the SCP-008 sample and exposed experimental subjects.</description>
+    <workerClass>SitePartWorker</workerClass>
+    <siteTexture>World/WorldObjects/Sites/Outpost</siteTexture>
+    <expandingIconTexture>World/WorldObjects/Expanding/Sites/Outpost</expandingIconTexture>
+    <applyFactionColorToSiteTexture>true</applyFactionColorToSiteTexture>
+    <showFactionInInspectString>true</showFactionInInspectString><requiresFaction>true</requiresFaction>
+    <approachOrderString>Investigate {0}</approachOrderString>
+    <approachingReportString>Investigating {0}.</approachingReportString>
+    <arrivedLetter>The GOC laboratory is defended. An SCP-008 vial ruptured during the assault and infected one scientist. Five experimental subjects remain sealed behind the laboratory door. Destroy the intact sample or carry its case back to your colony.</arrivedLetter>
+    <minMapSize>(250, 1, 250)</minMapSize><tags><li>SCP008Recovery</li></tags>
+  </SitePartDef>
+  <WorldObjectDef ParentName="Site" MayRequire="Ludeon.RimWorld.Anomaly">
+    <defName>SCP_008RecoverySite</defName><label>GOC biological laboratory</label>
+    <overrideMapSize>(250, 1, 250)</overrideMapSize><mapGenerator>SCP_008RecoveryMap</mapGenerator>
+  </WorldObjectDef>
+  <MapGeneratorDef MayRequire="Ludeon.RimWorld.Anomaly">
+    <defName>SCP_008RecoveryMap</defName>
+    <genSteps>
+      <li>SCP_008GocLab</li><li>FindPlayerStartSpot</li><li>Fog</li>
+    </genSteps>
+  </MapGeneratorDef>
+  <GenStepDef MayRequire="Ludeon.RimWorld.Anomaly">
+    <defName>SCP_008GocLab</defName><order>400</order>
+    <genStep Class="ScpFoundation.Storytelling.GenStep_Scp008GocLab" />
+  </GenStepDef>
+</Defs>

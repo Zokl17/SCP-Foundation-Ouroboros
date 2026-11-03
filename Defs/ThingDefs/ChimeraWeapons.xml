@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="MoteBase">
+    <defName>SCP_MoteChimeraRailBeamGlow</defName>
+    <thingClass>MoteDualAttached</thingClass>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <drawOffscreen>true</drawOffscreen>
+    <mote><fadeInTime>0.02</fadeInTime><solidTime>0.18</solidTime><fadeOutTime>0.45</fadeOutTime><rotateTowardsTarget>true</rotateTowardsTarget><scaleToConnectTargets>true</scaleToConnectTargets></mote>
+    <graphicData>
+      <texPath>Things/Mote/ScpLaserBeam</texPath><graphicClass>Graphic_MoteWithAgeSecs</graphicClass><shaderType>MoteBeam</shaderType><drawSize>(3.4,1)</drawSize>
+      <shaderParameters><_ExtraTexA>/Things/Mote/BeamSecondaryNoise_A</_ExtraTexA><_ExtraTexB>/Things/Mote/BeamSecondaryNoise_B</_ExtraTexB><_ScrollSpeedA>-0.25</_ScrollSpeedA><_ScrollSpeedB>0.35</_ScrollSpeedB><_Intensity>5</_Intensity></shaderParameters>
+    </graphicData>
+  </ThingDef>
+  <ThingDef ParentName="MoteBase">
+    <defName>SCP_MoteChimeraRailBeamCore</defName>
+    <thingClass>MoteDualAttached</thingClass>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <drawOffscreen>true</drawOffscreen>
+    <mote><fadeInTime>0.01</fadeInTime><solidTime>0.12</solidTime><fadeOutTime>0.28</fadeOutTime><rotateTowardsTarget>true</rotateTowardsTarget><scaleToConnectTargets>true</scaleToConnectTargets></mote>
+    <graphicData>
+      <texPath>Things/Mote/ScpLaserBeam</texPath><graphicClass>Graphic_MoteWithAgeSecs</graphicClass><shaderType>MoteBeam</shaderType><drawSize>(1.25,1)</drawSize>
+      <shaderParameters><_ExtraTexA>/Things/Mote/BeamSecondaryNoise_A</_ExtraTexA><_ExtraTexB>/Things/Mote/BeamSecondaryNoise_B</_ExtraTexB><_ScrollSpeedA>-0.5</_ScrollSpeedA><_ScrollSpeedB>0.65</_ScrollSpeedB><_Intensity>12</_Intensity></shaderParameters>
+    </graphicData>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>SCP_ChimeraCannonShell</defName>
+    <label>Vanguard cannon shell</label>
+    <thingClass>Projectile_Explosive</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/ChimeraCannonShell</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Cutout</shaderType>
+      <drawSize>(1.4,3.2)</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Bomb</damageDef>
+      <damageAmountBase>180</damageAmountBase>
+      <armorPenetrationBase>0.7</armorPenetrationBase>
+      <explosionRadius>2.2</explosionRadius>
+      <speed>1200</speed>
+      <soundExplode>Explosion_Bomb</soundExplode>
+      <explosionDamageFalloff>true</explosionDamageFalloff>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>SCP_ChimeraRailSlug</defName>
+    <label>Vanguard railgun slug</label>
+    <thingClass>ScpFoundation.Runtime.Projectile_ChimeraRailSlug</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/ChimeraRailSlug</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>(0.2,0.8)</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>SCP_ChimeraRailImpact</damageDef>
+      <damageAmountBase>480</damageAmountBase>
+      <armorPenetrationBase>1.5</armorPenetrationBase>
+      <speed>1800</speed>
+    </projectile>
+  </ThingDef>
+  <!-- Standalone curved-flight rocket; no UF, SRALib or DLC is required. -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>SCP_ChimeraRocket</defName>
+    <label>Vanguard missile</label>
+    <thingClass>ScpFoundation.Runtime.Projectile_ChimeraRocket</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/ChimeraMissile</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Bomb</damageDef>
+      <damageAmountBase>68</damageAmountBase>
+      <armorPenetrationBase>0.5</armorPenetrationBase>
+      <explosionRadius>1.9</explosionRadius>
+      <speed>90</speed>
+      <flyOverhead>true</flyOverhead>
+      <soundExplode>Explosion_Bomb</soundExplode>
+      <explosionDamageFalloff>true</explosionDamageFalloff>
+    </projectile>
+  </ThingDef>
+</Defs>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_035Exposure.label>зов SCP-035</SCP_035Exposure.label>
+  <SCP_035Exposure.description>Время, в течение которого пешка видела маску. Желание надеть её растёт.</SCP_035Exposure.description>
+  <SCP_035HostDecay.label>разложение носителя SCP-035</SCP_035HostDecay.label>
+  <SCP_035HostDecay.description>Маска управляет носителем, пока его тело разлагается. Через два часа разрушается мозг.</SCP_035HostDecay.description>
+</LanguageData>

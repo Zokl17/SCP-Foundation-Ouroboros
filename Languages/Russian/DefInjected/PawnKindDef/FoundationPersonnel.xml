@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_FoundationEmployee.label>сотрудник Фонда</SCP_FoundationEmployee.label>
+  <SCP_FoundationEmployee.labelPlural>сотрудники Фонда</SCP_FoundationEmployee.labelPlural>
+  <SCP_FoundationSecurity.label>сотрудник службы безопасности Фонда</SCP_FoundationSecurity.label>
+  <SCP_FoundationSecurity.labelPlural>сотрудники службы безопасности Фонда</SCP_FoundationSecurity.labelPlural>
+  <SCP_FoundationOperative.label>оперативник Фонда</SCP_FoundationOperative.label>
+  <SCP_FoundationOperative.labelPlural>оперативники Фонда</SCP_FoundationOperative.labelPlural>
+  <SCP_MTF_Nu7.label>оперативник МОГ Ну-7</SCP_MTF_Nu7.label>
+  <SCP_MTF_Nu7.labelPlural>оперативники МОГ Ну-7</SCP_MTF_Nu7.labelPlural>
+  <SCP_MTF_Nu7Gunner.label>пулемётчик МОГ Ну-7</SCP_MTF_Nu7Gunner.label>
+  <SCP_MTF_Nu7Gunner.labelPlural>пулемётчики МОГ Ну-7</SCP_MTF_Nu7Gunner.labelPlural>
+  <SCP_MTF_Epsilon11.label>оперативник МОГ Эпсилон-11</SCP_MTF_Epsilon11.label>
+  <SCP_MTF_Epsilon11.labelPlural>оперативники МОГ Эпсилон-11</SCP_MTF_Epsilon11.labelPlural>
+  <SCP_MTF_Epsilon11Rifleman.label>оперативник МОГ Эпсилон-11</SCP_MTF_Epsilon11Rifleman.label>
+  <SCP_MTF_Epsilon11Rifleman.labelPlural>оперативники МОГ Эпсилон-11</SCP_MTF_Epsilon11Rifleman.labelPlural>
+  <SCP_MTF_Epsilon11Gunner.label>пулемётчик МОГ Эпсилон-11</SCP_MTF_Epsilon11Gunner.label>
+  <SCP_MTF_Epsilon11Gunner.labelPlural>пулемётчики МОГ Эпсилон-11</SCP_MTF_Epsilon11Gunner.labelPlural>
+  <SCP_MTF_Omega7Rifleman.label>оперативник МОГ Омега-7</SCP_MTF_Omega7Rifleman.label>
+  <SCP_MTF_Omega7Rifleman.labelPlural>оперативники МОГ Омега-7</SCP_MTF_Omega7Rifleman.labelPlural>
+  <SCP_MTF_Omega7Gunner.label>пулемётчик МОГ Омега-7</SCP_MTF_Omega7Gunner.label>
+  <SCP_MTF_Omega7Gunner.labelPlural>пулемётчики МОГ Омега-7</SCP_MTF_Omega7Gunner.labelPlural>
+  <SCP_FoundationRepresentative.label>сотрудник логистики Фонда</SCP_FoundationRepresentative.label>
+  <SCP_FoundationRepresentative.labelPlural>сотрудники логистики Фонда</SCP_FoundationRepresentative.labelPlural>
+  <SCP_FoundationSiteDirector.label>директор Зоны Фонда</SCP_FoundationSiteDirector.label>
+  <SCP_FoundationSiteDirector.labelPlural>директора Зон Фонда</SCP_FoundationSiteDirector.labelPlural>
+</LanguageData>

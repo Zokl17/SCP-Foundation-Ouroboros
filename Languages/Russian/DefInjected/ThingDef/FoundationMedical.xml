@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_ClassAAmnestic.label>амнезиак класса A</SCP_ClassAAmnestic.label>
+  <SCP_ClassAAmnestic.description>Контролируемый амнезиак Фонда для подавления недавних травмирующих воспоминаний. Одна доза удаляет до трёх сильнейших временных отрицательных воспоминаний, после чего на несколько часов вызывает лёгкую спутанность сознания. Постоянные воспоминания препарат не стирает.</SCP_ClassAAmnestic.description>
+  <SCP_ClassAAmnestic.ingestible.ingestCommandString>Применить {0}</SCP_ClassAAmnestic.ingestible.ingestCommandString>
+  <SCP_ClassAAmnestic.ingestible.ingestReportString>Применяет {0}.</SCP_ClassAAmnestic.ingestible.ingestReportString>
+  <SCP_MnesticStabilizer.label>мнестический стабилизатор</SCP_MnesticStabilizer.label>
+  <SCP_MnesticStabilizer.description>Когнитивный стабилизатор Фонда для подготовки к воздействию психических и антимеметических угроз. На сутки снижает психочувствительность и порог психического срыва.</SCP_MnesticStabilizer.description>
+  <SCP_MnesticStabilizer.ingestible.ingestCommandString>Ввести {0}</SCP_MnesticStabilizer.ingestible.ingestCommandString>
+  <SCP_MnesticStabilizer.ingestible.ingestReportString>Вводит {0}.</SCP_MnesticStabilizer.ingestible.ingestReportString>
+  <SCP_HemostaticInjector.label>аварийный гемостатик</SCP_HemostaticInjector.label>
+  <SCP_HemostaticInjector.description>Одноразовый полевой инъектор Фонда, быстро герметизирующий до четырёх самых опасных кровоточащих ран. Он накладывает качественную временную перевязку, но не восстанавливает ткани и не заменяет полноценное лечение.</SCP_HemostaticInjector.description>
+  <SCP_HemostaticInjector.ingestible.ingestCommandString>Ввести {0}</SCP_HemostaticInjector.ingestible.ingestCommandString>
+  <SCP_HemostaticInjector.ingestible.ingestReportString>Вводит {0}.</SCP_HemostaticInjector.ingestible.ingestReportString>
+</LanguageData>

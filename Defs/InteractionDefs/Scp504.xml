@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <InteractionDef>
+    <defName>SCP_504BadJoke</defName><label>failed joke</label>
+    <workerClass>ScpFoundation.Anomalies.InteractionWorker_Scp504BadJoke</workerClass>
+    <symbol>Things/Mote/SpeechSymbols/Chitchat</symbol>
+    <logRulesInitiator><rulesStrings><li>r_logentry->[INITIATOR_nameDef] told [RECIPIENT_nameDef] a painfully bad joke.</li></rulesStrings></logRulesInitiator>
+  </InteractionDef>
+</Defs>

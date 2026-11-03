@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ScpFoundation.Definitions.ScpDef>
+    <defName>SCP_Anomaly427</defName><label>SCP-427</label>
+    <description>An ornate silver amulet created by processing SCP-500 in SCP-914. Its light heals living tissue, but overexposure causes dangerous growth.</description>
+    <scpId>SCP-427</scpId><objectClass>Safe</objectClass>
+    <tags><li>Apparel</li><li>Artifact</li><li>Medical</li></tags>
+    <requirements><li Class="ScpFoundation.Containment.RequirementAtPost"><id>post</id></li></requirements>
+    <breach><graceTicks>30000</graceTicks><deterministicAfterTicks>0</deterministicAfterTicks><riskPerDay>0</riskPerDay><recoveryPerDay>0</recoveryPerDay></breach>
+    <research>
+      <observedWork>12000</observedWork><partialWork>60000</partialWork><fullWork>180000</fullWork>
+      <observedReportKey>SCP_427ObservedReport</observedReportKey>
+      <partialReportKey>SCP_427PartialReport</partialReportKey>
+      <documentedReportKey>SCP_427DocumentedReport</documentedReportKey>
+      <experimentReportKeys><li>SCP_427Experiment1</li><li>SCP_427Experiment2</li><li>SCP_427Experiment3</li></experimentReportKeys>
+    </research>
+    <source><title>SCP-427</title><author>Dr Ouros</author><url>https://scp-wiki.wikidot.com/scp-427</url><license>CC BY-SA 3.0</license></source>
+  </ScpFoundation.Definitions.ScpDef>
+</Defs>

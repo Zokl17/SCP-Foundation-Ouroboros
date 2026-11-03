@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ScpFoundation.Definitions.ScpDef>
+    <defName>SCP_Anomaly096</defName><label>SCP-096</label>
+    <description>A humanoid that becomes violently distressed when its face is seen and then pursues the viewer.</description>
+    <scpId>SCP-096</scpId><objectClass>Euclid</objectClass>
+    <tags><li>Humanoid</li><li>Visual</li><li>Hostile</li></tags>
+    <requirements>
+      <li Class="ScpFoundation.Containment.RequirementAtPost"><id>post</id></li>
+      <li Class="ScpFoundation.Containment.RequirementRoom"><id>room</id><minCells>16</minCells><roofed>true</roofed></li>
+      <li Class="ScpFoundation.Containment.RequirementLight"><id>light</id><min>0</min><max>0.1</max></li>
+    </requirements>
+    <breach><graceTicks>0</graceTicks><deterministicAfterTicks>0</deterministicAfterTicks><riskPerDay>0</riskPerDay><recoveryPerDay>0</recoveryPerDay></breach>
+    <research><observedWork>22000</observedWork><partialWork>145000</partialWork><fullWork>420000</fullWork>
+      <observedReportKey>SCP_096ObservedReport</observedReportKey><partialReportKey>SCP_096PartialReport</partialReportKey><documentedReportKey>SCP_096DocumentedReport</documentedReportKey>
+      <experimentReportKeys><li>SCP_096Experiment1</li><li>SCP_096Experiment2</li><li>SCP_096Experiment3</li></experimentReportKeys>
+    </research>
+    <source><title>SCP-096</title><author>Dr Dan</author><url>https://scp-wiki.wikidot.com/scp-096</url><license>CC BY-SA 3.0</license></source>
+  </ScpFoundation.Definitions.ScpDef>
+</Defs>

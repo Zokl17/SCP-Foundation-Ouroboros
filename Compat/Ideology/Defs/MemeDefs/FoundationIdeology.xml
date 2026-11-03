@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <MemeDef>
+    <defName>SCP_ScientificMandate</defName>
+    <label>scientific mandate</label>
+    <description>Knowledge must be obtained, verified and applied. Every anomaly is a problem to document and contain, regardless of superstition or personal discomfort.</description>
+    <iconPath>UI/Memes/Transhumanist</iconPath>
+    <groupDef>Misc</groupDef>
+    <impact>2</impact>
+    <requireOne>
+      <li>
+        <li>Research_VeryFast</li>
+      </li>
+    </requireOne>
+    <generalRules>
+      <rulesStrings>
+        <li>memeAdjective->scientific</li>
+        <li>memeAdjective->empirical</li>
+        <li>memeAdjective->methodical</li>
+        <li>memeCreed->doctrine</li>
+        <li>memeCreed->protocol</li>
+        <li>memeCreed->mandate</li>
+        <li>memeConcept->knowledge</li>
+        <li>memeConcept->containment</li>
+        <li>memeConcept->verification</li>
+        <li>memeLeaderNoun->director</li>
+        <li>memeLeaderNoun->supervisor</li>
+        <li>memeMoralist->researcher</li>
+        <li>memeMoralist->analyst</li>
+      </rulesStrings>
+    </generalRules>
+  </MemeDef>
+</Defs>

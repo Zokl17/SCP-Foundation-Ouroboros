@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- SCP-106 and SCP-049 use pawn movement; legacy building defs remain loadable for old saves. -->
+  <ThingDef ParentName="Human">
+    <defName>SCP_106Pawn</defName><label>SCP-106</label>
+    <description>An elderly humanoid with a corroded appearance.</description>
+    <thingClass>ScpFoundation.Anomalies.Pawn_Scp106</thingClass>
+    <drawHighlight>false</drawHighlight>
+    <inspectorTabs Inherit="False" />
+    <graphicData><texPath>Things/Item/Scp106</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>(1.2,2.1)</drawSize></graphicData>
+    <statBases><MoveSpeed>1.152</MoveSpeed></statBases>
+    <race><thinkTreeMain>SCP_106Idle</thinkTreeMain><thinkTreeConstant>SCP_AnomalyConstant</thinkTreeConstant></race>
+  </ThingDef>
+  <ThingDef ParentName="Human">
+    <defName>SCP_049Pawn</defName><label>SCP-049</label>
+    <description>A humanoid resembling a plague doctor.</description>
+    <thingClass>ScpFoundation.Anomalies.Pawn_Scp049</thingClass>
+    <drawHighlight>false</drawHighlight>
+    <inspectorTabs Inherit="False" />
+    <graphicData><texPath>Things/Item/Scp049</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>(1.3,1.7)</drawSize></graphicData>
+    <race><thinkTreeMain>SCP_049Idle</thinkTreeMain><thinkTreeConstant>SCP_AnomalyConstant</thinkTreeConstant></race>
+  </ThingDef>
+  <ThingDef ParentName="Human">
+    <defName>SCP_0492Pawn</defName><label>SCP-049-2</label>
+    <description>A reanimated patient that follows SCP-049 and attacks those who threaten it.</description>
+    <thingClass>ScpFoundation.Anomalies.Pawn_Scp0492</thingClass>
+    <graphicData><texPath>Things/Item/Scp0492</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>(1.2,1.6)</drawSize></graphicData>
+  </ThingDef>
+  <ThingDef ParentName="BuildingBase">
+    <defName>SCP_106BaitStation</defName><label>SCP-106 containment chamber</label>
+    <description>A sealed chamber for SCP-106.</description>
+    <thingClass>Building</thingClass><size>(2,2)</size>
+    <tickerType>Normal</tickerType>
+    <graphicData><texPath>Things/Building/Scp106ContainmentChamber</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>(2.5,2.5)</drawSize></graphicData>
+    <designationCategory>SCPFoundation</designationCategory><uiOrder>1210</uiOrder>
+    <researchPrerequisites><li>SCP_106Chamber</li></researchPrerequisites>
+    <passability>Impassable</passability><fillPercent>1</fillPercent><rotatable>false</rotatable>
+    <statBases><MaxHitPoints>900</MaxHitPoints><WorkToBuild>7500</WorkToBuild><Flammability>0</Flammability></statBases>
+    <costList><Steel>400</Steel><SCP_Concrete>150</SCP_Concrete><ComponentIndustrial>12</ComponentIndustrial></costList>
+    <comps><li Class="CompProperties_Power"><compClass>CompPowerTrader</compClass><basePowerConsumption>1000</basePowerConsumption></li><li Class="CompProperties_ThingContainer"><compClass>ScpFoundation.Anomalies.CompScp106BaitContainer</compClass><stackLimit>1</stackLimit><drawStackLabel>false</drawStackLabel><drawContainedThing>true</drawContainedThing></li><li Class="ScpFoundation.Anomalies.CompProperties_LarryProtocol"><safeDistanceCells>30</safeDistanceCells></li></comps>
+  </ThingDef>
+  <!-- The former building entity remains loadable and upgrades itself to a pawn. -->
+  <ThingDef ParentName="BuildingBase">
+    <defName>SCP_106Entity</defName><label>SCP-106</label>
+    <description>A breached anomalous entity. It phases across obstacles and corrodes nearby structures. Recall it through the containment station.</description>
+    <thingClass>ScpFoundation.Anomalies.Building_Scp106Entity</thingClass><tickerType>Normal</tickerType><drawerType>RealtimeOnly</drawerType><useHitPoints>false</useHitPoints>
+    <building><deconstructible>false</deconstructible><claimable>false</claimable></building>
+    <graphicData><texPath>Things/Item/Scp106</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>(1.2,2.1)</drawSize></graphicData>
+    <passability>Standable</passability><rotatable>false</rotatable>
+    <statBases><MaxHitPoints>2000</MaxHitPoints><Flammability>0</Flammability><MarketValue>0</MarketValue></statBases>
+    <comps><li Class="ScpFoundation.Anomalies.CompProperties_Scp106Entity" /></comps>
+  </ThingDef>
+  <ThingDef ParentName="BuildingBase">
+    <defName>SCP_049Entity</defName><label>SCP-049</label>
+    <description>Legacy SCP-049 entity from an older save. It converts to the moving pawn when the map ticks.</description>
+    <thingClass>Building</thingClass><tickerType>Rare</tickerType>
+    <building><deconstructible>false</deconstructible></building>
+    <graphicData><texPath>Things/Item/Scp049</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>(1.3,1.7)</drawSize></graphicData>
+    <passability>Impassable</passability><fillPercent>1</fillPercent><rotatable>false</rotatable>
+    <statBases><MaxHitPoints>700</MaxHitPoints><Flammability>0</Flammability><MarketValue>0</MarketValue></statBases>
+    <comps><li Class="ScpFoundation.Anomalies.CompProperties_Scp049Entity" /></comps>
+  </ThingDef>
+</Defs>

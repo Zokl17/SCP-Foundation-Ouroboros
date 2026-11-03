@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <IncidentDef>
+    <defName>SCP_Discover354</defName><label>SCP-354 discovered</label>
+    <workerClass>ScpFoundation.Anomalies.IncidentWorker_Discover354</workerClass>
+    <category>Misc</category><targetTags><li>Map_PlayerHome</li></targetTags>
+    <baseChance>0</baseChance><earliestDay>20</earliestDay><minPopulation>4</minPopulation><minRefireDays>90</minRefireDays>
+    <letterDef>ThreatBig</letterDef><letterLabel>SCP-354 — Red Pool</letterLabel>
+    <letterText>A large red pool has appeared near the colony. Hostile entities may emerge from it. Build a perimeter and keep personnel away from the shore.</letterText>
+  </IncidentDef>
+</Defs>

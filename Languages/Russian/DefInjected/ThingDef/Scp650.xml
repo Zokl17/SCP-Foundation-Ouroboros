@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_Statue.label>SCP-650 — Чёрная статуя</SCP_Statue.label>
+  <SCP_Statue.description>Тёмная гуманоидная фигура без черт лица. Происхождение и свойства требуют исследования.</SCP_Statue.description>
+  <SCP_ContainmentAnchor.label>пост содержания</SCP_ContainmentAnchor.label>
+  <SCP_ContainmentAnchor.description>Обозначенное место для размещения захваченной аномалии. Стройте его в подготовленной камере. Пост не подавляет аномальные эффекты и не заменяет персонал.</SCP_ContainmentAnchor.description>
+</LanguageData>

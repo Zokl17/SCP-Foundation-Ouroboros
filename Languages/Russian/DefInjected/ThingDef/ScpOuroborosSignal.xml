@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_OuroborosSignalRecorder.label>записывающее устройство ретранслятора</SCP_OuroborosSignalRecorder.label>
+  <SCP_OuroborosSignalRecorder.description>Герметичный носитель в безмолвном ретрансляторе. Выберите его и нажмите «Извлечь передатчик» либо выберите колониста и нажмите ПКМ. Колонист положит модуль в снаряжение; верните его на базу.</SCP_OuroborosSignalRecorder.description>
+</LanguageData>

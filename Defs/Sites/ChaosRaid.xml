@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <SitePartDef ParentName="Outpost">
+    <defName>SCP_ChaosRaid</defName>
+    <label>Chaos Insurgency salvage base</label>
+    <description>An Insurgency scrapyard fortress with a secured plasteel storeroom.</description>
+    <approachOrderString>Attack {0}</approachOrderString>
+    <approachingReportString>Attacking {0}.</approachingReportString>
+    <arrivedLetter>A heavily armed Chaos Insurgency detachment holds this scrapyard. Their plasteel storeroom contains SCP-127 and rare medicines. Defeat the guards and recover the contents.</arrivedLetter>
+    <minMapSize>(250, 1, 250)</minMapSize>
+    <tags Inherit="False"><li>SCPChaosRaid</li></tags>
+  </SitePartDef>
+
+  <WorldObjectDef ParentName="Site">
+    <defName>SCP_ChaosRaidSite</defName>
+    <label>Chaos Insurgency salvage base</label>
+    <overrideMapSize>(250, 1, 250)</overrideMapSize>
+    <mapGenerator>SCP_ChaosRaidSavedMap</mapGenerator>
+  </WorldObjectDef>
+
+  <MapGeneratorDef>
+    <defName>SCP_ChaosRaidSavedMap</defName>
+    <genSteps>
+      <li>SCP_ChaosRaidMap</li>
+      <li>FindPlayerStartSpot</li>
+      <li>Fog</li>
+    </genSteps>
+  </MapGeneratorDef>
+
+  <GenStepDef>
+    <defName>SCP_ChaosRaidMap</defName>
+    <order>400</order>
+    <genStep Class="ScpFoundation.Storytelling.GenStep_ChaosRaid" />
+  </GenStepDef>
+</Defs>

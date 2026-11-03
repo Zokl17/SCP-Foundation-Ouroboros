@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_ChaosInsurgency.label>Повстанцы Хаоса</SCP_ChaosInsurgency.label>
+  <SCP_ChaosInsurgency.description>Враждебная раскольническая организация из перебежчиков Фонда, наёмников и похищенных аномальных активов. Её разрозненные ячейки нападают на комплексы содержания ради заключённых, оружия и аномалий, после чего отходят в укреплённые убежища до прибытия сил реагирования.</SCP_ChaosInsurgency.description>
+  <SCP_ChaosInsurgency.fixedName>Повстанцы Хаоса</SCP_ChaosInsurgency.fixedName>
+  <SCP_ChaosInsurgency.pawnSingular>оперативник Повстанцев</SCP_ChaosInsurgency.pawnSingular><SCP_ChaosInsurgency.pawnsPlural>персонал Повстанцев</SCP_ChaosInsurgency.pawnsPlural>
+  <SCP_ChaosInsurgency.leaderTitle>командир ячейки</SCP_ChaosInsurgency.leaderTitle><SCP_ChaosInsurgency.leaderTitleFemale>командир ячейки</SCP_ChaosInsurgency.leaderTitleFemale>
+
+  <SCP_ChurchBrokenGod.label>Церковь Разбитого Бога</SCP_ChurchBrokenGod.label>
+  <SCP_ChurchBrokenGod.description>Традиционная ветвь Церкви Разбитого Бога посылает усиленных механизмами фанатиков и канторов за священными деталями своего божества. Их отличают светлые облачения, латунные маски и ритуальное ЭМИ-оружие.</SCP_ChurchBrokenGod.description>
+  <SCP_ChurchBrokenGod.fixedName>Церковь Разбитого Бога</SCP_ChurchBrokenGod.fixedName>
+  <SCP_ChurchBrokenGod.pawnSingular>фанатик Церкви</SCP_ChurchBrokenGod.pawnSingular><SCP_ChurchBrokenGod.pawnsPlural>последователи Церкви</SCP_ChurchBrokenGod.pawnsPlural>
+  <SCP_ChurchBrokenGod.leaderTitle>верховный жрец</SCP_ChurchBrokenGod.leaderTitle><SCP_ChurchBrokenGod.leaderTitleFemale>верховная жрица</SCP_ChurchBrokenGod.leaderTitleFemale>
+
+  <SCP_SarkicCults.label>Саркистские культы</SCP_SarkicCults.label>
+  <SCP_SarkicCults.description>Изолированные секты плотетворцев, чьи ритуалы изменяют кости, кровь и живую ткань. Эта заглушка пока использует обычные рейды чужеземцев с упором на ближний бой и без мутаций.</SCP_SarkicCults.description>
+  <SCP_SarkicCults.fixedName>Саркистские культы</SCP_SarkicCults.fixedName>
+  <SCP_SarkicCults.pawnSingular>саркистский культист</SCP_SarkicCults.pawnSingular><SCP_SarkicCults.pawnsPlural>саркистские культисты</SCP_SarkicCults.pawnsPlural>
+  <SCP_SarkicCults.leaderTitle>старейшина культа</SCP_SarkicCults.leaderTitle><SCP_SarkicCults.leaderTitleFemale>старейшина культа</SCP_SarkicCults.leaderTitleFemale>
+
+  <SCP_SerpentsHand.label>Длань Змея</SCP_SerpentsHand.label>
+  <SCP_SerpentsHand.description>Децентрализованное аномальное движение, выступающее против заточения разумных и мирных аномалий. Эта скрытая заглушка оставлена для будущих порталов и операций освобождения.</SCP_SerpentsHand.description>
+  <SCP_SerpentsHand.fixedName>Длань Змея</SCP_SerpentsHand.fixedName>
+  <SCP_SerpentsHand.pawnSingular>член Длани</SCP_SerpentsHand.pawnSingular><SCP_SerpentsHand.pawnsPlural>члены Длани</SCP_SerpentsHand.pawnsPlural>
+</LanguageData>

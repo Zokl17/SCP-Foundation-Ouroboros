@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_217Infection.label>заражение SCP-217</SCP_217Infection.label>
+  <SCP_217Infection.description>Медленная и пока неизлечимая перестройка органических тканей в подобие часового механизма. Передаётся при контакте с заражённым или содержимым разбитого контейнера.</SCP_217Infection.description>
+  <SCP_217Infection.stages.0.label>скрытая стадия</SCP_217Infection.stages.0.label>
+  <SCP_217Infection.stages.1.label>скованность суставов</SCP_217Infection.stages.1.label>
+  <SCP_217Infection.stages.2.label>механическая перестройка</SCP_217Infection.stages.2.label>
+  <SCP_217Infection.stages.3.label>развитая перестройка</SCP_217Infection.stages.3.label>
+</LanguageData>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods><li>Combat Extended</li></mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[@Name="SCP_BackpackBase"]/apparel/layers/li[text()="SCP_Backpack"]</xpath>
+          <value><li>Backpack</li></value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[@Name="SCP_BackpackBase"]/statBases</xpath>
+          <value><Bulk>3</Bulk><WornBulk>1</WornBulk></value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="SCP_MTFNavyBackpack"]</xpath>
+          <value><equippedStatOffsets><CarryBulk>50</CarryBulk><CarryWeight>50</CarryWeight></equippedStatOffsets></value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="SCP_MTFBlackBackpack"]</xpath>
+          <value><equippedStatOffsets><CarryBulk>40</CarryBulk><CarryWeight>40</CarryWeight></equippedStatOffsets></value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="SCP_ChaosOliveRucksack"]</xpath>
+          <value><equippedStatOffsets><CarryBulk>50</CarryBulk><CarryWeight>50</CarryWeight></equippedStatOffsets></value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[@Name="SCP_BackpackBase"]/apparel</xpath>
+          <value>
+            <renderNodeProperties>
+              <li>
+                <nodeClass>PawnRenderNode_Apparel</nodeClass>
+                <workerClass>CombatExtended.PawnRenderNodeWorker_Backpack</workerClass>
+                <parentTagDef>ApparelBody</parentTagDef>
+                <baseLayer>30</baseLayer>
+              </li>
+            </renderNodeProperties>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="StoneBlocksBase">
+    <defName>SCP_Concrete</defName>
+    <label>concrete blocks</label>
+    <description>Construction blocks made from crushed debris and a mineral binder. An inexpensive containment material. Walls made from these blocks meet concrete wall requirements.</description>
+    <graphicData>
+      <texPath>Things/Item/ScpConcrete</texPath><graphicClass>Graphic_Single</graphicClass><color>(0.65,0.68,0.7)</color>
+    </graphicData>
+    <statBases><Mass>1.2</Mass><MarketValue>0.8</MarketValue></statBases>
+    <stuffProps>
+      <stuffAdjective>concrete</stuffAdjective>
+      <color>(0.62,0.65,0.67)</color><commonality>0</commonality>
+      <!-- Vanilla wall: 300 HP. 2.3333333x = 700 HP. -->
+      <statFactors><MaxHitPoints>2.3333333</MaxHitPoints><Beauty>0.8</Beauty></statFactors>
+    </stuffProps>
+  </ThingDef>
+  <ThingDef ParentName="BenchBase">
+    <defName>SCP_ConcreteMixer</defName>
+    <label>powered concrete mixer</label>
+    <description>A large powered installation with a loading hopper and rotating drum. It processes ordinary stone chunks into concrete construction blocks.</description>
+    <thingClass>Building_WorkTable</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Production/ScpConcreteMixer</texPath><graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(4,1.5)</drawSize><drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>Things/Building/Production/ScpConcreteMixer</uiIconPath>
+    <size>(4,1)</size><rotatable>true</rotatable><defaultPlacingRot>North</defaultPlacingRot>
+    <designationCategory>SCPFoundation</designationCategory><uiOrder>1250</uiOrder>
+    <passability>PassThroughOnly</passability><pathCost>50</pathCost><fillPercent>0.5</fillPercent>
+    <altitudeLayer>Building</altitudeLayer><terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <hasInteractionCell>true</hasInteractionCell><interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType><constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+    <statBases><MaxHitPoints>220</MaxHitPoints><WorkToBuild>2600</WorkToBuild><Flammability>0</Flammability></statBases>
+    <costList><Steel>120</Steel><ComponentIndustrial>2</ComponentIndustrial></costList>
+    <inspectorTabs><li>ITab_Bills</li></inspectorTabs>
+    <recipes><li>SCP_MakeConcrete</li></recipes>
+    <building><spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity><workTableRoomRole>Workshop</workTableRoomRole><workTableNotInRoomRoleFactor>0.8</workTableNotInRoomRoleFactor></building>
+    <comps>
+      <li Class="CompProperties_Power"><compClass>CompPowerTrader</compClass><basePowerConsumption>350</basePowerConsumption><shortCircuitInRain>true</shortCircuitInRain></li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+    <placeWorkers><li>PlaceWorker_PreventInteractionSpotOverlap</li></placeWorkers>
+    <researchPrerequisites><li>SCP_FoundationConstruction</li></researchPrerequisites>
+  </ThingDef>
+</Defs>

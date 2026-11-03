@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ScpFoundation.Definitions.ScpDef>
+    <defName>SCP_Anomaly504</defName><label>SCP-504</label>
+    <description>A tomato plant whose ripe fruit responds violently to bad humor.</description>
+    <scpId>SCP-504</scpId><objectClass>Safe</objectClass>
+    <tags><li>Plant</li><li>Reactive</li></tags>
+    <requirements><li Class="ScpFoundation.Containment.RequirementScp504Post"><id>post</id></li></requirements>
+    <breach><graceTicks>30000</graceTicks><deterministicAfterTicks>0</deterministicAfterTicks><riskPerDay>0</riskPerDay><recoveryPerDay>0</recoveryPerDay></breach>
+    <research>
+      <observedWork>15000</observedWork><partialWork>120000</partialWork><fullWork>360000</fullWork>
+      <observedReportKey>SCP_504ObservedReport</observedReportKey>
+      <partialReportKey>SCP_504PartialReport</partialReportKey>
+      <documentedReportKey>SCP_504DocumentedReport</documentedReportKey>
+      <experimentReportKeys><li>SCP_504Experiment1</li><li>SCP_504Experiment2</li><li>SCP_504Experiment3</li></experimentReportKeys>
+    </research>
+    <source><title>SCP-504</title><author>BlastYoBoots</author><url>https://scp-wiki.wikidot.com/scp-504</url><license>CC BY-SA 3.0</license></source>
+  </ScpFoundation.Definitions.ScpDef>
+</Defs>

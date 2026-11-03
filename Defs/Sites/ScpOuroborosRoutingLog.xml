@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <SitePartDef>
+    <defName>SCP_OuroborosRoutingLogPart</defName>
+    <label>lost routing log outpost</label>
+    <description>A former routing station identified by the Church-made plate on SCP-629's detached parts.</description>
+    <workerClass>SitePartWorker</workerClass>
+    <siteTexture>World/WorldObjects/Sites/Outpost</siteTexture>
+    <expandingIconTexture>World/WorldObjects/Expanding/Sites/Outpost</expandingIconTexture>
+    <requiresFaction>true</requiresFaction><considerEnteringAsAttack>false</considerEnteringAsAttack>
+    <approachOrderString>Investigate {0}</approachOrderString>
+    <approachingReportString>Investigating {0}.</approachingReportString>
+    <arrivedLetter>Recover the physical routing log from the inner room. Select it or right-click with a colonist, then bring it home.</arrivedLetter>
+    <arrivedLetterDef>NeutralEvent</arrivedLetterDef>
+    <minMapSize>(250, 1, 250)</minMapSize>
+    <tags><li>SCPOuroborosRoutingLog</li></tags>
+  </SitePartDef>
+  <WorldObjectDef ParentName="Site">
+    <defName>SCP_OuroborosRoutingLogSite</defName><label>lost routing log outpost</label>
+    <overrideMapSize>(250, 1, 250)</overrideMapSize><mapGenerator>SCP_OuroborosRoutingLogMap</mapGenerator>
+  </WorldObjectDef>
+  <MapGeneratorDef>
+    <defName>SCP_OuroborosRoutingLogMap</defName>
+    <genSteps><li>ElevationFertility</li><li>Terrain</li>
+      <li>SCP_OuroborosRoutingLogGen</li><li>FindPlayerStartSpot</li><li>Fog</li></genSteps>
+  </MapGeneratorDef>
+  <GenStepDef>
+    <defName>SCP_OuroborosRoutingLogGen</defName><order>400</order>
+    <genStep Class="ScpFoundation.Storytelling.GenStep_ScpRoutingLogSite" />
+  </GenStepDef>
+</Defs>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- CE replaces the vanilla assault rifle's tags with CE_AI_AR. Restore the
+       precise vanilla tag used by the GOC rifleman kind so it cannot roll an
+       Insurgency AK or another CE assault rifle. -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Gun_AssaultRifle"]/weaponTags</xpath>
+    <value><li>AssaultRifle</li></value>
+  </Operation>
+</Patch>

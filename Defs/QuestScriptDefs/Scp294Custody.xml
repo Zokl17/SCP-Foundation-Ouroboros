@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <QuestScriptDef MayRequire="Ludeon.RimWorld.Royalty">
+    <defName>SCP_294Custody</defName>
+    <rootSelectionWeight>0.12</rootSelectionWeight>
+    <rootMinPoints>450</rootMinPoints>
+    <expireDaysRange>5~8</expireDaysRange>
+    <questNameRules><rulesStrings><li>questName->Custody and experiments: SCP-294</li></rulesStrings></questNameRules>
+    <questDescriptionRules><rulesStrings>
+      <li>questDescription->The Foundation offers to transfer SCP-294 to your site. Prepare an empty containment post. A shuttle will unload the machine with four Foundation tactical operatives in assault vests. They will guard it, move toward the post when a colonist begins the transfer, and depart once it is installed. Keep SCP-294 in custody and complete its study and experiments. The Foundation will grant 5 trust after containment and another 15 when the dossier is complete.</li>
+    </rulesStrings></questDescriptionRules>
+    <root Class="QuestNode_Sequence"><nodes>
+      <li Class="QuestNode_GetMap" />
+      <li Class="ScpFoundation.Storytelling.QuestNode_Scp294Custody" />
+      <li Class="ScpFoundation.Storytelling.QuestNode_RecordScpArrival"><number>294</number></li>
+      <li Class="QuestNode_SubScript">
+        <def>Util_TransportShip_DropOff</def>
+        <parms><contents>$scp294Contents</contents><owningFaction>$scp294Faction</owningFaction></parms>
+      </li>
+      <li Class="QuestNode_Signal">
+        <inSignal>Scp294Delivered</inSignal>
+        <node Class="QuestNode_Sequence"><nodes>
+          <li Class="QuestNode_SubScript">
+            <def>Util_TransportShip_Pickup</def>
+            <parms><requiredPawns>$scp294Pawns</requiredPawns><owningFaction>$scp294Faction</owningFaction><leaveDelayTicks>18000</leaveDelayTicks><leaveImmediatelyWhenSatisfied>true</leaveImmediatelyWhenSatisfied></parms>
+          </li>
+        </nodes></node>
+      </li>
+      <li Class="QuestNode_Signal">
+        <inSignal>Scp294Documented</inSignal>
+        <node Class="QuestNode_Sequence"><nodes>
+          <li Class="QuestNode_Letter"><label TKey="SCP_294CustodyCompleteTitle">SCP-294 documented</label><text TKey="SCP_294CustodyCompleteBody">The SCP-294 experiments are complete. The Foundation grants another 15 trust.</text></li>
+          <li Class="QuestNode_End"><outcome>Success</outcome></li>
+        </nodes></node>
+      </li>
+      <li Class="QuestNode_Signal">
+        <inSignal>Scp294Failed</inSignal>
+        <node Class="QuestNode_Sequence"><nodes>
+          <li Class="QuestNode_Letter"><label TKey="SCP_294CustodyFailedTitle">SCP-294 transfer failed</label><text TKey="SCP_294CustodyFailedBody">The machine could not be delivered or remained outside containment. The Foundation has withdrawn the assignment.</text></li>
+          <li Class="QuestNode_End"><outcome>Fail</outcome></li>
+        </nodes></node>
+      </li>
+    </nodes></root>
+  </QuestScriptDef>
+</Defs>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_OuroborosSignalSitePart.label>безмолвный ретранслятор</SCP_OuroborosSignalSitePart.label>
+  <SCP_OuroborosSignalSitePart.description>Последний известный узел сигнала, записанного во время нападения на SCP-882.</SCP_OuroborosSignalSitePart.description>
+  <SCP_OuroborosSignalSitePart.approachOrderString>Исследовать {0}</SCP_OuroborosSignalSitePart.approachOrderString>
+  <SCP_OuroborosSignalSitePart.approachingReportString>Исследование {0}.</SCP_OuroborosSignalSitePart.approachingReportString>
+  <SCP_OuroborosSignalSitePart.arrivedLetter>Ретранслятор заброшен. Выберите устройство в руинах и нажмите «Извлечь передатчик» либо выберите колониста и нажмите ПКМ. Модуль попадёт в снаряжение этого колониста. Вернитесь на базу и расшифруйте его за исследовательским столом.</SCP_OuroborosSignalSitePart.arrivedLetter>
+</LanguageData>

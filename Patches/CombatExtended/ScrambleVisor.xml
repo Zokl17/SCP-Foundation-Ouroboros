@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods><li>Combat Extended</li></mods>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="SCP_ScrambleVisor"]/statBases</xpath>
+      <value>
+        <Bulk>5</Bulk>
+        <WornBulk>1</WornBulk>
+        <NightVisionEfficiency_Apparel>0.8</NightVisionEfficiency_Apparel>
+      </value>
+    </match>
+  </Operation>
+</Patch>

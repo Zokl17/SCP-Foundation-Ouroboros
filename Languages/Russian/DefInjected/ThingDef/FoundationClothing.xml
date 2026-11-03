@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_ResearchCoat.label>халат учёного Фонда</SCP_ResearchCoat.label>
+  <SCP_ResearchCoat.description>Белый лабораторный халат для изучения физических аномалий. Удваивает прогресс исследования у постов содержания и SCP-294; архивные и обычные технологические исследования не ускоряет.</SCP_ResearchCoat.description>
+  <SCP_DClassUniform.label>костюм класса D</SCP_DClassUniform.label>
+  <SCP_DClassUniform.description>Оранжевый костюм персонала класса D. Пока он надет, пешка получает +5 к настроению от ощущения, что приносит пользу людям.</SCP_DClassUniform.description>
+</LanguageData>

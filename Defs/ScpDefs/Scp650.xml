@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ScpFoundation.Definitions.ScpDef>
+    <defName>SCP_Anomaly650</defName><label>SCP-650</label>
+    <description>A humanoid statue with an observation-dependent relocation effect.</description>
+    <scpId>SCP-650</scpId><objectClass>Euclid</objectClass>
+    <tags><li>Humanoid</li><li>Observational</li></tags>
+    <requirements>
+      <li Class="ScpFoundation.Containment.RequirementRoom"><id>room</id><minCells>16</minCells><roofed>true</roofed></li>
+      <li Class="ScpFoundation.Containment.RequirementWallMaterial"><id>walls</id><allowedMaterials><li>Steel</li><li>SCP_Concrete</li><li>Plasteel</li></allowedMaterials><allowedWallDefs><li>SCP_FoundationWall</li><li>SCP_FoundationWallReinforced</li><li>SCPV1_GlassWall</li></allowedWallDefs></li>
+      <li Class="ScpFoundation.Containment.RequirementLight"><id>light</id><min>0.3</min><max>1</max></li>
+      <li Class="ScpFoundation.Containment.RequirementObservers"><id>observers</id><count>2</count><allowRemote>true</allowRemote></li>
+    </requirements>
+    <breach><graceTicks>7500</graceTicks><deterministicAfterTicks>7500</deterministicAfterTicks><riskPerDay>12</riskPerDay><recoveryPerDay>24</recoveryPerDay></breach>
+    <breachEffects><li Class="ScpFoundation.Runtime.BreachEffectLetter"><bodyKey>SCP_650Breach</bodyKey></li></breachEffects>
+    <research><observedWork>15000</observedWork><partialWork>120000</partialWork><fullWork>360000</fullWork>
+      <observedReportKey>SCP_650Observed</observedReportKey><partialReportKey>SCP_650Partial</partialReportKey><documentedReportKey>SCP_650Documented</documentedReportKey>
+      <experimentReportKeys><li>SCP_650Experiment1</li><li>SCP_650Experiment2</li><li>SCP_650Experiment3</li></experimentReportKeys>
+    </research>
+    <source><title>SCP-650</title><author>Dr Talson</author><url>https://scp-wiki.wikidot.com/scp-650</url><license>CC BY-SA 3.0</license></source>
+  </ScpFoundation.Definitions.ScpDef>
+</Defs>

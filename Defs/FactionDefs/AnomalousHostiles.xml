@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>SCP_049Neutral</defName><label>SCP-049</label><fixedName>SCP-049</fixedName>
+    <description>The solitary plague doctor, initially willing to assist but unpredictably dangerous.</description>
+    <requiredCountAtGameStart>0</requiredCountAtGameStart><maxCountAtGameStart>1</maxCountAtGameStart>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation><settlementGenerationWeight>0</settlementGenerationWeight>
+    <hidden>true</hidden><displayInFactionSelection>false</displayInFactionSelection>
+    <basicMemberKind>SCP_049Kind</basicMemberKind><permanentEnemy>false</permanentEnemy>
+    <pawnGroupMakers Inherit="False"><li><kindDef>Combat</kindDef><options><SCP_049Kind>1</SCP_049Kind></options></li></pawnGroupMakers>
+  </FactionDef>
+  <FactionDef ParentName="OutlanderRoughBase">
+    <defName>SCP_AnomalousHostiles</defName><label>hostile anomalies</label>
+    <fixedName>Hostile anomalies</fixedName><description>Hostile anomalous entities and reanimated followers.</description>
+    <requiredCountAtGameStart>0</requiredCountAtGameStart><maxCountAtGameStart>1</maxCountAtGameStart>
+    <maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation><settlementGenerationWeight>0</settlementGenerationWeight>
+    <hidden>true</hidden><displayInFactionSelection>false</displayInFactionSelection>
+    <basicMemberKind>SCP_0492Kind</basicMemberKind><permanentEnemy>true</permanentEnemy>
+    <pawnGroupMakers Inherit="False"><li><kindDef>Combat</kindDef><options><SCP_0492Kind>1</SCP_0492Kind></options></li></pawnGroupMakers>
+  </FactionDef>
+</Defs>

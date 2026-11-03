@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/PreceptDef[defName="IdeoRole_ResearchSpecialist"]/requiredMemes</xpath>
+    <value>
+      <li>SCP_ScientificMandate</li>
+    </value>
+  </Operation>
+</Patch>

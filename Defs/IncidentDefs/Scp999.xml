@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <IncidentDef>
+    <defName>SCP_Visit999</defName><label>SCP-999 visit</label>
+    <workerClass>ScpFoundation.Anomalies.IncidentWorker_Scp999</workerClass>
+    <category>Misc</category><targetTags><li>Map_PlayerHome</li></targetTags>
+    <baseChance>0.1</baseChance><earliestDay>3</earliestDay><minPopulation>1</minPopulation><minRefireDays>30</minRefireDays>
+    <letterDef>PositiveEvent</letterDef><letterLabel>SCP-999 has arrived</letterLabel>
+    <letterText>Someone in the colony is deeply distressed. A friendly orange creature has appeared nearby and seems drawn to those who need comfort. SCP-999 lifts moods, and colonists can hug it for a stronger, lasting effect.</letterText>
+  </IncidentDef>
+</Defs>

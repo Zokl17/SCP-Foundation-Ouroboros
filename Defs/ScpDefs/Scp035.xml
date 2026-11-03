@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ScpFoundation.Definitions.ScpDef>
+    <defName>SCP_Anomaly035</defName><label>SCP-035</label>
+    <description>A porcelain mask that draws nearby observers to wear it. A wearer becomes hostile while the body rapidly decomposes.</description>
+    <scpId>SCP-035</scpId><objectClass>Keter</objectClass>
+    <tags><li>Apparel</li><li>Artifact</li><li>Psychic</li></tags>
+    <requirements><li Class="ScpFoundation.Containment.RequirementAtPost"><id>post</id></li></requirements>
+    <breach><graceTicks>30000</graceTicks><deterministicAfterTicks>0</deterministicAfterTicks><riskPerDay>0</riskPerDay><recoveryPerDay>0</recoveryPerDay></breach>
+    <research>
+      <observedWork>12000</observedWork><partialWork>60000</partialWork><fullWork>180000</fullWork>
+      <observedReportKey>SCP_035ObservedReport</observedReportKey>
+      <partialReportKey>SCP_035PartialReport</partialReportKey>
+      <documentedReportKey>SCP_035DocumentedReport</documentedReportKey>
+      <experimentReportKeys><li>SCP_035Experiment1</li><li>SCP_035Experiment2</li><li>SCP_035Experiment3</li></experimentReportKeys>
+    </research>
+    <source><title>SCP-035</title><author>Kain Pathos Crow</author><url>https://scp-wiki.wikidot.com/scp-035</url><license>CC BY-SA 3.0</license></source>
+  </ScpFoundation.Definitions.ScpDef>
+</Defs>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="ResourceBase" Name="SCP_330CandyBase" Abstract="True">
+    <thingClass>ScpFoundation.Anomalies.Thing_Scp330Candy</thingClass>
+    <graphicData><texPath>Things/Item/ScpArtifacts/Scp330Candy</texPath><graphicClass>Graphic_Single</graphicClass><shaderType>CutoutComplex</shaderType><drawSize>0.65</drawSize></graphicData>
+    <stackLimit>1</stackLimit><statBases><MaxHitPoints>30</MaxHitPoints><MarketValue>5</MarketValue><Mass>0.05</Mass><Nutrition>0.05</Nutrition></statBases>
+    <thingCategories><li>Foods</li></thingCategories>
+    <ingestible><preferability>DesperateOnly</preferability><foodType>Processed</foodType><maxNumToIngestAtOnce>1</maxNumToIngestAtOnce><defaultNumToIngestAtOnce>1</defaultNumToIngestAtOnce><ingestSound>Meal_Eat</ingestSound></ingestible>
+  </ThingDef>
+  <ThingDef ParentName="SCP_330CandyBase"><defName>SCP_330CandyYellow</defName><label>yellow SCP-330 candy</label><description>A yellow candy from SCP-330. Eating it briefly increases movement speed.</description><graphicData><texPath>Things/Item/ScpArtifacts/Scp330CandyYellow</texPath><color>(1,1,1)</color></graphicData></ThingDef>
+  <ThingDef ParentName="SCP_330CandyBase"><defName>SCP_330CandyGreen</defName><label>green SCP-330 candy</label><description>A green candy from SCP-330. Eating it briefly improves immunity gain and wound healing.</description><graphicData><texPath>Things/Item/ScpArtifacts/Scp330CandyGreen</texPath><color>(1,1,1)</color></graphicData></ThingDef>
+  <ThingDef ParentName="SCP_330CandyBase"><defName>SCP_330CandyRed</defName><label>red SCP-330 candy</label><description>A red candy from SCP-330. Eating it reduces pain and gradually closes bleeding wounds.</description><graphicData><texPath>Things/Item/ScpArtifacts/Scp330CandyRed</texPath><color>(1,1,1)</color></graphicData></ThingDef>
+  <ThingDef ParentName="SCP_330CandyBase"><defName>SCP_330CandyPurple</defName><label>purple SCP-330 candy</label><description>A purple candy from SCP-330. Eating it briefly improves work speed.</description><graphicData><texPath>Things/Item/ScpArtifacts/Scp330CandyPurple</texPath><color>(1,1,1)</color></graphicData></ThingDef>
+  <ThingDef ParentName="SCP_330CandyBase"><defName>SCP_330CandyBlack</defName><label>black SCP-330 candy</label><description>A black candy from SCP-330. Eating it briefly improves shooting accuracy and aiming speed.</description><graphicData><texPath>Things/Item/ScpArtifacts/Scp330CandyBlack</texPath><color>(1,1,1)</color></graphicData></ThingDef>
+</Defs>

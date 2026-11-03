@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef Name="SCPFoundationWallBase" ParentName="BuildingBase" Abstract="True">
+    <thingClass>Building</thingClass><tickerType>Never</tickerType>
+    <!-- Rollback: texPath Things/Building/Linked/Wall + Graphic_Appearances restores the previous vanilla wall appearance. -->
+    <graphicData>
+      <texPath>Things/Building/Linked/ScpFoundationWall_A_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass><drawSize>(1,1)</drawSize>
+      <linkType>CornerFiller</linkType>
+      <linkFlags><li>Wall</li><li>Rock</li></linkFlags>
+    </graphicData>
+    <uiIconPath>Things/Building/Linked/WallSmooth_MenuIcon</uiIconPath>
+    <drawStyleCategory>Walls</drawStyleCategory>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <size>(1,1)</size><rotatable>false</rotatable><altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability><fillPercent>1</fillPercent><holdsRoof>true</holdsRoof>
+    <blockWind>true</blockWind><blockLight>true</blockLight><coversFloor>true</coversFloor>
+    <castEdgeShadows>true</castEdgeShadows><terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>SCPFoundation</designationCategory>
+    <designationHotKey>Misc1</designationHotKey>
+    <statBases><MaxHitPoints>850</MaxHitPoints><WorkToBuild>250</WorkToBuild><Flammability>0</Flammability></statBases>
+    <costList><Steel>5</Steel><SCP_Concrete>5</SCP_Concrete></costList>
+    <building><isInert>true</isInert><isWall>true</isWall><isPlaceOverableWall>true</isPlaceOverableWall><ai_chillDestination>false</ai_chillDestination><supportsWallAttachments>true</supportsWallAttachments>
+      <blueprintGraphicData><texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath></blueprintGraphicData>
+    </building>
+  </ThingDef>
+  <ThingDef ParentName="SCPFoundationWallBase">
+    <defName>SCP_FoundationWall</defName><label>Foundation wall</label>
+    <thingClass>ScpFoundation.Runtime.Building_FoundationWall</thingClass>
+    <description>A steel-clad concrete containment wall. Supports roofs and blocks movement and sight.</description>
+    <!-- Only Wall A uses the 47-state bevel/wire renderer; the shared base and B stay intact. -->
+    <graphicData Inherit="False">
+      <texPath>Things/Building/Linked/ScpFoundationWall_A_Aligned47</texPath>
+      <graphicClass>ScpFoundation.Runtime.Graphic_FoundationWall</graphicClass>
+      <drawSize>(1,1)</drawSize><drawRotated>false</drawRotated>
+      <linkType>None</linkType><linkFlags><li>Wall</li><li>Rock</li></linkFlags>
+    </graphicData>
+    <uiIconPath>Things/Building/Linked/ScpFoundationWall_A_Aligned47_Icon</uiIconPath>
+    <building>
+      <blueprintGraphicData Inherit="False">
+        <texPath>Things/Building/Linked/ScpFoundationWall_A_Aligned47_Blueprint</texPath>
+        <graphicClass>Graphic_Single</graphicClass><linkType>CornerFiller</linkType>
+        <linkFlags><li>Wall</li><li>Rock</li></linkFlags>
+      </blueprintGraphicData>
+    </building>
+    <uiOrder>200</uiOrder>
+  </ThingDef>
+  <ThingDef ParentName="SCPFoundationWallBase">
+    <defName>SCP_FoundationWallReinforced</defName><label>reinforced Foundation wall</label>
+    <description>A reinforced steel-clad concrete wall for containment rooms. Supports roofs and blocks movement and sight.</description>
+    <thingClass>ScpFoundation.Runtime.Building_FoundationWall</thingClass>
+    <graphicData Inherit="False">
+      <texPath>Things/Building/Linked/ScpFoundationWall_B_Double47</texPath>
+      <graphicClass>ScpFoundation.Runtime.Graphic_FoundationWall</graphicClass>
+      <drawSize>(1,1)</drawSize><drawRotated>false</drawRotated>
+      <linkType>None</linkType><linkFlags><li>Wall</li><li>Rock</li></linkFlags>
+    </graphicData>
+    <uiIconPath>Things/Building/Linked/ScpFoundationWall_B_Double47_Icon</uiIconPath>
+    <building>
+      <blueprintGraphicData Inherit="False">
+        <texPath>Things/Building/Linked/ScpFoundationWall_B_Double47_Blueprint</texPath>
+        <graphicClass>Graphic_Single</graphicClass><linkType>CornerFiller</linkType>
+        <linkFlags><li>Wall</li><li>Rock</li></linkFlags>
+      </blueprintGraphicData>
+    </building>
+    <statBases><MaxHitPoints>1000</MaxHitPoints><WorkToBuild>400</WorkToBuild></statBases>
+    <costList><Steel>10</Steel><SCP_Concrete>10</SCP_Concrete></costList>
+    <designationHotKey>Misc2</designationHotKey><uiOrder>210</uiOrder>
+  </ThingDef>
+</Defs>

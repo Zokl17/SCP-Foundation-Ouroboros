@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Royalty 1.6: use the guest rules supplied by the Russian common rule pack. -->
+  <Hospitality_Util_Worker.LetterLabelShuttleLeftBehind.slateRef>Шаттл оставлен</Hospitality_Util_Worker.LetterLabelShuttleLeftBehind.slateRef>
+  <Hospitality_Util_Worker.LetterTextShuttleLeftBehind.slateRef>Шаттл, отправленный забрать [lodgersLabelSingOrPlural_acc], остался позади. [lodgers_pronoun] [lodgers_will_leave] поселение пешком.</Hospitality_Util_Worker.LetterTextShuttleLeftBehind.slateRef>
+</LanguageData>

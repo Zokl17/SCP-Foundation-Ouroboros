@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_FoundationLaserSentry.label>лазерная турель Фонда</SCP_FoundationLaserSentry.label>
+  <SCP_FoundationLaserSentry.description>Энергозависимая оборонительная турель для коридоров содержания. Обстреливает врагов узким голубым тепловым лучом без боеприпасов, но прекращает стрельбу при отключении питания. Не размещайте её там, где сотрудники пересекают линию огня.</SCP_FoundationLaserSentry.description>
+  <SCP_FoundationDisruptionSentry.label>подавляющая турель Фонда</SCP_FoundationDisruptionSentry.label>
+  <SCP_FoundationDisruptionSentry.description>Оборонительный вариант с направленным ЭМИ-лучом. Подавляет механоидов и электронику, почти не раня обычных людей. Для работы требуется постоянное питание.</SCP_FoundationDisruptionSentry.description>
+  <SCP_ProjectileLaserSentry.label>лазерный луч Фонда</SCP_ProjectileLaserSentry.label>
+  <SCP_ProjectileDisruptionSentry.label>подавляющий луч Фонда</SCP_ProjectileDisruptionSentry.label>
+  <SCP_GunLaserSentry.label>лазерный излучатель Фонда</SCP_GunLaserSentry.label>
+  <SCP_GunDisruptionSentry.label>подавляющий излучатель Фонда</SCP_GunDisruptionSentry.label>
+</LanguageData>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <HediffDef>
+    <defName>SCP_294MedicalKnowledge</defName><label>medical knowledge from SCP-294</label>
+    <description>Temporary knowledge of medicine acquired from an anomalous drink. Medicine skill +10.</description>
+    <hediffClass>HediffWithComps</hediffClass><isBad>false</isBad><initialSeverity>1</initialSeverity>
+    <comps><li Class="HediffCompProperties_Disappears"><disappearsAfterTicks>60000</disappearsAfterTicks><showRemainingTime>true</showRemainingTime></li></comps>
+  </HediffDef>
+  <HediffDef>
+    <defName>SCP_294EngineeringKnowledge</defName><label>engineering knowledge from SCP-294</label>
+    <description>Temporary knowledge of engineering acquired from an anomalous drink. Construction skill +10.</description>
+    <hediffClass>HediffWithComps</hediffClass><isBad>false</isBad><initialSeverity>1</initialSeverity>
+    <comps><li Class="HediffCompProperties_Disappears"><disappearsAfterTicks>60000</disappearsAfterTicks><showRemainingTime>true</showRemainingTime></li></comps>
+  </HediffDef>
+  <HediffDef>
+    <defName>SCP_294WeaponKnowledge</defName><label>weapon knowledge from SCP-294</label>
+    <description>Temporary knowledge of weapon handling acquired from an anomalous drink. Shooting skill +10.</description>
+    <hediffClass>HediffWithComps</hediffClass><isBad>false</isBad><initialSeverity>1</initialSeverity>
+    <comps><li Class="HediffCompProperties_Disappears"><disappearsAfterTicks>60000</disappearsAfterTicks><showRemainingTime>true</showRemainingTime></li></comps>
+  </HediffDef>
+</Defs>

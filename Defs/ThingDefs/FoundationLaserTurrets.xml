@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef Name="SCPFoundationEnergyTurretBase" ParentName="BuildingBase" Abstract="True">
+    <thingClass>ScpFoundation.Runtime.Building_FoundationLaserTurret</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <drawHighlight>true</drawHighlight><drawHighlightOnlyForHostile>true</drawHighlightOnlyForHostile>
+    <graphicData>
+      <texPath>Things/Building/Security/ScpLaserSentry_Base</texPath>
+      <graphicClass>Graphic_Single</graphicClass><drawSize>(2.5,2.5)</drawSize>
+    </graphicData>
+    <uiIconPath>Things/Building/Security/ScpLaserSentry_Base</uiIconPath>
+    <size>(2,2)</size><altitudeLayer>Building</altitudeLayer><minifiedDef>MinifiedThing</minifiedDef>
+    <stealable>false</stealable><rotatable>false</rotatable><tickerType>Normal</tickerType>
+    <passability>PassThroughOnly</passability><pathCost>50</pathCost><fillPercent>0.45</fillPercent>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>SCPFoundation</designationCategory>
+    <thingCategories><li>BuildingsSecurity</li></thingCategories>
+    <researchPrerequisites><li>SCP_FoundationSpecialArmament</li><li>GunTurrets</li></researchPrerequisites>
+    <constructionSkillPrerequisite>7</constructionSkillPrerequisite>
+    <statBases>
+      <MaxHitPoints>260</MaxHitPoints><WorkToBuild>6500</WorkToBuild>
+      <Mass>48</Mass><Flammability>0.15</Flammability><Beauty>-8</Beauty>
+      <ShootingAccuracyTurret>0.88</ShootingAccuracyTurret>
+    </statBases>
+    <costList><Steel>100</Steel><Plasteel>20</Plasteel><ComponentIndustrial>6</ComponentIndustrial><ComponentSpacer>1</ComponentSpacer></costList>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Power"><compClass>CompPowerTrader</compClass><basePowerConsumption>350</basePowerConsumption></li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="CompProperties_Stunnable"><affectedDamageDefs><li>EMP</li></affectedDamageDefs></li>
+    </comps>
+    <building><combatPower>85</combatPower><ai_combatDangerous>true</ai_combatDangerous><turretBurstCooldownTime>3.8</turretBurstCooldownTime><turretTopDrawSize>3.1</turretTopDrawSize><turretTopOffset>(0,0.2)</turretTopOffset></building>
+    <placeWorkers><li>PlaceWorker_TurretTop</li><li>PlaceWorker_ShowTurretRadius</li></placeWorkers>
+  </ThingDef>
+
+  <ThingDef ParentName="SCPFoundationEnergyTurretBase">
+    <defName>SCP_FoundationLaserSentry</defName>
+    <label>Foundation laser sentry</label>
+    <description>A powered point-defense turret for containment corridors. It fires a narrow cyan heat beam at hostiles, without ammunition, but goes silent when power fails. Avoid placing it where colonists can cross the line of fire.</description>
+    <uiOrder>230</uiOrder>
+    <building><turretGunDef>SCP_GunLaserSentry</turretGunDef></building>
+  </ThingDef>
+  <ThingDef ParentName="SCPFoundationEnergyTurretBase">
+    <defName>SCP_FoundationDisruptionSentry</defName>
+    <label>Foundation disruption sentry</label>
+    <description>A defensive variant that projects a focused EMP beam. It excels at stopping mechanoids and powered threats while causing little direct injury to ordinary personnel. Requires uninterrupted power.</description>
+    <uiOrder>231</uiOrder>
+    <building><turretGunDef>SCP_GunDisruptionSentry</turretGunDef></building>
+  </ThingDef>
+
+  <ThingDef ParentName="MoteBase">
+    <defName>SCP_MoteLaserBeam</defName>
+    <thingClass>MoteDualAttached</thingClass><altitudeLayer>MoteOverhead</altitudeLayer><drawOffscreen>true</drawOffscreen>
+    <mote><fadeInTime>0.03</fadeInTime><solidTime>0.12</solidTime><fadeOutTime>0.12</fadeOutTime><rotateTowardsTarget>true</rotateTowardsTarget><scaleToConnectTargets>true</scaleToConnectTargets></mote>
+    <graphicData>
+      <texPath>Things/Mote/ScpLaserBeam</texPath>
+      <graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+      <shaderType>MoteBeam</shaderType>
+      <shaderParameters>
+        <_ExtraTexA>/Things/Mote/BeamSecondaryNoise_A</_ExtraTexA>
+        <_ExtraTexB>/Things/Mote/BeamSecondaryNoise_B</_ExtraTexB>
+        <_ScrollSpeedA>0</_ScrollSpeedA><_ScrollSpeedB>0</_ScrollSpeedB><_Intensity>2</_Intensity>
+      </shaderParameters>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>SCP_ProjectileLaserSentry</defName><label>Foundation laser beam</label>
+    <thingClass>ScpFoundation.Runtime.Projectile_FoundationTurretBeam</thingClass>
+    <graphicData><texPath>Things/Projectile/ScpEMPPulse</texPath><graphicClass>Graphic_Single</graphicClass></graphicData>
+    <projectile><damageDef>Beam</damageDef><damageAmountBase>14</damageAmountBase><armorPenetrationBase>0.36</armorPenetrationBase><beamMoteDef>SCP_MoteLaserBeam</beamMoteDef><beamStartOffset>0.35</beamStartOffset></projectile>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>SCP_ProjectileDisruptionSentry</defName><label>Foundation disruption beam</label>
+    <thingClass>ScpFoundation.Runtime.Projectile_FoundationTurretBeam</thingClass>
+    <graphicData><texPath>Things/Projectile/ScpEMPPulse</texPath><graphicClass>Graphic_Single</graphicClass></graphicData>
+    <projectile><damageDef>EMP</damageDef><damageAmountBase>22</damageAmountBase><beamMoteDef>SCP_MoteLaserBeam</beamMoteDef><beamStartOffset>0.35</beamStartOffset></projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseWeaponTurret">
+    <defName>SCP_GunLaserSentry</defName><label>Foundation laser emitter</label>
+    <graphicData><texPath>Things/Building/Security/ScpLaserSentry_Top</texPath><graphicClass>Graphic_Single</graphicClass></graphicData>
+    <statBases><AccuracyTouch>0.93</AccuracyTouch><AccuracyShort>0.9</AccuracyShort><AccuracyMedium>0.82</AccuracyMedium><AccuracyLong>0.62</AccuracyLong><RangedWeapon_Cooldown>3.8</RangedWeapon_Cooldown><DeteriorationRate>0</DeteriorationRate><Mass>12</Mass><Flammability>0</Flammability></statBases>
+    <verbs><li><verbClass>Verb_Shoot</verbClass><defaultProjectile>SCP_ProjectileLaserSentry</defaultProjectile><warmupTime>1.25</warmupTime><range>26.9</range><minRange>2.9</minRange><burstShotCount>1</burstShotCount><soundCast>Shot_ChargeRifle</soundCast><muzzleFlashScale>4</muzzleFlashScale></li></verbs>
+  </ThingDef>
+  <ThingDef ParentName="BaseWeaponTurret">
+    <defName>SCP_GunDisruptionSentry</defName><label>Foundation disruption emitter</label>
+    <graphicData><texPath>Things/Building/Security/ScpLaserSentry_Top</texPath><graphicClass>Graphic_Single</graphicClass></graphicData>
+    <statBases><AccuracyTouch>0.93</AccuracyTouch><AccuracyShort>0.9</AccuracyShort><AccuracyMedium>0.82</AccuracyMedium><AccuracyLong>0.62</AccuracyLong><RangedWeapon_Cooldown>3.8</RangedWeapon_Cooldown><DeteriorationRate>0</DeteriorationRate><Mass>12</Mass><Flammability>0</Flammability></statBases>
+    <verbs><li><verbClass>Verb_Shoot</verbClass><defaultProjectile>SCP_ProjectileDisruptionSentry</defaultProjectile><warmupTime>1.4</warmupTime><range>24.9</range><minRange>2.9</minRange><burstShotCount>1</burstShotCount><soundCast>Shot_ChargeRifle</soundCast><muzzleFlashScale>4</muzzleFlashScale></li></verbs>
+  </ThingDef>
+</Defs>

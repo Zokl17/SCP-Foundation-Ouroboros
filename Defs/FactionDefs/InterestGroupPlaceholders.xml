@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Chaos is a complete hostile world faction. The remaining groups below are
+       temporary world factions that reuse Core behavior until their own pass. -->
+  <FactionDef ParentName="OutlanderRoughBase">
+    <defName>SCP_ChaosInsurgency</defName>
+    <label>Chaos Insurgency</label>
+    <description>A hostile splinter organization assembled from Foundation defectors, mercenaries and stolen anomalous assets. Its dispersed cells raid containment sites for prisoners, weapons and anomalies, then retreat to fortified safehouses before a response force can arrive.</description>
+    <fixedName>Chaos Insurgency</fixedName>
+    <pawnSingular>Insurgency operative</pawnSingular><pawnsPlural>Insurgency personnel</pawnsPlural>
+    <categoryTag>SCPChaosInsurgency</categoryTag>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart><maxCountAtGameStart>1</maxCountAtGameStart><maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+    <listOrderPriority>43</listOrderPriority><configurationListOrderPriority>7</configurationListOrderPriority><settlementGenerationWeight>0.35</settlementGenerationWeight>
+    <techLevel>Spacer</techLevel><basicMemberKind>SCP_ChaosInsurgent</basicMemberKind>
+    <fixedLeaderKinds><li>SCP_ChaosCellCommander</li></fixedLeaderKinds>
+    <leaderTitle>cell commander</leaderTitle><leaderTitleFemale>cell commander</leaderTitleFemale>
+    <settlementNameMaker>SCP_NamerChaosSettlement</settlementNameMaker>
+    <factionIconPath>World/FactionIcons/ChaosInsurgency</factionIconPath>
+    <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+    <canSiege>true</canSiege><canStageAttacks>true</canStageAttacks><naturalEnemy>true</naturalEnemy><permanentEnemy>false</permanentEnemy>
+    <raidLootMaker>PirateRaidLootMaker</raidLootMaker>
+    <colorSpectrum><li>(0.22,0.06,0.07)</li><li>(0.38,0.10,0.12)</li></colorSpectrum>
+    <pawnGroupMakers Inherit="False">
+      <li><kindDef>Combat</kindDef><options><SCP_ChaosInsurgent>8</SCP_ChaosInsurgent><SCP_ChaosHeavy>3</SCP_ChaosHeavy><SCP_ChaosCellCommander>0.6</SCP_ChaosCellCommander></options></li>
+      <li><kindDef>Peaceful</kindDef><options><SCP_ChaosInsurgent>7</SCP_ChaosInsurgent><SCP_ChaosBreacher>2</SCP_ChaosBreacher><SCP_ChaosHeavy>1</SCP_ChaosHeavy><SCP_ChaosCellCommander>1</SCP_ChaosCellCommander></options></li>
+      <li><kindDef>Trader</kindDef><traders><SCP_ChaosQuartermaster>1</SCP_ChaosQuartermaster></traders><carriers><Muffalo>5</Muffalo></carriers><guards><SCP_ChaosInsurgent>8</SCP_ChaosInsurgent><SCP_ChaosBreacher>3</SCP_ChaosBreacher><SCP_ChaosHeavy>1</SCP_ChaosHeavy><SCP_ChaosCellCommander>0.5</SCP_ChaosCellCommander></guards></li>
+      <li><kindDef>Settlement</kindDef><options><SCP_ChaosInsurgent>8</SCP_ChaosInsurgent><SCP_ChaosBreacher>3</SCP_ChaosBreacher><SCP_ChaosHeavy>1.5</SCP_ChaosHeavy><SCP_ChaosCellCommander>1</SCP_ChaosCellCommander><SCP_ChaosQuartermaster>1</SCP_ChaosQuartermaster></options></li>
+    </pawnGroupMakers>
+  </FactionDef>
+
+  <FactionDef ParentName="OutlanderRoughBase">
+    <defName>SCP_ChurchBrokenGod</defName>
+    <label>Church of the Broken God</label>
+    <description>The traditional Broken Church sends machine-augmented zealots and cantors to recover sacred mechanisms and fragments of its shattered deity. Ivory vestments, brass masks and ritual EMP technology mark its expeditions.</description>
+    <fixedName>Church of the Broken God</fixedName>
+    <pawnSingular>Church zealot</pawnSingular><pawnsPlural>Church adherents</pawnsPlural>
+    <categoryTag>SCPChurchBrokenGod</categoryTag>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart><maxCountAtGameStart>1</maxCountAtGameStart><maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>8</configurationListOrderPriority><settlementGenerationWeight>0.28</settlementGenerationWeight>
+    <techLevel>Spacer</techLevel><basicMemberKind>SCP_BrokenGodZealot</basicMemberKind>
+    <fixedLeaderKinds><li>SCP_BrokenGodCantor</li></fixedLeaderKinds>
+    <leaderTitle>high priest</leaderTitle><leaderTitleFemale>high priestess</leaderTitleFemale>
+    <permanentEnemy>false</permanentEnemy>
+    <factionIconPath>World/FactionIcons/BrokenGod</factionIconPath>
+    <colorSpectrum><li>(0.42,0.32,0.12)</li><li>(0.62,0.50,0.20)</li></colorSpectrum>
+    <pawnGroupMakers Inherit="False">
+      <li><kindDef>Combat</kindDef><options><SCP_BrokenGodZealot>12</SCP_BrokenGodZealot><SCP_BrokenGodCantor>1</SCP_BrokenGodCantor><SCP_BrokenGodGuard>1</SCP_BrokenGodGuard></options></li>
+      <li><kindDef>Peaceful</kindDef><options><SCP_BrokenGodZealot>10</SCP_BrokenGodZealot></options></li>
+      <li><kindDef>Trader</kindDef><traders><SCP_BrokenGodQuartermaster>1</SCP_BrokenGodQuartermaster></traders><carriers><Muffalo>5</Muffalo></carriers><guards><SCP_BrokenGodZealot>12</SCP_BrokenGodZealot></guards></li>
+      <li><kindDef>Settlement</kindDef><options><SCP_BrokenGodZealot>12</SCP_BrokenGodZealot><SCP_BrokenGodQuartermaster>1</SCP_BrokenGodQuartermaster></options></li>
+    </pawnGroupMakers>
+  </FactionDef>
+
+  <FactionDef ParentName="OutlanderRoughBase">
+    <defName>SCP_SarkicCults</defName>
+    <label>Sarkic cults</label>
+    <description>Isolated fleshcrafting sects whose rites reshape bone, blood and living tissue. This placeholder currently uses conventional melee-focused outlander raids without mutations.</description>
+    <fixedName>Sarkic Cults</fixedName>
+    <pawnSingular>Sarkic cultist</pawnSingular><pawnsPlural>Sarkic cultists</pawnsPlural>
+    <categoryTag>SCPSarkicCults</categoryTag>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart><maxCountAtGameStart>1</maxCountAtGameStart><maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>9</configurationListOrderPriority><settlementGenerationWeight>0.28</settlementGenerationWeight>
+    <techLevel>Industrial</techLevel><basicMemberKind>SCP_SarkicCultist</basicMemberKind>
+    <fixedLeaderKinds><li>SCP_SarkicCultist</li></fixedLeaderKinds>
+    <leaderTitle>cult elder</leaderTitle><leaderTitleFemale>cult elder</leaderTitleFemale>
+    <permanentEnemy>false</permanentEnemy>
+    <colorSpectrum><li>(0.38,0.08,0.17)</li><li>(0.60,0.14,0.25)</li></colorSpectrum>
+    <pawnGroupMakers Inherit="False">
+      <li><kindDef>Combat</kindDef><options><SCP_SarkicCultist>12</SCP_SarkicCultist></options></li>
+      <li><kindDef>Peaceful</kindDef><options><SCP_SarkicCultist>10</SCP_SarkicCultist></options></li>
+      <li><kindDef>Trader</kindDef><traders><SCP_SarkicQuartermaster>1</SCP_SarkicQuartermaster></traders><carriers><Muffalo>5</Muffalo></carriers><guards><SCP_SarkicCultist>12</SCP_SarkicCultist></guards></li>
+      <li><kindDef>Settlement</kindDef><options><SCP_SarkicCultist>12</SCP_SarkicCultist><SCP_SarkicQuartermaster>1</SCP_SarkicQuartermaster></options></li>
+    </pawnGroupMakers>
+  </FactionDef>
+
+  <FactionDef ParentName="OutlanderRoughBase">
+    <defName>SCP_SerpentsHand</defName>
+    <label>Serpent's Hand</label>
+    <description>A decentralized anomalous movement opposed to the imprisonment of sapient and benign anomalies. This hidden placeholder is reserved for future portal and liberation incidents.</description>
+    <fixedName>Serpent's Hand</fixedName>
+    <pawnSingular>Hand member</pawnSingular><pawnsPlural>Hand members</pawnsPlural>
+    <categoryTag>SCPSerpentsHand</categoryTag>
+    <requiredCountAtGameStart>0</requiredCountAtGameStart><maxCountAtGameStart>1</maxCountAtGameStart><maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <settlementGenerationWeight>0</settlementGenerationWeight><hidden>true</hidden><displayInFactionSelection>false</displayInFactionSelection>
+    <canSiege>false</canSiege><canStageAttacks>false</canStageAttacks>
+    <naturalEnemy>false</naturalEnemy><permanentEnemy>false</permanentEnemy>
+    <techLevel>Industrial</techLevel><basicMemberKind>SCP_SerpentsHandAdept</basicMemberKind>
+    <pawnGroupMakers Inherit="False"><li><kindDef>Combat</kindDef><options><SCP_SerpentsHandAdept>10</SCP_SerpentsHandAdept></options></li></pawnGroupMakers>
+  </FactionDef>
+</Defs>

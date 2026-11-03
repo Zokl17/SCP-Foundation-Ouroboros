@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="ApparelBase" Name="SCP_BackpackBase" Abstract="True">
+    <techLevel>Industrial</techLevel>
+    <smeltable>false</smeltable>
+    <graphicData><graphicClass>Graphic_Single</graphicClass><shaderType>Cutout</shaderType><drawSize>1.15</drawSize></graphicData>
+    <statBases><MaxHitPoints>120</MaxHitPoints><Mass>1.5</Mass><Flammability>0.6</Flammability><EquipDelay>2</EquipDelay></statBases>
+    <thingCategories><li>ApparelUtility</li></thingCategories>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <careIfDamaged>false</careIfDamaged>
+      <bodyPartGroups><li>Shoulders</li></bodyPartGroups>
+      <layers><li>SCP_Backpack</li></layers>
+      <wornGraphicData>
+        <renderUtilityAsPack>true</renderUtilityAsPack>
+        <north><offset>(0,-0.1)</offset><hulk><offset>(0,-0.05)</offset></hulk><fat><offset>(0,-0.05)</offset></fat></north>
+        <east>
+          <offset>(0,-0.05)</offset>
+          <thin><offset>(0.2,0)</offset></thin><hulk><offset>(0.1,0)</offset></hulk>
+          <fat><offset>(0.04,0)</offset></fat>
+          <male><offset>(0.125,0)</offset></male><female><offset>(0.125,0)</offset></female>
+        </east>
+        <west>
+          <offset>(0,-0.05)</offset>
+          <thin><offset>(-0.2,0)</offset></thin><hulk><offset>(-0.1,0)</offset></hulk>
+          <fat><offset>(-0.04,0)</offset></fat>
+          <male><offset>(-0.125,0)</offset></male><female><offset>(-0.125,0)</offset></female>
+        </west>
+        <male><scale>(1,1)</scale></male><female><scale>(1,1)</scale></female>
+        <thin><scale>(0.9,0.95)</scale></thin><hulk><scale>(1.25,1.25)</scale></hulk>
+        <fat><scale>(1.15,1.15)</scale></fat>
+      </wornGraphicData>
+      <defaultOutfitTags><li>Soldier</li></defaultOutfitTags>
+    </apparel>
+    <tradeTags><li>Clothing</li></tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="SCP_BackpackBase">
+    <defName>SCP_MTFNavyBackpack</defName>
+    <label>MTF tactical backpack</label>
+    <description>A compact midnight-blue assault pack with two MOLLE-front compartments and side compression straps, issued to Foundation mobile task forces.</description>
+    <graphicData><texPath>Things/Item/Apparel/ScpMTFNavyBackpack</texPath></graphicData>
+    <apparel><wornGraphicPath>Things/Pawn/Humanlike/Apparel/MTFNavyBackpack/MTFNavyBackpack</wornGraphicPath><tags><li>SCP_MTFBackpack</li></tags></apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="SCP_BackpackBase">
+    <defName>SCP_MTFBlackBackpack</defName>
+    <label>MTF backpack</label>
+    <description>A broad charcoal-black field pack with webbing, side pouches and a lower utility compartment, issued to Foundation mobile task forces.</description>
+    <graphicData><texPath>Things/Item/Apparel/ScpMTFBlackBackpack</texPath><drawSize>1.10</drawSize></graphicData>
+    <statBases><Mass>2.2</Mass></statBases>
+    <apparel><wornGraphicPath>Things/Pawn/Humanlike/Apparel/MTFBlackBackpack/MTFBlackBackpack</wornGraphicPath><tags><li>SCP_MTFBackpack</li></tags></apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="SCP_BackpackBase">
+    <defName>SCP_ChaosOliveRucksack</defName>
+    <label>Chaos Insurgent backpack</label>
+    <description>A tall olive canvas rucksack with a rolled top, side pouches and long retaining straps, carried by Chaos Insurgency fighters.</description>
+    <graphicData><texPath>Things/Item/Apparel/ScpChaosOliveRucksack</texPath><drawSize>1.10</drawSize></graphicData>
+    <statBases><Mass>2.0</Mass></statBases>
+    <apparel><wornGraphicPath>Things/Pawn/Humanlike/Apparel/ChaosOliveRucksack/ChaosOliveRucksack</wornGraphicPath><tags><li>SCP_ChaosBackpack</li></tags></apparel>
+  </ThingDef>
+</Defs>

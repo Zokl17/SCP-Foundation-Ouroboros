@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_354Bat.label>SCP-354-1 — крылатый хищник</SCP_354Bat.label>
+  <SCP_354Bat.description>Огромное существо, похожее на летучую мышь. Быстро передвигается и атакует когтями и клыками.</SCP_354Bat.description>
+  <SCP_354Spined.label>SCP-354-2 — шипастый зверь</SCP_354Spined.label>
+  <SCP_354Spined.description>Зверь размером с медведя, покрытый острыми иглами. Огнестрельное оружие плохо пробивает его шкуру.</SCP_354Spined.description>
+  <SCP_354Reptile.label>SCP-354-4 — рептилия</SCP_354Reptile.label>
+  <SCP_354Reptile.description>Огромная рептилия, способная проломить стену содержания и выдержать сильный обстрел.</SCP_354Reptile.description>
+  <SCP_354IceCat.label>SCP-354-15 — ледяная кошка</SCP_354IceCat.label>
+  <SCP_354IceCat.description>Быстрая кошка из голубого льда. Атакует персонал и уклоняется от многих дальних атак.</SCP_354IceCat.description>
+  <SCP_354MagmaCat.label>SCP-354-16 — магмовая кошка</SCP_354MagmaCat.label>
+  <SCP_354MagmaCat.description>Кошка из тёмного вулканического камня. Не нападает на персонал без провокации и вступает в бой с SCP-354-15.</SCP_354MagmaCat.description>
+  <SCP_354Tentacles.label>SCP-354-14 — щупальца</SCP_354Tentacles.label>
+  <SCP_354Tentacles.description>Пять щупалец тянутся из алого озера, хватают людей у берега и затем отступают.</SCP_354Tentacles.description>
+  <SCP_354MagmaStatue.label>остывшая SCP-354-16</SCP_354MagmaStatue.label>
+  <SCP_354MagmaStatue.description>Неподвижные каменные останки SCP-354-16 после остывания тела.</SCP_354MagmaStatue.description>
+</LanguageData>

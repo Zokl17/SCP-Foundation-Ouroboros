@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="Reliquary"]/comps</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Reliquary"]/comps</xpath>
+      <value><li Class="ScpFoundation.Storytelling.CompProperties_Scp330Reliquary" /></value>
+    </match>
+  </Operation>
+</Patch>

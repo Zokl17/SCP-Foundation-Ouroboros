@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <QuestScriptDef>
+    <defName>SCP_CollectorEstateRecovery</defName>
+    <rootSelectionWeight>0.12</rootSelectionWeight><rootMinPoints>250</rootMinPoints>
+    <expireDaysRange>5~9</expireDaysRange>
+    <questNameRules><rulesStrings><li>questName->The collector's estate</li></rulesStrings></questNameRules>
+    <questDescriptionRules><rulesStrings>
+      <li>questDescription->Foundation records point to an obsessed collector who assembled four anomalous objects in one guarded house: SCP-067, SCP-012, SCP-316 and the red SCP-093 disc. All four are kept in the plasteel vault west of the central hall. This assignment unlocks research for the SCP-093 mirror frame. Bring them home. To use SCP-093, place its disc and mirror in the same enclosed room. Do not study SCP-012 in bright light.</li>
+    </rulesStrings></questDescriptionRules>
+    <root Class="QuestNode_Sequence"><nodes>
+      <li Class="QuestNode_GetMap" />
+      <li Class="QuestNode_GetSiteTile"><storeAs>siteTile</storeAs><preferCloserTiles>true</preferCloserTiles></li>
+      <li Class="ScpFoundation.Storytelling.QuestNode_ScpCollectorEstateSetup" />
+      <li Class="QuestNode_GetDefaultSitePartsParams">
+        <tile>$siteTile</tile><faction>$siteFaction</faction>
+        <sitePartDefs>$sitePartDefs</sitePartDefs><storeSitePartsParamsAs>sitePartsParams</storeSitePartsParamsAs>
+      </li>
+      <li Class="QuestNode_GenerateSite">
+        <sitePartsParams>$sitePartsParams</sitePartsParams><faction>$siteFaction</faction>
+        <tile>$siteTile</tile><storeAs>site</storeAs><worldObjectDef>SCP_CollectorEstateSite</worldObjectDef>
+      </li>
+      <li Class="QuestNode_SpawnWorldObjects"><worldObjects>$site</worldObjects></li>
+      <li Class="ScpFoundation.Storytelling.QuestNode_ScpCollectorEstateTrack" />
+      <li Class="ScpFoundation.Storytelling.QuestNode_RecordScpArrival"><number>067</number></li>
+      <li Class="ScpFoundation.Storytelling.QuestNode_RecordScpArrival"><number>316</number></li>
+      <li Class="ScpFoundation.Storytelling.QuestNode_RecordScpArrival"><number>012</number></li>
+      <li Class="ScpFoundation.Storytelling.QuestNode_RecordScpArrival"><number>093</number></li>
+      <li Class="QuestNode_WorldObjectTimeout">
+        <worldObject>$site</worldObject><isQuestTimeout>true</isQuestTimeout>
+        <delayTicks>1200000</delayTicks><inSignalDisable>site.MapGenerated</inSignalDisable>
+        <destroyOnCleanup>false</destroyOnCleanup>
+        <node Class="QuestNode_End"><outcome>Fail</outcome></node>
+      </li>
+      <li Class="QuestNode_Signal"><inSignal>ScpCollectorEstateRecovered</inSignal>
+        <node Class="QuestNode_End"><outcome>Success</outcome></node>
+      </li>
+      <li Class="QuestNode_Signal"><inSignal>ScpCollectorEstateLost</inSignal>
+        <node Class="QuestNode_End"><outcome>Fail</outcome></node>
+      </li>
+    </nodes></root>
+  </QuestScriptDef>
+</Defs>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThoughtDef>
+    <defName>SCP_882GrindingHallucination</defName><thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>0.25</durationDays><stackLimit>1</stackLimit>
+    <stages><li><label>imagined grinding gears</label><description>I keep hearing gears scrape, though the machine is silent.</description><baseMoodEffect>-8</baseMoodEffect></li></stages>
+  </ThoughtDef>
+</Defs>

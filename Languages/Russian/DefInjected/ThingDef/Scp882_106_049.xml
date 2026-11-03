@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_882Core.label>резервуар SCP-882</SCP_882Core.label>
+  <SCP_882Core.description>Старый резервуар 2×2 теперь наполнен 100% морской водой. Построенные до обновления резервуары остаются пригодными.</SCP_882Core.description>
+  <SCP_882CoreFull.label>резервуар SCP-882</SCP_882CoreFull.label>
+  <SCP_882CoreFull.description>Резервуар 2×2 со 100% морской водой. Принесите сюда SCP-882, ежедневно проверяйте ржавчину и меняйте хлопковые тросы. Осмотр восстанавливает оголившиеся участки.</SCP_882CoreFull.description>
+  <SCP_882Object.label>SCP-882</SCP_882Object.label>
+  <SCP_882Object.description>Ржавый механизм из металлических деталей.</SCP_882Object.description>
+  <SCP_882GearGrowth.label>нарост шестерёнок SCP-882</SCP_882GearGrowth.label>
+  <SCP_882GearGrowth.description>Металл, ставший частью разрастающегося механизма SCP-882.</SCP_882GearGrowth.description>
+  <SCP_882GearGrowthQuarter.label>мелкий нарост SCP-882</SCP_882GearGrowthQuarter.label>
+  <SCP_882GearGrowthQuarter.description>Мелкие металлические детали, впитанные SCP-882.</SCP_882GearGrowthQuarter.description>
+  <SCP_882MetalHumanoid.label>металлический гуманоид SCP-882</SCP_882MetalHumanoid.label>
+  <SCP_882MetalHumanoid.description>Враждебный механизм, сложившийся из металла, притянутого SCP-882. Атакует железными когтями.</SCP_882MetalHumanoid.description>
+  <SCP_106Pawn.label>SCP-106</SCP_106Pawn.label>
+  <SCP_106Pawn.description>Пожилой гуманоид с разъеденным обликом.</SCP_106Pawn.description>
+  <SCP_049Pawn.label>SCP-049</SCP_049Pawn.label>
+  <SCP_049Pawn.description>Гуманоид, похожий на чумного доктора.</SCP_049Pawn.description>
+  <SCP_0492Pawn.label>SCP-049-2</SCP_0492Pawn.label>
+  <SCP_0492Pawn.description>Оживлённый пациент, следующий за SCP-049 и нападающий на его противников.</SCP_0492Pawn.description>
+  <SCP_106BaitStation.label>камера содержания SCP-106</SCP_106BaitStation.label>
+  <SCP_106BaitStation.description>Герметичная камера содержания SCP-106.</SCP_106BaitStation.description>
+  <SCP_106Entity.label>SCP-106</SCP_106Entity.label>
+  <SCP_106Entity.description>Старик вырвался из камеры. Проходит сквозь препятствия и разъедает постройки. Верните его протоколом приманки.</SCP_106Entity.description>
+  <SCP_049Entity.label>SCP-049</SCP_049Entity.label>
+  <SCP_049Entity.description>Старая версия SCP-049 из сохранения. При следующем игровом тике она заменится на движущуюся пешку.</SCP_049Entity.description>
+</LanguageData>

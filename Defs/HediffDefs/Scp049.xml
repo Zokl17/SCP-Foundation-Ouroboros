@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <HediffDef>
+    <defName>SCP_049Incapacitated</defName>
+    <label>SCP-049 incapacitated</label>
+    <description>SCP-049 has been temporarily suppressed and cannot move or attack.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <isBad>true</isBad>
+    <stages>
+      <li>
+        <capMods><li><capacity>Moving</capacity><setMax>0</setMax></li></capMods>
+      </li>
+    </stages>
+  </HediffDef>
+</Defs>

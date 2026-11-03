@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_882Workshop.label>объект извлечения SCP-882</SCP_882Workshop.label>
+  <SCP_882Workshop.description>Повстанцы Хаоса обнаружили SCP-882 и заняли заброшенную мастерскую. Отбейте базу и верните объект.</SCP_882Workshop.description>
+  <SCP_882Workshop.approachOrderString>Штурмовать {0}</SCP_882Workshop.approachOrderString>
+  <SCP_882Workshop.approachingReportString>Штурмует {0}.</SCP_882Workshop.approachingReportString>
+  <SCP_882Workshop.arrivedLetter>Повстанцы Хаоса обнаружили SCP-882 и заняли заброшенную мастерскую. Разгромите охрану и верните объект для содержания.</SCP_882Workshop.arrivedLetter>
+</LanguageData>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_008Infection.label>заражение SCP-008</SCP_008Infection.label>
+  <SCP_008Infection.description>Быстро прогрессирующая прионная инфекция, проникающая через рану или слизистую при контакте с заражённой жидкостью. Воздушным и водным путём не передаётся. SCP-500 может её вылечить.</SCP_008Infection.description>
+  <SCP_008Infection.stages.0.label>инкубация</SCP_008Infection.stages.0.label>
+  <SCP_008Infection.stages.1.label>лихорадка</SCP_008Infection.stages.1.label>
+  <SCP_008Infection.stages.2.label>поражение нервной системы</SCP_008Infection.stages.2.label>
+  <SCP_008Infection.stages.3.label>терминальная стадия</SCP_008Infection.stages.3.label>
+</LanguageData>

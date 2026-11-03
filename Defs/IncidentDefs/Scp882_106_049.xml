@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <IncidentDef>
+    <defName>SCP_Discover882</defName><label>SCP-882 discovered</label>
+    <workerClass>ScpFoundation.Anomalies.IncidentWorker_Discover882</workerClass>
+    <category>Misc</category><targetTags><li>Map_PlayerHome</li></targetTags>
+    <baseChance>0</baseChance><earliestDay>18</earliestDay><minPopulation>3</minPopulation><minRefireDays>20</minRefireDays>
+    <letterDef>NeutralEvent</letterDef><letterLabel>A rusting mechanism</letterLabel>
+    <letterText>An unusual mechanism has appeared. Keep metal away from it: anything left beside it may be consumed and turn into more machinery.</letterText>
+  </IncidentDef>
+  <IncidentDef>
+    <defName>SCP_Breach106</defName><label>SCP-106 breach</label>
+    <workerClass>ScpFoundation.Anomalies.IncidentWorker_Breach106</workerClass>
+    <category>ThreatBig</category><targetTags><li>Map_PlayerHome</li></targetTags>
+    <baseChance>0.08</baseChance><earliestDay>40</earliestDay><minPopulation>5</minPopulation><minRefireDays>30</minRefireDays>
+    <letterDef>ThreatBig</letterDef><letterLabel>SCP-106 has emerged</letterLabel>
+    <letterText>The Old Man is phasing through barriers and corroding structures. Ordinary attacks cannot stop him. Use a built bait protocol station and select a volunteer to recapture him.</letterText>
+  </IncidentDef>
+  <IncidentDef>
+    <defName>SCP_Visit049</defName><label>strange doctor visit</label>
+    <workerClass>ScpFoundation.Anomalies.IncidentWorker_Visit049</workerClass>
+    <category>Misc</category><targetTags><li>Map_PlayerHome</li></targetTags>
+    <baseChance>0</baseChance>
+    <letterDef>ThreatBig</letterDef><letterLabel>The plague doctor has arrived</letterLabel>
+    <letterText>Three colonists lie wounded. SCP-049 has come to “help” them. He calls his work a cure for the Pestilence, but anyone he reaches may become a hostile ghoul. Keep him away from the wounded and fresh human corpses.</letterText>
+  </IncidentDef>
+</Defs>

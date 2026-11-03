@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_CollectorRecoveredTitle>Collection recovered</SCP_CollectorRecoveredTitle>
+  <SCP_CollectorRecoveredBody>SCP-067, SCP-012, SCP-316 and SCP-093 reached your colony. Place the disc and the SCP-093 mirror in the same enclosed room to open the passage.</SCP_CollectorRecoveredBody>
+  <SCP_CollectorQuestUnavailable>The collector's estate quest is not currently available.</SCP_CollectorQuestUnavailable>
+  <SCP_CollectorQuestOffered>The collector's estate quest was offered.</SCP_CollectorQuestOffered>
+</LanguageData>

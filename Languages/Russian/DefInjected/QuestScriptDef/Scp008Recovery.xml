@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_008Recovery.questNameRules.rulesStrings><li>questName->Изъять или уничтожить SCP-008</li></SCP_008Recovery.questNameRules.rulesStrings>
+  <SCP_008Recovery.questDescriptionRules.rulesStrings><li>questDescription->Внедрённые в ГОК агенты Фонда сообщают о попытке воссоздать SCP-008. Эксперименты могут привести к опасной вспышке. Пробейте оборону лаборатории ГОК и уничтожьте сохранившийся образец либо доставьте его герметичный кейс в поселение. Во время нападения заразился один из учёных: избегайте контакта с жидкостями его организма и наденьте защитный костюм. Если вы не подготовите условия безопасного содержания и изучения, Фонд передаст образец в зону G2.</li></SCP_008Recovery.questDescriptionRules.rulesStrings>
+</LanguageData>

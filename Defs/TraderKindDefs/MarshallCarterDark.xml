@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--
+    MC&D is represented as a rare independent orbital contact. It deliberately
+    has no FactionDef: the company does not create settlements or ordinary
+    caravans and enters the normal orbital-trader pool directly.
+  -->
+  <TraderKindDef>
+    <defName>SCP_Orbital_MarshallCarterDark</defName>
+    <label>Marshall, Carter and Dark brokerage</label>
+    <description>A discreet Marshall, Carter and Dark brokerage offering restricted technology, unusual medicine and carefully sourced armaments to clients able to pay.</description>
+    <orbital>true</orbital>
+    <requestable>false</requestable>
+    <commonality>0.35</commonality>
+    <stockGenerators>
+      <li Class="StockGenerator_SingleDef"><thingDef>Silver</thingDef><countRange>8000~14000</countRange></li>
+      <li Class="StockGenerator_SingleDef"><thingDef>Gold</thingDef><countRange>150~450</countRange></li>
+      <li Class="StockGenerator_SingleDef"><thingDef>ComponentSpacer</thingDef><countRange>5~14</countRange></li>
+      <li Class="StockGenerator_SingleDef"><thingDef>MedicineUltratech</thingDef><countRange>8~20</countRange></li>
+      <li Class="StockGenerator_SingleDef"><thingDef>Luciferium</thingDef><countRange>4~12</countRange></li>
+
+      <li Class="StockGenerator_SingleDef"><thingDef>SCP_ClassAAmnestic</thingDef><countRange>3~8</countRange></li>
+      <li Class="StockGenerator_SingleDef"><thingDef>SCP_MnesticStabilizer</thingDef><countRange>3~8</countRange></li>
+      <li Class="StockGenerator_SingleDef"><thingDef>SCP_HemostaticInjector</thingDef><countRange>4~10</countRange></li>
+      <li Class="StockGenerator_SingleDef"><thingDef>SCP_Nu7HKCarbine</thingDef><countRange>0~2</countRange></li>
+      <li Class="StockGenerator_SingleDef"><thingDef>SCP_Nu7LightMachineGun</thingDef><countRange>0~1</countRange></li>
+      <li Class="StockGenerator_SingleDef"><thingDef>SCP_FoundationSpasTwelve</thingDef><countRange>0~2</countRange></li>
+      <li Class="StockGenerator_SingleDef"><thingDef>SCP_FoundationEMPRifle</thingDef><countRange>0~1</countRange></li>
+      <li Class="StockGenerator_SingleDef"><thingDef>SCP_FoundationTranqRifle</thingDef><countRange>0~1</countRange></li>
+      <li Class="StockGenerator_SingleDef"><thingDef>SCP_FoundationNetLauncher</thingDef><countRange>0~1</countRange></li>
+      <li Class="StockGenerator_SingleDef"><thingDef>SCP_Nu7Armor</thingDef><countRange>0~1</countRange></li>
+      <li Class="StockGenerator_SingleDef"><thingDef>SCP_Nu7Helmet</thingDef><countRange>0~1</countRange></li>
+      <li Class="StockGenerator_SingleDef"><thingDef>SCP_ScrambleVisor</thingDef><countRange>0~2</countRange></li>
+
+      <li Class="StockGenerator_Tag"><tradeTag>TechHediff</tradeTag><thingDefCountRange>3~6</thingDefCountRange><countRange>1~2</countRange></li>
+      <li Class="StockGenerator_Tag"><tradeTag>ExoticMisc</tradeTag><thingDefCountRange>2~5</thingDefCountRange><countRange>1~2</countRange></li>
+      <li Class="StockGenerator_Tag"><tradeTag>Artifact</tradeTag><thingDefCountRange>1~3</thingDefCountRange><countRange>1~1</countRange></li>
+      <li MayRequire="Ludeon.RimWorld.Anomaly" Class="StockGenerator_Tag"><tradeTag>Serum</tradeTag><thingDefCountRange>2~4</thingDefCountRange><countRange>1~2</countRange></li>
+      <li MayRequire="Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef"><thingDef>Genepack</thingDef><countRange>2~5</countRange></li>
+      <li MayRequire="Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef"><thingDef>ArchiteCapsule</thingDef><countRange>1~3</countRange></li>
+
+      <li Class="StockGenerator_BuyExpensiveSimple" />
+      <li Class="StockGenerator_BuyTradeTag"><tag>Art</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>Drugs</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>TechHediff</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>WeaponRanged</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>Armor</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>Artifact</tag></li>
+      <li MayRequire="Ludeon.RimWorld.Anomaly" Class="StockGenerator_BuyTradeTag"><tag>Serum</tag></li>
+    </stockGenerators>
+  </TraderKindDef>
+</Defs>

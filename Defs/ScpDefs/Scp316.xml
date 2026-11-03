@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ScpFoundation.Definitions.ScpDef>
+    <defName>SCP_Anomaly316</defName><label>SCP-316</label>
+    <description>An aged carbide lamp whose white beam removes color and gradually pacifies living subjects.</description>
+    <scpId>SCP-316</scpId><objectClass>Safe</objectClass>
+    <tags><li>Artifact</li><li>Light</li></tags>
+    <requirements><li Class="ScpFoundation.Containment.RequirementScp316Post"><id>post</id></li></requirements>
+    <breach><graceTicks>30000</graceTicks><deterministicAfterTicks>0</deterministicAfterTicks><riskPerDay>0</riskPerDay><recoveryPerDay>0</recoveryPerDay></breach>
+    <research>
+      <observedWork>15000</observedWork><partialWork>120000</partialWork><fullWork>360000</fullWork>
+      <observedReportKey>SCP_316ObservedReport</observedReportKey>
+      <partialReportKey>SCP_316PartialReport</partialReportKey>
+      <documentedReportKey>SCP_316DocumentedReport</documentedReportKey>
+      <experimentReportKeys><li>SCP_316Experiment1</li><li>SCP_316Experiment2</li><li>SCP_316Experiment3</li></experimentReportKeys>
+    </research>
+    <source><title>SCP-316</title><author>BlastYoBoots</author><url>https://scp-wiki.wikidot.com/scp-316</url><license>CC BY-SA 3.0</license></source>
+  </ScpFoundation.Definitions.ScpDef>
+</Defs>

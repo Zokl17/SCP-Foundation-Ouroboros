@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <SitePartDef>
+    <defName>SCP_035MaskedHost</defName><label>masked wanderer</label>
+    <description>A hostile wanderer wears a porcelain mask. Recover the mask without letting it claim another host.</description>
+    <workerClass>SitePartWorker</workerClass>
+    <siteTexture>World/WorldObjects/Sites/Outpost</siteTexture>
+    <expandingIconTexture>World/WorldObjects/Expanding/Sites/Outpost</expandingIconTexture>
+    <applyFactionColorToSiteTexture>true</applyFactionColorToSiteTexture>
+    <showFactionInInspectString>true</showFactionInInspectString>
+    <requiresFaction>true</requiresFaction>
+    <approachOrderString>Recover {0}</approachOrderString>
+    <approachingReportString>Recovering {0}.</approachingReportString>
+    <arrivedLetter>A hostile person wearing SCP-035 is somewhere nearby. The host is decomposing rapidly. Recover the mask, but avoid looking at it for long.</arrivedLetter>
+    <minMapSize>(250, 1, 250)</minMapSize>
+    <tags><li>SCP035Recovery</li></tags>
+  </SitePartDef>
+  <WorldObjectDef ParentName="Site">
+    <defName>SCP_035MaskedHostSite</defName><label>masked wanderer</label>
+    <overrideMapSize>(250, 1, 250)</overrideMapSize>
+    <mapGenerator>SCP_035MaskedHostMap</mapGenerator>
+  </WorldObjectDef>
+  <MapGeneratorDef>
+    <defName>SCP_035MaskedHostMap</defName>
+    <genSteps><li>SCP_035MaskedHost</li><li>FindPlayerStartSpot</li><li>Fog</li></genSteps>
+  </MapGeneratorDef>
+  <GenStepDef>
+    <defName>SCP_035MaskedHost</defName><order>400</order>
+    <genStep Class="ScpFoundation.Storytelling.GenStep_Scp035MaskedHost" />
+  </GenStepDef>
+</Defs>

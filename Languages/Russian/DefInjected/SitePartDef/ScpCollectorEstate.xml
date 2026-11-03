@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_CollectorEstate.label>дом коллекционера</SCP_CollectorEstate.label>
+  <SCP_CollectorEstate.description>Одержимый коллекционер хранит несколько аномальных предметов в охраняемом доме.</SCP_CollectorEstate.description>
+  <SCP_CollectorEstate.approachOrderString>Исследовать {0}</SCP_CollectorEstate.approachOrderString>
+  <SCP_CollectorEstate.approachingReportString>Исследование {0}.</SCP_CollectorEstate.approachingReportString>
+  <SCP_CollectorEstate.arrivedLetter>Коллекционер и охранник находятся в доме. SCP-067, SCP-012, SCP-316 и красный диск SCP-093 хранятся вместе в пласталевом отсеке слева от центрального зала. Заберите все четыре предмета и доставьте в колонию.</SCP_CollectorEstate.arrivedLetter>
+</LanguageData>

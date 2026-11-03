@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThinkTreeDef>
+    <defName>SCP_ChimeraIdle</defName>
+    <thinkRoot Class="ScpFoundation.Runtime.JobGiver_ChimeraIdle" />
+  </ThinkTreeDef>
+</Defs>

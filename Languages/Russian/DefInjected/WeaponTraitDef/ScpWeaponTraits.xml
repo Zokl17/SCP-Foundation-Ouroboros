@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_LaserTargetingUnit.label>ЛЦУ</SCP_LaserTargetingUnit.label>
+  <SCP_LaserTargetingUnit.description>Повышает точность на ближней дистанции и помогает вести движущуюся цель.</SCP_LaserTargetingUnit.description>
+  <SCP_CarbonInserts.label>карбоновые вставки</SCP_CarbonInserts.label>
+  <SCP_CarbonInserts.description>Облегчают оружие и немного ускоряют владельца.</SCP_CarbonInserts.description>
+  <SCP_LightTrigger.label>облегчённый спуск</SCP_LightTrigger.label>
+  <SCP_LightTrigger.description>Сокращает время прицеливания ценой точности на дальней дистанции.</SCP_LightTrigger.description>
+  <SCP_Compensator.label>компенсатор</SCP_Compensator.label>
+  <SCP_Compensator.description>Улучшает точность на ближней и средней дистанции, но увеличивает массу.</SCP_Compensator.description>
+  <SCP_FoldingStock.label>складной приклад</SCP_FoldingStock.label>
+  <SCP_FoldingStock.description>Ускоряет прицеливание и облегчает оружие ценой дальней точности.</SCP_FoldingStock.description>
+  <SCP_WeightedStock.label>утяжелённый приклад</SCP_WeightedStock.label>
+  <SCP_WeightedStock.description>Повышает устойчивость оружия ценой массы и времени прицеливания.</SCP_WeightedStock.description>
+  <SCP_Bipod.label>сошки</SCP_Bipod.label>
+  <SCP_Bipod.description>Улучшают точность, если стрелок некоторое время стоит на месте.</SCP_Bipod.description>
+  <SCP_PrecisionBolt.label>прецизионный затвор</SCP_PrecisionBolt.label>
+  <SCP_PrecisionBolt.description>Повышает точность первого выстрела, но замедляет последующие.</SCP_PrecisionBolt.description>
+  <SCP_FireSelector.label>переводчик огня</SCP_FireSelector.label>
+  <SCP_FireSelector.description>Позволяет переключаться между одиночным огнём и обычной очередью оружия.</SCP_FireSelector.description>
+  <SCP_BurstLimiter.label>ограничитель очереди</SCP_BurstLimiter.label>
+  <SCP_BurstLimiter.description>Укорачивает очередь и улучшает точность на средней и дальней дистанции.</SCP_BurstLimiter.description>
+  <SCP_Bayonet.label>штык</SCP_Bayonet.label>
+  <SCP_Bayonet.description>Повышает урон оружия в ближнем бою ценой скорости прицеливания.</SCP_Bayonet.description>
+  <SCP_Suppressor.label>глушитель</SCP_Suppressor.label>
+  <SCP_Suppressor.description>Заглушает звук выстрела, немного снижая дальность.</SCP_Suppressor.description>
+  <SCP_FlashHider.label>пламегаситель</SCP_FlashHider.label>
+  <SCP_FlashHider.description>Скрывает вспышку выстрела; в темноте по стрелку труднее попасть.</SCP_FlashHider.description>
+  <SCP_ThermalSight.label>тепловизионный прицел</SCP_ThermalSight.label>
+  <SCP_ThermalSight.description>Убирает штраф к точности стрельбы из-за темноты.</SCP_ThermalSight.description>
+  <SCP_MotionPredictor.label>предиктор движения</SCP_MotionPredictor.label>
+  <SCP_MotionPredictor.description>Модуль ИИ повышает точность по движущимся целям.</SCP_MotionPredictor.description>
+  <SCP_EnemyAnalysis.label>анализ противника</SCP_EnemyAnalysis.label>
+  <SCP_EnemyAnalysis.description>Компьютер выявляет слабости цели после попаданий. Повторные выстрелы из этого оружия наносят до 15% дополнительного урона; анализ пропадает через игровой час.</SCP_EnemyAnalysis.description>
+  <SCP_FriendlyFireLock.label>блокировка огня по своим</SCP_FriendlyFireLock.label>
+  <SCP_FriendlyFireLock.description>Не даёт пуле попасть в пешек своей или союзной фракции.</SCP_FriendlyFireLock.description>
+  <SCP_TracerRounds.label>трассирующий модуль</SCP_TracerRounds.label>
+  <SCP_TracerRounds.description>Попадание помечает цель на десять секунд и помогает союзникам прицеливаться.</SCP_TracerRounds.description>
+  <SCP_NonlethalRounds.label>седативный модуль</SCP_NonlethalRounds.label>
+  <SCP_NonlethalRounds.description>Снижают прямой урон на 60% и накапливают седацию у живой цели.</SCP_NonlethalRounds.description>
+  <SCP_CorrosiveRounds.label>коррозионный состав</SCP_CorrosiveRounds.label>
+  <SCP_CorrosiveRounds.description>Каждое попадание дополнительно повреждает один элемент брони цели.</SCP_CorrosiveRounds.description>
+  <SCP_CryoRounds.label>криогенный состав</SCP_CryoRounds.label>
+  <SCP_CryoRounds.description>Замедляют цель на десять секунд после попадания.</SCP_CryoRounds.description>
+  <SCP_RicochetRounds.label>рикошетный профиль</SCP_RicochetRounds.label>
+  <SCP_RicochetRounds.description>При попадании пуля может задеть другую ближайшую враждебную цель.</SCP_RicochetRounds.description>
+  <SCP_ShieldBreakerRounds.label>резонатор щитов</SCP_ShieldBreakerRounds.label>
+  <SCP_ShieldBreakerRounds.description>Дополнительно истощают энергию активного защитного пояса.</SCP_ShieldBreakerRounds.description>
+  <SCP_BioferriteResonator.label>биоферритовый резонатор</SCP_BioferriteResonator.label>
+  <SCP_BioferriteResonator.description>Увеличивает урон враждебным SCP на 20%, но ухудшает точность вдали.</SCP_BioferriteResonator.description>
+</LanguageData>

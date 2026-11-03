@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <SoundDef>
+    <defName>SCP_106FemurBreaker</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <muteWhenPaused>True</muteWhenPaused>
+        <grains><li Class="AudioGrain_Folder"><clipFolderPath>Impact/Bullet_Flesh</clipFolderPath></li></grains>
+        <volumeRange>35</volumeRange>
+        <distRange>10~45</distRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+</Defs>

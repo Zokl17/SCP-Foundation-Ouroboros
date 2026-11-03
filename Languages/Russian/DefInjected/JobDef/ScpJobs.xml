@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_Capture.reportString>Переносит TargetA на содержание.</SCP_Capture.reportString><SCP_Observe.reportString>Наблюдает за TargetA.</SCP_Observe.reportString>
+  <SCP_173Escort.reportString>Наблюдает за SCP-173 при переносе.</SCP_173Escort.reportString>
+  <SCP_Study.reportString>Исследует TargetA.</SCP_Study.reportString><SCP_Restore.reportString>Восстанавливает содержание TargetA.</SCP_Restore.reportString>
+  <SCP_Monitor.reportString>Следит за камерами содержания.</SCP_Monitor.reportString>
+  <SCP_ChaosStealObject.reportString>Похищает TargetA.</SCP_ChaosStealObject.reportString>
+  <SCP_882RaidStealScp.reportString>Уносит TargetA для Повстанцев Хаоса.</SCP_882RaidStealScp.reportString>
+  <SCP_OpenWeaponWorkshop.reportString>Идёт к оружейному модулю Фонда.</SCP_OpenWeaponWorkshop.reportString>
+</LanguageData>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_Foundation.label>Фонд SCP</SCP_Foundation.label>
+  <SCP_Foundation.description>Секретная межпланетная организация, занимающаяся обеспечением безопасности, содержанием и изучением аномальных объектов. Фонд сотрудничает лишь до тех пор, пока поселение остаётся полезным, дисциплинированным и способным соблюдать протоколы содержания. Его доверие заслуживают выполнением поручений и стабильным содержанием объектов.</SCP_Foundation.description>
+  <SCP_Foundation.fixedName>Фонд SCP</SCP_Foundation.fixedName>
+  <SCP_Foundation.pawnSingular>сотрудник Фонда</SCP_Foundation.pawnSingular>
+  <SCP_Foundation.pawnsPlural>сотрудники Фонда</SCP_Foundation.pawnsPlural>
+  <SCP_Foundation.leaderTitle>директор Зоны</SCP_Foundation.leaderTitle>
+  <SCP_Foundation.leaderTitleFemale>директор Зоны</SCP_Foundation.leaderTitleFemale>
+  <SCP_Foundation.ideoDescription>Обезопасить. Удержать. Сохранить. Знание — это долг, аномалии являются объектами изучения, а не поклонения, а каждый сотрудник служит выживанию всей организации.</SCP_Foundation.ideoDescription>
+</LanguageData>

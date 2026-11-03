@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Replace the inherited plain equippable only for guns. Odyssey abilities
+       need CompEquippableAbilityReloadable even before a trait is installed. -->
+  <Operation Class="PatchOperationFindMod">
+    <mods><li>Combat Extended</li></mods>
+    <nomatch Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[@Name="BaseGun"]/comps</xpath>
+      <value>
+        <comps Inherit="False">
+          <li Class="CompProperties_Forbiddable" />
+          <li Class="CompProperties_EquippableAbilityReloadable" />
+          <li Class="CompProperties_Styleable" />
+          <li Class="CompProperties_Art">
+            <nameMaker>NamerArtWeaponGun</nameMaker>
+            <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+            <minQualityForArtistic>Excellent</minQualityForArtistic>
+          </li>
+          <li Class="CompProperties_UniqueWeapon">
+            <compClass>ScpFoundation.Interactions.CompWorkshopWeaponTraits</compClass>
+            <weaponCategories>
+              <li>Ranged</li><li>BulletFiring</li><li>PelletFiring</li>
+              <li>Gun</li><li>Pistol</li><li>Rifle</li><li>Sighted</li>
+              <li>Scoped</li><li>Shotgun</li><li>BurstFire</li>
+              <li>LowStoppingPower</li><li>PulseCharge</li>
+              <li>BeamWeapon</li><li>Attachable</li>
+            </weaponCategories>
+          </li>
+        </comps>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <mods><li>Combat Extended</li></mods>
+    <nomatch Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[@Name="BaseWeaponNeolithic"]/comps</xpath>
+      <value>
+        <comps Inherit="False">
+          <li Class="CompProperties_Forbiddable" />
+          <li Class="CompProperties_EquippableAbilityReloadable" />
+          <li Class="CompProperties_Styleable" />
+          <li><compClass>CompQuality</compClass></li>
+          <li Class="CompProperties_UniqueWeapon">
+            <compClass>ScpFoundation.Interactions.CompWorkshopWeaponTraits</compClass>
+            <weaponCategories><li>Ranged</li><li>Bow</li></weaponCategories>
+          </li>
+        </comps>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="SCP_FoundationArmoryModule"]/comps</xpath>
+    <value>
+      <li Class="ScpFoundation.Interactions.CompProperties_WeaponTraitWorkshop" />
+    </value>
+  </Operation>
+</Patch>

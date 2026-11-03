@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_049ObservedReport>Clearance 1 — object card
+Item #: SCP-049
+Class: Euclid
+A roughly 1.9-meter humanoid resembling a medieval plague doctor. Its mask and robes appear inseparable from its body. It is intelligent and can speak.</SCP_049ObservedReport>
+  <SCP_049PartialReport>Clearance 2 — observations
+SCP-049 claims to detect an unidentified “Pestilence” in people. It is usually courteous, but can attack those it considers afflicted. Skin contact can stop vital functions. It then attempts surgery on bodies, sometimes producing reanimated SCP-049-2 instances without their former identities.</SCP_049PartialReport>
+  <SCP_049DocumentedReport>Clearance 3 — protocol and game adaptation
+Avoid direct contact and do not treat its offer of a cure as safe. In-game, SCP-049 appears when several colonists are downed by wounds and seeks injured people or fresh human corpses. Its procedure creates hostile Anomaly ghouls instead of a separate SCP-049-2 type. Without patients, it can attack people. Once incapacitated, it can be taken to a containment post.</SCP_049DocumentedReport>
+
+  <SCP_106ObservedReport>Clearance 1 — object card
+Item #: SCP-106
+Class: Keter
+An elderly, decaying humanoid associated with intense corrosion. Direct contact is prohibited.</SCP_106ObservedReport>
+  <SCP_106PartialReport>Clearance 2 — properties
+SCP-106 passes through solid barriers and emerges elsewhere. It leaves a corrosive trace and takes victims into a pocket dimension. Physical harm delays it but does not provide permanent containment. Lead and liquid media slow its movement.</SCP_106PartialReport>
+  <SCP_106DocumentedReport>Clearance 3 — protocol and game adaptation
+The Foundation's original protocol uses a layered isolated chamber, continuous observation, and distance from personnel. In-game, a powered chamber fills this role. During a breach, SCP-106 passes through walls and corrodes them; gunfire makes it submerge and reappear near the attacker. The lure protocol requires a human sacrifice. An incapacitated instance can be delivered to the chamber before it vanishes.</SCP_106DocumentedReport>
+
+  <SCP_500ObservedReport>Clearance 1 — object card
+Item #: SCP-500
+Class: Safe
+A limited supply of small red pills. Keep stock secure and authorize each use.</SCP_500ObservedReport>
+  <SCP_500PartialReport>Clearance 2 — tests
+One pill taken orally cures disease; recovery time depends on severity. Attempts to synthesize the active ingredient have failed. Tests showed effectiveness even against severe anomalous illnesses, so every dose must be accounted for.</SCP_500PartialReport>
+  <SCP_500DocumentedReport>Clearance 3 — in-game use
+A pill is rare loot from the Chaos Insurgency. Here it immediately cures infections and diseases, then speeds wound and burn healing and relieves pain for six hours. Missing body parts do not regrow. The wound effects are a game adaptation, not a detailed claim from the source article.</SCP_500DocumentedReport>
+
+  <SCP_882ObservedReport>Clearance 1 — object card
+Item #: SCP-882
+Class: Euclid
+A disorderly assembly of gears, cables, pulleys, and metal parts. No power source is known. It remains silent even while moving.</SCP_882ObservedReport>
+  <SCP_882PartialReport>Clearance 2 — properties
+Parts without rust begin moving. Metal touching the object becomes permanently attached and gradually joins the mechanism. People spending time nearby have reported grinding and clicking hallucinations despite the object's silence; this can lead to dangerous behavior.</SCP_882PartialReport>
+  <SCP_882DocumentedReport>Clearance 3 — containment and game adaptation
+The archived protocol keeps the object in at least 40% seawater, suspended by nonmetallic line, and checks the rust layer daily. Exposed sections require 100% seawater. No metal belongs in the containment area. In-game, prepare an empty reservoir and carry SCP-882 into it; missed maintenance and absorbed metal increase its growth.</SCP_882DocumentedReport>
+
+  <SCP_999ObservedReport>Clearance 1 — object card
+Item #: SCP-999
+Nickname: “The Tickle Monster”
+Class: Safe
+A friendly creature made of translucent orange slime. It resembles a large amoeba, changes shape freely, and rests as a flattened dome. The archive records a mass of about 54 kg.</SCP_999ObservedReport>
+  <SCP_999PartialReport>Clearance 2 — observations
+SCP-999 reaches toward people with pseudopods, hugs them, and likes to tickle them. It gurgles and smells different to different people. Touch causes euphoria that grows with prolonged contact. The creature seeks out upset or injured people; people with severe depression reported improvement after interacting with it. Deliberate harm has not been observed.</SCP_999PartialReport>
+  <SCP_999DocumentedReport>Clearance 3 — behavior and game adaptation
+The archived protocol allows SCP-999 to roam the facility, but keeps it in a clean pen at night and during site lockdowns. Food is supplied twice daily; the creature prefers sweets. Staff should play with it during breaks and speak calmly. The pen and feeding are not simulated in-game: SCP-999 improves nearby moods, and a hug through the context menu gives a stronger one-day effect. Its archived encounter with SCP-682 is not simulated either.</SCP_999DocumentedReport>
+  <SCP_127ObservedReport>Clearance 1 — object card
+Item #: SCP-127
+Class: Safe
+A compact submachine gun resembling an MP5K-PDW. Its metal and polymer shell encloses living tissue.</SCP_127ObservedReport>
+  <SCP_127PartialReport>Clearance 2 — observations
+The internal mechanism is organic and fires tooth-like projectiles. It has semi-automatic and automatic modes; switching modes produces an audible groan.</SCP_127PartialReport>
+  <SCP_127DocumentedReport>Clearance 3 — in-game use
+The fixed magazine holds 60 rounds. Once emptied, it regrows a full supply in three to five in-game days, or in four hours inside storage case 7-C. The tooth-like rounds have strong armor penetration but ordinary damage. In the mod, SCP-127 is carried by a guard in a Chaos Insurgency settlement. The Foundation archive prescribes storage in a weapons locker, suspended in water containing calcium and protein; it needs no other sustenance.</SCP_127DocumentedReport>
+</LanguageData>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_FoundationCoreBench.label>основной верстак Фонда</SCP_FoundationCoreBench.label>
+  <SCP_FoundationCoreBench.description>Основной верстак Фонда размером 2×2 для изготовления брони и вспомогательного снаряжения. Подключённые оружейный и лабораторный модули ускоряют работу на нём на 4% каждый.</SCP_FoundationCoreBench.description>
+  <SCP_FoundationArmoryModule.label>оружейный модуль Фонда</SCP_FoundationArmoryModule.label>
+  <SCP_FoundationArmoryModule.description>Оружейный станок размером 2×2 для изготовления оружия Фонда. Для работы требуется питание и связь с основным верстаком Фонда на расстоянии до 8 клеток без преград. При подключении ускоряет основной верстак на 4%.</SCP_FoundationArmoryModule.description>
+  <SCP_FoundationLabModule.label>лабораторный модуль Фонда</SCP_FoundationLabModule.label>
+  <SCP_FoundationLabModule.description>Лабораторный станок размером 2×2 для производства препаратов Фонда, энергоячеек и ранцев П.О.Р.-7. Для работы требуется питание и связь с основным верстаком Фонда на расстоянии до 8 клеток без преград. Изготовление П.О.Р.-7 дополнительно требует подключённого работающего фузора. При подключении ускоряет основной верстак на 4%.</SCP_FoundationLabModule.description>
+  <SCP_FoundationFusionChamber.label>фузор Фарнсуорта — Липсона</SCP_FoundationFusionChamber.label>
+  <SCP_FoundationFusionChamber.description>Компактный фузор Фарнсуорта — Липсона. Подключите запитанный фузор к лабораторному модулю для производства П.О.Р.-7. Основной верстак, связанный с этой лабораторией, сможет изготавливать экзокостюм и шлем МОГ. Фузор ускоряет работу лаборатории на 2%.</SCP_FoundationFusionChamber.description>
+</LanguageData>

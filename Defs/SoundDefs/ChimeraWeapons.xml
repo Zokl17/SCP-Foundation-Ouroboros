@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <SoundDef>
+    <defName>SCP_ChimeraCannonFire</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>3</maxSimultaneous>
+    <subSounds><li>
+      <muteWhenPaused>True</muteWhenPaused>
+      <grains><li Class="AudioGrain_Folder"><clipFolderPath>Weapon/ThumpCannon_Fire</clipFolderPath></li></grains>
+      <volumeRange>75~85</volumeRange>
+      <distRange>12~90</distRange>
+    </li></subSounds>
+  </SoundDef>
+  <SoundDef>
+    <defName>SCP_ChimeraRailgunFire</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>3</maxSimultaneous>
+    <subSounds><li>
+      <muteWhenPaused>True</muteWhenPaused>
+      <grains><li Class="AudioGrain_Folder"><clipFolderPath>Weapon/ChargeRifle</clipFolderPath></li></grains>
+      <pitchRange>0.8~0.95</pitchRange>
+      <volumeRange>90~110</volumeRange>
+      <distRange>12~90</distRange>
+    </li></subSounds>
+  </SoundDef>
+</Defs>

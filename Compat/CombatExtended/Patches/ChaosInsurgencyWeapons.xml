@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+    <defName>SCP_ChaosAKGrenadier</defName>
+    <statBases><Mass>4.8</Mass><RangedWeapon_Cooldown>0.38</RangedWeapon_Cooldown><SightsEfficiency>1.0</SightsEfficiency><ShotSpread>0.09</ShotSpread><SwayFactor>1.25</SwayFactor><Bulk>10.5</Bulk></statBases>
+    <Properties>
+      <recoilAmount>1.55</recoilAmount><verbClass>CombatExtended.Verb_ShootCE</verbClass><hasStandardCommand>true</hasStandardCommand>
+      <defaultProjectile>Bullet_762x39mmSoviet_FMJ</defaultProjectile><warmupTime>1</warmupTime><range>52</range><burstShotCount>3</burstShotCount><ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+      <soundCast>Shot_AssaultRifle</soundCast><soundCastTail>GunTail_Medium</soundCastTail><muzzleFlashScale>9</muzzleFlashScale>
+    </Properties>
+    <AmmoUser><magazineSize>30</magazineSize><reloadTime>3.8</reloadTime><ammoSet>AmmoSet_762x39mmSoviet</ammoSet></AmmoUser>
+    <FireModes><aimedBurstShotCount>2</aimedBurstShotCount><aiUseBurstMode>true</aiUseBurstMode><aiAimMode>AimedShot</aiAimMode></FireModes>
+    <weaponTags><li>SCPChaosAKGL</li><li>CE_AI_AR</li></weaponTags>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="SCP_ChaosAKGrenadier"]/comps</xpath>
+    <value>
+      <li Class="CombatExtended.CompProperties_UnderBarrel">
+        <standardLabel>switch to rifle</standardLabel><underBarrelLabel>switch to grenade launcher</underBarrelLabel>
+        <propsUnderBarrel><magazineSize>1</magazineSize><reloadTime>3.5</reloadTime><ammoSet>AmmoSet_40x53mmVOG25Grenade</ammoSet></propsUnderBarrel>
+        <verbPropsUnderBarrel>
+          <recoilAmount>2.1</recoilAmount><verbClass>CombatExtended.Verb_ShootCE</verbClass><hasStandardCommand>true</hasStandardCommand>
+          <defaultProjectile>Bullet_40x53mmVOG25Grenade_HE</defaultProjectile><ai_AvoidFriendlyFireRadius>4</ai_AvoidFriendlyFireRadius>
+          <warmupTime>1.25</warmupTime><range>24</range><minRange>5</minRange><burstShotCount>1</burstShotCount>
+          <soundCast>InfernoCannon_Fire</soundCast><muzzleFlashScale>6</muzzleFlashScale><ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+          <targetParams><canTargetLocations>true</canTargetLocations></targetParams>
+        </verbPropsUnderBarrel>
+        <propsFireModesUnderBarrel><aiUseBurstMode>false</aiUseBurstMode><aiAimMode>AimedShot</aiAimMode><noSingleShot>false</noSingleShot></propsFireModesUnderBarrel>
+      </li>
+    </value>
+  </Operation>
+
+  <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+    <defName>SCP_ChaosLightMachineGun</defName>
+    <statBases><Mass>9.6</Mass><RangedWeapon_Cooldown>0.65</RangedWeapon_Cooldown><SightsEfficiency>0.9</SightsEfficiency><ShotSpread>0.08</ShotSpread><SwayFactor>1.45</SwayFactor><Bulk>14</Bulk></statBases>
+    <Properties>
+      <recoilAmount>1.65</recoilAmount><verbClass>CombatExtended.Verb_ShootCE</verbClass><hasStandardCommand>true</hasStandardCommand>
+      <defaultProjectile>Bullet_762x54mmR_FMJ</defaultProjectile><warmupTime>1.8</warmupTime><range>66</range><burstShotCount>10</burstShotCount><ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+      <soundCast>Shot_Minigun</soundCast><soundCastTail>GunTail_Medium</soundCastTail><muzzleFlashScale>10</muzzleFlashScale><recoilPattern>Mounted</recoilPattern>
+      <targetParams><canTargetLocations>true</canTargetLocations></targetParams>
+    </Properties>
+    <AmmoUser><magazineSize>100</magazineSize><reloadTime>7.5</reloadTime><ammoSet>AmmoSet_762x54mmR</ammoSet></AmmoUser>
+    <FireModes><aimedBurstShotCount>5</aimedBurstShotCount><aiUseBurstMode>false</aiUseBurstMode><aiAimMode>SuppressFire</aiAimMode></FireModes>
+    <weaponTags><li>SCPChaosHeavyLMG</li><li>CE_MachineGun</li><li>CE_AI_LMG</li><li>Bipod_LMG</li></weaponTags><AllowWithRunAndGun>false</AllowWithRunAndGun>
+  </Operation>
+  <!-- CE patches vanilla parents before Verse resolves inheritance. Keep exactly
+       one weapon-specific ammo/verb/fire-mode definition on each child.
+       Restore the standard BaseHumanMakeableGun components explicitly. -->
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="SCP_ChaosAKGrenadier" or defName="SCP_ChaosLightMachineGun"]/comps</xpath>
+    <attribute>Inherit</attribute><value>False</value>
+  </Operation>
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="SCP_ChaosAKGrenadier" or defName="SCP_ChaosLightMachineGun"]/verbs</xpath>
+    <attribute>Inherit</attribute><value>False</value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="SCP_ChaosAKGrenadier" or defName="SCP_ChaosLightMachineGun"]/comps</xpath>
+    <value>
+      <li Class="CompProperties_Forbiddable"/>
+      <li><compClass>CompEquippable</compClass></li>
+      <li Class="CompProperties_Styleable"/>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+      <li><compClass>CompQuality</compClass></li>
+      <li Class="CompProperties_Biocodable"/>
+    </value>
+    <!-- Equippable must exist when CE initializes its cached verb/fire modes. -->
+    <order>Prepend</order>
+  </Operation>
+</Patch>

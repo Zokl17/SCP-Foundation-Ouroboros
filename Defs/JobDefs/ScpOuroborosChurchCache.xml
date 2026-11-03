@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <JobDef>
+    <defName>SCP_OuroborosChurchCipherRead</defName>
+    <driverClass>ScpFoundation.Storytelling.JobDriver_ScpChurchCipherRead</driverClass>
+    <reportString>copying Church cipher records.</reportString>
+    <casualInterruptible>false</casualInterruptible>
+  </JobDef>
+  <JobDef>
+    <defName>SCP_ChurchEvidenceAnalyze</defName>
+    <driverClass>ScpFoundation.Storytelling.JobDriver_ScpChurchEvidenceAnalyze</driverClass>
+    <reportString>examining recovered Church evidence.</reportString>
+    <casualInterruptible>false</casualInterruptible>
+  </JobDef>
+</Defs>

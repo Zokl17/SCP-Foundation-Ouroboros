@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ScpFoundation.Definitions.ScpDef>
+    <defName>SCP_Anomaly262</defName><label>SCP-262</label>
+    <description>A military greatcoat whose inner lining manifests many autonomous limbs.</description>
+    <scpId>SCP-262</scpId><objectClass>Euclid</objectClass>
+    <tags><li>Apparel</li><li>Artifact</li></tags>
+    <requirements><li Class="ScpFoundation.Containment.RequirementScp262Hanger"><id>hanger</id></li></requirements>
+    <breach><graceTicks>30000</graceTicks><deterministicAfterTicks>0</deterministicAfterTicks><riskPerDay>0</riskPerDay><recoveryPerDay>0</recoveryPerDay></breach>
+    <research>
+      <observedWork>12000</observedWork><partialWork>60000</partialWork><fullWork>180000</fullWork>
+      <observedReportKey>SCP_262ObservedReport</observedReportKey>
+      <partialReportKey>SCP_262PartialReport</partialReportKey>
+      <documentedReportKey>SCP_262DocumentedReport</documentedReportKey>
+      <experimentReportKeys><li>SCP_262Experiment1</li><li>SCP_262Experiment2</li><li>SCP_262Experiment3</li></experimentReportKeys>
+    </research>
+    <source><title>SCP-262</title><author>The Administrator</author><url>https://scp-wiki.wikidot.com/scp-262</url><license>CC BY-SA 3.0</license></source>
+  </ScpFoundation.Definitions.ScpDef>
+</Defs>

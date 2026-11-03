@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_TestFixture.label>тестовый стенд содержания</SCP_TestFixture.label>
+  <SCP_TestFixture.description>Неканонический объект для разработки. Создаётся через инструменты разработчика SCP Foundation. Стенд не представляет статью SCP Wiki.</SCP_TestFixture.description>
+</LanguageData>

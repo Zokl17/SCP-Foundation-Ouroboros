@@ -1,0 +1,23 @@
+# Local outputs; shipped runtime DLLs remain tracked.
+/Build/
+**/bin/
+**/obj/
+/.vs/
+/.idea/
+/Art/
+/out_*/
+*.user
+*.suo
+*.pdb
+*.log
+*.zip
+*.7z
+*.rar
+*.rws
+*.bak
+Thumbs.db
+Desktop.ini
+.DS_Store
+.env
+.env.*
+!.env.example

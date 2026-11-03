@@ -1,0 +1,28 @@
+name: Ошибка в моде
+description: Сообщить о проблеме с SCP Foundation — Ouroboros
+body:
+  - type: input
+    id: versions
+    attributes:
+      label: Версия RimWorld и мода
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Активные DLC и моды
+      description: Укажите, включён ли Combat Extended.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Как повторить ошибку
+      description: Что сделали, что ожидали и что произошло?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Лог и снимки экрана
+      description: Приложите нужную часть Player.log. Удалите личные данные перед отправкой.

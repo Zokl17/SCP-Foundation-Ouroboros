@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_OuroborosRoutingLogPart.label>пост утраченного журнала</SCP_OuroborosRoutingLogPart.label>
+  <SCP_OuroborosRoutingLogPart.description>Бывший узел маршрутизации, найденный по церковной накладке на деталях SCP-629.</SCP_OuroborosRoutingLogPart.description>
+  <SCP_OuroborosRoutingLogPart.approachOrderString>Исследовать {0}</SCP_OuroborosRoutingLogPart.approachOrderString>
+  <SCP_OuroborosRoutingLogPart.approachingReportString>Исследует {0}.</SCP_OuroborosRoutingLogPart.approachingReportString>
+  <SCP_OuroborosRoutingLogPart.arrivedLetter>Найдите журнал во внутренней комнате. Выберите предмет или прикажите колонисту через ПКМ извлечь его, затем верните на базу.</SCP_OuroborosRoutingLogPart.arrivedLetter>
+</LanguageData>

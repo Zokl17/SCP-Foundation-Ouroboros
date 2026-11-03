@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="ArmorMachineableBase">
+    <defName>SCP_ChaosAssaultArmor</defName>
+    <label>Insurgency assault armor</label>
+    <description>A rugged green-khaki plate carrier worn by Chaos Insurgency assault cells. Layered ballistic panels, a MOLLE cummerbund and three rifle-magazine pouches protect the torso and keep ammunition close at hand without the bulk of powered armor.</description>
+    <techLevel>Industrial</techLevel>
+    <graphicData><texPath>Things/Item/Apparel/ScpChaosAssaultArmor</texPath><graphicClass>Graphic_Single</graphicClass><shaderType>Cutout</shaderType></graphicData>
+    <statBases>
+      <MarketValue>980</MarketValue><MaxHitPoints>470</MaxHitPoints><Mass>8.2</Mass><Flammability>0.45</Flammability>
+      <ArmorRating_Sharp>0.874</ArmorRating_Sharp><ArmorRating_Blunt>0.38</ArmorRating_Blunt><ArmorRating_Heat>0.437</ArmorRating_Heat>
+      <Insulation_Cold>5</Insulation_Cold><Insulation_Heat>1</Insulation_Heat><EquipDelay>7</EquipDelay>
+    </statBases>
+    <equippedStatOffsets><MoveSpeed>-0.12</MoveSpeed></equippedStatOffsets>
+    <thingCategories><li>ApparelArmor</li></thingCategories>
+    <costList><Cloth>50</Cloth><Steel>45</Steel><ComponentIndustrial>2</ComponentIndustrial></costList>
+    <apparel>
+      <bodyPartGroups><li>Torso</li><li>Neck</li><li>Shoulders</li><li>Arms</li></bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ChaosAssaultArmor/ChaosAssaultArmor</wornGraphicPath>
+      <layers><li>Middle</li><li>Shell</li></layers><tags Inherit="False"><li>SCP_ChaosArmor</li></tags><defaultOutfitTags><li>Soldier</li></defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options"><options><li><only>(1,1,1)</only></li></options></colorGenerator>
+    <tradeTags><li>Armor</li></tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="ArmorMachineableBase">
+    <defName>SCP_ChaosHeavyExosuit</defName>
+    <label>improvised Insurgency exosuit</label>
+    <description>A brutally practical powered suit assembled from stolen armor plates, workshop actuators and scavenged cooling hardware. A large exposed fan cools the left side while two luminous blue coolant lines serve the right. The mismatched plates are riveted and welded wherever they happened to fit.</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData><texPath>Things/Item/Apparel/ScpChaosHeavyExosuit</texPath><graphicClass>Graphic_Single</graphicClass><shaderType>Cutout</shaderType><drawSize>(1.2,1.2)</drawSize></graphicData>
+    <statBases>
+      <MarketValue>4300</MarketValue><MaxHitPoints>630</MaxHitPoints><Mass>16</Mass><Flammability>0.4</Flammability>
+      <ArmorRating_Sharp>1.14</ArmorRating_Sharp><ArmorRating_Blunt>0.475</ArmorRating_Blunt><ArmorRating_Heat>0.57</ArmorRating_Heat>
+      <Insulation_Cold>55</Insulation_Cold><Insulation_Heat>10</Insulation_Heat><EquipDelay>18</EquipDelay>
+    </statBases>
+    <equippedStatOffsets><MoveSpeed>-0.45</MoveSpeed></equippedStatOffsets>
+    <thingCategories><li>ApparelArmor</li></thingCategories>
+    <costList><Steel>160</Steel><Plasteel>80</Plasteel><ComponentIndustrial>10</ComponentIndustrial><ComponentSpacer>2</ComponentSpacer></costList>
+    <apparel>
+      <bodyPartGroups><li>Torso</li><li>Neck</li><li>Shoulders</li><li>Arms</li><li>Legs</li></bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ChaosHeavyExosuit/ChaosHeavyExosuit</wornGraphicPath>
+      <drawData>
+        <scale>1.125</scale>
+        <dataSouth><offset>(0,0,-0.03)</offset></dataSouth>
+        <dataNorth><offset>(0,0,-0.03)</offset><layer>80</layer></dataNorth>
+        <dataEast><offset>(0,0,-0.03)</offset></dataEast>
+        <dataWest><offset>(0,0,-0.03)</offset></dataWest>
+      </drawData>
+      <layers><li>Middle</li><li>Shell</li></layers><tags Inherit="False"><li>SCP_ChaosArmor</li></tags>
+      <defaultOutfitTags><li>Soldier</li><li>Spacefarer</li></defaultOutfitTags><useDeflectMetalEffect>true</useDeflectMetalEffect>
+      <soundWear>Wear_PowerArmor</soundWear><soundRemove>Remove_PowerArmor</soundRemove>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options"><options><li><only>(1,1,1)</only></li></options></colorGenerator>
+    <tradeTags><li>HiTechArmor</li><li>Armor</li></tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="ArmorHelmetMakeableBase">
+    <defName>SCP_ChaosHeavyHelmet</defName>
+    <label>improvised exosuit helmet</label>
+    <description>A sealed powered-armor helmet built around a crude riveted face shield. Its indirect optics and thick shell offer cataphract-grade protection without any concern for elegance or standardization.</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData><texPath>Things/Item/Apparel/ScpChaosHeavyHelmet</texPath><graphicClass>Graphic_Single</graphicClass><shaderType>Cutout</shaderType><drawSize>(0.95,0.95)</drawSize></graphicData>
+    <statBases>
+      <MarketValue>1750</MarketValue><MaxHitPoints>380</MaxHitPoints><Mass>2.4</Mass><Flammability>0.4</Flammability>
+      <ArmorRating_Sharp>1.26</ArmorRating_Sharp><ArmorRating_Blunt>0.525</ArmorRating_Blunt><ArmorRating_Heat>0.63</ArmorRating_Heat>
+      <Insulation_Cold>4</Insulation_Cold><Insulation_Heat>2</Insulation_Heat><EquipDelay>6</EquipDelay>
+    </statBases>
+    <thingCategories><li>ApparelArmor</li></thingCategories>
+    <costList><Steel>40</Steel><Plasteel>30</Plasteel><ComponentIndustrial>4</ComponentIndustrial></costList>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity><bodyPartGroups><li>FullHead</li></bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ChaosHeavyHelmet/ChaosHeavyHelmet</wornGraphicPath>
+      <drawData>
+        <scale>0.725</scale>
+        <dataSouth><offset>(0,0,-0.07)</offset></dataSouth>
+        <dataNorth><offset>(0,0,-0.07)</offset></dataNorth>
+        <dataEast><offset>(0.04,0,-0.08)</offset></dataEast>
+        <dataWest><offset>(-0.04,0,-0.08)</offset></dataWest>
+      </drawData>
+      <layers><li>Overhead</li></layers><tags Inherit="False"><li>SCP_ChaosArmor</li></tags>
+      <defaultOutfitTags><li>Soldier</li><li>Spacefarer</li></defaultOutfitTags><useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options"><options><li><only>(1,1,1)</only></li></options></colorGenerator>
+    <tradeTags><li>HiTechArmor</li><li>Armor</li></tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="Gun_AssaultRifle">
+    <defName>SCP_ChaosAKGrenadier</defName>
+    <label>Insurgency AK with grenade launcher</label>
+    <description>A worn AK-pattern rifle rebuilt by Chaos Insurgency armorers and fitted with a compact underbarrel grenade launcher. The rifle remains reliable despite crude repairs.</description>
+    <graphicData><texPath>Things/Item/Equipment/WeaponRanged/ScpChaosAKGL</texPath><graphicClass>Graphic_Single</graphicClass></graphicData>
+    <statBases><MarketValue>920</MarketValue><Mass>4.8</Mass><AccuracyTouch>0.62</AccuracyTouch><AccuracyShort>0.72</AccuracyShort><AccuracyMedium>0.64</AccuracyMedium><AccuracyLong>0.50</AccuracyLong><RangedWeapon_Cooldown>1.75</RangedWeapon_Cooldown></statBases>
+    <verbs><li><verbClass>Verb_Shoot</verbClass><hasStandardCommand>true</hasStandardCommand><defaultProjectile>Bullet_AssaultRifle</defaultProjectile><warmupTime>1</warmupTime><range>30.9</range><burstShotCount>3</burstShotCount><ticksBetweenBurstShots>10</ticksBetweenBurstShots><soundCast>Shot_AssaultRifle</soundCast><soundCastTail>GunTail_Medium</soundCastTail><muzzleFlashScale>9</muzzleFlashScale></li></verbs>
+    <weaponTags Inherit="False"><li>SCPChaosAKGL</li></weaponTags><tradeTags><li>WeaponRanged</li></tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="Gun_LMG">
+    <defName>SCP_ChaosLightMachineGun</defName>
+    <label>Insurgency PKP machine gun</label>
+    <description>A heavy 7.62 mm PKP machine gun used by Insurgency suppression teams. It fires more slowly than the Foundation's M249, but its rounds hit harder and penetrate armor more effectively.</description>
+    <graphicData><texPath>Things/Item/Equipment/WeaponRanged/ScpChaosLMG</texPath><graphicClass>Graphic_Single</graphicClass></graphicData>
+    <statBases><MarketValue>1250</MarketValue><Mass>9.6</Mass><AccuracyTouch>0.42</AccuracyTouch><AccuracyShort>0.52</AccuracyShort><AccuracyMedium>0.39</AccuracyMedium><AccuracyLong>0.29</AccuracyLong><RangedWeapon_Cooldown>2.2</RangedWeapon_Cooldown></statBases>
+    <verbs Inherit="False"><li><verbClass>Verb_Shoot</verbClass><hasStandardCommand>true</hasStandardCommand><defaultProjectile>SCP_ProjectileChaosPKP</defaultProjectile><warmupTime>1.9</warmupTime><range>25.9</range><ticksBetweenBurstShots>8</ticksBetweenBurstShots><burstShotCount>6</burstShotCount><soundCast>Shot_Minigun</soundCast><soundCastTail>GunTail_Medium</soundCastTail><muzzleFlashScale>9</muzzleFlashScale></li></verbs>
+    <weaponTags Inherit="False"><li>SCPChaosHeavyLMG</li></weaponTags><tradeTags><li>WeaponRanged</li></tradeTags>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>SCP_ProjectileChaosPKP</defName>
+    <label>PKP bullet</label>
+    <graphicData><texPath>Things/Projectile/ScpShotgunPellet</texPath><graphicClass>Graphic_Single</graphicClass></graphicData>
+    <projectile><damageDef>Bullet</damageDef><damageAmountBase>16</damageAmountBase><stoppingPower>1.4</stoppingPower><armorPenetrationBase>0.26</armorPenetrationBase><speed>50</speed></projectile>
+  </ThingDef>
+</Defs>

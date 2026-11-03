@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThoughtDef>
+    <defName>SCP_513Paranoia</defName><thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>0.15</durationDays><stackLimit>1</stackLimit>
+    <stages><li><label>watched by an unseen figure</label><description>Every shadow looks like it is following me.</description><baseMoodEffect>-12</baseMoodEffect></li></stages>
+  </ThoughtDef>
+</Defs>

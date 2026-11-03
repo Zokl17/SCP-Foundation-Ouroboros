@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_330CandyYellowEffect.label>жёлтая конфета</SCP_330CandyYellowEffect.label><SCP_330CandyYellowEffect.description>Передвижение ускорено на шесть часов.</SCP_330CandyYellowEffect.description>
+  <SCP_330CandyGreenEffect.label>зелёная конфета</SCP_330CandyGreenEffect.label><SCP_330CandyGreenEffect.description>Выработка иммунитета и заживление ран немного ускорены на шесть часов.</SCP_330CandyGreenEffect.description>
+  <SCP_330CandyRedEffect.label>красная конфета</SCP_330CandyRedEffect.label><SCP_330CandyRedEffect.description>Боль уменьшена, кровоточащие раны постепенно заживают. Действует шесть часов.</SCP_330CandyRedEffect.description>
+  <SCP_330CandyPurpleEffect.label>фиолетовая конфета</SCP_330CandyPurpleEffect.label><SCP_330CandyPurpleEffect.description>Работа ускорена на шесть часов.</SCP_330CandyPurpleEffect.description>
+  <SCP_330CandyBlackEffect.label>чёрная конфета</SCP_330CandyBlackEffect.label><SCP_330CandyBlackEffect.description>Точность стрельбы повышена, прицеливание ускорено на шесть часов.</SCP_330CandyBlackEffect.description>
+</LanguageData>

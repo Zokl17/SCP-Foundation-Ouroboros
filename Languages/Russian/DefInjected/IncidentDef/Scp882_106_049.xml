@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_Discover882.label>обнаружен SCP-882</SCP_Discover882.label>
+  <SCP_Discover882.letterLabel>Ржавый механизм</SCP_Discover882.letterLabel>
+  <SCP_Discover882.letterText>Появился необычный механизм. Не оставляйте рядом металл: предметы могут быть поглощены и превратиться в новые наросты.</SCP_Discover882.letterText>
+  <SCP_Breach106.label>прорыв SCP-106</SCP_Breach106.label>
+  <SCP_Breach106.letterLabel>Появился SCP-106</SCP_Breach106.letterLabel>
+  <SCP_Breach106.letterText>Старик проходит сквозь преграды и разъедает постройки. Обычные атаки его не остановят. Постройте станцию приманки и выберите колониста, чтобы вернуть объект.</SCP_Breach106.letterText>
+  <SCP_Visit049.label>визит странного доктора</SCP_Visit049.label>
+  <SCP_Visit049.letterLabel>Прибыл чумной доктор</SCP_Visit049.letterLabel>
+  <SCP_Visit049.letterText>Трое колонистов лежат с ранениями. SCP-049 пришёл им «помочь». Он называет это лечением от Поветрия, но тех, до кого доберётся, превращает во враждебных гулей. Не подпускайте его к раненым и свежим человеческим трупам.</SCP_Visit049.letterText>
+</LanguageData>

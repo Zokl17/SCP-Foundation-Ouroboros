@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="BuildingBase">
+    <defName>SCP_294Machine</defName>
+    <label>SCP-294 coffee machine</label>
+    <description>A vending machine that dispenses drinks on request.</description>
+    <thingClass>ScpFoundation.Anomalies.Building_Scp294</thingClass>
+    <graphicData><texPath>Things/Building/Scp294</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>(1.2,1.6)</drawSize></graphicData>
+    <size>(1,1)</size><rotatable>false</rotatable><passability>Impassable</passability><fillPercent>1</fillPercent><tickerType>Rare</tickerType>
+    <statBases><MaxHitPoints>350</MaxHitPoints><WorkToBuild>2500</WorkToBuild><Mass>35</Mass><Flammability>0</Flammability></statBases>
+    <costList><Steel>120</Steel><ComponentIndustrial>4</ComponentIndustrial></costList>
+    <comps><li Class="ScpFoundation.Runtime.CompProperties_Scp"><anomaly>SCP_Anomaly294</anomaly><requireCapture>true</requireCapture></li></comps>
+  </ThingDef>
+  <ThingDef>
+    <defName>SCP_294Transit</defName>
+    <label>SCP-294 coffee machine</label>
+    <description>A vending machine that dispenses drinks on request.</description>
+    <thingClass>ScpFoundation.Anomalies.Thing_Scp294Transit</thingClass><category>Item</category><altitudeLayer>Item</altitudeLayer>
+    <selectable>true</selectable><stackLimit>1</stackLimit><rotatable>false</rotatable>
+    <alwaysHaulable>false</alwaysHaulable><designateHaulable>false</designateHaulable>
+    <graphicData><texPath>Things/Building/Scp294</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>(1.2,1.6)</drawSize></graphicData>
+    <statBases><Mass>35</Mass><MarketValue>0</MarketValue><Flammability>0</Flammability></statBases>
+    <tradeability>None</tradeability>
+  </ThingDef>
+</Defs>

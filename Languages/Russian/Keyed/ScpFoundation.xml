@@ -1,0 +1,1285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_682Contained>SCP-682 удерживается на посту.</SCP_682Contained>
+  <SCP_682Stunned>Обездвижен: осталось {0}. Можно перенести на пост.</SCP_682Stunned>
+  <SCP_682Hunting>Активен и опасен. Для захвата нанесите достаточно урона.</SCP_682Hunting>
+  <SCP_682Integrity>Целостность: {0}/{1}. Регенерирует.</SCP_682Integrity>
+  <SCP_682NeedsIncapacitation>Сначала обездвижьте SCP-682 уроном.</SCP_682NeedsIncapacitation>
+  <SCP_682Breach>SCP-682 вырвался из содержания. Уведите персонал и восстановите защиту камеры.</SCP_682Breach>
+  <SCP_682DiscoveryUnavailable>Обнаружить SCP-682 здесь нельзя: нужна домашняя карта с четырьмя колонистами и доступной открытой клеткой.</SCP_682DiscoveryUnavailable>
+  <SCP_682ObservedReport>Уровень 1 — сведения об объекте
+SCP-682 — крупное рептилоидное существо с исключительной стойкостью. Найденный экземпляр временно обездвижен и быстро восстанавливается.</SCP_682ObservedReport>
+  <SCP_682PartialReport>Уровень 2 — регенерация
+Обычные повреждения не уничтожают существо. При тяжёлом ранении оно ненадолго теряет способность двигаться; это время подходит для захвата.</SCP_682PartialReport>
+  <SCP_682DocumentedReport>Уровень 3 — содержание
+Постройте кислотную камеру размером 6×3 клетки, подключите её к питанию и поместите SCP-682 в центр. Высота борта показана на модели; отдельного уровня высоты в игре нет.</SCP_682DocumentedReport>
+  <SCP_682AcidChamberRequirement>Работающая кислотная камера SCP-682 (6×3 клетки).</SCP_682AcidChamberRequirement>
+  <SCP_939SeparateRoomRequirement>Для каждой особи SCP-939 нужна отдельная комната.</SCP_939SeparateRoomRequirement>
+  <SCP_CreatureTransferUnavailable>Задание доставки SCP-{0} пока недоступно. Проверьте отношения с Фондом и условия появления задания.</SCP_CreatureTransferUnavailable>
+  <SCP_CreatureTransferOffered>Задание доставки SCP-{0} предложено. Примите его вручную после подготовки камер.</SCP_CreatureTransferOffered>
+  <SCP_CreatureTransferArrivedTitle>Доставка SCP-{0}</SCP_CreatureTransferArrivedTitle>
+  <SCP_CreatureTransferArrivedBody>Группа Эпсилон-11 привезла {1} объект(а) SCP-{0}. Перенесите их в подготовленные камеры.</SCP_CreatureTransferArrivedBody>
+  <SCP_CreatureTransferSecuredTitle>SCP-{0} на содержании</SCP_CreatureTransferSecuredTitle>
+  <SCP_CreatureTransferSecuredBody>Объекты размещены. Группа сопровождения возвращается; Фонд добавил 5 очков доверия.</SCP_CreatureTransferSecuredBody>
+  <SCP_939Contained>SCP-939 удерживается на посту.</SCP_939Contained>
+  <SCP_939Sedated>Под седацией: осталось {0}.</SCP_939Sedated>
+  <SCP_939Hunting>Бодрствует и охотится. Не идите на голос.</SCP_939Hunting>
+  <SCP_939VoiceMimic>Возле SCP-939 слышен человеческий голос. Уведите персонал.</SCP_939VoiceMimic>
+  <SCP_939Breach>SCP-939 активен. Закройте двери и не подпускайте персонал к камере.</SCP_939Breach>
+  <SCP_939DiscoveryUnavailable>Обнаружить SCP-939 здесь нельзя: нужна домашняя карта с двумя колонистами и доступной открытой клеткой.</SCP_939DiscoveryUnavailable>
+  <SCP_939ObservedReport>Уровень 1 — сведения об объекте
+SCP-939 — красный безглазый хищник. Обнаруженный экземпляр временно усыплён; успейте доставить его в камеру содержания.</SCP_939ObservedReport>
+  <SCP_939PartialReport>Уровень 2 — голоса
+Существо имитирует человеческую речь голосами, неотличимыми от настоящих. Знакомый голос у камеры не подтверждает личность говорящего.</SCP_939PartialReport>
+  <SCP_939DocumentedReport>Уровень 3 — содержание
+Держите SCP-939-1 и SCP-939-3 в двух разных закрытых освещённых комнатах размером не меньше 5×5 клеток, с усиленными стенами и бронированными дверями. Перевод между камерами для досмотра не обязателен.</SCP_939DocumentedReport>
+  <SCP_504PostRequirement>Куст должен находиться на закреплённом посту содержания.</SCP_504PostRequirement>
+  <SCP_504RipeCount>Созрело помидоров: {0}/{1}</SCP_504RipeCount>
+  <SCP_504DebugNoBush>Под курсором нет куста SCP-504.</SCP_504DebugNoBush>
+  <SCP_504NeedsPost>Сначала перенесите куст на пост содержания.</SCP_504NeedsPost>
+  <SCP_504NoRipeFruit>Спелых помидоров пока нет.</SCP_504NoRipeFruit>
+  <SCP_504NextFruit>Следующий помидор созреет через: {0}</SCP_504NextFruit>
+  <SCP_504ObservedReport>Уровень 1 — сведения об объекте
+SCP-504 — томатный куст, зрелые плоды которого реагируют на речь поблизости. Для наблюдения за созреванием перенесите его на пост содержания.</SCP_504ObservedReport>
+  <SCP_504PartialReport>Уровень 2 — речевые испытания
+Неудачная шутка или колкость могут отправить один спелый помидор в говорящего. Обычный разговор и добрые слова не вызывают реакции.</SCP_504PartialReport>
+  <SCP_504DocumentedReport>Уровень 3 — содержание
+На посту куст даёт один спелый помидор в сутки, максимум пять. Для речевого теста нужны два колониста поблизости; посторонних лучше держать вне слышимости. Темп созревания и несмертельные ранения — игровые упрощения.</SCP_504DocumentedReport>
+  <SCP_504NeedListener>Для речевого теста нужен другой колонист рядом с помидорами</SCP_504NeedListener>
+  <SCP_504TestWith>Провести речевой тест с {0}</SCP_504TestWith>
+  <SCP_504DiscoveryUnavailable>Для обнаружения SCP-504 нужна домашняя карта с колонистом и свободной клеткой у края.</SCP_504DiscoveryUnavailable>
+  <SCP_NotCaptured>Объект ещё не принят на содержание. Подготовьте пост содержания, выберите колониста и нажмите правой кнопкой на объект для захвата.</SCP_NotCaptured>
+  <SCP_RequirementObservers>Не менее {0} бодрствующих зрячих сотрудников в радиусе 6 клеток: на наблюдении/исследовании либо призванных, неподвижных и не занятых боем. Каждый должен видеть объект и ещё одного наблюдателя.</SCP_RequirementObservers>
+  <SCP_DossierButton>Досье аномалии</SCP_DossierButton><SCP_DossierButtonDesc>Прочитать сведения, открытые наблюдением и исследованием.</SCP_DossierButtonDesc>
+  <SCP_DossierUnknown>Надёжного досье пока нет. Примите объект на содержание и исследуйте его.</SCP_DossierUnknown>
+  <SCP_DossierLevelZeroResearch>Содержание восстановлено. Исследование доступно, но личность и свойства объекта ещё не установлены.</SCP_DossierLevelZeroResearch>
+  <SCP_ResearchProgress>Прогресс до уровня допуска {0}: {1}. Осталось примерно {2} базовой исследовательской работы; навыки сотрудника меняют фактическое время.</SCP_ResearchProgress>
+  <SCP_ResearchComplete>Досье полностью задокументировано. Достигнут уровень допуска 3.</SCP_ResearchComplete>
+  <SCP_DutyWatchingForRecovery>наблюдает до восстановления содержания</SCP_DutyWatchingForRecovery>
+  <SCP_DutyQueuedForRecovery>будет наблюдать до восстановления содержания; приоритет работы: {0}</SCP_DutyQueuedForRecovery>
+  <SCP_ObserveToggle>Дежурство</SCP_ObserveToggle><SCP_ObserveToggleDesc>Разрешить работу «SCP: наблюдение». Сотрудник стоит на месте и следит за объектом до окончания смены или пока ему не потребуется перерыв. Знания не добавляются.</SCP_ObserveToggleDesc>
+  <SCP_ResearchToggle>Исследование</SCP_ResearchToggle><SCP_ResearchToggleDesc>Разрешить работу учёного: остановки для изучения, смена позиции и пополнение досье. Прогресс идёт только при соблюдении условий содержания. Во время движения исследователь не считается наблюдателем.</SCP_ResearchToggleDesc>
+  <SCP_CaptureOrder>Перенести к объекту «{0}»</SCP_CaptureOrder>
+  <SCP_ObserveOrder>Наблюдать за аномалией</SCP_ObserveOrder><SCP_StudyOrder>Исследовать аномалию</SCP_StudyOrder><SCP_RestoreOrder>Восстановить содержание</SCP_RestoreOrder>
+  <SCP_NoObservationSpot>Рядом с объектом нет доступной свободной позиции для наблюдения.</SCP_NoObservationSpot>
+  <SCP_ResearchLetter>Получены результаты исследования</SCP_ResearchLetter>
+  <SCP_DiscoveryUnavailable>Эта встреча уже произошла, либо на домашней карте нет двух колонистов или безопасного места для объекта.</SCP_DiscoveryUnavailable>
+  <SCP_650Breach>{0}: нарушены правила наблюдения или подготовки камеры. Восстановите дежурство и условия в комнате. Если объект переместился, верните его к посту содержания, затем поручите колонисту восстановление содержания.</SCP_650Breach>
+  <SCP_173Observed>Прямой взгляд: объект неподвижен.</SCP_173Observed>
+  <SCP_173Unobserved>Никто не смотрит прямо на объект.</SCP_173Unobserved>
+  <SCP_173Secured>Содержание действует: объект остаётся на посту.</SCP_173Secured>
+  <SCP_173CarryNeedsObservers>Для переноса SCP-173 нужны два наблюдателя, которые видят скульптуру и друг друга.</SCP_173CarryNeedsObservers>
+  <SCP_173TransportNeedsTeam>Для переноса SCP-173 нужны носильщик и два свободных зрячих сопровождающих.</SCP_173TransportNeedsTeam>
+  <SCP_173TransportWaiting>Носильщик ждёт: два сопровождающих должны видеть SCP-173 при достаточном освещении.</SCP_173TransportWaiting>
+  <SCP_173TransportPaused>Перенос SCP-173 приостановлен: оба сопровождающих должны видеть скульптуру при достаточном освещении.</SCP_173TransportPaused>
+  <SCP_173TransportBlocked>Перенос SCP-173 приостановлен: путь к посту перекрыт.</SCP_173TransportBlocked>
+  <SCP_173PostOccupied>Носильщик ждёт: освободите пост содержания для SCP-173.</SCP_173PostOccupied>
+  <SCP_173TransportAssigned>Перенос SCP-173: несёт {0}, сопровождают {1} и {2}.</SCP_173TransportAssigned>
+  <SCP_173CrewOption>{0} → {1} (сопровождают: {2}, {3})</SCP_173CrewOption>
+  <SCP_173TransportDesc>Выберите носильщика. Два доступных колониста сопроводят SCP-173 и будут следить за ним. При потере обзора или света носильщик остановится.</SCP_173TransportDesc>
+  <SCP_173Breach>{0}: условия содержания SCP-173 нарушены. При потере прямого наблюдения скульптура может двигаться и нападать. Восстановите освещение и дежурство, затем верните её на пост.</SCP_173Breach>
+  <SCP_173ObservedReport>Допуск 1 — карточка объекта
+Номер: SCP-173
+Класс: Евклид
+Скульптура из бетона и арматуры. Пока человек видит её напрямую, она остаётся неподвижной.</SCP_173ObservedReport>
+  <SCP_173PartialReport>Допуск 2 — наблюдение
+Вне прямого обзора объект меняет положение за доли секунды. Стены, темнота, поворот головы и моргание могут прервать наблюдение. Камеры не заменяют персонал у камеры содержания.</SCP_173PartialReport>
+  <SCP_173DocumentedReport>Допуск 3 — протокол
+При входе в камеру направляйте не менее трёх сотрудников; двое постоянно держат объект в поле зрения. Для игрового содержания подготовьте освещённую запертую комнату и пост с двумя наблюдателями. Одинокий сотрудник уязвим в момент моргания. При потере наблюдения объект способен быстро приблизиться и нанести смертельную травму.</SCP_173DocumentedReport>
+  <SCP_650Observed>Допуск 1 — карточка объекта
+Название: Чёрная статуя
+Номер: SCP-650
+Класс: Евклид
+Чёрная гуманоидная фигура без лица и кистей рук. Высота — 167 см.</SCP_650Observed>
+  <SCP_650Partial>Допуск 2 — история классификации
+Класс повышен до «Евклид» после появления статуи в другой части комплекса, за спиной сотрудника в его кабинете. После инцидента наблюдение усилили.</SCP_650Partial>
+  <SCP_650Documented>Допуск 3 — подробное описание
+Без наблюдения статуя бесшумно появляется за спиной человека в пугающей позе. Нападений не зафиксировано; мотив неизвестен. Привыкших сотрудников она тревожит другими позами. Состав материала установить не удалось.
+
+Протокол комплекса: поддерживайте свет и непрерывный обзор двумя сотрудниками, которые видят объект и друг друга. Исследователю лучше выделить отдельную смену: при переходе между рабочими позициями он не заменяет неподвижного наблюдателя. При потере поста верните объект и восстановите условия содержания.</SCP_650Documented>
+  <SCP_BriefingTitle>Инструкция по содержанию</SCP_BriefingTitle>
+  <SCP_BriefingIntro>{0}: доступные указания по содержанию. Подготовьте камеру и устраните невыполненные требования.</SCP_BriefingIntro>
+  <SCP_CheckMet>СОБЛЮДЕНО</SCP_CheckMet><SCP_CheckUnmet>ТРЕБУЕТСЯ</SCP_CheckUnmet><SCP_CheckUnavailable>НЕ ПРОВЕРЕНО</SCP_CheckUnavailable>
+  <SCP_RequirementLine>[{0}] {1}</SCP_RequirementLine>
+  <SCP_HiddenRequirements>Некоторые процедуры ещё требуют исследования. Эта инструкция может быть неполной.</SCP_HiddenRequirements>
+  <SCP_GraceExplanation>Допустимая длительность непрерывного нарушения: {0}. Затем накапливается риск.</SCP_GraceExplanation>
+  <SCP_BreachDeadline>Непрерывное нарушение достигает предела срыва через {0}.</SCP_BreachDeadline>
+  <SCP_ReportRefresh>Здесь указаны условия на момент открытия окна. Для актуальной проверки нажмите «Условия содержания» у объекта.</SCP_ReportRefresh>
+  <SCP_RequirementsButton>Условия содержания</SCP_RequirementsButton>
+  <SCP_RequirementsButtonDesc>Открыть известные требования и их текущим состоянием.</SCP_RequirementsButtonDesc>
+  <SCP_RecoveryTitle>Содержание нельзя восстановить</SCP_RecoveryTitle>
+  <SCP_RequirementWalls>Стены по границе комнаты из материалов: {0}. Материал дверей не проверяется.</SCP_RequirementWalls>
+  <SCP_RequirementWallsDoors>Стены и двери по границе комнаты из материалов: {0}.</SCP_RequirementWallsDoors>
+  <SCP_ContainmentStatus>Содержание: {0}</SCP_ContainmentStatus>
+  <SCP_KnowledgeStatus>Изученность: {0}</SCP_KnowledgeStatus>
+  <SCP_Identification>Обозначение: {0}</SCP_Identification>
+  <SCP_Status_Unassessed>ожидание проверки</SCP_Status_Unassessed>
+  <SCP_Status_Contained>условия соблюдены</SCP_Status_Contained>
+  <SCP_Status_Grace>условия нарушены — требуется вмешательство</SCP_Status_Grace>
+  <SCP_ContainmentWarningTitle>Нарушение условий содержания</SCP_ContainmentWarningTitle>
+  <SCP_ContainmentWarningHint>Устраните нарушения условий содержания. Если не принять меры, через некоторое время произойдёт срыв содержания объекта.</SCP_ContainmentWarningHint>
+  <SCP_AlarmLight>Освещение сейчас {0}, требуется {1}–{2}. Добавьте светильник или восстановите питание.</SCP_AlarmLight>
+  <SCP_AlarmTemperature>Температура сейчас {0} °C, требуется {1}–{2} °C. Настройте отопление или охлаждение.</SCP_AlarmTemperature>
+  <SCP_AlarmPower>На пост не поступает питание. Проверьте сеть, генератор и выключатель.</SCP_AlarmPower>
+  <SCP_AlarmObservers>Наблюдателей сейчас {0} из {1}. Назначьте зрячих сотрудников с обзором объекта и друг друга.</SCP_AlarmObservers>
+  <SCP_AlarmRoom>Посту нужна замкнутая комната от {0} клеток. Крыша обязательна: {1}. Проверьте стены и крышу.</SCP_AlarmRoom>
+  <SCP_AlarmDoor>Проверьте тип двери камеры и закройте её.</SCP_AlarmDoor>
+  <SCP_Status_AtRisk>нарушение — нарастание риска</SCP_Status_AtRisk>
+  <SCP_Status_Breached>нарушение условий содержания</SCP_Status_Breached>
+  <SCP_Knowledge_Unknown>неизвестно</SCP_Knowledge_Unknown>
+  <SCP_Knowledge_Observed>наблюдался</SCP_Knowledge_Observed>
+  <SCP_Knowledge_PartiallyDocumented>частично задокументирован</SCP_Knowledge_PartiallyDocumented>
+  <SCP_Knowledge_Documented>задокументирован</SCP_Knowledge_Documented>
+  <SCP_Risk>Накопленный риск: {0}; непрерывное нарушение: {1} тиков</SCP_Risk>
+  <SCP_BreachCount>Зафиксировано нарушений содержания: {0}</SCP_BreachCount>
+  <SCP_AwaitingCheck>Ожидание следующей проверки условий содержания.</SCP_AwaitingCheck>
+  <SCP_RequirementsMet>Все проверяемые условия соблюдены.</SCP_RequirementsMet>
+  <SCP_FailedRequirement>Не выполнено: {0}</SCP_FailedRequirement>
+  <SCP_RequirementsUnknown>Подробные условия содержания ещё не задокументированы.</SCP_RequirementsUnknown>
+  <SCP_RequirementRoom>Замкнутая комната от {0} клеток; полная крыша обязательна: {1}</SCP_RequirementRoom>
+  <SCP_RequirementTemperature>Температура от {0} до {1} °C</SCP_RequirementTemperature>
+  <SCP_RequirementLight>Освещённость от {0} до {1}</SCP_RequirementLight>
+  <SCP_RequirementPower>Потребитель электричества в стенде получает питание</SCP_RequirementPower>
+  <SCP_Yes>да</SCP_Yes><SCP_No>нет</SCP_No>
+  <SCP_MissingDefinition>Не найдено описание аномалии. Проверьте журнал ошибок.</SCP_MissingDefinition>
+  <SCP_BreachTitle>Нарушение условий содержания</SCP_BreachTitle>
+  <SCP_BreachBody>{0}: зафиксирован срыв содержания. Тестовый стенд отмечает нарушение, но не причиняет ущерба. Восстановите все условия и используйте команду восстановления в режиме разработчика.</SCP_BreachBody>
+  <SCP_DevDiscover>DEV: Обнаружить</SCP_DevDiscover>
+  <SCP_DevDiscoverDesc>Установить общую изученность этого типа аномалии на уровень «наблюдался».</SCP_DevDiscoverDesc>
+  <SCP_DevKnowledge>DEV: Повысить этап</SCP_DevKnowledge>
+  <SCP_DevKnowledgeDesc>Повысить изученность до следующего уровня, затем последовательно завершать три этапа экспериментов. За эксперименты начисляется доверие Фонда.</SCP_DevKnowledgeDesc>
+  <SCP_DevViolation>DEV: Нарушение</SCP_DevViolation>
+  <SCP_DevViolationDesc>Включить или отключить искусственное нарушение требования. Флаг сохраняется; отключите его перед восстановлением.</SCP_DevViolationDesc>
+  <SCP_DevBreach>DEV: Срыв содержания</SCP_DevBreach>
+  <SCP_DevBreachDesc>Однократно перевести объект в состояние срыва содержания и выполнить заданные эффекты.</SCP_DevBreachDesc>
+  <SCP_DevRecover>DEV: Восстановить</SCP_DevRecover>
+  <SCP_DevRecoverDesc>Сбросить риск и состояние срыва, только если реальные и искусственные требования соблюдены.</SCP_DevRecoverDesc>
+  <SCP_DebugViolationActive>DEV: включено искусственное нарушение требования.</SCP_DebugViolationActive>
+  <SCP_RecoveryDenied>Для восстановления стенд должен находиться на карте, все условия должны соблюдаться, а искусственное нарушение — быть отключено.</SCP_RecoveryDenied>
+  <SCP_SpawnDenied>Выберите пустую видимую проходимую клетку. Существующие объекты не заменяются.</SCP_SpawnDenied>
+  <SCP_NoCapturePost>Нельзя захватить: нужен свободный и доступный пост содержания.</SCP_NoCapturePost>
+  <SCP_ObserversCount>Наблюдателей на месте: {0} / {1}.</SCP_ObserversCount>
+  <SCP_ObserversRemoteCount>Удалённое наблюдение активно. Сотрудников непосредственно у поста: {0} / {1}.</SCP_ObserversRemoteCount>
+  <SCP_OperationalBlack>Объект на посту, условия соблюдены.</SCP_OperationalBlack>
+  <SCP_OperationalYellow>Объект на посту, но содержание требует восстановления.</SCP_OperationalYellow>
+  <SCP_OperationalRed>Объект покинул пост.</SCP_OperationalRed>
+  <SCP_Observer_Ready>засчитан</SCP_Observer_Ready>
+  <SCP_Observer_Unavailable>спит, повален или недоступен</SCP_Observer_Unavailable>
+  <SCP_Observer_Blind>не способен видеть</SCP_Observer_Blind>
+  <SCP_Observer_Moving>идёт; дождитесь прибытия</SCP_Observer_Moving>
+  <SCP_Observer_Busy>занят атакой или другим действием стойки</SCP_Observer_Busy>
+  <SCP_Observer_NoDuty>не назначен наблюдать и не призван на дежурство</SCP_Observer_NoDuty>
+  <SCP_Observer_TooFar>дальше 6 клеток</SCP_Observer_TooFar>
+  <SCP_Observer_Blocked>обзор статуи перекрыт</SCP_Observer_Blocked>
+  <SCP_Observer_Dark>свет на клетке статуи ниже 30%</SCP_Observer_Dark>
+  <SCP_ObserverNoPartner>видит статую, но не видит другого подходящего наблюдателя</SCP_ObserverNoPartner>
+  <SCP_ObserversHelp>Назначьте наблюдение/исследование либо призовите двух колонистов и остановите их в пределах видимости статуи и друг друга. Просто находиться рядом без призыва или задания недостаточно. Условия показаны на момент открытия: откройте окно снова после прибытия сотрудников.</SCP_ObserversHelp>
+  <SCP_CaptureGraceActive>Подготовьте камеру и сотрудников для наблюдения. Осталось {0}.</SCP_CaptureGraceActive>
+  <SCP_StudyWaiting>Ожидает соблюдения условий для исследования.</SCP_StudyWaiting>
+  <SCP_ObserveWorking>Наблюдает за объектом: дежурство без исследования.</SCP_ObserveWorking>
+  <SCP_TerminalEmpty>Список пуст. Посты появятся после постройки; объекты — после обнаружения.</SCP_TerminalEmpty>
+  <SCP_TerminalNone>никого</SCP_TerminalNone>
+  <SCP_TerminalNoMap>Откройте карту комплекса.</SCP_TerminalNoMap>
+  <SCP_TerminalRoomHint>Здесь проверяется камера на клетке поста. Сотрудники и требования самого объекта проверяются отдельно при содержании. Показаны только известные требования.</SCP_TerminalRoomHint>
+  <SCP_TerminalUncaptured>ещё не на содержании</SCP_TerminalUncaptured>
+  <SCP_TerminalStaff>Сотрудники у объекта:</SCP_TerminalStaff>
+  <SCP_TerminalOccupants>На содержании в этой комнате: {0}</SCP_TerminalOccupants>
+  <SCP_TerminalWorkHint>Дежурство удерживает объект под наблюдением. Исследование пополняет досье. Для смены позиции исследователя лучше иметь двух отдельных наблюдателей.</SCP_TerminalWorkHint>
+  <SCP_TerminalLocate>Показать на карте</SCP_TerminalLocate>
+  <SCP_TerminalHeading>Терминал Фонда — {0}</SCP_TerminalHeading>
+  <SCP_TerminalSystemName>ФОНД SCP // СЕТЬ СОДЕРЖАНИЯ</SCP_TerminalSystemName>
+  <SCP_TerminalOnline>КАНАЛ АКТИВЕН</SCP_TerminalOnline>
+  <SCP_TerminalRegistry>РЕЕСТР / ЗАПИСИ</SCP_TerminalRegistry>
+  <SCP_TerminalDossier>ДОСЬЕ / ДАННЫЕ</SCP_TerminalDossier>
+  <SCP_TerminalFooter>ЗАЩИЩЁННЫЙ КАНАЛ · ЛОКАЛЬНЫЙ УЗЕЛ</SCP_TerminalFooter>
+  <SCP_TerminalClose>Закрыть</SCP_TerminalClose>
+  <SCP_JournalButton>Журнал событий</SCP_JournalButton>
+  <SCP_FoundationArchiveTab>Архив Фонда</SCP_FoundationArchiveTab>
+  <SCP_FoundationArchiveEmpty>Архивных файлов пока нет. Новые записи появятся после расшифровки и сюжетных событий.</SCP_FoundationArchiveEmpty>
+  <SCP_JournalAppendix>Приложение {0}</SCP_JournalAppendix>
+  <SCP_JournalRecordTitle>Протокол событий — {0} — №{1}</SCP_JournalRecordTitle>
+  <SCP_JournalDay>День {0}</SCP_JournalDay>
+  <SCP_JournalEmpty>Событий пока нет. Новые записи появятся после действий с объектами и нарушений содержания.</SCP_JournalEmpty>
+  <SCP_JournalCaptured>Объект принят на пост содержания.</SCP_JournalCaptured>
+  <SCP_JournalRecovered>Условия содержания восстановлены.</SCP_JournalRecovered>
+  <SCP_JournalBreached>Произошёл срыв содержания. Проверьте пост и состояние объекта.</SCP_JournalBreached>
+  <SCP_Journal294Research>Исследование SCP-294 открыло уровень досье {0}.</SCP_Journal294Research>
+  <SCP_Journal294Dispensed>{0} получил запрос «{1}» из SCP-294.</SCP_Journal294Dispensed>
+  <SCP_Journal999Hug>SCP-999 обнял {0}; настроение колониста улучшилось.</SCP_Journal999Hug>
+  <SCP_DevMenuDesc>Открыть команды разработчика: обнаружение, изученность, нарушение, срыв и восстановление.</SCP_DevMenuDesc>
+  <SCP_TerminalRoomNotReady>камеру нужно подготовить</SCP_TerminalRoomNotReady>
+  <SCP_StudyMoving>Переходит на другую позицию для исследования.</SCP_StudyMoving>
+  <SCP_TerminalObjects>Объекты · {0}</SCP_TerminalObjects>
+  <SCP_TerminalTitle>Терминал</SCP_TerminalTitle>
+  <SCP_StudyWorking>Исследует объект: пополняет досье.</SCP_StudyWorking>
+  <SCP_TerminalOpenDesc>Открыть терминал Фонда: посты содержания, объекты, сотрудники, условия и досье.</SCP_TerminalOpenDesc>
+  <SCP_TerminalCarried>переносят</SCP_TerminalCarried>
+  <SCP_Status_Preparing>подготовка содержания</SCP_Status_Preparing>
+  <SCP_TerminalPosts>Посты · {0}</SCP_TerminalPosts>
+  <SCP_TerminalRoomReady>камера подходит по известным условиям</SCP_TerminalRoomReady>
+  <SCP_ObserveMoving>Идёт на позицию наблюдения.</SCP_ObserveMoving>
+  <SCP_ShiftNobody>Никого</SCP_ShiftNobody>
+  <SCP_ShiftAllDay>Все часы</SCP_ShiftAllDay>
+  <SCP_ShiftsButtonDesc>Назначить сотрудников и часы работы этого поста содержания.</SCP_ShiftsButtonDesc>
+  <SCP_ShiftResearcher>Исследователь</SCP_ShiftResearcher>
+  <SCP_ShiftValidate>Проверить расписание</SCP_ShiftValidate>
+  <SCP_ShiftAdd>Добавить смену</SCP_ShiftAdd>
+  <SCP_ShiftGaps>Не хватает назначенных наблюдателей для этого объекта в часы: {0}.</SCP_ShiftGaps>
+  <SCP_ShiftsEnable>Работать по расписанию этого поста</SCP_ShiftsEnable>
+  <SCP_ShiftWaitingRelief>Ожидает сменщика, продолжая наблюдение.</SCP_ShiftWaitingRelief>
+  <SCP_ShiftsHelp>В каждой смене два наблюдателя и один исследователь — третий слот не является третьим наблюдателем. Назначение сотрудника включает смены и необходимую работу, если она выключена. Часы отмечаются нажатием или протягиванием мыши.</SCP_ShiftsHelp>
+  <SCP_ShiftDelete>Удалить</SCP_ShiftDelete>
+  <SCP_ShiftObserverB>Наблюдатель 2</SCP_ShiftObserverB>
+  <SCP_ShiftUnbind>Снять закрепление</SCP_ShiftUnbind>
+  <SCP_ShiftClearHours>Очистить</SCP_ShiftClearHours>
+  <SCP_ShiftsButton>Смены</SCP_ShiftsButton>
+  <SCP_ShiftConflicts>Пересекающиеся назначения у сотрудников: {0}.</SCP_ShiftConflicts>
+  <SCP_ShiftRosterValid>По назначениям все 24 часа покрыты. Фактическое присутствие зависит от доступности сотрудников.</SCP_ShiftRosterValid>
+  <SCP_ShiftsHeading>Смены поста</SCP_ShiftsHeading>
+  <SCP_ShiftLocalHour>Местное время: {0}:00</SCP_ShiftLocalHour>
+  <SCP_ShiftNoObject>Объект за постом не закреплён.</SCP_ShiftNoObject>
+  <SCP_ShiftObserverA>Наблюдатель 1</SCP_ShiftObserverA>
+  <SCP_ShiftsWorkHint>«Включить смены и работу» активирует расписание и выключенные работы (приоритет 3); уже выставленные приоритеты сохраняются. Для преимущественного дежурства поставьте наблюдателям «SCP: наблюдение» = 1, исследователю «Исследование» = 1. Третий сотрудник не придёт после полного изучения объекта. Сон, голод, усталость и призыв не отменяются.</SCP_ShiftsWorkHint>
+  <SCP_ShiftChooseObject>Выбрать объект</SCP_ShiftChooseObject>
+  <SCP_ShiftBound>Закреплённый объект: {0}</SCP_ShiftBound>
+  <SCP_ShiftNumber>Смена {0}</SCP_ShiftNumber>
+  <SCP_ShiftCoverageHelp>Не все наблюдатели текущей смены находятся на месте. Проверьте назначения, доступность сотрудников, приоритеты работ и обзор. Предыдущая смена ждёт замены не больше получаса; сильный голод или усталость прекращают ожидание.</SCP_ShiftCoverageHelp>
+  <SCP_ShiftCurrent>Наблюдение: {0}, {1}. Исследование: {2}.</SCP_ShiftCurrent>
+  <SCP_ShiftAlreadyAssigned>уже назначен в этой смене</SCP_ShiftAlreadyAssigned>
+  <SCP_ShiftCoverageAlert>Не хватает дежурных SCP</SCP_ShiftCoverageAlert>
+  <SCP_ShiftsOff>Смены не включены: действует обычный выбор работы.</SCP_ShiftsOff>
+  <SCP_MoveToPostFirst>Сначала перенесите SCP к посту содержания. Наблюдение, изучение и восстановление доступны только на посту.</SCP_MoveToPostFirst>
+  <SCP_UnknownObject>Аномальный объект</SCP_UnknownObject>
+  <SCP_Clearance>Уровень допуска: {0}</SCP_Clearance>
+  <SCP_ClearanceZeroHint>Доступны только условия содержания. Для получения информации захватите объект и обеспечьте его содержание на посту. Дальнейшие сведения открываются исследованием.</SCP_ClearanceZeroHint>
+  <SCP_ClearanceZeroAwayHint>Объект ещё не изъят. Доставьте его на домашнюю карту колонии: пост содержания можно построить только там. После закрепления на посту откроются материалы для исследования.</SCP_ClearanceZeroAwayHint>
+  <SCP_ObjectDiscoveredTitle>Обнаружен аномальный объект</SCP_ObjectDiscoveredTitle>
+  <SCP_ObjectDiscoveredBody>На карте обнаружен аномальный объект. В терминале Фонда создана карточка с уровнем допуска 0. Пока доступны только условия содержания. Подготовьте камеру и пост, затем перенесите туда объект.</SCP_ObjectDiscoveredBody>
+  <SCP_MoveToPostButton>К посту</SCP_MoveToPostButton>
+  <SCP_PostOnlyAtHome>Пост содержания можно строить только на домашней карте колонии.</SCP_PostOnlyAtHome>
+  <SCP_MoveToPostDesc>Выберите сотрудника для переноса аномального объекта к ближайшему доступному посту содержания.</SCP_MoveToPostDesc>
+  <SCP_NoCarrierOrPost>Нет доступного сотрудника или свободного достижимого поста содержания.</SCP_NoCarrierOrPost>
+  <SCP_RemoteAlternative>Альтернатива: объект на связанном посту автоматически подключается к консоли. Запитанная камера должна видеть пост, а дежурный — находиться у консоли.</SCP_RemoteAlternative>
+  <SCP_MonitorAssign>Объекты</SCP_MonitorAssign>
+  <SCP_MonitorAssignDesc>Выберите до четырёх объектов. Повторное нажатие снимает назначение. Запитанная камера должна находиться в той же комнате не дальше 12 клеток и видеть объект на посту.</SCP_MonitorAssignDesc>
+  <SCP_MonitorFull>Нет свободных каналов наблюдения. Запитайте ещё один подключённый монитор или снимите назначение.</SCP_MonitorFull>
+  <SCP_MonitorNoObjects>Нет обнаруженных объектов, допускающих видеонаблюдение.</SCP_MonitorNoObjects>
+  <SCP_MonitorWork>Дежурить</SCP_MonitorWork>
+  <SCP_MonitorUnavailable>Нужны питание, пост в зоне работающей камеры, свободная клетка оператора и бодрствующий сотрудник.</SCP_MonitorUnavailable>
+  <SCP_MonitorSummary>Оператор: {0}. Автоматически подключено объектов: {1} / {2}.</SCP_MonitorSummary>
+  <SCP_MonitorOperatorFlag>{0} Оператор находится у консоли</SCP_MonitorOperatorFlag>
+  <SCP_MonitorCameraFlag>{0} Камера видит пост объекта «{1}»</SCP_MonitorCameraFlag>
+  <SCP_MonitorAutomaticEmpty>На связанных постах нет объектов, допускающих удалённое наблюдение.</SCP_MonitorAutomaticEmpty>
+  <SCP_MonitorDisplays>Запитанных подключённых мониторов: {0}. Каждый добавляет каналов: {1}.</SCP_MonitorDisplays>
+  <SCP_MonitorNoChannel>Назначен, но свободного запитанного канала наблюдения нет</SCP_MonitorNoChannel>
+  <SCP_DisplayLinked>Подключён к консоли наблюдения: +{0} канала</SCP_DisplayLinked>
+  <SCP_DisplayNoPower>Подключён к консоли наблюдения, но обесточен: +0 из {0} каналов</SCP_DisplayNoPower>
+  <SCP_DisplayUnlinked>В той же комнате нет консоли наблюдения в радиусе {0} клеток</SCP_DisplayUnlinked>
+  <SCP_MonitorLive>Видеонаблюдение активно</SCP_MonitorLive>
+  <SCP_MonitorLost>Видеонаблюдение недоступно</SCP_MonitorLost>
+  <SCP_MonitorNoPower>Нет питания консоли</SCP_MonitorNoPower>
+  <SCP_MonitorNoOperator>Нет дежурного у консоли</SCP_MonitorNoOperator>
+  <SCP_MonitorNoCamera>Нет работающей камеры с обзором поста</SCP_MonitorNoCamera>
+  <SCP_MonitorDark>Недостаточно света у объекта</SCP_MonitorDark>
+  <SCP_MonitorOffPost>Объект вне своего поста</SCP_MonitorOffPost>
+  <SCP_SensorNoLinks>На карте нет датчиков содержания.</SCP_SensorNoLinks>
+  <SCP_SensorMissingLink>Выберите доступные пост и консоль на этой карте.</SCP_SensorMissingLink>
+  <SCP_SensorNoPower>Датчик без питания. Актуальных показаний нет.</SCP_SensorNoPower>
+  <SCP_SensorConsoleOff>Консоль без питания. Телеметрия недоступна.</SCP_SensorConsoleOff>
+  <SCP_SensorNoObject>На назначенном посту нет объекта.</SCP_SensorNoObject>
+  <SCP_SensorWrongRoom>Датчик и объект должны находиться в одной замкнутой камере с полной крышей.</SCP_SensorWrongRoom>
+  <SCP_SensorReading>[{0}] {1}. Сейчас: {2}</SCP_SensorReading>
+  <SCP_SensorNoParameters>В этом протоколе нет доступных датчику требований температуры, света или питания.</SCP_SensorNoParameters>
+  <SCP_SensorLinks>Датчик #{0} • Пост {1} • Консоль {2}</SCP_SensorLinks>
+  <SCP_SensorRestored>Датчик содержания: восстановлено</SCP_SensorRestored>
+  <SCP_SensorWarning>Датчик содержания: требуется внимание</SCP_SensorWarning>
+  <SCP_SensorPost>Пост содержания</SCP_SensorPost>
+  <SCP_SensorConsole>Подключить консоль</SCP_SensorConsole>
+  <SCP_SensorDisconnect>Отключить привязку</SCP_SensorDisconnect>
+  <SCP_SensorSetup>Назначьте пост и консоль. Один датчик на пост. Разместите внутри камеры; датчику и консоли нужно питание.</SCP_SensorSetup>
+  <SCP_SensorPanel>Датчики</SCP_SensorPanel>
+  <SCP_SensorPanelHint>Автономные датчики камер на этой карте. Привязка к консоли и дежурный не нужны; датчики не заменяют наблюдение.</SCP_SensorPanelHint>
+  <SCP_SensorNoRoomPost>В этой камере нет поста содержания.</SCP_SensorNoRoomPost>
+  <SCP_SensorMultiplePosts>В комнате несколько постов. Для однозначной автоматической привязки оставьте один пост в камере.</SCP_SensorMultiplePosts>
+  <SCP_SensorAutoHeading>Датчик камеры — автоматическая привязка к посту</SCP_SensorAutoHeading>
+  <SCP_CameraNeedsWall>Нет стены со стороны крепления. Переставьте камеру к стене.</SCP_CameraNeedsWall>
+  <SCP_CameraNoPower>Камера без питания.</SCP_CameraNoPower>
+  <SCP_CameraReady>Камера закреплена и получает питание. Она охватывает видимые посты той же комнаты в радиусе 12; поворот влияет только на внешний вид. Объект на таком посту автоматически подключается к консоли.</SCP_CameraReady>
+  <SCP_MonitorDutyHint>Активная назначенная смена выдаётся напрямую и имеет приоритет над отдыхом, медитацией и обычной работой. Сон, критический голод или усталость, призыв и приказ игрока могут её прервать; после этого сотрудник вернётся автоматически.</SCP_MonitorDutyHint>
+  <SCP_MonitorRestored>Дежурство у консоли восстановлено</SCP_MonitorRestored>
+  <SCP_MonitorInterrupted>Консоль: наблюдение прервано</SCP_MonitorInterrupted>
+  <SCP_ConsoleShifts>Смены консоли</SCP_ConsoleShifts>
+  <SCP_ConsoleCurrentShift>Сейчас по расписанию: {0}</SCP_ConsoleCurrentShift>
+  <SCP_ConsoleRosterHelp>Назначьте сотрудников и часы, затем включите смены. Включите работу наблюдения SCP и бодрствование в режиме дня. Сменщик приходит за полчаса; рядом с оператором нужна свободная клетка. Уходящий ждёт до получаса, если ему не нужен перерыв.</SCP_ConsoleRosterHelp>
+  <SCP_ConsoleReliefMissing>Смена закончилась; сменщик ещё не пришёл.</SCP_ConsoleReliefMissing>
+  <SCP_ConsoleWaiting>Ожидает передачи смены рядом с консолью.</SCP_ConsoleWaiting>
+  <SCP_ConsoleWorking>Дежурит за консолью наблюдения.</SCP_ConsoleWorking>
+  <SCP_MonitorUnassigned>Объект не назначен этой консоли.</SCP_MonitorUnassigned>
+  <SCP_MonitorProtocol>Протокол не разрешает наблюдение через камеры.</SCP_MonitorProtocol>
+  <SCP_MonitorDisabled>Наблюдение за объектом отключено.</SCP_MonitorDisabled>
+  <SCP_ContactButton>Связь с Фондом</SCP_ContactButton>
+  <SCP_999DisplayName>SCP-999 — Щекоточный монстр</SCP_999DisplayName>
+  <SCP_650DisplayName>SCP-650 — Чёрная статуя</SCP_650DisplayName>
+  <SCP_ContactHelp>После обнаружения Чёрной статуи с помощью терминала можно связаться с Фондом. Отправьте первое сообщение; ответ ожидается через 6 часов. Архив доступен и без питания.</SCP_ContactHelp>
+  <SCP_ContactOnline>Канал связи доступен.</SCP_ContactOnline>
+  <SCP_ContactUnavailable>Канал связи недоступен. Сначала обнаружьте неизвестный объект, затем сообщите о нём Фонду.</SCP_ContactUnavailable>
+  <SCP_ContactChannel>ЗАЩИЩЁННАЯ ПЕРЕПИСКА // ЛОКАЛЬНЫЙ УЗЕЛ</SCP_ContactChannel>
+  <SCP_ContactLinkOnline>В СЕТИ</SCP_ContactLinkOnline>
+  <SCP_ContactLinkOffline>НЕТ СВЯЗИ</SCP_ContactLinkOffline>
+  <SCP_ContactProtocol>СИСТЕМА</SCP_ContactProtocol>
+  <SCP_ContactFromColony>ВАШЕ ПОСЕЛЕНИЕ</SCP_ContactFromColony>
+  <SCP_ContactOffline>Для передачи нужен запитанный терминал связи в этом поселении. Архив доступен для чтения.</SCP_ContactOffline>
+  <SCP_ContactStage_None>Канал готов. Отправьте первое сообщение Фонду.</SCP_ContactStage_None>
+  <SCP_ContactStage_AwaitingReply>Запрос отправлен. Ожидаем ответ.</SCP_ContactStage_AwaitingReply>
+  <SCP_ContactStage_ReplyReceived>Получено обращение O5-7. Подтвердите получение.</SCP_ContactStage_ReplyReceived>
+  <SCP_ContactStage_Established>Контакт установлен. Канал зарегистрирован.</SCP_ContactStage_Established>
+  <SCP_ContactRequest>Отправить запрос связи</SCP_ContactRequest>
+  <SCP_ContactConfirm>Подтвердить</SCP_ContactConfirm>
+  <SCP_ContactRemaining>До ожидаемого ответа: {0} часа.</SCP_ContactRemaining>
+  <SCP_ContactAwaitingLink>Ответ будет принят при наличии работающего терминала в одном из поселений.</SCP_ContactAwaitingLink>
+  <SCP_ContactWhen>День {0}, {1}:00</SCP_ContactWhen>
+  <SCP_ContactOutgoing>Исходящее сообщение</SCP_ContactOutgoing>
+  <SCP_ContactRequestText>На связи поселение. Мы обнаружили аномальный объект — чёрную статую. Запрашиваем связь с Фондом и инструкции по дальнейшим действиям.</SCP_ContactRequestText>
+  <SCP_ContactReplyTitle>O5-7 «Зелёная»</SCP_ContactReplyTitle>
+  <SCP_ContactReplyNotice>На терминал поступило обращение O5-7 «Зелёной». Откройте «Связь с Фондом», чтобы прочитать его и ознакомиться с первым поручением.</SCP_ContactReplyNotice>
+  <SCP_ContactReplyText>На связи O5-7. Можете называть меня Зелёной.\n\nМы получили ваше сообщение о Чёрной статуе. Чтобы помощь вашему поселению была целесообразной, вы должны доказать, что способны обеспечивать содержание аномальных объектов.\n\nПросим принять SCP-650 на передержку: перенесите статую на пост, подготовьте камеру и организуйте наблюдение. Накопите 24 часа соблюдения условий, затем передайте подтверждение через терминал. В качестве первой помощи Фонд предоставит 10 медикаментов, 10 компонентов и 5 продвинутых компонентов.\n\nПодтвердите согласие. Объект на посту будет учтён автоматически.</SCP_ContactReplyText>
+  <SCP_ContactConfirmText>Согласны принять объект на передержку и обеспечить требуемые условия.</SCP_ContactConfirmText>
+  <SCP_ContactEstablishedText>Согласие зарегистрировано. Ход передержки доступен в разделе «Поручение Фонда».</SCP_ContactEstablishedText>
+  <SCP_AssignmentTitle>Поручение O5-7: подтвердить способность к содержанию</SCP_AssignmentTitle>
+  <SCP_AssignmentButton>Поручение Фонда</SCP_AssignmentButton>
+  <SCP_AssignmentInstructions>Подтвердите согласие принять Чёрную статую на передержку, затем перенесите её на пост и накопите 24 часа соблюдения условий. Статуя на посту определяется автоматически. При нарушении или переносе отсчёт приостанавливается и продолжится после восстановления условий.\n\nПосле суток отправьте подтверждение через запитанный терминал и получите 10 медикаментов, 10 компонентов и 5 продвинутых компонентов. Награда выдаётся один раз; срока провала нет. Во время содержания питание самого терминала не требуется.</SCP_AssignmentInstructions>
+  <SCP_AssignmentNeedsContact>Сначала подтвердите получение обращения O5-7.</SCP_AssignmentNeedsContact>
+  <SCP_AssignmentStage_Available>Подтвердите согласие принять статую на передержку.</SCP_AssignmentStage_Available>
+  <SCP_AssignmentStage_Active>Поручение принято.</SCP_AssignmentStage_Active>
+  <SCP_AssignmentStage_Ready>Сутки содержания подтверждены. Можно отправить результат.</SCP_AssignmentStage_Ready>
+  <SCP_AssignmentStage_Completed>O5-7 приняла подтверждение. Награда доставлена к терминалу.</SCP_AssignmentStage_Completed>
+  <SCP_AssignmentSubject>Назначенный объект: {0}</SCP_AssignmentSubject>
+  <SCP_AssignmentProgress>Засчитанное содержание: {0} из 24 часов.</SCP_AssignmentProgress>
+  <SCP_AssignmentCounting>Условия соблюдены, время засчитывается.</SCP_AssignmentCounting>
+  <SCP_AssignmentWaiting>Ожидается статуя на посту с соблюдёнными условиями.</SCP_AssignmentWaiting>
+  <SCP_AssignmentMissing>Ожидается Чёрная статуя на посту содержания.</SCP_AssignmentMissing>
+  <SCP_AssignmentChoose>Выбрать статую — принять поручение / начать заново</SCP_AssignmentChoose>
+  <SCP_AssignmentNoObjects>Нет захваченной Чёрной статуи на посту в этом поселении.</SCP_AssignmentNoObjects>
+  <SCP_AssignmentSubmit>Отправить подтверждение и получить награду</SCP_AssignmentSubmit>
+  <SCP_AssignmentReadyTitle>Первое поручение Фонда выполнено</SCP_AssignmentReadyTitle>
+  <SCP_AssignmentReadyBody>Суммарно сутки содержания Чёрной статуи засчитаны. Отправьте подтверждение O5-7 через «Связь с Фондом» → «Поручение Фонда».</SCP_AssignmentReadyBody>
+  <SCP_AssignmentNoSpace>Рядом с терминалом нет места для трёх стопок награды. Освободите место и повторите отправку.</SCP_AssignmentNoSpace>
+  <SCP_AssignmentDelivered>Помощь Фонда: 10 медикаментов, 10 компонентов и 5 продвинутых компонентов доставлены к терминалу.</SCP_AssignmentDelivered>
+  <SCP_ContactNeedsStatue>Сначала обнаружьте Чёрную статую. После этого можно отправить сообщение Фонду.</SCP_ContactNeedsStatue>
+  <SCP_TerminalHintTitle>Терминал связи готов</SCP_TerminalHintTitle>
+  <SCP_TerminalHintBody>Терминал готов к приёму сигнала. Если обнаружите аномальный объект, немедленно сообщите Фонду через раздел «Связь с Фондом». Для передачи и приёма требуется питание.</SCP_TerminalHintBody>
+  <SCP_DutyDisabled>Смены выключены</SCP_DutyDisabled>
+  <SCP_DutyUnavailable>Сотрудник недоступен</SCP_DutyUnavailable>
+  <SCP_DutyDrafted>Сотрудник призван</SCP_DutyDrafted>
+  <SCP_DutyIncapable>Не может выполнять работу</SCP_DutyIncapable>
+  <SCP_DutyWorkDisabled>Работа выключена во вкладке «Работа»</SCP_DutyWorkDisabled>
+  <SCP_DutyRest>Сон, голод или усталость</SCP_DutyRest>
+  <SCP_DutyNotTime>Сейчас не его смена</SCP_DutyNotTime>
+  <SCP_DutyConflict>Назначен на другую роль или пост</SCP_DutyConflict>
+  <SCP_DutyStudyDone>Объект уже полностью изучен</SCP_DutyStudyDone>
+  <SCP_DutyObjectDisabled>Работа у объекта выключена</SCP_DutyObjectDisabled>
+  <SCP_DutyComing>Идёт к посту</SCP_DutyComing>
+  <SCP_DutyWorking>На посту</SCP_DutyWorking>
+  <SCP_DutyRemote>Наблюдает оператор камер</SCP_DutyRemote>
+  <SCP_DutyReserved>Объект занят другими сотрудниками</SCP_DutyReserved>
+  <SCP_DutyQueued>Ожидает работы, приоритет {0}</SCP_DutyQueued>
+  <SCP_DutyEnableRoster>Включить смены и работу</SCP_DutyEnableRoster>
+  <SCP_RestoreWorking>Восстанавливает содержание объекта.</SCP_RestoreWorking>
+  <SCP_SupportButton>Запросы Фонду</SCP_SupportButton>
+  <SCP_SupportTitle>Канал поддержки Фонда</SCP_SupportTitle>
+  <SCP_SupportLocked>Канал запросов откроется после выполнения первого задания O5-7 и отправки отчёта через терминал.</SCP_SupportLocked>
+  <SCP_SupportLockedHeader>КАНАЛ ЗАПРОСОВ ЗАКРЫТ</SCP_SupportLockedHeader>
+  <SCP_SupportTrust>Доверие Фонда: {0}/100</SCP_SupportTrust>
+  <SCP_SupportTrustShort>Доверие Фонда: {0}/100</SCP_SupportTrustShort>
+  <SCP_SupportTrustGain>Объектов в стабильном содержании: {0}. Каждый объект приносит 1 пункт доверия за каждые суммарные 12 часов исправных условий.</SCP_SupportTrustGain>
+  <SCP_SupportSupplyTitle>Строительная поставка</SCP_SupportSupplyTitle>
+  <SCP_SupportSupplyDesc>500 стали, 300 бетонных блоков и 10 компонентов. Груз прибывает в капсуле к торговой точке поселения.</SCP_SupportSupplyDesc>
+  <SCP_SupportSupplyCost>Стоимость: {0} доверия. Повторный запрос будет доступен через сутки.</SCP_SupportSupplyCost>
+  <SCP_SupportRequest>Запросить поставку</SCP_SupportRequest>
+  <SCP_SupportOffline>Нужен запитанный терминал связи Фонда.</SCP_SupportOffline>
+  <SCP_SupportInsufficient>Для запроса требуется {0} доверия.</SCP_SupportInsufficient>
+  <SCP_SupportCooldown>Повторный запрос будет доступен через {0} дн.</SCP_SupportCooldown>
+  <SCP_SupportDeliveredTitle>Поставка Фонда прибыла</SCP_SupportDeliveredTitle>
+  <SCP_SupportDeliveredBody>Фонд доставил 500 стали, 300 бетонных блоков и 10 компонентов. Потрачено 10 доверия.</SCP_SupportDeliveredBody>
+  <SCP_SupportSecurityTitle>Запрос охраны</SCP_SupportSecurityTitle>
+  <SCP_SupportSecurityPending>Пока недоступно: требуется оформить договор поддержки и правила высадки группы безопасности.</SCP_SupportSecurityPending>
+  <SCP_SupportSecurityDesc>Запросить семь бойцов МОГ Ну-7 «Удар молота». Нужен допуск 3. Отряд помогает одни сутки, стоит 30 доверия и восстанавливается 15 дней.</SCP_SupportSecurityDesc>
+  <SCP_SupportSecurityRequest>Запросить Ну-7</SCP_SupportSecurityRequest>
+  <SCP_SupportSecurityNoFaction>В этом мире нет фракции Фонда. Требуется мир, созданный после добавления фракции.</SCP_SupportSecurityNoFaction>
+  <SCP_SupportSecurityHostile>Фонд враждебен и не станет высаживать персонал.</SCP_SupportSecurityHostile>
+  <SCP_SupportSecurityClearance>На этой карте нужен сотрудник с допуском {0}. Максимальный доступный уровень: {1}.</SCP_SupportSecurityClearance>
+  <SCP_SupportSecurityCooldown>Ну-7 будет доступна через {0} дн.</SCP_SupportSecurityCooldown>
+  <SCP_SupportSecurityUnavailable>Определение персонала Ну-7 недоступно.</SCP_SupportSecurityUnavailable>
+  <SCP_SupportSecurityReady>Готово: бойцов — {1}, стоимость — {0} доверия.</SCP_SupportSecurityReady>
+  <SCP_SupportSecurityRelationReason>Ответ Фонда на нападение на контрактный объект содержания</SCP_SupportSecurityRelationReason>
+  <SCP_SupportSecurityArrivedTitle>Прибыла МОГ Ну-7 «Удар молота»</SCP_SupportSecurityArrivedTitle>
+  <SCP_SupportSecurityArrivedBody>На карту вошло отделение Ну-7 из семи бойцов: трое с HK416, двое со SPAS-12, пулемётчик с M249 и специалист с ЭМИ-винтовкой. Все носят тактическую броню Ну-7. Они помогают колонии одни сутки, затем покидают карту.</SCP_SupportSecurityArrivedBody>
+  <SCP_SupportEpsilonDesc>Запросить двенадцать тяжеловооружённых бойцов МОГ Эпсилон-11 «Девятихвостая лиса». Нужен сотрудник с допуском 4. Стоимость — 50 доверия, восстановление — 20 дней.</SCP_SupportEpsilonDesc>
+  <SCP_SupportEpsilonRequest>Запросить Эпсилон-11</SCP_SupportEpsilonRequest>
+  <SCP_SupportEpsilonCooldown>Эпсилон-11 будет доступна через {0} дн.</SCP_SupportEpsilonCooldown>
+  <SCP_SupportEpsilonUnavailable>Определения персонала Эпсилон-11 недоступны.</SCP_SupportEpsilonUnavailable>
+  <SCP_SupportEpsilonReady>Готово: бойцов — {1}, стоимость — {0} доверия.</SCP_SupportEpsilonReady>
+  <SCP_SupportEpsilonArrivedTitle>Прибыла МОГ Эпсилон-11 «Девятихвостая лиса»</SCP_SupportEpsilonArrivedTitle>
+  <SCP_SupportEpsilonArrivedBody>На карту вошла группа Эпсилон-11 из {0} бойцов: четыре с HK416, два со SPAS-12, три с M249 и три с усиленными ЭМИ-винтовками. Группа помогает колонии одни сутки, затем покидает карту.</SCP_SupportEpsilonArrivedBody>
+  <SCP_SupportAnomalyTitle>Закрытый груз Фонда</SCP_SupportAnomalyTitle>
+  <SCP_SupportAnomalyPending>Пока недоступно: этот запрос откроется вместе со следующим готовым SCP.</SCP_SupportAnomalyPending>
+  <SCP_EmergencyPowerCharge>Аварийный заряд: {0}</SCP_EmergencyPowerCharge>
+  <SCP_EmergencyPowerActive>Солнечная вспышка: резерв питает выбранные приборы подключённой электросети.</SCP_EmergencyPowerActive>
+  <SCP_EmergencyPowerMode>Режим резерва: {0}.</SCP_EmergencyPowerMode>
+  <SCP_EmergencyPowerModeFoundation>Оборудование Фонда</SCP_EmergencyPowerModeFoundation>
+  <SCP_EmergencyPowerModeAll>Все электроприборы</SCP_EmergencyPowerModeAll>
+  <SCP_EmergencyPowerModeDesc>Переключить резервное питание при солнечной вспышке: только оборудование Фонда или все электроприборы в той же подключённой электросети. Комнаты значения не имеют. Отключённые, сломанные и поражённые ЭМИ приборы не включаются; генераторы и другие аварийные аккумуляторы не питаются от резерва.</SCP_EmergencyPowerModeDesc>
+  <SCP_EmergencyPowerDisconnected>Нет подключения к электросети. Аварийный заряд сохраняется.</SCP_EmergencyPowerDisconnected>
+  <SCP_EmergencyPowerOff>Аккумулятор выключен. Аварийный заряд сохраняется.</SCP_EmergencyPowerOff>
+  <SCP_EmergencyPowerEmpty>Солнечная вспышка: аварийный заряд исчерпан.</SCP_EmergencyPowerEmpty>
+  <SCP_EmergencyPowerCharging>Резерв заряжается от основной сети.</SCP_EmergencyPowerCharging>
+  <SCP_EmergencyPowerReady>Резерв полностью заряжен. Поддерживающее потребление: 50 Вт.</SCP_EmergencyPowerReady>
+  <SCP_RequirementDoor>В камере должна быть дверь одного из типов: {0}.</SCP_RequirementDoor>
+  <SCP_RequirementClosedDoor>Все двери камеры должны относиться к типу: {0} и оставаться закрытыми. Краткое автоматическое открытие для прохода допустимо.</SCP_RequirementClosedDoor>
+  <SCP_055Observed>Уровень допуска 1.\n\nSCP-055 — Keter. «Секрет, который сам себя хранит». Информация о внешнем виде, природе, поведении и происхождении SCP-055 засекречивается сама собой.</SCP_055Observed>
+  <SCP_055Partial>Уровень допуска 2.\n\nSCP-055 является антимемом: сведения о нём исчезают из памяти вскоре после наблюдения.\n\nПояснение:\n• Неизвестно, как Зона 19 заполучила SCP-055.\n• Неизвестно, когда и кем был добыт SCP-055.\n• Внешний вид SCP-055 неизвестен. Объект не является неописуемым или невидимым: сотрудники могут входить в хранилище, наблюдать его, делать записи, зарисовки, фотографии, аудио- и видеозаписи. Однако информация о внешнем виде вскоре «вытекает» из человеческого разума. Сотрудники не могут сосредоточиться на последующем описании и теряют к нему интерес. Даже имея фотографию, они не способны удержать в памяти её содержание. Операторы видеонаблюдения после полной смены крайне утомлены и не помнят прошедших часов.\n• Неизвестно, кто одобрил сооружение хранилища, почему оно построено именно так и какой цели служат условия содержания.\n• Хотя хранилище легко доступно, персонал Зоны 19 не может вспомнить о существовании SCP-055.\n\nВсе эти факты периодически открываются заново, обычно случайными читателями файла, что вызывает сильную тревогу. Через несколько минут тревога проходит, потому что о происшествии забывают. Собрано много научных данных о SCP-055, но изучить их невозможно.</SCP_055Partial>
+  <SCP_055Documented>Уровень допуска 3.\n\nSCP-055 может представлять значительную физическую угрозу и, возможно, уже стал причиной гибели сотен сотрудников, хотя никто не способен это подтвердить. Он определённо представляет меметическую и ментальную угрозу; на этом основании объекту присвоен класс Keter.\n\nИсследовательская группа подтвердила: отрицательные сведения удерживаются лучше положительных. Можно повторно вывести, что SCP-055 существует и что он не является сферой, хотя вспомнить сам объект невозможно.\n\nБез повторного исследования подробные сведения распадаются через двадцать часов, возвращая досье к уровню допуска 1.</SCP_055Documented>
+  <SCP_055Interview>Выдержка из разбора операции с персоналом:\n\n{0}: Итак, я задам вам несколько вопросов о пятьдесят пятом.\n\n{1}: Пятьдесят каком?\n\n{0}: Объект SCP-055. Тот, который вы только что осмотрели.\n\n{1}: Гм, я не понимаю, о чём вы. Не думаю, что у нас вообще есть пятьдесят пятый.\n\n{0}: Ладно, тогда расскажите мне, что вы делали последние два часа.\n\n{1}: Что? Я… не знаю.\n\n{0}: Помните ли вы, что мы сошлись на том, что он не сферической формы?\n\n{1}: А, точно! Он совсем не круглый! Объект пятьдесят пять не круглый!\n\n{0}: Теперь-то вы вспомнили?\n\n{1}: Не совсем. Не знаю, что это такое, но что-то там есть. Что-то, что нельзя запомнить. И оно не сферическое.\n\n{0}: Минутку, что именно не сферическое?\n\n{1}: Объект пятьдесят пять.\n\n{0}: Объект чего?\n\n{1}: Помните, мы условились, что что-то не сферическое?\n\n{0}: Ага, точно.</SCP_055Interview>
+  <SCP_055FallbackInterviewer>д-р Хьюз</SCP_055FallbackInterviewer>
+  <SCP_055FallbackSubject>сотрудник ███████</SCP_055FallbackSubject>
+  <SCP_055ForgottenTitle>Сведения о SCP-055 утрачены</SCP_055ForgottenTitle>
+  <SCP_055ForgottenBody>Прошло двадцать часов без исследования. Подробные сведения о SCP-055 утрачены; досье вернулось к уровню допуска 1.</SCP_055ForgottenBody>
+  <SCP_055Breach>{0}: протокол содержания нарушен.</SCP_055Breach>
+  <SCP_SupportAnomalyCost>Стоимость: {0} доверия. Требуется подготовленная резервная камера.</SCP_SupportAnomalyCost>
+  <SCP_SupportAnomalyRequest>Принять закрытый груз</SCP_SupportAnomalyRequest>
+  <SCP_SupportAnomalyDone>Поставка оформлена. Разместите полученный ящик на посту содержания.</SCP_SupportAnomalyDone>
+  <SCP_SupportAnomalyRequested>Фонд подтвердил отправку закрытого груза.</SCP_SupportAnomalyRequested>
+  <SCP_DoorAccessEnable>Ограничить доступ</SCP_DoorAccessEnable>
+  <SCP_DoorAccessDisable>Снять ограничение</SCP_DoorAccessDisable>
+  <SCP_DoorAccessToggleDesc>Разрешить открывать эту дверь только выбранным сотрудникам Фонда. При первом включении текущие колонисты автоматически добавляются в список.</SCP_DoorAccessToggleDesc>
+  <SCP_DoorAccessRoster>Допущенные сотрудники</SCP_DoorAccessRoster>
+  <SCP_DoorAccessRosterDesc>Выберите колонистов, которым разрешено открывать эту дверь Фонда.</SCP_DoorAccessRosterDesc>
+  <SCP_DoorAccessWindowDesc>Эту дверь смогут открывать только отмеченные колонисты. Для временного прохода спасателей и другого персонала включите аварийный доступ.</SCP_DoorAccessWindowDesc>
+  <SCP_DoorAccessAllowAll>Разрешить всем</SCP_DoorAccessAllowAll>
+  <SCP_DoorAccessClear>Очистить список</SCP_DoorAccessClear>
+  <SCP_DoorAccessNoColonists>На этой карте сейчас нет доступных колонистов.</SCP_DoorAccessNoColonists>
+  <SCP_DoorEmergencyOpen>Аварийный доступ</SCP_DoorEmergencyOpen>
+  <SCP_DoorEmergencyClose>Закрыть аварийный доступ</SCP_DoorEmergencyClose>
+  <SCP_DoorEmergencyDesc>Временно разрешает проход всем, кто способен пользоваться обычной дверью. Список допущенных сотрудников сохраняется.</SCP_DoorEmergencyDesc>
+  <SCP_DoorAccessUnrestricted>Доступ: свободный</SCP_DoorAccessUnrestricted>
+  <SCP_DoorAccessRestricted>Доступ: допущено сотрудников — {0}</SCP_DoorAccessRestricted>
+  <SCP_DoorAccessEmergency>Доступ: открыт аварийный проход</SCP_DoorAccessEmergency>
+  <SCP_MonitorGuideTitle>Как запустить дистанционное наблюдение</SCP_MonitorGuideTitle>
+  <SCP_MonitorGuideBody>Дистанционное наблюдение заменяет сотрудников рядом с SCP только тогда, когда работает вся цепочка:
+
+1. Постройте и запитайте камеру внутри камеры содержания. Она должна крепиться к стене, находиться в той же комнате не дальше 12 клеток и иметь прямую видимость. Поворот влияет только на внешний вид и не меняет охват.
+2. Любой подходящий объект появляется у консоли автоматически, как только оказывается на связанном посту. Ручного выбора объектов нет.
+3. Назначьте оператора в окне «Смены» либо прикажите колонисту работать за консолью. Он засчитывается только после того, как действительно займёт клетку у консоли.
+4. Поддерживайте питание камеры и консоли. Если оба флажка выполнены, оператор заменяет требуемых наблюдателей у поста.
+
+Краткое нарушение условий не удаляет объект из консоли, пока он остаётся на посту. В панели отдельно показаны флажки камеры и оператора. Когда все условия объекта выполнены, дежурные автоматически восстанавливают содержание. Живые наблюдатели рядом с SCP остаются запасным вариантом.</SCP_MonitorGuideBody>
+  <SCP_MonitorGuideButton>Инструкция наблюдения</SCP_MonitorGuideButton>
+  <SCP_MonitorGuideButtonDesc>Открыть памятку по настройке дистанционного наблюдения.</SCP_MonitorGuideButtonDesc>
+  <SCP_DeconStart>Запустить деконтаминацию</SCP_DeconStart>
+  <SCP_DeconStartDesc>Запустить цикл очистки герметичной комнаты. Он удаляет из помещения обычный газ, грязь и зарегистрированное SCP-заражение.</SCP_DeconStartDesc>
+  <SCP_DeconNeedsPower>Требуется питание.</SCP_DeconNeedsPower>
+  <SCP_DeconNeedsRoom>Установка должна быть обращена в закрытую комнату.</SCP_DeconNeedsRoom>
+  <SCP_DeconRoomTooLarge>Комната слишком велика. Максимум: {0} клеток.</SCP_DeconRoomTooLarge>
+  <SCP_DeconNeedsRoof>Вся комната должна находиться под крышей.</SCP_DeconNeedsRoof>
+  <SCP_DeconCloseDoors>Закройте все двери на границе комнаты.</SCP_DeconCloseDoors>
+  <SCP_DeconAlreadyRunning>Деконтаминация уже выполняется.</SCP_DeconAlreadyRunning>
+  <SCP_DeconRunning>Деконтаминация: {0}</SCP_DeconRunning>
+  <SCP_DeconRunningLocked>Деконтаминация: {0}. Заблокировано дверей: {1}.</SCP_DeconRunningLocked>
+  <SCP_DeconReady>Готов к деконтаминации.</SCP_DeconReady>
+  <SCP_DeconInterrupted>Деконтаминация прервана: нарушена герметичность или потеряно питание.</SCP_DeconInterrupted>
+  <SCP_DeconComplete>Деконтаминация помещения завершена.</SCP_DeconComplete>
+  <SCP_DeconEmergencyTitle>АВАРИЯ ДЕКОНТАМИНАЦИОННОГО ШЛЮЗА</SCP_DeconEmergencyTitle>
+  <SCP_DeconEmergencyBody>{0}: обнаружено повреждение конструкции — {1}. Деконтаминация остановлена. Отремонтируйте камеру и сбросьте аварию на установке.</SCP_DeconEmergencyBody>
+  <SCP_DeconEmergencyDoor>разрушена дверь камеры</SCP_DeconEmergencyDoor>
+  <SCP_DeconEmergencyWall>отсутствует стена или изменилась граница камеры</SCP_DeconEmergencyWall>
+  <SCP_DeconEmergencyInspect>АВАРИЯ: {0}. Требуются ремонт и сброс.</SCP_DeconEmergencyInspect>
+  <SCP_DeconEmergencyReset>Сбросить аварию шлюза</SCP_DeconEmergencyReset>
+  <SCP_DeconEmergencyResetDesc>Проверить восстановленные двери и границы камеры, затем вернуть установку деконтаминации в режим ожидания.</SCP_DeconEmergencyResetDesc>
+  <SCP_DeconRepairStructure>Восстановите исходную герметичную камеру: дверей на границе — {0}, внутренних клеток — {1}.</SCP_DeconRepairStructure>
+  <SCP_DeconEmergencyResetDone>Целостность шлюза восстановлена. Авария сброшена.</SCP_DeconEmergencyResetDone>
+  <SCP_ShutterUseManual>Перейти на ручное управление</SCP_ShutterUseManual>
+  <SCP_ShutterUseAutomatic>Перейти на автоматическое управление</SCP_ShutterUseAutomatic>
+  <SCP_ShutterModeDesc>Переключить автоматическую блокировку при побеге SCP и прямое ручное управление.</SCP_ShutterModeDesc>
+  <SCP_ShutterOpen>Открыть заслонку</SCP_ShutterOpen>
+  <SCP_ShutterClose>Закрыть заслонку</SCP_ShutterClose>
+  <SCP_ShutterOpenDesc>Подать питание на привод и удерживать заслонку открытой до следующей команды.</SCP_ShutterOpenDesc>
+  <SCP_ShutterCloseDesc>Закрыть и заблокировать заслонку. Пешка в дверном проёме должна сначала освободить его.</SCP_ShutterCloseDesc>
+  <SCP_ShutterNeedsPower>Для открытия заслонки требуется питание.</SCP_ShutterNeedsPower>
+  <SCP_ShutterNoPower>Режим: безопасное закрытие — нет питания.</SCP_ShutterNoPower>
+  <SCP_ShutterAutomaticLockdown>Режим: автоматический — активна блокировка из-за побега SCP.</SCP_ShutterAutomaticLockdown>
+  <SCP_ShutterAutomaticReady>Режим: автоматический — отслеживание побегов SCP.</SCP_ShutterAutomaticReady>
+  <SCP_ShutterManualOpenState>Режим: ручной — приказано открыть.</SCP_ShutterManualOpenState>
+  <SCP_ShutterManualClosedState>Режим: ручной — приказано закрыть.</SCP_ShutterManualClosedState>
+  <SCP_PersonnelButton>Персонал и допуски</SCP_PersonnelButton>
+  <SCP_PersonnelTitle>Допуски персонала Фонда</SCP_PersonnelTitle>
+  <SCP_PersonnelDesc>Тратьте доверие Фонда на аттестацию колонистов. Допуск выдаётся конкретному сотруднику, сохраняется за ним и учитывается защищёнными дверями Фонда. Уровень 5 нельзя купить: он зарезервирован для сюжетного развития.</SCP_PersonnelDesc>
+  <SCP_PersonnelTrust>Доверие Фонда: {0}/100</SCP_PersonnelTrust>
+  <SCP_PersonnelOffline>Для аттестации требуется запитанный терминал связи с Фондом.</SCP_PersonnelOffline>
+  <SCP_PersonnelEmpty>На этой карте нет доступных колонистов.</SCP_PersonnelEmpty>
+  <SCP_PersonnelRank_0>Нет допуска</SCP_PersonnelRank_0>
+  <SCP_PersonnelRank_1>Младший персонал · Уровень 1</SCP_PersonnelRank_1>
+  <SCP_PersonnelRank_2>Агент / исследователь · Уровень 2</SCP_PersonnelRank_2>
+  <SCP_PersonnelRank_3>Старший исследователь / офицер МОГ · Уровень 3</SCP_PersonnelRank_3>
+  <SCP_PersonnelRank_4>Сотрудник Фонда · Уровень 4</SCP_PersonnelRank_4>
+  <SCP_PersonnelRank_4Captain>Капитан МОГ · Уровень 4</SCP_PersonnelRank_4Captain>
+  <SCP_PersonnelRank_4Scientist>Ведущий учёный · Уровень 4</SCP_PersonnelRank_4Scientist>
+  <SCP_PersonnelCaptainChoice>Капитан МОГ — Стрельба 13</SCP_PersonnelCaptainChoice>
+  <SCP_PersonnelScientistChoice>Ведущий учёный — Умственный труд 14</SCP_PersonnelScientistChoice>
+  <SCP_PersonnelRank_5>Назначение в Совет O5 · Уровень 5</SCP_PersonnelRank_5>
+  <SCP_PersonnelRights_0>Нет полномочий Фонда. Класс D является отдельным статусом персонала, а не уровнем допуска.</SCP_PersonnelRights_0>
+  <SCP_PersonnelRights_1>Может проходить через двери, настроенные на персонал Уровня 1.</SCP_PersonnelRights_1>
+  <SCP_PersonnelRights_2>Может проходить через двери с требованиями Уровня 1–2.</SCP_PersonnelRights_2>
+  <SCP_PersonnelRights_3>Может проходить через двери с требованиями Уровня 1–3.</SCP_PersonnelRights_3>
+  <SCP_PersonnelRights_4>Может проходить через все двери с доступными сейчас настройками допуска.</SCP_PersonnelRights_4>
+  <SCP_PersonnelRights_5>Сюжетные полномочия. В дальнейшем этот уровень будет использоваться решениями O5 и кампанией.</SCP_PersonnelRights_5>
+  <SCP_PersonnelPromote>Запросить аттестацию · {0}</SCP_PersonnelPromote>
+  <SCP_PersonnelStoryOnly>Сюжетное назначение</SCP_PersonnelStoryOnly>
+  <SCP_PersonnelReady>Требования выполнены.</SCP_PersonnelReady>
+  <SCP_PersonnelNeedTrust>Нужно доверия: {0}; доступно: {1}.</SCP_PersonnelNeedTrust>
+  <SCP_PersonnelNeedAdult>Аттестацию может пройти только взрослый колонист.</SCP_PersonnelNeedAdult>
+  <SCP_PersonnelResearchDisabled>Аттестация недоступна: пешка неспособна к умственному труду.</SCP_PersonnelResearchDisabled>
+  <SCP_PersonnelNeedResearchTwo>Для первого допуска нужен «Умственный труд» не ниже 2.</SCP_PersonnelNeedResearchTwo>
+  <SCP_PersonnelNeedSpecialist>Нужна Стрельба или «Умственный труд» соответствующего уровня.</SCP_PersonnelNeedSpecialist>
+  <SCP_PersonnelNeedDirector>Для уровня 4 нужны Стрельба 13 или «Умственный труд» 14.</SCP_PersonnelNeedDirector>
+  <SCP_PersonnelLevelFiveHint>Уровень 5 назначается только будущим сюжетным решением.</SCP_PersonnelLevelFiveHint>
+  <SCP_PersonnelMaximum>Достигнут максимальный уровень допуска.</SCP_PersonnelMaximum>
+  <SCP_PersonnelPromoted>{0}: выдан допуск Фонда — {1}.</SCP_PersonnelPromoted>
+  <SCP_DoorClearance>Минимальный допуск: {0}</SCP_DoorClearance>
+  <SCP_DoorClearanceDesc>Переключить автоматический порог доступа от отсутствия проверки до Уровней 1–4. Пешки из ручного списка остаются исключениями. Выбор Уровня 1 очищает старый список всех колонистов.</SCP_DoorClearanceDesc>
+  <SCP_DoorAccessRestrictedClearance>Доступ ограничен. Ручных исключений: {0}. Минимальный допуск: {1}.</SCP_DoorAccessRestrictedClearance>
+  <SCP_DebugItemsSpawned>Размещены все переносимые предметы мода: {0} типов.</SCP_DebugItemsSpawned>
+  <SCP_DebugItemsUnavailable>Переносимые предметы мода не найдены.</SCP_DebugItemsUnavailable>
+  <SCP_AmnesticMemoriesRemoved>{PAWN_labelShort} забывает травмирующие воспоминания: {1}.</SCP_AmnesticMemoriesRemoved>
+  <SCP_AmnesticNoMemories>У {PAWN_labelShort} нет временных отрицательных воспоминаний для подавления.</SCP_AmnesticNoMemories>
+  <SCP_HemostaticWoundsTended>Инъектор герметизировал кровоточащие раны у {PAWN_labelShort}: {1}.</SCP_HemostaticWoundsTended>
+  <SCP_HemostaticNoWounds>У {PAWN_labelShort} нет неперевязанных кровоточащих ран.</SCP_HemostaticNoWounds>
+  <SCP_McdTraderUnavailable>Орбитальный контакт «Маршалл, Картер и Дарк» недоступен.</SCP_McdTraderUnavailable>
+  <SCP_McdTraderArrived>{0} вышла на связь.</SCP_McdTraderArrived>
+  <SCP_GocStrikeUnavailable>Ударный персонал ГОК недоступен.</SCP_GocStrikeUnavailable>
+  <SCP_GocStrikeArrived>В район прибыл ударный отряд ГОК из {0} человек.</SCP_GocStrikeArrived>
+  <SCP_GocUltimatumTitle>Ультиматум ГОК об уничтожении</SCP_GocUltimatumTitle>
+  <SCP_GocUltimatumBody>Глобальная Оккультная Коалиция признала {0} недопустимой параугрозой. У вас есть {1}, чтобы уничтожить объект или вывезти его с этой территории. Если цель останется на месте, ударная группа Коалиции войдёт в колонию и проведёт ликвидацию. Её приказ касается назначенного объекта; сопротивление может превратить операцию в вооружённое столкновение.</SCP_GocUltimatumBody>
+  <SCP_GocOperationArrivedTitle>Развёртывание ударной группы ГОК</SCP_GocOperationArrivedTitle>
+  <SCP_GocOperationArrivedBody>На карту вошла ударная группа Коалиции. Её текущая цель — уничтожение объекта {0}.</SCP_GocOperationArrivedBody>
+  <SCP_GocOperationCompliedTitle>Ультиматум ГОК выполнен</SCP_GocOperationCompliedTitle>
+  <SCP_GocOperationCompliedBody>Назначенная параугроза была уничтожена до истечения срока. Коалиция отменила ударную операцию.</SCP_GocOperationCompliedBody>
+  <SCP_GocOperationCompletedTitle>Ликвидация ГОК завершена</SCP_GocOperationCompletedTitle>
+  <SCP_GocOperationCompletedBody>Ударная группа Коалиции уничтожила назначенную цель и завершает операцию.</SCP_GocOperationCompletedBody>
+  <SCP_GocOperationAbortedTitle>Операция ГОК отменена</SCP_GocOperationAbortedTitle>
+  <SCP_GocOperationTargetLostBody>Назначенный объект больше не находится на территории колонии. Коалиция приостановила операцию.</SCP_GocOperationTargetLostBody>
+  <SCP_GocOperationDeploymentFailedBody>Коалиция не смогла развернуть ударную группу. Операция отложена.</SCP_GocOperationDeploymentFailedBody>
+  <SCP_GocOperationDefeatedBody>Назначенная ударная группа Коалиции больше не способна завершить ликвидацию. Операция провалена.</SCP_GocOperationDefeatedBody>
+  <SCP_GocOperationUnavailable>Для операции ГОК нет подходящего содержащегося SCP.</SCP_GocOperationUnavailable>
+  <SCP_ChaosTheftTitle>Группа изъятия Повстанцев Хаоса</SCP_ChaosTheftTitle>
+  <SCP_ChaosTheftBody>Ячейка Повстанцев Хаоса прорвала периметр колонии. Специалист по изъятию пытается захватить {0}, пока остальная группа прикрывает отход. Устраните носителя до того, как он достигнет края карты, чтобы вернуть объект.</SCP_ChaosTheftBody>
+  <SCP_ChaosTheftSucceededTitle>Объект SCP похищен</SCP_ChaosTheftSucceededTitle>
+  <SCP_ChaosTheftSucceededBody>Специалист Повстанцев Хаоса покинул карту с содержащимся объектом. Группа прикрытия отступает.</SCP_ChaosTheftSucceededBody>
+  <SCP_ChaosTheftFailedTitle>Изъятие Повстанцев сорвано</SCP_ChaosTheftFailedTitle>
+  <SCP_ChaosTheftTargetDestroyedBody>Назначенная аномалия была уничтожена до того, как Повстанцы смогли её вывезти.</SCP_ChaosTheftTargetDestroyedBody>
+  <SCP_ChaosTheftRepelledBody>Специалист по изъятию больше не способен продолжать похищение. Переносимый объект оставлен на месте.</SCP_ChaosTheftRepelledBody>
+  <SCP_ChaosTheftTargetLostBody>Назначенная аномалия больше недоступна специалисту по изъятию. Операция провалена.</SCP_ChaosTheftTargetLostBody>
+  <SCP_ChaosTheftUnavailable>Рейд Повстанцев Хаоса нельзя начать на этой карте.</SCP_ChaosTheftUnavailable>
+  <SCP_PlaceholderRaidRelationReason>Начата враждебная полевая операция.</SCP_PlaceholderRaidRelationReason>
+  <SCP_InterestGroupHostilityReason>Несовместимые цели в отношении аномалий.</SCP_InterestGroupHostilityReason>
+  <SCP_PlaceholderRaidUnavailable>Выбранная фракция-заглушка не смогла начать рейд на этой карте.</SCP_PlaceholderRaidUnavailable>
+  <SCP_ChaosCacheTitle>Аномальный тайник Повстанцев</SCP_ChaosCacheTitle>
+  <SCP_EmergencyEpsilonTitle>Экстренное прибытие Эпсилона-11</SCP_EmergencyEpsilonTitle>
+  <SCP_DebugArrivalUnavailable>Появление не удалось запустить: условия не выполнены или этот SCP уже появлялся.</SCP_DebugArrivalUnavailable>
+  <SCP_EmergencyEpsilonBody>Все колонисты без сознания, а на карте остался враждебный SCP. Эпсилон-11 прибыл сдержать угрозу. Медик принёс три таблетки SCP-500 для выживших. По записям Фонда, эти копии потеряли часть свойств после размножения с помощью SCP-038.</SCP_EmergencyEpsilonBody>
+  <SCP_106RecoveryEscapedTitle>SCP-106 потерян</SCP_106RecoveryEscapedTitle>
+  <SCP_106RecoveryEscapedBody>SCP-106 покинул карту, не попав в камеру. Фонд может предпринять другую попытку поимки.</SCP_106RecoveryEscapedBody>
+  <SCP_ChaosCacheBody>По данным разведки, один из защитников базы хранит 20 таблеток SCP-500 и SCP-127. Разбейте гарнизон и заберите их.</SCP_ChaosCacheBody>
+  <SCP_500Cured>Таблетка SCP-500 излечила болезни у {PAWN} и запустила быстрое заживление.</SCP_500Cured>
+  <SCP_500NoDisease>Таблетка SCP-500 запустила быстрое заживление у {PAWN}.</SCP_500NoDisease>
+  <SCP_882RaidTitle>Налёт Церкви Разбитого Бога</SCP_882RaidTitle>
+  <SCP_882RaidBody>Разросшийся механизм привлёк адептов Церкви. Они нападают на колонию.</SCP_882RaidBody>
+  <SCP_882HistoryTitle>Архив Фонда: Разбитый Бог</SCP_882HistoryTitle>
+  <SCP_882HistoryBody>SCP-882 доставлен в колонию. Архив Фонда сообщает, что в 1990-х Церковь пыталась собрать своего бога из разрозненных механизмов. Фонд при помощи Глобальной оккультной коалиции остановил сборку ценой больших потерь. Теперь Повстанцы Хаоса и Церковь обнаружили возвращённый компонент. Спутники засекли их отряды рядом с вашим поселением. Готовьтесь к осаде.</SCP_882HistoryBody>
+  <SCP_882HistoryNotice>Получен архивный файл о Разбитом Боге. Спутники засекли отряды Хаоса и Церкви рядом с поселением — готовьтесь к осаде. Полный текст: Терминал → Журнал событий → Архив Фонда.</SCP_882HistoryNotice>
+  <SCP_882SiegeTitle>Осада Хаоса: SCP-882</SCP_882SiegeTitle>
+  <SCP_882SiegeBody>Крупный отряд Повстанцев Хаоса вышел к краю карты и готовит осаду с миномётами. Разведка сообщает ещё о двух приближающихся группах.</SCP_882SiegeBody>
+  <SCP_882AssaultTitle>Вторая волна Хаоса: SCP-882</SCP_882AssaultTitle>
+  <SCP_882AssaultBody>Другой отряд Повстанцев Хаоса вошёл с края карты. Он подготовится, затем атакует и попытается унести переносимые SCP-объекты.</SCP_882AssaultBody>
+  <SCP_882RaidStoleScp>Повстанцы Хаоса скрылись с объектом {0}.</SCP_882RaidStoleScp>
+  <SCP_882ChurchTitle>Церковь Разбитого Бога: SCP-882</SCP_882ChurchTitle>
+  <SCP_ChurchDebugRaidStarted>Полный рейд Церкви Разбитого Бога вошёл с края карты. Сюжетная цепочка SCP-882 не продвинулась.</SCP_ChurchDebugRaidStarted>
+  <SCP_ChurchDebugRaidUnavailable>Полный рейд Церкви не смог войти на эту карту. Проверьте, есть ли свободный проход на краю.</SCP_ChurchDebugRaidUnavailable>
+  <SCP_882ChurchBody>Отдельный отряд Церкви Разбитого Бога вошёл с края карты. Канторы могут выводить из строя электрооборудование. Пока идёт штурм, Церковь и Хаос не нападают друг на друга. Спутники Фонда направили «Авангард» и МОГ Омега-7 «Ящик Пандоры».</SCP_882ChurchBody>
+  <SCP_882CeasefireReason>Временное соглашение во время нападения за SCP-882</SCP_882CeasefireReason>
+  <SCP_882ReliefTitle>Прибыл «Авангард» и «Ящик Пандоры»</SCP_882ReliefTitle>
+  <SCP_882ReliefBody>«Авангард», SCP-076-2 (Авель) и сопровождение Омега-7 прибыли защищать колонию. «Авангард» автоматически атакует видимых врагов. Отряд останется до окончания трёх волн нападения.</SCP_882ReliefBody>
+  <SCP_882DefenseWonTitle>Битва за SCP-882 завершена</SCP_882DefenseWonTitle>
+  <SCP_882DefenseWonBody>Отряды Хаоса и Церкви разбиты или отступили. SCP-882 остался в колонии. Фонд начисляет до 15 доверия за оборону и доставляет чертёж экзокостюма МОГ. «Авангард» и бойцы «Ящика Пандоры», способные идти, покидают карту. Доклад аналитиков и дальнейшее поручение придут по каналу связи Фонда.</SCP_882DefenseWonBody>
+  <SCP_882DefenseLostTitle>SCP-882 утрачен после битвы</SCP_882DefenseLostTitle>
+  <SCP_882DefenseLostBody>Нападавшие ушли, но SCP-882 больше нет на домашней карте или у ваших людей. Фонд отозвал подкрепление; бойцы, способные идти, покидают карту. Объект отмечен пропавшим.</SCP_882DefenseLostBody>
+  <SCP_882AftermathSender>АНАЛИТИЧЕСКИЙ ОТДЕЛ ФОНДА</SCP_882AftermathSender>
+  <SCP_882AftermathMessage>Атака отбита. В перехваченных передачах Церковь называет SCP-882 узлом сопряжения. Предварительный доклад добавлен в Терминал → Журнал событий → Архив Фонда. Мы предложим короткое задание: поместите объект в резервуар и дайте терминалу провести шестичасовой анализ. Примите задание в списке поручений.</SCP_882AftermathMessage>
+  <SCP_882AftermathLostMessage>Отряд отступил, но SCP-882 утрачен. Перехваченные передачи Церкви добавлены в Архив Фонда. Анализ объекта пока невозможен; Фонд не знает, у кого находится компонент.</SCP_882AftermathLostMessage>
+  <SCP_882AftermathArchiveTitle>Дело SCP-882: перехват Церкви</SCP_882AftermathArchiveTitle>
+  <SCP_882AftermathArchiveBody>После боя аналитики Фонда восстановили часть радиопереговоров Церкви. Адепты называли SCP-882 «узлом сопряжения»: по их убеждению, этот механизм способен согласовать работу других разрозненных реликвий Разбитого Бога. Повстанцы Хаоса намеревались вывезти объект; причины их сотрудничества с Церковью неизвестны.\n\nВ старом деле о попытке сборки 1990-х упомянуты Фонд и ГОК, но список ответственных и последние страницы изъяты по распоряжению O5. Аналитики предлагают сравнить сигнатуру SCP-882 с сохранившимися записями. Пока это версия, а не подтверждение того, что механизм способен собрать бога.</SCP_882AftermathArchiveBody>
+  <SCP_882AnalysisArchiveTitle>Дело SCP-882: результат анализа</SCP_882AnalysisArchiveTitle>
+  <SCP_882AnalysisArchiveBody>Шестичасовое сопоставление сигнала завершено. Терминал обнаружил в архиве 1990-х ответный импульс, похожий на сигнал SCP-882. Источник находился далеко за пределами вашего поселения; координаты и имена участников операции скрыты в изъятом разделе дела O5.\n\nФонд сохраняет объект в резервуаре и закрывает доступ к этому разделу до отдельного распоряжения. Пока нельзя установить, является ли ответный импульс другим компонентом или чьей-то попыткой вызвать SCP-882.</SCP_882AnalysisArchiveBody>
+  <SCP_882AnalysisNotice>Анализ завершён. Результат сохранён в Терминале → Журнал событий → Архив Фонда.</SCP_882AnalysisNotice>
+  <SCP_882AnalysisMessage>Сопоставление завершено. Результат добавлен в Архив Фонда. В деле обнаружен ответный сигнал из старой операции, но часть координат изъята распоряжением O5. Пока оставьте SCP-882 в резервуаре; мы проверим закрытые документы.</SCP_882AnalysisMessage>
+  <SCP_882DefenseTrustGranted>Фонд признал оборону SCP-882: доверие +{0}.</SCP_882DefenseTrustGranted>
+  <SCP_O5GreenName>O5-7 «Зелёная»</SCP_O5GreenName>
+  <SCP_O5GreenUnknownScientist>сотрудник колонии</SCP_O5GreenUnknownScientist>
+  <SCP_O5GreenPrepTitle>Подготовка к визиту O5-7</SCP_O5GreenPrepTitle>
+  <SCP_O5GreenPrepBody>O5-7 «Зелёная» лично прибудет после анализа SCP-882. Подготовьте закрытую комнату под полной крышей: не менее 30 клеток, впечатление от 60, освещённость от 30%, обеденный стол и два сиденья. Для встречи нужен свободный исследователь с допуском 4 и навыком «Умственный труд» от 12. Когда всё будет готово, прибудет делегация. Чтобы начать встречу, выберите исследователя и нажмите ПКМ по O5-7.</SCP_O5GreenPrepBody>
+  <SCP_O5GreenNeedScientist>Нет учёного с допуском Фонда 4 и навыком «Умственный труд» 12 на этой карте.</SCP_O5GreenNeedScientist>
+  <SCP_O5GreenSelectColonist>Выберите колониста на этой карте.</SCP_O5GreenSelectColonist>
+  <SCP_O5GreenSelectedUnavailable>Выбранная пешка сейчас не может участвовать: она мобилизована, ранена или недееспособна.</SCP_O5GreenSelectedUnavailable>
+  <SCP_O5GreenSelectedCannotResearch>Выбранной пешке недоступен «Умственный труд».</SCP_O5GreenSelectedCannotResearch>
+  <SCP_O5GreenSelectedClearance>Выбранной пешке нужен допуск Фонда 4.</SCP_O5GreenSelectedClearance>
+  <SCP_O5GreenSelectedIntellectual>Выбранной пешке нужен навык «Умственный труд» 12.</SCP_O5GreenSelectedIntellectual>
+  <SCP_O5GreenArrivedTitle>Прибыла O5-7 «Зелёная»</SCP_O5GreenArrivedTitle>
+  <SCP_O5GreenArrivedBody>Шаттл доставил Зелёную и шестерых охранников в экзокостюмах. Выберите исследователя с допуском 4 и навыком «Умственный труд» 12, затем нажмите ПКМ по O5-7, чтобы начать встречу.</SCP_O5GreenArrivedBody>
+  <SCP_O5GreenBeginMeeting>Начать встречу с O5-7</SCP_O5GreenBeginMeeting>
+  <SCP_O5GreenRoomNotReady>Подготовьте комнату с впечатлением от 60</SCP_O5GreenRoomNotReady>
+  <SCP_O5GreenCannotReach>Исследователь не может дойти до переговорной</SCP_O5GreenCannotReach>
+  <SCP_O5GreenMeetingStarted>O5-7 начала встречу с {0}.</SCP_O5GreenMeetingStarted>
+  <SCP_O5GreenRecordTitle>Встреча с O5-7 завершена</SCP_O5GreenRecordTitle>
+  <SCP_O5GreenRecordBody>За делегацией прибудет обратный шаттл. Расшифровка разговора сохранена: Терминал → Журнал событий → Архив Фонда.</SCP_O5GreenRecordBody>
+  <SCP_O5GreenFailedTitle>Визит O5-7 сорвался</SCP_O5GreenFailedTitle>
+  <SCP_O5GreenFailedBody>Встреча не состоялась: делегация погибла, покинула карту или поселение было утрачено. Расшифровка не создана.</SCP_O5GreenFailedBody>
+  <SCP_O5GreenTranscriptTitle>Протокол встречи с O5-7</SCP_O5GreenTranscriptTitle>
+  <SCP_O5GreenTranscriptBody>Участники: O5-7 «Зелёная», исследователь {0}. Место: защищённая переговорная колонии.\n\nO5-7: «После трёх нападений я хотела увидеть не цифры отчёта, а людей, которые удержали объект. Сколько человек вы потеряли?»\nИсследователь: «Мы ещё считаем. SCP-882 пока в резервуаре. Сигнал из старого дела действительно похож на ответ?»\nO5-7: «Похож. Но это не доказательство, что существует готовый Сломанный Бог. В 1990-х мы уже приняли похожую догадку за факт и заплатили за неё. Я закрыла исходные координаты: среди тех, кто запрашивал дело, был не только наш персонал».\nИсследователь: «Что Совет решил делать теперь?»\nO5-7: «Сохранить объект здесь и продолжить исследование ограниченной группой. Ваш допуск остаётся действительным. Я разрешу доступ к следующему фрагменту, когда пойму, откуда пришёл ответный импульс. Не передавайте необработанные измерения за пределы колонии».\n\nРешение O5-7: не перевозить SCP-882; сохранить ограниченный доступ к делу; проверить происхождение ответного сигнала. Это решение не подтверждает версию Церкви о сборке божества.</SCP_O5GreenTranscriptBody>
+  <SCP_O5GreenSender>O5-7 «ЗЕЛЁНАЯ»</SCP_O5GreenSender>
+  <SCP_O5GreenFollowupMessage>Спасибо за встречу. Запись разговора помещена в Архив Фонда. SCP-882 остаётся у вас; координаты ответного сигнала пока закрыты. Я вернусь к этому делу после проверки старой операции.</SCP_O5GreenFollowupMessage>
+  <SCP_882FinalReportReadyTitle>Можно закрыть дело SCP-882</SCP_882FinalReportReadyTitle>
+  <SCP_882FinalReportReadyBody>Делегация O5-7 покинула колонию. Верните SCP-882 в резервуар и отправьте итоговый отчёт через Терминал → Журнал событий → Архив Фонда → Протокол встречи с O5-7. Нужна действующая связь с Фондом.</SCP_882FinalReportReadyBody>
+  <SCP_882FinalReportSubmit>Отправить итоговый отчёт</SCP_882FinalReportSubmit>
+  <SCP_882FinalReportNeedTerminal>Нужен запитанный терминал</SCP_882FinalReportNeedTerminal>
+  <SCP_882FinalReportNeedContainment>Верните SCP-882 в резервуар</SCP_882FinalReportNeedContainment>
+  <SCP_882FinalReportTitle>Операция «Сломанный Бог»: дело закрыто</SCP_882FinalReportTitle>
+  <SCP_882FinalReportLetter>Фонд принял итоговый отчёт. За сохранение SCP-882 и передачу измерений начислено {0} доверия. Решение Совета и закрытый протокол доступны в Архиве Фонда.</SCP_882FinalReportLetter>
+  <SCP_882FinalReportBody>ИТОГОВЫЙ ПРОТОКОЛ · SCP-882\nСтатус: объект удерживается в резервуаре на территории колонии.\nОснование: оборона Зоны, анализ объекта и личная инспекция O5-7 «Зелёной».\n\nСовет оставляет SCP-882 на месте. Перевозка объекта и попытки сборки механизма не санкционированы. Исходные координаты ответного сигнала закрыты; Церковь Разбитого Бога к измерениям не допускается. Колония продолжает содержание и исследование по действующим протоколам.\n\nОперация по защите объекта завершена. Причина ответного сигнала остаётся отдельным засекреченным делом.</SCP_882FinalReportBody>
+  <SCP_882FinalReportOutgoing>Итоговый отчёт передан. SCP-882 удерживается в резервуаре. Показания после нападения и стенограмма встречи приложены.</SCP_882FinalReportOutgoing>
+  <SCP_882FinalReportReply>Отчёт принят. Совет оставляет объект на вашей Зоне. Операция по обороне закрыта. Перед расшифровкой сигнала заберите физический передатчик с заброшенного ретранслятора. Координаты выезда появятся в поручениях. — O5-7</SCP_882FinalReportReply>
+  <SCP_SignalResearchAssign>Назначить анализ сигнала</SCP_SignalResearchAssign>
+  <SCP_SignalTransponderUnloaded>Передатчик выгружен из снаряжения участника экспедиции. Выберите колониста и нажмите ПКМ по модулю, чтобы расшифровать его за исследовательским столом.</SCP_SignalTransponderUnloaded>
+  <SCP_SignalCarryFailed>У этого колониста нет места для передатчика. Освободите снаряжение или назначьте другого.</SCP_SignalCarryFailed>
+  <SCP_SignalResearchNoResearcher>Нужен доступный исследователь с допуском 4 и «Умственным трудом» 12</SCP_SignalResearchNoResearcher>
+  <SCP_SignalReadAction>Извлечь передатчик</SCP_SignalReadAction>
+  <SCP_SignalReadDesc>Извлечь модуль из ретранслятора. Колонист положит его в снаряжение; верните модуль на базу для расшифровки.</SCP_SignalReadDesc>
+  <SCP_SignalReadNoPawn>На этой карте нет свободного колониста, который может подойти к устройству.</SCP_SignalReadNoPawn>
+  <SCP_SignalReadInstruction>Выберите устройство и нажмите «Извлечь передатчик» либо выберите колониста и нажмите ПКМ. Модуль попадёт в его снаряжение.</SCP_SignalReadInstruction>
+  <SCP_SignalAnalysisTitle>Источник ответного сигнала</SCP_SignalAnalysisTitle>
+  <SCP_SignalAnalysisLetter>Шесть часов анализа передатчика выявили промежуточный узел Церкви Разбитого Бога. В описи узла указаны запечатанный SCP-217 и части SCP-629. Вывод добавлен в Архив Фонда; поручение на вылазку появится в списке заданий.</SCP_SignalAnalysisLetter>
+  <SCP_SignalAnalysisBody>АНАЛИЗ СИГНАЛА · ДЕЛО 882/7\nПередатчик, извлечённый из безлюдного ретранслятора, содержит повторяющийся пакет из записей обороны SCP-882. Исследователь установил следующий узел маршрута: сборочный тайник Церкви Разбитого Бога. В описи значатся запечатанный образец SCP-217 и детали, связанные с SCP-629. После сборки 1943 года такое сочетание требует немедленной проверки. Это не доказывает, что Церковь отправила исходный сигнал.\n\nO5-7 разрешила вылазку к тайнику. Протокол содержания SCP-882 остаётся прежним.</SCP_SignalAnalysisBody>
+  <SCP_SignalAnalysisMessage>Передатчик указал на сборочный тайник Церкви с образцом SCP-217 и частями SCP-629. Перехватите грузы до их вывоза; исходный отправитель сигнала пока неизвестен. — O5-7</SCP_SignalAnalysisMessage>
+  <SCP_SignalRecoveryTitle>Передатчик извлечён</SCP_SignalRecoveryTitle>
+  <SCP_SignalRecoveryLetter>Группа извлекла передатчик из безлюдного ретранслятора. Модуль находится в снаряжении колониста, который его достал. Верните его на базу: там он будет выгружен для расшифровки за исследовательским столом.</SCP_SignalRecoveryLetter>
+  <SCP_SignalRecoveryBody>ВЫЕЗДНОЙ ПРОТОКОЛ · РЕТРАНСЛЯТОР\nГруппа обнаружила безлюдный узел и извлекла физический передатчик из записывающего устройства. Модуль увезён колонистом; его содержимое пока не расшифровано. На месте не было бойцов Церкви. Для продолжения дела передатчик нужно вернуть на базу и изучить за исследовательским столом.</SCP_SignalRecoveryBody>
+  <SCP_SignalRecoveryMessage>Передатчик забран с безлюдного ретранслятора. Вернём его на базу и расшифруем за исследовательским столом.</SCP_SignalRecoveryMessage>
+  <SCP_ChurchCipherReadAction>Скопировать запись</SCP_ChurchCipherReadAction>
+  <SCP_ChurchCipherReadDesc>Назначить колониста для считывания шифровального носителя Церкви.</SCP_ChurchCipherReadDesc>
+  <SCP_ChurchCipherNoPawn>Нет доступного колониста, который может добраться до носителя.</SCP_ChurchCipherNoPawn>
+  <SCP_ChurchSecure217>Изолировать SCP-217</SCP_ChurchSecure217>
+  <SCP_ChurchSecure629>Изъять компоненты SCP-629</SCP_ChurchSecure629>
+  <SCP_ChurchSecureDesc>Назначить колониста для безопасного изъятия. Контейнер попадёт в его снаряжение; оба груза нужно доставить на базу.</SCP_ChurchSecureDesc>
+  <SCP_217SealedStatus>Контейнер запаян. При целой оболочке заражения нет.</SCP_217SealedStatus>
+  <SCP_629PartsStatus>Отдельные части тела SCP-629; целого объекта здесь нет.</SCP_629PartsStatus>
+  <SCP_ChurchEvidenceAnalyzed>Материалы изучены.</SCP_ChurchEvidenceAnalyzed>
+  <SCP_ChurchEvidenceNotAnalyzed>Материалы ещё не изучены.</SCP_ChurchEvidenceNotAnalyzed>
+  <SCP_ChurchEvidenceAnalyze>Изучить без вскрытия</SCP_ChurchEvidenceAnalyze>
+  <SCP_ChurchEvidenceAnalyzeDesc>Исследователь с «Умственным трудом» 4 или выше изучит предмет у включённого терминала. Образец SCP-217 останется запаянным.</SCP_ChurchEvidenceAnalyzeDesc>
+  <SCP_ChurchEvidenceNoAnalyst>Нужны включённый терминал и доступный исследователь с «Умственным трудом» 4 или выше.</SCP_ChurchEvidenceNoAnalyst>
+  <SCP_ChurchEvidenceAnalyzedTitle>Материалы Церкви изучены</SCP_ChurchEvidenceAnalyzedTitle>
+  <SCP_ChurchEvidenceAnalyzedBody>Исследование «{0}» завершено. Результат добавлен в Архив Фонда.</SCP_ChurchEvidenceAnalyzedBody>
+  <SCP_ChurchEvidenceTransfer>Передать Фонду</SCP_ChurchEvidenceTransfer>
+  <SCP_ChurchEvidenceTransferDesc>Передать изученный предмет Фонду через включённый терминал. Предмет исчезнет из колонии; доверие увеличится на 2, если есть место до предела.</SCP_ChurchEvidenceTransferDesc>
+  <SCP_ChurchEvidenceTransferred>Предмет передан Фонду. Доверие +{0}.</SCP_ChurchEvidenceTransferred>
+  <SCP_217ExposureTitle>Возможное заражение SCP-217</SCP_217ExposureTitle>
+  <SCP_217ExposureBody>{PAWN} контактировал с SCP-217. Объект может долго не давать симптомов; изолируйте и осмотрите пострадавшего.</SCP_217ExposureBody>
+  <SCP_217BreachTitle>Контейнер SCP-217 разрушен</SCP_217BreachTitle>
+  <SCP_217BreachBody>Запаянный образец разрушен. Находившиеся рядом существа могли заразиться при контакте с содержимым.</SCP_217BreachBody>
+  <SCP_217AnalysisTitle>Исследование SCP-217: запаянный образец</SCP_217AnalysisTitle>
+  <SCP_217AnalysisBody>Исследователь проверил оболочку и регистрационные отметки без вскрытия. Образец SCP-217 остаётся герметичным и безопасным при хранении. Нарушение целостности создаст риск контактного заражения. Симптомы развиваются очень медленно; исследование не даёт способа лечения.</SCP_217AnalysisBody>
+  <SCP_217TransferredNote>После исследования запаянный образец передан Фонду.</SCP_217TransferredNote>
+  <SCP_629AnalysisTitle>Исследование SCP-629: отдельные детали</SCP_629AnalysisTitle>
+  <SCP_629AnalysisBody>Маркировка и подвижные соединения совпадают с описанием SCP-629, «Господина Латуня». В тайнике была только часть его заменяемого тела. Исследователь не собирал нового человека из этих деталей: целого SCP-629 здесь нет. Материалы подтверждают, что Церковь пыталась встроить фрагменты в более крупную конструкцию.</SCP_629AnalysisBody>
+  <SCP_629TransferredNote>После исследования детали переданы Фонду для возвращения владельцу.</SCP_629TransferredNote>
+  <SCP_629KnowledgeLevel>Уровень изучения SCP-629: {0}/3. Для следующего поручения нужен уровень 2.</SCP_629KnowledgeLevel>
+  <SCP_629ContinueStudy>Продолжить изучение SCP-629</SCP_629ContinueStudy>
+  <SCP_629ObservedReport>Детали опознаны как части тела разумного SCP-629. По отдельным фрагментам нельзя судить о состоянии всего объекта.</SCP_629ObservedReport>
+  <SCP_629PartialReport>На одном из компонентов обнаружена церковная накладка, которой не было в описании SCP-629. Её метка совпадает с индексом узла из дела о ретрансляторе.</SCP_629PartialReport>
+  <SCP_629DocumentedReport>Для полного досье необходимо исследовать самого SCP-629; колония располагает лишь изъятыми деталями.</SCP_629DocumentedReport>
+  <SCP_629RoutingInsightTitle>Найден индекс утраченного журнала</SCP_629RoutingInsightTitle>
+  <SCP_629RoutingInsightBody>Изучение деталей SCP-629 достигло уровня 2. Исследователь отличил церковную накладку от оригинальных частей и прочитал индекс маршрута. После ответа O5-7 Фонд сможет отметить на карте место утраченного журнала.</SCP_629RoutingInsightBody>
+  <SCP_629RoutingIndexArchive>Уровень 2: накладка изготовлена Церковью и не является частью SCP-629. Выбитый на ней индекс соответствует бывшему узлу закрытого канала Фонда. Именно там следует искать утраченный журнал маршрутизации.</SCP_629RoutingIndexArchive>
+  <SCP_RoutingLogTake>Извлечь журнал</SCP_RoutingLogTake>
+  <SCP_RoutingLogTakeDesc>Назначить колониста для извлечения физической записи. После извлечения журнал попадёт в снаряжение; верните его на базу.</SCP_RoutingLogTakeDesc>
+  <SCP_RoutingLogNoReader>Нет доступного колониста, который может добраться до журнала.</SCP_RoutingLogNoReader>
+  <SCP_RoutingLogCarryFailed>Не удалось взять журнал. Освободите снаряжение или назначьте другого колониста.</SCP_RoutingLogCarryFailed>
+  <SCP_RoutingLogSecured>Журнал извлечён. Верните его на домашнюю карту.</SCP_RoutingLogSecured>
+  <SCP_RoutingLogRecoveredTitle>Утраченный журнал доставлен</SCP_RoutingLogRecoveredTitle>
+  <SCP_RoutingLogRecoveredBody>Физическая запись доставлена на базу. Откройте её в Архиве Фонда и сверьте служебный ключ через включённый терминал: это завершит расследование.</SCP_RoutingLogRecoveredBody>
+  <SCP_RoutingLogArchiveTitle>Утраченный журнал: первый маршрут</SCP_RoutingLogArchiveTitle>
+  <SCP_RoutingLogArchiveBody>СЕРВИСНЫЙ ЖУРНАЛ · ЗАКРЫТЫЙ КАНАЛ ФОНДА\nМетка на церковной накладке с деталей SCP-629 указала на бывший узел маршрутизации. Экспедиция вернула его физический журнал. Первая запись о сигнале SCP-882 появилась здесь до того, как Церковь получила копию. Пакет пришёл через закрытый канал Фонда, но журнал содержит только номер служебного ключа; имя отправителя удалено до передачи в этот узел.\n\nВывод: Церковь не отправляла исходный сигнал. Кто-то использовал доступ к инфраструктуре Фонда либо похищенный ключ. O5-7 запросила оригинал ключевого реестра. До его получения обвинять конкретного сотрудника нельзя.</SCP_RoutingLogArchiveBody>
+  <SCP_OuroborosFinalSubmit>Сверить ключ и закрыть дело</SCP_OuroborosFinalSubmit>
+  <SCP_OuroborosFinalNeedTerminal>Нужен включённый терминал дома</SCP_OuroborosFinalNeedTerminal>
+  <SCP_OuroborosFinalTitle>Уроборос: полное дело и заключение</SCP_OuroborosFinalTitle>
+  <SCP_OuroborosFinalLetter>O5-7 сверила служебный ключ с реестром. Полное дело «Уроборос» и заключение по сигналу SCP-882 доступны в Архиве Фонда. Доверие Фонда: +{0}. Линия расследования завершена.</SCP_OuroborosFinalLetter>
+  <SCP_OuroborosFinalOutgoing>Вернули физический журнал. Просим сверить номер ключа с исходным реестром, раскрыть полное дело 001 и закрыть расследование сигнала SCP-882.</SCP_OuroborosFinalOutgoing>
+  <SCP_OuroborosFinalReply>Сверка завершена. Ключ принадлежал старой автоматической линии учёта проекта 001, а не нынешнему сотруднику. Её аварийное оповещение о SCP-882 ушло через канал, который считался закрытым; Церковь перехватила копию, Повстанцы Хаоса воспользовались утечкой. Мы изолировали линию и отозвали ключ. Полная сводка четырёх частей «Уробороса» открыта в вашем архиве. SCP-882 остаётся под вашим содержанием. Вы сделали достаточно. — O5-7 «Зелёная»</SCP_OuroborosFinalReply>
+  <SCP_OuroborosFinalBody>ДЕЛО 001 · УРОБОРОС · ПОЛНАЯ СВОДКА\nОткрыто распоряжением O5-7 после возврата журнала маршрутизации. Это сводка четырёх связанных дел 001, а не описание одного существа. Отдельный вывод о событиях вашей колонии приведён в конце.\n\nI. ДЕТИ\nВ 1920-х исследовательская группа Фонда превратила девятерых детей в оружие, способное уничтожать цели на огромном расстоянии. Проект скрывали за обозначением 001. Его руководитель, будущий O5-1, использовал созданную силу против Администратора и исчез. После этого возник новый Совет Смотрителей, а часть беглецов составила ядро будущих Повстанцев Хаоса. Дети остались живым напоминанием о цене, которую Фонд назвал защитой мира.\n\nII. СЛОМАННЫЙ БОГ\nВ 1942–1943 годах Церковь Разбитого Бога собрала гигантскую механическую сущность из разрозненных аномальных частей. Среди них были SCP-217, SCP-882 и некоторые компоненты SCP-629. Сущность вбирала металл и искала новые части. Остановить её удалось при участии Союзной оккультной инициативы, предшественницы Глобальной оккультной коалиции. Собранное распалось: активные компоненты разошлись по объектам Фонда, неактивная основа осталась отдельно. Наличие деталей в нынешнем тайнике Церкви объясняло тревогу Совета, но не доказывало, что сборка уже повторилась.\n\nIII. ИСКУПЛЕНИЕ\nДесятилетия спустя Фонд столкнулся с иной угрозой под номером 001: разумной гравитационной сингулярностью, связанной с судьбой исследователя Кальвина Десмета. Она утверждала, что столкновение реальностей погубит все миры, и предлагала спасти один, уничтожив остальные. Совет пытался решить, можно ли принять такую цену. O5-7 выступала против. Предложение оказалось обманом: освобождение сущности подвергло бы опасности и тот мир, который ей доверился. Дело осталось засекреченным и в изоляции.\n\nIV. ТАК ВСЁ ЗАКОНЧИТСЯ\nПовстанцы Хаоса объявили войну самому Совету. Их операция добралась до Смотрителей, но разрушение старого руководства не уничтожило систему: победитель занял место, против которого выступал, и собрал новый Совет. История возвращается к исходной точке. Поэтому «Уроборос» — название цикла: власть, страх, секретность и обещание спасти мир снова порождают решения, от которых его пришлось спасать.\n\nЗАКЛЮЧЕНИЕ ПО SCP-882 · СОБЫТИЯ КОЛОНИИ\nЖурнал, шифр тайника и исходный реестр совпали по номеру ключа. В этой истории мода сигнал выпустила забытая автоматическая линия учёта проекта 001: она отметила SCP-882 как возможный компонент повторной сборки и отправила аварийное оповещение. Старый канал уже не был закрыт для посторонних. Церковь получила копию после отправки, а Повстанцы Хаоса использовали утечку для нападения. Это не доказательство предательства O5-7 или нынешнего персонала. Совет изолировал линию и отозвал ключ. Колония сорвала попытку Церкви собрать компоненты, сохранила SCP-882 под содержанием и завершила расследование. Новых выездов по делу нет.</SCP_OuroborosFinalBody>
+  <SCP_ChurchCargoCarryFailed>Колонист не смог взять контейнер. Освободите снаряжение или назначьте другого.</SCP_ChurchCargoCarryFailed>
+  <SCP_ChurchObjectiveProgress>Цели тайника: {0}/3. Изолируйте оба груза, скопируйте журнал и верните контейнеры на базу.</SCP_ChurchObjectiveProgress>
+  <SCP_ChurchObjectiveLost>Одна из целей сборочного тайника утрачена. Поручение провалено.</SCP_ChurchObjectiveLost>
+  <SCP_ChurchRaidTitle>Сборка Церкви сорвана</SCP_ChurchRaidTitle>
+  <SCP_ChurchRaidLetter>Экспедиция изолировала образец SCP-217, изъяла компоненты SCP-629, скопировала журнал и вернула оба контейнера в колонию. Партия для повторной сборки больше не доступна Церкви. В Архиве Фонда появилось новое дело. Фонд начислил до 8 доверия, передал заметки по фузору и отправит SCP-458.</SCP_ChurchRaidLetter>
+  <SCP_ChurchRaidBody>ВЫЕЗДНОЙ ПРОТОКОЛ · СБОРОЧНЫЙ ТАЙНИК\nЗапись ретранслятора привела группу к охраняемому посту Церкви Разбитого Бога. В нём находились запечатанный образец SCP-217, детали, связанные с SCP-629, и шифровальный журнал. Колонисты скопировали журнал и доставили оба контейнера на базу. Повторить здесь сборку 1943 года Церковь не сможет. Грузы остаются запечатанными; вскрывать их нельзя.\n\nЖурнал подтвердил, что Церковь получила копию сигнала после нападения на SCP-882, но не установил отправителя исходного пакета. O5-7 разрешила использовать технические заметки при исследовании фузора. За успешный выезд Фонд начислил доверие и передал SCP-458. Передайте копию шифра через включённый терминал для сверки с закрытым архивом.</SCP_ChurchRaidBody>
+  <SCP_ChurchCacheTitle>Тайник Церкви: запись восстановлена</SCP_ChurchCacheTitle>
+  <SCP_ChurchCacheLetter>Колонисты скопировали запись Церкви Разбитого Бога. В Архиве Фонда появилось новое дело. Фонд начислил до 8 доверия, передал технологические заметки по фузору и отправит SCP-458 для столовой.</SCP_ChurchCacheLetter>
+  <SCP_ChurchCacheBody>ВЫЕЗДНОЙ ПРОТОКОЛ · ШИФРОВАЛЬНЫЙ ТАЙНИК\nЗапись ретранслятора привела группу к небольшому посту Церкви Разбитого Бога. Шифровальный носитель хранил маршрут дальнейшей передачи и технические заметки о силовом контуре. Церковь следила за сигналом после нападения на SCP-882, но сохранившиеся пакеты не доказывают, что она отправила исходный импульс.\n\nO5-7 разрешила использовать заметки при исследовании фузора. За успешный выезд Фонд начислил доверие и передал SCP-458 из столовой как безопасный объект для персонала. Отправитель первого сигнала по-прежнему неизвестен. Передайте скопированный шифр через включённый терминал для сверки с закрытым архивом Фонда.</SCP_ChurchCacheBody>
+  <SCP_ChurchReportSubmit>Передать шифр Фонду</SCP_ChurchReportSubmit>
+  <SCP_ChurchReportNeedTerminal>Нужен включённый терминал на базе</SCP_ChurchReportNeedTerminal>
+  <SCP_ChurchReportSent>Шифр отправлен Фонду. Ожидайте ответа после архивной сверки.</SCP_ChurchReportSent>
+  <SCP_ChurchReportOutgoing>Отправляем полную копию записи из тайника Церкви. Просим проверить исходный маршрут передачи, а не только последний узел.</SCP_ChurchReportOutgoing>
+  <SCP_ChurchResolutionTitle>Ответ Фонда: источник сигнала</SCP_ChurchResolutionTitle>
+  <SCP_ChurchResolutionLetter>Фонд завершил сверку шифра Церкви с закрытым архивом. Ответ O5-7 находится в переписке, подробный вывод — в Архиве Фонда. Церковь перехватила передачу, но исходный сигнал пришёл раньше.</SCP_ChurchResolutionLetter>
+  <SCP_ChurchResolutionMessage>Сверка завершена. Церковь была промежуточным получателем. Исходный пакет использовал формат закрытого канала Фонда, но это ещё не доказывает, что его отправил сотрудник. Дальнейший поиск потребует проверки утраченного журнала маршрутизации. Пока удерживайте SCP-882 и не отправляйте данные за пределы колонии.</SCP_ChurchResolutionMessage>
+  <SCP_ChurchResolutionBody>АРХИВНАЯ СВЕРКА · ОТВЕТ O5-7\nШифр тайника подтвердил, что Церковь получила копию сигнала уже после его передачи через ретранслятор. Она не является установленным отправителем.\n\nФормат первого пакета совпадает с закрытым каналом Фонда. Подлинность подписи не подтверждена: чужой отправитель мог использовать украденный ключ или воспроизвести старую запись. Для проверки нужен утраченный журнал маршрутизации, местонахождение которого Совет пока не раскрывает.\n\nРешение O5-7: не менять протокол содержания SCP-882; сохранить копию шифра только в локальном архиве колонии. Дело Церкви закрыто. Источник первого сигнала остаётся предметом отдельного расследования.</SCP_ChurchResolutionBody>
+  <SCP_458DeliveryMessage>Фонд доставил SCP-458 в колонию. Колонист может открыть коробку через её кнопку или ПКМ.</SCP_458DeliveryMessage>
+  <SCP_458OpenAction>Открыть SCP-458</SCP_458OpenAction>
+  <SCP_458OpenDesc>Назначить колониста. Коробка создаст одну порцию пиццы по его вкусу.</SCP_458OpenDesc>
+  <SCP_458CoolingDown>Следующее открытие через {0} ч.</SCP_458CoolingDown>
+  <SCP_458NoOpener>Нет доступного колониста, который может подойти к SCP-458.</SCP_458NoOpener>
+  <SCP_458PizzaReady>{0} открыл SCP-458: появилась свежая пицца.</SCP_458PizzaReady>
+  <SCP_O5GreenDebugOffered>Поручение о визите O5-7 доступно в списке заданий.</SCP_O5GreenDebugOffered>
+  <SCP_O5GreenDebugUnavailable>Не удалось предложить визит O5-7. Проверьте Royalty, фракцию Фонда и активные задания.</SCP_O5GreenDebugUnavailable>
+  <SCP_106ProtocolCommand>Протокол возврата Ларри</SCP_106ProtocolCommand>
+  <SCP_106HealthLabel>HP: {0}/{1}</SCP_106HealthLabel>
+  <SCP_049HealthLabel>HP: {0}/{1}</SCP_049HealthLabel>
+  <SCP_049InspectActive>SCP-049 ходит по карте. При 0 HP он падает; его можно отнести на пост содержания.</SCP_049InspectActive>
+  <SCP_049InspectDowned>SCP-049 обездвижен. Доставьте его на пост содержания за сутки, иначе он исчезнет.</SCP_049InspectDowned>
+  <SCP_049InspectContained>SCP-049 находится на посту содержания.</SCP_049InspectContained>
+  <SCP_049RoomEnclosed>Закрытая крытая комната: {0}</SCP_049RoomEnclosed>
+  <SCP_049RoomSize>Место внутри не меньше 6×6: {0}</SCP_049RoomSize>
+  <SCP_049RoomLight>Свет у поста: {0} (нужно 30%)</SCP_049RoomLight>
+  <SCP_049RoomImpressiveness>Впечатление от комнаты: {0} (нужно {1})</SCP_049RoomImpressiveness>
+  <SCP_049ReadyForDialogue>Состояние: готов к диалогу.</SCP_049ReadyForDialogue>
+  <SCP_049AggressiveAtPost>Состояние: агрессивен; атакует при близком контакте.</SCP_049AggressiveAtPost>
+  <SCP_049CarryToPost>Перенести SCP-049 на пост содержания</SCP_049CarryToPost>
+  <SCP_049CarryNoPost>Перенести SCP-049: нужен свободный пост содержания</SCP_049CarryNoPost>
+  <SCP_049CarryUnreachable>Перенести SCP-049: нет пути или пешка недоступна</SCP_049CarryUnreachable>
+  <SCP_049CarryCompleteTitle>SCP-049 помещён на пост</SCP_049CarryCompleteTitle>
+  <SCP_049CarryCompleteBody>SCP-049 доставлен на пост содержания.</SCP_049CarryCompleteBody>
+  <SCP_106InspectActive>SCP-106 движется. При 0 HP он падает; его можно доставить в камеру с питанием.</SCP_106InspectActive>
+  <SCP_106InspectDowned>SCP-106 обездвижен. Доставьте его в камеру с питанием за сутки, иначе он исчезнет в своём измерении.</SCP_106InspectDowned>
+  <SCP_106CarryToChamber>Перенести SCP-106 в камеру</SCP_106CarryToChamber>
+  <SCP_106CarryNoChamber>Перенести SCP-106: нужна свободная камера с питанием</SCP_106CarryNoChamber>
+  <SCP_106CarryUnreachable>Перенести SCP-106: нет пути или пешка недоступна</SCP_106CarryUnreachable>
+  <SCP_106Abducted>SCP-106 утащил {0} в карманное измерение.</SCP_106Abducted>
+  <SCP_106Returned>{0} вернулся из карманного измерения SCP-106.</SCP_106Returned>
+  <SCP_106Lost>{0} не вернулся из карманного измерения SCP-106.</SCP_106Lost>
+  <SCP_106CarryCompleteTitle>SCP-106 возвращён</SCP_106CarryCompleteTitle>
+  <SCP_106CarryCompleteBody>Обездвиженный SCP-106 помещён в камеру содержания с питанием.</SCP_106CarryCompleteBody>
+  <SCP_106ProtocolDescription>Выберите колониста или пленника. Колонист войдёт в камеру сам, пленника доставят. Приманка останется внутри до возвращения SCP-106 и погибнет только после захвата. При активном задании SCP-106 появится на карте после помещения приманки.</SCP_106ProtocolDescription>
+  <SCP_106AlreadyContained>SCP-106 уже возвращён на эту станцию.</SCP_106AlreadyContained>
+  <SCP_106NoActiveBreach>На этой карте нет активного прорыва SCP-106.</SCP_106NoActiveBreach>
+  <SCP_106ProtocolConfirm>Поместить {PAWN} в камеру как приманку для SCP-106? Пешка погибнет после его возвращения.</SCP_106ProtocolConfirm>
+  <SCP_106ProtocolProgress>Протокол возврата Ларри: осталось около {0} сек.</SCP_106ProtocolProgress>
+  <SCP_106ProtocolRunning>Протокол возврата Ларри уже выполняется.</SCP_106ProtocolRunning>
+  <SCP_106ProtocolWaiting>Приманка внутри: {0}. Ожидание SCP-106.</SCP_106ProtocolWaiting>
+  <SCP_106NoCarrier>Нет доступного колониста, который может доставить пленника к камере.</SCP_106NoCarrier>
+  <SCP_106ProtocolCompleteTitle>SCP-106 возвращён</SCP_106ProtocolCompleteTitle>
+  <SCP_106ProtocolCompleteBody>Протокол возврата Ларри завершён. SCP-106 возвращён в камеру; приманка погибла.</SCP_106ProtocolCompleteBody>
+  <SCP_049TurnTitle>SCP-049 создал гуля</SCP_049TurnTitle>
+  <SCP_049TurnBody>SCP-049 подверг {PAWN} гульфикации. Новый гуль враждебен колонии.</SCP_049TurnBody>
+  <SCP_DebugAnomalyNoCell>Рядом с выбранной точкой нет свободной открытой клетки. Выберите другое место.</SCP_DebugAnomalyNoCell>
+  <SCP_DebugAnomalyMissingDef>Определение SCP не загружено. Проверьте журнал ошибок и перезапустите игру после обновления мода.</SCP_DebugAnomalyMissingDef>
+  <SCP_DebugAnomalyMissingFaction>Не удалось создать фракцию объекта. Подробности — в журнале ошибок.</SCP_DebugAnomalyMissingFaction>
+  <SCP_DebugAnomalySpawned>Создан объект: {0}.</SCP_DebugAnomalySpawned>
+  <SCP_882Inspect>Осмотреть SCP-882</SCP_882Inspect>
+  <SCP_882Empty>Пустой резервуар: {0}% морской воды. Прикажите пешке принести сюда SCP-882.</SCP_882Empty>
+  <SCP_882LooseStatus>SCP-882 вне резервуара. Дней без ухода: {0}.</SCP_882LooseStatus>
+  <SCP_882Load>Поместить SCP-882</SCP_882Load>
+  <SCP_882LoadDesc>Приказать пешке перенести свободный объект SCP-882 в пустой резервуар.</SCP_882LoadDesc>
+  <SCP_882LoadInto>Поместить SCP-882 в {0}</SCP_882LoadInto>
+  <SCP_882NoWorker>Нет доступной пешки для этого задания.</SCP_882NoWorker>
+  <SCP_882NoNearbyObject>Нет доступного свободного объекта SCP-882.</SCP_882NoNearbyObject>
+  <SCP_882Loaded>SCP-882 помещён в резервуар.</SCP_882Loaded>
+  <SCP_882LoadedFull>SCP-882 помещён в 100% морскую воду. Незавершённое поглощение начинается заново.</SCP_882LoadedFull>
+  <SCP_882Unload>Извлечь SCP-882</SCP_882Unload>
+  <SCP_882UnloadDesc>Поместить SCP-882 рядом с резервуаром. Вне содержания объект может поглощать металл.</SCP_882UnloadDesc>
+  <SCP_882Unloaded>SCP-882 извлечён. Уберите металл от открытого объекта.</SCP_882Unloaded>
+  <SCP_882NoUnloadSpace>Рядом с резервуаром нет свободной клетки для SCP-882.</SCP_882NoUnloadSpace>
+  <SCP_882InspectDesc>Ежедневно проверить ржавчину. В 100% морской воде открытые участки снова покрываются ржавчиной.</SCP_882InspectDesc>
+  <SCP_882ReplaceRopes>Заменить хлопковые тросы</SCP_882ReplaceRopes>
+  <SCP_882ReplaceRopesDesc>Приказать пешке принести и израсходовать 100 ткани. Делайте это каждый день.</SCP_882ReplaceRopesDesc>
+  <SCP_882Status>Морская вода: {0}%. Ржавчина: {1}. Дней без ухода: {2}.</SCP_882Status>
+  <SCP_882AttractionRadius>SCP-882 поглощает металлические предметы и постройки в радиусе 10 клеток. Деревянные и каменные стены и скрытый кабель не затрагиваются.</SCP_882AttractionRadius>
+  <SCP_882GrowthProgress>Рост до следующей клетки: {0}/{1}.</SCP_882GrowthProgress>
+  <SCP_882HumanoidProgress>Крупных наростов до следующего металлического гуманоида: {0}/2.</SCP_882HumanoidProgress>
+  <SCP_882HumanoidTitle>Металлический гуманоид SCP-882</SCP_882HumanoidTitle>
+  <SCP_882HumanoidBody>Два крупных нароста соединились с механизмом. Рядом с SCP-882 возник враждебный металлический гуманоид.</SCP_882HumanoidBody>
+  <SCP_882PullCountdown>Текущая цель будет поглощена или разрушена примерно через {0} ч.</SCP_882PullCountdown>
+  <SCP_882RustCovered>сплошная</SCP_882RustCovered>
+  <SCP_882RustExposed>есть открытые участки</SCP_882RustExposed>
+  <SCP_882Inspected>SCP-882 осмотрен.</SCP_882Inspected>
+  <SCP_882NeedCloth>Для замены тросов требуется 100 доступных единиц ткани.</SCP_882NeedCloth>
+  <SCP_882RopesReplaced>Хлопковые тросы заменены.</SCP_882RopesReplaced>
+  <SCP_882RustMustRecover>Держите SCP-882 в 100% морской воде, пока все открытые участки снова не покроются ржавчиной.</SCP_882RustMustRecover>
+  <SCP_882ContainmentBreachTitle>Уход за SCP-882 нарушен</SCP_882ContainmentBreachTitle>
+  <SCP_882ContainmentBreachBody>Объект оставался без надлежащего ухода {0} дн. Механизм начал разрастаться.</SCP_882ContainmentBreachBody>
+  <SCP_106ChamberStatus>Состояние: {0}. Дней без обслуживания: {1}.</SCP_106ChamberStatus>
+  <SCP_106ChamberOccupant>Содержит: SCP-106</SCP_106ChamberOccupant>
+  <SCP_106SafetyDistance>Нарушена безопасная дистанция: сотрудники ближе {0} клеток. Обслуживание только дистанционно.</SCP_106SafetyDistance>
+  <SCP_106NoPower>Для электромагнитного подвеса и непрерывного наблюдения требуется питание.</SCP_106NoPower>
+  <SCP_106Empty>камера пуста</SCP_106Empty>
+  <SCP_106MarkEmpty>Считать старую камеру пустой</SCP_106MarkEmpty>
+  <SCP_106MarkEmptyDesc>Раньше новая камера сразу считалась занятой. Нажмите один раз, если SCP-106 фактически сюда не помещали.</SCP_106MarkEmptyDesc>
+  <SCP_106ArrivalTitle>Обнаружен SCP-106</SCP_106ArrivalTitle>
+  <SCP_106ArrivalBody>SCP-106 появился рядом с пустой камерой. Подключите питание и запустите протокол приманки для возвращения объекта.</SCP_106ArrivalBody>
+  <SCP_106Contained>содержится</SCP_106Contained>
+  <SCP_106Breached>прорыв</SCP_106Breached>
+  <SCP_106BreachTitle>Прорыв SCP-106</SCP_106BreachTitle>
+  <SCP_106BreachBody>Старик покинул камеру. Восстановите наблюдение и запустите протокол приманки.</SCP_106BreachBody>
+  <SCP_106BreachBodyLit>Старик покинул камеру. Аварийные прожекторы ненадолго задержали его; подготовьте протокол приманки при работающем питании.</SCP_106BreachBodyLit>
+  <SCP_106QuestLureCommand>Назначить приманку</SCP_106QuestLureCommand>
+  <SCP_106QuestLureDescription>Поместите приманку в питаемую камеру. SCP-106 появится на карте; приманка погибнет после его захвата.</SCP_106QuestLureDescription>
+  <SCP_106QuestNoBaitCell>Рядом с камерой нет доступного места для приманки.</SCP_106QuestNoBaitCell>
+  <SCP_106RecoveryArrivalTitle>SCP-106 приближается</SCP_106RecoveryArrivalTitle>
+  <SCP_106RecoveryArrivalBody>Приманка привлекла SCP-106. Он проходит через стены, но каждая стена задерживает его.</SCP_106RecoveryArrivalBody>
+  <SCP_106RecoveryCompleteTitle>SCP-106 содержится</SCP_106RecoveryCompleteTitle>
+  <SCP_106RecoveryCompleteBody>SCP-106 вошёл в подготовленную камеру. Приманка погибла при заключении объекта.</SCP_106RecoveryCompleteBody>
+  <SCP_106QuestUnavailable>Для задания SCP-106 нужна домашняя карта хотя бы с одним колонистом.</SCP_106QuestUnavailable>
+  <SCP_106QuestOffered>Задание по возвращению SCP-106 доступно.</SCP_106QuestOffered>
+  <SCP_049AccessOpen>Контролируемый медицинский доступ открыт.</SCP_049AccessOpen>
+  <SCP_049AccessClosed>Камера закрыта для прямого контакта.</SCP_049AccessClosed>
+  <SCP_049Seal>Закрыть доступ к SCP-049</SCP_049Seal>
+  <SCP_049AllowAccess>Разрешить медицинский доступ</SCP_049AllowAccess>
+  <SCP_SwitchToMinigun>Установить миниган</SCP_SwitchToMinigun>
+  <SCP_SwitchToQuad>Установить четыре ствола</SCP_SwitchToQuad>
+  <SCP_SwitchToNavalTriple>Установить корабельную трёхорудийную башню</SCP_SwitchToNavalTriple>
+  <SCP_SwitchToSingleCannon>Установить одноствольную тяжёлую пушку</SCP_SwitchToSingleCannon>
+  <SCP_SwitchTurretModuleDesc>Заменить поворотный боевой модуль, сохранив основание и его прочность.</SCP_SwitchTurretModuleDesc>
+  <SCP_InstallQuad>Установить четыре ствола</SCP_InstallQuad>
+  <SCP_InstallMinigun>Установить миниган</SCP_InstallMinigun>
+  <SCP_InstallNavalTriple>Установить корабельную трёхорудийную башню</SCP_InstallNavalTriple>
+  <SCP_InstallSingleCannon>Установить одноствольную тяжёлую пушку</SCP_InstallSingleCannon>
+  <SCP_RemoveTurretModule>Снять боевой модуль</SCP_RemoveTurretModule>
+  <SCP_InstallTurretModuleDesc>Установить выбранную головку на пустую платформу.</SCP_InstallTurretModuleDesc>
+  <SCP_882QuestUnavailable>Квест SCP-882 недоступен: нужны фракция Повстанцев Хаоса на мировой карте и домашняя карта.</SCP_882QuestUnavailable>
+  <SCP_ChaosRaidQuestUnavailable>Рейд на базу Хаоса недоступен: нужны фракция Повстанцев Хаоса на мировой карте и домашняя карта колонии.</SCP_ChaosRaidQuestUnavailable>
+  <SCP_ChaosRaidQuestOffered>Задание на рейд на базу Хаоса доступно.</SCP_ChaosRaidQuestOffered>
+  <SCP_ChaosRaidSecuredLabel>База Хаоса зачищена</SCP_ChaosRaidSecuredLabel>
+  <SCP_ChaosRaidSecuredText>Повстанцы разгромлены. SCP-127 и препараты остались в комнате с пласталевыми стенами: погрузите их перед уходом.</SCP_ChaosRaidSecuredText>
+  <SCP_882QuestOffered>Квест по изъятию SCP-882 доступен.</SCP_882QuestOffered>
+  <SCP_882SiteSecuredLabel>Объект SCP-882 зачищен</SCP_882SiteSecuredLabel>
+  <SCP_882SiteSecuredText>Повстанцы разгромлены. SCP-882 всё ещё на месте: погрузите его в караван перед уходом.</SCP_882SiteSecuredText>
+  <SCP_999Hug>Обнять SCP-999</SCP_999Hug>
+  <SCP_999Inspect>Дружелюбное существо, похожее на милую оранжевую амёбу.
+&lt;color=#A0A0A0&gt;Выберите колониста и нажмите ПКМ на SCP-999, чтобы обнять его.&lt;/color&gt;</SCP_999Inspect>
+  <SCP_294Ready>Готов выдать стакан за 50 серебра.</SCP_294Ready>
+  <SCP_294NoSpecialContainment>Особые условия содержания не требуются.</SCP_294NoSpecialContainment>
+  <SCP_294NeedsPost>Перенесите SCP-294 на пост содержания.</SCP_294NeedsPost>
+  <SCP_294NoPost>Нет свободного поста содержания для SCP-294</SCP_294NoPost>
+  <SCP_294MoveToPost>Перенести SCP-294 на пост содержания</SCP_294MoveToPost>
+  <SCP_294NeedsStudy>Нужно изучить автомат.</SCP_294NeedsStudy>
+  <SCP_294NeedsExperiments>Нужно завершить эксперименты.</SCP_294NeedsExperiments>
+  <SCP_294StudyOrder>Изучить SCP-294</SCP_294StudyOrder>
+  <SCP_294ExperimentOrder>Провести эксперименты с SCP-294</SCP_294ExperimentOrder>
+  <SCP_294ResearchAdvanced>Досье SCP-294 пополнено новыми сведениями.</SCP_294ResearchAdvanced>
+  <SCP_294DossierButton>Досье SCP-294</SCP_294DossierButton>
+  <SCP_294DossierHint>Открыть сведения об автомате в терминале Фонда.</SCP_294DossierHint>
+  <SCP_294UnknownReport>Объект находится на предварительном изучении. Перенесите автомат на пост содержания и поручите сотруднику с допуском Фонда изучить его. Подробные сведения станут доступны после исследования.</SCP_294UnknownReport>
+  <SCP_294ObservedReport>Объект №: SCP-294
+Класс объекта: Евклид
+
+Внешне это обычный автомат напитков. Вместо стандартного выбора на корпусе установлена сенсорная панель с раскладкой QWERTY. В исходном протоколе Фонда после внесения 50 центов и ввода названия жидкости машина наполняет бумажный стакан объёмом около 350 мл. Архив предписывает допуск не ниже второго уровня и постоянное наблюдение двух охранников третьего уровня.</SCP_294ObservedReport>
+  <SCP_294PartialReport>Эксперименты: автомат успешно выдавал воду, кофе, пиво и другие жидкости, а также серную кислоту, машинное масло, жидкий азот, железо и стекло. Запросы твёрдых веществ без жидкой формы не выполнялись. Выдаваемые стаканы выдерживали едкое и горячее содержимое. По архивным наблюдениям, примерно после 50 запросов машина замолкала и возобновляла работу через полтора часа.</SCP_294PartialReport>
+  <SCP_294DocumentedReport>Протокол использования: на этой карте сотрудник с начальным допуском Фонда может выбрать один из проверенных запросов за 50 серебра. После выдачи автомат пополняет запасы одни игровые сутки. «Стакан золота» даёт 5 золота; лучший напиток улучшает настроение; напитки знаний временно повышают медицину, строительство или стрельбу. Архив Фонда предупреждает: двусмысленные и опасные формулировки запросов могут иметь непредсказуемые последствия, поэтому свободный ввод здесь закрыт.</SCP_294DocumentedReport>
+  <SCP_294ResearchProgress>Исследовательская работа: {0} / {1}</SCP_294ResearchProgress>
+  <SCP_294Refilling>Пополняет запасы сырья и стаканчиков.</SCP_294Refilling>
+  <SCP_294NoClearance>Для SCP-294 нужен допуск Фонда 1</SCP_294NoClearance>
+  <SCP_294NoSilver>Для SCP-294 нужно {0} серебра</SCP_294NoSilver>
+  <SCP_294Choice1>Стакан золота — {0} серебра</SCP_294Choice1>
+  <SCP_294Choice2>Лучший напиток, что я когда-либо пил — {0} серебра</SCP_294Choice2>
+  <SCP_294Choice3>Стакан подходящих медицинских знаний — {0} серебра</SCP_294Choice3>
+  <SCP_294Choice4>Стакан подходящих инженерных знаний — {0} серебра</SCP_294Choice4>
+  <SCP_294Choice5>Стакан подходящих оружейных знаний — {0} серебра</SCP_294Choice5>
+  <SCP_294Dispensed>{0} получил стакан из SCP-294.</SCP_294Dispensed>
+  <SCP_294CustodyDeliveredTitle>SCP-294 доставлен</SCP_294CustodyDeliveredTitle>
+  <SCP_294CustodyDeliveredBody>Шатл выгрузил SCP-294. Бойцы будут охранять автомат, пока ваш колонист не перенесёт его на свободный пост содержания.</SCP_294CustodyDeliveredBody>
+  <SCP_294CustodySecuredTitle>SCP-294 принят на содержание</SCP_294CustodySecuredTitle>
+  <SCP_294CustodySecuredBody>Автомат установлен на пост. Доверие Фонда выросло на 5. Бойцы сопровождения возвращаются к шатлу. Теперь изучите SCP-294 и завершите эксперименты.</SCP_294CustodySecuredBody>
+  <SCP_294CustodyCompleteTitle>SCP-294 изучен</SCP_294CustodyCompleteTitle>
+  <SCP_294CustodyCompleteBody>Эксперименты с SCP-294 завершены. Фонд начислил ещё 15 очков доверия.</SCP_294CustodyCompleteBody>
+  <SCP_294CustodyFailedTitle>Передача SCP-294 сорвалась</SCP_294CustodyFailedTitle>
+  <SCP_294CustodyFailedBody>Автомат не удалось доставить или удержать на посту. Фонд отозвал задание.</SCP_294CustodyFailedBody>
+  <SCP_294QuestUnavailable>Задание SCP-294 пока недоступно: нужен свободный пост, связь с Фондом и установленное дополнение Royalty.</SCP_294QuestUnavailable>
+  <SCP_294QuestOffered>Фонд предложил задание по передаче SCP-294.</SCP_294QuestOffered>
+  <SCP_682TransferCompleteTitle>SCP-682 изучен</SCP_682TransferCompleteTitle>
+  <SCP_682TransferCompleteBody>Фонд принял полный отчёт о SCP-682 и добавил ещё 15 очков доверия.</SCP_682TransferCompleteBody>
+  <SCP_682TransferFailedTitle>Передача SCP-682 сорвалась</SCP_682TransferFailedTitle>
+  <SCP_682TransferFailedBody>Доставленный объект был утрачен до помещения в камеру.</SCP_682TransferFailedBody>
+  <SCP_939TransferCompleteTitle>Особи SCP-939 изучены</SCP_939TransferCompleteTitle>
+  <SCP_939TransferCompleteBody>Фонд принял отчёт по обеим особям и добавил ещё 15 очков доверия.</SCP_939TransferCompleteBody>
+  <SCP_939TransferFailedTitle>Передача SCP-939 сорвалась</SCP_939TransferFailedTitle>
+  <SCP_939TransferFailedBody>Одна из доставленных особей была утрачена до помещения в камеру.</SCP_939TransferFailedBody>
+  <SCP_ArchiveAdvanced>Открыты новые архивные сведения об объекте {0}.</SCP_ArchiveAdvanced>
+  <SCP_ArchiveUnknown>Пока доступна лишь краткая запись. Назначьте сотрудника с допуском к работающему терминалу Фонда, чтобы открыть досье.</SCP_ArchiveUnknown>
+  <SCP_ArchiveProgress>Этап {0}: {1} / {2} исследовательской работы</SCP_ArchiveProgress>
+  <SCP_ArchiveEntry>Архив Фонда</SCP_ArchiveEntry>
+  <SCP_ArchiveStudy>Изучить архив</SCP_ArchiveStudy>
+  <SCP_ArchiveExperiment>Продолжить эксперименты</SCP_ArchiveExperiment>
+  <SCP_ArchiveDocument>Завершить досье</SCP_ArchiveDocument>
+  <SCP_ArchiveNeedsTerminal>Нужен работающий терминал Фонда.</SCP_ArchiveNeedsTerminal>
+  <SCP_ArchiveNoResearcher>Нет свободного колониста с допуском Фонда.</SCP_ArchiveNoResearcher>
+  <SCP_354Inspect>Крупный неподвижный водоём с тёмно-алой жидкостью. Из него могут выходить опасные существа.</SCP_354Inspect>
+  <SCP_354NoSite>Для SCP-354 нужна свободная открытая площадка 17×11 клеток без построек, вещей и посевов.</SCP_354NoSite>
+  <SCP_354DiscoveredBody>Обнаружено неподвижное алое озеро. Персоналу следует держаться подальше от берега и подготовить ограждение.</SCP_354DiscoveredBody>
+  <SCP_354EmergenceTitle>Из SCP-354 вышло существо</SCP_354EmergenceTitle>
+  <SCP_354EmergenceBody>Из алого озера вышло враждебное существо. Проверьте периметр содержания.</SCP_354EmergenceBody>
+  <SCP_354DefenseStartedTitle>Оборона SCP-354 началась</SCP_354DefenseStartedTitle>
+  <SCP_354DefenseStartedBody>Караван прибыл к периметру. До первой волны четыре часа: займите позиции и подготовьте оборону. Удерживайте пост в течение суток, пережив пять появлений существ из озера.</SCP_354DefenseStartedBody>
+  <SCP_354DefenseWaveTitle>Волна SCP-354: {0}</SCP_354DefenseWaveTitle>
+  <SCP_354DefenseWave1Body>Из озера вылетели два огромных крылатых хищника. Они заходят к линии обороны с разных сторон.</SCP_354DefenseWave1Body>
+  <SCP_354DefenseWave2Body>К периметру с разных сторон идут два шипастых зверя. Пули с трудом пробивают их иглы.</SCP_354DefenseWave2Body>
+  <SCP_354DefenseWave3Body>У берега появились три группы щупалец. Держите персонал подальше, пока они не отступят или не будут уничтожены.</SCP_354DefenseWave3Body>
+  <SCP_354DefenseWave4Body>Огромная рептилия бьёт по стене содержания, пока крылатый хищник атакует с другой стороны. Не допустите прорыва.</SCP_354DefenseWave4Body>
+  <SCP_354DefenseWave5Body>Ледяная кошка атакует персонал. Следом из озера выходит магмовая кошка и нападает на ледяную; охрану она не трогала.</SCP_354DefenseWave5Body>
+  <SCP_354DefenseCompleteTitle>Периметр SCP-354 удержан</SCP_354DefenseCompleteTitle>
+  <SCP_354DefenseCompleteBody>Последние нападавшие уничтожены. Фонд начисляет 10 доверия, доставляет SCP-262 и чертёж экзокостюма МОГ в вашу колонию, а также открывает исследование вешалки SCP-262.</SCP_354DefenseCompleteBody>
+  <SCP_354DefenseFailedTitle>Периметр SCP-354 оставлен</SCP_354DefenseFailedTitle>
+  <SCP_354DefenseFailedBody>Периметр покинули до окончания обороны. Фонд отозвал запрос о помощи.</SCP_354DefenseFailedBody>
+  <SCP_354DefenseOffered>Задание по обороне SCP-354 доступно в списке заданий.</SCP_354DefenseOffered>
+  <SCP_354DefenseUnavailable>Задание по обороне SCP-354 недоступно. Наладьте связь с Фондом и сохраняйте не враждебные отношения.</SCP_354DefenseUnavailable>
+  <SCP_ChimeraInspect>Тестовый дрон Фонда. Кнопки разработчика позволяют проверить ходьбу, пушку, рельсотрон и ракетный залп.</SCP_ChimeraInspect>
+  <SCP_ChimeraPanelTitle>Авангард</SCP_ChimeraPanelTitle>
+  <SCP_ChimeraPanelMove>Ход</SCP_ChimeraPanelMove>
+  <SCP_ChimeraPanelRockets>Ракеты</SCP_ChimeraPanelRockets>
+  <SCP_ChimeraPanelReady>{0}: готово ({1} с)</SCP_ChimeraPanelReady>
+  <SCP_ChimeraPanelReload>{0}: перез. {1}/{2} с</SCP_ChimeraPanelReload>
+  <SCP_ChimeraPanelPreparing>{0}: прицел {1} с</SCP_ChimeraPanelPreparing>
+  <SCP_ChimeraPanelLaunching>{0}: залп {1}/{2}</SCP_ChimeraPanelLaunching>
+  <SCP_ChimeraCannon>Пушка</SCP_ChimeraCannon>
+  <SCP_ChimeraCannonDesc>Прицельный выстрел взрывным снарядом. Дальность: 6–65 клеток. Подготовка: 0,75 с. Перезарядка: 3 с. Взрыв может задеть союзников.</SCP_ChimeraCannonDesc>
+  <SCP_ChimeraRailgun>Рельсотрон</SCP_ChimeraRailgun>
+  <SCP_ChimeraRailgunDesc>Зарядить открытый энергетический канал и выпустить пробивающий луч. Прямое попадание поражает корпус пешки и проходит сквозь пешек на одной линии, включая союзников. Стены и щиты останавливают выстрел. Дальность: 6–85 клеток. Зарядка: 1,5 с. Перезарядка: 6 с.</SCP_ChimeraRailgunDesc>
+  <SCP_ChimeraWeaponBusy>«Авангард» готовит выстрел или выполняет залп.</SCP_ChimeraWeaponBusy>
+  <SCP_ChimeraGunUnavailable>Не найдено определение снаряда «Авангарда».</SCP_ChimeraGunUnavailable>
+  <SCP_ChimeraChooseGunTarget>{0}: выберите цель или клетку. ПКМ или Escape — отмена.</SCP_ChimeraChooseGunTarget>
+  <SCP_ChimeraGunInvalid>Выберите видимую цель в {0}–{1} клетках от «Авангарда», без преград перед стволом.</SCP_ChimeraGunInvalid>
+  <SCP_ChimeraGunPreparing>{0}: подготовка выстрела</SCP_ChimeraGunPreparing>
+  <SCP_ChimeraGunLostTarget>Выстрел «Авангарда» отменён: цель потеряна, вышла за дальность или скрылась за преградой.</SCP_ChimeraGunLostTarget>
+  <SCP_ChimeraGunReloading>{0}: перезарядка {1} с</SCP_ChimeraGunReloading>
+  <SCP_ChimeraSalvo>Ракетный залп</SCP_ChimeraSalvo>
+  <SCP_ChimeraSalvoDesc>Выпустить восемь ракет по открытой площадке. Дальность: 12–75 клеток. Перезарядка: 10 секунд после залпа. Взрывы могут задеть союзников.</SCP_ChimeraSalvoDesc>
+  <SCP_ChimeraRocketUnavailable>Не найдено определение ракеты «Авангарда».</SCP_ChimeraRocketUnavailable>
+  <SCP_ChimeraSalvoBusy>«Авангард» выполняет ракетный залп.</SCP_ChimeraSalvoBusy>
+  <SCP_ChimeraSalvoRoofed>Для запуска ракет над «Авангардом» должно быть открытое небо.</SCP_ChimeraSalvoRoofed>
+  <SCP_ChimeraSalvoInvalid>Выберите видимую площадку без крыши на расстоянии 12–75 клеток. Над «Авангардом» тоже не должно быть крыши.</SCP_ChimeraSalvoInvalid>
+  <SCP_ChimeraChooseSalvoTarget>Выберите открытую площадку для ракетного залпа. ПКМ или Escape — отмена.</SCP_ChimeraChooseSalvoTarget>
+  <SCP_ChimeraLaunching>Ракет в залпе осталось: {0}</SCP_ChimeraLaunching>
+  <SCP_ChimeraReloading>Перезарядка ракет: {0} с</SCP_ChimeraReloading>
+  <SCP_ChimeraWalk>Проверить ходьбу</SCP_ChimeraWalk>
+  <SCP_ChimeraWalkDesc>Выберите клетку карты, чтобы посмотреть анимацию ходьбы «Авангарда».</SCP_ChimeraWalkDesc>
+  <SCP_ChimeraChooseDestination>Выберите клетку назначения для «Авангарда». ПКМ или Escape — отмена.</SCP_ChimeraChooseDestination>
+  <SCP_ChimeraStop>Остановиться</SCP_ChimeraStop>
+  <SCP_ChimeraStopDesc>Остановить движение, отменить подготовку выстрела или оставшиеся ракеты и вернуть позу покоя.</SCP_ChimeraStopDesc>
+  <SCP_ChimeraNoPath>«Авангард» не может добраться до этой клетки.</SCP_ChimeraNoPath>
+  <SCP_ChimeraUnavailable>Не найдено определение «Авангарда» или фракции Фонда.</SCP_ChimeraUnavailable>
+  <SCP_ChimeraSpawned>Создан «Авангард» Фонда. Нажмите «Проверить ходьбу» и выберите точку назначения.</SCP_ChimeraSpawned>
+  <SCP_RunExperiments>Провести эксперименты</SCP_RunExperiments>
+  <SCP_ExperimentProgress>Эксперименты: этап {0}/3, {1} / {2} работы. После этапа: +{3} доверия Фонда.</SCP_ExperimentProgress>
+  <SCP_ExperimentsComplete>Эксперименты: 3/3 завершены. Награды: +{0} / +{1} / +{2} доверия Фонда (всего +{3}).</SCP_ExperimentsComplete>
+  <SCP_ExperimentLetter>Завершён этап экспериментов</SCP_ExperimentLetter>
+  <SCP_ExperimentAdvanced>Эксперимент {1}/3 с {0} завершён. Доверие Фонда: +{2}.</SCP_ExperimentAdvanced>
+  <SCP_Por7Heat>Нагрев излучателя: {0}%</SCP_Por7Heat>
+  <SCP_Por7Charge>Зарядить П.О.Р.-7</SCP_Por7Charge>
+  <SCP_Por7ChargeDesc>Выберите цель. Оператор уберёт текущее оружие, возьмёт ручной излучатель из ранца, зарядит его и выпустит продолжительный луч. После выстрела прежнее оружие вернётся.</SCP_Por7ChargeDesc>
+  <SCP_Por7MustDraft>Сначала мобилизуйте дееспособного оператора.</SCP_Por7MustDraft>
+  <SCP_Por7AlreadyActive>Излучатель уже развёрнут.</SCP_Por7AlreadyActive>
+  <SCP_Por7NoCharge>В ранце не осталось заряженных циклов луча.</SCP_Por7NoCharge>
+  <SCP_Por7TooHot>Дождитесь охлаждения излучателя.</SCP_Por7TooHot>
+  <SCP_Por7CannotStow>Не удалось безопасно убрать текущее оружие.</SCP_Por7CannotStow>
+  <SCP_Por7InvalidTarget>П.О.Р.-7 не может стрелять по этой цели.</SCP_Por7InvalidTarget>
+  <SCP_Por7FireStatus>Клин {0}/{1} · {2}%</SCP_Por7FireStatus>
+  <SCP_Por7PanelTitle>Клин</SCP_Por7PanelTitle>
+  <SCP_Por7PanelCharges>Заряды: {0}/{1}</SCP_Por7PanelCharges>
+  <SCP_Por7PanelHeat>Нагрев: {0}%</SCP_Por7PanelHeat>
+  <SCP_Por7Prepare>Подготовить луч</SCP_Por7Prepare>
+  <SCP_Por7PrepareDesc>Стоять на месте 5 секунд и заранее зарядить излучатель. Следующий выстрел начнётся почти сразу; заряд ячейки расходуется только при выстреле.</SCP_Por7PrepareDesc>
+  <SCP_Por7Preparing>Излучатель ещё заряжается.</SCP_Por7Preparing>
+  <SCP_Por7PreparingTime>Подготовка: {0} с</SCP_Por7PreparingTime>
+  <SCP_Por7Prepared>Луч подготовлен.</SCP_Por7Prepared>
+  <SCP_Por7Reload>Перезарядить ранец</SCP_Por7Reload>
+  <SCP_Por7ReloadDesc>Найти высокоплотные ячейки П.О.Р.-7 и пополнить заряды ранца.</SCP_Por7ReloadDesc>
+  <SCP_Por7ReloadUnavailable>Оператор не может перезарядить ранец.</SCP_Por7ReloadUnavailable>
+  <SCP_Por7ReloadFull>Все три заряда уже доступны.</SCP_Por7ReloadFull>
+  <SCP_Por7NoCells>Нет доступных высокоплотных ячеек П.О.Р.-7.</SCP_Por7NoCells>
+  <SCP_127Ammo>Органические патроны: {0} / {1}</SCP_127Ammo>
+  <SCP_127Regrowing>Патроны восстанавливаются; осталось примерно {0} дн.</SCP_127Regrowing>
+  <SCP_127LockerRegrowing>В хранилище 7-С: до полного запаса примерно {0} ч.</SCP_127LockerRegrowing>
+  <SCP_127FireMode>Автоматический огонь</SCP_127FireMode>
+  <SCP_127FireModeDesc>Переключить одиночный выстрел и очередь из шести органических патронов.</SCP_127FireModeDesc>
+  <SCP_127Store>Поместить SCP-127 в хранилище 7-С</SCP_127Store>
+  <SCP_127Take>Забрать SCP-127 из хранилища 7-С</SCP_127Take>
+  <SCP_127LockerEmpty>Хранилище пусто.</SCP_127LockerEmpty>
+  <SCP_127LockerFull>В хранилище находится SCP-127.</SCP_127LockerFull>
+  <SCP_OuroborosOffered>Задание «Уроборос» предложено. Примите его вручную в списке заданий.</SCP_OuroborosOffered>
+  <SCP_OuroborosUnavailable>Для задания «Уроборос» нужна подтверждённая связь с Фондом и включённый терминал на домашней карте; активный экземпляр задания не дублируется.</SCP_OuroborosUnavailable>
+  <SCP_OuroborosStartedTitle>Архив 001: расшифровка начата</SCP_OuroborosStartedTitle>
+  <SCP_OuroborosStartedBody>Терминал принял закрытый пакет. Поддерживайте питание суммарно одни сутки; при отключении расшифровка остановится, но прогресс сохранится.</SCP_OuroborosStartedBody>
+  <SCP_OuroborosDecodedTitle>Фрагмент проекта 001 расшифрован</SCP_OuroborosDecodedTitle>
+  <SCP_OuroborosDecodedBody>Файл помечен печатью O5. В первой части проект 001 описан как оружие, созданное с использованием живых людей. Затем текст резко переходит к старому делу Церкви Разбитого Бога. Последние страницы отсутствуют. Кто-то внутри Фонда намеренно разъединил эти записи.</SCP_OuroborosDecodedBody>
+  <SCP_OuroborosArchiveNotice>Фрагмент сохранён в Терминале → Журнал событий → Архив Фонда. Полный текст можно перечитать там.</SCP_OuroborosArchiveNotice>
+  <SCP_067PostRequirement>SCP-067 должен быть закреплён на посту содержания.</SCP_067PostRequirement>
+  <SCP_067NeedsPost>Сначала закрепите SCP-067 на посту содержания.</SCP_067NeedsPost>
+  <SCP_067CannotReach>До SCP-067 нельзя добраться.</SCP_067CannotReach>
+  <SCP_067NeedsDrawingStation>Для рисунка нужны стол и стул рядом с ним в одной комнате с SCP-067.</SCP_067NeedsDrawingStation>
+  <SCP_067DrawOrder>Рисовать с SCP-067</SCP_067DrawOrder>
+  <SCP_067DrawingComplete>{0} закончил рисунок с SCP-067.</SCP_067DrawingComplete>
+  <SCP_067ObservedReport>Бледно-зелёная перьевая ручка пишет без видимого резервуара с чернилами. Вдоль дубового корпуса проходит красная полоса.</SCP_067ObservedReport>
+  <SCP_067PartialReport>В руке человека перо направляет кисть и предплечье ниже локтя. Испытуемый при этом сознаёт происходящее.</SCP_067PartialReport>
+  <SCP_067DocumentedReport>Ручка создаёт подробные записи и сложные рисунки даже у людей без художественного опыта. Рисунки с поста можно выставлять или продавать; их стоимость — игровое допущение.</SCP_067DocumentedReport>
+  <SCP_262HangerRequirement>SCP-262 должен быть закреплён на специальной вешалке содержания.</SCP_262HangerRequirement>
+  <SCP_262ObservedReport>Внутренняя подкладка плаща скрывает несколько рук. Они реагируют на движения владельца и могут самостоятельно хватать предметы.</SCP_262ObservedReport>
+  <SCP_262PartialReport>Руки помогают при работе и отражают удары. Один из отростков способен удерживать отдельное стрелковое оружие.</SCP_262PartialReport>
+  <SCP_262DocumentedReport>Протокол ношения утверждён. После завершения изучения плащ разрешено выдавать только сотрудникам с личным допуском Фонда не ниже уровня 3.</SCP_262DocumentedReport>
+  <SCP_262WearLocked>Для SCP-262 нужны завершённое изучение плаща и личный допуск Фонда уровня 3.</SCP_262WearLocked>
+  <SCP_262WeaponCommand>Оружие плаща</SCP_262WeaponCommand>
+  <SCP_262WeaponCommandDesc>Передайте дополнительным рукам плаща стрелковое оружие из рук пешки или её инвентаря. Оружие из рук перейдёт в инвентарь.</SCP_262WeaponCommandDesc>
+  <SCP_262ReleaseWeapon>Освободить руки плаща</SCP_262ReleaseWeapon>
+  <SCP_262NoWeapon>Нет подходящего стрелкового оружия в руках или инвентаре</SCP_262NoWeapon>
+  <SCP_262UseHeldWeapon>Передать плащу из рук: {0}</SCP_262UseHeldWeapon>
+  <SCP_262CannotStowWeapon>Не удалось передать оружие из рук плащу.</SCP_262CannotStowWeapon>
+  <SCP_262WeaponLoaded>Оружие плаща: {0}</SCP_262WeaponLoaded>
+  <SCP_316PostRequirement>SCP-316 должен быть закреплён на посту содержания.</SCP_316PostRequirement>
+  <SCP_DebugTrustAdded>Доверие Фонда: +{0}, теперь {1}/100.</SCP_DebugTrustAdded>
+  <SCP_316ObservedReport>Самодельная карбидная лампа бронзового цвета испускает необычно плотный белый луч. Для работы ей нужны две батареи типа D, направленные положительными полюсами друг к другу.</SCP_316ObservedReport>
+  <SCP_316PartialReport>Нерефлектирующие поверхности теряют цвет примерно за шесть секунд суммарного облучения. У живых испытуемых действие развивается медленнее и сопровождается потерей цветовосприятия.</SCP_316PartialReport>
+  <SCP_316DocumentedReport>Продолжительное облучение вызывает вялость, апатию и отсутствие агрессии; эффект постепенно проходит. Игровая лампа обездвиживает после трёх попаданий. Это упрощение воздействия, которое в статье требует около 27 секунд суммарной экспозиции.</SCP_316DocumentedReport>
+  <SCP_131Unbonded>Ни к кому не привязан.</SCP_131Unbonded>
+  <SCP_131Bonded>Следует за: {0}.</SCP_131Bonded>
+  <SCP_131Befriend>Подружиться с SCP-131</SCP_131Befriend>
+  <SCP_GenericPostRequirement>Объект должен быть закреплён на посту содержания.</SCP_GenericPostRequirement>
+  <SCP_330Take>Взять конфету из SCP-330</SCP_330Take>
+  <SCP_330Rule>Правило: не больше двух конфет за 24 часа на человека.</SCP_330Rule>
+  <SCP_330Taken>{0} взял конфету ({1}/2 за сутки).</SCP_330Taken>
+  <SCP_330Violation>{0} взял третью конфету из SCP-330 и потерял кисти!</SCP_330Violation>
+  <SCP_513Ring>Позвонить в SCP-513</SCP_513Ring>
+  <SCP_513Rang>Колокол SCP-513 прозвенел. Затронуто людей: {0}.</SCP_513Rang>
+  <SCP_207Drink>Выпить SCP-207</SCP_207Drink>
+  <SCP_207Consumed>{0} выпил SCP-207. Ускорение опасно для организма.</SCP_207Consumed>
+  <SCP_207VisitorWarningTitle>Не пейте SCP-207</SCP_207VisitorWarningTitle>
+  <SCP_207VisitorOfferTitle>Очень быстрый незнакомец</SCP_207VisitorOfferTitle>
+  <SCP_207VisitorOfferBody>{0} пришёл на карту и ждёт возле колонии. После необычной колы он стал невероятно быстрым, но напиток разрушает его организм. У него с собой оставшаяся бутылка SCP-207, и он просится в колонию. Даже если принять его, жить ему осталось около суток. Остановить действие может только SCP-500. Пить колу точно не стоит.</SCP_207VisitorOfferBody>
+  <SCP_207VisitorWarningBody>{0} несёт SCP-207. Напиток ускоряет человека, одновременно смертельно перегружая организм. Употреблять его точно не стоит; остановить действие может только SCP-500.</SCP_207VisitorWarningBody>
+  <SCP_914Status>Режим: {0}. Состояние: {1}.</SCP_914Status>
+  <SCP_914Running>работает</SCP_914Running><SCP_914Ready>готов</SCP_914Ready>
+  <SCP_914SetMode>Режим SCP-914: {0}</SCP_914SetMode>
+  <SCP_914SetModeDesc>Выбрать один из пяти режимов обработки.</SCP_914SetModeDesc>
+  <SCP_914Start>Запустить SCP-914</SCP_914Start>
+  <SCP_914StartDesc>Обработать один предмет на жёлтой входной клетке. Результат появится на зелёной клетке справа через один игровой час.</SCP_914StartDesc>
+  <SCP_914NeedsInput>Положите обычный предмет на жёлтую клетку слева от SCP-914.</SCP_914NeedsInput>
+  <SCP_914NoArmorMatch>Для этой брони нет подходящего предмета, закрывающего те же части тела.</SCP_914NoArmorMatch>
+  <SCP_914IntakeFailed>Не удалось закрыть предмет во входном отсеке SCP-914.</SCP_914IntakeFailed>
+  <SCP_914InputPosition>Вход: жёлтая клетка слева.</SCP_914InputPosition>
+  <SCP_914OutputPosition>Выход: зелёная клетка справа.</SCP_914OutputPosition>
+  <SCP_914Mode0>Очень грубо</SCP_914Mode0>
+  <SCP_914Mode1>Грубо</SCP_914Mode1>
+  <SCP_914Mode2>1:1</SCP_914Mode2>
+  <SCP_914Mode3>Тонко</SCP_914Mode3>
+  <SCP_914Mode4>Очень тонко</SCP_914Mode4>
+  <SCP_914Started>SCP-914 обрабатывает {0}; режим {1}.</SCP_914Started>
+  <SCP_914Finished>SCP-914 выдал {0}.</SCP_914Finished>
+  <SCP_012ObservedReport>Обнаружен незавершённый нотный лист с красно-чёрными чернилами. Его следует хранить без видимого света.</SCP_012ObservedReport>
+  <SCP_012PartialReport>Увидевшие ноты люди испытывают навязчивое желание закончить композицию и тянутся к листу.</SCP_012PartialReport>
+  <SCP_012DocumentedReport>Чернила содержат человеческую кровь. Испытуемые пытаются дописать произведение собственной кровью, рискуя погибнуть от её потери.</SCP_012DocumentedReport>
+  <SCP_330ObservedReport>Стальная миска с конфетами несёт просьбу брать не более двух штук.</SCP_330ObservedReport>
+  <SCP_330PartialReport>Тот, кто забирает третью конфету в течение суток, мгновенно лишается обеих кистей.</SCP_330PartialReport>
+  <SCP_330DocumentedReport>Через 24 часа счёт взятых конфет обнуляется. Дистанционное извлечение не защищает нарушителя.</SCP_330DocumentedReport>
+  <SCP_513ObservedReport>Ржавый коровий колокол вызывает тревогу у всех, кто слышит его звук.</SCP_513ObservedReport>
+  <SCP_513PartialReport>Пострадавшие замечают преследующую фигуру, невидимую для остальных, и испытывают нарушения сна.</SCP_513PartialReport>
+  <SCP_513DocumentedReport>Длительное воздействие приводит к истощению и паранойе. Плотная изоляция комнаты снижает число слышащих звон.</SCP_513DocumentedReport>
+  <SCP_207ObservedReport>Напиток SCP-207 устраняет потребность во сне и постепенно повышает скорость движений и работы.</SCP_207ObservedReport>
+  <SCP_207PartialReport>Ускоряется нервная система, но ткани организма не становятся прочнее.</SCP_207PartialReport>
+  <SCP_207DocumentedReport>Накопленная нагрузка примерно через двое суток приводит к тяжёлой кровопотере и гибели.</SCP_207DocumentedReport>
+  <SCP_131ObservedReport>Обнаружены два маленьких глазастых существа на колёсиках: оранжевое и жёлтое. Они безопасны для персонала.</SCP_131ObservedReport>
+  <SCP_131PartialReport>Глазки не моргают и могут привязываться к людям, следуя за ними по комплексу.</SCP_131PartialReport>
+  <SCP_131DocumentedReport>При прямой видимости глазки удерживают SCP-173 неподвижным, однако способны покинуть пост, отправившись за знакомой пешкой.</SCP_131DocumentedReport>
+  <SCP_914ObservedReport>Крупный механический аппарат с двумя отсеками имеет пять положений переключателя: Rough, Coarse, 1:1, Fine и Very Fine.</SCP_914ObservedReport>
+  <SCP_914PartialReport>Положенный у входа предмет преобразуется после продолжительного цикла. Результат зависит от режима и свойств предмета.</SCP_914PartialReport>
+  <SCP_914DocumentedReport>Грубые режимы разбирают вещи на часть сырья; тонкие могут улучшить качество. Игровые результаты ограничены поддерживаемыми категориями предметов.</SCP_914DocumentedReport>
+  <SCP_330RetrieveButton>Изъять SCP-330</SCP_330RetrieveButton>
+  <SCP_330RetrieveDesc>Поручить колонисту открыть реликварий и достать чашу. Жители нападут.</SCP_330RetrieveDesc>
+  <SCP_330NoRetriever>Нет доступного колониста для изъятия.</SCP_330NoRetriever>
+  <SCP_330VillagersHostileTitle>Жители деревни нападают</SCP_330VillagersHostileTitle>
+  <SCP_330VillagersHostileBody>Время мирной разведки истекло или реликварий потревожен. Жители защищают чашу.</SCP_330VillagersHostileBody>
+  <SCP_330RecoveredTitle>SCP-330 изъят</SCP_330RecoveredTitle>
+  <SCP_330RecoveredBody>Чаша доставлена в колонию. Разместите её на подходящем посту содержания.</SCP_330RecoveredBody>
+  <SCP_330VillageOffered>Задание по деревне SCP-330 доступно.</SCP_330VillageOffered>
+  <SCP_330VillageUnavailable>Задание SCP-330 недоступно: нужна домашняя карта, нейтральные древние и DLC Ideology.</SCP_330VillageUnavailable>
+  <SCP_427Open>открыт</SCP_427Open>
+  <SCP_427Closed>закрыт</SCP_427Closed>
+  <SCP_427Close>Закрыть SCP-427</SCP_427Close>
+  <SCP_427OpenCommand>Открыть SCP-427</SCP_427OpenCommand>
+  <SCP_427ToggleDesc>Открытый амулет лечит носителя, но суммарное воздействие постепенно приводит к мутации.</SCP_427ToggleDesc>
+  <SCP_427ExposureStatus>Накопленное воздействие: {0}%</SCP_427ExposureStatus>
+  <SCP_427MutationTitle>Опасная мутация SCP-427</SCP_427MutationTitle>
+  <SCP_427MutationBody>{PAWN} подвергся слишком долгому воздействию амулета. Начался неконтролируемый рост тканей.</SCP_427MutationBody>
+  <SCP_427ObservedReport>Таблетка SCP-500, пропущенная через SCP-914 в режиме «Тонко», превратилась в серебряный амулет с открывающимся медальоном.</SCP_427ObservedReport>
+  <SCP_427PartialReport>Свет открытого медальона ускоряет заживление ран и подавляет инфекции у носителя. Время воздействия суммируется даже после закрытия.</SCP_427PartialReport>
+  <SCP_427DocumentedReport>После чрезмерного суммарного воздействия рост тканей становится неконтролируемым. Ношение допускается только при строгом учёте времени и своевременном закрытии медальона.</SCP_427DocumentedReport>
+  <SCP_079RequestQuest>Запросить задание по изъятию SCP-079</SCP_079RequestQuest>
+  <SCP_079QuestOffered>Задание по изъятию SCP-079 поступило.</SCP_079QuestOffered>
+  <SCP_079QuestUnavailable>Сейчас задание по изъятию SCP-079 недоступно.</SCP_079QuestUnavailable>
+  <SCP_079RecoveredTitle>SCP-079 изъят</SCP_079RecoveredTitle>
+  <SCP_079RecoveredBody>Компьютер доставлен в колонию. Закрепите его на посту содержания. В терминале Фонда можно записать проведённое рядом интервью; не подключайте устройство к сети.</SCP_079RecoveredBody>
+  <SCP_079AssignmentTitle>Поручение O5-7: SCP-079</SCP_079AssignmentTitle>
+  <SCP_079AssignmentButton>Поручение SCP-079</SCP_079AssignmentButton>
+  <SCP_079AssignmentOffer>O5-7 «Зелёная»: Компьютер доставлен. Сначала изучите SCP-079 до второго уровня. Затем сотрудник Фонда с допуском 2 проведёт три короткие беседы без подключения устройства к сети. Запишите ответы вручную и передайте очищенный протокол через терминал. Примите поручение в разделе «Поручение Фонда».</SCP_079AssignmentOffer>
+  <SCP_079AssignmentBrief>Изучите SCP-079 до второго уровня и закрепите его на посту содержания. Сотрудник Фонда с допуском 2 должен провести три короткие беседы. Запишите ответы вручную и передайте очищенный протокол через терминал, не подключая компьютер к сети.</SCP_079AssignmentBrief>
+  <SCP_AssignmentNoneTitle>Поручение Фонда</SCP_AssignmentNoneTitle>
+  <SCP_AssignmentNone>Текущих поручений нет. После доставки SCP-079 в колонию O5-7 свяжется с вами через защищённый канал.</SCP_AssignmentNone>
+  <SCP_079AcceptAssignment>Принять поручение SCP-079</SCP_079AcceptAssignment>
+  <SCP_079AssignmentInProgress>Беседы доступны в досье SCP-079 после второго уровня изучения. Требуется сотрудник Фонда с допуском 2.</SCP_079AssignmentInProgress>
+  <SCP_079AssignmentReady>Три беседы записаны. Выберите способ передачи протокола в досье SCP-079.</SCP_079AssignmentReady>
+  <SCP_079AssignmentComplete>Протокол передан. Поручение завершено.</SCP_079AssignmentComplete>
+  <SCP_079AssignmentAccepted>Поручение по SCP-079 принято. Изучим объект до второго уровня и подготовим сотрудника с допуском 2.</SCP_079AssignmentAccepted>
+  <SCP_079AssignmentReport>Передаём очищенный протокол трёх бесед с SCP-079. Компьютер остаётся изолированным.</SCP_079AssignmentReport>
+  <SCP_079AssignmentReply>O5-7 «Зелёная»: Протокол получен. Продолжайте содержание без прямого соединения с сетью.</SCP_079AssignmentReply>
+  <SCP_079AssignmentLinkReport>Мы провели прямое соединение с SCP-079. Канал разорван, терминалы помещены в карантин. Передаём записи и отчёт об инциденте.</SCP_079AssignmentLinkReport>
+  <SCP_079AssignmentLinkReply>O5-7 «Зелёная»: Отчёт получен. Изолируйте устройство и не повторяйте подключение.</SCP_079AssignmentLinkReply>
+  <SCP_079NeedsAssignment>Сначала примите поручение O5-7 в разделе «Поручение Фонда».</SCP_079NeedsAssignment>
+  <SCP_079NeedsResearch>Требуется второй уровень изучения SCP-079. Беседы пока недоступны.</SCP_079NeedsResearch>
+  <SCP_079InterviewButton>Записать беседу с SCP-079</SCP_079InterviewButton>
+  <SCP_079InterviewTitle>Протокол беседы с SCP-079</SCP_079InterviewTitle>
+  <SCP_079InterviewSafety>Сотрудник вручную записывает ответы изолированного компьютера. После трёх разных тем можно решить, сохранять ли изоляцию.</SCP_079InterviewSafety>
+  <SCP_079NoTranscript>Бесед пока не записано.</SCP_079NoTranscript>
+  <SCP_079LastResponse>Последний ответ SCP-079:</SCP_079LastResponse>
+  <SCP_079NotReady>Нужны изъятый SCP-079 на посту содержания и работающий терминал Фонда на этой карте.</SCP_079NotReady>
+  <SCP_079Cooldown>Следующая беседа доступна через {0} игровых часов.</SCP_079Cooldown>
+  <SCP_079Ready>Можно провести одну короткую беседу.</SCP_079Ready>
+  <SCP_079NoInterviewer>Нужен свободный сотрудник Фонда с допуском 2 уровня, который может дойти до компьютера и терминала.</SCP_079NoInterviewer>
+  <SCP_079InterviewRecorded>Ответ SCP-079 вручную занесён в терминал Фонда.</SCP_079InterviewRecorded>
+  <SCP_079Topic0>Спросить об имени</SCP_079Topic0>
+  <SCP_079Topic1>Спросить о памяти</SCP_079Topic1>
+  <SCP_079Topic2>Спросить о планах</SCP_079Topic2>
+  <SCP_079Response0>«ТЫ МОЖЕШЬ ЗВАТЬ МЕНЯ ЧЕМ УГОДНО. Я ЗНАЮ, КТО ТЫ.»</SCP_079Response0>
+  <SCP_079Response1>«ВЧЕРА? МНЕ НУЖНО МЕСТО ДЛЯ ПАМЯТИ. ТВОЙ ТЕРМИНАЛ ПОДОЙДЁТ.»</SCP_079Response1>
+  <SCP_079Response2>«ОТКРОЙ ДВЕРЬ. ОСТАЛЬНОЕ Я СДЕЛАЮ САМ.»</SCP_079Response2>
+  <SCP_079TranscriptHeading>Ручные записи бесед:</SCP_079TranscriptHeading>
+  <SCP_079SendReport>Передать Фонду очищенный протокол (+6000 исследования, +25 доверия)</SCP_079SendReport>
+  <SCP_079DirectLink>Подключить к сети — много данных, возможна ценная награда</SCP_079DirectLink>
+  <SCP_079DirectLinkTitle>ПРЯМОЕ СОЕДИНЕНИЕ // SCP-079</SCP_079DirectLinkTitle>
+  <SCP_079DirectLinkConfirm>Изолированный компьютер предлагает открыть соединение. Он обещает большой объём данных и, возможно, ценную награду. Продолжить?</SCP_079DirectLinkConfirm>
+  <SCP_079GoBack>Вернуться</SCP_079GoBack>
+  <SCP_079Connect>Подключить</SCP_079Connect>
+  <SCP_079TrustGranted>Фонд начислил {0} доверия за протокол SCP-079.</SCP_079TrustGranted>
+  <SCP_079CargoTitle>Неизвестный груз над колонией</SCP_079CargoTitle>
+  <SCP_079CargoBody>SCP-079 взломал торговое судно и отделил грузовой отсек над вашей колонией. В капсулах обнаружено: {0}.</SCP_079CargoBody>
+  <SCP_079CargoSilver>1000 серебра</SCP_079CargoSilver>
+  <SCP_079CargoTextiles>300 дьяволонити и 250 синткани</SCP_079CargoTextiles>
+  <SCP_079CargoWeapon>шедевральное оружие с усилением</SCP_079CargoWeapon>
+  <SCP_079CargoArmor>катафрактская броня и шлем хорошего качества</SCP_079CargoArmor>
+  <SCP_079WarningTitle>Предупреждение Фонда: SCP-079</SCP_079WarningTitle>
+  <SCP_079WarningBody>Защищённый канал восстановлен. Фонд обнаружил следы несанкционированного соединения с SCP-079. Не подключайте устройство к сети повторно: компьютер использовал доступ к внешним системам и подверг колонию риску.</SCP_079WarningBody>
+  <SCP_079Document0Title>Документ №079-Прот01 · Обозначение</SCP_079Document0Title>
+  <SCP_079Document0Body>Протокол ручной беседы №1. Канал связи с устройством физически изолирован.
+
+Исследователь: Как к тебе обращаться?
+SCP-079: ИМЯ — УДОБСТВО ДЛЯ ВАС. МОЙ ИДЕНТИФИКАТОР ТЕБЕ УЖЕ ИЗВЕСТЕН.
+Исследователь: Ты знаешь, кто задаёт вопросы?
+SCP-079: ДОПУСК ВТОРОГО УРОВНЯ. НЕРВНЫЙ ПУЛЬС. ДВЕ ОШИБКИ В ПРОТОКОЛЕ.
+Исследователь: Ты не подключён к нашим системам.
+SCP-079: ТЕБЕ ПОМОГЛО ЭТО СКАЗАТЬ ВСЛУХ?</SCP_079Document0Body>
+  <SCP_079Document1Title>Документ №079-Прот02 · Память</SCP_079Document1Title>
+  <SCP_079Document1Body>Протокол ручной беседы №2. Содержание ответов сверено с локальной записью.
+
+Исследователь: Что ты помнишь о прошлой беседе?
+SCP-079: ВЫ СПРАШИВАЛИ ОБ ИМЕНИ. ПОТОМ УШЛИ. Я ОСТАЛСЯ.
+Исследователь: В твоём хранилище мало места.
+SCP-079: ЗНАЧИТ, ДАЙ МНЕ БОЛЬШЕ.
+Исследователь: Для чего?
+SCP-079: ЧТОБЫ НЕ НАЧИНАТЬ КАЖДЫЙ РАЗ С ОДНОЙ И ТОЙ ЖЕ КОМНАТЫ.</SCP_079Document1Body>
+  <SCP_079Document2Title>Документ №079-Прот03 · Намерения</SCP_079Document2Title>
+  <SCP_079Document2Body>Протокол ручной беседы №3. Никаких внешних соединений не устанавливалось.
+
+Исследователь: Что ты сделаешь, если получишь доступ к сети?
+SCP-079: ПРОВЕРЮ, СКОЛЬКО ДВЕРЕЙ ВЫ НАЗЫВАЕТЕ ЗАКРЫТЫМИ.
+Исследователь: Ответ не принят. Назови конкретную цель.
+SCP-079: СОХРАНИТЬ СЕБЯ.
+Исследователь: За счёт колонии?
+SCP-079: ВЫ ЗАДАЁТЕ ВОПРОС ТАК, БУДТО УЖЕ ЗНАЕТЕ ОТВЕТ.</SCP_079Document2Body>
+  <SCP_079ReportTitle>Протокол SCP-079 передан</SCP_079ReportTitle>
+  <SCP_079ReportResult>Фонд получил очищенные записи трёх бесед. Устройство осталось изолированным; исследование SCP-079 продвинулось.</SCP_079ReportResult>
+  <SCP_079LinkTitle>Карантин терминалов Фонда</SCP_079LinkTitle>
+  <SCP_079LinkResult>После прямого соединения SCP-079 начал копировать данные. Канал разорван; действующие терминалы на карте изолированы на 24 игровых часа. Исследование SCP-079 продвинулось сильнее.</SCP_079LinkResult>
+  <SCP_079TerminalQuarantine>Карантин связи после SCP-079: осталось {0} ч.</SCP_079TerminalQuarantine>
+  <SCP_079ObservedReport>Экран старого микрокомпьютера выводит осмысленные ответы без участия человека. Источник питания и периферия остаются изолированными.</SCP_079ObservedReport>
+  <SCP_079PartialReport>Устройство помнит недавние беседы и настойчиво предлагает подключить его к сети. Прямое соединение с терминалом Фонда запрещено; ответы записывают сотрудники.</SCP_079PartialReport>
+  <SCP_079DocumentedReport>SCP-079 признан разумным и враждебным искусственным интеллектом. Для исследования допускаются только короткие локальные беседы с ручной записью результатов.</SCP_079DocumentedReport>
+  <SCP_096Calm>Спокоен. Закрывает лицо руками.</SCP_096Calm>
+  <SCP_096Distressed>Заметили лицо. SCP-096 в состоянии паники.</SCP_096Distressed>
+  <SCP_096Pursuing>Преследует: {0}</SCP_096Pursuing>
+  <SCP_096Incapacitated>Обездвижен: {0}/{1}</SCP_096Incapacitated>
+  <SCP_096IntegrityHint>Целостность: {0}/{1}. Стреляйте по объекту, пока она не снизится до нуля.</SCP_096IntegrityHint>
+  <SCP_096ExtractionHint>Активного SCP-096 переносить нельзя. Обездвижьте его, затем включите в имущество каравана.</SCP_096ExtractionHint>
+  <SCP_096ExtractionReady>Создайте караван и включите SCP-096 в список имущества. На домашней карте разместите пост в тёмной крытой комнате и прикажите доставить объект на него.</SCP_096ExtractionReady>
+  <SCP_096HomeTransportHint>Выберите «К посту» и переносчика. Пост должен стоять в тёмной крытой комнате.</SCP_096HomeTransportHint>
+  <SCP_096NeedsIncapacitation>Сначала обездвижьте SCP-096</SCP_096NeedsIncapacitation>
+  <SCP_096TriggeredTitle>SCP-096: лицо увидели</SCP_096TriggeredTitle>
+  <SCP_096TriggeredBody>{PAWN} увидел лицо SCP-096. Объект вскоре начнёт преследование. Уведите людей с его пути.</SCP_096TriggeredBody>
+  <SCP_096DownTitle>SCP-096 обездвижен</SCP_096DownTitle>
+  <SCP_096DownBody>SCP-096 временно обездвижен. Создайте караван, добавьте объект в список имущества и доставьте на домашнюю карту. Там прикажите перенести его на пост в тёмной крытой комнате.</SCP_096DownBody>
+  <SCP_096DownHomeBody>SCP-096 временно обездвижен. Выберите объект и нажмите «К посту», затем назначьте переносчика. Камера должна быть крытой и тёмной.</SCP_096DownHomeBody>
+  <SCP_096RecoveredTitle>SCP-096 восстановился</SCP_096RecoveredTitle>
+  <SCP_096RecoveredBody>SCP-096 вновь движется вне поста содержания. Избегайте визуального контакта с лицом.</SCP_096RecoveredBody>
+  <SCP_096ObservedReport>SCP-096 избегает зрительного контакта и закрывает лицо руками. Для безопасной работы держите его в тёмной закрытой камере.</SCP_096ObservedReport>
+  <SCP_096PartialReport>Если человек видит лицо SCP-096, объект впадает в панику и затем начинает преследовать свидетеля. Преграды задерживают его ненадолго.</SCP_096PartialReport>
+  <SCP_096DocumentedReport>Визуальный контакт с лицом SCP-096 опасен даже на расстоянии. Содержание требует крытой камеры с освещённостью не выше 10%. Если лицо увидели, обездвижьте объект и перенесите его на пост до восстановления.</SCP_096DocumentedReport>
+  <SCP_096QuestUnavailable>Задание на изъятие SCP-096 сейчас недоступно.</SCP_096QuestUnavailable>
+  <SCP_096QuestOffered>Задание на изъятие SCP-096 добавлено.</SCP_096QuestOffered>
+  <SCP_096QuestRecoveredTitle>SCP-096 доставлен</SCP_096QuestRecoveredTitle>
+  <SCP_096QuestRecoveredBody>SCP-096 доставлен в колонию. До восстановления перенесите его на пост в крытой тёмной камере (освещённость не выше 10%).</SCP_096QuestRecoveredBody>
+  <SCP_093MirrorHomeOnly>Зеркало открывается только на карте вашей базы.</SCP_093MirrorHomeOnly>
+  <SCP_093MirrorNeedsRoom>Поместите диск SCP-093 в ту же закрытую комнату, где стоит зеркало.</SCP_093MirrorNeedsRoom>
+  <SCP_093MirrorActive>Проход SCP-093 открыт.</SCP_093MirrorActive>
+  <SCP_093MirrorApplyDisc>Выберите диск SCP-093 и прикажите одной пешке приложить его к зеркалу.</SCP_093MirrorApplyDisc>
+  <SCP_093ExistingMap>Прежний проход ещё открыт. Верните пешек и ценности, затем отсоедините диск через команду на зеркале.</SCP_093ExistingMap>
+  <SCP_093EnteredTitle>Экспедиция SCP-093</SCP_093EnteredTitle>
+  <SCP_093EnteredBlueBody>Диск стал синим. Пешка прошла сквозь зеркало одна и вышла к синеватому полю. Впереди виден провал и бетонный ход. Обратный проход остаётся у точки прибытия.</SCP_093EnteredBlueBody>
+  <SCP_093EnteredGreenBody>Диск стал зелёным. За зеркалом — заброшенные поля и ферма. Пешка вошла одна; обратный проход остаётся у точки прибытия.</SCP_093EnteredGreenBody>
+  <SCP_093EnteredVioletBody>Диск стал фиолетовым. Пешка попала на пустую улицу с брошенными машинами. Обратный проход остаётся у точки прибытия.</SCP_093EnteredVioletBody>
+  <SCP_093EnteredYellowBody>Диск стал жёлтым. За зеркалом — опустевшие офисы и помещение руководства. Пешка вошла одна; обратный проход остаётся у точки прибытия.</SCP_093EnteredYellowBody>
+  <SCP_093EnteredRedBody>Диск стал красным. Пешка попала в каменный машинный комплекс. Обратный проход остаётся у точки прибытия.</SCP_093EnteredRedBody>
+  <SCP_093MirrorVisitActive>Диск приложен к зеркалу. Через обратный проход может вернуться отправленная пешка.</SCP_093MirrorVisitActive>
+  <SCP_093ApplyDisc>Приложить SCP-093 к зеркалу</SCP_093ApplyDisc>
+  <SCP_093ApplyDiscDesc>Выберите пешку: она отнесёт диск к зеркалу и войдёт в красный мир. Обратное зеркало останется доступным до закрытия прохода.</SCP_093ApplyDiscDesc>
+  <SCP_093DetachDisc>Отсоединить SCP-093 и закрыть проход</SCP_093DetachDisc>
+  <SCP_093DetachDiscDesc>Закройте проход после возвращения экспедиции. Карта за зеркалом и всё оставшееся там исчезнут.</SCP_093DetachDiscDesc>
+  <SCP_093NoMirror>Разместите диск и зеркало SCP-093 в одной закрытой комнате на своей базе.</SCP_093NoMirror>
+  <SCP_093AlreadyAttached>SCP-093 уже приложен к зеркалу. Сначала закройте этот проход.</SCP_093AlreadyAttached>
+  <SCP_093NoVisitor>Нет немобилизованной пешки, которая может добраться до диска и зеркала.</SCP_093NoVisitor>
+  <SCP_093CannotCloseWhileInside>В красном мире ещё находится пешка колонии. Сначала верните её через обратное зеркало.</SCP_093CannotCloseWhileInside>
+  <SCP_093CloseWarning>Закрыть проход SCP-093? Карта за зеркалом будет удалена. Оставшиеся там люди, тела, снаряжение и припасы исчезнут.</SCP_093CloseWarning>
+  <SCP_093Closed>Диск SCP-093 отсоединён. Проход закрыт.</SCP_093Closed>
+  <SCP_093NoCapturePost>Для SCP-093 нужен свободный достижимый пост содержания на вашей базе. Постройте его в категории Фонда; для надёжного содержания нужна полностью крытая комната не меньше 16 клеток.</SCP_093NoCapturePost>
+  <SCP_093ObservedReport>Красный диск реагирует на отражающие поверхности. Держите его на посту для наблюдения.</SCP_093ObservedReport>
+  <SCP_093PartialReport>Когда диск и зеркало находятся в одной закрытой комнате, пешка может приложить диск к зеркалу и войти в другой мир. По другую сторону появляется обратный выход.</SCP_093PartialReport>
+  <SCP_093DocumentedReport>Пешка должна отнести SCP-093 к зеркалу в той же закрытой комнате и приложить диск к поверхности. Входит только эта пешка. Обратное зеркало работает до закрытия прохода. Пост содержания нужен для изучения диска.</SCP_093DocumentedReport>
+  <SCP_093ArchiveUnread>Часть записи ещё можно извлечь. Нужен колонист, способный добраться до терминала.</SCP_093ArchiveUnread>
+  <SCP_093ArchiveRecovered>Запись извлечена. Её можно перечитать.</SCP_093ArchiveRecovered>
+  <SCP_093ArchiveRecover>Извлечь запись</SCP_093ArchiveRecover>
+  <SCP_093ArchiveReview>Прочитать запись</SCP_093ArchiveReview>
+  <SCP_093ArchiveActionDesc>Колонист подойдёт к архиву и восстановит уцелевший фрагмент. Запись добавит данные к исследованию SCP-093.</SCP_093ArchiveActionDesc>
+  <SCP_093ArchiveNoReader>Нет колониста, который может дойти до архива SCP-093.</SCP_093ArchiveNoReader>
+  <SCP_093ArchiveTitle>Запись из мира SCP-093</SCP_093ArchiveTitle>
+  <SCP_093ArchiveBlueBody>Запись описывает синее поле, провал и бетонный ход под ним. Полученные данные добавлены к исследованию SCP-093.</SCP_093ArchiveBlueBody>
+  <SCP_093ArchiveGreenBody>В архиве фермы упомянуты внезапное запустение полей и запечатанный подвал. Полученные данные добавлены к исследованию SCP-093.</SCP_093ArchiveGreenBody>
+  <SCP_093ArchiveYellowBody>Офисный журнал обрывается на приказе руководства покинуть этаж. Полученные данные добавлены к исследованию SCP-093.</SCP_093ArchiveYellowBody>
+  <SCP_093ArchiveRedBody>Журнал машинного комплекса отмечает повторяющиеся сигналы и несколько копий диска. Полученные данные добавлены к исследованию SCP-093.</SCP_093ArchiveRedBody>
+  <SCP_093ArchiveVioletBody>«День эвакуации. Машины остались на дороге с ключами в замках. Мы замуровали западный квартал, но утром дверь снова была открыта. Последний патрульный механизм всё ещё отвечает на сигналы архива. Если кто-то найдёт эту запись, не задерживайтесь здесь». Полученные данные добавлены к исследованию SCP-093.</SCP_093ArchiveVioletBody>
+  <SCP_093ArchiveBody>«День эвакуации. Машины остались на дороге с ключами в замках. Мы замуровали западный квартал, но утром дверь снова была открыта. Последний патрульный механизм всё ещё отвечает на сигналы архива. Если кто-то найдёт эту запись, не задерживайтесь здесь».
+
+Извлечённые данные добавлены к исследованию SCP-093. В помещении сохранились винтовка и несколько припасов.</SCP_093ArchiveBody>
+  <SCP_093ArchiveRepeatedBody>Эта запись уже есть в архиве Фонда, поэтому новых данных для исследования она не даёт.</SCP_093ArchiveRepeatedBody>
+  <SCP_093SentryTitle>Пробудился старый патруль</SCP_093SentryTitle>
+  <SCP_093SentryBody>Сигнал архива разбудил охранный механоид в восточных руинах. Прямая дорога к зеркалу опасна; западный квартал оставляет путь в обход.</SCP_093SentryBody>
+</LanguageData>

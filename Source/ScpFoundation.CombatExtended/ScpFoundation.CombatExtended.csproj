@@ -1,0 +1,23 @@
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <AssemblyName>ScpFoundation.CombatExtended</AssemblyName>
+    <RootNamespace>ScpFoundation.CombatExtended</RootNamespace>
+    <RimWorldDir Condition="'$(RimWorldDir)' == ''">$(MSBuildProjectDirectory)\..\..\..\..</RimWorldDir>
+    <CombatExtendedDir Condition="'$(CombatExtendedDir)' == ''">$(RimWorldDir)\Mods\Combat</CombatExtendedDir>
+    <FoundationAssembly Condition="'$(FoundationAssembly)' == ''">$(MSBuildProjectDirectory)\..\..\Build\Assemblies\ScpFoundation.dll</FoundationAssembly>
+    <ManagedDir>$(RimWorldDir)\RimWorldWin64_Data\Managed</ManagedDir>
+    <OutputPath>$(MSBuildProjectDirectory)\..\..\Compat\CombatExtended\Assemblies</OutputPath>
+  </PropertyGroup>
+  <UsingTask TaskName="Csc" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll" />
+  <ItemGroup>
+    <Compile Include="Projectiles.cs;CeAmmoLoadoutNormalizer.cs;PatchOperationArmorFromReference.cs;Scp127CE.cs;CeWeaponTraitImpact.cs" />
+    <Reference Include="$(ManagedDir)\mscorlib.dll;$(ManagedDir)\netstandard.dll;$(ManagedDir)\System.dll;$(ManagedDir)\System.Core.dll;$(ManagedDir)\System.Xml.dll;$(ManagedDir)\Assembly-CSharp.dll;$(ManagedDir)\UnityEngine.CoreModule.dll;$(CombatExtendedDir)\Assemblies\CombatExtended.dll;$(FoundationAssembly)" />
+    <Reference Include="$(MSBuildProjectDirectory)\..\..\1.6\Assemblies\0Harmony.dll" />
+  </ItemGroup>
+  <Target Name="Build">
+    <Error Condition="!Exists('$(CombatExtendedDir)\Assemblies\CombatExtended.dll')" Text="Combat Extended assembly was not found." />
+    <Error Condition="!Exists('$(FoundationAssembly)')" Text="Build ScpFoundation.dll before the Combat Extended adapter." />
+    <MakeDir Directories="$(OutputPath)" />
+    <Csc Sources="@(Compile)" References="@(Reference)" OutputAssembly="$(OutputPath)\$(AssemblyName).dll" TargetType="Library" NoStandardLib="true" NoConfig="true" Optimize="true" WarningLevel="4" TreatWarningsAsErrors="true" />
+  </Target>
+</Project>

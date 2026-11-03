@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <PawnKindDef ParentName="OutlanderBase">
+    <defName>SCP_106Kind</defName><label>SCP-106</label><labelPlural>SCP-106</labelPlural>
+    <initialWillRange>8~12</initialWillRange><initialResistanceRange>35~50</initialResistanceRange>
+    <race>SCP_106Pawn</race><defaultFactionDef>SCP_AnomalousHostiles</defaultFactionDef>
+    <isFighter>true</isFighter><combatPower>600</combatPower>
+    <minGenerationAge>40</minGenerationAge><maxGenerationAge>60</maxGenerationAge>
+    <apparelTags Inherit="False" /><weaponTags Inherit="False" />
+  </PawnKindDef>
+  <PawnKindDef ParentName="OutlanderBase">
+    <defName>SCP_049Kind</defName><label>SCP-049</label><labelPlural>SCP-049</labelPlural>
+    <initialWillRange>6~10</initialWillRange><initialResistanceRange>24~40</initialResistanceRange>
+    <race>SCP_049Pawn</race><defaultFactionDef>SCP_AnomalousHostiles</defaultFactionDef>
+    <isFighter>true</isFighter><combatPower>120</combatPower>
+    <minGenerationAge>40</minGenerationAge><maxGenerationAge>70</maxGenerationAge>
+    <apparelTags Inherit="False" /><weaponTags Inherit="False" />
+    <skills><li><skill>Medicine</skill><range>18~18</range></li></skills>
+  </PawnKindDef>
+  <PawnKindDef ParentName="OutlanderBase">
+    <defName>SCP_0492Kind</defName><label>SCP-049-2</label><labelPlural>SCP-049-2 instances</labelPlural>
+    <initialWillRange>3~6</initialWillRange><initialResistanceRange>12~24</initialResistanceRange>
+    <race>SCP_0492Pawn</race><defaultFactionDef>SCP_AnomalousHostiles</defaultFactionDef>
+    <isFighter>true</isFighter><combatPower>95</combatPower>
+    <minGenerationAge>20</minGenerationAge><maxGenerationAge>60</maxGenerationAge>
+    <apparelTags Inherit="False" /><weaponTags Inherit="False" />
+  </PawnKindDef>
+</Defs>

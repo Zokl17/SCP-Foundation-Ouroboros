@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef>
+    <defName>SCP_008SampleCase</defName>
+    <label>SCP-008 sample case</label>
+    <description>A sealed case of reagents with a single SCP-008 sample vial. The intact case can be transported safely; an exposed infected person can spread the prion through bodily fluids entering an open wound.</description>
+    <thingClass>ThingWithComps</thingClass><category>Item</category><altitudeLayer>Item</altitudeLayer>
+    <tickerType>Rare</tickerType><selectable>true</selectable><stackLimit>1</stackLimit>
+    <alwaysHaulable>true</alwaysHaulable><designateHaulable>false</designateHaulable><rotatable>false</rotatable>
+    <graphicData><texPath>Things/Item/ScpArtifacts/Scp008Case</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>1.25</drawSize></graphicData>
+    <statBases><MaxHitPoints>120</MaxHitPoints><Mass>3</Mass><MarketValue>0</MarketValue><Flammability>0.2</Flammability></statBases>
+    <tradeability>None</tradeability>
+    <comps>
+      <li Class="ScpFoundation.Runtime.CompProperties_Scp"><anomaly>SCP_Anomaly008</anomaly><requireCapture>true</requireCapture></li>
+      <li Class="ScpFoundation.Interactions.CompProperties_ScpInteraction" />
+      <li Class="ScpFoundation.Anomalies.CompProperties_Scp008Custody" />
+    </comps>
+  </ThingDef>
+</Defs>

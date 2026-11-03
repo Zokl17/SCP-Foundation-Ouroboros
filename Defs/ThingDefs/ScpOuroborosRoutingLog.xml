@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef>
+    <defName>SCP_OuroborosRoutingLogCore</defName>
+    <label>lost routing log</label>
+    <description>A physical record of the Foundation channel's first routing hop. Extract it and bring it home.</description>
+    <thingClass>ScpFoundation.Storytelling.Thing_ScpRoutingLog</thingClass>
+    <category>Item</category><altitudeLayer>Item</altitudeLayer>
+    <selectable>true</selectable><stackLimit>1</stackLimit>
+    <alwaysHaulable>false</alwaysHaulable><designateHaulable>false</designateHaulable>
+    <graphicData><texPath>Things/Item/ScpArtifacts/ScpRoutingLog</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>0.9</drawSize></graphicData>
+    <statBases><MaxHitPoints>100</MaxHitPoints><Mass>2</Mass><MarketValue>0</MarketValue><Flammability>0.1</Flammability></statBases>
+    <tradeability>None</tradeability>
+  </ThingDef>
+</Defs>

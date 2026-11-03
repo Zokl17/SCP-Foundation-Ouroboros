@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_096HoldingCell.label>база после прорыва SCP-096</SCP_096HoldingCell.label>
+  <SCP_096HoldingCell.description>На базе нарушено содержание SCP-096. Внутри остались пять погибших гражданских.</SCP_096HoldingCell.description>
+  <SCP_096HoldingCell.approachOrderString>Изъять {0}</SCP_096HoldingCell.approachOrderString>
+  <SCP_096HoldingCell.approachingReportString>Изъятие {0}.</SCP_096HoldingCell.approachingReportString>
+  <SCP_096HoldingCell.arrivedLetter>Внутри базы найдены пять погибших гражданских. Вероятно, фотография SCP-096 вызвала прорыв содержания. Объект остаётся внутри: взгляд на его лицо вызовет преследование. Обездвижьте его перед перевозкой.</SCP_096HoldingCell.arrivedLetter>
+</LanguageData>

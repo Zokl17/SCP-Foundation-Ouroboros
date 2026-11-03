@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>SCP_ResearchCoat</defName>
+    <label>Foundation researcher coat</label>
+    <description>A clean white lab coat for studying physical anomalies. Doubles SCP research progress at containment posts and at SCP-294; archive and ordinary technology research are unaffected.</description>
+    <techLevel>Industrial</techLevel>
+    <graphicData><texPath>Things/Item/Apparel/ScpResearchCoat</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>1.05</drawSize></graphicData>
+    <costStuffCount>70</costStuffCount><stuffCategories><li>Fabric</li></stuffCategories>
+    <thingCategories><li>ApparelMisc</li></thingCategories>
+    <statBases><MaxHitPoints>120</MaxHitPoints><WorkToMake>7000</WorkToMake><Mass>1.2</Mass><Insulation_Cold>8</Insulation_Cold><Insulation_Heat>6</Insulation_Heat><EquipDelay>2</EquipDelay></statBases>
+    <apparel>
+      <bodyPartGroups><li>Torso</li><li>Neck</li><li>Shoulders</li><li>Arms</li><li>Legs</li></bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Duster/Duster</wornGraphicPath>
+      <layers><li>Shell</li></layers><tags><li>SCP_ResearchClothing</li></tags>
+    </apparel>
+    <recipeMaker><researchPrerequisite>SCP_FoundationClothing</researchPrerequisite><recipeUsers><li>ElectricTailoringBench</li><li>HandTailoringBench</li></recipeUsers><displayPriority>208</displayPriority></recipeMaker>
+    <colorGenerator Class="ColorGenerator_Options"><options><li><only>(0.94,0.96,0.96)</only></li></options></colorGenerator>
+    <tradeTags><li>Clothing</li></tradeTags>
+  </ThingDef>
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>SCP_DClassUniform</defName>
+    <label>class D uniform</label>
+    <description>An orange one-piece uniform issued to class D personnel. Wearing it gives a small sense of purpose and a +5 mood thought.</description>
+    <techLevel>Industrial</techLevel>
+    <graphicData><texPath>Things/Item/Apparel/ScpDClassUniform</texPath><graphicClass>Graphic_Single</graphicClass></graphicData>
+    <costStuffCount>60</costStuffCount><stuffCategories><li>Fabric</li></stuffCategories>
+    <thingCategories><li>ApparelMisc</li></thingCategories>
+    <statBases><MaxHitPoints>100</MaxHitPoints><WorkToMake>3500</WorkToMake><Mass>0.8</Mass><EquipDelay>1.5</EquipDelay></statBases>
+    <apparel>
+      <bodyPartGroups><li>Torso</li><li>Arms</li><li>Legs</li></bodyPartGroups>
+        <wornGraphicPath>Things/Pawn/Humanlike/Apparel/DClassUniform/DClassUniform</wornGraphicPath>
+      <layers><li>OnSkin</li></layers><tags><li>SCP_DClassClothing</li></tags>
+    </apparel>
+    <recipeMaker><researchPrerequisite>SCP_FoundationClothing</researchPrerequisite><recipeUsers><li>ElectricTailoringBench</li><li>HandTailoringBench</li></recipeUsers><displayPriority>207</displayPriority></recipeMaker>
+    <colorGenerator Class="ColorGenerator_Options"><options><li><only>(1,1,1)</only></li></options></colorGenerator>
+    <tradeTags><li>Clothing</li></tradeTags>
+  </ThingDef>
+</Defs>

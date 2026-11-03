@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <PawnKindDef ParentName="OutlanderBase">
+    <defName>SCP_076Kind</defName>
+    <label>SCP-076-2 (Able)</label>
+    <labelPlural>SCP-076-2</labelPlural>
+    <race>SCP_076Pawn</race>
+    <defaultFactionDef>SCP_Foundation</defaultFactionDef>
+    <fixedGender>Male</fixedGender>
+    <initialWillRange>8~12</initialWillRange><initialResistanceRange>35~50</initialResistanceRange>
+    <forcedHairColor>(0.08, 0.07, 0.06)</forcedHairColor>
+    <skinColorOverride>(0.52, 0.39, 0.28)</skinColorOverride>
+    <isFighter>true</isFighter><combatPower>350</combatPower>
+    <apparelTags Inherit="False" />
+    <apparelMoney>0~0</apparelMoney>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <apparelRequired Inherit="False"><li>Apparel_Pants</li></apparelRequired>
+    <apparelColor>(0.08, 0.08, 0.08)</apparelColor>
+    <weaponTags Inherit="False" />
+    <skills><li><skill>Melee</skill><range>20~20</range></li></skills>
+  </PawnKindDef>
+</Defs>

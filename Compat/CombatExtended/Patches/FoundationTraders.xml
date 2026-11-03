@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Special weapons use discrete ammunition under CE, so orbital suppliers
+       must carry usable reserves alongside the weapons themselves. -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/TraderKindDef[defName="SCP_Orbital_SupplyVessel" or defName="SCP_Orbital_MarshallCarterDark"]/stockGenerators</xpath>
+    <value>
+      <li Class="StockGenerator_SingleDef"><thingDef>Ammo_556x45mmNATO_FMJ</thingDef><countRange>300~700</countRange></li>
+      <li Class="StockGenerator_SingleDef"><thingDef>Ammo_12Gauge_Buck</thingDef><countRange>80~180</countRange></li>
+      <li Class="StockGenerator_SingleDef"><thingDef>SCP_Ammo_EMPCell</thingDef><countRange>90~180</countRange></li>
+      <li Class="StockGenerator_SingleDef"><thingDef>SCP_Ammo_TranqDart</thingDef><countRange>60~120</countRange></li>
+      <li Class="StockGenerator_SingleDef"><thingDef>SCP_Ammo_ContainmentNet</thingDef><countRange>10~25</countRange></li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/TraderKindDef[defName="SCP_Orbital_GocArsenal"]/stockGenerators</xpath>
+    <value>
+      <li Class="StockGenerator_SingleDef"><thingDef>SCP_Ammo_EMPCell</thingDef><countRange>120~240</countRange></li>
+    </value>
+  </Operation>
+</Patch>

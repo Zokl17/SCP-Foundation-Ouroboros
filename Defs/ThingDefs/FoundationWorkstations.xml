@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef Name="SCP_FoundationWorkbenchBase" ParentName="BenchBase" Abstract="True">
+    <thingClass>Building_WorkTable</thingClass>
+    <size>(2,2)</size><rotatable>true</rotatable><defaultPlacingRot>South</defaultPlacingRot>
+    <passability>PassThroughOnly</passability><pathCost>50</pathCost><fillPercent>0.5</fillPercent>
+    <altitudeLayer>Building</altitudeLayer><terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <hasInteractionCell>true</hasInteractionCell><interactionCellOffset>(0,0,2)</interactionCellOffset>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <designationCategory>SCPFoundation</designationCategory>
+    <inspectorTabs><li>ITab_Bills</li></inspectorTabs>
+    <placeWorkers><li>PlaceWorker_PreventInteractionSpotOverlap</li><li>PlaceWorker_ShowFacilitiesConnections</li></placeWorkers>
+    <building><spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity><workTableRoomRole>Workshop</workTableRoomRole></building>
+    <comps>
+      <li Class="CompProperties_Power"><compClass>CompPowerTrader</compClass><basePowerConsumption>250</basePowerConsumption><shortCircuitInRain>true</shortCircuitInRain></li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+    <statBases><MaxHitPoints>200</MaxHitPoints><WorkToBuild>2700</WorkToBuild><Flammability>0.2</Flammability></statBases>
+  </ThingDef>
+
+  <ThingDef ParentName="SCP_FoundationWorkbenchBase">
+    <defName>SCP_FoundationCoreBench</defName>
+    <label>Foundation workshop bench</label>
+    <description>The main 2-by-2 Foundation workshop bench. Used for tactical armor and support equipment. A nearby armory and laboratory module can each improve its work speed by 4%.</description>
+    <graphicData><texPath>Things/Building/Production/ScpFoundationCoreBench</texPath><graphicClass>Graphic_Multi</graphicClass><drawRotated>false</drawRotated><drawSize>(2.4,2.2)</drawSize></graphicData>
+    <uiIconPath>Things/Building/Production/ScpFoundationCoreBench</uiIconPath>
+    <uiOrder>1260</uiOrder>
+    <researchPrerequisites><li>SCP_FoundationProduction</li></researchPrerequisites>
+    <costList><Steel>120</Steel><ComponentIndustrial>4</ComponentIndustrial></costList>
+    <comps><li Class="CompProperties_AffectedByFacilities"><linkableFacilities><li>SCP_FoundationArmoryModule</li><li>SCP_FoundationLabModule</li></linkableFacilities></li></comps>
+  </ThingDef>
+
+  <ThingDef ParentName="SCP_FoundationWorkbenchBase">
+    <defName>SCP_FoundationArmoryModule</defName>
+    <label>Foundation armory module</label>
+    <description>A 2-by-2 equipment workshop for Foundation firearms. It must be powered and linked to a nearby Foundation workshop bench to craft. While linked, it improves that bench's work speed by 4%.</description>
+    <graphicData><texPath>Things/Building/Production/ScpFoundationArmoryModule</texPath><graphicClass>Graphic_Multi</graphicClass><drawRotated>false</drawRotated><drawSize>(2.4,2.2)</drawSize></graphicData>
+    <uiIconPath>Things/Building/Production/ScpFoundationArmoryModule</uiIconPath>
+    <uiOrder>1261</uiOrder>
+    <researchPrerequisites><li>SCP_FoundationProduction</li><li>SCP_FoundationBallistics</li></researchPrerequisites>
+    <costList><Steel>100</Steel><ComponentIndustrial>5</ComponentIndustrial></costList>
+    <comps><li Class="CompProperties_Facility"><statOffsets><WorkTableWorkSpeedFactor>0.04</WorkTableWorkSpeedFactor></statOffsets><maxSimultaneous>1</maxSimultaneous><maxDistance>8</maxDistance><requiresLOS>true</requiresLOS></li></comps>
+  </ThingDef>
+
+  <ThingDef ParentName="SCP_FoundationWorkbenchBase">
+    <defName>SCP_FoundationLabModule</defName>
+    <label>Foundation laboratory module</label>
+    <description>A 2-by-2 laboratory workstation for Foundation medicines and POR-7 equipment. It must be powered and linked to a nearby Foundation workshop bench to craft. POR-7 cells and power packs also require a linked, powered fusion chamber. While linked, the laboratory improves the main bench's work speed by 4%.</description>
+    <graphicData><texPath>Things/Building/Production/ScpFoundationLabModule</texPath><graphicClass>Graphic_Multi</graphicClass><drawRotated>false</drawRotated><drawSize>(2.4,2.2)</drawSize></graphicData>
+    <uiIconPath>Things/Building/Production/ScpFoundationLabModule</uiIconPath>
+    <uiOrder>1262</uiOrder>
+    <costList><Steel>90</Steel><ComponentIndustrial>4</ComponentIndustrial></costList>
+    <comps>
+      <li Class="CompProperties_Facility"><statOffsets><WorkTableWorkSpeedFactor>0.04</WorkTableWorkSpeedFactor></statOffsets><maxSimultaneous>1</maxSimultaneous><maxDistance>8</maxDistance><requiresLOS>true</requiresLOS></li>
+      <li Class="CompProperties_AffectedByFacilities"><linkableFacilities><li>SCP_FoundationFusionChamber</li></linkableFacilities></li>
+    </comps>
+    <researchPrerequisites><li>SCP_FoundationProduction</li><li>SCP_FoundationMedicalProtocols</li></researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>SCP_FoundationFusionChamber</defName>
+    <label>Farnsworth-Lipson fusor</label>
+    <description>A compact Farnsworth-Lipson fusor. Link this powered chamber to a Foundation laboratory module to fabricate POR-7 high-density cells and power packs. A core bench linked to that laboratory can then make MTF powered armor. It improves the laboratory's work speed by 2%.</description>
+    <thingClass>Building</thingClass>
+    <size>(1,2)</size><rotatable>false</rotatable>
+    <passability>PassThroughOnly</passability><pathCost>50</pathCost><fillPercent>0.5</fillPercent>
+    <altitudeLayer>Building</altitudeLayer><terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>SCPFoundation</designationCategory><uiOrder>1263</uiOrder>
+    <placeWorkers><li>PlaceWorker_ShowFacilitiesConnections</li></placeWorkers>
+    <graphicData><texPath>Things/Building/Production/ScpFoundationFusionChamber</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>(1.5,2.2)</drawSize></graphicData>
+    <comps>
+      <li Class="CompProperties_Power"><compClass>CompPowerTrader</compClass><basePowerConsumption>850</basePowerConsumption><shortCircuitInRain>true</shortCircuitInRain></li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_Facility"><statOffsets><WorkTableWorkSpeedFactor>0.02</WorkTableWorkSpeedFactor></statOffsets><maxSimultaneous>1</maxSimultaneous><maxDistance>8</maxDistance><requiresLOS>true</requiresLOS></li>
+    </comps>
+    <statBases><MaxHitPoints>280</MaxHitPoints><WorkToBuild>4500</WorkToBuild><Flammability>0.1</Flammability></statBases>
+    <costList><Steel>100</Steel><Plasteel>45</Plasteel><ComponentIndustrial>8</ComponentIndustrial><ComponentSpacer>2</ComponentSpacer></costList>
+    <researchPrerequisites><li>SCP_FoundationProduction</li><li>SCP_FoundationFusor</li></researchPrerequisites>
+  </ThingDef>
+</Defs>

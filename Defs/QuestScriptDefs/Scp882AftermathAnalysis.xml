@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <QuestScriptDef>
+    <defName>SCP_882AftermathAnalysis</defName>
+    <rootSelectionWeight>0</rootSelectionWeight>
+    <rootMinPoints>0</rootMinPoints>
+    <questNameRules><rulesStrings><li>questName->Analysis of SCP-882</li></rulesStrings></questNameRules>
+    <questDescriptionRules><rulesStrings><li>questDescription->After the defense, the Foundation requests a spectral analysis of SCP-882. Keep the object inside one of its containment reservoirs and a Foundation communications terminal powered at this settlement for six accumulated hours. Either interruption pauses the analysis; progress is saved.</li></rulesStrings></questDescriptionRules>
+    <root Class="QuestNode_Sequence"><nodes>
+      <li Class="QuestNode_GetMap" />
+      <li Class="ScpFoundation.Storytelling.QuestNode_Scp882AftermathAnalysis" />
+      <li Class="QuestNode_Signal"><inSignal>Scp882AnalysisCompleted</inSignal><node Class="QuestNode_Sequence"><nodes>
+        <li Class="QuestNode_Letter"><label TKey="SCP_882AnalysisArchiveTitle">SCP-882 analysis complete</label><text TKey="SCP_882AnalysisNotice">The results were added to Terminal → Journal → Foundation Archive.</text></li>
+        <li Class="QuestNode_End"><outcome>Success</outcome></li>
+      </nodes></node></li>
+    </nodes></root>
+  </QuestScriptDef>
+</Defs>

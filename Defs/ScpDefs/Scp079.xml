@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ScpFoundation.Definitions.ScpDef>
+    <defName>SCP_Anomaly079</defName><label>SCP-079</label>
+    <description>A hostile artificial intelligence running on an old microcomputer. It is articulate, remembers recent exchanges, and persistently seeks a route out of containment.</description>
+    <scpId>SCP-079</scpId><objectClass>Euclid</objectClass>
+    <tags><li>Computer</li><li>Artifact</li></tags>
+    <requirements><li Class="ScpFoundation.Containment.RequirementAtPost"><id>post</id></li></requirements>
+    <breach><graceTicks>30000</graceTicks><deterministicAfterTicks>0</deterministicAfterTicks><riskPerDay>0</riskPerDay><recoveryPerDay>0</recoveryPerDay></breach>
+    <research>
+      <observedWork>12000</observedWork><partialWork>60000</partialWork><fullWork>180000</fullWork>
+      <observedReportKey>SCP_079ObservedReport</observedReportKey>
+      <partialReportKey>SCP_079PartialReport</partialReportKey>
+      <documentedReportKey>SCP_079DocumentedReport</documentedReportKey>
+      <experimentReportKeys><li>SCP_079Experiment1</li><li>SCP_079Experiment2</li><li>SCP_079Experiment3</li></experimentReportKeys>
+    </research>
+    <source><title>SCP-079</title><author>Unknown author</author><url>https://scp-wiki.wikidot.com/scp-079</url><license>CC BY-SA 3.0</license></source>
+  </ScpFoundation.Definitions.ScpDef>
+</Defs>

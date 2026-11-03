@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_008ExposureTitle>Контакт с SCP-008</SCP_008ExposureTitle>
+  <SCP_008ExposureBody>{PAWN} заразился SCP-008 после контакта с инфицированной жидкостью через рану. Изолируйте пострадавшего. Воздушным и водным путём вирус не передаётся.</SCP_008ExposureBody>
+  <SCP_008LabBreachTitle>Прорыв в лаборатории ГОК</SCP_008LabBreachTitle>
+  <SCP_008LabBreachBody>Дверь лаборатории вскрыта. Три Gorehulk и два Bulbfreak вырвались из экспериментального отсека. Один из учёных уже заражён SCP-008. Образец в отдельном герметичном кейсе.</SCP_008LabBreachBody>
+  <SCP_008RecoveredTitle>Образец SCP-008 изъят</SCP_008RecoveredTitle>
+  <SCP_008RecoveredBody>Герметичный кейс доставлен в поселение. Для изучения подготовьте крытую охлаждённую лабораторию и пост содержания. Если безопасное содержание не удастся наладить, Фонд переправит образец в зону G2.</SCP_008RecoveredBody>
+  <SCP_008DestroyedTitle>Образец SCP-008 уничтожен</SCP_008DestroyedTitle>
+  <SCP_008DestroyedBody>Единственный сохранившийся образец SCP-008 на объекте ГОК уничтожен. Фонд подтвердил, что жизнеспособного материала в лаборатории не осталось.</SCP_008DestroyedBody>
+  <SCP_008BioLabRequirement>Работающая установка дезинфекции в той же лаборатории</SCP_008BioLabRequirement>
+  <SCP_008TransferWarningTitle>Срок подготовки для SCP-008</SCP_008TransferWarningTitle>
+  <SCP_008TransferWarningBody>Фонд даёт пять суток на создание безопасного содержания и условий для исследования SCP-008. Если образец останется без них, его передадут в зону G2.</SCP_008TransferWarningBody>
+  <SCP_008TransferredTitle>SCP-008 передан в зону G2</SCP_008TransferredTitle>
+  <SCP_008TransferredBody>Срок подготовки истёк. Фонд вывез образец SCP-008 в зону G2 из-за отсутствия безопасных условий содержания.</SCP_008TransferredBody>
+  <SCP_008QuestOffered>Задание по изъятию SCP-008 добавлено.</SCP_008QuestOffered>
+  <SCP_008QuestUnavailable>Не удалось выдать задание SCP-008. Проверьте наличие Anomaly, встречу с SCP-650 и связь с Фондом.</SCP_008QuestUnavailable>
+  <SCP_008DebugCaseSpawned>Кейс SCP-008 создан возле указанной клетки.</SCP_008DebugCaseSpawned>
+  <SCP_008ObservedReport>Первичный осмотр подтвердил, что герметичный кейс содержит образец SCP-008. Никаких признаков передачи через воздух или воду не выявлено.</SCP_008ObservedReport>
+  <SCP_008PartialReport>Контакт заражённой жидкости с раной или слизистой вызывает стремительно развивающееся поражение нервной системы. Для безопасной работы нужны охлаждение, герметичная защита и дезинфекция.</SCP_008PartialReport>
+  <SCP_008DocumentedReport>Исследование подтвердило контактный путь заражения и летальное развитие болезни. SCP-500 устраняет инфекцию. Эксперименты ГОК с аномальной плотью не являются обычным действием SCP-008.</SCP_008DocumentedReport>
+</LanguageData>

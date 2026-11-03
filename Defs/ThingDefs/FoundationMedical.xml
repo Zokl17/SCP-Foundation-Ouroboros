@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="MakeableDrugBase">
+    <defName>SCP_ClassAAmnestic</defName>
+    <label>Class-A amnestic</label>
+    <description>A controlled Foundation amnestic for suppressing recent traumatic recollections. One dose removes up to three of the subject's strongest temporary negative memories, followed by several hours of mild confusion. It cannot erase permanent memories.</description>
+    <graphicData>
+      <texPath>Things/Item/Medicine/ScpClassAAmnestic</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases><WorkToMake>1800</WorkToMake><MarketValue>55</MarketValue><Mass>0.1</Mass></statBases>
+    <techLevel>Industrial</techLevel>
+    <ingestible>
+      <drugCategory>Medical</drugCategory><foodType>Processed, Fluid</foodType>
+      <baseIngestTicks>80</baseIngestTicks><ingestSound>Ingest_Inject</ingestSound>
+      <ingestCommandString>Administer {0}</ingestCommandString><ingestReportString>Administering {0}.</ingestReportString>
+      <useEatingSpeedStat>false</useEatingSpeedStat><chairSearchRadius>0</chairSearchRadius>
+      <outcomeDoers>
+        <li Class="ScpFoundation.Interactions.IngestionOutcomeDoer_Amnestic">
+          <memoriesToRemove>3</memoriesToRemove><sideEffect>SCP_AmnesticConfusion</sideEffect>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>SCP_FoundationMedicalProtocols</researchPrerequisite>
+      <recipeUsers><li>SCP_FoundationLabModule</li></recipeUsers><soundWorking>Recipe_Drug</soundWorking><displayPriority>1510</displayPriority>
+    </recipeMaker>
+    <costList><Neutroamine>3</Neutroamine><MedicineIndustrial>1</MedicineIndustrial></costList>
+    <comps>
+      <li Class="CompProperties_Drug"><listOrder>1010</listOrder></li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="MakeableDrugBase">
+    <defName>SCP_MnesticStabilizer</defName>
+    <label>mnestic stabilizer</label>
+    <description>A Foundation cognitive stabilizer used before exposure to psychic and antimemetic hazards. For one day it reduces psychic sensitivity and lowers the subject's mental break threshold.</description>
+    <graphicData>
+      <texPath>Things/Item/Medicine/ScpMnesticStabilizer</texPath><graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases><WorkToMake>1500</WorkToMake><MarketValue>46</MarketValue><Mass>0.1</Mass></statBases>
+    <techLevel>Industrial</techLevel>
+    <ingestible>
+      <drugCategory>Medical</drugCategory><foodType>Processed, Fluid</foodType>
+      <baseIngestTicks>80</baseIngestTicks><ingestSound>Ingest_Inject</ingestSound>
+      <ingestCommandString>Inject {0}</ingestCommandString><ingestReportString>Injecting {0}.</ingestReportString>
+      <useEatingSpeedStat>false</useEatingSpeedStat><chairSearchRadius>0</chairSearchRadius>
+      <outcomeDoers><li Class="IngestionOutcomeDoer_GiveHediff"><hediffDef>SCP_MnesticStabilization</hediffDef><severity>1</severity></li></outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>SCP_FoundationMedicalProtocols</researchPrerequisite>
+      <recipeUsers><li>SCP_FoundationLabModule</li></recipeUsers><soundWorking>Recipe_Drug</soundWorking><displayPriority>1511</displayPriority>
+    </recipeMaker>
+    <costList><Neutroamine>2</Neutroamine><MedicineIndustrial>1</MedicineIndustrial></costList>
+    <comps>
+      <li Class="CompProperties_Drug"><listOrder>1020</listOrder></li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="MakeableDrugBase">
+    <defName>SCP_HemostaticInjector</defName>
+    <label>emergency hemostatic injector</label>
+    <description>A single-use Foundation field injector that rapidly seals up to four of the most dangerous bleeding wounds. It applies a competent temporary dressing but does not heal tissue damage or replace proper medical treatment.</description>
+    <graphicData>
+      <texPath>Things/Item/Medicine/ScpHemostaticInjector</texPath><graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases><WorkToMake>1100</WorkToMake><MarketValue>38</MarketValue><Mass>0.12</Mass></statBases>
+    <techLevel>Industrial</techLevel>
+    <ingestible>
+      <drugCategory>Medical</drugCategory><foodType>Processed, Fluid</foodType>
+      <baseIngestTicks>45</baseIngestTicks><ingestSound>Ingest_Inject</ingestSound>
+      <ingestCommandString>Inject {0}</ingestCommandString><ingestReportString>Injecting {0}.</ingestReportString>
+      <useEatingSpeedStat>false</useEatingSpeedStat><chairSearchRadius>0</chairSearchRadius>
+      <outcomeDoers>
+        <li Class="ScpFoundation.Interactions.IngestionOutcomeDoer_Hemostatic"><woundsToTend>4</woundsToTend><tendQuality>0.7</tendQuality></li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>SCP_FoundationMedicalProtocols</researchPrerequisite>
+      <recipeUsers><li>SCP_FoundationLabModule</li></recipeUsers><soundWorking>Recipe_Drug</soundWorking><displayPriority>1512</displayPriority>
+    </recipeMaker>
+    <costList><Neutroamine>1</Neutroamine><MedicineIndustrial>1</MedicineIndustrial></costList>
+    <comps>
+      <li Class="CompProperties_Drug"><listOrder>1030</listOrder></li>
+    </comps>
+  </ThingDef>
+</Defs>

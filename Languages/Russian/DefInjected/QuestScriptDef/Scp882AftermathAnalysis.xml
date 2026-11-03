@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_882AftermathAnalysis.questNameRules.rulesStrings><li>questName->Анализ SCP-882</li></SCP_882AftermathAnalysis.questNameRules.rulesStrings>
+  <SCP_882AftermathAnalysis.questDescriptionRules.rulesStrings><li>questDescription->После обороны Фонд просит исследовать SCP-882. Поместите объект в любой его резервуар и держите терминал связи Фонда в поселении включённым суммарно шесть часов. Если объект вынести или отключить терминал, анализ приостановится; накопленный прогресс сохранится.</li></SCP_882AftermathAnalysis.questDescriptionRules.rulesStrings>
+</LanguageData>

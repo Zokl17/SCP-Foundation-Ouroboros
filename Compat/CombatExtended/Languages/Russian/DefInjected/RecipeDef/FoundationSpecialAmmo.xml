@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <MakeSCP_Ammo_EMPCell.label>изготовить ЭМИ-ячейки Фонда x60</MakeSCP_Ammo_EMPCell.label>
+  <MakeSCP_Ammo_EMPCell.description>Изготовить 60 герметичных ячеек высокого разряда для ЭМИ-винтовок Фонда.</MakeSCP_Ammo_EMPCell.description>
+  <MakeSCP_Ammo_EMPCell.jobString>Изготовление ЭМИ-ячеек Фонда.</MakeSCP_Ammo_EMPCell.jobString>
+  <MakeSCP_Ammo_TranqDart.label>изготовить транквилизирующие дротики Фонда x60</MakeSCP_Ammo_TranqDart.label>
+  <MakeSCP_Ammo_TranqDart.description>Изготовить 60 дротиков с отмеренной дозой седативного препарата для винтовок Фонда.</MakeSCP_Ammo_TranqDart.description>
+  <MakeSCP_Ammo_TranqDart.jobString>Изготовление транквилизирующих дротиков Фонда.</MakeSCP_Ammo_TranqDart.jobString>
+  <MakeSCP_Ammo_ContainmentNet.label>изготовить сетевые баллоны Фонда x10</MakeSCP_Ammo_ContainmentNet.label>
+  <MakeSCP_Ammo_ContainmentNet.description>Изготовить 10 баллонов с утяжелёнными сетями для удержания целей.</MakeSCP_Ammo_ContainmentNet.description>
+  <MakeSCP_Ammo_ContainmentNet.jobString>Изготовление сетевых баллонов Фонда.</MakeSCP_Ammo_ContainmentNet.jobString>
+</LanguageData>

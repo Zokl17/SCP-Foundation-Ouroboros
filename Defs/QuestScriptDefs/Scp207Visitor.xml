@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <QuestScriptDef>
+    <defName>SCP_207Visitor</defName>
+    <autoAccept>true</autoAccept><defaultHidden>true</defaultHidden><isRootSpecial>true</isRootSpecial>
+    <questNameRules><rulesStrings><li>questName->The accelerated stranger</li></rulesStrings></questNameRules>
+    <questDescriptionRules><rulesStrings><li>questDescription->A stranger asks to join your colony. He says that after drinking an unusual cola he became faster than anyone he knows. The effect is already destroying his body; he has roughly a day left even if you accept him. He carries the remaining SCP-207 bottle. Do not drink it. Only SCP-500 can stop the overdrive.</li></rulesStrings></questDescriptionRules>
+    <root Class="ScpFoundation.Storytelling.QuestNode_Scp207Visitor" />
+  </QuestScriptDef>
+</Defs>

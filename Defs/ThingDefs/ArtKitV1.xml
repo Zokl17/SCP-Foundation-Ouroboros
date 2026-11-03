@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Legacy visual kit. Glass, camera and monitoring console now have functional integration. -->
+  <ThingDef Name="SCPV1_VisualBase" ParentName="BuildingBase" Abstract="True">
+    <description>ART v1 visual test sample. No SCP, access, monitoring or containment functionality.</description>
+    <thingClass>Building</thingClass>
+    <tickerType>Never</tickerType>
+    <size>(1,1)</size>
+    <rotatable>true</rotatable>
+    <defaultPlacingRot>North</defaultPlacingRot>
+    <passability>Impassable</passability>
+    <fillPercent>0.5</fillPercent>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Cutout</shaderType>
+      <drawSize>(1,1)</drawSize>
+      <drawRotated>true</drawRotated>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <MarketValue>0</MarketValue>
+    </statBases>
+    <scatterableOnMapGen>false</scatterableOnMapGen>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <filthLeaving IsNull="True" />
+    <building>
+      <isInert>true</isInert>
+      <ai_chillDestination>false</ai_chillDestination>
+    </building>
+  </ThingDef>
+  <ThingDef Name="SCPV1_WallBase" ParentName="SCPV1_VisualBase" Abstract="True">
+    <drawStyleCategory>Walls</drawStyleCategory>
+    <graphicData>
+      <linkFlags>
+        <li>Wall</li>
+      </linkFlags>
+    </graphicData>
+    <fillPercent>1</fillPercent>
+    <blockLight>true</blockLight>
+    <coversFloor>true</coversFloor>
+    <holdsRoof>true</holdsRoof>
+    <building>
+      <isWall>true</isWall>
+    </building>
+  </ThingDef>
+  <ThingDef ParentName="SCPV1_WallBase">
+    <defName>SCPV1_WallA</defName>
+    <label>ART v1: primary wall</label>
+    <graphicData>
+      <texPath>Things/Building/ScpContainmentWall_A</texPath>
+    </graphicData>
+  </ThingDef>
+  <ThingDef ParentName="SCPV1_WallBase">
+    <defName>SCPV1_WallB</defName>
+    <label>ART v1: high-security wall</label>
+    <graphicData>
+      <texPath>Things/Building/ScpContainmentWall_B</texPath>
+    </graphicData>
+  </ThingDef>
+  <ThingDef ParentName="SCPV1_WallBase">
+    <defName>SCPV1_GlassWall</defName>
+    <designationCategory>SCPFoundation</designationCategory>
+    <uiOrder>220</uiOrder>
+    <label>armored observation glass</label>
+    <description>Sealed structural glass: supports roofs and blocks movement and projectiles. Foundation observers and cameras can see through it.</description>
+    <blockLight>false</blockLight>
+    <rotatable>false</rotatable>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <coversFloor>false</coversFloor>
+    <statBases>
+      <MaxHitPoints>350</MaxHitPoints>
+      <WorkToBuild>1200</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>15</Steel>
+    </costList>
+    <thingClass>ScpFoundation.Runtime.Building_FoundationWall</thingClass>
+    <graphicData Inherit="False">
+      <texPath>Things/Building/Linked/ScpFoundationGlass_ClearCap47</texPath>
+      <graphicClass>ScpFoundation.Runtime.Graphic_FoundationWall</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <drawRotated>false</drawRotated>
+      <shaderType>Transparent</shaderType>
+      <linkType>None</linkType>
+      <linkFlags>
+        <li>Wall</li>
+        <li>Rock</li>
+      </linkFlags>
+    </graphicData>
+    <uiIconPath>Things/Building/Linked/ScpFoundationGlass_ClearCap47_Icon</uiIconPath>
+    <building>
+      <supportsWallAttachments>true</supportsWallAttachments>
+      <blueprintGraphicData Inherit="False">
+        <texPath>Things/Building/Linked/ScpFoundationGlass_ClearCap47_Blueprint</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <linkType>CornerFiller</linkType>
+        <linkFlags>
+          <li>Wall</li>
+          <li>Rock</li>
+        </linkFlags>
+      </blueprintGraphicData>
+    </building>
+  </ThingDef>
+  <!-- Full-tile Closed/Open art is not the split mover graphic used by Building_Door. -->
+  <ThingDef Name="SCPV1_ClosedBase" ParentName="SCPV1_VisualBase" Abstract="True">
+    <fillPercent>1</fillPercent>
+    <blockLight>true</blockLight>
+    <coversFloor>true</coversFloor>
+    <description>Fixed CLOSED visual sample. Not a working door; place its OPEN sample separately for comparison.</description>
+  </ThingDef>
+  <ThingDef Name="SCPV1_OpenBase" ParentName="SCPV1_VisualBase" Abstract="True">
+    <passability>Standable</passability>
+    <fillPercent>0</fillPercent>
+    <description>Fixed OPEN visual sample. Walkable test tile, without opening animation, seals or access control.</description>
+  </ThingDef>
+  <ThingDef ParentName="DoorBase">
+    <defName>SCPV1_DoorA_Closed</defName>
+    <designationCategory>SCPFoundation</designationCategory>
+    <uiOrder>300</uiOrder>
+    <label>reinforced Foundation door</label>
+    <description>A reinforced single-cell sliding door. Opens for allowed pawns and closes after passage. Uses 50 W; manual operation is slower. Supports hold-open and forbid controls. Not a hermetic interlocked airlock.</description>
+    <thingClass>ScpFoundation.Runtime.Building_FoundationDoor</thingClass>
+    <staticSunShadowHeight>0</staticSunShadowHeight>
+    <size>(1,1)</size>
+    <tickerType>Normal</tickerType>
+    <passability>PassThroughOnly</passability>
+    <stuffCategories IsNull="True" />
+    <costStuffCount>0</costStuffCount>
+    <useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <statBases>
+      <MaxHitPoints>700</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <WorkToBuild>1800</WorkToBuild>
+      <DoorOpenSpeed>0.8</DoorOpenSpeed>
+    </statBases>
+    <costList>
+      <Steel>60</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <graphicData>
+      <texPath>Things/Building/Door/ScpReinforcedDoorA_ClosedRaised</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1.8,1.35)</drawSize>
+      <drawRotated>false</drawRotated>
+      <shadowData>
+        <volume>(1.7,0.85,0.75)</volume>
+        <offset>(0,0,-0.04)</offset>
+      </shadowData>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
+    </graphicData>
+    <uiIconPath>Things/Building/Door/ScpReinforcedDoorA_ClosedRaised</uiIconPath>
+    <building>
+      <blueprintGraphicData Inherit="False">
+        <texPath>Things/Building/Door/ScpReinforcedDoorA_ClosedRaised</texPath>
+        <graphicClass>Graphic_Multi</graphicClass>
+        <drawSize>(1.8,1.35)</drawSize>
+        <drawOffset>(0,0,0.16)</drawOffset>
+        <drawRotated>false</drawRotated>
+      </blueprintGraphicData>
+    </building>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>50</basePowerConsumption>
+      </li>
+      <li Class="ScpFoundation.Runtime.CompProperties_FoundationDoorAccess" />
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="SCPV1_OpenBase">
+    <defName>SCPV1_DoorA_Open</defName>
+    <uiOrder>301</uiOrder>
+    <label>ART v1: heavy door A OPEN</label>
+    <graphicData>
+      <texPath>Things/Building/ScpHeavyDoor_A_Open</texPath>
+    </graphicData>
+  </ThingDef>
+  <ThingDef ParentName="DoorBase">
+    <defName>SCPV1_DoorB_Closed</defName>
+    <designationCategory>SCPFoundation</designationCategory>
+    <uiOrder>310</uiOrder>
+    <label>armored Foundation door</label>
+    <description>A heavy two-cell armored door with two sliding leaves and a fixed steel frame. Requires supporting walls on both sides. Uses 100 W; manual operation is slower. Supports hold-open and forbid controls. Not a hermetic interlocked airlock.</description>
+    <thingClass>ScpFoundation.Runtime.Building_FoundationMultiTileDoor</thingClass>
+    <staticSunShadowHeight>0</staticSunShadowHeight>
+    <size>(2,1)</size>
+    <rotatable>true</rotatable>
+    <tickerType>Normal</tickerType>
+    <passability>PassThroughOnly</passability>
+    <stuffCategories IsNull="True" />
+    <costStuffCount>0</costStuffCount>
+    <useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <statBases>
+      <MaxHitPoints>1500</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <WorkToBuild>3600</WorkToBuild>
+      <DoorOpenSpeed>0.55</DoorOpenSpeed>
+    </statBases>
+    <costList>
+      <Steel>120</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <graphicData>
+      <texPath>Things/Building/Door/ScpArmoredDoorB_ClosedRaised</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,1.5)</drawSize>
+      <drawRotated>false</drawRotated>
+      <shadowData>
+        <volume>(2.8,1.05,0.85)</volume>
+        <offset>(0,0,-0.05)</offset>
+      </shadowData>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
+    </graphicData>
+    <uiIconPath>Things/Building/Door/ScpArmoredDoorB_ClosedRaised</uiIconPath>
+    <useBlueprintGraphicAsGhost>true</useBlueprintGraphicAsGhost>
+    <building>
+      <blueprintClass>Blueprint_Build</blueprintClass>
+      <blueprintGraphicData Inherit="False">
+        <texPath>Things/Building/Door/ScpArmoredDoorB_ClosedRaised</texPath>
+        <graphicClass>Graphic_Multi</graphicClass>
+        <drawSize>(3,1.5)</drawSize>
+        <drawOffset>(0,0,0.18)</drawOffset>
+        <drawRotated>false</drawRotated>
+      </blueprintGraphicData>
+      <isSupportDoor>true</isSupportDoor>
+      <doorTopHorizontalOffset>(0,0,0)</doorTopHorizontalOffset>
+      <doorTopVerticalOffset>(0,0,0)</doorTopVerticalOffset>
+      <doorSupportGraphic>
+        <texPath>Things/Building/Door/ScpArmoredDoorB_Transparent</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <drawSize>(3,1.5)</drawSize>
+        <drawRotated>true</drawRotated>
+      </doorSupportGraphic>
+      <doorTopGraphic>
+        <texPath>Things/Building/Door/ScpArmoredDoorB_Transparent</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <drawSize>(3,1.5)</drawSize>
+        <drawRotated>true</drawRotated>
+      </doorTopGraphic>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_MultiCellDoor</li>
+    </placeWorkers>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>100</basePowerConsumption>
+      </li>
+      <li Class="ScpFoundation.Runtime.CompProperties_FoundationDoorAccess" />
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="SCPV1_OpenBase">
+    <defName>SCPV1_DoorB_Open</defName>
+    <uiOrder>311</uiOrder>
+    <label>ART v1: heavy door B OPEN</label>
+    <graphicData>
+      <texPath>Things/Building/ScpHeavyDoor_B_Open</texPath>
+    </graphicData>
+  </ThingDef>
+  <ThingDef ParentName="DoorBase">
+    <defName>SCPV1_Airlock_Closed</defName>
+    <designationCategory>SCPFoundation</designationCategory>
+    <uiOrder>400</uiOrder>
+    <label>hermetic Foundation door</label>
+    <description>A single-cell sliding door with a perimeter seal and yellow hazard markings. Airtight against vacuum when closed; opening permits exchange. Uses 50 W; manual operation is slower. Supports hold-open and forbid controls. Paired-door interlocking, decontamination and special SCP contamination protection are not implemented.</description>
+    <thingClass>ScpFoundation.Runtime.Building_FoundationDoor</thingClass>
+    <staticSunShadowHeight>0</staticSunShadowHeight>
+    <size>(1,1)</size>
+    <tickerType>Normal</tickerType>
+    <passability>PassThroughOnly</passability>
+    <stuffCategories IsNull="True" />
+    <costStuffCount>0</costStuffCount>
+    <useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <statBases>
+      <MaxHitPoints>350</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <WorkToBuild>1800</WorkToBuild>
+      <DoorOpenSpeed>0.8</DoorOpenSpeed>
+    </statBases>
+    <costList>
+      <Steel>60</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <graphicData>
+      <texPath>Things/Building/Door/ScpHermeticDoor_ClosedRaised</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1.8,1.35)</drawSize>
+      <drawRotated>false</drawRotated>
+      <shadowData>
+        <volume>(1.7,0.85,0.75)</volume>
+        <offset>(0,0,-0.04)</offset>
+      </shadowData>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
+    </graphicData>
+    <uiIconPath>Things/Building/Door/ScpHermeticDoor_ClosedRaised</uiIconPath>
+    <building>
+      <isAirtight>true</isAirtight>
+      <blueprintGraphicData Inherit="False">
+        <texPath>Things/Building/Door/ScpHermeticDoor_ClosedRaised</texPath>
+        <graphicClass>Graphic_Multi</graphicClass>
+        <drawSize>(1.8,1.35)</drawSize>
+        <drawOffset>(0,0,0.16)</drawOffset>
+        <drawRotated>false</drawRotated>
+      </blueprintGraphicData>
+    </building>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>50</basePowerConsumption>
+      </li>
+      <li Class="ScpFoundation.Runtime.CompProperties_FoundationDoorAccess" />
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="SCPV1_OpenBase">
+    <defName>SCPV1_Airlock_Open</defName>
+    <uiOrder>401</uiOrder>
+    <label>ART v1: hermetic airlock OPEN</label>
+    <graphicData>
+      <texPath>Things/Building/ScpHeavyHermeticAirlock_Open</texPath>
+    </graphicData>
+  </ThingDef>
+  <ThingDef ParentName="DoorBase">
+    <defName>SCPV1_Shutter_Closed</defName>
+    <designationCategory>SCPFoundation</designationCategory>
+    <uiOrder>500</uiOrder>
+    <label>Foundation blast shutter</label>
+    <description>A massive two-cell containment bulkhead with interlocking teeth and blinking movement lights. In automatic mode it behaves as a door until any SCP on the map breaches containment, then closes and blocks passage. Manual mode provides explicit open and close controls. Loss of power is fail-closed.</description>
+    <thingClass>ScpFoundation.Runtime.Building_FoundationShutter</thingClass>
+    <staticSunShadowHeight>0</staticSunShadowHeight>
+    <size>(2,1)</size>
+    <rotatable>true</rotatable>
+    <tickerType>Normal</tickerType>
+    <passability>PassThroughOnly</passability>
+    <stuffCategories IsNull="True" />
+    <costStuffCount>0</costStuffCount>
+    <useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <researchPrerequisites>
+      <li>SCP_FoundationReinforcedContainment</li>
+    </researchPrerequisites>
+    <statBases>
+      <MaxHitPoints>1800</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <WorkToBuild>5000</WorkToBuild>
+      <DoorOpenSpeed>0.18</DoorOpenSpeed>
+    </statBases>
+    <costList>
+      <Steel>160</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <graphicData>
+      <texPath>Things/Building/Shutter/ScpBlastBulkhead_Closed</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,1.5)</drawSize>
+      <drawRotated>false</drawRotated>
+      <shadowData>
+        <volume>(2.8,1.25,0.9)</volume>
+        <offset>(0,0,-0.05)</offset>
+      </shadowData>
+      <damageData><enabled>false</enabled></damageData>
+    </graphicData>
+    <uiIconPath>Things/Building/Shutter/ScpBlastBulkhead_Closed</uiIconPath>
+    <useBlueprintGraphicAsGhost>true</useBlueprintGraphicAsGhost>
+    <building>
+      <isAirtight>true</isAirtight>
+      <isSupportDoor>true</isSupportDoor>
+      <doorSupportGraphic>
+        <texPath>Things/Building/Shutter/ScpBlastBulkhead_Transparent</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <drawSize>(2,1)</drawSize>
+        <drawRotated>true</drawRotated>
+      </doorSupportGraphic>
+      <doorTopGraphic>
+        <texPath>Things/Building/Shutter/ScpBlastBulkhead_Transparent</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <drawSize>(2,1)</drawSize>
+        <drawRotated>true</drawRotated>
+      </doorTopGraphic>
+      <blueprintGraphicData Inherit="False">
+        <texPath>Things/Building/Shutter/ScpBlastBulkhead_Closed</texPath>
+        <graphicClass>Graphic_Multi</graphicClass>
+        <drawSize>(3,1.5)</drawSize>
+        <drawOffset>(0,0,0.18)</drawOffset>
+        <drawRotated>false</drawRotated>
+      </blueprintGraphicData>
+    </building>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>150</basePowerConsumption>
+      </li>
+      <li Class="ScpFoundation.Runtime.CompProperties_FoundationShutter" />
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_MultiCellDoor</li>
+    </placeWorkers>
+  </ThingDef>
+  <ThingDef ParentName="SCPV1_OpenBase">
+    <defName>SCPV1_Shutter_Open</defName>
+    <uiOrder>501</uiOrder>
+    <label>ART legacy: blast shutter OPEN</label>
+    <description>Legacy visual sample retained for development galleries. Build the working Foundation blast shutter instead.</description>
+    <graphicData>
+      <texPath>Things/Building/ScpBlastShutter_Open</texPath>
+    </graphicData>
+  </ThingDef>
+  <ThingDef ParentName="SCPV1_WallBase">
+    <defName>SCPV1_Hatch_Closed</defName>
+    <uiOrder>600</uiOrder>
+    <label>ART v1: service hatch CLOSED</label>
+    <description>Fixed CLOSED service-hatch sample. No item transfer; not a personnel passage.</description>
+    <graphicData>
+      <texPath>Things/Building/ScpServiceHatch_Closed</texPath>
+    </graphicData>
+  </ThingDef>
+  <ThingDef ParentName="SCPV1_WallBase">
+    <defName>SCPV1_Hatch_Open</defName>
+    <uiOrder>601</uiOrder>
+    <label>ART v1: service hatch OPEN</label>
+    <description>Fixed OPEN service-hatch sample. The wall still blocks pawns; no item transfer.</description>
+    <graphicData>
+      <texPath>Things/Building/ScpServiceHatch_Open</texPath>
+    </graphicData>
+  </ThingDef>
+  <ThingDef ParentName="SCPV1_VisualBase">
+    <defName>SCPV1_AccessTerminal</defName>
+    <designationCategory>SCPFoundation</designationCategory>
+    <passability>PassThroughOnly</passability>
+    <uiOrder>800</uiOrder>
+    <label>Foundation communications terminal</label>
+    <description>Contact the Foundation and read the shared correspondence archive. Sending and receiving requires a powered terminal on a home map. The archive remains available without power. Does not grant SCP clearance or start ending operations.</description>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <WorkToBuild>2000</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>60</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>100</basePowerConsumption>
+        <shortCircuitInRain>true</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="ScpFoundation.Interactions.CompProperties_FoundationAccessTerminal" />
+    </comps>
+    <graphicData>
+      <texPath>Things/Building/ScpFoundationAccessTerminal</texPath>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <hasInteractionCell>true</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+  </ThingDef>
+  <ThingDef ParentName="SCPV1_VisualBase">
+    <defName>SCPV1_MonitoringConsole</defName>
+    <designationCategory>SCPFoundation</designationCategory>
+    <passability>PassThroughOnly</passability>
+    <uiOrder>900</uiOrder>
+    <label>Foundation monitoring console</label>
+    <size>(3,2)</size>
+      <description>A staffed console with three base monitoring channels. Each powered Foundation monitoring display linked within eight cells adds two channels. Eligible objects connect automatically while standing on their bound posts; camera and operator status are checked separately. Remote observation must be permitted by the object's protocol.</description>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>3500</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>100</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>200</basePowerConsumption>
+        <shortCircuitInRain>true</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="ScpFoundation.Interactions.CompProperties_MonitoringConsole" />
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>SCPV1_MonitoringDisplay</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+    <graphicData>
+      <texPath>Things/Building/ScpFoundationMonitoringConsole</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawRotated>false</drawRotated>
+      <drawSize>(3,2)</drawSize>
+    </graphicData>
+    <uiIconPath>Things/Building/ScpFoundationMonitoringConsole</uiIconPath>
+    <hasInteractionCell>true</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+  </ThingDef>
+  <ThingDef ParentName="SCPV1_VisualBase">
+    <defName>SCPV1_MonitoringDisplay</defName>
+    <designationCategory>SCPFoundation</designationCategory>
+    <passability>PassThroughOnly</passability>
+    <uiOrder>950</uiOrder>
+    <label>Foundation monitoring display</label>
+    <description>A large powered display that automatically links to a nearby Foundation monitoring console within eight cells and direct line of sight. Adds two monitoring channels while powered. Its screens glow with the vanilla television effect while an operator works at the linked console.</description>
+    <tickerType>Normal</tickerType>
+    <size>(2,1)</size>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <fillPercent>0.35</fillPercent>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <WorkToBuild>2500</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>80</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>120</basePowerConsumption>
+        <shortCircuitInRain>true</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="ScpFoundation.Interactions.CompProperties_MonitoringDisplay" />
+      <li Class="CompProperties_Facility">
+        <maxSimultaneous>1</maxSimultaneous>
+        <maxDistance>8</maxDistance>
+        <requiresLOS>true</requiresLOS>
+      </li>
+    </comps>
+    <graphicData>
+      <texPath>Things/Building/Monitoring/ScpFoundationMonitoringDisplay</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawRotated>false</drawRotated>
+      <drawSize>(2,1)</drawSize>
+    </graphicData>
+    <uiIconPath>Things/Building/Monitoring/ScpFoundationMonitoringDisplay</uiIconPath>
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+    </placeWorkers>
+  </ThingDef>
+  <ThingDef ParentName="SCPV1_VisualBase">
+    <defName>SCPV1_Camera</defName>
+    <designationCategory>SCPFoundation</designationCategory>
+    <passability>Standable</passability>
+    <uiOrder>1000</uiOrder>
+    <label>Foundation security camera</label>
+      <description>Wall-mounted camera, 50 W, range 12 cells. Mount it on a supporting wall inside the containment room. It covers visible posts in the same room regardless of rotation. An object on a covered post connects to the monitoring console automatically; active observation requires an operator.</description>
+    <tickerType>Normal</tickerType>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <pathCost>0</pathCost>
+    <terrainAffordanceNeeded IsNull="True" />
+    <building>
+      <isEdifice>false</isEdifice>
+      <isAttachment>true</isAttachment>
+    </building>
+    <placeWorkers>
+      <li>Placeworker_AttachedToWall</li>
+    </placeWorkers>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <WorkToBuild>1500</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>25</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>50</basePowerConsumption>
+        <shortCircuitInRain>true</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="ScpFoundation.Interactions.CompProperties_WallCamera" />
+    </comps>
+    <graphicData>
+      <texPath>Things/Building/WallCamera/ScpWallCamera</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawRotated>false</drawRotated>
+      <drawSize>(1,1)</drawSize>
+      <drawOffsetNorth>(0,0,0.65)</drawOffsetNorth>
+      <drawOffsetSouth>(0,0,-0.65)</drawOffsetSouth>
+      <drawOffsetEast>(0.65,0,0)</drawOffsetEast>
+      <drawOffsetWest>(-0.65,0,0)</drawOffsetWest>
+    </graphicData>
+  </ThingDef>
+  <ThingDef ParentName="SCPV1_VisualBase">
+    <defName>SCPV1_DeconGate</defName>
+    <designationCategory>SCPFoundation</designationCategory>
+    <uiOrder>700</uiOrder>
+    <label>Foundation room decontaminator</label>
+    <description>A wall-mounted decontamination unit for sealed rooms up to 64 cells. A manual powered cycle fills the chamber with harmless visible vapor, then removes ordinary gas, filth and registered SCP contamination. Opening a door or losing power interrupts the cycle.</description>
+    <tickerType>Normal</tickerType>
+    <rotatable>true</rotatable>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <terrainAffordanceNeeded IsNull="True" />
+    <researchPrerequisites>
+      <li>SCP_FoundationReinforcedContainment</li>
+    </researchPrerequisites>
+    <graphicData>
+      <texPath>Things/Building/ScpDecontaminationGate</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawRotated>false</drawRotated>
+      <drawSize>(1,1)</drawSize>
+      <drawOffsetNorth>(0,0,0.9)</drawOffsetNorth>
+      <drawOffsetSouth>(0,0,-0.9)</drawOffsetSouth>
+      <drawOffsetEast>(0.9,0,0)</drawOffsetEast>
+      <drawOffsetWest>(-0.9,0,0)</drawOffsetWest>
+    </graphicData>
+    <uiIconPath>Things/Building/ScpDecontaminationGate</uiIconPath>
+    <passability>Standable</passability>
+    <pathCost>0</pathCost>
+    <fillPercent>0.2</fillPercent>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <WorkToBuild>1500</WorkToBuild>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <costList>
+      <Steel>40</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <building>
+      <isInert>false</isInert>
+      <isEdifice>false</isEdifice>
+      <isAttachment>true</isAttachment>
+      <expandHomeArea>false</expandHomeArea>
+    </building>
+    <placeWorkers>
+      <li>Placeworker_AttachedToWall</li>
+    </placeWorkers>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>200</basePowerConsumption>
+        <shortCircuitInRain>true</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="ScpFoundation.Interactions.CompProperties_RoomDecontaminator" />
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="SCPV1_VisualBase">
+    <defName>SCPV1_Sensor</defName>
+    <designationCategory>SCPFoundation</designationCategory>
+    <passability>PassThroughOnly</passability>
+    <uiOrder>1100</uiOrder>
+    <label>containment sensor</label>
+    <description>Autonomous chamber telemetry. Automatically selects the single containment post in its enclosed room. No console assignment needed. Measures only protocol-required temperature, light or power. Does not replace observation.</description>
+    <tickerType>Rare</tickerType>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>1200</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>20</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>15</basePowerConsumption>
+      </li>
+      <li Class="ScpFoundation.Interactions.CompProperties_ContainmentSensor" />
+    </comps>
+    <graphicData>
+      <texPath>Things/Building/ScpContainmentSensor</texPath>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <rotatable>false</rotatable>
+  </ThingDef>
+</Defs>

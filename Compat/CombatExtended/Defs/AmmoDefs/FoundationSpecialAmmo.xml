@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingCategoryDef>
+    <defName>SCP_FoundationSpecialAmmo</defName>
+    <label>Foundation special ammunition</label>
+    <parent>AmmoAdvanced</parent>
+    <iconPath>UI/Icons/ThingCategories/AmmoAdvanced</iconPath>
+  </ThingCategoryDef>
+
+  <CombatExtended.AmmoSetDef>
+    <defName>SCP_AmmoSet_EMPCell</defName>
+    <label>Foundation EMP cell</label>
+    <ammoTypes>
+      <SCP_Ammo_EMPCell>SCP_ProjectileEMPRifle</SCP_Ammo_EMPCell>
+    </ammoTypes>
+  </CombatExtended.AmmoSetDef>
+
+  <CombatExtended.AmmoSetDef>
+    <defName>SCP_AmmoSet_TranqDart</defName>
+    <label>Foundation tranquilizer dart</label>
+    <ammoTypes>
+      <SCP_Ammo_TranqDart>SCP_ProjectileTranqDart</SCP_Ammo_TranqDart>
+    </ammoTypes>
+  </CombatExtended.AmmoSetDef>
+
+  <CombatExtended.AmmoSetDef>
+    <defName>SCP_AmmoSet_ContainmentNet</defName>
+    <label>Foundation containment net canister</label>
+    <ammoTypes>
+      <SCP_Ammo_ContainmentNet>SCP_ProjectileContainmentNet</SCP_Ammo_ContainmentNet>
+    </ammoTypes>
+  </CombatExtended.AmmoSetDef>
+
+  <ThingDef Class="CombatExtended.AmmoDef" Name="SCP_FoundationSpecialAmmoBase" ParentName="AmmoBase" Abstract="True">
+    <description>Restricted ammunition manufactured for specialized Foundation containment weapons.</description>
+    <tradeTags>
+      <li>CE_AutoEnableTrade</li>
+      <li>CE_AutoEnableCrafting</li>
+    </tradeTags>
+    <thingCategories>
+      <li>SCP_FoundationSpecialAmmo</li>
+    </thingCategories>
+    <stackLimit>500</stackLimit>
+  </ThingDef>
+
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="SCP_FoundationSpecialAmmoBase">
+    <defName>SCP_Ammo_EMPCell</defName>
+    <label>Foundation EMP cell</label>
+    <description>A sealed high-discharge cell that generates an electromagnetic pulse on impact.</description>
+    <graphicData>
+      <texPath>Things/Projectile/ScpEMPPulse</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases><Mass>0.08</Mass><Bulk>0.06</Bulk><MarketValue>8</MarketValue></statBases>
+    <ammoClass>ElectroSlug</ammoClass>
+    <cookOffProjectile>SCP_ProjectileEMPRifle</cookOffProjectile>
+  </ThingDef>
+
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="SCP_FoundationSpecialAmmoBase">
+    <defName>SCP_Ammo_TranqDart</defName>
+    <label>Foundation tranquilizer dart</label>
+    <description>A low-energy dart carrying a calibrated fast-acting sedative.</description>
+    <graphicData>
+      <texPath>Things/Projectile/ScpTranqDart</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases><Mass>0.03</Mass><Bulk>0.03</Bulk><MarketValue>5</MarketValue></statBases>
+    <ammoClass>Beanbag</ammoClass>
+    <cookOffProjectile>SCP_ProjectileTranqDart</cookOffProjectile>
+  </ThingDef>
+
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="SCP_FoundationSpecialAmmoBase">
+    <defName>SCP_Ammo_ContainmentNet</defName>
+    <label>Foundation containment net canister</label>
+    <description>A pressurized canister containing a weighted rapid-deployment restraint net.</description>
+    <graphicData>
+      <texPath>Things/Projectile/ScpContainmentNetCanister</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases><Mass>0.45</Mass><Bulk>0.35</Bulk><MarketValue>12</MarketValue></statBases>
+    <ammoClass>Beanbag</ammoClass>
+    <cookOffProjectile>SCP_ProjectileContainmentNet</cookOffProjectile>
+  </ThingDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeSCP_Ammo_EMPCell</defName>
+    <label>make Foundation EMP cells x60</label>
+    <description>Manufacture 60 sealed high-discharge cells for Foundation EMP rifles.</description>
+    <jobString>Manufacturing Foundation EMP cells.</jobString>
+    <researchPrerequisite>SCP_FoundationSpecialArmament</researchPrerequisite>
+    <recipeUsers><li>SCP_FoundationArmoryModule</li></recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>Steel</li></thingDefs></filter><count>12</count></li>
+      <li><filter><thingDefs><li>ComponentIndustrial</li></thingDefs></filter><count>1</count></li>
+    </ingredients>
+    <fixedIngredientFilter><thingDefs><li>Steel</li><li>ComponentIndustrial</li></thingDefs></fixedIngredientFilter>
+    <products><SCP_Ammo_EMPCell>60</SCP_Ammo_EMPCell></products>
+    <workAmount>1800</workAmount>
+    <skillRequirements><Crafting>6</Crafting></skillRequirements>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeSCP_Ammo_TranqDart</defName>
+    <label>make Foundation tranquilizer darts x60</label>
+    <description>Manufacture 60 calibrated sedative darts for Foundation tranquilizer rifles.</description>
+    <jobString>Manufacturing Foundation tranquilizer darts.</jobString>
+    <researchPrerequisite>SCP_FoundationCaptureWeapons</researchPrerequisite>
+    <recipeUsers><li>SCP_FoundationArmoryModule</li></recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>Steel</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>Neutroamine</li></thingDefs></filter><count>5</count></li>
+    </ingredients>
+    <fixedIngredientFilter><thingDefs><li>Steel</li><li>Neutroamine</li></thingDefs></fixedIngredientFilter>
+    <products><SCP_Ammo_TranqDart>60</SCP_Ammo_TranqDart></products>
+    <workAmount>1600</workAmount>
+    <skillRequirements><Crafting>6</Crafting></skillRequirements>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeSCP_Ammo_ContainmentNet</defName>
+    <label>make Foundation containment canisters x10</label>
+    <description>Manufacture 10 pressurized canisters carrying weighted containment nets.</description>
+    <jobString>Manufacturing Foundation containment canisters.</jobString>
+    <researchPrerequisite>SCP_FoundationCaptureWeapons</researchPrerequisite>
+    <recipeUsers><li>SCP_FoundationArmoryModule</li></recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>Steel</li></thingDefs></filter><count>20</count></li>
+      <li><filter><thingDefs><li>Cloth</li></thingDefs></filter><count>30</count></li>
+    </ingredients>
+    <fixedIngredientFilter><thingDefs><li>Steel</li><li>Cloth</li></thingDefs></fixedIngredientFilter>
+    <products><SCP_Ammo_ContainmentNet>10</SCP_Ammo_ContainmentNet></products>
+    <workAmount>2200</workAmount>
+    <skillRequirements><Crafting>6</Crafting></skillRequirements>
+  </RecipeDef>
+</Defs>

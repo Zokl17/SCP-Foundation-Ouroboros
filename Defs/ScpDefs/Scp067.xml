@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ScpFoundation.Definitions.ScpDef>
+    <defName>SCP_Anomaly067</defName><label>SCP-067</label>
+    <description>A fountain pen that guides the hand holding it to create drawings and personal writings.</description>
+    <scpId>SCP-067</scpId><objectClass>Safe</objectClass>
+    <tags><li>Artifact</li><li>Artistic</li></tags>
+    <requirements><li Class="ScpFoundation.Containment.RequirementScp067Post"><id>post</id></li></requirements>
+    <breach><graceTicks>30000</graceTicks><deterministicAfterTicks>0</deterministicAfterTicks><riskPerDay>0</riskPerDay><recoveryPerDay>0</recoveryPerDay></breach>
+    <research>
+      <observedWork>15000</observedWork><partialWork>120000</partialWork><fullWork>360000</fullWork>
+      <observedReportKey>SCP_067ObservedReport</observedReportKey>
+      <partialReportKey>SCP_067PartialReport</partialReportKey>
+      <documentedReportKey>SCP_067DocumentedReport</documentedReportKey>
+      <experimentReportKeys><li>SCP_067Experiment1</li><li>SCP_067Experiment2</li><li>SCP_067Experiment3</li></experimentReportKeys>
+    </research>
+    <source><title>SCP-067</title><author>FritzWillie</author><url>https://scp-wiki.wikidot.com/scp-067</url><license>CC BY-SA 3.0</license></source>
+  </ScpFoundation.Definitions.ScpDef>
+</Defs>

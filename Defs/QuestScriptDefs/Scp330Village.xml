@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <QuestScriptDef>
+    <defName>SCP_330VillageRecovery</defName>
+    <rootSelectionWeight>0.12</rootSelectionWeight><rootMinPoints>500</rootMinPoints>
+    <expireDaysRange>5~9</expireDaysRange>
+    <questNameRules><rulesStrings><li>questName->Investigate the SCP-330 village</li></rulesStrings></questNameRules>
+    <questDescriptionRules><rulesStrings>
+      <li>questDescription->The Foundation reports strange activity in a nearby village. A passing caravan carrying a Foundation agent saw wooden hands on several villagers and observed unusually fast movement. Investigate the village and extract any anomalous object you find. The inhabitants will remain peaceful for one day if their reliquary is left untouched.</li>
+    </rulesStrings></questDescriptionRules>
+    <root Class="QuestNode_Sequence"><nodes>
+      <li Class="QuestNode_GetMap" />
+      <li Class="QuestNode_GetSiteTile"><storeAs>siteTile</storeAs><preferCloserTiles>true</preferCloserTiles></li>
+      <li Class="ScpFoundation.Storytelling.QuestNode_Scp330VillageSetup" />
+      <li Class="QuestNode_GetDefaultSitePartsParams">
+        <tile>$siteTile</tile><faction>$siteFaction</faction>
+        <sitePartDefs>$sitePartDefs</sitePartDefs><storeSitePartsParamsAs>sitePartsParams</storeSitePartsParamsAs>
+      </li>
+      <li Class="QuestNode_GenerateSite">
+        <sitePartsParams>$sitePartsParams</sitePartsParams><faction>$siteFaction</faction>
+        <tile>$siteTile</tile><storeAs>site</storeAs><worldObjectDef>SCP_330VillageSite</worldObjectDef>
+      </li>
+      <li Class="ScpFoundation.Storytelling.QuestNode_Scp330VillageClaimSite" />
+      <li Class="QuestNode_SpawnWorldObjects"><worldObjects>$site</worldObjects></li>
+      <li Class="ScpFoundation.Storytelling.QuestNode_Scp330VillageTrack" />
+      <li Class="ScpFoundation.Storytelling.QuestNode_RecordScpArrival"><number>330</number></li>
+      <li Class="QuestNode_WorldObjectTimeout">
+        <worldObject>$site</worldObject><isQuestTimeout>true</isQuestTimeout>
+        <delayTicks>1200000</delayTicks><inSignalDisable>site.MapGenerated</inSignalDisable>
+        <destroyOnCleanup>false</destroyOnCleanup>
+        <node Class="QuestNode_End"><outcome>Fail</outcome></node>
+      </li>
+      <li Class="QuestNode_Signal"><inSignal>Scp330Recovered</inSignal>
+        <node Class="QuestNode_Sequence"><nodes>
+          <li Class="QuestNode_Letter"><label TKey="SCP_330RecoveredTitle">SCP-330 recovered</label><text TKey="SCP_330RecoveredBody">The bowl has reached your colony. Secure it at an appropriate containment post.</text></li>
+          <li Class="QuestNode_End"><outcome>Success</outcome></li>
+        </nodes></node>
+      </li>
+      <li Class="QuestNode_Signal"><inSignal>Scp330Lost</inSignal><node Class="QuestNode_End"><outcome>Fail</outcome></node></li>
+    </nodes></root>
+  </QuestScriptDef>
+</Defs>

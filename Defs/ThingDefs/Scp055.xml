@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef>
+    <defName>SCP_055ShippingCrate</defName><label>sealed wooden crate</label>
+    <description>A nailed wooden shipping crate. Its paperwork lists the destination and handling instructions; the contents field is blank.</description>
+    <thingClass>ScpFoundation.Anomalies.Thing_Scp055ShippingCrate</thingClass>
+    <category>Item</category><altitudeLayer>Item</altitudeLayer>
+    <selectable>true</selectable><stackLimit>1</stackLimit>
+    <alwaysHaulable>false</alwaysHaulable><designateHaulable>false</designateHaulable><rotatable>false</rotatable>
+    <graphicData><texPath>Things/Item/Scp055ShippingCrate</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>(1.2,1.2)</drawSize></graphicData>
+    <statBases><MaxHitPoints>500</MaxHitPoints><Mass>30</Mass><Flammability>0</Flammability><MarketValue>0</MarketValue></statBases>
+    <tradeability>None</tradeability>
+  </ThingDef>
+  <ThingDef>
+    <defName>SCP_AntimemeticObject</defName><label>SCP-055</label>
+    <description>An object of uncertain appearance.</description>
+    <thingClass>ThingWithComps</thingClass><category>Item</category><altitudeLayer>Item</altitudeLayer>
+    <tickerType>Rare</tickerType><selectable>true</selectable><stackLimit>1</stackLimit>
+    <alwaysHaulable>false</alwaysHaulable><designateHaulable>false</designateHaulable><drawGUIOverlay>true</drawGUIOverlay><rotatable>false</rotatable>
+    <graphicData><texPath>Things/Item/Scp055BlackInterference</texPath><graphicClass>Graphic_Single</graphicClass><shaderType>Transparent</shaderType><drawSize>(1.25,1.25)</drawSize></graphicData>
+    <statBases><MaxHitPoints>500</MaxHitPoints><Mass>20</Mass><Flammability>0</Flammability><MarketValue>0</MarketValue></statBases>
+    <tradeability>None</tradeability>
+    <comps>
+      <li Class="ScpFoundation.Runtime.CompProperties_Scp"><anomaly>SCP_Anomaly055</anomaly><requireCapture>true</requireCapture></li>
+      <li Class="ScpFoundation.Interactions.CompProperties_ScpInteraction"/>
+      <li Class="ScpFoundation.Anomalies.CompProperties_Scp055"/>
+    </comps>
+  </ThingDef>
+</Defs>

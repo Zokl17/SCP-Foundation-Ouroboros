@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ResearchTabDef>
+    <defName>SCPFoundationResearch</defName>
+    <label>Foundation</label>
+    <generalTitle>Foundation research</generalTitle>
+    <generalDescription>Develop Foundation communications, containment chambers, personnel equipment and response weapons. Only one research project can be active at a time.</generalDescription>
+  </ResearchTabDef>
+
+  <ResearchProjectDef>
+    <defName>SCP_FoundationContact</defName>
+    <label>Foundation contact</label>
+    <description>Establish a secure communications channel with the Foundation and prepare an access terminal for official contact.</description>
+    <baseCost>200</baseCost><techLevel>Industrial</techLevel><tab>SCPFoundationResearch</tab>
+    <prerequisites><li>MicroelectronicsBasics</li></prerequisites>
+    <researchViewX>1</researchViewX><researchViewY>1</researchViewY>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>SCP_FoundationBasicPost</defName><label>basic containment post</label>
+    <description>Mark a steel holding position for the first recovered anomaly before setting up concrete production.</description>
+    <baseCost>200</baseCost><techLevel>Industrial</techLevel><tab>SCPFoundationResearch</tab>
+    <prerequisites><li>SCP_FoundationContact</li></prerequisites>
+    <researchViewX>2</researchViewX><researchViewY>1</researchViewY>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>SCP_FoundationConstruction</defName>
+    <label>primary materials</label>
+    <description>Develop a local concrete production process and the standard Foundation wall needed for basic containment construction.</description>
+    <baseCost>800</baseCost><techLevel>Industrial</techLevel><tab>SCPFoundationResearch</tab>
+    <prerequisites><li>SCP_FoundationBasicPost</li></prerequisites>
+    <researchViewX>3</researchViewX><researchViewY>1</researchViewY>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>SCP_FoundationProduction</defName><label>Foundation production</label>
+    <description>Set up the central Foundation workshop bench. Dedicated armory and laboratory modules require their own research.</description>
+    <baseCost>500</baseCost><techLevel>Industrial</techLevel><tab>SCPFoundationResearch</tab>
+    <prerequisites><li>SCP_FoundationConstruction</li></prerequisites>
+    <researchViewX>4</researchViewX><researchViewY>1</researchViewY>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>SCP_FoundationSurveillance</defName>
+    <label>containment surveillance</label>
+    <description>Develop powered cameras, staffed monitoring consoles and autonomous chamber sensors.</description>
+    <baseCost>1200</baseCost><techLevel>Industrial</techLevel><tab>SCPFoundationResearch</tab>
+    <prerequisites><li>SCP_FoundationConstruction</li><li>Electricity</li></prerequisites>
+    <researchViewX>4</researchViewX><researchViewY>2.6</researchViewY>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>SCP_FoundationReinforcedContainment</defName>
+    <label>reinforced structures</label>
+    <description>Develop reinforced walls, armored observation glass, armored doors, automatic blast shutters, hermetic access and room decontamination for more demanding chambers.</description>
+    <baseCost>1800</baseCost><techLevel>Industrial</techLevel><tab>SCPFoundationResearch</tab>
+    <prerequisites><li>SCP_FoundationSurveillance</li></prerequisites>
+    <researchViewX>5</researchViewX><researchViewY>3.4</researchViewY>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>SCP_FoundationFusor</defName><label>Farnsworth-Lipson fusor</label>
+    <description>Build a powered fusor that links to the Foundation laboratory and supports high-energy equipment production.</description>
+    <baseCost>1200</baseCost><techLevel>Spacer</techLevel><tab>SCPFoundationResearch</tab>
+    <prerequisites><li>SCP_FoundationReinforcedContainment</li></prerequisites>
+    <researchViewX>6</researchViewX><researchViewY>3.4</researchViewY>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>SCP_FoundationSpecialArmament</defName>
+    <label>Foundation special armament</label>
+    <description>Develop high-energy suppression systems, advanced turrets and POR-7 equipment for containment teams.</description>
+    <baseCost>2200</baseCost><techLevel>Spacer</techLevel><tab>SCPFoundationResearch</tab>
+    <prerequisites><li>SCP_FoundationFusor</li><li>PrecisionRifling</li></prerequisites>
+    <researchViewX>7</researchViewX><researchViewY>3.4</researchViewY>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>SCP_FoundationMedicalProtocols</defName>
+    <label>Foundation medical protocols</label>
+    <description>Develop controlled amnestics, mnestic protection and emergency field hemostatics for personnel exposed to anomalous hazards.</description>
+    <baseCost>1600</baseCost><techLevel>Industrial</techLevel><tab>SCPFoundationResearch</tab>
+    <prerequisites><li>SCP_FoundationProduction</li><li>DrugProduction</li></prerequisites>
+    <researchViewX>5</researchViewX><researchViewY>1.8</researchViewY>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>SCP_FoundationClothing</defName><label>Foundation personnel clothing</label>
+    <description>Prepare researcher coats and class D uniforms for assigned personnel.</description>
+    <baseCost>350</baseCost><techLevel>Industrial</techLevel><tab>SCPFoundationResearch</tab>
+    <prerequisites><li>SCP_FoundationConstruction</li><li>ComplexClothing</li></prerequisites>
+    <researchViewX>4</researchViewX><researchViewY>1.8</researchViewY>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>SCP_FoundationBallistics</defName><label>Foundation firearms</label>
+    <description>Adapt Foundation carbines, light machine guns and shotguns for local manufacture.</description>
+    <baseCost>900</baseCost><techLevel>Industrial</techLevel><tab>SCPFoundationResearch</tab>
+    <prerequisites><li>SCP_FoundationProduction</li><li>PrecisionRifling</li></prerequisites>
+    <researchViewX>5</researchViewX><researchViewY>1</researchViewY>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>SCP_FoundationTacticalArmor</defName><label>Foundation tactical armor</label>
+    <description>Manufacture assault vests and the heavier Nu-7 armor and helmet.</description>
+    <baseCost>1000</baseCost><techLevel>Industrial</techLevel><tab>SCPFoundationResearch</tab>
+    <prerequisites><li>SCP_FoundationClothing</li><li>SCP_FoundationProduction</li><li>FlakArmor</li></prerequisites>
+    <researchViewX>5</researchViewX><researchViewY>2.6</researchViewY>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>SCP_FoundationCaptureWeapons</defName><label>Foundation capture weapons</label>
+    <description>Manufacture tranquilizer rifles and nonlethal containment net launchers.</description>
+    <baseCost>700</baseCost><techLevel>Industrial</techLevel><tab>SCPFoundationResearch</tab>
+    <prerequisites><li>SCP_FoundationBallistics</li><li>SCP_FoundationMedicalProtocols</li></prerequisites>
+    <researchViewX>6</researchViewX><researchViewY>1.8</researchViewY>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>SCP_FoundationPoweredArmor</defName><label>MTF powered armor</label>
+    <description>Study the XPA-M6 exosuit and its sealed helmet after applying one Foundation techprint. Crafting also requires a powered fusor linked through a laboratory module.</description>
+    <baseCost>1800</baseCost><techLevel>Spacer</techLevel><tab>SCPFoundationResearch</tab>
+    <techprintCount>1</techprintCount><techprintCommonality>0.2</techprintCommonality>
+    <techprintMarketValue>1000</techprintMarketValue>
+    <heldByFactionCategoryTags><li>SCPFoundation</li></heldByFactionCategoryTags>
+    <prerequisites><li>SCP_FoundationTacticalArmor</li><li>SCP_FoundationSpecialArmament</li></prerequisites>
+    <researchViewX>8</researchViewX><researchViewY>2.6</researchViewY>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>SCP_FoundationArtifactStorage</defName><label>anomalous item stations</label>
+    <description>Study safe holding and handling methods for anomalous items. Individual designs arrive with their recovery assignments.</description>
+    <baseCost>450</baseCost><techLevel>Industrial</techLevel><tab>SCPFoundationResearch</tab>
+    <prerequisites><li>SCP_FoundationConstruction</li></prerequisites>
+    <researchViewX>3</researchViewX><researchViewY>4.2</researchViewY>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>SCP_106Chamber</defName><label>SCP-106 containment chamber</label>
+    <description>The SCP-106 recovery assignment reveals a dedicated chamber design. Research it before building the powered chamber.</description>
+    <baseCost>300</baseCost><techLevel>Industrial</techLevel><tab>SCPFoundationResearch</tab>
+    <prerequisites><li>SCP_FoundationConstruction</li></prerequisites>
+    <researchViewX>4</researchViewX><researchViewY>4.2</researchViewY>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>SCP_882Reservoir</defName><label>SCP-882 seawater reservoir</label>
+    <description>The SCP-882 recovery assignment reveals a full-strength seawater reservoir and inspection procedure.</description>
+    <baseCost>500</baseCost><techLevel>Industrial</techLevel><tab>SCPFoundationResearch</tab>
+    <prerequisites><li>SCP_FoundationConstruction</li></prerequisites>
+    <researchViewX>5</researchViewX><researchViewY>4.2</researchViewY>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>SCP_682AcidContainment</defName><label>SCP-682 acid containment</label>
+    <description>The SCP-682 transfer assignment reveals a powered hydrochloric acid chamber for the subdued creature.</description>
+    <baseCost>900</baseCost><techLevel>Industrial</techLevel><tab>SCPFoundationResearch</tab>
+    <prerequisites><li>SCP_FoundationReinforcedContainment</li></prerequisites>
+    <researchViewX>6</researchViewX><researchViewY>4.2</researchViewY>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>SCP_127LockerResearch</defName><label>SCP-127 storage case</label>
+    <description>The SCP-127 recovery assignment provides the plans for its regenerative storage case.</description>
+    <baseCost>250</baseCost><techLevel>Industrial</techLevel><tab>SCPFoundationResearch</tab>
+    <prerequisites><li>SCP_FoundationArtifactStorage</li></prerequisites>
+    <researchViewX>3</researchViewX><researchViewY>5.0</researchViewY>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>SCP_262HangerResearch</defName><label>SCP-262 containment hanger</label>
+    <description>Successfully defending the SCP-354 perimeter releases plans for a dedicated SCP-262 holding stand.</description>
+    <baseCost>200</baseCost><techLevel>Industrial</techLevel><tab>SCPFoundationResearch</tab>
+    <prerequisites><li>SCP_FoundationArtifactStorage</li></prerequisites>
+    <researchViewX>4</researchViewX><researchViewY>5.0</researchViewY>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>SCP_093MirrorResearch</defName><label>SCP-093 mirror frame</label>
+    <description>The collector estate assignment reveals how to build a controlled mirror frame for the recovered disc.</description>
+    <baseCost>350</baseCost><techLevel>Industrial</techLevel><tab>SCPFoundationResearch</tab>
+    <prerequisites><li>SCP_FoundationArtifactStorage</li></prerequisites>
+    <researchViewX>5</researchViewX><researchViewY>5.0</researchViewY>
+  </ResearchProjectDef>
+</Defs>

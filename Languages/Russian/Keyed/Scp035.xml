@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_035PossessionTitle>Захват носителя SCP-035</SCP_035PossessionTitle>
+  <SCP_035PossessionBody>{PAWN} надел маску SCP-035. Маска захватила разум носителя; его тело быстро разлагается.</SCP_035PossessionBody>
+  <SCP_035RecoveredTitle>SCP-035 изъят</SCP_035RecoveredTitle>
+  <SCP_035RecoveredBody>Маска доставлена в колонию. Немедленно обеспечьте её содержание и не допускайте длительного зрительного контакта персонала с ней.</SCP_035RecoveredBody>
+  <SCP_035QuestUnavailable>Задание по изъятию SCP-035 сейчас недоступно.</SCP_035QuestUnavailable>
+  <SCP_035QuestOffered>Предложено задание по изъятию SCP-035.</SCP_035QuestOffered>
+  <SCP_035ObservedReport>Фарфоровая маска вызывает у наблюдателей навязчивое желание надеть её. Зрительный контакт следует ограничивать.</SCP_035ObservedReport>
+  <SCP_035PartialReport>После длительного наблюдения желание становится непреодолимым. Носитель теряет контроль над собой, а ткани начинают разлагаться.</SCP_035PartialReport>
+  <SCP_035DocumentedReport>Пятичасовой суммарный зрительный контакт вынуждает пешку надеть маску. Тело носителя разлагается и погибает примерно через два часа.</SCP_035DocumentedReport>
+</LanguageData>

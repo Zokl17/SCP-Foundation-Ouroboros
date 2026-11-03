@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <RecipeDef Name="SCP_InstallWeaponTraitBase" Abstract="True">
+    <jobString>Installing a weapon trait.</jobString>
+    <workAmount>4500</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_Smith</soundWorking>
+    <workerClass>ScpFoundation.Interactions.RecipeWorker_InstallWeaponTrait</workerClass>
+    <researchPrerequisite>SCP_FoundationBallistics</researchPrerequisite>
+    <skillRequirements><Crafting>6</Crafting></skillRequirements>
+    <recipeUsers><li>SCP_FoundationArmoryModule</li></recipeUsers>
+    <ingredients>
+      <li><filter><categories><li>WeaponsRanged</li><li>WeaponsUnique</li></categories></filter><count>1</count></li>
+      <li><filter><thingDefs><li>Steel</li></thingDefs></filter><count>50</count></li>
+      <li><filter><thingDefs><li>ComponentIndustrial</li></thingDefs></filter><count>2</count></li>
+    </ingredients>
+    <fixedIngredientFilter><categories><li>WeaponsRanged</li><li>WeaponsUnique</li></categories><thingDefs><li>Steel</li><li>ComponentIndustrial</li></thingDefs></fixedIngredientFilter>
+  </RecipeDef>
+  <RecipeDef Name="SCP_ExplosiveLauncher" ParentName="SCP_InstallWeaponTraitBase" Abstract="True">
+    <researchPrerequisite>Fabrication</researchPrerequisite>
+    <ingredients Inherit="False">
+      <li><filter><categories><li>WeaponsRanged</li><li>WeaponsUnique</li></categories></filter><count>1</count></li>
+      <li><filter><thingDefs><li>Steel</li></thingDefs></filter><count>40</count></li>
+      <li><filter><thingDefs><li>ComponentIndustrial</li></thingDefs></filter><count>1</count></li>
+      <li><filter><thingDefs><li>Chemfuel</li></thingDefs></filter><count>15</count></li>
+    </ingredients>
+    <fixedIngredientFilter Inherit="False"><categories><li>WeaponsRanged</li><li>WeaponsUnique</li></categories><thingDefs><li>Steel</li><li>ComponentIndustrial</li><li>Chemfuel</li></thingDefs></fixedIngredientFilter>
+  </RecipeDef>
+  <RecipeDef ParentName="SCP_InstallWeaponTraitBase"><defName>SCP_InstallWeaponTrait_QuickReload</defName><label>install quick reload</label><description>Install the Odyssey quick reload trait on a compatible ranged weapon. The weapon retains its quality and condition.</description></RecipeDef>
+  <RecipeDef ParentName="SCP_InstallWeaponTraitBase">
+    <defName>SCP_InstallWeaponTrait_AimAssistance</defName>
+    <label>install aim assistance</label>
+    <description>Install the Odyssey aim assistance trait on a compatible ranged weapon. The weapon retains its quality and condition.</description>
+    <ingredients Inherit="False">
+      <li><filter><categories><li>WeaponsRanged</li><li>WeaponsUnique</li></categories></filter><count>1</count></li>
+      <li><filter><thingDefs><li>Steel</li></thingDefs></filter><count>50</count></li>
+      <li><filter><thingDefs><li>ComponentSpacer</li></thingDefs></filter><count>1</count></li>
+    </ingredients>
+    <fixedIngredientFilter Inherit="False"><categories><li>WeaponsRanged</li><li>WeaponsUnique</li></categories><thingDefs><li>Steel</li><li>ComponentSpacer</li></thingDefs></fixedIngredientFilter>
+  </RecipeDef>
+  <RecipeDef ParentName="SCP_InstallWeaponTraitBase"><defName>SCP_InstallWeaponTrait_CustomGrip</defName><label>install custom grip</label><description>Install the Odyssey custom grip trait on a compatible ranged weapon. The weapon retains its quality and condition.</description></RecipeDef>
+  <RecipeDef ParentName="SCP_InstallWeaponTraitBase"><defName>SCP_InstallWeaponTrait_StabilizerBrace</defName><label>install pistol brace</label><description>Install the Odyssey pistol brace trait on a compatible ranged weapon. The weapon retains its quality and condition.</description></RecipeDef>
+  <RecipeDef ParentName="SCP_InstallWeaponTraitBase"><defName>SCP_InstallWeaponTrait_PulseCharger</defName><label>install pulse charger</label><description>Install the Odyssey pulse charger trait on a compatible ranged weapon. The weapon retains its quality and condition.</description></RecipeDef>
+  <RecipeDef ParentName="SCP_InstallWeaponTraitBase"><defName>SCP_InstallWeaponTrait_ToxRounds</defName><label>install tox rounds</label><description>Install the Odyssey tox rounds trait on a compatible ranged weapon. The weapon retains its quality and condition.</description></RecipeDef>
+  <RecipeDef ParentName="SCP_InstallWeaponTraitBase"><defName>SCP_InstallWeaponTrait_PiercingRounds</defName><label>install piercing rounds</label><description>Install the Odyssey piercing rounds trait on a compatible ranged weapon. The weapon retains its quality and condition.</description></RecipeDef>
+  <RecipeDef ParentName="SCP_InstallWeaponTraitBase">
+    <defName>SCP_InstallWeaponTrait_IncendiaryRounds</defName>
+    <label>install incendiary rounds</label>
+    <description>Install the Odyssey incendiary rounds trait on a compatible ranged weapon. The weapon retains its quality and condition.</description>
+    <ingredients Inherit="False">
+      <li><filter><categories><li>WeaponsRanged</li><li>WeaponsUnique</li></categories></filter><count>1</count></li>
+      <li><filter><thingDefs><li>Steel</li></thingDefs></filter><count>50</count></li>
+      <li><filter><thingDefs><li>ComponentIndustrial</li></thingDefs></filter><count>2</count></li>
+      <li><filter><thingDefs><li>Chemfuel</li></thingDefs></filter><count>15</count></li>
+    </ingredients>
+    <fixedIngredientFilter Inherit="False"><categories><li>WeaponsRanged</li><li>WeaponsUnique</li></categories><thingDefs><li>Steel</li><li>ComponentIndustrial</li><li>Chemfuel</li></thingDefs></fixedIngredientFilter>
+  </RecipeDef>
+  <RecipeDef ParentName="SCP_InstallWeaponTraitBase"><defName>SCP_InstallWeaponTrait_EMPRounds</defName><label>install EMP rounds</label><description>Install the Odyssey EMP rounds trait on a compatible ranged weapon. The weapon retains its quality and condition.</description></RecipeDef>
+  <RecipeDef ParentName="SCP_InstallWeaponTraitBase"><defName>SCP_InstallWeaponTrait_HollowPointRounds</defName><label>install hollow-point rounds</label><description>Install the Odyssey hollow-point rounds trait on a compatible ranged weapon. The weapon retains its quality and condition.</description></RecipeDef>
+  <RecipeDef ParentName="SCP_InstallWeaponTraitBase"><defName>SCP_InstallWeaponTrait_HighPowerRounds</defName><label>install high-power rounds</label><description>Install the Odyssey high-power rounds trait on a compatible ranged weapon. The weapon retains its quality and condition.</description></RecipeDef>
+  <RecipeDef ParentName="SCP_InstallWeaponTraitBase"><defName>SCP_InstallWeaponTrait_ToxPellets</defName><label>install toxic pellets</label><description>Install the Odyssey toxic pellets trait on a compatible ranged weapon. The weapon retains its quality and condition.</description></RecipeDef>
+  <RecipeDef ParentName="SCP_InstallWeaponTraitBase"><defName>SCP_InstallWeaponTrait_IncendiaryPellets</defName><label>install incendiary pellets</label><description>Install the Odyssey incendiary pellets trait on a compatible ranged weapon. The weapon retains its quality and condition.</description></RecipeDef>
+  <RecipeDef ParentName="SCP_InstallWeaponTraitBase"><defName>SCP_InstallWeaponTrait_BirdshotPellets</defName><label>install birdshot pellets</label><description>Install the Odyssey birdshot pellets trait on a compatible ranged weapon. The weapon retains its quality and condition.</description></RecipeDef>
+  <RecipeDef ParentName="SCP_InstallWeaponTraitBase"><defName>SCP_InstallWeaponTrait_PiercingArrows</defName><label>install piercing arrows</label><description>Install the Odyssey piercing arrows trait on a compatible ranged weapon. The weapon retains its quality and condition.</description></RecipeDef>
+  <RecipeDef ParentName="SCP_InstallWeaponTraitBase"><defName>SCP_InstallWeaponTrait_ParalyticArrows</defName><label>install paralytic arrows</label><description>Install the Odyssey paralytic arrows trait on a compatible ranged weapon. The weapon retains its quality and condition.</description></RecipeDef>
+  <RecipeDef ParentName="SCP_InstallWeaponTraitBase"><defName>SCP_InstallWeaponTrait_BroadheadArrows</defName><label>install broadhead arrows</label><description>Install the Odyssey broadhead arrows trait on a compatible ranged weapon. The weapon retains its quality and condition.</description></RecipeDef>
+  <RecipeDef ParentName="SCP_InstallWeaponTraitBase"><defName>SCP_InstallWeaponTrait_LightweightArrows</defName><label>install lightweight arrows</label><description>Install the Odyssey lightweight arrows trait on a compatible ranged weapon. The weapon retains its quality and condition.</description></RecipeDef>
+  <RecipeDef ParentName="SCP_InstallWeaponTraitBase"><defName>SCP_InstallWeaponTrait_ReinforcedLimbs</defName><label>install reinforced bow limbs</label><description>Install the Odyssey reinforced bow limbs trait on a compatible ranged weapon. The weapon retains its quality and condition.</description></RecipeDef>
+  <RecipeDef ParentName="SCP_InstallWeaponTraitBase"><defName>SCP_InstallWeaponTrait_ExtendedBarrel</defName><label>install extended barrel</label><description>Install the Odyssey extended barrel trait on a compatible ranged weapon. The weapon retains its quality and condition.</description></RecipeDef>
+  <RecipeDef ParentName="SCP_InstallWeaponTraitBase"><defName>SCP_InstallWeaponTrait_ImprovedSights</defName><label>install tactical sight</label><description>Install the Odyssey tactical sight trait on a compatible ranged weapon. The weapon retains its quality and condition.</description></RecipeDef>
+  <RecipeDef ParentName="SCP_InstallWeaponTraitBase"><defName>SCP_InstallWeaponTrait_PrecisionScope</defName><label>install tracking scope</label><description>Install the Odyssey tracking scope trait on a compatible ranged weapon. The weapon retains its quality and condition.</description></RecipeDef>
+  <RecipeDef ParentName="SCP_InstallWeaponTraitBase"><defName>SCP_InstallWeaponTrait_RangefinderScope</defName><label>install rangefinder</label><description>Install the Odyssey rangefinder trait on a compatible ranged weapon. The weapon retains its quality and condition.</description></RecipeDef>
+  <RecipeDef ParentName="SCP_InstallWeaponTraitBase"><defName>SCP_InstallWeaponTrait_ShortenedBarrel</defName><label>install shortened barrel</label><description>Install the Odyssey shortened barrel trait on a compatible ranged weapon. The weapon retains its quality and condition.</description></RecipeDef>
+  <RecipeDef ParentName="SCP_InstallWeaponTraitBase"><defName>SCP_InstallWeaponTrait_RapidFire</defName><label>install rapid fire</label><description>Install the Odyssey rapid fire trait on a compatible ranged weapon. The weapon retains its quality and condition.</description></RecipeDef>
+  <RecipeDef ParentName="SCP_InstallWeaponTraitBase"><defName>SCP_InstallWeaponTrait_ExtendedMagazine</defName><label>install extended magazine</label><description>Install the Odyssey extended magazine trait on a compatible ranged weapon. The weapon retains its quality and condition.</description></RecipeDef>
+  <RecipeDef ParentName="SCP_InstallWeaponTraitBase"><defName>SCP_InstallWeaponTrait_ChargeCapacitor</defName><label>install charge capacitor</label><description>Install the Odyssey charge capacitor trait on a compatible ranged weapon. The weapon retains its quality and condition.</description></RecipeDef>
+  <RecipeDef ParentName="SCP_InstallWeaponTraitBase"><defName>SCP_InstallWeaponTrait_EMPPulser</defName><label>install EMP pulser</label><description>Install the Odyssey EMP pulser trait on a compatible ranged weapon. The weapon retains its quality and condition.</description></RecipeDef>
+  <RecipeDef ParentName="SCP_InstallWeaponTraitBase"><defName>SCP_InstallWeaponTrait_FrequencyAmplifier</defName><label>install frequency amplifier</label><description>Install the Odyssey frequency amplifier trait on a compatible ranged weapon. The weapon retains its quality and condition.</description></RecipeDef>
+  <RecipeDef ParentName="SCP_InstallWeaponTraitBase"><defName>SCP_InstallWeaponTrait_OversizedRounds</defName><label>install heavy rounds</label><description>Install the Odyssey heavy rounds trait on a compatible ranged weapon. The weapon retains its quality and condition.</description></RecipeDef>
+  <RecipeDef ParentName="SCP_InstallWeaponTraitBase"><defName>SCP_InstallWeaponTrait_Ornamental</defName><label>install ornamental</label><description>Install the Odyssey ornamental trait on a compatible ranged weapon. The weapon retains its quality and condition.</description></RecipeDef>
+  <RecipeDef ParentName="SCP_InstallWeaponTraitBase"><defName>SCP_InstallWeaponTrait_Lightweight</defName><label>install lightweight</label><description>Install the Odyssey lightweight trait on a compatible ranged weapon. The weapon retains its quality and condition.</description></RecipeDef>
+  <RecipeDef ParentName="SCP_InstallWeaponTraitBase">
+    <defName>SCP_InstallWeaponTrait_GoldInlay</defName>
+    <label>install gold inlay</label>
+    <description>Install the Odyssey gold inlay trait on a compatible ranged weapon. The weapon retains its quality and condition.</description>
+    <workSkill>Artistic</workSkill>
+    <skillRequirements Inherit="False"><Artistic>6</Artistic></skillRequirements>
+    <ingredients Inherit="False">
+      <li><filter><categories><li>WeaponsRanged</li><li>WeaponsUnique</li></categories></filter><count>1</count></li>
+      <li><filter><thingDefs><li>Gold</li></thingDefs></filter><count>30</count></li>
+    </ingredients>
+    <fixedIngredientFilter Inherit="False"><categories><li>WeaponsRanged</li><li>WeaponsUnique</li></categories><thingDefs><li>Gold</li></thingDefs></fixedIngredientFilter>
+  </RecipeDef>
+  <RecipeDef ParentName="SCP_InstallWeaponTraitBase">
+    <defName>SCP_InstallWeaponTrait_JadeInlay</defName>
+    <label>install jade inlay</label>
+    <description>Install the Odyssey jade inlay trait on a compatible ranged weapon. The weapon retains its quality and condition.</description>
+    <workSkill>Artistic</workSkill>
+    <skillRequirements Inherit="False"><Artistic>6</Artistic></skillRequirements>
+    <ingredients Inherit="False">
+      <li><filter><categories><li>WeaponsRanged</li><li>WeaponsUnique</li></categories></filter><count>1</count></li>
+      <li><filter><thingDefs><li>Jade</li></thingDefs></filter><count>30</count></li>
+    </ingredients>
+    <fixedIngredientFilter Inherit="False"><categories><li>WeaponsRanged</li><li>WeaponsUnique</li></categories><thingDefs><li>Jade</li></thingDefs></fixedIngredientFilter>
+  </RecipeDef>
+  <RecipeDef ParentName="SCP_ExplosiveLauncher"><defName>SCP_InstallWeaponTrait_GrenadeLauncher</defName><label>install grenade launcher</label><description>Install the Odyssey grenade launcher trait on a compatible ranged weapon. The weapon retains its quality and condition.</description></RecipeDef>
+  <RecipeDef ParentName="SCP_ExplosiveLauncher"><defName>SCP_InstallWeaponTrait_EMPLauncher</defName><label>install EMP cannon</label><description>Install the Odyssey EMP cannon trait on a compatible ranged weapon. The weapon retains its quality and condition.</description></RecipeDef>
+  <RecipeDef ParentName="SCP_ExplosiveLauncher"><defName>SCP_InstallWeaponTrait_SmokeLauncher</defName><label>install smoke launcher</label><description>Install the Odyssey smoke launcher trait on a compatible ranged weapon. The weapon retains its quality and condition.</description></RecipeDef>
+  <RecipeDef ParentName="SCP_ExplosiveLauncher"><defName>SCP_InstallWeaponTrait_IncendiaryLauncher</defName><label>install incendiary launcher</label><description>Install the Odyssey incendiary launcher trait on a compatible ranged weapon. The weapon retains its quality and condition.</description></RecipeDef>
+  <RecipeDef ParentName="SCP_InstallWeaponTraitBase" MayRequire="Ludeon.RimWorld.Anomaly"><defName>SCP_InstallWeaponTrait_BioferriteBurner</defName><label>install bioferrite burner</label><description>Install the Odyssey bioferrite burner trait on a compatible ranged weapon. The weapon retains its quality and condition.</description></RecipeDef>
+</Defs>

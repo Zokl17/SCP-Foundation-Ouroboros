@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <HediffDef>
+    <defName>SCP_217Infection</defName>
+    <label>SCP-217 clockwork infection</label>
+    <description>A slow, incurable conversion of organic tissue into a clockwork-like substance. It is transmitted by contact with infected tissue or a broken sample container.</description>
+    <hediffClass>ScpFoundation.Anomalies.Hediff_Scp217Infection</hediffClass>
+    <isBad>true</isBad><tendable>false</tendable><maxSeverity>1</maxSeverity>
+    <initialSeverity>0.01</initialSeverity>
+    <comps><li Class="HediffCompProperties_SeverityPerDay"><severityPerDay>0.012</severityPerDay></li></comps>
+    <stages>
+      <li><minSeverity>0</minSeverity><label>latent</label></li>
+      <li><minSeverity>0.25</minSeverity><label>stiff joints</label>
+        <capMods><li><capacity>Moving</capacity><offset>-0.1</offset></li></capMods></li>
+      <li><minSeverity>0.55</minSeverity><label>mechanical conversion</label><painOffset>0.15</painOffset>
+        <capMods><li><capacity>Moving</capacity><offset>-0.2</offset></li><li><capacity>Manipulation</capacity><offset>-0.15</offset></li></capMods></li>
+      <li><minSeverity>0.85</minSeverity><label>advanced conversion</label><painOffset>0.3</painOffset>
+        <capMods><li><capacity>Moving</capacity><offset>-0.35</offset></li><li><capacity>Manipulation</capacity><offset>-0.25</offset></li></capMods></li>
+    </stages>
+  </HediffDef>
+</Defs>

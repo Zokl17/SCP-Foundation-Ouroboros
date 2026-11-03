@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- FloorBase field pattern, without its normal Architect category or recipes/costs. -->
+  <TerrainDef>
+    <defName>SCPV1_ContainmentFloor</defName><label>ART v1: containment floor</label>
+    <description>DevMode visual floor sample. No containment effects.</description>
+    <texturePath>Terrain/Surfaces/ScpContainmentFloor</texturePath>
+    <edgeType>Hard</edgeType><renderPrecedence>235</renderPrecedence>
+    <layerable>true</layerable><fertility>0</fertility><pathCost>0</pathCost>
+    <affordances><li>Light</li><li>Medium</li><li>Heavy</li><li>Walkable</li></affordances>
+    <tags><li>Floor</li></tags>
+    <statBases><Beauty>0</Beauty><Cleanliness>0</Cleanliness></statBases>
+  </TerrainDef>
+</Defs>

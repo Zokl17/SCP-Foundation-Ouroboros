@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCPV1_ContainmentFloor.label>ART v1: пол содержания</SCPV1_ContainmentFloor.label>
+  <SCPV1_ContainmentFloor.description>Визуальный образец пола v1. Без свойств содержания; размещается инструментом DevMode.</SCPV1_ContainmentFloor.description>
+</LanguageData>

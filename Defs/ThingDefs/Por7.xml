@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="ResourceBase">
+    <defName>SCP_Por7PowerCell</defName>
+    <label>POR-7 high-density cell</label>
+    <description>A sealed power cell for the POR-7 emitter pack. One cell restores one full beam cycle. Crafted at a Foundation laboratory linked to a powered fusion chamber.</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData><texPath>Things/Item/Resource/ScpPor7PowerCell</texPath><graphicClass>Graphic_Single</graphicClass></graphicData>
+    <statBases><MarketValue>180</MarketValue><Mass>0.8</Mass><MaxHitPoints>80</MaxHitPoints><Flammability>0.1</Flammability><WorkToMake>12000</WorkToMake></statBases>
+    <thingCategories><li>Manufactured</li></thingCategories>
+    <stackLimit>25</stackLimit>
+    <costList><Plasteel>8</Plasteel><ComponentSpacer>1</ComponentSpacer></costList>
+    <recipeMaker><researchPrerequisite>SCP_FoundationSpecialArmament</researchPrerequisite><recipeUsers><li>SCP_FoundationLabModule</li></recipeUsers><skillRequirements><Crafting>9</Crafting></skillRequirements><displayPriority>215</displayPriority></recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="SCP_BackpackBase">
+    <defName>SCP_Por7PowerPack</defName>
+    <tickerType>Normal</tickerType>
+    <label>POR-7 power pack</label>
+    <description>A complete portable beam system. It occupies the backpack slot and holds three beam cycles. Use Charge POR-7 to stow the current weapon, draw the attached hand emitter, charge it and fire a sustained beam. Reload the pack with high-density cells. Crafted at a Foundation laboratory linked to a powered fusion chamber.</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData><texPath>Things/Item/Apparel/ScpPor7PowerPack</texPath><drawSize>1.25</drawSize></graphicData>
+    <statBases><Mass>12</Mass><WorkToMake>55000</WorkToMake><MaxHitPoints>180</MaxHitPoints></statBases>
+    <costList><Steel>130</Steel><Plasteel>70</Plasteel><ComponentIndustrial>10</ComponentIndustrial><ComponentSpacer>4</ComponentSpacer></costList>
+    <recipeMaker><researchPrerequisite>SCP_FoundationSpecialArmament</researchPrerequisite><recipeUsers><li>SCP_FoundationLabModule</li></recipeUsers><skillRequirements><Crafting>10</Crafting></skillRequirements><displayPriority>214</displayPriority></recipeMaker>
+    <apparel><wornGraphicPath>Things/Pawn/Humanlike/Apparel/Por7PowerPack/Por7PowerPack</wornGraphicPath><tags><li>SCP_Por7Pack</li></tags></apparel>
+    <comps>
+      <li Class="CompProperties_ApparelReloadable">
+        <maxCharges>3</maxCharges><ammoDef>SCP_Por7PowerCell</ammoDef><ammoCountPerCharge>1</ammoCountPerCharge>
+        <baseReloadTicks>240</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload><chargeNoun>beam cycle</chargeNoun>
+      </li>
+      <li Class="ScpFoundation.Runtime.CompProperties_Por7Emitter" />
+      <li Class="ScpFoundation.Runtime.CompProperties_Por7Pack" />
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="MoteBase">
+    <defName>SCP_MotePor7Beam</defName>
+    <thingClass>MoteDualAttached</thingClass><altitudeLayer>MoteOverhead</altitudeLayer><drawOffscreen>true</drawOffscreen>
+    <mote><fadeInTime>0.03</fadeInTime><solidTime>0.15</solidTime><fadeOutTime>0.18</fadeOutTime><needsMaintenance>true</needsMaintenance><rotateTowardsTarget>true</rotateTowardsTarget><scaleToConnectTargets>true</scaleToConnectTargets></mote>
+    <graphicData>
+      <texPath>Things/Mote/ScpLaserBeam</texPath><graphicClass>Graphic_MoteWithAgeSecs</graphicClass><shaderType>MoteBeam</shaderType><drawSize>(1.7,1)</drawSize>
+      <shaderParameters><_ExtraTexA>/Things/Mote/BeamSecondaryNoise_A</_ExtraTexA><_ExtraTexB>/Things/Mote/BeamSecondaryNoise_B</_ExtraTexB><_ScrollSpeedA>-0.35</_ScrollSpeedA><_ScrollSpeedB>0.45</_ScrollSpeedB><_Intensity>7</_Intensity></shaderParameters>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseGunWithQuality">
+    <defName>SCP_Por7Emitter</defName>
+    <label>POR-7 "Klin" hand emitter</label>
+    <description>The hand emitter attached to a POR-7 power pack. It is deployed only while charging and firing; the user's original weapon returns afterwards.</description>
+    <techLevel>Spacer</techLevel>
+    <tradeability>None</tradeability>
+    <smeltable>false</smeltable>
+    <graphicData><texPath>Things/Item/Equipment/WeaponRanged/ScpPor7Emitter</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>(1.65,0.75)</drawSize></graphicData>
+    <statBases><Mass>2.5</Mass><AccuracyTouch>0.88</AccuracyTouch><AccuracyShort>0.86</AccuracyShort><AccuracyMedium>0.74</AccuracyMedium><AccuracyLong>0.58</AccuracyLong><RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown></statBases>
+    <verbs>
+      <li>
+        <verbClass>ScpFoundation.Runtime.Verb_Por7Beam</verbClass><hasStandardCommand>false</hasStandardCommand><onlyManualCast>true</onlyManualCast>
+        <warmupTime>5</warmupTime><range>21.9</range><minRange>2.9</minRange>
+        <burstShotCount>13</burstShotCount><ticksBetweenBurstShots>18</ticksBetweenBurstShots><showBurstShotStats>false</showBurstShotStats>
+        <beamWidth>0</beamWidth><beamFullWidthRange>3</beamFullWidthRange><beamMaxDeviation>0</beamMaxDeviation><beamCurvature>0</beamCurvature>
+        <beamDamageDef>Beam</beamDamageDef><beamTotalDamage>84</beamTotalDamage><beamMoteDef>SCP_MotePor7Beam</beamMoteDef><beamStartOffset>0.7</beamStartOffset>
+        <soundAiming>OrbitalTargeter_Aiming</soundAiming><soundCastBeam>OrbitalBeamSubtle</soundCastBeam>
+        <stopBurstWithoutLos>true</stopBurstWithoutLos>
+      </li>
+    </verbs>
+    <weaponClasses><li>RangedHeavy</li></weaponClasses><weaponTags><li>SCP_Por7</li></weaponTags>
+  </ThingDef>
+</Defs>

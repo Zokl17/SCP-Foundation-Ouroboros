@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_504BadJoke.label>неудачная шутка</SCP_504BadJoke.label>
+  <SCP_504BadJoke.logRulesInitiator.rulesStrings><li>r_logentry->[INITIATOR_nameDef] рассказал [RECIPIENT_nameDef] неудачную шутку.</li></SCP_504BadJoke.logRulesInitiator.rulesStrings>
+</LanguageData>

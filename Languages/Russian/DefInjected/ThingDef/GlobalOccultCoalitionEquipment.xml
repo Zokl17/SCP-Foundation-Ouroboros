@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_GocBlackSuit.label>чёрный тактический костюм ГОК</SCP_GocBlackSuit.label>
+  <SCP_GocBlackSuit.description>Тёмная боевая форма с защитой ног, бронежилетом, подсумками и системой связи для рядовых оперативников ГОК.</SCP_GocBlackSuit.description>
+  <SCP_GocBlackHelmet.label>чёрный тактический шлем ГОК</SCP_GocBlackHelmet.label>
+  <SCP_GocBlackHelmet.description>Тёмный шлем со связью, защитными очками и закрытым лицом для полевых групп ГОК.</SCP_GocBlackHelmet.description>
+  <SCP_GocWhiteExosuit.label>белый экзокостюм ГОК</SCP_GocWhiteExosuit.label>
+  <SCP_GocWhiteExosuit.description>Силовой боевой костюм второго поколения, выдаваемый ударным группам Глобальной Оккультной Коалиции для прямой ликвидации параугроз. Белые керамические пластины защищают компактный графитовый экзокаркас, а подсвеченные синим управляющие каналы координируют приводы и герметичную систему жизнеобеспечения.</SCP_GocWhiteExosuit.description>
+  <SCP_GocWhiteHelmet.label>шлем белого экзокостюма ГОК</SCP_GocWhiteHelmet.label>
+  <SCP_GocWhiteHelmet.description>Герметичный шлем белого экзокостюма ГОК. Заострённый керамический корпус содержит узкую мультиспектральную оптику, защищённую связь и фильтры для операций против враждебных параугроз.</SCP_GocWhiteHelmet.description>
+</LanguageData>

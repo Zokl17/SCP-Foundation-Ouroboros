@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThoughtDef>
+    <defName>SCP_458DeliciousPizza</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>1</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages><li><label>the most delicious pizza</label><description>That was exactly the pizza I wanted.</description><baseMoodEffect>8</baseMoodEffect></li></stages>
+  </ThoughtDef>
+</Defs>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ScpFoundation.Definitions.ScpDef>
+    <defName>SCP_Anomaly294</defName><label>SCP-294</label>
+    <description>A vending machine capable of dispensing requested liquids.</description>
+    <scpId>SCP-294</scpId><objectClass>Euclid</objectClass>
+    <tags><li>Machine</li><li>Consumable</li></tags>
+    <requirements><li Class="ScpFoundation.Containment.RequirementScp294"><id>noSpecialContainment</id></li></requirements>
+    <research>
+      <observedWork>15000</observedWork><partialWork>120000</partialWork><fullWork>360000</fullWork>
+      <observedReportKey>SCP_294ObservedReport</observedReportKey>
+      <partialReportKey>SCP_294PartialReport</partialReportKey>
+      <documentedReportKey>SCP_294DocumentedReport</documentedReportKey>
+      <experimentReportKeys><li>SCP_294Experiment1</li><li>SCP_294Experiment2</li><li>SCP_294Experiment3</li></experimentReportKeys>
+    </research>
+    <source><title>SCP-294</title><author>Arcibi</author><url>https://scp-wiki.wikidot.com/scp-294</url><license>CC BY-SA 3.0</license></source>
+  </ScpFoundation.Definitions.ScpDef>
+</Defs>

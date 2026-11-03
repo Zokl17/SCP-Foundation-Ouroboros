@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_079RecoveryLab.label>заброшенный дата-центр</SCP_079RecoveryLab.label>
+  <SCP_079RecoveryLab.description>Небольшой заброшенный дата-центр, который Фонд определил как источник атак на мировую инфраструктуру и попытки проникновения в засекреченный вычислительный комплекс.</SCP_079RecoveryLab.description>
+  <SCP_079RecoveryLab.approachOrderString>Изъять {0}</SCP_079RecoveryLab.approachOrderString>
+  <SCP_079RecoveryLab.approachingReportString>Изъятие {0}.</SCP_079RecoveryLab.approachingReportString>
+  <SCP_079RecoveryLab.arrivedLetter>Заброшенный дата-центр охраняют вооружённые люди. Фонд отследил атаки до старого компьютера внутри. Заберите его и возвращайтесь в поселение; не подключайте устройство к сети.</SCP_079RecoveryLab.arrivedLetter>
+</LanguageData>

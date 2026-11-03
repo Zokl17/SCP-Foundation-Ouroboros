@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <IncidentDef><defName>SCP_Discover650</defName><label>unusual statue discovered</label>
+    <workerClass>ScpFoundation.Anomalies.IncidentWorker_Discover650</workerClass><category>Misc</category><targetTags><li>Map_PlayerHome</li></targetTags>
+    <baseChance>0</baseChance><earliestDay>0</earliestDay><minPopulation>1</minPopulation><minRefireDays>1</minRefireDays>
+    <letterDef>ThreatSmall</letterDef><letterLabel>An unknown statue has arrived</letterLabel>
+    <letterText>Shortly after the Foundation terminal came online, a dark statue appeared near the colony. This is the first anomaly you must investigate. Prepare a containment post in a lit room and assign two observers; the statue may change position while unattended.</letterText>
+  </IncidentDef>
+</Defs>

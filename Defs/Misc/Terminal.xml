@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <MainButtonDef>
+    <defName>SCPTerminal</defName><label>terminal</label>
+    <description>Containment posts, known objects, personnel and dossiers on the current map.</description>
+    <tabWindowClass>ScpFoundation.Runtime.MainTabWindow_ScpTerminal</tabWindowClass>
+    <order>61</order><closesWorldView>true</closesWorldView>
+  </MainButtonDef>
+</Defs>

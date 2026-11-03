@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_InstallWeaponTrait_QuickReload.label>Установить: быстрая перезарядка</SCP_InstallWeaponTrait_QuickReload.label>
+  <SCP_InstallWeaponTrait_QuickReload.description>Установить черту «быстрая перезарядка» на совместимое оружие. Качество и состояние оружия сохраняются.</SCP_InstallWeaponTrait_QuickReload.description>
+  <SCP_InstallWeaponTrait_AimAssistance.label>Установить: помощь при прицеливании</SCP_InstallWeaponTrait_AimAssistance.label>
+  <SCP_InstallWeaponTrait_AimAssistance.description>Установить черту «помощь при прицеливании» на совместимое оружие. Качество и состояние оружия сохраняются.</SCP_InstallWeaponTrait_AimAssistance.description>
+  <SCP_InstallWeaponTrait_CustomGrip.label>Установить: индивидуальная рукоятка</SCP_InstallWeaponTrait_CustomGrip.label>
+  <SCP_InstallWeaponTrait_CustomGrip.description>Установить черту «индивидуальная рукоятка» на совместимое оружие. Качество и состояние оружия сохраняются.</SCP_InstallWeaponTrait_CustomGrip.description>
+  <SCP_InstallWeaponTrait_StabilizerBrace.label>Установить: пистолетная скоба</SCP_InstallWeaponTrait_StabilizerBrace.label>
+  <SCP_InstallWeaponTrait_StabilizerBrace.description>Установить черту «пистолетная скоба» на совместимое оружие. Качество и состояние оружия сохраняются.</SCP_InstallWeaponTrait_StabilizerBrace.description>
+  <SCP_InstallWeaponTrait_PulseCharger.label>Установить: импульсный заряд</SCP_InstallWeaponTrait_PulseCharger.label>
+  <SCP_InstallWeaponTrait_PulseCharger.description>Установить черту «импульсный заряд» на совместимое оружие. Качество и состояние оружия сохраняются.</SCP_InstallWeaponTrait_PulseCharger.description>
+  <SCP_InstallWeaponTrait_ToxRounds.label>Установить: токсический состав</SCP_InstallWeaponTrait_ToxRounds.label>
+  <SCP_InstallWeaponTrait_ToxRounds.description>Установить черту «токсический состав» на совместимое оружие. Качество и состояние оружия сохраняются.</SCP_InstallWeaponTrait_ToxRounds.description>
+  <SCP_InstallWeaponTrait_PiercingRounds.label>Установить: пласталевый сердечник</SCP_InstallWeaponTrait_PiercingRounds.label>
+  <SCP_InstallWeaponTrait_PiercingRounds.description>Установить черту «пласталевый сердечник» на совместимое оружие. Качество и состояние оружия сохраняются.</SCP_InstallWeaponTrait_PiercingRounds.description>
+  <SCP_InstallWeaponTrait_IncendiaryRounds.label>Установить: усиленная зажигательная смесь</SCP_InstallWeaponTrait_IncendiaryRounds.label>
+  <SCP_InstallWeaponTrait_IncendiaryRounds.description>Установить черту «усиленная зажигательная смесь» на совместимое оружие. Качество и состояние оружия сохраняются.</SCP_InstallWeaponTrait_IncendiaryRounds.description>
+  <SCP_InstallWeaponTrait_EMPRounds.label>Установить: ЭМИ-обмотка</SCP_InstallWeaponTrait_EMPRounds.label>
+  <SCP_InstallWeaponTrait_EMPRounds.description>Установить черту «ЭМИ-обмотка» на совместимое оружие. Качество и состояние оружия сохраняются.</SCP_InstallWeaponTrait_EMPRounds.description>
+  <SCP_InstallWeaponTrait_HollowPointRounds.label>Установить: экспансивный профиль</SCP_InstallWeaponTrait_HollowPointRounds.label>
+  <SCP_InstallWeaponTrait_HollowPointRounds.description>Установить черту «экспансивный профиль» на совместимое оружие. Качество и состояние оружия сохраняются.</SCP_InstallWeaponTrait_HollowPointRounds.description>
+  <SCP_InstallWeaponTrait_HighPowerRounds.label>Установить: усиленный патронник</SCP_InstallWeaponTrait_HighPowerRounds.label>
+  <SCP_InstallWeaponTrait_HighPowerRounds.description>Установить черту «усиленный патронник» на совместимое оружие. Качество и состояние оружия сохраняются.</SCP_InstallWeaponTrait_HighPowerRounds.description>
+  <SCP_InstallWeaponTrait_ToxPellets.label>Установить: токсическая смесь</SCP_InstallWeaponTrait_ToxPellets.label>
+  <SCP_InstallWeaponTrait_ToxPellets.description>Установить черту «токсическая смесь» на совместимое оружие. Качество и состояние оружия сохраняются.</SCP_InstallWeaponTrait_ToxPellets.description>
+  <SCP_InstallWeaponTrait_IncendiaryPellets.label>Установить: зажигательная смесь</SCP_InstallWeaponTrait_IncendiaryPellets.label>
+  <SCP_InstallWeaponTrait_IncendiaryPellets.description>Установить черту «зажигательная смесь» на совместимое оружие. Качество и состояние оружия сохраняются.</SCP_InstallWeaponTrait_IncendiaryPellets.description>
+  <SCP_InstallWeaponTrait_BirdshotPellets.label>Установить: дробовой рассеиватель</SCP_InstallWeaponTrait_BirdshotPellets.label>
+  <SCP_InstallWeaponTrait_BirdshotPellets.description>Установить черту «дробовой рассеиватель» на совместимое оружие. Качество и состояние оружия сохраняются.</SCP_InstallWeaponTrait_BirdshotPellets.description>
+  <SCP_InstallWeaponTrait_PiercingArrows.label>Установить: пробивной наконечник</SCP_InstallWeaponTrait_PiercingArrows.label>
+  <SCP_InstallWeaponTrait_PiercingArrows.description>Установить черту «пробивной наконечник» на совместимое оружие. Качество и состояние оружия сохраняются.</SCP_InstallWeaponTrait_PiercingArrows.description>
+  <SCP_InstallWeaponTrait_ParalyticArrows.label>Установить: парализующий состав</SCP_InstallWeaponTrait_ParalyticArrows.label>
+  <SCP_InstallWeaponTrait_ParalyticArrows.description>Установить черту «парализующий состав» на совместимое оружие. Качество и состояние оружия сохраняются.</SCP_InstallWeaponTrait_ParalyticArrows.description>
+  <SCP_InstallWeaponTrait_BroadheadArrows.label>Установить: лезвийный наконечник</SCP_InstallWeaponTrait_BroadheadArrows.label>
+  <SCP_InstallWeaponTrait_BroadheadArrows.description>Установить черту «лезвийный наконечник» на совместимое оружие. Качество и состояние оружия сохраняются.</SCP_InstallWeaponTrait_BroadheadArrows.description>
+  <SCP_InstallWeaponTrait_LightweightArrows.label>Установить: облегчённое оперение</SCP_InstallWeaponTrait_LightweightArrows.label>
+  <SCP_InstallWeaponTrait_LightweightArrows.description>Установить черту «облегчённое оперение» на совместимое оружие. Качество и состояние оружия сохраняются.</SCP_InstallWeaponTrait_LightweightArrows.description>
+  <SCP_InstallWeaponTrait_ReinforcedLimbs.label>Установить: усиленные плечи лука</SCP_InstallWeaponTrait_ReinforcedLimbs.label>
+  <SCP_InstallWeaponTrait_ReinforcedLimbs.description>Установить черту «усиленные плечи лука» на совместимое оружие. Качество и состояние оружия сохраняются.</SCP_InstallWeaponTrait_ReinforcedLimbs.description>
+  <SCP_InstallWeaponTrait_ExtendedBarrel.label>Установить: удлиненный ствол</SCP_InstallWeaponTrait_ExtendedBarrel.label>
+  <SCP_InstallWeaponTrait_ExtendedBarrel.description>Установить черту «удлиненный ствол» на совместимое оружие. Качество и состояние оружия сохраняются.</SCP_InstallWeaponTrait_ExtendedBarrel.description>
+  <SCP_InstallWeaponTrait_ImprovedSights.label>Установить: тактический прицел</SCP_InstallWeaponTrait_ImprovedSights.label>
+  <SCP_InstallWeaponTrait_ImprovedSights.description>Установить черту «тактический прицел» на совместимое оружие. Качество и состояние оружия сохраняются.</SCP_InstallWeaponTrait_ImprovedSights.description>
+  <SCP_InstallWeaponTrait_PrecisionScope.label>Установить: прицел с автосопровождением</SCP_InstallWeaponTrait_PrecisionScope.label>
+  <SCP_InstallWeaponTrait_PrecisionScope.description>Установить черту «прицел с автосопровождением» на совместимое оружие. Качество и состояние оружия сохраняются.</SCP_InstallWeaponTrait_PrecisionScope.description>
+  <SCP_InstallWeaponTrait_RangefinderScope.label>Установить: дальномерный прицел</SCP_InstallWeaponTrait_RangefinderScope.label>
+  <SCP_InstallWeaponTrait_RangefinderScope.description>Установить черту «дальномерный прицел» на совместимое оружие. Качество и состояние оружия сохраняются.</SCP_InstallWeaponTrait_RangefinderScope.description>
+  <SCP_InstallWeaponTrait_ShortenedBarrel.label>Установить: укороченный ствол</SCP_InstallWeaponTrait_ShortenedBarrel.label>
+  <SCP_InstallWeaponTrait_ShortenedBarrel.description>Установить черту «укороченный ствол» на совместимое оружие. Качество и состояние оружия сохраняются.</SCP_InstallWeaponTrait_ShortenedBarrel.description>
+  <SCP_InstallWeaponTrait_RapidFire.label>Установить: быстрая очередь</SCP_InstallWeaponTrait_RapidFire.label>
+  <SCP_InstallWeaponTrait_RapidFire.description>Установить черту «быстрая очередь» на совместимое оружие. Качество и состояние оружия сохраняются.</SCP_InstallWeaponTrait_RapidFire.description>
+  <SCP_InstallWeaponTrait_ExtendedMagazine.label>Установить: увеличенный магазин</SCP_InstallWeaponTrait_ExtendedMagazine.label>
+  <SCP_InstallWeaponTrait_ExtendedMagazine.description>Установить черту «увеличенный магазин» на совместимое оружие. Качество и состояние оружия сохраняются.</SCP_InstallWeaponTrait_ExtendedMagazine.description>
+  <SCP_InstallWeaponTrait_ChargeCapacitor.label>Установить: зарядовый конденсатор</SCP_InstallWeaponTrait_ChargeCapacitor.label>
+  <SCP_InstallWeaponTrait_ChargeCapacitor.description>Установить черту «зарядовый конденсатор» на совместимое оружие. Качество и состояние оружия сохраняются.</SCP_InstallWeaponTrait_ChargeCapacitor.description>
+  <SCP_InstallWeaponTrait_EMPPulser.label>Установить: ЭМИ-импульсер</SCP_InstallWeaponTrait_EMPPulser.label>
+  <SCP_InstallWeaponTrait_EMPPulser.description>Установить черту «ЭМИ-импульсер» на совместимое оружие. Качество и состояние оружия сохраняются.</SCP_InstallWeaponTrait_EMPPulser.description>
+  <SCP_InstallWeaponTrait_FrequencyAmplifier.label>Установить: усилитель частоты</SCP_InstallWeaponTrait_FrequencyAmplifier.label>
+  <SCP_InstallWeaponTrait_FrequencyAmplifier.description>Установить черту «усилитель частоты» на совместимое оружие. Качество и состояние оружия сохраняются.</SCP_InstallWeaponTrait_FrequencyAmplifier.description>
+  <SCP_InstallWeaponTrait_OversizedRounds.label>Установить: утяжелённый сердечник</SCP_InstallWeaponTrait_OversizedRounds.label>
+  <SCP_InstallWeaponTrait_OversizedRounds.description>Установить черту «утяжелённый сердечник» на совместимое оружие. Качество и состояние оружия сохраняются.</SCP_InstallWeaponTrait_OversizedRounds.description>
+  <SCP_InstallWeaponTrait_Ornamental.label>Установить: декоративное</SCP_InstallWeaponTrait_Ornamental.label>
+  <SCP_InstallWeaponTrait_Ornamental.description>Установить черту «декоративное» на совместимое оружие. Качество и состояние оружия сохраняются.</SCP_InstallWeaponTrait_Ornamental.description>
+  <SCP_InstallWeaponTrait_Lightweight.label>Установить: облегчённый корпус</SCP_InstallWeaponTrait_Lightweight.label>
+  <SCP_InstallWeaponTrait_Lightweight.description>Установить черту «облегчённый корпус» на совместимое оружие. Качество и состояние оружия сохраняются.</SCP_InstallWeaponTrait_Lightweight.description>
+  <SCP_InstallWeaponTrait_GoldInlay.label>Установить: золотая инкрустация</SCP_InstallWeaponTrait_GoldInlay.label>
+  <SCP_InstallWeaponTrait_GoldInlay.description>Установить черту «золотая инкрустация» на совместимое оружие. Качество и состояние оружия сохраняются.</SCP_InstallWeaponTrait_GoldInlay.description>
+  <SCP_InstallWeaponTrait_JadeInlay.label>Установить: нефритовая инкрустация</SCP_InstallWeaponTrait_JadeInlay.label>
+  <SCP_InstallWeaponTrait_JadeInlay.description>Установить черту «нефритовая инкрустация» на совместимое оружие. Качество и состояние оружия сохраняются.</SCP_InstallWeaponTrait_JadeInlay.description>
+  <SCP_InstallWeaponTrait_GrenadeLauncher.label>Установить: гранатомет</SCP_InstallWeaponTrait_GrenadeLauncher.label>
+  <SCP_InstallWeaponTrait_GrenadeLauncher.description>Установить черту «гранатомет» на совместимое оружие. Качество и состояние оружия сохраняются.</SCP_InstallWeaponTrait_GrenadeLauncher.description>
+  <SCP_InstallWeaponTrait_EMPLauncher.label>Установить: ЭМИ-пушка</SCP_InstallWeaponTrait_EMPLauncher.label>
+  <SCP_InstallWeaponTrait_EMPLauncher.description>Установить черту «ЭМИ-пушка» на совместимое оружие. Качество и состояние оружия сохраняются.</SCP_InstallWeaponTrait_EMPLauncher.description>
+  <SCP_InstallWeaponTrait_SmokeLauncher.label>Установить: дымовая пусковая установка</SCP_InstallWeaponTrait_SmokeLauncher.label>
+  <SCP_InstallWeaponTrait_SmokeLauncher.description>Установить черту «дымовая пусковая установка» на совместимое оружие. Качество и состояние оружия сохраняются.</SCP_InstallWeaponTrait_SmokeLauncher.description>
+  <SCP_InstallWeaponTrait_IncendiaryLauncher.label>Установить: реактивный огнемет</SCP_InstallWeaponTrait_IncendiaryLauncher.label>
+  <SCP_InstallWeaponTrait_IncendiaryLauncher.description>Установить черту «реактивный огнемет» на совместимое оружие. Качество и состояние оружия сохраняются.</SCP_InstallWeaponTrait_IncendiaryLauncher.description>
+  <SCP_InstallWeaponTrait_BioferriteBurner.label>Установить: горелка на биоферрите</SCP_InstallWeaponTrait_BioferriteBurner.label>
+  <SCP_InstallWeaponTrait_BioferriteBurner.description>Установить черту «горелка на биоферрите» на совместимое оружие. Качество и состояние оружия сохраняются.</SCP_InstallWeaponTrait_BioferriteBurner.description>
+</LanguageData>

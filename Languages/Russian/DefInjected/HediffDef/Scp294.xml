@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_294MedicalKnowledge.label>подходящие медицинские знания</SCP_294MedicalKnowledge.label>
+  <SCP_294MedicalKnowledge.description>Аномальный напиток временно повысил навык медицины на 10.</SCP_294MedicalKnowledge.description>
+  <SCP_294EngineeringKnowledge.label>подходящие инженерные знания</SCP_294EngineeringKnowledge.label>
+  <SCP_294EngineeringKnowledge.description>Аномальный напиток временно повысил навык строительства на 10.</SCP_294EngineeringKnowledge.description>
+  <SCP_294WeaponKnowledge.label>подходящие оружейные знания</SCP_294WeaponKnowledge.label>
+  <SCP_294WeaponKnowledge.description>Аномальный напиток временно повысил навык стрельбы на 10.</SCP_294WeaponKnowledge.description>
+</LanguageData>

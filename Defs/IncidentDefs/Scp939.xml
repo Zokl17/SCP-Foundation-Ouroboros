@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <IncidentDef>
+    <defName>SCP_Discover939</defName><label>SCP-939 found</label>
+    <workerClass>ScpFoundation.Anomalies.IncidentWorker_Discover939</workerClass>
+    <category>Misc</category><targetTags><li>Map_PlayerHome</li></targetTags>
+    <baseChance>0</baseChance><earliestDay>20</earliestDay><minPopulation>2</minPopulation><minRefireDays>60</minRefireDays>
+    <letterDef>ThreatSmall</letterDef><letterLabel>Sedated SCP-939 found</letterLabel>
+    <letterText>A sedated SCP-939 has been found on the map. Prepare a roofed, illuminated cell with reinforced Foundation walls and an armored door, then move the creature to a containment post before it wakes.</letterText>
+  </IncidentDef>
+</Defs>

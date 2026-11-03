@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Odyssey is already required by this folder; CE keeps its own gun comps. -->
+  <Operation Class="PatchOperationFindMod">
+    <mods><li>Combat Extended</li></mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[@Name="BaseGun"]/comps</xpath>
+          <value>
+            <li Class="CompProperties_UniqueWeapon">
+              <compClass>ScpFoundation.Interactions.CompWorkshopWeaponTraits</compClass>
+              <weaponCategories>
+                <li>Ranged</li><li>BulletFiring</li><li>PelletFiring</li>
+                <li>Gun</li><li>Pistol</li><li>Rifle</li><li>Sighted</li>
+                <li>Scoped</li><li>Shotgun</li><li>BurstFire</li>
+                <li>LowStoppingPower</li><li>PulseCharge</li>
+                <li>BeamWeapon</li><li>Attachable</li>
+              </weaponCategories>
+            </li>
+          </value>
+        </li>
+        <!-- Our CE-converted guns have comps Inherit="False". -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="SCP_Nu7HKCarbine" or defName="SCP_Nu7LightMachineGun" or defName="SCP_FoundationSpasTwelve" or defName="SCP_FoundationEMPRifle" or defName="SCP_FoundationTranqRifle" or defName="SCP_FoundationNetLauncher" or defName="SCP_ChaosAKGrenadier" or defName="SCP_ChaosLightMachineGun" or defName="SCP_127Gun"]/comps</xpath>
+          <value>
+            <li Class="CompProperties_UniqueWeapon">
+              <compClass>ScpFoundation.Interactions.CompWorkshopWeaponTraits</compClass>
+              <weaponCategories>
+                <li>Ranged</li><li>BulletFiring</li><li>PelletFiring</li>
+                <li>Gun</li><li>Pistol</li><li>Rifle</li><li>Sighted</li>
+                <li>Scoped</li><li>Shotgun</li><li>BurstFire</li>
+                <li>LowStoppingPower</li><li>PulseCharge</li>
+                <li>BeamWeapon</li><li>Attachable</li>
+              </weaponCategories>
+            </li>
+          </value>
+        </li>
+        <!-- Odyssey ability launchers require its replacement equippable.
+             CE owns the equippable, so do not offer recipes that would call
+             CompUniqueWeapon.Setup without that ability component. -->
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/RecipeDef[defName="SCP_InstallWeaponTrait_EMPPulser" or defName="SCP_InstallWeaponTrait_GrenadeLauncher" or defName="SCP_InstallWeaponTrait_EMPLauncher" or defName="SCP_InstallWeaponTrait_SmokeLauncher" or defName="SCP_InstallWeaponTrait_IncendiaryLauncher" or defName="SCP_InstallWeaponTrait_BioferriteBurner"]</xpath>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

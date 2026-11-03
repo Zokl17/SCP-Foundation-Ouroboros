@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_650ReturnArchived>SCP-650 has been transferred to the Foundation. The completed dossier and experiment records are retained for reference.</SCP_650ReturnArchived>
+  <SCP_650ReturnArrivedTitle>Shuttle ready for SCP-650</SCP_650ReturnArrivedTitle>
+  <SCP_650ReturnArrivedBody>The Foundation shuttle has landed and will wait for SCP-650. Select a colonist and right-click the Black Statue, then choose “Load SCP-650 aboard the Foundation shuttle”. Trust is granted only after departure with the object.</SCP_650ReturnArrivedBody>
+  <SCP_650ReturnLoad>Load SCP-650 aboard the Foundation shuttle</SCP_650ReturnLoad>
+  <SCP_650ReturnCannotLoad>an available colonist must be able to reach the statue and shuttle</SCP_650ReturnCannotLoad>
+</LanguageData>

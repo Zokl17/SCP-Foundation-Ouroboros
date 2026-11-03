@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_OuroborosChurchCipher.label>шифровальный носитель Церкви</SCP_OuroborosChurchCipher.label>
+  <SCP_OuroborosChurchCipher.description>Защищённое устройство с записью следующего узла передачи. Выберите его и поручите колонисту скопировать данные.</SCP_OuroborosChurchCipher.description>
+  <SCP_OuroborosSealed217Sample.label>запечатанный образец SCP-217</SCP_OuroborosSealed217Sample.label>
+  <SCP_OuroborosSealed217Sample.description>Герметичный контейнер с SCP-217. Пока он цел и запаян, хранение и перевозка безопасны. При разрушении содержимое может заразить находящихся рядом существ.</SCP_OuroborosSealed217Sample.description>
+  <SCP_OuroborosParts629Cache.label>компоненты SCP-629</SCP_OuroborosParts629Cache.label>
+  <SCP_OuroborosParts629Cache.description>Отделённые детали гуманоидного SCP-629. Это только часть его тела; из этих фрагментов нельзя собрать целого «Господина Латуня».</SCP_OuroborosParts629Cache.description>
+</LanguageData>

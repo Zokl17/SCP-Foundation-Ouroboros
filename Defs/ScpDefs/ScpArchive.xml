@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ScpFoundation.Definitions.ScpDef>
+    <defName>SCP_Anomaly076</defName><label>SCP-076</label><scpId>SCP-076</scpId><objectClass>Keter</objectClass><archiveOnly>true</archiveOnly>
+    <description>SCP-076-2, known as Able, is a dangerous humanoid associated with a stone containment cube.</description>
+    <source><title>SCP-076</title><author>Kain Pathos Crow; rewritten by DrClef</author><url>https://scp-wiki.wikidot.com/scp-076</url><license>CC BY-SA 3.0</license></source>
+  </ScpFoundation.Definitions.ScpDef>
+  <ScpFoundation.Definitions.ScpDef>
+    <defName>SCP_Anomaly049</defName><label>SCP-049</label><scpId>SCP-049</scpId><objectClass>Euclid</objectClass><archiveOnly>true</archiveOnly>
+    <description>A humanoid resembling a plague doctor.</description>
+    <research><observedWork>15000</observedWork><partialWork>120000</partialWork><fullWork>360000</fullWork>
+      <observedReportKey>SCP_049ObservedReport</observedReportKey><partialReportKey>SCP_049PartialReport</partialReportKey><documentedReportKey>SCP_049DocumentedReport</documentedReportKey>
+      <experimentReportKeys><li>SCP_049Experiment1</li><li>SCP_049Experiment2</li><li>SCP_049Experiment3</li></experimentReportKeys></research>
+    <source><title>SCP-049</title><author>Gabriel Jade; rewritten by djkaktus and Gabriel Jade</author><url>https://scp-wiki.wikidot.com/scp-049</url><license>CC BY-SA 3.0</license></source>
+  </ScpFoundation.Definitions.ScpDef>
+  <ScpFoundation.Definitions.ScpDef>
+    <defName>SCP_Anomaly106</defName><label>SCP-106</label><scpId>SCP-106</scpId><objectClass>Keter</objectClass><archiveOnly>true</archiveOnly>
+    <description>An elderly humanoid with a corrosive presence.</description>
+    <research><observedWork>30000</observedWork><partialWork>150000</partialWork><fullWork>420000</fullWork>
+      <observedReportKey>SCP_106ObservedReport</observedReportKey><partialReportKey>SCP_106PartialReport</partialReportKey><documentedReportKey>SCP_106DocumentedReport</documentedReportKey>
+      <experimentReportKeys><li>SCP_106Experiment1</li><li>SCP_106Experiment2</li><li>SCP_106Experiment3</li></experimentReportKeys></research>
+    <source><title>SCP-106</title><author>Dr Gears</author><url>https://scp-wiki.wikidot.com/scp-106</url><license>CC BY-SA 3.0</license></source>
+  </ScpFoundation.Definitions.ScpDef>
+  <ScpFoundation.Definitions.ScpDef>
+    <defName>SCP_Anomaly127</defName><label>SCP-127</label><scpId>SCP-127</scpId><objectClass>Safe</objectClass><archiveOnly>true</archiveOnly>
+    <description>A living submachine gun that grows tooth-like ammunition.</description>
+    <research><observedWork>8000</observedWork><partialWork>60000</partialWork><fullWork>180000</fullWork>
+      <observedReportKey>SCP_127ObservedReport</observedReportKey><partialReportKey>SCP_127PartialReport</partialReportKey><documentedReportKey>SCP_127DocumentedReport</documentedReportKey>
+      <experimentReportKeys><li>SCP_127Experiment1</li><li>SCP_127Experiment2</li><li>SCP_127Experiment3</li></experimentReportKeys></research>
+    <source><title>SCP-127</title><author>Arcibi</author><url>https://scp-wiki.wikidot.com/scp-127</url><license>CC BY-SA 3.0</license></source>
+  </ScpFoundation.Definitions.ScpDef>
+  <ScpFoundation.Definitions.ScpDef>
+    <defName>SCP_Anomaly500</defName><label>SCP-500</label><scpId>SCP-500</scpId><objectClass>Safe</objectClass><archiveOnly>true</archiveOnly>
+    <description>A supply of unusual red pills.</description>
+    <research><observedWork>8000</observedWork><partialWork>60000</partialWork><fullWork>180000</fullWork>
+      <observedReportKey>SCP_500ObservedReport</observedReportKey><partialReportKey>SCP_500PartialReport</partialReportKey><documentedReportKey>SCP_500DocumentedReport</documentedReportKey>
+      <experimentReportKeys><li>SCP_500Experiment1</li><li>SCP_500Experiment2</li><li>SCP_500Experiment3</li></experimentReportKeys></research>
+    <source><title>SCP-500</title><author>snorlison</author><url>https://scp-wiki.wikidot.com/scp-500</url><license>CC BY-SA 3.0</license></source>
+  </ScpFoundation.Definitions.ScpDef>
+  <ScpFoundation.Definitions.ScpDef>
+    <defName>SCP_Anomaly882</defName><label>SCP-882</label><scpId>SCP-882</scpId><objectClass>Euclid</objectClass><archiveOnly>true</archiveOnly>
+    <description>A rusted assembly of mechanical parts.</description>
+    <research><observedWork>15000</observedWork><partialWork>120000</partialWork><fullWork>360000</fullWork>
+      <observedReportKey>SCP_882ObservedReport</observedReportKey><partialReportKey>SCP_882PartialReport</partialReportKey><documentedReportKey>SCP_882DocumentedReport</documentedReportKey>
+      <experimentReportKeys><li>SCP_882Experiment1</li><li>SCP_882Experiment2</li><li>SCP_882Experiment3</li></experimentReportKeys></research>
+    <source><title>SCP-882</title><author>Dr Gears</author><url>https://scp-wiki.wikidot.com/scp-882</url><license>CC BY-SA 3.0</license></source>
+  </ScpFoundation.Definitions.ScpDef>
+  <ScpFoundation.Definitions.ScpDef>
+    <defName>SCP_Anomaly999</defName><label>SCP-999 — The Tickle Monster</label><scpId>SCP-999</scpId><objectClass>Safe</objectClass><archiveOnly>true</archiveOnly>
+    <description>A friendly creature resembling a cute orange amoeba.</description>
+    <research><observedWork>8000</observedWork><partialWork>60000</partialWork><fullWork>180000</fullWork>
+      <observedReportKey>SCP_999ObservedReport</observedReportKey><partialReportKey>SCP_999PartialReport</partialReportKey><documentedReportKey>SCP_999DocumentedReport</documentedReportKey>
+      <experimentReportKeys><li>SCP_999Experiment1</li><li>SCP_999Experiment2</li><li>SCP_999Experiment3</li></experimentReportKeys></research>
+    <source><title>SCP-999</title><author>ProfSnider</author><url>https://scp-wiki.wikidot.com/scp-999</url><license>CC BY-SA 3.0</license></source>
+  </ScpFoundation.Definitions.ScpDef>
+</Defs>

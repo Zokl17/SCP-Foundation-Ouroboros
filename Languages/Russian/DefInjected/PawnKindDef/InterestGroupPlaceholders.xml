@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_ChaosInsurgent.label>оперативник Повстанцев Хаоса</SCP_ChaosInsurgent.label><SCP_ChaosInsurgent.labelPlural>оперативники Повстанцев Хаоса</SCP_ChaosInsurgent.labelPlural>
+  <SCP_ChaosBreacher.label>штурмовик Повстанцев Хаоса</SCP_ChaosBreacher.label><SCP_ChaosBreacher.labelPlural>штурмовики Повстанцев Хаоса</SCP_ChaosBreacher.labelPlural>
+  <SCP_ChaosCellCommander.label>командир ячейки Повстанцев Хаоса</SCP_ChaosCellCommander.label><SCP_ChaosCellCommander.labelPlural>командиры ячеек Повстанцев Хаоса</SCP_ChaosCellCommander.labelPlural>
+  <SCP_ChaosHeavy.label>пулемётчик Повстанцев в экзокостюме</SCP_ChaosHeavy.label><SCP_ChaosHeavy.labelPlural>пулемётчики Повстанцев в экзокостюмах</SCP_ChaosHeavy.labelPlural>
+  <SCP_ChaosQuartermaster.label>интендант Повстанцев</SCP_ChaosQuartermaster.label><SCP_ChaosQuartermaster.labelPlural>интенданты Повстанцев</SCP_ChaosQuartermaster.labelPlural>
+  <SCP_BrokenGodZealot.label>фанатик Разбитого Бога</SCP_BrokenGodZealot.label><SCP_BrokenGodZealot.labelPlural>фанатики Разбитого Бога</SCP_BrokenGodZealot.labelPlural>
+  <SCP_BrokenGodCantor.label>кантор Разбитого Бога</SCP_BrokenGodCantor.label><SCP_BrokenGodCantor.labelPlural>канторы Разбитого Бога</SCP_BrokenGodCantor.labelPlural>
+  <SCP_BrokenGodGuard.label>страж реликвария Разбитого Бога</SCP_BrokenGodGuard.label><SCP_BrokenGodGuard.labelPlural>стражи реликвария Разбитого Бога</SCP_BrokenGodGuard.labelPlural>
+  <SCP_BrokenGodQuartermaster.label>хранитель реликвария Церкви</SCP_BrokenGodQuartermaster.label><SCP_BrokenGodQuartermaster.labelPlural>хранители реликвариев Церкви</SCP_BrokenGodQuartermaster.labelPlural>
+  <SCP_SarkicCultist.label>саркистский культист</SCP_SarkicCultist.label><SCP_SarkicCultist.labelPlural>саркистские культисты</SCP_SarkicCultist.labelPlural>
+  <SCP_SarkicQuartermaster.label>саркистский эмиссар</SCP_SarkicQuartermaster.label><SCP_SarkicQuartermaster.labelPlural>саркистские эмиссары</SCP_SarkicQuartermaster.labelPlural>
+  <SCP_SerpentsHandAdept.label>адепт Длани Змея</SCP_SerpentsHandAdept.label><SCP_SerpentsHandAdept.labelPlural>адепты Длани Змея</SCP_SerpentsHandAdept.labelPlural>
+</LanguageData>

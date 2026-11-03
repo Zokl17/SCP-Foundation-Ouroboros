@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!--
+    Vanilla creates these factions normally in a new world. Vanilla Expanded
+    Framework's Faction Discovery supplies the missing migration UI for saves
+    that existed before this mod or before these factions were introduced.
+  -->
+  <Operation Class="PatchOperationFindMod">
+    <mods><li>Vanilla Expanded Framework</li></mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/FactionDef[defName="SCP_Foundation"]</xpath>
+          <value><modExtensions><li Class="VEF.Factions.FactionDefExtension"><forcedFactionData><requiredFactionCountDuringGameplay>1</requiredFactionCountDuringGameplay><forcePlayerToAddFactionIfMissing>true</forcePlayerToAddFactionIfMissing></forcedFactionData></li></modExtensions></value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/FactionDef[defName="SCP_GlobalOccultCoalition"]</xpath>
+          <value><modExtensions><li Class="VEF.Factions.FactionDefExtension"><forcedFactionData><requiredFactionCountDuringGameplay>1</requiredFactionCountDuringGameplay><forcePlayerToAddFactionIfMissing>true</forcePlayerToAddFactionIfMissing></forcedFactionData></li></modExtensions></value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/FactionDef[defName="SCP_ChaosInsurgency"]</xpath>
+          <value><modExtensions><li Class="VEF.Factions.FactionDefExtension"><forcedFactionData><requiredFactionCountDuringGameplay>1</requiredFactionCountDuringGameplay><forcePlayerToAddFactionIfMissing>true</forcePlayerToAddFactionIfMissing></forcedFactionData></li></modExtensions></value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/FactionDef[defName="SCP_ChurchBrokenGod"]</xpath>
+          <value><modExtensions><li Class="VEF.Factions.FactionDefExtension"><forcedFactionData><requiredFactionCountDuringGameplay>1</requiredFactionCountDuringGameplay><forcePlayerToAddFactionIfMissing>true</forcePlayerToAddFactionIfMissing></forcedFactionData></li></modExtensions></value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/FactionDef[defName="SCP_SarkicCults"]</xpath>
+          <value><modExtensions><li Class="VEF.Factions.FactionDefExtension"><forcedFactionData><requiredFactionCountDuringGameplay>1</requiredFactionCountDuringGameplay><forcePlayerToAddFactionIfMissing>true</forcePlayerToAddFactionIfMissing></forcedFactionData></li></modExtensions></value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

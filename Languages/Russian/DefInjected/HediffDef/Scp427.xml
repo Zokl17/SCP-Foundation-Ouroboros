@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_427Exposure.label>воздействие SCP-427</SCP_427Exposure.label>
+  <SCP_427Exposure.description>Накопленное время под светом открытого амулета. Закрытие останавливает воздействие, но не обнуляет уже полученную дозу.</SCP_427Exposure.description>
+  <SCP_427Mutation.label>плотская мутация SCP-427</SCP_427Mutation.label>
+  <SCP_427Mutation.description>Неконтролируемый рост тканей после слишком долгого воздействия SCP-427. Амулет больше не может лечить это тело.</SCP_427Mutation.description>
+</LanguageData>

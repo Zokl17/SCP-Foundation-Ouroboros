@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_354Defense.label>периметр SCP-354</SCP_354Defense.label>
+  <SCP_354Defense.description>Укреплённому посту Фонда нужна помощь с обороной от существ, выходящих из SCP-354.</SCP_354Defense.description>
+  <SCP_354Defense.approachOrderString>Помочь {0}</SCP_354Defense.approachOrderString>
+  <SCP_354Defense.approachingReportString>Направляется к {0}.</SCP_354Defense.approachingReportString>
+  <SCP_354Defense.arrivedLetter>Сотрудники Фонда удерживают периметр SCP-354. Помогите им отразить существ, выходящих из озера.</SCP_354Defense.arrivedLetter>
+</LanguageData>

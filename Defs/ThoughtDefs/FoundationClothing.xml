@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThoughtDef>
+    <defName>SCP_DClassUseful</defName>
+    <workerClass>ScpFoundation.Interactions.ThoughtWorker_ScpDClassUniform</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages><li><label>doing something useful</label><description>My work may help other people. That means something.</description><baseMoodEffect>5</baseMoodEffect></li></stages>
+  </ThoughtDef>
+</Defs>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <RecipeDef ParentName="MakeStoneBlocksBase">
+    <defName>SCP_MakeConcrete</defName>
+    <label>make concrete from stone chunks</label>
+    <description>Crush one ordinary stone chunk into aggregate and form 15 concrete blocks.</description>
+    <jobString>Making concrete blocks.</jobString>
+    <workAmount>800</workAmount>
+    <targetCountAdjustment>15</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <categories><li>StoneChunks</li></categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories><li>StoneChunks</li></categories>
+    </fixedIngredientFilter>
+    <products><SCP_Concrete>15</SCP_Concrete></products>
+    <!-- Registered directly on the mixer. Its construction research already gates access. -->
+    <recipeUsers Inherit="False" />
+  </RecipeDef>
+</Defs>

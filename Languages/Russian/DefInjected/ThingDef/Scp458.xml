@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_458Box.label>коробка с пиццей SCP-458</SCP_458Box.label>
+  <SCP_458Box.description>Картонная коробка создаёт пиццу по вкусу того, кто её открыл. Для игрового баланса в столовой принят протокол: пользоваться коробкой можно раз в шесть часов. Выберите её или нажмите ПКМ колонистом, чтобы заказать еду.</SCP_458Box.description>
+  <SCP_458Pizza.label>пицца SCP-458</SCP_458Pizza.label>
+  <SCP_458Pizza.description>Свежая пицца из SCP-458. Коробка подстроила вкус под открывшего её человека.</SCP_458Pizza.description>
+</LanguageData>

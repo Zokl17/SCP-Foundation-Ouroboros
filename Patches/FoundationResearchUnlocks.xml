@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="SCPV1_AccessTerminal"]</xpath>
+    <value><researchPrerequisites><li>MicroelectronicsBasics</li><li>SCP_FoundationContact</li></researchPrerequisites></value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="SCP_FoundationWall"]</xpath>
+    <value><researchPrerequisites><li>SCP_FoundationConstruction</li></researchPrerequisites></value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="SCPV1_MonitoringConsole" or defName="SCPV1_MonitoringDisplay" or defName="SCPV1_Camera" or defName="SCPV1_Sensor" or defName="SCPV1_EmergencyAccumulator"]</xpath>
+    <value><researchPrerequisites><li>SCP_FoundationSurveillance</li></researchPrerequisites></value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="SCP_FoundationWallReinforced" or defName="SCPV1_GlassWall" or defName="SCPV1_DoorB_Closed" or defName="SCPV1_Airlock_Closed"]</xpath>
+    <value><researchPrerequisites><li>SCP_FoundationReinforcedContainment</li></researchPrerequisites></value>
+  </Operation>
+</Patch>

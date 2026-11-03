@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_GlobalOccultCoalition.label>Глобальная Оккультная Коалиция</SCP_GlobalOccultCoalition.label>
+  <SCP_GlobalOccultCoalition.description>Коалиция оккультных и технологических организаций под эгидой ООН, защищающая человечество от паранормальных угроз. Коалиция способна сотрудничать с местными властями, однако предпочитает уничтожать опасные аномалии, а не содержать их бессрочно.</SCP_GlobalOccultCoalition.description>
+  <SCP_GlobalOccultCoalition.fixedName>Глобальная Оккультная Коалиция</SCP_GlobalOccultCoalition.fixedName>
+  <SCP_GlobalOccultCoalition.pawnSingular>оперативник ГОК</SCP_GlobalOccultCoalition.pawnSingular>
+  <SCP_GlobalOccultCoalition.pawnsPlural>персонал ГОК</SCP_GlobalOccultCoalition.pawnsPlural>
+  <SCP_GlobalOccultCoalition.leaderTitle>заместитель генерального секретаря</SCP_GlobalOccultCoalition.leaderTitle>
+  <SCP_GlobalOccultCoalition.leaderTitleFemale>заместитель генерального секретаря</SCP_GlobalOccultCoalition.leaderTitleFemale>
+</LanguageData>

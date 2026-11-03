@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef>
+    <defName>SCP_504Bush</defName>
+    <label>SCP-504 tomato bush</label>
+    <description>A portable SCP-504 bush with a cluster of five tomatoes. Carry it to a containment post. While bound to the post, one tomato ripens per day, up to five. A ripe tomato can launch at the speaker of a bad joke or hostile remark.</description>
+    <thingClass>ThingWithComps</thingClass><category>Item</category><altitudeLayer>Item</altitudeLayer>
+    <tickerType>Rare</tickerType><selectable>true</selectable><stackLimit>1</stackLimit>
+    <alwaysHaulable>false</alwaysHaulable><designateHaulable>false</designateHaulable><rotatable>false</rotatable>
+    <graphicData><texPath>Things/Item/Scp504Bush</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>(1.45,1.55)</drawSize></graphicData>
+    <statBases><MaxHitPoints>120</MaxHitPoints><Mass>12</Mass><MarketValue>0</MarketValue><Flammability>1</Flammability></statBases>
+    <tradeability>None</tradeability>
+    <comps>
+      <li Class="ScpFoundation.Runtime.CompProperties_Scp"><anomaly>SCP_Anomaly504</anomaly><requireCapture>true</requireCapture></li>
+      <li Class="ScpFoundation.Interactions.CompProperties_ScpInteraction" />
+      <li Class="ScpFoundation.Anomalies.CompProperties_Scp504Bush" />
+    </comps>
+  </ThingDef>
+  <ThingDef>
+    <defName>SCP_504Tomatoes</defName>
+    <label>SCP-504 tomatoes</label>
+    <description>Ripe SCP-504 tomatoes. A bad joke or hostile remark spoken nearby may send one tomato flying at its speaker. Each tomato reacts only once. Keep the fruit in a separate room to prevent accidents. Any colonist can conduct a speech test with another nearby colonist.</description>
+    <thingClass>ThingWithComps</thingClass><category>Item</category><altitudeLayer>Item</altitudeLayer>
+    <selectable>true</selectable><stackLimit>25</stackLimit><rotatable>false</rotatable>
+    <alwaysHaulable>true</alwaysHaulable><drawGUIOverlay>true</drawGUIOverlay>
+    <graphicData><texPath>Things/Item/Scp504Tomatoes</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>0.9</drawSize></graphicData>
+    <statBases><MaxHitPoints>30</MaxHitPoints><Mass>0.12</Mass><MarketValue>30</MarketValue><Flammability>1</Flammability><DeteriorationRate>2</DeteriorationRate></statBases>
+    <tradeability>None</tradeability>
+    <comps><li Class="ScpFoundation.Anomalies.CompProperties_Scp504" /></comps>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>SCP_504TomatoProjectile</defName><label>SCP-504 tomato</label>
+    <thingClass>ScpFoundation.Anomalies.Projectile_Scp504Tomato</thingClass>
+    <graphicData><texPath>Things/Projectile/Scp504Tomato</texPath><graphicClass>Graphic_Single</graphicClass><shaderType>TransparentPostLight</shaderType><drawSize>(1.0,0.7)</drawSize></graphicData>
+    <projectile><damageDef>Blunt</damageDef><damageAmountBase>0</damageAmountBase><speed>50</speed></projectile>
+  </ThingDef>
+</Defs>

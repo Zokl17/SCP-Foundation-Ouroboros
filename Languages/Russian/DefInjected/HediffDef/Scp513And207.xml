@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_513Haunted.label>преследование SCP-513</SCP_513Haunted.label>
+  <SCP_513Haunted.description>Свидетель звона ощущает чужой взгляд.</SCP_513Haunted.description>
+  <SCP_513Haunted.stages.0.label>преследование</SCP_513Haunted.stages.0.label>
+  <SCP_207Overdrive.label>перегрузка SCP-207</SCP_207Overdrive.label>
+  <SCP_207Overdrive.description>Сон больше не нужен, но ускорение перегружает организм и примерно через двое суток становится смертельным.</SCP_207Overdrive.description>
+  <SCP_207Overdrive.stages.0.label>стимуляция</SCP_207Overdrive.stages.0.label>
+  <SCP_207Overdrive.stages.1.label>опасное ускорение</SCP_207Overdrive.stages.1.label>
+  <SCP_207Overdrive.stages.2.label>отказ органов</SCP_207Overdrive.stages.2.label>
+</LanguageData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <MapGeneratorDef>
+    <defName>SCP_093RedWorld</defName><label>SCP-093 red world</label>
+    <isUnderground>true</isUnderground>
+    <ignoreAreaRevealedLetter>true</ignoreAreaRevealedLetter><disableCallAid>true</disableCallAid>
+    <pocketMapProperties><biome>Underground</biome><temperature>25</temperature></pocketMapProperties>
+    <genSteps><li>SCP_093RedWorldLayout</li></genSteps>
+  </MapGeneratorDef>
+  <GenStepDef>
+    <defName>SCP_093RedWorldLayout</defName><order>400</order>
+    <genStep Class="ScpFoundation.Anomalies.GenStep_Scp093RedWorld" />
+  </GenStepDef>
+</Defs>

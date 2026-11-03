@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_OuroborosTransponder.label>запечатанный передатчик сигнала</SCP_OuroborosTransponder.label>
+  <SCP_OuroborosTransponder.description>Запечатанный модуль, извлечённый из безлюдного ретранслятора. Верните его на базу, выберите колониста и нажмите ПКМ по модулю, чтобы расшифровать его за исследовательским столом. Результат откроет отдельное поручение Фонда.</SCP_OuroborosTransponder.description>
+  <SCP_OuroborosTransponder.comps.1.useLabel>Расшифровать передатчик</SCP_OuroborosTransponder.comps.1.useLabel>
+</LanguageData>

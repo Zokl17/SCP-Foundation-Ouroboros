@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ScpFoundation.Definitions.ScpDef>
+    <defName>SCP_TestAnomaly</defName>
+    <label>containment test anomaly</label>
+    <description>An original, non-canon development fixture. Its requirements exercise the shared containment system.</description>
+    <scpId>TEST-001</scpId>
+    <objectClass>DevelopmentFixture</objectClass>
+    <tags><li>Development</li><li>Stationary</li></tags>
+    <requirements>
+      <li Class="ScpFoundation.Containment.RequirementRoom"><id>room</id><minCells>9</minCells><roofed>true</roofed></li>
+      <li Class="ScpFoundation.Containment.RequirementWallMaterial">
+        <id>walls</id><allowedMaterials><li>Steel</li><li>SCP_Concrete</li></allowedMaterials><allowedWallDefs><li>SCP_FoundationWall</li><li>SCP_FoundationWallReinforced</li></allowedWallDefs>
+      </li>
+      <li Class="ScpFoundation.Containment.RequirementTemperature"><id>temperature</id><min>10</min><max>30</max></li>
+      <li Class="ScpFoundation.Containment.RequirementLight"><id>light</id><min>0.3</min><max>1</max></li>
+      <li Class="ScpFoundation.Containment.RequirementPower"><id>power</id></li>
+    </requirements>
+    <breach>
+      <graceTicks>2500</graceTicks>
+      <deterministicAfterTicks>10000</deterministicAfterTicks>
+      <riskPerDay>6</riskPerDay><recoveryPerDay>12</recoveryPerDay>
+      <chancePerDayAtFullRisk>0</chancePerDayAtFullRisk><severity>1</severity>
+    </breach>
+    <breachEffects><li Class="ScpFoundation.Runtime.BreachEffectLetter" /></breachEffects>
+    <source>
+      <title>Original containment test fixture</title>
+      <author>SCP MOD contributors</author>
+      <license>CC BY-SA 3.0</license>
+      <originalFixture>true</originalFixture>
+    </source>
+  </ScpFoundation.Definitions.ScpDef>
+</Defs>

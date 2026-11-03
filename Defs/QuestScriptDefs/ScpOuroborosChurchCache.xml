@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <QuestScriptDef>
+    <defName>SCP_OuroborosChurchCache</defName>
+    <rootSelectionWeight>0</rootSelectionWeight><rootMinPoints>0</rootMinPoints>
+    <questNameRules><rulesStrings><li>questName->Raid on the Church assembly cache</li></rulesStrings></questNameRules>
+    <questDescriptionRules><rulesStrings><li>questDescription->The recovered relay record points to a guarded Church of the Broken God assembly cache. Its manifest lists a sealed SCP-217 sample and components resembling those linked to SCP-629. The Foundation fears a repeat of the 1943 assembly. Send a caravan to the marked site, secure both cargos and copy the cipher core before the Church moves them. Bring both containers home to complete the mission. Destroying a target fails it.</li></rulesStrings></questDescriptionRules>
+    <root Class="QuestNode_Sequence"><nodes>
+      <li Class="QuestNode_GetMap" />
+      <li Class="QuestNode_GetSiteTile"><storeAs>siteTile</storeAs><preferCloserTiles>true</preferCloserTiles></li>
+      <li Class="ScpFoundation.Storytelling.QuestNode_ScpChurchCacheSetup" />
+      <li Class="QuestNode_GetDefaultSitePartsParams"><tile>$siteTile</tile><faction>$siteFaction</faction>
+        <sitePartDefs>$sitePartDefs</sitePartDefs><storeSitePartsParamsAs>sitePartsParams</storeSitePartsParamsAs>
+      </li>
+      <li Class="QuestNode_GenerateSite"><sitePartsParams>$sitePartsParams</sitePartsParams>
+        <faction>$siteFaction</faction><tile>$siteTile</tile><storeAs>site</storeAs>
+        <worldObjectDef>SCP_OuroborosChurchCacheSite</worldObjectDef>
+      </li>
+      <li Class="QuestNode_SpawnWorldObjects"><worldObjects>$site</worldObjects></li>
+      <li Class="ScpFoundation.Storytelling.QuestNode_ScpChurchCacheTrack" />
+      <li Class="QuestNode_WorldObjectTimeout"><worldObject>$site</worldObject>
+        <isQuestTimeout>true</isQuestTimeout><delayTicks>1200000</delayTicks>
+        <inSignalDisable>site.MapGenerated</inSignalDisable><destroyOnCleanup>false</destroyOnCleanup>
+        <node Class="QuestNode_End"><outcome>Fail</outcome></node>
+      </li>
+      <li Class="QuestNode_Signal"><inSignal>ScpChurchCipherRecovered</inSignal>
+        <node Class="QuestNode_End"><outcome>Success</outcome></node>
+      </li>
+      <li Class="QuestNode_Signal"><inSignal>ScpChurchCipherLost</inSignal>
+        <node Class="QuestNode_End"><outcome>Fail</outcome></node>
+      </li>
+    </nodes></root>
+  </QuestScriptDef>
+</Defs>

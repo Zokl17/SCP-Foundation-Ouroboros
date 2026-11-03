@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <PawnKindDef ParentName="SCP_FoundationPersonBase">
+    <defName>SCP_O5Green</defName>
+    <label>O5-7 Green</label>
+    <labelPlural>O5-7 Green</labelPlural>
+    <combatPower>80</combatPower>
+    <isFighter>false</isFighter>
+    <minGenerationAge>42</minGenerationAge>
+    <maxGenerationAge>56</maxGenerationAge>
+    <apparelColor>(0.18, 0.35, 0.24)</apparelColor>
+    <apparelTags Inherit="False"><li>IndustrialBasic</li><li>IndustrialAdvanced</li></apparelTags>
+    <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+    <apparelMoney>800~1200</apparelMoney>
+    <weaponTags><li>Gun</li></weaponTags>
+    <weaponMoney>150~300</weaponMoney>
+    <initialWillRange>5~8</initialWillRange>
+    <initialResistanceRange>25~38</initialResistanceRange>
+    <skills><li><skill>Social</skill><range>14~20</range></li><li><skill>Intellectual</skill><range>12~18</range></li></skills>
+  </PawnKindDef>
+</Defs>

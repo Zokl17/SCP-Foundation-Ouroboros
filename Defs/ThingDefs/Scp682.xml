@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef>
+    <defName>SCP_682Object</defName><label>SCP-682</label>
+    <description>A massively resilient reptile. It regenerates, cannot be destroyed by ordinary damage, and must be incapacitated before it can be moved to a containment post.</description>
+    <thingClass>ScpFoundation.Anomalies.Thing_Scp682</thingClass><category>Item</category><altitudeLayer>Item</altitudeLayer><useHitPoints>true</useHitPoints><size>(2,2)</size>
+    <tickerType>Normal</tickerType><drawerType>RealtimeOnly</drawerType><selectable>true</selectable><stackLimit>1</stackLimit>
+    <alwaysHaulable>false</alwaysHaulable><designateHaulable>false</designateHaulable><rotatable>true</rotatable>
+    <graphicData><texPath>Things/Item/Scp682</texPath><graphicClass>Graphic_Multi</graphicClass><drawRotated>false</drawRotated><drawSize>(3.2,3.2)</drawSize></graphicData>
+    <statBases><MaxHitPoints>1200</MaxHitPoints><Mass>95</Mass><MarketValue>0</MarketValue><Flammability>0</Flammability></statBases>
+    <tradeability>None</tradeability>
+    <comps>
+      <li Class="ScpFoundation.Runtime.CompProperties_Scp"><anomaly>SCP_Anomaly682</anomaly><requireCapture>true</requireCapture></li>
+      <li Class="ScpFoundation.Interactions.CompProperties_ScpInteraction" />
+      <li Class="ScpFoundation.Anomalies.CompProperties_Scp682" />
+    </comps>
+  </ThingDef>
+</Defs>

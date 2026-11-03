@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="ApparelBase">
+    <defName>SCP_427Amulet</defName>
+    <label>SCP-427 neck amulet</label>
+    <description>An ornate silver amulet on a chain. Opening its locket accelerates healing while worn, but prolonged exposure causes dangerous tissue growth. Close it before exposure reaches its limit.</description>
+    <tickerType>Normal</tickerType>
+    <graphicData><texPath>Things/Item/ScpArtifacts/Scp427Amulet</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>0.85</drawSize></graphicData>
+    <statBases><MaxHitPoints>100</MaxHitPoints><Mass>0.2</Mass><MarketValue>3000</MarketValue><Flammability>0</Flammability><EquipDelay>1</EquipDelay></statBases>
+    <tradeability>None</tradeability><stackLimit>1</stackLimit><burnableByRecipe>false</burnableByRecipe><smeltable>false</smeltable>
+    <apparel>
+      <bodyPartGroups><li>Neck</li></bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Scp427/Scp427</wornGraphicPath>
+      <layers><li>SCP_Necklace</li></layers>
+    </apparel>
+    <comps>
+      <li Class="ScpFoundation.Runtime.CompProperties_Scp"><anomaly>SCP_Anomaly427</anomaly><requireCapture>false</requireCapture></li>
+      <li Class="ScpFoundation.Interactions.CompProperties_ScpInteraction" />
+      <li Class="ScpFoundation.Anomalies.CompProperties_Scp427" />
+    </comps>
+  </ThingDef>
+</Defs>

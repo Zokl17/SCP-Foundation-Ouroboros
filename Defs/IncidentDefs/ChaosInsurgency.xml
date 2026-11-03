@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <IncidentDef>
+    <defName>SCP_ChaosTheftOperation</defName>
+    <label>Chaos Insurgency raid</label>
+    <targetTags><li>Map_PlayerHome</li></targetTags>
+    <workerClass>ScpFoundation.Storytelling.IncidentWorker_ChaosTheftOperation</workerClass>
+    <category>ThreatBig</category>
+    <baseChance>0.30</baseChance>
+    <minRefireDays>15</minRefireDays>
+    <requireColonistsPresent>true</requireColonistsPresent>
+  </IncidentDef>
+</Defs>

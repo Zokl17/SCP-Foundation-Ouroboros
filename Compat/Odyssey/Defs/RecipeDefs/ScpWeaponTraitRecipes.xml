@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <RecipeDef Name="SCP_TraitMechanical" ParentName="SCP_InstallWeaponTraitBase" Abstract="True">
+    <ingredients Inherit="False">
+      <li><filter><categories><li>WeaponsRanged</li><li>WeaponsUnique</li></categories></filter><count>1</count></li>
+      <li><filter><thingDefs><li>Steel</li></thingDefs></filter><count>40</count></li>
+      <li><filter><thingDefs><li>ComponentIndustrial</li></thingDefs></filter><count>1</count></li>
+    </ingredients>
+    <fixedIngredientFilter Inherit="False"><categories><li>WeaponsRanged</li><li>WeaponsUnique</li></categories><thingDefs><li>Steel</li><li>ComponentIndustrial</li></thingDefs></fixedIngredientFilter>
+  </RecipeDef>
+  <RecipeDef Name="SCP_TraitAdvanced" ParentName="SCP_InstallWeaponTraitBase" Abstract="True">
+    <researchPrerequisite>Fabrication</researchPrerequisite>
+    <ingredients Inherit="False">
+      <li><filter><categories><li>WeaponsRanged</li><li>WeaponsUnique</li></categories></filter><count>1</count></li>
+      <li><filter><thingDefs><li>Steel</li></thingDefs></filter><count>40</count></li>
+      <li><filter><thingDefs><li>ComponentSpacer</li></thingDefs></filter><count>1</count></li>
+    </ingredients>
+    <fixedIngredientFilter Inherit="False"><categories><li>WeaponsRanged</li><li>WeaponsUnique</li></categories><thingDefs><li>Steel</li><li>ComponentSpacer</li></thingDefs></fixedIngredientFilter>
+  </RecipeDef>
+  <RecipeDef Name="SCP_TraitAmmo" ParentName="SCP_InstallWeaponTraitBase" Abstract="True">
+    <ingredients Inherit="False">
+      <li><filter><categories><li>WeaponsRanged</li><li>WeaponsUnique</li></categories></filter><count>1</count></li>
+      <li><filter><thingDefs><li>Steel</li></thingDefs></filter><count>30</count></li>
+      <li><filter><thingDefs><li>ComponentIndustrial</li></thingDefs></filter><count>1</count></li>
+    </ingredients>
+    <fixedIngredientFilter Inherit="False"><categories><li>WeaponsRanged</li><li>WeaponsUnique</li></categories><thingDefs><li>Steel</li><li>ComponentIndustrial</li></thingDefs></fixedIngredientFilter>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SCP_TraitMechanical"><defName>SCP_InstallWeaponTrait_SCP_LaserTargetingUnit</defName><label>install laser targeting unit</label><description>Install a close-range laser targeting unit.</description></RecipeDef>
+  <RecipeDef ParentName="SCP_TraitMechanical"><defName>SCP_InstallWeaponTrait_SCP_CarbonInserts</defName><label>install carbon inserts</label><description>Replace the frame inserts with a lightweight carbon composite.</description><ingredients Inherit="False"><li><filter><categories><li>WeaponsRanged</li><li>WeaponsUnique</li></categories></filter><count>1</count></li><li><filter><thingDefs><li>Plasteel</li></thingDefs></filter><count>30</count></li><li><filter><thingDefs><li>ComponentIndustrial</li></thingDefs></filter><count>1</count></li></ingredients><fixedIngredientFilter Inherit="False"><categories><li>WeaponsRanged</li><li>WeaponsUnique</li></categories><thingDefs><li>Plasteel</li><li>ComponentIndustrial</li></thingDefs></fixedIngredientFilter></RecipeDef>
+  <RecipeDef ParentName="SCP_TraitMechanical"><defName>SCP_InstallWeaponTrait_SCP_LightTrigger</defName><label>install light trigger</label><description>Install a light trigger mechanism.</description></RecipeDef>
+  <RecipeDef ParentName="SCP_TraitMechanical"><defName>SCP_InstallWeaponTrait_SCP_Compensator</defName><label>install compensator</label><description>Fit a muzzle compensator.</description></RecipeDef>
+  <RecipeDef ParentName="SCP_TraitMechanical"><defName>SCP_InstallWeaponTrait_SCP_FoldingStock</defName><label>install folding stock</label><description>Fit a folding stock.</description></RecipeDef>
+  <RecipeDef ParentName="SCP_TraitMechanical"><defName>SCP_InstallWeaponTrait_SCP_WeightedStock</defName><label>install weighted stock</label><description>Fit a heavy stabilizing stock.</description><ingredients Inherit="False"><li><filter><categories><li>WeaponsRanged</li><li>WeaponsUnique</li></categories></filter><count>1</count></li><li><filter><thingDefs><li>Steel</li></thingDefs></filter><count>60</count></li><li><filter><thingDefs><li>ComponentIndustrial</li></thingDefs></filter><count>1</count></li></ingredients><fixedIngredientFilter Inherit="False"><categories><li>WeaponsRanged</li><li>WeaponsUnique</li></categories><thingDefs><li>Steel</li><li>ComponentIndustrial</li></thingDefs></fixedIngredientFilter></RecipeDef>
+  <RecipeDef ParentName="SCP_TraitMechanical"><defName>SCP_InstallWeaponTrait_SCP_Bipod</defName><label>install bipod</label><description>Fit a deployable bipod.</description></RecipeDef>
+  <RecipeDef ParentName="SCP_TraitMechanical"><defName>SCP_InstallWeaponTrait_SCP_PrecisionBolt</defName><label>install precision bolt</label><description>Fit a precision-tuned bolt.</description></RecipeDef>
+  <RecipeDef ParentName="SCP_TraitMechanical"><defName>SCP_InstallWeaponTrait_SCP_FireSelector</defName><label>install fire selector</label><description>Fit a switchable firing mechanism.</description></RecipeDef>
+  <RecipeDef ParentName="SCP_TraitMechanical"><defName>SCP_InstallWeaponTrait_SCP_BurstLimiter</defName><label>install burst limiter</label><description>Fit a short-burst limiter.</description></RecipeDef>
+  <RecipeDef ParentName="SCP_TraitMechanical"><defName>SCP_InstallWeaponTrait_SCP_Bayonet</defName><label>install bayonet</label><description>Fit a steel bayonet.</description></RecipeDef>
+  <RecipeDef ParentName="SCP_TraitMechanical"><defName>SCP_InstallWeaponTrait_SCP_Suppressor</defName><label>install suppressor</label><description>Fit a suppressor to the muzzle.</description></RecipeDef>
+  <RecipeDef ParentName="SCP_TraitMechanical"><defName>SCP_InstallWeaponTrait_SCP_FlashHider</defName><label>install flash hider</label><description>Fit a flash hider to the muzzle.</description></RecipeDef>
+  <RecipeDef ParentName="SCP_TraitAdvanced"><defName>SCP_InstallWeaponTrait_SCP_ThermalSight</defName><label>install thermal sight</label><description>Fit a thermal imaging sight.</description></RecipeDef>
+  <RecipeDef ParentName="SCP_TraitAdvanced"><defName>SCP_InstallWeaponTrait_SCP_MotionPredictor</defName><label>install motion predictor</label><description>Install an AI motion prediction module.</description></RecipeDef>
+  <RecipeDef ParentName="SCP_TraitAdvanced"><defName>SCP_InstallWeaponTrait_SCP_EnemyAnalysis</defName><label>install enemy analysis</label><description>Install an adaptive enemy analysis computer.</description></RecipeDef>
+  <RecipeDef ParentName="SCP_TraitAdvanced"><defName>SCP_InstallWeaponTrait_SCP_FriendlyFireLock</defName><label>install friend-or-foe lock</label><description>Install an AI friend-or-foe safety lock.</description></RecipeDef>
+  <RecipeDef ParentName="SCP_TraitAmmo"><defName>SCP_InstallWeaponTrait_SCP_TracerRounds</defName><label>install tracer rounds</label><description>Configure tracer ammunition.</description><ingredients Inherit="False"><li><filter><categories><li>WeaponsRanged</li><li>WeaponsUnique</li></categories></filter><count>1</count></li><li><filter><thingDefs><li>Steel</li></thingDefs></filter><count>30</count></li><li><filter><thingDefs><li>Chemfuel</li></thingDefs></filter><count>10</count></li></ingredients><fixedIngredientFilter Inherit="False"><categories><li>WeaponsRanged</li><li>WeaponsUnique</li></categories><thingDefs><li>Steel</li><li>Chemfuel</li></thingDefs></fixedIngredientFilter></RecipeDef>
+  <RecipeDef ParentName="SCP_TraitAmmo"><defName>SCP_InstallWeaponTrait_SCP_NonlethalRounds</defName><label>install nonlethal rounds</label><description>Configure sedative ammunition.</description><ingredients Inherit="False"><li><filter><categories><li>WeaponsRanged</li><li>WeaponsUnique</li></categories></filter><count>1</count></li><li><filter><thingDefs><li>Steel</li></thingDefs></filter><count>30</count></li><li><filter><thingDefs><li>MedicineHerbal</li></thingDefs></filter><count>10</count></li></ingredients><fixedIngredientFilter Inherit="False"><categories><li>WeaponsRanged</li><li>WeaponsUnique</li></categories><thingDefs><li>Steel</li><li>MedicineHerbal</li></thingDefs></fixedIngredientFilter></RecipeDef>
+  <RecipeDef ParentName="SCP_TraitAmmo"><defName>SCP_InstallWeaponTrait_SCP_CorrosiveRounds</defName><label>install corrosive rounds</label><description>Configure corrosive ammunition.</description><ingredients Inherit="False"><li><filter><categories><li>WeaponsRanged</li><li>WeaponsUnique</li></categories></filter><count>1</count></li><li><filter><thingDefs><li>Steel</li></thingDefs></filter><count>30</count></li><li><filter><thingDefs><li>Chemfuel</li></thingDefs></filter><count>15</count></li></ingredients><fixedIngredientFilter Inherit="False"><categories><li>WeaponsRanged</li><li>WeaponsUnique</li></categories><thingDefs><li>Steel</li><li>Chemfuel</li></thingDefs></fixedIngredientFilter></RecipeDef>
+  <RecipeDef ParentName="SCP_TraitAmmo"><defName>SCP_InstallWeaponTrait_SCP_CryoRounds</defName><label>install cryo rounds</label><description>Configure cryogenic ammunition.</description></RecipeDef>
+  <RecipeDef ParentName="SCP_TraitAmmo"><defName>SCP_InstallWeaponTrait_SCP_RicochetRounds</defName><label>install ricochet rounds</label><description>Configure ricochet ammunition.</description></RecipeDef>
+  <RecipeDef ParentName="SCP_TraitAdvanced"><defName>SCP_InstallWeaponTrait_SCP_ShieldBreakerRounds</defName><label>install shield-breaker rounds</label><description>Configure shield-disrupting ammunition.</description></RecipeDef>
+  <RecipeDef ParentName="SCP_TraitAdvanced" MayRequire="Ludeon.RimWorld.Anomaly"><defName>SCP_InstallWeaponTrait_SCP_BioferriteResonator</defName><label>install bioferrite resonator</label><description>Fit an anomalous target resonator.</description><ingredients Inherit="False"><li><filter><categories><li>WeaponsRanged</li><li>WeaponsUnique</li></categories></filter><count>1</count></li><li><filter><thingDefs><li>Bioferrite</li></thingDefs></filter><count>20</count></li><li><filter><thingDefs><li>ComponentSpacer</li></thingDefs></filter><count>1</count></li></ingredients><fixedIngredientFilter Inherit="False"><categories><li>WeaponsRanged</li><li>WeaponsUnique</li></categories><thingDefs><li>Bioferrite</li><li>ComponentSpacer</li></thingDefs></fixedIngredientFilter></RecipeDef>
+</Defs>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_354PerimeterDefense.questNameRules.rulesStrings><li>questName->Удержать периметр SCP-354</li></SCP_354PerimeterDefense.questNameRules.rulesStrings>
+  <SCP_354PerimeterDefense.questDescriptionRules.rulesStrings><li>questDescription->Охрана Фонда с трудом сдерживает существ у SCP-354. Отправьте караван на укреплённый пост и продержитесь сутки, отражая пять разных появлений из озера. Последними выйдут ледяная и магмовая кошки. Если уйти раньше, задание будет провалено. За успешную оборону Фонд даст 10 доверия, SCP-262 и чертёж его вешалки.</li></SCP_354PerimeterDefense.questDescriptionRules.rulesStrings>
+</LanguageData>

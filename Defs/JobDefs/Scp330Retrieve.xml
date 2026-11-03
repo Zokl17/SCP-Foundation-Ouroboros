@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <JobDef>
+    <defName>SCP_330Retrieve</defName>
+    <driverClass>ScpFoundation.Storytelling.JobDriver_Scp330Retrieve</driverClass>
+    <reportString>Extracting SCP-330 from the reliquary.</reportString>
+    <casualInterruptible>false</casualInterruptible>
+  </JobDef>
+</Defs>

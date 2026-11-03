@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="ArmorMachineableBase">
+    <defName>SCP_008BioSuit</defName>
+    <label>Foundation chemical suit</label>
+    <description>A sealed protective suit for handling SCP-008. It prevents fluid contact only when worn with its matching helmet.</description>
+    <techLevel>Industrial</techLevel>
+    <graphicData><texPath>Things/Item/Apparel/Scp008BioSuit</texPath><graphicClass>Graphic_Single</graphicClass><shaderType>Cutout</shaderType></graphicData>
+    <statBases><MarketValue>360</MarketValue><MaxHitPoints>220</MaxHitPoints><Mass>4</Mass><Flammability>0.35</Flammability><ArmorRating_Sharp>0.25</ArmorRating_Sharp><ArmorRating_Blunt>0.15</ArmorRating_Blunt><ArmorRating_Heat>0.35</ArmorRating_Heat><EquipDelay>8</EquipDelay><WorkToMake>2000</WorkToMake></statBases>
+    <thingCategories><li>ApparelArmor</li></thingCategories>
+    <costList><Cloth>80</Cloth><Steel>25</Steel><ComponentIndustrial>2</ComponentIndustrial></costList>
+    <apparel>
+      <bodyPartGroups><li>Torso</li><li>Neck</li><li>Shoulders</li><li>Arms</li><li>Legs</li></bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Scp008BioSuit/BioSuit</wornGraphicPath>
+      <layers><li>Middle</li><li>Shell</li></layers><tags Inherit="False"><li>SCP_008BioProtection</li></tags>
+      <defaultOutfitTags><li>Worker</li><li>Soldier</li></defaultOutfitTags>
+    </apparel>
+    <recipeMaker><researchPrerequisite>ComplexClothing</researchPrerequisite><skillRequirements><Crafting>5</Crafting></skillRequirements></recipeMaker>
+  </ThingDef>
+  <ThingDef ParentName="ArmorHelmetMakeableBase">
+    <defName>SCP_008BioHelmet</defName>
+    <label>Foundation chemical hood</label>
+    <description>A sealed visor and respirator for the Foundation bioseal suit. Both pieces are required to prevent SCP-008 fluid exposure.</description>
+    <techLevel>Industrial</techLevel>
+    <graphicData><texPath>Things/Item/Apparel/Scp008BioHelmet</texPath><graphicClass>Graphic_Single</graphicClass><shaderType>Cutout</shaderType></graphicData>
+    <statBases><MarketValue>150</MarketValue><MaxHitPoints>170</MaxHitPoints><Mass>1</Mass><Flammability>0.35</Flammability><ArmorRating_Sharp>0.18</ArmorRating_Sharp><ArmorRating_Blunt>0.12</ArmorRating_Blunt><ArmorRating_Heat>0.3</ArmorRating_Heat><EquipDelay>3</EquipDelay><WorkToMake>1000</WorkToMake></statBases>
+    <costList><Cloth>30</Cloth><Steel>10</Steel><ComponentIndustrial>1</ComponentIndustrial></costList>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity><bodyPartGroups><li>FullHead</li></bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Scp008BioHelmet/BioHelmet</wornGraphicPath>
+      <layers><li>Overhead</li></layers><tags Inherit="False"><li>SCP_008BioProtection</li></tags>
+      <defaultOutfitTags><li>Worker</li><li>Soldier</li></defaultOutfitTags>
+    </apparel>
+    <recipeMaker><researchPrerequisite>ComplexClothing</researchPrerequisite><skillRequirements><Crafting>5</Crafting></skillRequirements></recipeMaker>
+  </ThingDef>
+</Defs>

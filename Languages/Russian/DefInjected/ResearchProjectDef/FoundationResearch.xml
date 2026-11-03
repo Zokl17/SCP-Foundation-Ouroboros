@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_FoundationContact.label>связь с Фондом</SCP_FoundationContact.label>
+  <SCP_FoundationContact.description>После освоения микроэлектроники установить защищённый канал связи с Фондом и подготовить терминал доступа.</SCP_FoundationContact.description>
+  <SCP_FoundationBasicPost.label>базовый пост содержания</SCP_FoundationBasicPost.label>
+  <SCP_FoundationBasicPost.description>Подготовить стальное место для первого аномального объекта до начала производства бетона.</SCP_FoundationBasicPost.description>
+  <SCP_FoundationConstruction.label>первичные материалы</SCP_FoundationConstruction.label>
+  <SCP_FoundationConstruction.description>Разработать местное производство бетона и стандартную стену Фонда для базовых камер содержания.</SCP_FoundationConstruction.description>
+  <SCP_FoundationProduction.label>производство Фонда</SCP_FoundationProduction.label>
+  <SCP_FoundationProduction.description>Построить основной верстак Фонда. Оружейный и лабораторный модули требуют отдельных исследований.</SCP_FoundationProduction.description>
+  <SCP_FoundationSurveillance.label>наблюдение за содержанием</SCP_FoundationSurveillance.label>
+  <SCP_FoundationSurveillance.description>Разработать электрические камеры, обслуживаемые консоли наблюдения и автономные датчики камер содержания.</SCP_FoundationSurveillance.description>
+  <SCP_FoundationReinforcedContainment.label>усиленные конструкции</SCP_FoundationReinforcedContainment.label>
+  <SCP_FoundationReinforcedContainment.description>Разработать усиленные стены, бронированное смотровое стекло, бронированные двери, автоматические защитные заслонки, герметичный доступ и очистку помещений для более требовательных камер.</SCP_FoundationReinforcedContainment.description>
+  <SCP_FoundationFusor.label>фузор Фарнсуорта — Липсона</SCP_FoundationFusor.label>
+  <SCP_FoundationFusor.description>Построить запитанный фузор для лаборатории Фонда и производства энергоёмкого оборудования.</SCP_FoundationFusor.description>
+  <SCP_FoundationSpecialArmament.label>спецвооружение Фонда</SCP_FoundationSpecialArmament.label>
+  <SCP_FoundationSpecialArmament.description>Разработать для групп содержания мощные системы подавления, усовершенствованные турели и оборудование POR-7.</SCP_FoundationSpecialArmament.description>
+  <SCP_FoundationMedicalProtocols.label>медицинские протоколы Фонда</SCP_FoundationMedicalProtocols.label>
+  <SCP_FoundationMedicalProtocols.description>Разработать контролируемые амнезиаки, мнестическую защиту и аварийные полевые гемостатики для персонала, работающего с аномальными угрозами.</SCP_FoundationMedicalProtocols.description>
+  <SCP_FoundationClothing.label>одежда персонала Фонда</SCP_FoundationClothing.label>
+  <SCP_FoundationClothing.description>Подготовить халаты исследователей и униформу класса D для персонала.</SCP_FoundationClothing.description>
+  <SCP_FoundationBallistics.label>стрелковое оружие Фонда</SCP_FoundationBallistics.label>
+  <SCP_FoundationBallistics.description>Освоить изготовление карабинов, ручных пулемётов и дробовиков Фонда.</SCP_FoundationBallistics.description>
+  <SCP_FoundationTacticalArmor.label>тактическая броня Фонда</SCP_FoundationTacticalArmor.label>
+  <SCP_FoundationTacticalArmor.description>Изготавливать штурмовые бронежилеты, тяжёлую броню и шлемы МОГ «Ню-7».</SCP_FoundationTacticalArmor.description>
+  <SCP_FoundationCaptureWeapons.label>оружие захвата Фонда</SCP_FoundationCaptureWeapons.label>
+  <SCP_FoundationCaptureWeapons.description>Изготавливать транквилизаторные винтовки и сетемёты для нелетального захвата.</SCP_FoundationCaptureWeapons.description>
+  <SCP_FoundationPoweredArmor.label>силовая броня МОГ</SCP_FoundationPoweredArmor.label>
+  <SCP_FoundationPoweredArmor.description>Изучить экзокостюм XPA-M6 и герметичный шлем после применения одного чертежа Фонда. Для изготовления также нужен работающий фузор, связанный с основным верстаком через лабораторный модуль.</SCP_FoundationPoweredArmor.description>
+  <SCP_FoundationArtifactStorage.label>посты для аномальных предметов</SCP_FoundationArtifactStorage.label>
+  <SCP_FoundationArtifactStorage.description>Изучить безопасное хранение и обращение с аномальными предметами. Чертежи отдельных построек поступят с поручениями на возврат объектов.</SCP_FoundationArtifactStorage.description>
+  <SCP_127LockerResearch.label>сейф для SCP-127</SCP_127LockerResearch.label>
+  <SCP_127LockerResearch.description>Поручение по возврату SCP-127 открывает чертёж сейфа для ускоренного восстановления боезапаса.</SCP_127LockerResearch.description>
+  <SCP_262HangerResearch.label>вешалка для SCP-262</SCP_262HangerResearch.label>
+  <SCP_262HangerResearch.description>Успешная оборона периметра SCP-354 открывает чертёж специальной стойки для SCP-262.</SCP_262HangerResearch.description>
+  <SCP_093MirrorResearch.label>рама зеркала SCP-093</SCP_093MirrorResearch.label>
+  <SCP_093MirrorResearch.description>Поручение по возвращению предметов коллекционера открывает способ построить управляемую раму зеркала для SCP-093.</SCP_093MirrorResearch.description>
+  <SCP_106Chamber.label>камера содержания SCP-106</SCP_106Chamber.label>
+  <SCP_106Chamber.description>Поручение по возврату SCP-106 открывает проект специальной камеры. Изучите его, прежде чем строить камеру с подачей питания.</SCP_106Chamber.description>
+  <SCP_882Reservoir.label>резервуар морской воды для SCP-882</SCP_882Reservoir.label>
+  <SCP_882Reservoir.description>Поручение по возврату SCP-882 открывает чертёж резервуара со стопроцентной морской водой и порядок осмотра объекта.</SCP_882Reservoir.description>
+  <SCP_682AcidContainment.label>кислотное содержание SCP-682</SCP_682AcidContainment.label>
+  <SCP_682AcidContainment.description>Поручение по передаче SCP-682 открывает чертёж кислотной камеры для обездвиженного объекта.</SCP_682AcidContainment.description>
+</LanguageData>

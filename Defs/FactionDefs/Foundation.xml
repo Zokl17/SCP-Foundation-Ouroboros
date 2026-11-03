@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!--
+    The Foundation is deliberately built on the Core outlander faction instead of
+    Royalty's Empire. This keeps the faction available without DLC while giving it
+    normal settlements, diplomacy, caravans and combat groups.
+  -->
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>SCP_Foundation</defName>
+    <label>SCP Foundation</label>
+    <description>A secretive transplanetary organization dedicated to securing, containing and studying anomalous objects. The Foundation cooperates only while a settlement remains useful, disciplined and capable of following containment protocols. Its confidence is earned through completed assignments and stable containment.</description>
+    <fixedName>SCP Foundation</fixedName>
+    <pawnSingular>Foundation employee</pawnSingular>
+    <pawnsPlural>Foundation personnel</pawnsPlural>
+    <categoryTag>SCPFoundation</categoryTag>
+    <listOrderPriority>45</listOrderPriority>
+    <configurationListOrderPriority>5</configurationListOrderPriority>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <maxCountAtGameStart>1</maxCountAtGameStart>
+    <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+    <settlementGenerationWeight>0.55</settlementGenerationWeight>
+    <techLevel>Spacer</techLevel>
+    <basicMemberKind>SCP_FoundationEmployee</basicMemberKind>
+    <fixedLeaderKinds>
+      <li>SCP_FoundationSiteDirector</li>
+    </fixedLeaderKinds>
+    <leaderTitle>site director</leaderTitle>
+    <leaderTitleFemale>site director</leaderTitleFemale>
+    <settlementNameMaker>SCP_NamerFoundationSettlement</settlementNameMaker>
+    <factionIconPath>World/FactionIcons/Foundation</factionIconPath>
+    <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+    <colorSpectrum>
+      <li>(0.18, 0.22, 0.26)</li>
+      <li>(0.32, 0.38, 0.44)</li>
+    </colorSpectrum>
+    <allowedCultures>
+      <li>Astropolitan</li>
+    </allowedCultures>
+    <canRequestTraders>true</canRequestTraders>
+    <canRequestMilitaryAid>false</canRequestMilitaryAid>
+    <canRequestOrbitalTrader>true</canRequestOrbitalTrader>
+    <canGenerateQuestSites>true</canGenerateQuestSites>
+    <classicIdeo>false</classicIdeo>
+    <fixedIdeo>true</fixedIdeo>
+    <ideoName>SCP Foundation</ideoName>
+    <ideoDescription>Secure. Contain. Protect. Knowledge is a duty, anomalies are subjects of study rather than worship, and every employee serves the survival of the whole organization.</ideoDescription>
+    <styles>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Techist</li>
+    </styles>
+    <forcedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">SCP_ScientificMandate</li>
+    </forcedMemes>
+    <caravanTraderKinds>
+      <li>SCP_Caravan_MedicalSupply</li>
+      <li>SCP_Caravan_ContainmentArmory</li>
+    </caravanTraderKinds>
+    <orbitalTraderKinds>
+      <li>SCP_Orbital_SupplyVessel</li>
+    </orbitalTraderKinds>
+    <visitorTraderKinds>
+      <li>SCP_Visitor_FieldLiaison</li>
+    </visitorTraderKinds>
+    <baseTraderKinds>
+      <li>SCP_Base_RequisitionsOffice</li>
+    </baseTraderKinds>
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Combat</kindDef>
+        <options>
+          <SCP_FoundationSecurity>12</SCP_FoundationSecurity>
+          <SCP_FoundationOperative>6</SCP_FoundationOperative>
+          <SCP_FoundationEmployee>1</SCP_FoundationEmployee>
+        </options>
+      </li>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <SCP_FoundationEmployee>12</SCP_FoundationEmployee>
+          <SCP_FoundationSecurity>5</SCP_FoundationSecurity>
+          <SCP_FoundationRepresentative>2</SCP_FoundationRepresentative>
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <SCP_FoundationRepresentative>1</SCP_FoundationRepresentative>
+        </traders>
+        <carriers>
+          <Muffalo>5</Muffalo>
+          <Dromedary>3</Dromedary>
+        </carriers>
+        <guards>
+          <SCP_FoundationSecurity>12</SCP_FoundationSecurity>
+          <SCP_FoundationOperative>4</SCP_FoundationOperative>
+        </guards>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <SCP_FoundationEmployee>10</SCP_FoundationEmployee>
+          <SCP_FoundationSecurity>12</SCP_FoundationSecurity>
+          <SCP_FoundationOperative>4</SCP_FoundationOperative>
+          <SCP_FoundationRepresentative>2</SCP_FoundationRepresentative>
+          <SCP_FoundationSiteDirector>1</SCP_FoundationSiteDirector>
+        </options>
+      </li>
+    </pawnGroupMakers>
+  </FactionDef>
+
+</Defs>

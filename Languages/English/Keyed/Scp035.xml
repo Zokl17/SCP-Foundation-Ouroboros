@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_035PossessionTitle>SCP-035 has taken a host</SCP_035PossessionTitle>
+  <SCP_035PossessionBody>{PAWN} put on SCP-035. The mask has seized control, and the host's body is decomposing.</SCP_035PossessionBody>
+  <SCP_035RecoveredTitle>SCP-035 recovered</SCP_035RecoveredTitle>
+  <SCP_035RecoveredBody>The mask has reached your colony. Secure it immediately and prevent prolonged visual contact.</SCP_035RecoveredBody>
+  <SCP_035QuestUnavailable>The SCP-035 recovery quest is currently unavailable.</SCP_035QuestUnavailable>
+  <SCP_035QuestOffered>The SCP-035 recovery quest has been offered.</SCP_035QuestOffered>
+  <SCP_035ObservedReport>The porcelain mask gives observers a persistent urge to wear it. Visual contact must be limited.</SCP_035ObservedReport>
+  <SCP_035PartialReport>Prolonged observation makes the urge irresistible. A wearer loses control and their tissues begin to decay.</SCP_035PartialReport>
+  <SCP_035DocumentedReport>Five cumulative hours of visual contact compel a pawn to put on the mask. The host dies after roughly two hours of decay.</SCP_035DocumentedReport>
+</LanguageData>

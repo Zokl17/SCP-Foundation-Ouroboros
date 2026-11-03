@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThoughtDef>
+    <defName>SCP_035MaskCalls</defName><thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>0.006</durationDays><stackLimit>1</stackLimit>
+    <stages><li><label>the mask is calling me</label><description>I cannot stop looking at that mask. It wants me to wear it.</description><baseMoodEffect>-5</baseMoodEffect></li></stages>
+  </ThoughtDef>
+</Defs>

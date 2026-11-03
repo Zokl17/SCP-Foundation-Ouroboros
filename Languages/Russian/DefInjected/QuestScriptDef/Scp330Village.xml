@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_330VillageRecovery.questNameRules.rulesStrings><li>questName->Разведать деревню SCP-330</li></SCP_330VillageRecovery.questNameRules.rulesStrings>
+  <SCP_330VillageRecovery.questDescriptionRules.rulesStrings><li>questDescription->Фонд сообщает о странных событиях в ближайшей деревне: местные кому-то поклоняются. Проходивший мимо караван с агентом Фонда заметил у нескольких жителей деревянные кисти и необычную скорость. Проведите разведку и, если обнаружите аномальный объект, изымите его. Пока реликварий не тронут, жители сохраняют миролюбие, но спустя сутки нападут в любом случае.</li></SCP_330VillageRecovery.questDescriptionRules.rulesStrings>
+</LanguageData>

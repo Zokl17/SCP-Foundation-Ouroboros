@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <HediffDef>
+    <defName>SCP_500Regeneration</defName>
+    <label>SCP-500 regeneration</label>
+    <description>Rapid tissue repair and pain relief caused by SCP-500. Wounds and burns close over several hours; missing body parts do not regrow.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <isBad>false</isBad>
+    <initialSeverity>1</initialSeverity>
+    <stages><li><painFactor>0</painFactor></li></stages>
+    <comps>
+      <li Class="ScpFoundation.Interactions.HediffCompProperties_Scp500Regeneration">
+        <healPerPulse>1</healPerPulse>
+        <pulseIntervalTicks>250</pulseIntervalTicks>
+      </li>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>15000</disappearsAfterTicks>
+        <showRemainingTime>true</showRemainingTime>
+      </li>
+    </comps>
+  </HediffDef>
+</Defs>

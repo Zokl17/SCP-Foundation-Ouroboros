@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_067Pen.label>перьевая ручка SCP-067</SCP_067Pen.label>
+  <SCP_067Pen.description>Дубовая перьевая ручка бледно-зелёного цвета с красной полосой. Закрепив её на посту содержания, колонист может позволить ей направлять свою руку и создать сложный рисунок.</SCP_067Pen.description>
+  <SCP_067Drawing.label>рисунок SCP-067</SCP_067Drawing.label>
+  <SCP_067Drawing.description>Сложный рисунок чернилами, созданный с помощью SCP-067. Его можно выставить в комнате или продать, но нет оснований считать сюжет рисунка вымышленным.</SCP_067Drawing.description>
+  <SCP_067DrawingGood.label>рисунок SCP-067: невозможный коридор</SCP_067DrawingGood.label>
+  <SCP_067DrawingGood.description>Дверь ведёт в коридор, который не может за ней поместиться. В его конце ждёт силуэт.</SCP_067DrawingGood.description>
+  <SCP_067DrawingExcellent.label>рисунок SCP-067: наблюдающий механизм</SCP_067DrawingExcellent.label>
+  <SCP_067DrawingExcellent.description>Немигающий глаз висит среди разорванных часовых колец. Кажется, его взгляд следует за наблюдателем.</SCP_067DrawingExcellent.description>
+  <SCP_067DrawingLegendary.label>рисунок SCP-067: тянущиеся руки</SCP_067DrawingLegendary.label>
+  <SCP_067DrawingLegendary.description>Переплетённые руки тянутся сквозь невозможные арки. Чем дольше смотреть, тем больше рук становится.</SCP_067DrawingLegendary.description>
+  <SCP_262Coat.label>плащ SCP-262</SCP_262Coat.label>
+  <SCP_262Coat.description>Военный плащ. Из тёмной подкладки выглядывают четыре человеческие руки разного вида. Они ускоряют работу на 250 %, помогают уклоняться в ближнем бою и могут держать второе стрелковое оружие.</SCP_262Coat.description>
+  <SCP_262Hanger.label>вешалка содержания SCP-262</SCP_262Hanger.label>
+  <SCP_262Hanger.description>Стойка для содержания и изучения SCP-262. Плащ нужно закрепить здесь, прежде чем его свойства будут полностью задокументированы.</SCP_262Hanger.description>
+</LanguageData>

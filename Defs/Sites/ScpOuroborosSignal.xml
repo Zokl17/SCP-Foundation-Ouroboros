@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <SitePartDef>
+    <defName>SCP_OuroborosSignalSitePart</defName>
+    <label>silent signal relay</label>
+    <description>The last known relay of the signal recorded during the SCP-882 attack.</description>
+    <workerClass>SitePartWorker</workerClass>
+    <siteTexture>World/WorldObjects/Sites/Outpost</siteTexture>
+    <expandingIconTexture>World/WorldObjects/Expanding/Sites/Outpost</expandingIconTexture>
+    <requiresFaction>true</requiresFaction><considerEnteringAsAttack>false</considerEnteringAsAttack>
+    <approachOrderString>Investigate {0}</approachOrderString>
+    <approachingReportString>Investigating {0}.</approachingReportString>
+    <arrivedLetter>The relay is deserted. Select the recorder in the ruin and choose Extract transponder, or select a colonist and right-click it. The module goes into that colonist's inventory. Return home to decrypt it at a research bench.</arrivedLetter>
+    <arrivedLetterDef>NeutralEvent</arrivedLetterDef>
+    <minMapSize>(250, 1, 250)</minMapSize>
+    <tags><li>SCPOuroborosSignal</li></tags>
+  </SitePartDef>
+  <WorldObjectDef ParentName="Site">
+    <defName>SCP_OuroborosSignalSite</defName><label>silent signal relay</label>
+    <overrideMapSize>(250, 1, 250)</overrideMapSize>
+    <mapGenerator>SCP_OuroborosSignalMap</mapGenerator>
+  </WorldObjectDef>
+  <MapGeneratorDef>
+    <defName>SCP_OuroborosSignalMap</defName>
+    <genSteps><li>ElevationFertility</li><li>Terrain</li>
+      <li>SCP_OuroborosSignalGen</li><li>FindPlayerStartSpot</li><li>Fog</li></genSteps>
+  </MapGeneratorDef>
+  <GenStepDef>
+    <defName>SCP_OuroborosSignalGen</defName><order>400</order>
+    <genStep Class="ScpFoundation.Storytelling.GenStep_ScpSignalSite" />
+  </GenStepDef>
+</Defs>

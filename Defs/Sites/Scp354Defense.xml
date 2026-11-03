@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <SitePartDef>
+    <defName>SCP_354Defense</defName>
+    <label>SCP-354 perimeter</label>
+    <description>A Foundation perimeter needs reinforcements to contain creatures emerging from SCP-354.</description>
+    <workerClass>SitePartWorker</workerClass>
+    <siteTexture>World/WorldObjects/Sites/Outpost</siteTexture>
+    <expandingIconTexture>World/WorldObjects/Expanding/Sites/Outpost</expandingIconTexture>
+    <applyFactionColorToSiteTexture>true</applyFactionColorToSiteTexture>
+    <showFactionInInspectString>true</showFactionInInspectString>
+    <requiresFaction>true</requiresFaction>
+    <considerEnteringAsAttack>false</considerEnteringAsAttack>
+    <approachOrderString>Assist {0}</approachOrderString>
+    <approachingReportString>Approaching {0}.</approachingReportString>
+    <arrivedLetter>Foundation personnel are holding the SCP-354 perimeter. Reinforce them and repel the creatures emerging from the pool.</arrivedLetter>
+    <arrivedLetterDef>PositiveEvent</arrivedLetterDef>
+    <minMapSize>(250, 1, 250)</minMapSize>
+    <tags><li>SCP354Defense</li></tags>
+  </SitePartDef>
+
+  <WorldObjectDef ParentName="Site">
+    <defName>SCP_354DefenseSite</defName>
+    <label>SCP-354 perimeter</label>
+    <worldObjectClass>ScpFoundation.Storytelling.Scp354DefenseSite</worldObjectClass>
+    <overrideMapSize>(250, 1, 250)</overrideMapSize>
+    <mapGenerator>SCP_354SavedMap</mapGenerator>
+  </WorldObjectDef>
+
+  <MapGeneratorDef>
+    <defName>SCP_354SavedMap</defName>
+    <genSteps>
+      <li>SCP_354Defense</li>
+      <li>FindPlayerStartSpot</li>
+      <li>Fog</li>
+    </genSteps>
+  </MapGeneratorDef>
+
+  <GenStepDef>
+    <defName>SCP_354Defense</defName>
+    <order>400</order>
+    <genStep Class="ScpFoundation.Storytelling.GenStep_Scp354Defense" />
+  </GenStepDef>
+</Defs>

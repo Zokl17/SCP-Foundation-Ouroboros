@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_131A.label>SCP-131-A, глазок</SCP_131A.label>
+  <SCP_131A.description>Дружелюбное оранжевое существо с одним глазом и колёсиком. Оно никогда не моргает и может следовать за понравившейся пешкой.</SCP_131A.description>
+  <SCP_131B.label>SCP-131-B, глазок</SCP_131B.label>
+  <SCP_131B.description>Дружелюбное жёлтое существо с одним глазом и колёсиком. Оно никогда не моргает и может следовать за понравившейся пешкой.</SCP_131B.description>
+  <SCP_131APawn.label>SCP-131-A, глазок</SCP_131APawn.label>
+  <SCP_131APawn.description>Дружелюбное оранжевое существо с одним глазом и колёсиком. Оно никогда не моргает и может следовать за понравившейся пешкой.</SCP_131APawn.description>
+  <SCP_131BPawn.label>SCP-131-B, глазок</SCP_131BPawn.label>
+  <SCP_131BPawn.description>Дружелюбное жёлтое существо с одним глазом и колёсиком. Оно никогда не моргает и может следовать за понравившейся пешкой.</SCP_131BPawn.description>
+  <SCP_012Score.label>SCP-012, незаконченная партитура</SCP_012Score.label>
+  <SCP_012Score.description>Ноты, написанные кровью. При видимом освещении наблюдатели стремятся приблизиться и дописать их собственной кровью.</SCP_012Score.description>
+  <SCP_330Bowl.label>SCP-330, миска конфет</SCP_330Bowl.label>
+  <SCP_330Bowl.description>Не берите больше двух конфет за 24 часа. Третья конфета стоит обеих кистей.</SCP_330Bowl.description>
+  <SCP_914Machine.label>SCP-914, часовой механизм</SCP_914Machine.label>
+  <SCP_914Machine.description>Механизм с пятью режимами обработки. Положите один обычный предмет на входную клетку слева и запустите цикл. Результат появится справа. Живые и аномальные объекты не принимаются.</SCP_914Machine.description>
+  <SCP_513Bell.label>SCP-513, колокол</SCP_513Bell.label>
+  <SCP_513Bell.description>Ржавый колокол. Услышавшие его звон люди испытывают тревогу, видят преследователя и теряют сон.</SCP_513Bell.description>
+  <SCP_207Bottle.label>SCP-207, бутылка колы</SCP_207Bottle.label>
+  <SCP_207Bottle.description>Аномальная кола лишает потребности во сне и ускоряет выпившего, но постепенно перегружает организм.</SCP_207Bottle.description>
+</LanguageData>

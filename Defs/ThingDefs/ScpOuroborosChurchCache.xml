@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef>
+    <defName>SCP_OuroborosChurchCipher</defName>
+    <label>Church cipher core</label>
+    <description>A shielded recorder containing the relay's next hop. Select it and order a colonist to copy the records.</description>
+    <thingClass>ScpFoundation.Storytelling.Thing_ScpChurchCipher</thingClass>
+    <category>Item</category><altitudeLayer>Item</altitudeLayer>
+    <selectable>true</selectable><stackLimit>1</stackLimit>
+    <alwaysHaulable>false</alwaysHaulable><designateHaulable>false</designateHaulable>
+    <graphicData><texPath>Things/Item/ScpArtifacts/ScpChurchCipher</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>0.9</drawSize></graphicData>
+    <statBases><MaxHitPoints>110</MaxHitPoints><Mass>3</Mass><MarketValue>0</MarketValue><Flammability>0.1</Flammability></statBases>
+    <tradeability>None</tradeability>
+  </ThingDef>
+  <ThingDef>
+    <defName>SCP_OuroborosSealed217Sample</defName>
+    <label>sealed SCP-217 sample</label>
+    <description>A sealed SCP-217 sample. The intact vessel is safe to store and transport; breaking it can expose nearby creatures.</description>
+    <thingClass>ScpFoundation.Storytelling.Thing_ScpChurchCipher</thingClass>
+    <category>Item</category><altitudeLayer>Item</altitudeLayer>
+    <selectable>true</selectable><stackLimit>1</stackLimit>
+    <alwaysHaulable>false</alwaysHaulable><designateHaulable>false</designateHaulable>
+    <graphicData><texPath>Things/Item/ScpArtifacts/Scp217Sealed</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>0.9</drawSize></graphicData>
+    <statBases><MaxHitPoints>150</MaxHitPoints><Mass>4</Mass><MarketValue>0</MarketValue><Flammability>0</Flammability></statBases>
+    <tradeability>None</tradeability>
+  </ThingDef>
+  <ThingDef>
+    <defName>SCP_OuroborosParts629Cache</defName>
+    <label>SCP-629 components</label>
+    <description>Detached components of SCP-629. They are only part of his body and cannot be assembled into a whole Mr. Brass.</description>
+    <thingClass>ScpFoundation.Storytelling.Thing_ScpChurchCipher</thingClass>
+    <category>Item</category><altitudeLayer>Item</altitudeLayer>
+    <selectable>true</selectable><stackLimit>1</stackLimit>
+    <alwaysHaulable>false</alwaysHaulable><designateHaulable>false</designateHaulable>
+    <graphicData><texPath>Things/Item/ScpArtifacts/Scp629Parts</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>0.9</drawSize></graphicData>
+    <statBases><MaxHitPoints>150</MaxHitPoints><Mass>7</Mass><MarketValue>0</MarketValue><Flammability>0</Flammability></statBases>
+    <tradeability>None</tradeability>
+  </ThingDef>
+</Defs>

@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <PawnKindDef ParentName="OutlanderBase" Name="SCP_FoundationPersonBase" Abstract="True">
+    <defaultFactionDef>SCP_Foundation</defaultFactionDef>
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+    <combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
+    <backstoryCryptosleepCommonality>0.12</backstoryCryptosleepCommonality>
+    <minGenerationAge>21</minGenerationAge>
+    <maxGenerationAge>64</maxGenerationAge>
+    <itemQuality>Normal</itemQuality>
+    <gearHealthRange>0.85~1</gearHealthRange>
+    <apparelColor>(0.12, 0.14, 0.16)</apparelColor>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
+      <li>IndustrialMilitaryBasic</li>
+    </apparelTags>
+    <techHediffsChance>0.08</techHediffsChance>
+    <techHediffsMoney>400~1000</techHediffsMoney>
+    <techHediffsTags>
+      <li>Simple</li>
+      <li>Advanced</li>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="SCP_FoundationPersonBase">
+    <defName>SCP_FoundationEmployee</defName>
+    <label>Foundation employee</label>
+    <labelPlural>Foundation employees</labelPlural>
+    <combatPower>55</combatPower>
+    <isFighter>false</isFighter>
+    <weaponTags>
+      <li>Gun</li>
+    </weaponTags>
+    <weaponMoney>180~350</weaponMoney>
+    <apparelMoney>450~800</apparelMoney>
+    <apparelAllowHeadgearChance>0.15</apparelAllowHeadgearChance>
+    <skills>
+      <li><skill>Intellectual</skill><range>5~14</range></li>
+      <li><skill>Medicine</skill><range>3~10</range></li>
+    </skills>
+    <initialWillRange>2~5</initialWillRange>
+    <initialResistanceRange>14~24</initialResistanceRange>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="SCP_FoundationPersonBase" Name="SCP_FoundationSecurityBase" Abstract="True">
+    <isFighter>true</isFighter>
+    <apparelTags>
+      <li>IndustrialMilitaryBasic</li>
+      <li>IndustrialMilitaryAdvanced</li>
+      <li>BeltDefensePop</li>
+      <li>SCP_FoundationArmor</li>
+    </apparelTags>
+    <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+    <weaponTags>
+      <li>Gun</li>
+    </weaponTags>
+    <disallowedTraits>
+      <li>Brawler</li>
+    </disallowedTraits>
+    <skills>
+      <li><skill>Shooting</skill><range>7~14</range></li>
+      <li><skill>Melee</skill><range>4~10</range></li>
+    </skills>
+    <initialWillRange>3~6</initialWillRange>
+    <initialResistanceRange>18~30</initialResistanceRange>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="SCP_FoundationSecurityBase">
+    <defName>SCP_FoundationSecurity</defName>
+    <label>Foundation security officer</label>
+    <labelPlural>Foundation security officers</labelPlural>
+    <combatPower>95</combatPower>
+    <weaponMoney>400~700</weaponMoney>
+    <apparelMoney>900~1500</apparelMoney>
+    <techHediffsChance>0.12</techHediffsChance>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="SCP_FoundationSecurityBase">
+    <defName>SCP_FoundationOperative</defName>
+    <label>Foundation tactical operative</label>
+    <labelPlural>Foundation tactical operatives</labelPlural>
+    <combatPower>165</combatPower>
+    <apparelColor>(1,1,1)</apparelColor>
+    <itemQuality>Good</itemQuality>
+    <weaponMoney>700~1200</weaponMoney>
+    <apparelMoney>1700~2700</apparelMoney>
+    <techHediffsChance>0.2</techHediffsChance>
+    <techHediffsMoney>900~1800</techHediffsMoney>
+    <biocodeWeaponChance>0.2</biocodeWeaponChance>
+    <apparelRequired><li>SCP_FoundationAssaultVest</li></apparelRequired>
+    <skills>
+      <li><skill>Shooting</skill><range>11~18</range></li>
+      <li><skill>Melee</skill><range>7~13</range></li>
+    </skills>
+    <initialWillRange>5~8</initialWillRange>
+    <initialResistanceRange>25~38</initialResistanceRange>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="SCP_FoundationSecurityBase" Name="SCP_MTF_Nu7Base" Abstract="True">
+    <label>MTF Nu-7 operator</label>
+    <labelPlural>MTF Nu-7 operators</labelPlural>
+    <combatPower>145</combatPower>
+    <itemQuality>Good</itemQuality>
+    <apparelColor>(1,1,1)</apparelColor>
+    <weaponMoney>4000~7000</weaponMoney>
+    <apparelTags Inherit="False">
+      <li>SCP_MTFBackpack</li>
+    </apparelTags>
+    <apparelRequired>
+      <li>Apparel_BasicShirt</li>
+      <li>SCP_MtfExosuit</li>
+      <li>SCP_MtfExoHelmet</li>
+    </apparelRequired>
+    <apparelMoney>1300~2100</apparelMoney>
+    <techHediffsChance>0.15</techHediffsChance>
+    <skills>
+      <li><skill>Shooting</skill><range>10~16</range></li>
+      <li><skill>Melee</skill><range>6~12</range></li>
+    </skills>
+    <initialWillRange>6~9</initialWillRange>
+    <initialResistanceRange>28~42</initialResistanceRange>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="SCP_MTF_Nu7Base">
+    <defName>SCP_MTF_Nu7</defName>
+    <weaponTags Inherit="False"><li>SCPNu7HK416</li></weaponTags>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="SCP_MTF_Nu7Base">
+    <defName>SCP_MTF_354ExosuitGuard</defName>
+    <label>MTF perimeter exosuit guard</label>
+    <labelPlural>MTF perimeter exosuit guards</labelPlural>
+    <apparelRequired Inherit="False">
+      <li>Apparel_BasicShirt</li><li>Apparel_Pants</li>
+      <li>SCP_MtfExosuit</li><li>SCP_MtfExoHelmet</li>
+    </apparelRequired>
+    <weaponTags Inherit="False"><li>SCPNu7HK416</li></weaponTags>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="SCP_MTF_Nu7Base">
+    <defName>SCP_MTF_Nu7Gunner</defName>
+    <label>MTF Nu-7 machine gunner</label>
+    <labelPlural>MTF Nu-7 machine gunners</labelPlural>
+    <combatPower>175</combatPower>
+    <apparelRequired Inherit="False">
+      <li>Apparel_BasicShirt</li><li>SCP_MtfExosuit</li><li>SCP_MtfExoHelmet</li>
+    </apparelRequired>
+    <weaponTags Inherit="False"><li>SCPNu7M249</li></weaponTags>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="SCP_MTF_Nu7Base">
+    <defName>SCP_354HeavyGunner</defName>
+    <label>Foundation heavy machine gunner</label>
+    <labelPlural>Foundation heavy machine gunners</labelPlural>
+    <combatPower>175</combatPower>
+    <apparelRequired Inherit="False">
+      <li>Apparel_BasicShirt</li><li>Apparel_FlakPants</li>
+      <li>SCP_Nu7Armor</li><li>SCP_Nu7Helmet</li>
+    </apparelRequired>
+    <weaponTags Inherit="False"><li>SCPNu7M249</li></weaponTags>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="SCP_FoundationSecurityBase">
+    <defName>SCP_354Rifleman</defName>
+    <label>Foundation perimeter rifleman</label>
+    <labelPlural>Foundation perimeter riflemen</labelPlural>
+    <combatPower>165</combatPower>
+    <apparelColor>(1,1,1)</apparelColor>
+    <apparelRequired>
+      <li>Apparel_BasicShirt</li><li>Apparel_FlakPants</li>
+      <li>SCP_FoundationAssaultVest</li><li>SCP_Nu7Helmet</li>
+    </apparelRequired>
+    <weaponTags Inherit="False"><li>SCPNu7HK416</li></weaponTags>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="SCP_FoundationSecurityBase">
+    <defName>SCP_354EmpSpecialist</defName>
+    <label>Foundation perimeter EMP specialist</label>
+    <labelPlural>Foundation perimeter EMP specialists</labelPlural>
+    <combatPower>165</combatPower>
+    <apparelColor>(1,1,1)</apparelColor>
+    <apparelRequired>
+      <li>Apparel_BasicShirt</li><li>Apparel_FlakPants</li>
+      <li>SCP_FoundationAssaultVest</li><li>SCP_Nu7Helmet</li>
+    </apparelRequired>
+    <weaponTags Inherit="False"><li>SCPFoundationEMP</li></weaponTags>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="SCP_FoundationSecurityBase" Name="SCP_MTF_Epsilon11Base" Abstract="True">
+    <label>MTF Epsilon-11 operator</label>
+    <labelPlural>MTF Epsilon-11 operators</labelPlural>
+    <combatPower>220</combatPower>
+    <itemQuality>Excellent</itemQuality>
+    <apparelColor>(1,1,1)</apparelColor>
+    <weaponMoney>5000~8000</weaponMoney>
+    <apparelTags Inherit="False"><li>SCP_MTFBackpack</li></apparelTags>
+    <apparelRequired>
+      <li>Apparel_BasicShirt</li>
+      <li>SCP_MtfExosuit</li><li>SCP_MtfExoHelmet</li>
+    </apparelRequired>
+    <apparelMoney>2600~4200</apparelMoney>
+    <techHediffsChance>0.25</techHediffsChance>
+    <techHediffsMoney>1200~2600</techHediffsMoney>
+    <biocodeWeaponChance>0.45</biocodeWeaponChance>
+    <skills>
+      <li><skill>Shooting</skill><range>13~19</range></li>
+      <li><skill>Melee</skill><range>8~14</range></li>
+    </skills>
+    <initialWillRange>8~12</initialWillRange>
+    <initialResistanceRange>35~50</initialResistanceRange>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="SCP_MTF_Epsilon11Base">
+    <defName>SCP_MTF_Epsilon11</defName>
+    <weaponTags Inherit="False">
+      <li>SCPFoundationEMP</li>
+    </weaponTags>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="SCP_MTF_Epsilon11Base">
+    <defName>SCP_MTF_Epsilon11Rifleman</defName>
+    <weaponTags Inherit="False"><li>SCPNu7HK416</li></weaponTags>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="SCP_MTF_Epsilon11Base">
+    <defName>SCP_MTF_Epsilon11Gunner</defName>
+    <label>MTF Epsilon-11 machine gunner</label>
+    <labelPlural>MTF Epsilon-11 machine gunners</labelPlural>
+    <combatPower>260</combatPower>
+    <weaponTags Inherit="False"><li>SCPNu7M249</li></weaponTags>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="SCP_MTF_Epsilon11Base">
+    <defName>SCP_MTF_Omega7Rifleman</defName>
+    <label>MTF Omega-7 operator</label><labelPlural>MTF Omega-7 operators</labelPlural>
+    <weaponTags Inherit="False"><li>SCPNu7HK416</li></weaponTags>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="SCP_MTF_Epsilon11Base">
+    <defName>SCP_MTF_Omega7Gunner</defName>
+    <label>MTF Omega-7 machine gunner</label><labelPlural>MTF Omega-7 machine gunners</labelPlural>
+    <combatPower>260</combatPower>
+    <weaponTags Inherit="False"><li>SCPNu7M249</li></weaponTags>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="SCP_FoundationPersonBase">
+    <defName>SCP_FoundationRepresentative</defName>
+    <label>Foundation logistics officer</label>
+    <labelPlural>Foundation logistics officers</labelPlural>
+    <trader>true</trader>
+    <combatPower>60</combatPower>
+    <isFighter>false</isFighter>
+    <weaponTags>
+      <li>Gun</li>
+    </weaponTags>
+    <weaponMoney>250~450</weaponMoney>
+    <apparelMoney>700~1200</apparelMoney>
+    <apparelAllowHeadgearChance>0.25</apparelAllowHeadgearChance>
+    <skills>
+      <li><skill>Social</skill><range>8~16</range></li>
+      <li><skill>Intellectual</skill><range>4~11</range></li>
+    </skills>
+    <initialWillRange>4~7</initialWillRange>
+    <initialResistanceRange>18~28</initialResistanceRange>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="SCP_FoundationPersonBase">
+    <defName>SCP_FoundationSiteDirector</defName>
+    <label>Foundation site director</label>
+    <labelPlural>Foundation site directors</labelPlural>
+    <factionLeader>true</factionLeader>
+    <minGenerationAge>35</minGenerationAge>
+    <combatPower>75</combatPower>
+    <isFighter>false</isFighter>
+    <itemQuality>Good</itemQuality>
+    <weaponTags>
+      <li>Gun</li>
+    </weaponTags>
+    <weaponMoney>300~500</weaponMoney>
+    <apparelMoney>1100~1800</apparelMoney>
+    <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+    <skills>
+      <li><skill>Social</skill><range>10~18</range></li>
+      <li><skill>Intellectual</skill><range>9~17</range></li>
+    </skills>
+    <initialWillRange>6~10</initialWillRange>
+    <initialResistanceRange>26~40</initialResistanceRange>
+  </PawnKindDef>
+
+</Defs>

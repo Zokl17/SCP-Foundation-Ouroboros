@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <TerrainDef ParentName="FloorBase">
+    <defName>SCP_FoundationFloor</defName><label>containment floor</label>
+    <description>A hard-wearing floor for Foundation containment rooms.</description>
+    <texturePath>Terrain/Surfaces/ScpContainmentFloor_v2</texturePath>
+    <edgeType>Hard</edgeType><renderPrecedence>71</renderPrecedence>
+    <designationCategory>SCPFoundation</designationCategory><uiOrder>100</uiOrder>
+    <statBases><Beauty>0</Beauty><WorkToBuild>120</WorkToBuild><CleaningTimeFactor>0.8</CleaningTimeFactor></statBases>
+    <costList><SCP_Concrete>2</SCP_Concrete><Steel>1</Steel></costList>
+  </TerrainDef>
+</Defs>

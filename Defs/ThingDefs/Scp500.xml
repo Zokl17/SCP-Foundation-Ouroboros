@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="DrugPillBase">
+    <defName>SCP_500Pill</defName>
+    <label>SCP-500 pill</label>
+    <description>A rare red pill of unknown composition.</description>
+    <graphicData>
+      <texPath>Things/Item/Medicine/Scp500Pill</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.85</drawSize>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <stackLimit>10</stackLimit>
+    <statBases><MarketValue>3000</MarketValue><Mass>0.02</Mass><DeteriorationRate>0</DeteriorationRate></statBases>
+    <techLevel>Ultra</techLevel>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <outcomeDoers><li Class="ScpFoundation.Interactions.IngestionOutcomeDoer_Scp500" /></outcomeDoers>
+    </ingestible>
+    <comps><li Class="CompProperties_Drug"><listOrder>1040</listOrder></li></comps>
+  </ThingDef>
+</Defs>

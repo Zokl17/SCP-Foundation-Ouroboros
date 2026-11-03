@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_GocOperative.label>ударный оперативник ГОК</SCP_GocOperative.label>
+  <SCP_GocOperative.labelPlural>ударные оперативники ГОК</SCP_GocOperative.labelPlural>
+  <SCP_GocHkOperative.label>оперативник ГОК с карабином</SCP_GocHkOperative.label>
+  <SCP_GocHkOperative.labelPlural>оперативники ГОК с карабинами</SCP_GocHkOperative.labelPlural>
+  <SCP_GocHeavyOperative.label>тяжёлый оперативник ГОК</SCP_GocHeavyOperative.label>
+  <SCP_GocHeavyOperative.labelPlural>тяжёлые оперативники ГОК</SCP_GocHeavyOperative.labelPlural>
+  <SCP_GocLiaison.label>офицер связи ГОК</SCP_GocLiaison.label>
+  <SCP_GocLiaison.labelPlural>офицеры связи ГОК</SCP_GocLiaison.labelPlural>
+  <SCP_GocCommander.label>заместитель генерального секретаря ГОК</SCP_GocCommander.label>
+  <SCP_GocCommander.labelPlural>заместители генерального секретаря ГОК</SCP_GocCommander.labelPlural>
+  <SCP_GocResearcher.label>исследователь ГОК</SCP_GocResearcher.label>
+  <SCP_GocResearcher.labelPlural>исследователи ГОК</SCP_GocResearcher.labelPlural>
+</LanguageData>

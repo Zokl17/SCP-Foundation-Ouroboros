@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_330Village.label>деревня SCP-330</SCP_330Village.label>
+  <SCP_330Village.description>Жители поклоняются реликварию. У некоторых деревянные кисти и необычная скорость.</SCP_330Village.description>
+  <SCP_330Village.approachOrderString>Исследовать {0}</SCP_330Village.approachOrderString>
+  <SCP_330Village.approachingReportString>Исследует {0}.</SCP_330Village.approachingReportString>
+  <SCP_330Village.arrivedLetter>Жители пока не проявляют агрессии. Через сутки они нападут сами; изъятие чаши или повреждение реликвария спровоцирует их раньше.</SCP_330Village.arrivedLetter>
+</LanguageData>

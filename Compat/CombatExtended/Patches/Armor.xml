@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Read CE's already patched vanilla armor bases. Ratings are never hard-coded here. -->
+  <Operation Class="ScpFoundation.CombatExtendedCompat.PatchOperationArmorFromReference">
+    <sourceDef>ApparelArmorReconBase</sourceDef><targetDef>SCP_FoundationAssaultVest</targetDef>
+    <multiplier>1</multiplier><bulk>8</bulk><wornBulk>4</wornBulk>
+  </Operation>
+  <Operation Class="ScpFoundation.CombatExtendedCompat.PatchOperationArmorFromReference">
+    <sourceDef>ApparelArmorPowerBase</sourceDef><targetDef>SCP_Nu7Armor</targetDef>
+    <multiplier>1.10</multiplier><bulk>10</bulk><wornBulk>6</wornBulk>
+  </Operation>
+  <Operation Class="ScpFoundation.CombatExtendedCompat.PatchOperationArmorFromReference">
+    <sourceDef>ApparelArmorHelmetPowerBase</sourceDef><targetDef>SCP_Nu7Helmet</targetDef>
+    <multiplier>1</multiplier><bulk>4</bulk><wornBulk>1.5</wornBulk>
+  </Operation>
+  <Operation Class="ScpFoundation.CombatExtendedCompat.PatchOperationArmorFromReference">
+    <sourceDef>ApparelArmorReconBase</sourceDef><targetDef>SCP_ChaosAssaultArmor</targetDef>
+    <multiplier>0.95</multiplier><bulk>9</bulk><wornBulk>5</wornBulk>
+  </Operation>
+  <Operation Class="ScpFoundation.CombatExtendedCompat.PatchOperationArmorFromReference">
+    <sourceDef>ApparelArmorCataphractBase</sourceDef><fallbackSourceDef>ApparelArmorPowerBase</fallbackSourceDef><targetDef>SCP_ChaosHeavyExosuit</targetDef>
+    <multiplier>0.95</multiplier><bulk>60</bulk><wornBulk>12</wornBulk>
+  </Operation>
+  <Operation Class="ScpFoundation.CombatExtendedCompat.PatchOperationArmorFromReference">
+    <sourceDef>ApparelArmorHelmetCataphractBase</sourceDef><fallbackSourceDef>ApparelArmorHelmetPowerBase</fallbackSourceDef><targetDef>SCP_ChaosHeavyHelmet</targetDef>
+    <multiplier>1.05</multiplier><bulk>5</bulk><wornBulk>2</wornBulk>
+  </Operation>
+  <Operation Class="ScpFoundation.CombatExtendedCompat.PatchOperationArmorFromReference">
+    <sourceDef>ApparelArmorCataphractBase</sourceDef><fallbackSourceDef>ApparelArmorPowerBase</fallbackSourceDef><targetDef>SCP_GocWhiteExosuit</targetDef>
+    <multiplier>1.15</multiplier><bulk>65</bulk><wornBulk>12</wornBulk>
+  </Operation>
+  <Operation Class="ScpFoundation.CombatExtendedCompat.PatchOperationArmorFromReference">
+    <sourceDef>ApparelArmorHelmetCataphractBase</sourceDef><fallbackSourceDef>ApparelArmorHelmetPowerBase</fallbackSourceDef><targetDef>SCP_GocWhiteHelmet</targetDef>
+    <multiplier>1.15</multiplier><bulk>5</bulk><wornBulk>2</wornBulk>
+  </Operation>
+  <Operation Class="ScpFoundation.CombatExtendedCompat.PatchOperationArmorFromReference">
+    <sourceDef>ApparelArmorCataphractBase</sourceDef><fallbackSourceDef>ApparelArmorPowerBase</fallbackSourceDef><targetDef>SCP_MtfExosuit</targetDef>
+    <multiplier>1.10</multiplier><bulk>62</bulk><wornBulk>12</wornBulk>
+  </Operation>
+  <Operation Class="ScpFoundation.CombatExtendedCompat.PatchOperationArmorFromReference">
+    <sourceDef>ApparelArmorHelmetCataphractBase</sourceDef><fallbackSourceDef>ApparelArmorHelmetPowerBase</fallbackSourceDef><targetDef>SCP_MtfExoHelmet</targetDef>
+    <multiplier>1.10</multiplier><bulk>5</bulk><wornBulk>2</wornBulk>
+  </Operation>
+</Patch>

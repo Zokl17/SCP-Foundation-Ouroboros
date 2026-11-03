@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ApparelLayerDef>
+    <defName>SCP_Necklace</defName>
+    <label>necklace</label>
+    <drawOrder>250</drawOrder>
+  </ApparelLayerDef>
+</Defs>

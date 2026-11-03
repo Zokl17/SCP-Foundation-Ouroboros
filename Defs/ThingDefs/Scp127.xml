@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="BaseBullet">
+    <defName>SCP_127Tooth</defName><label>SCP-127 tooth</label>
+    <graphicData><texPath>Things/Projectile/ScpShotgunPellet</texPath><graphicClass>Graphic_Single</graphicClass></graphicData>
+    <projectile><damageDef>Bullet</damageDef><damageAmountBase>11</damageAmountBase><stoppingPower>0.8</stoppingPower><armorPenetrationBase>2.0</armorPenetrationBase><speed>70</speed></projectile>
+  </ThingDef>
+  <ThingDef ParentName="BaseGun">
+    <defName>SCP_127Gun</defName><label>SCP-127 — the living gun</label>
+    <thingClass>ScpFoundation.Anomalies.Thing_Scp127Gun</thingClass>
+    <description>A compact submachine gun with living tissue beneath its metal shell. Its tooth-like rounds penetrate heavy armor. Switch between single shots and six-round bursts. Once empty, its sixty-round magazine regrows in three to five days, or in four hours in its 7-C storage case. The magazine cannot be removed.</description>
+    <graphicData><texPath>Things/Item/Equipment/WeaponRanged/Scp127</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>(0.9,0.65)</drawSize></graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <tickerType>Normal</tickerType>
+    <smeltable>false</smeltable><relicChance>0</relicChance>
+    <comps Inherit="False">
+      <li Class="CompProperties_Forbiddable"/>
+      <li><compClass>ScpFoundation.Anomalies.CompScp127Equippable</compClass></li>
+      <li Class="CompProperties_Styleable"/>
+    </comps>
+    <statBases>
+      <MarketValue>1650</MarketValue><Mass>2.8</Mass>
+      <AccuracyTouch>0.66</AccuracyTouch><AccuracyShort>0.76</AccuracyShort>
+      <AccuracyMedium>0.57</AccuracyMedium><AccuracyLong>0.37</AccuracyLong>
+      <RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+    </statBases>
+    <verbs>
+      <li><verbClass>ScpFoundation.Anomalies.Verb_Scp127Shoot</verbClass><hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>SCP_127Tooth</defaultProjectile><warmupTime>0.75</warmupTime><range>23.9</range>
+        <burstShotCount>6</burstShotCount><ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+        <soundCast>Shot_MachinePistol</soundCast><soundCastTail>GunTail_Light</soundCastTail><muzzleFlashScale>5</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags><li>SCP127Unique</li></weaponTags>
+  </ThingDef>
+  <ThingDef ParentName="ShelfBase">
+    <defName>SCP_127Locker</defName><label>SCP-127 storage case 7-C</label>
+    <description>A small glass weapons case containing cloudy calcium- and protein-rich water. It stores only SCP-127 and regenerates its empty magazine in four hours.</description>
+    <thingClass>ScpFoundation.Anomalies.Building_Scp127Locker</thingClass>
+    <size>(1,1)</size><rotatable>false</rotatable>
+    <graphicData><texPath>Things/Building/Scp127Locker</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>(1.2,1.2)</drawSize><drawRotated>false</drawRotated></graphicData>
+    <stuffCategories Inherit="False" />
+    <designationCategory>SCPFoundation</designationCategory><uiOrder>1225</uiOrder>
+    <researchPrerequisites><li>SCP_127LockerResearch</li></researchPrerequisites>
+    <statBases><MaxHitPoints>160</MaxHitPoints><Mass>20</Mass><WorkToBuild>2500</WorkToBuild><Flammability>0</Flammability></statBases>
+    <costList><Steel>50</Steel><ComponentIndustrial>3</ComponentIndustrial></costList>
+    <building>
+      <maxItemsInCell>1</maxItemsInCell>
+      <fixedStorageSettings><filter><thingDefs><li>SCP_127Gun</li></thingDefs></filter></fixedStorageSettings>
+      <defaultStorageSettings><filter><thingDefs><li>SCP_127Gun</li></thingDefs></filter></defaultStorageSettings>
+    </building>
+  </ThingDef>
+</Defs>

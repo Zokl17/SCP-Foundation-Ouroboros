@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="ArmorMachineableBase">
+    <defName>SCP_GocBlackSuit</defName><label>GOC black tactical suit</label>
+    <description>A dark tactical uniform with reinforced trousers, plate carrier, magazine pouches and a communication harness issued to regular GOC field operatives.</description>
+    <techLevel>Industrial</techLevel>
+    <graphicData><texPath>Things/Item/Apparel/ScpGocBlackSuit</texPath><graphicClass>Graphic_Single</graphicClass><shaderType>Cutout</shaderType></graphicData>
+    <statBases><MarketValue>900</MarketValue><MaxHitPoints>320</MaxHitPoints><Mass>5.2</Mass><Flammability>0.35</Flammability><ArmorRating_Sharp>0.85</ArmorRating_Sharp><ArmorRating_Blunt>0.38</ArmorRating_Blunt><ArmorRating_Heat>0.4</ArmorRating_Heat><Insulation_Cold>20</Insulation_Cold><Insulation_Heat>8</Insulation_Heat><EquipDelay>6</EquipDelay><WorkToMake>10000</WorkToMake></statBases>
+    <thingCategories><li>ApparelArmor</li></thingCategories>
+    <costList><Cloth>55</Cloth><Steel>35</Steel><ComponentIndustrial>2</ComponentIndustrial></costList>
+    <apparel>
+      <bodyPartGroups><li>Torso</li><li>Neck</li><li>Shoulders</li><li>Arms</li><li>Legs</li></bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/GocBlackSuit/GocBlackSuit</wornGraphicPath>
+      <drawData><scale>1.1</scale></drawData>
+      <layers><li>Middle</li><li>Shell</li></layers><tags Inherit="False"><li>SCP_GocBlackUniform</li></tags>
+      <defaultOutfitTags><li>Soldier</li></defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options"><options><li><only>(1,1,1)</only></li></options></colorGenerator>
+  </ThingDef>
+  <ThingDef ParentName="ArmorHelmetMakeableBase">
+    <defName>SCP_GocBlackHelmet</defName><label>GOC black tactical helmet</label>
+    <description>A dark communications helmet with ballistic goggles and a sealed face covering for GOC field teams.</description>
+    <techLevel>Industrial</techLevel>
+    <graphicData><texPath>Things/Item/Apparel/ScpGocBlackHelmet</texPath><graphicClass>Graphic_Single</graphicClass><shaderType>Cutout</shaderType></graphicData>
+    <statBases><MarketValue>370</MarketValue><MaxHitPoints>220</MaxHitPoints><Mass>1.5</Mass><Flammability>0.35</Flammability><ArmorRating_Sharp>0.75</ArmorRating_Sharp><ArmorRating_Blunt>0.34</ArmorRating_Blunt><ArmorRating_Heat>0.38</ArmorRating_Heat><Insulation_Cold>4</Insulation_Cold><Insulation_Heat>2</Insulation_Heat><EquipDelay>3</EquipDelay><WorkToMake>5000</WorkToMake></statBases>
+    <costList><Cloth>15</Cloth><Steel>25</Steel><ComponentIndustrial>1</ComponentIndustrial></costList>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity><bodyPartGroups><li>FullHead</li></bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/GocBlackHelmet/GocBlackHelmet</wornGraphicPath>
+      <drawData><scale>0.60</scale><dataSouth><offset>(0.05,0,0.01)</offset></dataSouth><dataNorth><offset>(0.05,0,0.01)</offset></dataNorth><dataEast><offset>(0.02,0,-0.04)</offset></dataEast><dataWest><offset>(-0.02,0,-0.04)</offset></dataWest></drawData>
+      <layers><li>Overhead</li></layers><tags Inherit="False"><li>SCP_GocBlackUniform</li></tags>
+      <defaultOutfitTags><li>Soldier</li></defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options"><options><li><only>(1,1,1)</only></li></options></colorGenerator>
+  </ThingDef>
+  <ThingDef ParentName="ArmorMachineableBase">
+    <defName>SCP_GocWhiteExosuit</defName>
+    <label>GOC White Suit</label>
+    <description>A second-generation powered combat garment issued to Global Occult Coalition strike teams for direct para-threat elimination. Layered white ceramic plates cover a compact graphite exoframe, while blue-lit control channels coordinate the suit's actuators and sealed life support.</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData><texPath>Things/Item/Apparel/ScpGocWhiteExosuit</texPath><graphicClass>Graphic_Single</graphicClass><shaderType>Cutout</shaderType><drawSize>(1.2,1.2)</drawSize></graphicData>
+    <statBases>
+      <MarketValue>5200</MarketValue><MaxHitPoints>700</MaxHitPoints><Mass>15.5</Mass><Flammability>0.25</Flammability>
+      <ArmorRating_Sharp>1.38</ArmorRating_Sharp><ArmorRating_Blunt>0.575</ArmorRating_Blunt><ArmorRating_Heat>0.69</ArmorRating_Heat>
+      <Insulation_Cold>60</Insulation_Cold><Insulation_Heat>14</Insulation_Heat><EquipDelay>18</EquipDelay>
+    </statBases>
+    <equippedStatOffsets><MoveSpeed>-0.30</MoveSpeed></equippedStatOffsets>
+    <thingCategories><li>ApparelArmor</li></thingCategories>
+    <costList><Steel>120</Steel><Plasteel>120</Plasteel><ComponentIndustrial>12</ComponentIndustrial><ComponentSpacer>4</ComponentSpacer></costList>
+    <apparel>
+      <bodyPartGroups><li>Torso</li><li>Neck</li><li>Shoulders</li><li>Arms</li><li>Legs</li></bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/GocWhiteExosuit/GocWhiteExosuit</wornGraphicPath>
+      <drawData>
+        <scale>1.125</scale>
+        <dataSouth><offset>(0,0,-0.03)</offset></dataSouth>
+        <dataNorth><offset>(0,0,-0.03)</offset><layer>80</layer></dataNorth>
+        <dataEast><offset>(0,0,-0.03)</offset></dataEast>
+        <dataWest><offset>(0,0,-0.03)</offset></dataWest>
+      </drawData>
+      <layers><li>Middle</li><li>Shell</li></layers><tags Inherit="False"><li>SCP_GocWhiteSuit</li></tags>
+      <defaultOutfitTags><li>Soldier</li><li>Spacefarer</li></defaultOutfitTags><useDeflectMetalEffect>true</useDeflectMetalEffect>
+      <soundWear>Wear_PowerArmor</soundWear><soundRemove>Remove_PowerArmor</soundRemove>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options"><options><li><only>(1,1,1)</only></li></options></colorGenerator>
+    <tradeTags><li>HiTechArmor</li><li>Armor</li></tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="ArmorHelmetMakeableBase">
+    <defName>SCP_GocWhiteHelmet</defName>
+    <label>GOC White Suit helmet</label>
+    <description>The sealed helmet of a GOC White Suit. Its pointed ceramic shell houses narrow multispectral optics, hardened communications and filters intended for operations against hostile para-threats.</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData><texPath>Things/Item/Apparel/ScpGocWhiteHelmet</texPath><graphicClass>Graphic_Single</graphicClass><shaderType>Cutout</shaderType><drawSize>(0.95,0.95)</drawSize></graphicData>
+    <statBases>
+      <MarketValue>2100</MarketValue><MaxHitPoints>420</MaxHitPoints><Mass>2.5</Mass><Flammability>0.25</Flammability>
+      <ArmorRating_Sharp>1.38</ArmorRating_Sharp><ArmorRating_Blunt>0.575</ArmorRating_Blunt><ArmorRating_Heat>0.69</ArmorRating_Heat>
+      <Insulation_Cold>5</Insulation_Cold><Insulation_Heat>3</Insulation_Heat><EquipDelay>6</EquipDelay>
+    </statBases>
+    <thingCategories><li>ApparelArmor</li></thingCategories>
+    <costList><Steel>35</Steel><Plasteel>45</Plasteel><ComponentIndustrial>5</ComponentIndustrial><ComponentSpacer>1</ComponentSpacer></costList>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity><bodyPartGroups><li>FullHead</li></bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/GocWhiteHelmet/GocWhiteHelmet</wornGraphicPath>
+      <drawData>
+        <scale>0.725</scale>
+        <dataSouth><offset>(0,0,-0.07)</offset></dataSouth>
+        <dataNorth><offset>(0,0,-0.07)</offset></dataNorth>
+        <dataEast><offset>(0.04,0,-0.08)</offset></dataEast>
+        <dataWest><offset>(-0.04,0,-0.08)</offset></dataWest>
+      </drawData>
+      <layers><li>Overhead</li></layers><tags Inherit="False"><li>SCP_GocWhiteSuit</li></tags>
+      <defaultOutfitTags><li>Soldier</li><li>Spacefarer</li></defaultOutfitTags><useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options"><options><li><only>(1,1,1)</only></li></options></colorGenerator>
+    <tradeTags><li>HiTechArmor</li><li>Armor</li></tradeTags>
+  </ThingDef>
+</Defs>

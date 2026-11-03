@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_106Recovery.questNameRules.rulesStrings><li>questName->Сдержать SCP-106</li></SCP_106Recovery.questNameRules.rulesStrings>
+  <SCP_106Recovery.questDescriptionRules.rulesStrings><li>questDescription->Соседний сектор Фонда потерял контроль над SCP-106. Это поручение открывает исследование камеры за 300 очков. Изучите проект, постройте пустую камеру и подайте питание. Затем запустите Протокол возврата Ларри и выберите колониста или пленника приманкой. Пешка останется внутри камеры. После её помещения SCP-106 появится на карте и медленно направится к камере; стены задерживают его. Когда объект достигнет камеры, он будет заключён, а приманка погибнет.</li></SCP_106Recovery.questDescriptionRules.rulesStrings>
+</LanguageData>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <TerrainDef ParentName="NaturalTerrainBase">
+    <defName>SCP_093BlueGround</defName><label>blue field</label>
+    <texturePath>Terrain/Surfaces/Sand</texturePath><color>(91,113,146)</color>
+    <edgeType>FadeRough</edgeType><categoryType>Sand</categoryType>
+    <renderPrecedence>350</renderPrecedence><fertility>0</fertility><pathCost>4</pathCost>
+    <statBases><Beauty>-2</Beauty><Cleanliness>-1</Cleanliness></statBases>
+    <scatterType>SoftDry</scatterType>
+    <affordances><li>Light</li><li>Medium</li><li>Heavy</li></affordances>
+  </TerrainDef>
+  <TerrainDef ParentName="NaturalTerrainBase">
+    <defName>SCP_093BluePit</defName><label>blue pit</label>
+    <texturePath>Terrain/Surfaces/Sand</texturePath><color>(52,65,85)</color>
+    <edgeType>FadeRough</edgeType><categoryType>Sand</categoryType>
+    <renderPrecedence>351</renderPrecedence><fertility>0</fertility><pathCost>5</pathCost>
+    <statBases><Beauty>-3</Beauty><Cleanliness>-1</Cleanliness></statBases>
+    <scatterType>SoftDry</scatterType>
+    <affordances><li>Light</li><li>Medium</li><li>Heavy</li></affordances>
+  </TerrainDef>
+  <TerrainDef ParentName="NaturalTerrainBase">
+    <defName>SCP_093GreenGround</defName><label>green field</label>
+    <texturePath>Terrain/Surfaces/Sand</texturePath><color>(91,111,77)</color>
+    <edgeType>FadeRough</edgeType><categoryType>Sand</categoryType>
+    <renderPrecedence>350</renderPrecedence><fertility>0</fertility><pathCost>4</pathCost>
+    <statBases><Beauty>-2</Beauty><Cleanliness>-1</Cleanliness></statBases>
+    <scatterType>SoftDry</scatterType>
+    <affordances><li>Light</li><li>Medium</li><li>Heavy</li></affordances>
+  </TerrainDef>
+  <TerrainDef ParentName="NaturalTerrainBase">
+    <defName>SCP_093GreenField</defName><label>abandoned farmland</label>
+    <texturePath>Terrain/Surfaces/Sand</texturePath><color>(109,103,67)</color>
+    <edgeType>FadeRough</edgeType><categoryType>Sand</categoryType>
+    <renderPrecedence>351</renderPrecedence><fertility>0</fertility><pathCost>4</pathCost>
+    <statBases><Beauty>-2</Beauty><Cleanliness>-1</Cleanliness></statBases>
+    <scatterType>SoftDry</scatterType>
+    <affordances><li>Light</li><li>Medium</li><li>Heavy</li></affordances>
+  </TerrainDef>
+  <TerrainDef ParentName="NaturalTerrainBase">
+    <defName>SCP_093YellowGround</defName><label>yellow wasteland</label>
+    <texturePath>Terrain/Surfaces/Sand</texturePath><color>(147,131,83)</color>
+    <edgeType>FadeRough</edgeType><categoryType>Sand</categoryType>
+    <renderPrecedence>350</renderPrecedence><fertility>0</fertility><pathCost>4</pathCost>
+    <statBases><Beauty>-3</Beauty><Cleanliness>-1</Cleanliness></statBases>
+    <scatterType>SoftDry</scatterType>
+    <affordances><li>Light</li><li>Medium</li><li>Heavy</li></affordances>
+  </TerrainDef>
+  <TerrainDef ParentName="NaturalTerrainBase">
+    <defName>SCP_093VioletGround</defName><label>violet wasteland</label>
+    <texturePath>Terrain/Surfaces/Sand</texturePath><color>(111,86,111)</color>
+    <edgeType>FadeRough</edgeType><categoryType>Sand</categoryType>
+    <renderPrecedence>350</renderPrecedence><fertility>0</fertility><pathCost>4</pathCost>
+    <statBases><Beauty>-3</Beauty><Cleanliness>-1</Cleanliness></statBases>
+    <scatterType>SoftDry</scatterType>
+    <affordances><li>Light</li><li>Medium</li><li>Heavy</li></affordances>
+  </TerrainDef>
+  <TerrainDef ParentName="NaturalTerrainBase">
+    <defName>SCP_093RedDust</defName>
+    <label>red dust</label>
+    <texturePath>Terrain/Surfaces/Sand</texturePath>
+    <color>(150,80,74)</color>
+    <edgeType>FadeRough</edgeType>
+    <categoryType>Sand</categoryType>
+    <renderPrecedence>350</renderPrecedence>
+    <fertility>0</fertility>
+    <pathCost>4</pathCost>
+    <statBases><Beauty>-3</Beauty><Cleanliness>-1</Cleanliness></statBases>
+    <scatterType>SoftDry</scatterType>
+    <affordances><li>Light</li><li>Medium</li><li>Heavy</li></affordances>
+  </TerrainDef>
+</Defs>

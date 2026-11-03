@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <RulePackDef>
+    <defName>SCP_NamerGocSettlement</defName>
+    <rulePack>
+      <rulesStrings><li>r_name->[goc_site]</li></rulesStrings>
+      <rulesFiles><li>goc_site->Names/GocSites</li></rulesFiles>
+    </rulePack>
+  </RulePackDef>
+</Defs>

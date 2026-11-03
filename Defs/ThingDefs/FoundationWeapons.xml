@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="Gun_AssaultRifle">
+    <defName>SCP_Nu7HKCarbine</defName>
+    <label>HK416 carbine</label>
+    <description>A compact short-stroke carbine standardized for Nu-7 rifle teams. Its optical sight, controlled three-round burst and rigid handguard make it accurate during rapid movement through damaged facilities.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/ScpNu7HK416</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <recipeMaker>
+      <researchPrerequisite>SCP_FoundationBallistics</researchPrerequisite>
+      <skillRequirements><Crafting>7</Crafting></skillRequirements>
+      <recipeUsers Inherit="False"><li>SCP_FoundationArmoryModule</li></recipeUsers>
+      <displayPriority>207</displayPriority>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>42000</WorkToMake><Mass>3.7</Mass>
+      <AccuracyTouch>0.63</AccuracyTouch><AccuracyShort>0.76</AccuracyShort>
+      <AccuracyMedium>0.70</AccuracyMedium><AccuracyLong>0.57</AccuracyLong>
+      <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
+    </statBases>
+    <costList><Steel>55</Steel><Plasteel>10</Plasteel><ComponentIndustrial>6</ComponentIndustrial></costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass><hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_AssaultRifle</defaultProjectile><warmupTime>0.9</warmupTime><range>30.9</range>
+        <burstShotCount>3</burstShotCount><ticksBetweenBurstShots>9</ticksBetweenBurstShots>
+        <soundCast>Shot_AssaultRifle</soundCast><soundCastTail>GunTail_Medium</soundCastTail><muzzleFlashScale>8</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags Inherit="False"><li>SCPNu7HK416</li></weaponTags>
+    <tradeTags><li>WeaponRanged</li></tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="Gun_LMG">
+    <defName>SCP_Nu7LightMachineGun</defName>
+    <label>M249 light machine gun</label>
+    <description>A fast-firing 5.56 mm belt-fed machine gun issued to Nu-7 fire teams. Its closed ammunition box and sustained bursts suppress threats, but each round is less powerful against armor than the Insurgency's PKP.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/ScpNu7M249</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <recipeMaker>
+      <researchPrerequisite>SCP_FoundationBallistics</researchPrerequisite>
+      <skillRequirements><Crafting>7</Crafting></skillRequirements>
+      <recipeUsers Inherit="False"><li>SCP_FoundationArmoryModule</li></recipeUsers>
+      <displayPriority>208</displayPriority>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>50000</WorkToMake><Mass>9.4</Mass>
+      <AccuracyTouch>0.43</AccuracyTouch><AccuracyShort>0.55</AccuracyShort>
+      <AccuracyMedium>0.44</AccuracyMedium><AccuracyLong>0.32</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+    <costList><Steel>80</Steel><Plasteel>12</Plasteel><ComponentIndustrial>7</ComponentIndustrial></costList>
+    <verbs Inherit="False">
+      <li>
+        <verbClass>Verb_Shoot</verbClass><hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>SCP_ProjectileNu7M249Round</defaultProjectile><warmupTime>1.4</warmupTime><range>27.9</range>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots><burstShotCount>8</burstShotCount>
+        <soundCast>Shot_Minigun</soundCast><soundCastTail>GunTail_Medium</soundCastTail><muzzleFlashScale>10</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags Inherit="False"><li>SCPNu7M249</li></weaponTags>
+    <tradeTags><li>WeaponRanged</li></tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>SCP_ProjectileNu7M249Round</defName>
+    <label>M249 bullet</label>
+    <graphicData><texPath>Things/Projectile/ScpShotgunPellet</texPath><graphicClass>Graphic_Single</graphicClass></graphicData>
+    <projectile><damageDef>Bullet</damageDef><damageAmountBase>11</damageAmountBase><stoppingPower>1</stoppingPower><armorPenetrationBase>0.14</armorPenetrationBase><speed>46</speed></projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>SCP_ProjectileSpasTwelve</defName>
+    <label>SPAS-12 buckshot</label>
+    <graphicData>
+      <texPath>Things/Projectile/ScpShotgunPellet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>20</damageAmountBase>
+      <stoppingPower>3.5</stoppingPower>
+      <armorPenetrationBase>0.18</armorPenetrationBase>
+      <speed>60</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>SCP_FoundationSpasTwelve</defName>
+    <label>SPAS-12 combat shotgun</label>
+    <description>A rugged semi-automatic combat shotgun issued to Foundation containment teams. Its rapid follow-up shot and heavy buckshot are devastating in corridors, though its effectiveness falls sharply at long range.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/ScpSPAS12</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Shotgun</soundInteract>
+    <weaponClasses><li>ShortShots</li><li>RangedHeavy</li></weaponClasses>
+    <recipeMaker>
+      <researchPrerequisite>SCP_FoundationBallistics</researchPrerequisite>
+      <skillRequirements><Crafting>7</Crafting></skillRequirements>
+      <recipeUsers Inherit="False"><li>SCP_FoundationArmoryModule</li></recipeUsers>
+      <displayPriority>209</displayPriority>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>36000</WorkToMake><Mass>4.4</Mass>
+      <AccuracyTouch>0.88</AccuracyTouch><AccuracyShort>0.90</AccuracyShort>
+      <AccuracyMedium>0.74</AccuracyMedium><AccuracyLong>0.45</AccuracyLong>
+      <RangedWeapon_Cooldown>1.55</RangedWeapon_Cooldown>
+    </statBases>
+    <costList><Steel>65</Steel><Plasteel>8</Plasteel><ComponentIndustrial>5</ComponentIndustrial></costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass><hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>SCP_ProjectileSpasTwelve</defaultProjectile><warmupTime>0.65</warmupTime><range>18.9</range>
+        <burstShotCount>2</burstShotCount><ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+        <soundCast>Shot_Shotgun</soundCast><soundCastTail>GunTail_Heavy</soundCastTail><muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li><label>stock</label><capacities><li>Blunt</li></capacities><power>10</power><cooldownTime>2</cooldownTime></li>
+      <li><label>barrel</label><capacities><li>Blunt</li><li>Poke</li></capacities><power>10</power><cooldownTime>2</cooldownTime></li>
+    </tools>
+    <weaponTags Inherit="False"><li>SCPFoundationSPAS12</li></weaponTags>
+    <tradeTags><li>WeaponRanged</li></tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>SCP_ProjectileEMPRifle</defName>
+    <label>Foundation EMP pulse</label>
+    <graphicData>
+      <texPath>Things/Projectile/ScpEMPPulse</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>MoteGlow</shaderType>
+      <drawSize>(0.52,0.24)</drawSize>
+      <color>(0.18,0.69,1,1)</color>
+    </graphicData>
+    <thingClass>ScpFoundation.Interactions.Projectile_FoundationEmp</thingClass>
+    <projectile>
+      <speed>70</speed>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>12</damageAmountBase>
+      <explosionRadius>1.75</explosionRadius>
+      <arcHeightFactor>0.04</arcHeightFactor>
+      <shadowSize>0.25</shadowSize>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="Gun_AssaultRifle">
+    <defName>SCP_FoundationEMPRifle</defName>
+    <label>Foundation EMP rifle</label>
+    <description>A Foundation rifle firing magnetically accelerated rounds. Each hit deals physical damage and releases a short EMP pulse that disrupts mechanoids and powered equipment. A direct hit can cause brain shock in a human carrying at least three implants.</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/ScpFoundationEMPRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <recipeMaker>
+      <researchPrerequisite>SCP_FoundationSpecialArmament</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>SCP_FoundationArmoryModule</li>
+      </recipeUsers>
+      <displayPriority>205</displayPriority>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>48000</WorkToMake>
+      <Mass>4.1</Mass>
+      <AccuracyTouch>0.58</AccuracyTouch>
+      <AccuracyShort>0.72</AccuracyShort>
+      <AccuracyMedium>0.68</AccuracyMedium>
+      <AccuracyLong>0.52</AccuracyLong>
+      <RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Plasteel>45</Plasteel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>SCP_ProjectileEMPRifle</defaultProjectile>
+        <warmupTime>1.1</warmupTime>
+        <range>28.9</range>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>11</ticksBetweenBurstShots>
+        <soundCast>Shot_ChargeRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>7</muzzleFlashScale>
+        <targetParams><canTargetLocations>true</canTargetLocations></targetParams>
+      </li>
+    </verbs>
+    <weaponTags Inherit="False">
+      <li>SCPFoundationEMP</li>
+    </weaponTags>
+    <tradeTags>
+      <li>WeaponRanged</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>SCP_ProjectileTranqDart</defName>
+    <label>Foundation tranquilizer dart</label>
+    <thingClass>ScpFoundation.Interactions.Projectile_TranqDart</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/ScpTranqDart</texPath><graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType><drawSize>(0.38,0.16)</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef><damageAmountBase>1</damageAmountBase><stoppingPower>0.1</stoppingPower>
+      <armorPenetrationBase>0.02</armorPenetrationBase><speed>65</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>SCP_FoundationTranqRifle</defName>
+    <label>Foundation tranquilizer rifle</label>
+    <description>A precision pneumatic rifle for capturing living subjects with minimal tissue damage. Its darts build up a fast-acting sedative in organic targets: a human-sized subject normally collapses after three hits, while larger creatures require proportionally more. The compound has no effect on mechanoids.</description>
+    <techLevel>Industrial</techLevel>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/ScpFoundationTranqRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <weaponClasses><li>LongShots</li></weaponClasses>
+    <recipeMaker>
+      <researchPrerequisite>SCP_FoundationCaptureWeapons</researchPrerequisite>
+      <skillRequirements><Crafting>6</Crafting></skillRequirements>
+      <recipeUsers Inherit="False"><li>SCP_FoundationArmoryModule</li></recipeUsers><displayPriority>210</displayPriority>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>28000</WorkToMake><MarketValue>520</MarketValue><Mass>3.8</Mass>
+      <AccuracyTouch>0.60</AccuracyTouch><AccuracyShort>0.88</AccuracyShort>
+      <AccuracyMedium>0.92</AccuracyMedium><AccuracyLong>0.78</AccuracyLong>
+      <RangedWeapon_Cooldown>1.9</RangedWeapon_Cooldown>
+    </statBases>
+    <costList><Steel>45</Steel><Plasteel>8</Plasteel><ComponentIndustrial>5</ComponentIndustrial><Neutroamine>10</Neutroamine></costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass><hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>SCP_ProjectileTranqDart</defaultProjectile><warmupTime>1.15</warmupTime><range>27.9</range>
+        <burstShotCount>1</burstShotCount><soundCast>Shot_BoltActionRifle</soundCast><soundCastTail>GunTail_Light</soundCastTail><muzzleFlashScale>1</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools><li><label>stock</label><capacities><li>Blunt</li></capacities><power>8</power><cooldownTime>2</cooldownTime></li></tools>
+    <weaponTags Inherit="False"><li>SCPFoundationTranq</li></weaponTags><tradeTags><li>WeaponRanged</li></tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>SCP_ProjectileContainmentNet</defName>
+    <label>containment net canister</label>
+    <thingClass>ScpFoundation.Interactions.Projectile_ContainmentNet</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/ScpContainmentNetCanister</texPath><graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.42,0.24)</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Blunt</damageDef><damageAmountBase>2</damageAmountBase><stoppingPower>0.2</stoppingPower>
+      <armorPenetrationBase>0</armorPenetrationBase><speed>38</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>SCP_FoundationNetLauncher</defName>
+    <label>Foundation containment net launcher</label>
+    <description>A short-range pneumatic launcher that bursts a weighted restraint net around its target. A single hit immobilizes a human-sized subject for roughly three hours without serious injury. Large creatures can keep moving until struck by enough nets, making the launcher useful for capture but unreliable as a general battlefield weapon.</description>
+    <techLevel>Industrial</techLevel>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/ScpFoundationNetLauncher</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Shotgun</soundInteract>
+    <weaponClasses><li>RangedHeavy</li><li>ShortShots</li></weaponClasses>
+    <recipeMaker>
+      <researchPrerequisite>SCP_FoundationCaptureWeapons</researchPrerequisite>
+      <skillRequirements><Crafting>7</Crafting></skillRequirements>
+      <recipeUsers Inherit="False"><li>SCP_FoundationArmoryModule</li></recipeUsers><displayPriority>211</displayPriority>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>34000</WorkToMake><MarketValue>620</MarketValue><Mass>5.6</Mass>
+      <AccuracyTouch>0.88</AccuracyTouch><AccuracyShort>0.82</AccuracyShort>
+      <AccuracyMedium>0.58</AccuracyMedium><AccuracyLong>0.20</AccuracyLong>
+      <RangedWeapon_Cooldown>4.5</RangedWeapon_Cooldown>
+    </statBases>
+    <costList><Steel>60</Steel><Plasteel>12</Plasteel><ComponentIndustrial>6</ComponentIndustrial></costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass><hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>SCP_ProjectileContainmentNet</defaultProjectile><warmupTime>0.8</warmupTime><range>16.9</range>
+        <burstShotCount>1</burstShotCount><soundCast>Shot_Shotgun</soundCast><soundCastTail>GunTail_Heavy</soundCastTail><muzzleFlashScale>2</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools><li><label>stock</label><capacities><li>Blunt</li></capacities><power>10</power><cooldownTime>2.2</cooldownTime></li></tools>
+    <weaponTags Inherit="False"><li>SCPFoundationNet</li></weaponTags><tradeTags><li>WeaponRanged</li></tradeTags>
+  </ThingDef>
+</Defs>

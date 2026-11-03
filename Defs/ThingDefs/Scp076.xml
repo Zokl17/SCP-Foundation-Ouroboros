@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="Human">
+    <defName>SCP_076Pawn</defName>
+    <label>SCP-076-2 (Able)</label>
+    <description>A Foundation combatant with extreme speed and strength who produces black blades during combat.</description>
+    <thingClass>ScpFoundation.Anomalies.Pawn_Scp076</thingClass>
+    <statBases><MoveSpeed>7.2</MoveSpeed></statBases>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseWeapon">
+    <defName>SCP_076VoidBlade</defName>
+    <label>Able's black blade</label>
+    <description>An anomalous blade produced by SCP-076-2. It disappears after being dropped.</description>
+    <thingClass>ScpFoundation.Anomalies.Thing_Scp076Blade</thingClass>
+    <techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/Scp076VoidBlade</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tickerType>Rare</tickerType>
+    <tradeability>None</tradeability>
+    <statBases><Mass>1.5</Mass><MarketValue>0</MarketValue><Flammability>0</Flammability></statBases>
+    <weaponClasses><li>Melee</li><li>MeleePiercer</li></weaponClasses>
+    <tools>
+      <li><label>edge</label><capacities><li>Cut</li></capacities><power>26</power><cooldownTime>1.6</cooldownTime></li>
+      <li><label>point</label><capacities><li>Stab</li></capacities><power>29</power><cooldownTime>1.8</cooldownTime></li>
+    </tools>
+  </ThingDef>
+</Defs>

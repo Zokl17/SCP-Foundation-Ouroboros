@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_GroundTurretMount.label>модульная платформа Фонда</SCP_GroundTurretMount.label>
+  <SCP_GroundTurretMount.description>Пустое основание наземной турели. После постройки выберите его и установите четырёхствольный модуль или миниган.</SCP_GroundTurretMount.description>
+  <SCP_GroundQuadTurret.label>четырёхствольная турель Фонда</SCP_GroundQuadTurret.label>
+  <SCP_GroundQuadTurret.description>Низкая наземная турель с четырьмя автоматическими стволами. Боевой модуль можно заменить на миниган, сохранив основание.</SCP_GroundQuadTurret.description>
+  <SCP_GroundMinigunTurret.label>турель-миниган Фонда</SCP_GroundMinigunTurret.label>
+  <SCP_GroundMinigunTurret.description>Модуль для плотного огня по наземным целям. Его можно заменить на четырёхствольную установку.</SCP_GroundMinigunTurret.description>
+  <SCP_GunGroundQuad.label>четырёхствольный модуль</SCP_GunGroundQuad.label>
+  <SCP_GunGroundMinigun.label>модуль минигана</SCP_GunGroundMinigun.label>
+  <SCP_ProjectileGroundQuad.label>снаряд четырёхствольной турели Фонда</SCP_ProjectileGroundQuad.label>
+  <SCP_ProjectileGroundMinigun.label>пуля минигана Фонда</SCP_ProjectileGroundMinigun.label>
+</LanguageData>

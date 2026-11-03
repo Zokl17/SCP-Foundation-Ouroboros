@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <JobDef>
+    <defName>SCP_Load650ForReturn</defName>
+    <driverClass>ScpFoundation.Interactions.JobDriver_Load650ForReturn</driverClass>
+    <reportString>Loading SCP-650 aboard the Foundation shuttle.</reportString>
+    <playerInterruptible>true</playerInterruptible>
+    <casualInterruptible>false</casualInterruptible>
+  </JobDef>
+</Defs>

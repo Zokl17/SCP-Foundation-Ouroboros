@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_OuroborosRoutingLogCore.label>утраченный журнал маршрутизации</SCP_OuroborosRoutingLogCore.label>
+  <SCP_OuroborosRoutingLogCore.description>Физическая запись первого узла закрытого канала Фонда. Извлеките её и доставьте на базу.</SCP_OuroborosRoutingLogCore.description>
+</LanguageData>

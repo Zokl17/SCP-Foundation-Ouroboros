@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef>
+    <defName>SCP_458Box</defName>
+    <label>SCP-458 pizza box</label>
+    <description>A cardboard box that produces the pizza preferred by the person who opens it. The colony can use it once every six hours under a staff canteen protocol. Select the box or right-click it with a colonist to order a meal.</description>
+    <thingClass>ScpFoundation.Anomalies.Thing_Scp458Box</thingClass>
+    <category>Item</category><altitudeLayer>Item</altitudeLayer>
+    <tickerType>Never</tickerType><selectable>true</selectable><stackLimit>1</stackLimit>
+    <alwaysHaulable>true</alwaysHaulable><designateHaulable>false</designateHaulable>
+    <graphicData><texPath>Things/Item/ScpArtifacts/Scp458Box</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>0.9</drawSize></graphicData>
+    <statBases><MaxHitPoints>1000</MaxHitPoints><Mass>0.2</Mass><MarketValue>0</MarketValue><Flammability>0</Flammability></statBases>
+    <tradeability>None</tradeability>
+    <comps><li Class="CompProperties_Forbiddable" /></comps>
+  </ThingDef>
+  <ThingDef ParentName="MealFineBase">
+    <defName>SCP_458Pizza</defName>
+    <label>SCP-458 pizza</label>
+    <description>A fresh pizza from SCP-458. The box matched the taste of the person who opened it.</description>
+    <graphicData><texPath>Things/Item/ScpArtifacts/Scp458Pizza</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>0.8</drawSize></graphicData>
+    <statBases><MarketValue>20</MarketValue><Nutrition>0.9</Nutrition></statBases>
+    <ingestible><ingestEffect>EatVegetarian</ingestEffect><ingestSound>Meal_Eat</ingestSound><tasteThought>SCP_458DeliciousPizza</tasteThought></ingestible>
+  </ThingDef>
+</Defs>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_AmnesticConfusion.label>амнестическая спутанность</SCP_AmnesticConfusion.label>
+  <SCP_AmnesticConfusion.description>Временная дезориентация и замедление мышления, вызванные амнезиаком Фонда класса A.</SCP_AmnesticConfusion.description>
+  <SCP_MnesticStabilization.label>мнестическая стабилизация</SCP_MnesticStabilization.label>
+  <SCP_MnesticStabilization.description>Когнитивное усиление препаратом Фонда. Психическое воздействие ослаблено, а устойчивость разума повышена.</SCP_MnesticStabilization.description>
+  <SCP_TranqSedation.label>транквилизаторная седация</SCP_TranqSedation.label>
+  <SCP_TranqSedation.description>Быстродействующий транквилизатор Фонда подавляет центральную нервную систему субъекта. Дополнительные дозы углубляют седацию; необходимое количество зависит от размера тела.</SCP_TranqSedation.description>
+  <SCP_TranqSedation.stages.0.label>следовая</SCP_TranqSedation.stages.0.label>
+  <SCP_TranqSedation.stages.1.label>седация</SCP_TranqSedation.stages.1.label>
+  <SCP_TranqSedation.stages.2.label>обездвиживание</SCP_TranqSedation.stages.2.label>
+  <SCP_ContainmentNetting.label>удерживающая сеть</SCP_ContainmentNetting.label>
+  <SCP_ContainmentNetting.description>Утяжелённые удерживающие тросы Фонда обмотали цель. Субъекты размером с человека и меньше обездвижены, а более крупные тела замедлены, пока не накопится достаточная масса сетей.</SCP_ContainmentNetting.description>
+  <SCP_ContainmentNetting.stages.0.label>опутывание</SCP_ContainmentNetting.stages.0.label>
+  <SCP_ContainmentNetting.stages.1.label>обездвиживание</SCP_ContainmentNetting.stages.1.label>
+</LanguageData>

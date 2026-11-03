@@ -1,0 +1,1285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_682Contained>SCP-682 is secured at its post.</SCP_682Contained>
+  <SCP_682Stunned>Incapacitated: {0} remaining. It can be moved to a post.</SCP_682Stunned>
+  <SCP_682Hunting>Active and dangerous. Damage it enough to recapture it.</SCP_682Hunting>
+  <SCP_682Integrity>Integrity: {0}/{1}. Regenerating.</SCP_682Integrity>
+  <SCP_682NeedsIncapacitation>Incapacitate SCP-682 with damage first.</SCP_682NeedsIncapacitation>
+  <SCP_682Breach>SCP-682 has escaped containment. Evacuate personnel and restore the chamber defenses.</SCP_682Breach>
+  <SCP_682DiscoveryUnavailable>SCP-682 cannot be discovered here: use a home map with four colonists and an accessible open cell.</SCP_682DiscoveryUnavailable>
+  <SCP_682ObservedReport>Clearance 1 — object record
+SCP-682 is a large reptilian creature with exceptional resilience. The discovered specimen is temporarily incapacitated and recovering quickly.</SCP_682ObservedReport>
+  <SCP_682PartialReport>Clearance 2 — regeneration
+Ordinary damage does not destroy it. Severe injury briefly immobilizes it, creating an opportunity for recapture.</SCP_682PartialReport>
+  <SCP_682DocumentedReport>Clearance 3 — containment
+Build and power a six-by-three acid chamber and move SCP-682 to its center. The raised rim is visual; RimWorld has no separate height layer.</SCP_682DocumentedReport>
+  <SCP_682AcidChamberRequirement>Powered SCP-682 acid chamber (6×3 cells).</SCP_682AcidChamberRequirement>
+  <SCP_939SeparateRoomRequirement>Each SCP-939 specimen needs a separate room.</SCP_939SeparateRoomRequirement>
+  <SCP_CreatureTransferUnavailable>The SCP-{0} transfer is unavailable. Check Foundation relations and quest prerequisites.</SCP_CreatureTransferUnavailable>
+  <SCP_CreatureTransferOffered>SCP-{0} transfer quest offered. Prepare the chambers, then accept it manually.</SCP_CreatureTransferOffered>
+  <SCP_CreatureTransferArrivedTitle>SCP-{0} delivered</SCP_CreatureTransferArrivedTitle>
+  <SCP_CreatureTransferArrivedBody>Epsilon-11 delivered {1} SCP-{0} specimen(s). Move them to prepared chambers.</SCP_CreatureTransferArrivedBody>
+  <SCP_CreatureTransferSecuredTitle>SCP-{0} contained</SCP_CreatureTransferSecuredTitle>
+  <SCP_CreatureTransferSecuredBody>The specimens are secured. The escort is returning; the Foundation grants 5 trust.</SCP_CreatureTransferSecuredBody>
+  <SCP_939Contained>SCP-939 is secured at its post.</SCP_939Contained>
+  <SCP_939Sedated>Sedated: {0} remaining.</SCP_939Sedated>
+  <SCP_939Hunting>Awake and hunting. Do not follow the voice.</SCP_939Hunting>
+  <SCP_939VoiceMimic>A human voice is heard near SCP-939. Keep personnel away.</SCP_939VoiceMimic>
+  <SCP_939Breach>SCP-939 is active. Seal doors and keep personnel away from the chamber.</SCP_939Breach>
+  <SCP_939DiscoveryUnavailable>SCP-939 cannot be discovered here: use a home map with two colonists and an accessible open cell.</SCP_939DiscoveryUnavailable>
+  <SCP_939ObservedReport>Clearance 1 — object record
+SCP-939 is a red, eyeless predator. The discovered specimen is temporarily sedated; move it into containment before it wakes.</SCP_939ObservedReport>
+  <SCP_939PartialReport>Clearance 2 — vocalizations
+The creature can imitate human speech in voices indistinguishable from those of people. Do not rely on a familiar voice to identify a person near its cell.</SCP_939PartialReport>
+  <SCP_939DocumentedReport>Clearance 3 — containment
+Keep SCP-939-1 and SCP-939-3 in separate roofed and illuminated rooms of at least five-by-five cells, with reinforced walls and closed armored doors. Transfers between chambers for inspection are optional.</SCP_939DocumentedReport>
+  <SCP_504PostRequirement>Keep the bush on its assigned containment post.</SCP_504PostRequirement>
+  <SCP_504RipeCount>Ripe tomatoes: {0}/{1}</SCP_504RipeCount>
+  <SCP_504DebugNoBush>No SCP-504 bush under the cursor.</SCP_504DebugNoBush>
+  <SCP_504NeedsPost>Carry the bush to a containment post first.</SCP_504NeedsPost>
+  <SCP_504NoRipeFruit>No ripe tomatoes are available yet.</SCP_504NoRipeFruit>
+  <SCP_504NextFruit>Next tomato in: {0}</SCP_504NextFruit>
+  <SCP_504ObservedReport>Clearance 1 — object record
+SCP-504 is a tomato plant whose ripe fruit reacts to speech nearby. Move it to a containment post to observe fruit development.</SCP_504ObservedReport>
+  <SCP_504PartialReport>Clearance 2 — speech tests
+A bad joke or hostile remark can cause one ripe tomato to launch toward the speaker. Neutral conversation and kind words produce no reaction.</SCP_504PartialReport>
+  <SCP_504DocumentedReport>Clearance 3 — containment
+At its post, the bush ripens one tomato per day, up to five. Test speech with two colonists nearby; keep bystanders out of hearing range. The rate and nonlethal injuries are game adaptations.</SCP_504DocumentedReport>
+  <SCP_504NeedListener>A speech test needs another colonist near the tomatoes</SCP_504NeedListener>
+  <SCP_504TestWith>Conduct a speech test with {0}</SCP_504TestWith>
+  <SCP_504DiscoveryUnavailable>SCP-504 discovery needs a home map with a colonist and a free edge cell.</SCP_504DiscoveryUnavailable>
+  <SCP_NotCaptured>Not in custody. Prepare a containment post, then select a colonist and right-click this object to capture it.</SCP_NotCaptured>
+  <SCP_RequirementObservers>At least {0} awake, sighted staff within 6 cells: on observation/research duty or drafted and standing still without fighting. Each must see the object and another observer.</SCP_RequirementObservers>
+  <SCP_DossierButton>Anomaly dossier</SCP_DossierButton><SCP_DossierButtonDesc>Read the information unlocked by observation and research.</SCP_DossierButtonDesc>
+  <SCP_DossierUnknown>No reliable dossier exists yet. Capture the object and investigate it.</SCP_DossierUnknown>
+  <SCP_DossierLevelZeroResearch>Containment has been restored. Research is available, but the object's identity and properties have not yet been established.</SCP_DossierLevelZeroResearch>
+  <SCP_ResearchProgress>Progress to clearance level {0}: {1}. Approximately {2} of baseline research work remains; staff skill changes the actual time.</SCP_ResearchProgress>
+  <SCP_ResearchComplete>The dossier is fully documented. Clearance level 3 has been reached.</SCP_ResearchComplete>
+  <SCP_DutyWatchingForRecovery>watching until containment is restored</SCP_DutyWatchingForRecovery>
+  <SCP_DutyQueuedForRecovery>will watch until containment is restored; work priority: {0}</SCP_DutyQueuedForRecovery>
+  <SCP_ObserveToggle>Watch duty</SCP_ObserveToggle><SCP_ObserveToggleDesc>Allow SCP watch work. Staff remain at a fixed position until their shift ends or they need a break. This does not add knowledge.</SCP_ObserveToggleDesc>
+  <SCP_ResearchToggle>Research</SCP_ResearchToggle><SCP_ResearchToggleDesc>Allow researchers to study in place, change position and advance the dossier. Progress requires containment conditions. Moving researchers do not count as observers.</SCP_ResearchToggleDesc>
+  <SCP_CaptureOrder>Move to {0}</SCP_CaptureOrder>
+  <SCP_ObserveOrder>Observe anomaly</SCP_ObserveOrder><SCP_StudyOrder>Study anomaly</SCP_StudyOrder><SCP_RestoreOrder>Restore containment</SCP_RestoreOrder>
+  <SCP_NoObservationSpot>No reachable, unreserved observation position is available near the object.</SCP_NoObservationSpot>
+  <SCP_ResearchLetter>Anomaly research completed</SCP_ResearchLetter>
+  <SCP_DiscoveryUnavailable>This encounter has already occurred, or the home map lacks two colonists or a safe placement cell.</SCP_DiscoveryUnavailable>
+  <SCP_650Breach>{0}: observation or chamber procedures have failed. Restore staffing and chamber conditions. If the object relocated, move it back to a containment post, then order a colonist to restore containment.</SCP_650Breach>
+  <SCP_173Observed>Direct eye contact: the object is motionless.</SCP_173Observed>
+  <SCP_173Unobserved>No one is looking directly at the object.</SCP_173Unobserved>
+  <SCP_173Secured>Containment is active: the object remains at its post.</SCP_173Secured>
+  <SCP_173CarryNeedsObservers>Two observers who can see SCP-173 and each other are required before it can be moved.</SCP_173CarryNeedsObservers>
+  <SCP_173TransportNeedsTeam>Moving SCP-173 requires a carrier and two available sighted escorts.</SCP_173TransportNeedsTeam>
+  <SCP_173TransportWaiting>The carrier is waiting: two escorts must see SCP-173 in sufficient light.</SCP_173TransportWaiting>
+  <SCP_173TransportPaused>SCP-173 transport paused: both escorts must see the sculpture in sufficient light.</SCP_173TransportPaused>
+  <SCP_173TransportBlocked>SCP-173 transport paused: the route to the post is blocked.</SCP_173TransportBlocked>
+  <SCP_173PostOccupied>The carrier is waiting: clear the containment post for SCP-173.</SCP_173PostOccupied>
+  <SCP_173TransportAssigned>SCP-173 transport: {0} carries it; {1} and {2} escort.</SCP_173TransportAssigned>
+  <SCP_173CrewOption>{0} → {1} (escorts: {2}, {3})</SCP_173CrewOption>
+  <SCP_173TransportDesc>Choose a carrier. Two nearby colonists will escort SCP-173 and keep eyes on it. The carrier pauses if the escorts lose sight or the route becomes too dark.</SCP_173TransportDesc>
+  <SCP_173Breach>{0}: SCP-173 containment conditions have failed. The sculpture can move and attack without direct observation. Restore lighting and watch duty, then return it to its post.</SCP_173Breach>
+  <SCP_173ObservedReport>Clearance 1 — object record
+Designation: SCP-173
+Class: Euclid
+A sculpture of concrete and rebar. It remains still while a person sees it directly.</SCP_173ObservedReport>
+  <SCP_173PartialReport>Clearance 2 — observation
+Outside direct sight, the object changes position in an instant. Walls, darkness, turning away and blinking can break visual contact. Cameras do not replace on-site staff for containment.</SCP_173PartialReport>
+  <SCP_173DocumentedReport>Clearance 3 — protocol
+Send at least three personnel into the chamber; two must maintain direct eye contact. For game containment, prepare a lit locked room and a post staffed by two observers. A lone watcher is vulnerable while blinking. Unobserved, the object can quickly approach and inflict fatal injury.</SCP_173DocumentedReport>
+  <SCP_650Observed>Clearance 1 — object record
+Name: Black statue
+Designation: SCP-650
+Class: Euclid
+A black humanoid figure without a face or hands, 167 cm tall.</SCP_650Observed>
+  <SCP_650Partial>Clearance 2 — classification history
+Upgraded to Euclid after appearing elsewhere in the facility, behind an employee in their office. Observation was strengthened following the incident.</SCP_650Partial>
+  <SCP_650Documented>Clearance 3 — detailed description
+Unobserved, the statue silently appears behind people in frightening poses. No attacks are recorded; its motive is unknown. Different poses unsettle habituated staff. Its material remains unidentified.
+
+Facility protocol: maintain lighting and continuous sight with two staff who see both the object and each other. Assign a separate researcher: movement between study positions does not replace stationary observation. If the object leaves its post, return it and restore containment conditions.</SCP_650Documented>
+  <SCP_BriefingTitle>Containment instructions</SCP_BriefingTitle>
+  <SCP_BriefingIntro>{0}: available containment instructions. Prepare the chamber and correct any unmet requirements.</SCP_BriefingIntro>
+  <SCP_CheckMet>OK</SCP_CheckMet><SCP_CheckUnmet>REQUIRED</SCP_CheckUnmet><SCP_CheckUnavailable>NOT CHECKED</SCP_CheckUnavailable>
+  <SCP_RequirementLine>[{0}] {1}</SCP_RequirementLine>
+  <SCP_HiddenRequirements>Some procedures still require research. These instructions may be incomplete.</SCP_HiddenRequirements>
+  <SCP_GraceExplanation>Grace period for a continuous violation: {0}. Risk accumulates after that.</SCP_GraceExplanation>
+  <SCP_BreachDeadline>A continuous violation reaches the deterministic breach limit after {0}.</SCP_BreachDeadline>
+  <SCP_ReportRefresh>This report records conditions when opened. Use the Containment instructions button on the object for an updated report.</SCP_ReportRefresh>
+  <SCP_RequirementsButton>Containment instructions</SCP_RequirementsButton>
+  <SCP_RequirementsButtonDesc>Open a separate report with known requirements and their current status.</SCP_RequirementsButtonDesc>
+  <SCP_RecoveryTitle>Containment cannot be restored</SCP_RecoveryTitle>
+  <SCP_RequirementWalls>Room boundary walls made from: {0}. Door materials are not checked.</SCP_RequirementWalls>
+  <SCP_RequirementWallsDoors>Room boundary walls and doors made from: {0}.</SCP_RequirementWallsDoors>
+  <SCP_ContainmentStatus>Containment: {0}</SCP_ContainmentStatus>
+  <SCP_KnowledgeStatus>Knowledge: {0}</SCP_KnowledgeStatus>
+  <SCP_Identification>Designation: {0}</SCP_Identification>
+  <SCP_Status_Unassessed>awaiting assessment</SCP_Status_Unassessed>
+  <SCP_Status_Contained>requirements satisfied</SCP_Status_Contained>
+  <SCP_Status_Grace>conditions violated — intervention required</SCP_Status_Grace>
+  <SCP_ContainmentWarningTitle>Containment conditions violated</SCP_ContainmentWarningTitle>
+  <SCP_ContainmentWarningHint>Restore the containment conditions. If no action is taken, the object will breach containment after some time.</SCP_ContainmentWarningHint>
+  <SCP_AlarmLight>Light is {0}; {1}–{2} is required. Add a lamp or restore power.</SCP_AlarmLight>
+  <SCP_AlarmTemperature>Temperature is {0} °C; {1}–{2} °C is required. Adjust heating or cooling.</SCP_AlarmTemperature>
+  <SCP_AlarmPower>The post has no power. Check the grid, generator and switch.</SCP_AlarmPower>
+  <SCP_AlarmObservers>There are {0} of {1} required observers. Assign sighted staff who can see the object and each other.</SCP_AlarmObservers>
+  <SCP_AlarmRoom>The post needs an enclosed room of at least {0} cells. Roof required: {1}. Check the walls and roof.</SCP_AlarmRoom>
+  <SCP_AlarmDoor>Check the containment door type and close it.</SCP_AlarmDoor>
+  <SCP_Status_AtRisk>violation — at risk</SCP_Status_AtRisk>
+  <SCP_Status_Breached>containment breached</SCP_Status_Breached>
+  <SCP_Knowledge_Unknown>unknown</SCP_Knowledge_Unknown>
+  <SCP_Knowledge_Observed>observed</SCP_Knowledge_Observed>
+  <SCP_Knowledge_PartiallyDocumented>partially documented</SCP_Knowledge_PartiallyDocumented>
+  <SCP_Knowledge_Documented>documented</SCP_Knowledge_Documented>
+  <SCP_Risk>Accumulated risk: {0}; continuous violation: {1} ticks</SCP_Risk>
+  <SCP_BreachCount>Recorded breaches: {0}</SCP_BreachCount>
+  <SCP_AwaitingCheck>Awaiting the next containment check.</SCP_AwaitingCheck>
+  <SCP_RequirementsMet>All evaluated requirements are satisfied.</SCP_RequirementsMet>
+  <SCP_FailedRequirement>Unmet: {0}</SCP_FailedRequirement>
+  <SCP_RequirementsUnknown>Containment details have not been documented.</SCP_RequirementsUnknown>
+  <SCP_RequirementRoom>Enclosed room with at least {0} cells; full roof required: {1}</SCP_RequirementRoom>
+  <SCP_RequirementTemperature>Temperature between {0} and {1} °C</SCP_RequirementTemperature>
+  <SCP_RequirementLight>Light between {0} and {1}</SCP_RequirementLight>
+  <SCP_RequirementPower>The fixture's power consumer is powered</SCP_RequirementPower>
+  <SCP_Yes>yes</SCP_Yes><SCP_No>no</SCP_No>
+  <SCP_MissingDefinition>Missing anomaly definition. See the error log.</SCP_MissingDefinition>
+  <SCP_BreachTitle>Containment breach</SCP_BreachTitle>
+  <SCP_BreachBody>{0} has entered a breached state. The test fixture records the failure but causes no damage. Restore all requirements, then use the developer recovery action.</SCP_BreachBody>
+  <SCP_DevDiscover>DEV: Discover</SCP_DevDiscover>
+  <SCP_DevDiscoverDesc>Set shared knowledge of this anomaly to Observed.</SCP_DevDiscoverDesc>
+  <SCP_DevKnowledge>DEV: Advance stage</SCP_DevKnowledge>
+  <SCP_DevKnowledgeDesc>Advance dossier knowledge, then complete the three experiment stages in order. Experiment stages grant Foundation trust.</SCP_DevKnowledgeDesc>
+  <SCP_DevViolation>DEV: Toggle violation</SCP_DevViolation>
+  <SCP_DevViolationDesc>Toggle a simulated failed requirement. This debug flag is saved; toggle it off before recovery.</SCP_DevViolationDesc>
+  <SCP_DevBreach>DEV: Force breach</SCP_DevBreach>
+  <SCP_DevBreachDesc>Enter a breached state once and execute the configured effects.</SCP_DevBreachDesc>
+  <SCP_DevRecover>DEV: Recover</SCP_DevRecover>
+  <SCP_DevRecoverDesc>Clear risk and the breached state only if all real and simulated requirements are satisfied.</SCP_DevRecoverDesc>
+  <SCP_DebugViolationActive>DEV: simulated requirement violation is active.</SCP_DebugViolationActive>
+  <SCP_RecoveryDenied>Recovery requires a spawned fixture with all containment requirements satisfied and the simulated violation disabled.</SCP_RecoveryDenied>
+  <SCP_SpawnDenied>Select an empty, visible, walkable cell. Existing things will not be replaced.</SCP_SpawnDenied>
+  <SCP_NoCapturePost>Cannot capture: build an empty, reachable containment post.</SCP_NoCapturePost>
+  <SCP_ObserversCount>Observers in position: {0} / {1}.</SCP_ObserversCount>
+  <SCP_ObserversRemoteCount>Remote observation active. Staff physically at the post: {0} / {1}.</SCP_ObserversRemoteCount>
+  <SCP_OperationalBlack>Object at post; containment conditions are met.</SCP_OperationalBlack>
+  <SCP_OperationalYellow>Object at post; containment requires recovery.</SCP_OperationalYellow>
+  <SCP_OperationalRed>Object has left its post.</SCP_OperationalRed>
+  <SCP_Observer_Ready>counted</SCP_Observer_Ready>
+  <SCP_Observer_Unavailable>asleep, downed or unavailable</SCP_Observer_Unavailable>
+  <SCP_Observer_Blind>cannot see</SCP_Observer_Blind>
+  <SCP_Observer_Moving>moving; wait until arrival</SCP_Observer_Moving>
+  <SCP_Observer_Busy>busy with an attack or another stance action</SCP_Observer_Busy>
+  <SCP_Observer_NoDuty>no observation duty and not drafted on standby</SCP_Observer_NoDuty>
+  <SCP_Observer_TooFar>more than 6 cells away</SCP_Observer_TooFar>
+  <SCP_Observer_Blocked>line of sight to the object is blocked</SCP_Observer_Blocked>
+  <SCP_Observer_Dark>light at the object is below 30%</SCP_Observer_Dark>
+  <SCP_ObserverNoPartner>sees the object but no other eligible observer</SCP_ObserverNoPartner>
+  <SCP_ObserversHelp>Assign observation/research, or draft two colonists and stop them in view of the statue and each other. Mere presence of undrafted colonists does not count. This report is a snapshot; reopen it after they arrive.</SCP_ObserversHelp>
+  <SCP_CaptureGraceActive>Prepare the chamber and observation staff. Time remaining: {0}.</SCP_CaptureGraceActive>
+  <SCP_StudyWaiting>Waiting for research containment conditions.</SCP_StudyWaiting>
+  <SCP_ObserveWorking>Watching the object: duty without research.</SCP_ObserveWorking>
+  <SCP_TerminalEmpty>No entries. Build posts or discover an object to populate the list.</SCP_TerminalEmpty>
+  <SCP_TerminalNone>none</SCP_TerminalNone>
+  <SCP_TerminalNoMap>Open a facility map.</SCP_TerminalNoMap>
+  <SCP_TerminalRoomHint>Room conditions are checked at the post. Staff and object-specific requirements are checked separately during containment. Only known requirements are shown.</SCP_TerminalRoomHint>
+  <SCP_TerminalUncaptured>not yet contained</SCP_TerminalUncaptured>
+  <SCP_TerminalStaff>Staff assigned to this object:</SCP_TerminalStaff>
+  <SCP_TerminalOccupants>Contained in this room: {0}</SCP_TerminalOccupants>
+  <SCP_TerminalWorkHint>Watch duty maintains observation. Research advances the dossier. Two dedicated observers are recommended while the researcher changes position.</SCP_TerminalWorkHint>
+  <SCP_TerminalLocate>Show on map</SCP_TerminalLocate>
+  <SCP_TerminalHeading>Foundation terminal — {0}</SCP_TerminalHeading>
+  <SCP_TerminalSystemName>SCP FOUNDATION // CONTAINMENT NETWORK</SCP_TerminalSystemName>
+  <SCP_TerminalOnline>LINK ACTIVE</SCP_TerminalOnline>
+  <SCP_TerminalRegistry>REGISTRY / RECORDS</SCP_TerminalRegistry>
+  <SCP_TerminalDossier>DOSSIER / DATA</SCP_TerminalDossier>
+  <SCP_TerminalFooter>SECURE CHANNEL · LOCAL NODE</SCP_TerminalFooter>
+  <SCP_TerminalClose>Close</SCP_TerminalClose>
+  <SCP_JournalButton>Event journal</SCP_JournalButton>
+  <SCP_FoundationArchiveTab>Foundation archive</SCP_FoundationArchiveTab>
+  <SCP_FoundationArchiveEmpty>No archive files yet. Records will appear after decryption and story events.</SCP_FoundationArchiveEmpty>
+  <SCP_JournalAppendix>Appendix {0}</SCP_JournalAppendix>
+  <SCP_JournalRecordTitle>Event protocol — {0} — No. {1}</SCP_JournalRecordTitle>
+  <SCP_JournalDay>Day {0}</SCP_JournalDay>
+  <SCP_JournalEmpty>No events yet. New records will appear after object interactions and containment failures.</SCP_JournalEmpty>
+  <SCP_JournalCaptured>The object was placed at a containment post.</SCP_JournalCaptured>
+  <SCP_JournalRecovered>Containment conditions were restored.</SCP_JournalRecovered>
+  <SCP_JournalBreached>Containment was breached. Check the post and the object's condition.</SCP_JournalBreached>
+  <SCP_Journal294Research>SCP-294 research unlocked dossier level {0}.</SCP_Journal294Research>
+  <SCP_Journal294Dispensed>{0} requested “{1}” from SCP-294.</SCP_Journal294Dispensed>
+  <SCP_Journal999Hug>SCP-999 hugged {0}; the colonist's mood improved.</SCP_Journal999Hug>
+  <SCP_DevMenuDesc>Open developer commands: discovery, knowledge, violation, breach and recovery.</SCP_DevMenuDesc>
+  <SCP_TerminalRoomNotReady>room needs preparation</SCP_TerminalRoomNotReady>
+  <SCP_StudyMoving>Moving to another research position.</SCP_StudyMoving>
+  <SCP_TerminalObjects>Objects · {0}</SCP_TerminalObjects>
+  <SCP_TerminalTitle>Terminal</SCP_TerminalTitle>
+  <SCP_StudyWorking>Studying the object: adding to the dossier.</SCP_StudyWorking>
+  <SCP_TerminalOpenDesc>Open Foundation posts, objects, personnel, requirements and dossiers.</SCP_TerminalOpenDesc>
+  <SCP_TerminalCarried>being carried</SCP_TerminalCarried>
+  <SCP_Status_Preparing>containment setup</SCP_Status_Preparing>
+  <SCP_TerminalPosts>Posts · {0}</SCP_TerminalPosts>
+  <SCP_TerminalRoomReady>room meets known requirements</SCP_TerminalRoomReady>
+  <SCP_ObserveMoving>Moving to an observation position.</SCP_ObserveMoving>
+  <SCP_ShiftNobody>Nobody</SCP_ShiftNobody>
+  <SCP_ShiftAllDay>All hours</SCP_ShiftAllDay>
+  <SCP_ShiftsButtonDesc>Assign staff and working hours for this containment post.</SCP_ShiftsButtonDesc>
+  <SCP_ShiftResearcher>Researcher</SCP_ShiftResearcher>
+  <SCP_ShiftValidate>Check roster</SCP_ShiftValidate>
+  <SCP_ShiftAdd>Add shift</SCP_ShiftAdd>
+  <SCP_ShiftGaps>Not enough assigned observers for this object at these hours: {0}.</SCP_ShiftGaps>
+  <SCP_ShiftsEnable>Use this post roster</SCP_ShiftsEnable>
+  <SCP_ShiftWaitingRelief>Waiting for relief while maintaining observation.</SCP_ShiftWaitingRelief>
+  <SCP_ShiftsHelp>Each shift has two observers and one researcher; the third slot is not another observer. Assigning staff enables shifts and their required work type if disabled. Click or drag to set hours.</SCP_ShiftsHelp>
+  <SCP_ShiftDelete>Remove</SCP_ShiftDelete>
+  <SCP_ShiftObserverB>Observer 2</SCP_ShiftObserverB>
+  <SCP_ShiftUnbind>Unbind</SCP_ShiftUnbind>
+  <SCP_ShiftClearHours>Clear</SCP_ShiftClearHours>
+  <SCP_ShiftsButton>Shifts</SCP_ShiftsButton>
+  <SCP_ShiftConflicts>Overlapping assignments for: {0}.</SCP_ShiftConflicts>
+  <SCP_ShiftRosterValid>Assignments cover all 24 hours. Actual coverage depends on staff availability.</SCP_ShiftRosterValid>
+  <SCP_ShiftsHeading>Post shifts</SCP_ShiftsHeading>
+  <SCP_ShiftLocalHour>Local time: {0}:00</SCP_ShiftLocalHour>
+  <SCP_ShiftNoObject>No object bound to this post.</SCP_ShiftNoObject>
+  <SCP_ShiftObserverA>Observer 1</SCP_ShiftObserverA>
+  <SCP_ShiftsWorkHint>Enable shifts and work activates the roster and disabled work types at priority 3, preserving existing priorities. For duty ahead of ordinary tasks, set observers SCP watch to 1 and researcher Research to 1. The researcher stops attending once the object is fully studied. Sleep, hunger, fatigue and drafting still take precedence.</SCP_ShiftsWorkHint>
+  <SCP_ShiftChooseObject>Choose object</SCP_ShiftChooseObject>
+  <SCP_ShiftBound>Bound object: {0}</SCP_ShiftBound>
+  <SCP_ShiftNumber>Shift {0}</SCP_ShiftNumber>
+  <SCP_ShiftCoverageHelp>Some observers on the current shift are not in position. Check assignments, staff availability, work priorities and sight. The previous shift waits at most half an hour; serious hunger or fatigue ends that wait.</SCP_ShiftCoverageHelp>
+  <SCP_ShiftCurrent>Watch: {0}, {1}. Research: {2}.</SCP_ShiftCurrent>
+  <SCP_ShiftAlreadyAssigned>already assigned in this shift</SCP_ShiftAlreadyAssigned>
+  <SCP_ShiftCoverageAlert>SCP shift understaffed</SCP_ShiftCoverageAlert>
+  <SCP_ShiftsOff>Shifts disabled: normal work selection applies.</SCP_ShiftsOff>
+  <SCP_MoveToPostFirst>First move the SCP to a containment post. Observation, study and recovery are available only at its post.</SCP_MoveToPostFirst>
+  <SCP_UnknownObject>Anomalous object</SCP_UnknownObject>
+  <SCP_Clearance>Clearance level: {0}</SCP_Clearance>
+  <SCP_ClearanceZeroHint>Only containment requirements are available. Capture the object and establish containment at its post to access information. Research unlocks further details.</SCP_ClearanceZeroHint>
+  <SCP_ClearanceZeroAwayHint>The object has not been recovered. Bring it to a player home map, where containment posts can be built. Securing it at a post will enable research.</SCP_ClearanceZeroAwayHint>
+  <SCP_ObjectDiscoveredTitle>Anomalous object discovered</SCP_ObjectDiscoveredTitle>
+  <SCP_ObjectDiscoveredBody>An anomalous object has been discovered on the map. A clearance level 0 entry is available in the Foundation terminal. Only containment requirements are available. Prepare a chamber and post, then move the object there.</SCP_ObjectDiscoveredBody>
+  <SCP_MoveToPostButton>To post</SCP_MoveToPostButton>
+  <SCP_PostOnlyAtHome>Containment posts can only be built on a player home map.</SCP_PostOnlyAtHome>
+  <SCP_MoveToPostDesc>Select a colonist to move the anomalous object to the nearest available containment post.</SCP_MoveToPostDesc>
+  <SCP_NoCarrierOrPost>No available colonist or free reachable containment post.</SCP_NoCarrierOrPost>
+  <SCP_RemoteAlternative>Alternative: an object on its bound post connects to the console automatically. A powered camera must see the post and an operator must stand at the console.</SCP_RemoteAlternative>
+  <SCP_MonitorAssign>Objects</SCP_MonitorAssign>
+  <SCP_MonitorAssignDesc>Select up to four objects. Select again to remove. A powered camera in the same room and within 12 cells must see the object at its post.</SCP_MonitorAssignDesc>
+  <SCP_MonitorFull>No monitoring channels are available. Power another linked display or remove an assignment.</SCP_MonitorFull>
+  <SCP_MonitorNoObjects>No discovered objects permit remote observation.</SCP_MonitorNoObjects>
+  <SCP_MonitorWork>Monitor</SCP_MonitorWork>
+  <SCP_MonitorUnavailable>Requires power, a post covered by a working camera, a free interaction cell and an available awake colonist.</SCP_MonitorUnavailable>
+  <SCP_MonitorSummary>Operator: {0}. Automatically connected objects: {1} / {2}.</SCP_MonitorSummary>
+  <SCP_MonitorOperatorFlag>{0} Operator is standing at the console</SCP_MonitorOperatorFlag>
+  <SCP_MonitorCameraFlag>{0} Camera sees the post holding “{1}”</SCP_MonitorCameraFlag>
+  <SCP_MonitorAutomaticEmpty>No remotely observable objects are standing on their bound posts.</SCP_MonitorAutomaticEmpty>
+  <SCP_MonitorDisplays>Powered linked displays: {0}. Each adds {1} channels.</SCP_MonitorDisplays>
+  <SCP_MonitorNoChannel>Assigned, but no powered monitoring channel is available</SCP_MonitorNoChannel>
+  <SCP_DisplayLinked>Linked to a monitoring console: +{0} channels</SCP_DisplayLinked>
+  <SCP_DisplayNoPower>Linked to a monitoring console, but unpowered: +0 of {0} channels</SCP_DisplayNoPower>
+  <SCP_DisplayUnlinked>No monitoring console in the same room within {0} cells</SCP_DisplayUnlinked>
+  <SCP_MonitorLive>Remote observation active</SCP_MonitorLive>
+  <SCP_MonitorLost>Remote observation unavailable</SCP_MonitorLost>
+  <SCP_MonitorNoPower>Console has no power</SCP_MonitorNoPower>
+  <SCP_MonitorNoOperator>Console is unstaffed</SCP_MonitorNoOperator>
+  <SCP_MonitorNoCamera>No powered camera sees the post</SCP_MonitorNoCamera>
+  <SCP_MonitorDark>Insufficient light at object</SCP_MonitorDark>
+  <SCP_MonitorOffPost>Object is away from its post</SCP_MonitorOffPost>
+  <SCP_SensorNoLinks>No chamber sensors on this map.</SCP_SensorNoLinks>
+  <SCP_SensorMissingLink>Select an available post and console on this map.</SCP_SensorMissingLink>
+  <SCP_SensorNoPower>Sensor has no power. No current readings.</SCP_SensorNoPower>
+  <SCP_SensorConsoleOff>Console has no power. Telemetry unavailable.</SCP_SensorConsoleOff>
+  <SCP_SensorNoObject>No object at the assigned containment post.</SCP_SensorNoObject>
+  <SCP_SensorWrongRoom>Sensor and object must share an enclosed, fully roofed chamber.</SCP_SensorWrongRoom>
+  <SCP_SensorReading>[{0}] {1}. Current: {2}</SCP_SensorReading>
+  <SCP_SensorNoParameters>This protocol has no available temperature, light or power measurements.</SCP_SensorNoParameters>
+  <SCP_SensorLinks>Sensor #{0} • Post {1} • Console {2}</SCP_SensorLinks>
+  <SCP_SensorRestored>Containment telemetry: restored</SCP_SensorRestored>
+  <SCP_SensorWarning>Containment telemetry: attention required</SCP_SensorWarning>
+  <SCP_SensorPost>Containment post</SCP_SensorPost>
+  <SCP_SensorConsole>Connect console</SCP_SensorConsole>
+  <SCP_SensorDisconnect>Disconnect</SCP_SensorDisconnect>
+  <SCP_SensorSetup>Assign a post and console. One sensor per post. Place inside the chamber; both devices require power.</SCP_SensorSetup>
+  <SCP_SensorPanel>Sensors</SCP_SensorPanel>
+  <SCP_SensorPanelHint>Autonomous chamber sensors on this map. No console assignment or operator required; sensors do not provide observation.</SCP_SensorPanelHint>
+  <SCP_SensorNoRoomPost>No containment post in this chamber.</SCP_SensorNoRoomPost>
+  <SCP_SensorMultiplePosts>Multiple containment posts in this room. Automatic selection is ambiguous; use one post per chamber.</SCP_SensorMultiplePosts>
+  <SCP_SensorAutoHeading>Chamber sensor — automatic post selection</SCP_SensorAutoHeading>
+  <SCP_CameraNeedsWall>No supporting wall in the mounting direction. Reposition the camera.</SCP_CameraNeedsWall>
+  <SCP_CameraNoPower>Camera has no power.</SCP_CameraNoPower>
+  <SCP_CameraReady>Camera powered and mounted. It covers visible posts in the same room within a radius of 12; its rotation is visual. An object on such a post connects to the console automatically.</SCP_CameraReady>
+  <SCP_MonitorDutyHint>An assigned active shift is dispatched directly and preempts recreation, meditation and ordinary work. Sleep, critical hunger or fatigue, drafting and player orders can interrupt it; the employee returns automatically afterward.</SCP_MonitorDutyHint>
+  <SCP_MonitorRestored>Camera console staffed again</SCP_MonitorRestored>
+  <SCP_MonitorInterrupted>Camera console: observation interrupted</SCP_MonitorInterrupted>
+  <SCP_ConsoleShifts>Console shifts</SCP_ConsoleShifts>
+  <SCP_ConsoleCurrentShift>Scheduled now: {0}</SCP_ConsoleCurrentShift>
+  <SCP_ConsoleRosterHelp>Choose employees and hours, then enable shifts. Enable SCP observation in Work and allow awake time in Schedule. Relief arrives up to half an hour early and needs a free tile next to the operator. The outgoing employee waits up to half an hour, unless a break is needed.</SCP_ConsoleRosterHelp>
+  <SCP_ConsoleReliefMissing>Shift ended; waiting for relief.</SCP_ConsoleReliefMissing>
+  <SCP_ConsoleWaiting>Waiting beside the console for handover.</SCP_ConsoleWaiting>
+  <SCP_ConsoleWorking>Monitoring containment cameras.</SCP_ConsoleWorking>
+  <SCP_MonitorUnassigned>Object not assigned to this console.</SCP_MonitorUnassigned>
+  <SCP_MonitorProtocol>Protocol does not permit camera observation.</SCP_MonitorProtocol>
+  <SCP_MonitorDisabled>Observation disabled for this object.</SCP_MonitorDisabled>
+  <SCP_ContactButton>Foundation contact</SCP_ContactButton>
+  <SCP_999DisplayName>SCP-999 — The Tickle Monster</SCP_999DisplayName>
+  <SCP_650DisplayName>SCP-650 — Black Statue</SCP_650DisplayName>
+  <SCP_ContactHelp>After discovering the Black Statue, use this terminal to contact the Foundation. Send the first message; a reply is expected in 6 hours. The archive remains readable without power.</SCP_ContactHelp>
+  <SCP_ContactOnline>Communications link available.</SCP_ContactOnline>
+  <SCP_ContactUnavailable>Communication channel unavailable. Discover the unknown object, then report it to the Foundation.</SCP_ContactUnavailable>
+  <SCP_ContactChannel>SECURE MESSAGES // LOCAL NODE</SCP_ContactChannel>
+  <SCP_ContactLinkOnline>ONLINE</SCP_ContactLinkOnline>
+  <SCP_ContactLinkOffline>OFFLINE</SCP_ContactLinkOffline>
+  <SCP_ContactProtocol>SYSTEM</SCP_ContactProtocol>
+  <SCP_ContactFromColony>YOUR SETTLEMENT</SCP_ContactFromColony>
+  <SCP_ContactOffline>Sending requires a powered communications terminal at this settlement. The archive remains readable.</SCP_ContactOffline>
+  <SCP_ContactStage_None>Channel ready. Send the first message to the Foundation.</SCP_ContactStage_None>
+  <SCP_ContactStage_AwaitingReply>Request sent. Awaiting reply.</SCP_ContactStage_AwaitingReply>
+  <SCP_ContactStage_ReplyReceived>Transmission from O5-7 received. Acknowledge receipt.</SCP_ContactStage_ReplyReceived>
+  <SCP_ContactStage_Established>Contact established. Channel registered.</SCP_ContactStage_Established>
+  <SCP_ContactRequest>Send contact request</SCP_ContactRequest>
+  <SCP_ContactConfirm>Confirm</SCP_ContactConfirm>
+  <SCP_ContactRemaining>Expected reply in {0} hours.</SCP_ContactRemaining>
+  <SCP_ContactAwaitingLink>The reply will be received when a terminal is online at a home settlement.</SCP_ContactAwaitingLink>
+  <SCP_ContactWhen>Day {0}, {1}:00</SCP_ContactWhen>
+  <SCP_ContactOutgoing>Outgoing message</SCP_ContactOutgoing>
+  <SCP_ContactRequestText>This settlement has discovered an anomalous object: a black statue. We request contact with the Foundation and instructions on how to proceed.</SCP_ContactRequestText>
+  <SCP_ContactReplyTitle>O5-7 — The Green</SCP_ContactReplyTitle>
+  <SCP_ContactReplyNotice>O5-7, The Green, has sent a transmission. Open Foundation contact to read it and learn about the first assignment.</SCP_ContactReplyNotice>
+  <SCP_ContactReplyText>This is O5-7. You may call me The Green.\n\nWe received your message about the Black Statue. To justify assistance to your settlement, you must demonstrate that you can maintain containment of anomalous objects.\n\nPlease take SCP-650 into temporary custody: move the statue to a post, prepare a chamber and arrange observation. Accumulate 24 hours of proper containment, then submit confirmation through the terminal. The Foundation will provide 10 medicine, 10 components and 5 advanced components as initial assistance.\n\nConfirm your agreement. The object at the post will be registered automatically.</SCP_ContactReplyText>
+  <SCP_ContactConfirmText>We agree to take the object into temporary custody and maintain the required conditions.</SCP_ContactConfirmText>
+  <SCP_ContactEstablishedText>Agreement registered. Temporary custody progress is available under Foundation assignment.</SCP_ContactEstablishedText>
+  <SCP_AssignmentTitle>O5-7 assignment: demonstrate containment capability</SCP_AssignmentTitle>
+  <SCP_AssignmentButton>Foundation assignment</SCP_AssignmentButton>
+  <SCP_AssignmentInstructions>Confirm that you agree to take the Black Statue into temporary custody, then move it to a post and accumulate 24 hours of proper containment. The statue at a post is detected automatically. A violation or removal pauses the timer until conditions are restored.\n\nAfter a full day, submit confirmation through a powered terminal to receive 10 medicine, 10 components and 5 advanced components. One reward, with no failure deadline. The terminal need not stay powered during containment.</SCP_AssignmentInstructions>
+  <SCP_AssignmentNeedsContact>First acknowledge the transmission from O5-7.</SCP_AssignmentNeedsContact>
+  <SCP_AssignmentStage_Available>Confirm agreement to take the statue into temporary custody.</SCP_AssignmentStage_Available>
+  <SCP_AssignmentStage_Active>Assignment accepted.</SCP_AssignmentStage_Active>
+  <SCP_AssignmentStage_Ready>A full day of containment has been recorded. Ready to submit.</SCP_AssignmentStage_Ready>
+  <SCP_AssignmentStage_Completed>O5-7 accepted the confirmation. The reward was delivered near the terminal.</SCP_AssignmentStage_Completed>
+  <SCP_AssignmentSubject>Assigned object: {0}</SCP_AssignmentSubject>
+  <SCP_AssignmentProgress>Recorded containment: {0} of 24 hours.</SCP_AssignmentProgress>
+  <SCP_AssignmentCounting>Requirements satisfied; time is being counted.</SCP_AssignmentCounting>
+  <SCP_AssignmentWaiting>Waiting for the statue at a post with all conditions satisfied.</SCP_AssignmentWaiting>
+  <SCP_AssignmentMissing>Waiting for the Black Statue at a containment post.</SCP_AssignmentMissing>
+  <SCP_AssignmentChoose>Select statue — accept assignment / restart</SCP_AssignmentChoose>
+  <SCP_AssignmentNoObjects>No captured Black Statue at a containment post in this settlement.</SCP_AssignmentNoObjects>
+  <SCP_AssignmentSubmit>Submit confirmation and receive reward</SCP_AssignmentSubmit>
+  <SCP_AssignmentReadyTitle>First Foundation assignment accomplished</SCP_AssignmentReadyTitle>
+  <SCP_AssignmentReadyBody>A total day of proper Black Statue containment has been recorded. Submit confirmation to O5-7 under Foundation contact → Foundation assignment.</SCP_AssignmentReadyBody>
+  <SCP_AssignmentNoSpace>There is no room near the terminal for three reward stacks. Clear space and retry submission.</SCP_AssignmentNoSpace>
+  <SCP_AssignmentDelivered>Foundation assistance: 10 medicine, 10 components and 5 advanced components delivered near the terminal.</SCP_AssignmentDelivered>
+  <SCP_ContactNeedsStatue>Discover the Black Statue first. You can then send a message to the Foundation.</SCP_ContactNeedsStatue>
+  <SCP_TerminalHintTitle>Communications terminal ready</SCP_TerminalHintTitle>
+  <SCP_TerminalHintBody>The terminal is ready to receive a signal. If you encounter an anomalous object, report it to the Foundation through Foundation contact. Sending and receiving requires power.</SCP_TerminalHintBody>
+  <SCP_DutyDisabled>Shifts disabled</SCP_DutyDisabled>
+  <SCP_DutyUnavailable>Employee unavailable</SCP_DutyUnavailable>
+  <SCP_DutyDrafted>Employee drafted</SCP_DutyDrafted>
+  <SCP_DutyIncapable>Unable to do this work</SCP_DutyIncapable>
+  <SCP_DutyWorkDisabled>Work type disabled in Work tab</SCP_DutyWorkDisabled>
+  <SCP_DutyRest>Sleep, hunger or exhaustion</SCP_DutyRest>
+  <SCP_DutyNotTime>Not currently on duty</SCP_DutyNotTime>
+  <SCP_DutyConflict>Conflicting role or post</SCP_DutyConflict>
+  <SCP_DutyStudyDone>Object fully researched</SCP_DutyStudyDone>
+  <SCP_DutyObjectDisabled>Work disabled on object</SCP_DutyObjectDisabled>
+  <SCP_DutyComing>On the way to post</SCP_DutyComing>
+  <SCP_DutyWorking>At post</SCP_DutyWorking>
+  <SCP_DutyRemote>Covered by camera operator</SCP_DutyRemote>
+  <SCP_DutyReserved>Object reserved by other staff</SCP_DutyReserved>
+  <SCP_DutyQueued>Awaiting work, priority {0}</SCP_DutyQueued>
+  <SCP_DutyEnableRoster>Enable shifts and work</SCP_DutyEnableRoster>
+  <SCP_RestoreWorking>Restoring containment of the object.</SCP_RestoreWorking>
+  <SCP_SupportButton>Foundation requests</SCP_SupportButton>
+  <SCP_SupportTitle>Foundation support channel</SCP_SupportTitle>
+  <SCP_SupportLocked>The request channel unlocks after completing O5-7's first assignment and submitting the report through the terminal.</SCP_SupportLocked>
+  <SCP_SupportLockedHeader>REQUEST CHANNEL LOCKED</SCP_SupportLockedHeader>
+  <SCP_SupportTrust>Foundation trust: {0}/100</SCP_SupportTrust>
+  <SCP_SupportTrustShort>Foundation trust: {0}/100</SCP_SupportTrustShort>
+  <SCP_SupportTrustGain>Objects in stable containment: {0}. Each object earns 1 trust for every 12 total hours of valid conditions.</SCP_SupportTrustGain>
+  <SCP_SupportSupplyTitle>Construction supply</SCP_SupportSupplyTitle>
+  <SCP_SupportSupplyDesc>500 steel, 300 concrete blocks and 10 components. The cargo arrives by drop pod at the settlement's trade drop spot.</SCP_SupportSupplyDesc>
+  <SCP_SupportSupplyCost>Cost: {0} trust. Another request becomes available after one day.</SCP_SupportSupplyCost>
+  <SCP_SupportRequest>Request supply</SCP_SupportRequest>
+  <SCP_SupportOffline>A powered Foundation communications terminal is required.</SCP_SupportOffline>
+  <SCP_SupportInsufficient>This request requires {0} trust.</SCP_SupportInsufficient>
+  <SCP_SupportCooldown>Another request becomes available in {0} days.</SCP_SupportCooldown>
+  <SCP_SupportDeliveredTitle>Foundation supply delivered</SCP_SupportDeliveredTitle>
+  <SCP_SupportDeliveredBody>The Foundation delivered 500 steel, 300 concrete blocks and 10 components. 10 trust was spent.</SCP_SupportDeliveredBody>
+  <SCP_SupportSecurityTitle>Security support</SCP_SupportSecurityTitle>
+  <SCP_SupportSecurityPending>Not yet available: the support agreement and security deployment rules still need to be established.</SCP_SupportSecurityPending>
+  <SCP_SupportSecurityDesc>Request seven MTF Nu-7 “Hammer Down” operators. Requires Level 3. The unit assists for one day, costs 30 trust and has a 15-day cooldown.</SCP_SupportSecurityDesc>
+  <SCP_SupportSecurityRequest>Request Nu-7</SCP_SupportSecurityRequest>
+  <SCP_SupportSecurityNoFaction>No Foundation faction exists in this world. A newly generated world is required.</SCP_SupportSecurityNoFaction>
+  <SCP_SupportSecurityHostile>The Foundation is hostile and will not deploy personnel.</SCP_SupportSecurityHostile>
+  <SCP_SupportSecurityClearance>Requires a Level {0} employee on this map. Highest available: {1}.</SCP_SupportSecurityClearance>
+  <SCP_SupportSecurityCooldown>Nu-7 is unavailable for another {0} days.</SCP_SupportSecurityCooldown>
+  <SCP_SupportSecurityUnavailable>The Nu-7 personnel definition is unavailable.</SCP_SupportSecurityUnavailable>
+  <SCP_SupportSecurityReady>Ready: {1} operators for {0} trust.</SCP_SupportSecurityReady>
+  <SCP_SupportSecurityRelationReason>Foundation response to an attack on a contracted containment site</SCP_SupportSecurityRelationReason>
+  <SCP_SupportSecurityArrivedTitle>MTF Nu-7 “Hammer Down” arrived</SCP_SupportSecurityArrivedTitle>
+  <SCP_SupportSecurityArrivedBody>A seven-operator Nu-7 squad entered the map: three with HK416 carbines, two with SPAS-12 shotguns, one M249 gunner and one EMP-rifle specialist. All wear Nu-7 tactical armor. They assist the colony for one day and then leave.</SCP_SupportSecurityArrivedBody>
+  <SCP_SupportEpsilonDesc>Request twelve heavily armed MTF Epsilon-11 “Nine-Tailed Fox” operators. Requires a Level 4 employee. Costs 50 trust and has a 20-day cooldown.</SCP_SupportEpsilonDesc>
+  <SCP_SupportEpsilonRequest>Request Epsilon-11</SCP_SupportEpsilonRequest>
+  <SCP_SupportEpsilonCooldown>Epsilon-11 is unavailable for another {0} days.</SCP_SupportEpsilonCooldown>
+  <SCP_SupportEpsilonUnavailable>The Epsilon-11 personnel definitions are unavailable.</SCP_SupportEpsilonUnavailable>
+  <SCP_SupportEpsilonReady>Ready: {1} operators for {0} trust.</SCP_SupportEpsilonReady>
+  <SCP_SupportEpsilonArrivedTitle>MTF Epsilon-11 “Nine-Tailed Fox” arrived</SCP_SupportEpsilonArrivedTitle>
+  <SCP_SupportEpsilonArrivedBody>An Epsilon-11 team of {0} operators entered the map: four with HK416 carbines, two with SPAS-12 shotguns, three with M249 machine guns and three with enhanced EMP rifles. The team assists the colony for one day and then leaves.</SCP_SupportEpsilonArrivedBody>
+  <SCP_SupportAnomalyTitle>Sealed Foundation cargo</SCP_SupportAnomalyTitle>
+  <SCP_SupportAnomalyPending>Not yet available: this request will unlock with the next completed SCP.</SCP_SupportAnomalyPending>
+  <SCP_EmergencyPowerCharge>Emergency charge: {0}</SCP_EmergencyPowerCharge>
+  <SCP_EmergencyPowerActive>Solar flare: the reserve is powering selected appliances on its connected power network.</SCP_EmergencyPowerActive>
+  <SCP_EmergencyPowerMode>Backup mode: {0}.</SCP_EmergencyPowerMode>
+  <SCP_EmergencyPowerModeFoundation>Foundation equipment</SCP_EmergencyPowerModeFoundation>
+  <SCP_EmergencyPowerModeAll>All electric appliances</SCP_EmergencyPowerModeAll>
+  <SCP_EmergencyPowerModeDesc>Toggle solar-flare backup between Foundation equipment only and all electric appliances on the same connected power network. Rooms do not limit coverage. Switched-off, broken and EMP-disabled devices remain off; generators and other emergency accumulators are not supplied by the reserve.</SCP_EmergencyPowerModeDesc>
+  <SCP_EmergencyPowerDisconnected>Not connected to a power network. Emergency charge is retained.</SCP_EmergencyPowerDisconnected>
+  <SCP_EmergencyPowerOff>The accumulator is switched off. Emergency charge is retained.</SCP_EmergencyPowerOff>
+  <SCP_EmergencyPowerEmpty>Solar flare: the emergency reserve is exhausted.</SCP_EmergencyPowerEmpty>
+  <SCP_EmergencyPowerCharging>The reserve is charging from the main grid.</SCP_EmergencyPowerCharging>
+  <SCP_EmergencyPowerReady>The reserve is fully charged. Standby consumption: 50 W.</SCP_EmergencyPowerReady>
+  <SCP_RequirementDoor>The chamber must have a door of one of these types: {0}.</SCP_RequirementDoor>
+  <SCP_RequirementClosedDoor>Every chamber door must use this type: {0} and remain closed. Brief automatic opening for passage is allowed.</SCP_RequirementClosedDoor>
+  <SCP_055Observed>Clearance level 1.\n\nSCP-055 is Keter: a self-keeping secret. Information about its appearance, nature, behavior and origin suppresses itself.</SCP_055Observed>
+  <SCP_055Partial>Clearance level 2.\n\nSCP-055 is an antimeme. Information about it leaves human memory soon after observation.\n\nThe Foundation does not know how, when or by whom it was acquired. The object is neither invisible nor impossible to describe: personnel can observe it and create notes, sketches, photographs and recordings. Soon afterward they lose focus, interest and memory of what they recorded. Camera operators finish a shift exhausted and unable to recall the preceding hours. The author and purpose of the chamber procedures are unknown, and Site-19 personnel fail to remember that SCP-055 exists despite easy access to its chamber. These facts are periodically rediscovered, cause brief alarm and are then forgotten again. A large body of scientific data exists, but cannot be studied.</SCP_055Partial>
+  <SCP_055Documented>Clearance level 3.\n\nSCP-055 may present a substantial physical threat and may already have caused hundreds of deaths without leaving a usable memory. It is certainly a memetic and mental threat, which is the basis for its Keter classification.\n\nThe research team confirmed that negative facts persist better than positive ones. Personnel can repeatedly deduce that SCP-055 exists and that it is not a sphere, while remaining unable to remember the object itself.\n\nWithout renewed research, detailed information decays after twenty hours and the dossier returns to clearance level 1.</SCP_055Documented>
+  <SCP_055Interview>Excerpt from a personnel debrief:\n\n{0}: I am going to ask you some questions about fifty-five.\n\n{1}: Fifty-what?\n\n{0}: SCP-055. The object you just examined.\n\n{1}: I do not understand. I do not think we even have a fifty-five.\n\n{0}: Then tell me what you did for the last two hours.\n\n{1}: I… do not know.\n\n{0}: Do you remember agreeing that it was not spherical?\n\n{1}: Right! It was not round. Object fifty-five was not round.\n\n{0}: Do you remember it now?\n\n{1}: Not exactly. Something is there, something that cannot be remembered, and it is not spherical.\n\n{0}: What is not spherical?\n\n{1}: Object fifty-five.\n\n{0}: Object what?\n\n{1}: Do you remember agreeing that something was not spherical?\n\n{0}: Right.</SCP_055Interview>
+  <SCP_055FallbackInterviewer>Dr. Hughes</SCP_055FallbackInterviewer>
+  <SCP_055FallbackSubject>staff member ███████</SCP_055FallbackSubject>
+  <SCP_055ForgottenTitle>SCP-055 information lost</SCP_055ForgottenTitle>
+  <SCP_055ForgottenBody>Twenty hours have passed without research. Detailed SCP-055 information has been lost and the dossier has returned to clearance level 1.</SCP_055ForgottenBody>
+  <SCP_055Breach>{0}: containment protocol has failed.</SCP_055Breach>
+  <SCP_SupportAnomalyCost>Cost: {0} trust. A prepared reserve chamber is required.</SCP_SupportAnomalyCost>
+  <SCP_SupportAnomalyRequest>Accept sealed cargo</SCP_SupportAnomalyRequest>
+  <SCP_SupportAnomalyDone>Delivery arranged. Place the received crate at a containment post.</SCP_SupportAnomalyDone>
+  <SCP_SupportAnomalyRequested>The Foundation confirmed dispatch of sealed cargo.</SCP_SupportAnomalyRequested>
+  <SCP_DoorAccessEnable>Enable staff access</SCP_DoorAccessEnable>
+  <SCP_DoorAccessDisable>Disable staff access</SCP_DoorAccessDisable>
+  <SCP_DoorAccessToggleDesc>Restrict this door to selected Foundation personnel. Existing colonists are selected automatically when restriction is enabled for the first time.</SCP_DoorAccessToggleDesc>
+  <SCP_DoorAccessRoster>Authorized personnel</SCP_DoorAccessRoster>
+  <SCP_DoorAccessRosterDesc>Choose the colonists permitted to open this Foundation door.</SCP_DoorAccessRosterDesc>
+  <SCP_DoorAccessWindowDesc>Only selected colonists can open this door. Use emergency access when rescuers or other personnel must pass temporarily.</SCP_DoorAccessWindowDesc>
+  <SCP_DoorAccessAllowAll>Allow all colonists</SCP_DoorAccessAllowAll>
+  <SCP_DoorAccessClear>Clear list</SCP_DoorAccessClear>
+  <SCP_DoorAccessNoColonists>No colonists are currently available on this map.</SCP_DoorAccessNoColonists>
+  <SCP_DoorEmergencyOpen>Emergency access</SCP_DoorEmergencyOpen>
+  <SCP_DoorEmergencyClose>End emergency access</SCP_DoorEmergencyClose>
+  <SCP_DoorEmergencyDesc>Temporarily lets every pawn that could use a vanilla door pass. The authorized personnel list is preserved.</SCP_DoorEmergencyDesc>
+  <SCP_DoorAccessUnrestricted>Access: unrestricted</SCP_DoorAccessUnrestricted>
+  <SCP_DoorAccessRestricted>Access: {0} authorized staff</SCP_DoorAccessRestricted>
+  <SCP_DoorAccessEmergency>Access: emergency passage open</SCP_DoorAccessEmergency>
+  <SCP_MonitorGuideTitle>How to start remote observation</SCP_MonitorGuideTitle>
+  <SCP_MonitorGuideBody>Remote observation replaces personnel standing near an SCP only while the complete chain works:
+
+1. Build and power a camera inside the containment chamber. It must be mounted on a wall, remain in the same room, stay within 12 cells and have a clear view. Rotation is visual and does not change coverage.
+2. Every eligible object appears at the console automatically as soon as it stands on its bound post. There is no manual object selection.
+3. Assign an operator in “Shifts”, or order a colonist to operate the console. The operator counts only after actually reaching the console interaction cell.
+4. Keep the camera and console powered. When both checks pass, the operator replaces the required observers at the post.
+
+A brief containment failure does not remove an object from the console while it remains on its post. The console inspection panel shows separate camera and operator checks. Once every containment requirement is met, assigned staff restore containment automatically. Physical observers beside the SCP remain a valid fallback.</SCP_MonitorGuideBody>
+  <SCP_MonitorGuideButton>Observation guide</SCP_MonitorGuideButton>
+  <SCP_MonitorGuideButtonDesc>Open the remote-observation setup checklist.</SCP_MonitorGuideButtonDesc>
+  <SCP_DeconStart>Start decontamination</SCP_DeconStart>
+  <SCP_DeconStartDesc>Run a sealed-room cleaning cycle. It removes ordinary gas, filth and registered SCP contamination from the room.</SCP_DeconStartDesc>
+  <SCP_DeconNeedsPower>Requires power.</SCP_DeconNeedsPower>
+  <SCP_DeconNeedsRoom>Must face an enclosed room.</SCP_DeconNeedsRoom>
+  <SCP_DeconRoomTooLarge>Room is too large. Maximum: {0} cells.</SCP_DeconRoomTooLarge>
+  <SCP_DeconNeedsRoof>The entire room must be roofed.</SCP_DeconNeedsRoof>
+  <SCP_DeconCloseDoors>Close every door bordering the room.</SCP_DeconCloseDoors>
+  <SCP_DeconAlreadyRunning>Decontamination is already running.</SCP_DeconAlreadyRunning>
+  <SCP_DeconRunning>Decontamination: {0}</SCP_DeconRunning>
+  <SCP_DeconRunningLocked>Decontamination: {0}. Doors locked: {1}.</SCP_DeconRunningLocked>
+  <SCP_DeconReady>Ready for decontamination.</SCP_DeconReady>
+  <SCP_DeconInterrupted>Decontamination interrupted: chamber seal or power was lost.</SCP_DeconInterrupted>
+  <SCP_DeconComplete>Room decontamination complete.</SCP_DeconComplete>
+  <SCP_DeconEmergencyTitle>DECONTAMINATION AIRLOCK EMERGENCY</SCP_DeconEmergencyTitle>
+  <SCP_DeconEmergencyBody>{0} detected structural damage: {1}. Decontamination has stopped. Repair the chamber and reset the emergency state at the unit.</SCP_DeconEmergencyBody>
+  <SCP_DeconEmergencyDoor>a chamber door was destroyed</SCP_DeconEmergencyDoor>
+  <SCP_DeconEmergencyWall>a wall is missing or the chamber boundary changed</SCP_DeconEmergencyWall>
+  <SCP_DeconEmergencyInspect>EMERGENCY: {0}. Repair and reset required.</SCP_DeconEmergencyInspect>
+  <SCP_DeconEmergencyReset>Reset airlock emergency</SCP_DeconEmergencyReset>
+  <SCP_DeconEmergencyResetDesc>Verify the repaired doors and chamber boundary, then return the decontamination unit to standby.</SCP_DeconEmergencyResetDesc>
+  <SCP_DeconRepairStructure>Restore the original sealed chamber: {0} bordering doors and {1} interior cells.</SCP_DeconRepairStructure>
+  <SCP_DeconEmergencyResetDone>Airlock integrity restored. Emergency state reset.</SCP_DeconEmergencyResetDone>
+  <SCP_ShutterUseManual>Switch to manual control</SCP_ShutterUseManual>
+  <SCP_ShutterUseAutomatic>Switch to automatic control</SCP_ShutterUseAutomatic>
+  <SCP_ShutterModeDesc>Switch between automatic SCP breach lockdown and direct manual control.</SCP_ShutterModeDesc>
+  <SCP_ShutterOpen>Open shutter</SCP_ShutterOpen>
+  <SCP_ShutterClose>Close shutter</SCP_ShutterClose>
+  <SCP_ShutterOpenDesc>Power the drive and keep the shutter open until another command is issued.</SCP_ShutterOpenDesc>
+  <SCP_ShutterCloseDesc>Close and lock the shutter. A pawn occupying the doorway must clear it first.</SCP_ShutterCloseDesc>
+  <SCP_ShutterNeedsPower>Opening the shutter requires power.</SCP_ShutterNeedsPower>
+  <SCP_ShutterNoPower>Mode: fail-closed — no power.</SCP_ShutterNoPower>
+  <SCP_ShutterAutomaticLockdown>Mode: automatic — SCP breach lockdown active.</SCP_ShutterAutomaticLockdown>
+  <SCP_ShutterAutomaticReady>Mode: automatic — monitoring for SCP breaches.</SCP_ShutterAutomaticReady>
+  <SCP_ShutterManualOpenState>Mode: manual — ordered open.</SCP_ShutterManualOpenState>
+  <SCP_ShutterManualClosedState>Mode: manual — ordered closed.</SCP_ShutterManualClosedState>
+  <SCP_PersonnelButton>Personnel and clearances</SCP_PersonnelButton>
+  <SCP_PersonnelTitle>Foundation personnel clearances</SCP_PersonnelTitle>
+  <SCP_PersonnelDesc>Spend Foundation trust to certify a colonist. Clearance is personal, persists with the employee and can be used by secured Foundation doors. Level 5 cannot be purchased and is reserved for story progression.</SCP_PersonnelDesc>
+  <SCP_PersonnelTrust>Foundation trust: {0}/100</SCP_PersonnelTrust>
+  <SCP_PersonnelOffline>A powered Foundation terminal is required for certification.</SCP_PersonnelOffline>
+  <SCP_PersonnelEmpty>No available colonists on this map.</SCP_PersonnelEmpty>
+  <SCP_PersonnelRank_0>No clearance</SCP_PersonnelRank_0>
+  <SCP_PersonnelRank_1>Junior personnel · Level 1</SCP_PersonnelRank_1>
+  <SCP_PersonnelRank_2>Agent / researcher · Level 2</SCP_PersonnelRank_2>
+  <SCP_PersonnelRank_3>Senior researcher / MTF officer · Level 3</SCP_PersonnelRank_3>
+  <SCP_PersonnelRank_4>Foundation staff · Level 4</SCP_PersonnelRank_4>
+  <SCP_PersonnelRank_4Captain>MTF captain · Level 4</SCP_PersonnelRank_4Captain>
+  <SCP_PersonnelRank_4Scientist>Lead scientist · Level 4</SCP_PersonnelRank_4Scientist>
+  <SCP_PersonnelCaptainChoice>MTF captain — Shooting 13</SCP_PersonnelCaptainChoice>
+  <SCP_PersonnelScientistChoice>Lead scientist — Intellectual 14</SCP_PersonnelScientistChoice>
+  <SCP_PersonnelRank_5>O5 Council appointment · Level 5</SCP_PersonnelRank_5>
+  <SCP_PersonnelRights_0>No Foundation authorization. Class D is a separate personnel status, not a clearance level.</SCP_PersonnelRights_0>
+  <SCP_PersonnelRights_1>May pass doors configured for Level 1 personnel.</SCP_PersonnelRights_1>
+  <SCP_PersonnelRights_2>May pass doors configured for Level 1–2 personnel.</SCP_PersonnelRights_2>
+  <SCP_PersonnelRights_3>May pass doors configured for Level 1–3 personnel.</SCP_PersonnelRights_3>
+  <SCP_PersonnelRights_4>May pass every currently configurable Foundation clearance door.</SCP_PersonnelRights_4>
+  <SCP_PersonnelRights_5>Story-only authority. Future O5 decisions and campaign permissions will use this level.</SCP_PersonnelRights_5>
+  <SCP_PersonnelPromote>Request certification · {0}</SCP_PersonnelPromote>
+  <SCP_PersonnelStoryOnly>Story assignment</SCP_PersonnelStoryOnly>
+  <SCP_PersonnelReady>Requirements met.</SCP_PersonnelReady>
+  <SCP_PersonnelNeedTrust>Requires {0} trust; available: {1}.</SCP_PersonnelNeedTrust>
+  <SCP_PersonnelNeedAdult>Only adult colonists can be certified.</SCP_PersonnelNeedAdult>
+  <SCP_PersonnelResearchDisabled>Certification is unavailable: this colonist cannot do intellectual work.</SCP_PersonnelResearchDisabled>
+  <SCP_PersonnelNeedResearchTwo>Initial certification requires Intellectual skill 2.</SCP_PersonnelNeedResearchTwo>
+  <SCP_PersonnelNeedSpecialist>Requires Shooting or Intellectual skill appropriate to the next level.</SCP_PersonnelNeedSpecialist>
+  <SCP_PersonnelNeedDirector>Level 4 requires Shooting 13 or Intellectual 14.</SCP_PersonnelNeedDirector>
+  <SCP_PersonnelLevelFiveHint>Level 5 is assigned only by a future story decision.</SCP_PersonnelLevelFiveHint>
+  <SCP_PersonnelMaximum>Maximum clearance reached.</SCP_PersonnelMaximum>
+  <SCP_PersonnelPromoted>{0} received Foundation certification: {1}.</SCP_PersonnelPromoted>
+  <SCP_O5GreenNeedScientist>No scientist with Foundation clearance 4 and Intellectual skill 12 is available on this map.</SCP_O5GreenNeedScientist>
+  <SCP_O5GreenSelectColonist>Select a colonist on this map.</SCP_O5GreenSelectColonist>
+  <SCP_O5GreenSelectedUnavailable>The selected pawn cannot participate while drafted, downed, or incapacitated.</SCP_O5GreenSelectedUnavailable>
+  <SCP_O5GreenSelectedCannotResearch>The selected pawn cannot perform Intellectual work.</SCP_O5GreenSelectedCannotResearch>
+  <SCP_O5GreenSelectedClearance>The selected pawn needs Foundation clearance 4.</SCP_O5GreenSelectedClearance>
+  <SCP_O5GreenSelectedIntellectual>The selected pawn needs Intellectual skill 12.</SCP_O5GreenSelectedIntellectual>
+  <SCP_882FinalReportReadyTitle>SCP-882 final report is ready</SCP_882FinalReportReadyTitle>
+  <SCP_882FinalReportReadyBody>O5-7's delegation has departed. Return SCP-882 to its reservoir and transmit the final report through Terminal → Event journal → Foundation archive → O5-7 meeting transcript. An online Foundation terminal is required.</SCP_882FinalReportReadyBody>
+  <SCP_882FinalReportSubmit>Transmit final report</SCP_882FinalReportSubmit>
+  <SCP_882FinalReportNeedTerminal>Powered terminal required</SCP_882FinalReportNeedTerminal>
+  <SCP_882FinalReportNeedContainment>Return SCP-882 to its reservoir</SCP_882FinalReportNeedContainment>
+  <SCP_882FinalReportTitle>Broken God operation: case closed</SCP_882FinalReportTitle>
+  <SCP_882FinalReportLetter>The Foundation accepted the final report. Preserving SCP-882 and transmitting its measurements earned {0} trust. The Council's decision and the sealed protocol are in the Foundation archive.</SCP_882FinalReportLetter>
+  <SCP_882FinalReportBody>FINAL PROTOCOL · SCP-882\nStatus: the object remains contained in its reservoir at the colony.\nBasis: site defense, object analysis, and O5-7 Green's personal inspection.\n\nThe Council orders SCP-882 to remain in place. Transporting the object or attempting to assemble the mechanism is unauthorized. The original coordinates of the answering signal remain sealed; the Church of the Broken God is denied access to the measurements. The colony will continue containment and research under existing protocols.\n\nThe operation to defend the object is complete. The source of the answering signal remains a separate classified case.</SCP_882FinalReportBody>
+  <SCP_882FinalReportOutgoing>Final report transmitted. SCP-882 remains in its reservoir. Post-attack readings and the meeting transcript are attached.</SCP_882FinalReportOutgoing>
+  <SCP_882FinalReportReply>Report accepted. The Council is leaving the object at your site. The defense operation is closed. Recover the physical transponder from the deserted relay before decrypting the signal. Its coordinates will appear in your assignments. — O5-7</SCP_882FinalReportReply>
+  <SCP_SignalResearchAssign>Assign signal analysis</SCP_SignalResearchAssign>
+  <SCP_SignalTransponderUnloaded>The expedition transponder was unloaded from a colonist's inventory. Select a colonist and right-click it to decrypt it at a research bench.</SCP_SignalTransponderUnloaded>
+  <SCP_SignalCarryFailed>This colonist cannot carry the transponder. Free inventory space or assign another colonist.</SCP_SignalCarryFailed>
+  <SCP_SignalResearchNoResearcher>An available Level 4 researcher with Intellectual 12 is required</SCP_SignalResearchNoResearcher>
+  <SCP_SignalReadAction>Extract transponder</SCP_SignalReadAction>
+  <SCP_SignalReadDesc>Extract the module from the relay. The colonist takes it into their inventory; bring it home for decryption.</SCP_SignalReadDesc>
+  <SCP_SignalReadNoPawn>No available colonist on this map can reach the recorder.</SCP_SignalReadNoPawn>
+  <SCP_SignalReadInstruction>Select the recorder and choose Extract transponder, or select a colonist and right-click it. The module goes into their inventory.</SCP_SignalReadInstruction>
+  <SCP_SignalAnalysisTitle>Origin of the answering signal</SCP_SignalAnalysisTitle>
+  <SCP_SignalAnalysisLetter>Six hours of transponder analysis identified a Church of the Broken God assembly cache. Its manifest lists a sealed SCP-217 sample and SCP-629 components. The findings are in the Foundation archive; a raid assignment will appear in the quest list.</SCP_SignalAnalysisLetter>
+  <SCP_SignalAnalysisBody>SIGNAL ANALYSIS · FILE 882/7\nThe transponder recovered from the deserted relay contains a repeating packet from the SCP-882 defense recordings. The researcher identified the next hop: a Church of the Broken God assembly cache. Its manifest lists a sealed SCP-217 sample and components linked to SCP-629. After the 1943 assembly, this combination warrants immediate action. This does not prove that the Church sent the original signal.\n\nO5-7 authorized a raid on the cache. SCP-882 containment protocol remains unchanged.</SCP_SignalAnalysisBody>
+  <SCP_SignalAnalysisMessage>Transponder analysis points to a Church assembly cache with SCP-217 and SCP-629 components. Intercept the shipment before it moves; the first signal's sender remains unknown. — O5-7</SCP_SignalAnalysisMessage>
+  <SCP_SignalRecoveryTitle>Transponder extracted</SCP_SignalRecoveryTitle>
+  <SCP_SignalRecoveryLetter>The team extracted the transponder from the deserted relay. The module is in the extracting colonist's inventory. Return home; it will be unloaded for decryption at a research bench.</SCP_SignalRecoveryLetter>
+  <SCP_SignalRecoveryBody>EXPEDITION REPORT · RELAY\nThe team found a deserted relay and extracted a physical transponder from its recorder. A colonist carries the still-encrypted module. No Church guards were present. Return it to the colony and study it at a research bench to continue the investigation.</SCP_SignalRecoveryBody>
+  <SCP_SignalRecoveryMessage>We recovered the transponder from the deserted relay. We will bring it home and decrypt it at a research bench.</SCP_SignalRecoveryMessage>
+  <SCP_ChurchCipherReadAction>Copy recording</SCP_ChurchCipherReadAction>
+  <SCP_ChurchCipherReadDesc>Assign a colonist to read the Church cipher core.</SCP_ChurchCipherReadDesc>
+  <SCP_ChurchCipherNoPawn>No available colonist can reach the cipher core.</SCP_ChurchCipherNoPawn>
+  <SCP_ChurchSecure217>Secure SCP-217</SCP_ChurchSecure217>
+  <SCP_ChurchSecure629>Secure SCP-629 components</SCP_ChurchSecure629>
+  <SCP_ChurchSecureDesc>Assign a colonist to secure this cargo. It will go into their inventory; bring both containers home.</SCP_ChurchSecureDesc>
+  <SCP_217SealedStatus>The vessel is sealed. An intact sample causes no exposure.</SCP_217SealedStatus>
+  <SCP_629PartsStatus>Detached parts of SCP-629; the complete individual is not here.</SCP_629PartsStatus>
+  <SCP_ChurchEvidenceAnalyzed>Evidence analyzed.</SCP_ChurchEvidenceAnalyzed>
+  <SCP_ChurchEvidenceNotAnalyzed>Evidence not yet analyzed.</SCP_ChurchEvidenceNotAnalyzed>
+  <SCP_ChurchEvidenceAnalyze>Study without opening</SCP_ChurchEvidenceAnalyze>
+  <SCP_ChurchEvidenceAnalyzeDesc>A researcher with Intellectual 4 or higher examines the item at an online terminal. The SCP-217 sample stays sealed.</SCP_ChurchEvidenceAnalyzeDesc>
+  <SCP_ChurchEvidenceNoAnalyst>An online terminal and an available researcher with Intellectual 4 or higher are required.</SCP_ChurchEvidenceNoAnalyst>
+  <SCP_ChurchEvidenceAnalyzedTitle>Church evidence examined</SCP_ChurchEvidenceAnalyzedTitle>
+  <SCP_ChurchEvidenceAnalyzedBody>Examination of {0} is complete. The result is in the Foundation archive.</SCP_ChurchEvidenceAnalyzedBody>
+  <SCP_ChurchEvidenceTransfer>Transfer to the Foundation</SCP_ChurchEvidenceTransfer>
+  <SCP_ChurchEvidenceTransferDesc>Transfer the examined item via an online terminal. It leaves the colony and grants up to 2 Foundation trust.</SCP_ChurchEvidenceTransferDesc>
+  <SCP_ChurchEvidenceTransferred>Item transferred to the Foundation. Trust +{0}.</SCP_ChurchEvidenceTransferred>
+  <SCP_217ExposureTitle>Possible SCP-217 exposure</SCP_217ExposureTitle>
+  <SCP_217ExposureBody>{PAWN} contacted SCP-217. Symptoms can take a long time to appear. Isolate and examine the affected person.</SCP_217ExposureBody>
+  <SCP_217BreachTitle>SCP-217 vessel broken</SCP_217BreachTitle>
+  <SCP_217BreachBody>The sealed sample was destroyed. Nearby creatures may have been infected by contact with its contents.</SCP_217BreachBody>
+  <SCP_217AnalysisTitle>SCP-217 analysis: sealed sample</SCP_217AnalysisTitle>
+  <SCP_217AnalysisBody>A researcher examined the vessel and registry markings without opening it. The SCP-217 sample remains sealed and safe to store. Breaking the vessel can cause contact infection. Symptoms progress very slowly; this examination offers no cure.</SCP_217AnalysisBody>
+  <SCP_217TransferredNote>The sealed sample was transferred to the Foundation after examination.</SCP_217TransferredNote>
+  <SCP_629AnalysisTitle>SCP-629 analysis: detached parts</SCP_629AnalysisTitle>
+  <SCP_629AnalysisBody>The markings and movable joints match the description of SCP-629, Mr. Brass. Only part of his replaceable body was found in the cache. The researcher did not assemble a new person from these parts: the complete SCP-629 is not here. The evidence confirms the Church attempted to integrate the fragments into a larger mechanism.</SCP_629AnalysisBody>
+  <SCP_629TransferredNote>The components were transferred to the Foundation for return to their owner.</SCP_629TransferredNote>
+  <SCP_629KnowledgeLevel>SCP-629 research level: {0}/3. Level 2 is needed for the next assignment.</SCP_629KnowledgeLevel>
+  <SCP_629ContinueStudy>Continue studying SCP-629</SCP_629ContinueStudy>
+  <SCP_629ObservedReport>The fragments are identified as parts of the sentient SCP-629. Their condition does not establish the state of the whole individual.</SCP_629ObservedReport>
+  <SCP_629PartialReport>A Church-made plate not present in SCP-629's original description is attached to a component. Its mark matches a node index in the relay case.</SCP_629PartialReport>
+  <SCP_629DocumentedReport>Complete documentation requires examining SCP-629 himself. The colony has only detached parts.</SCP_629DocumentedReport>
+  <SCP_629RoutingInsightTitle>Lost routing log index found</SCP_629RoutingInsightTitle>
+  <SCP_629RoutingInsightBody>Research of SCP-629's detached parts reached level 2. A researcher distinguished a Church-made plate from the original components and read its routing index. After O5-7's answer, the Foundation can mark the lost log's location on the world map.</SCP_629RoutingInsightBody>
+  <SCP_629RoutingIndexArchive>Level 2: the plate was made by the Church and is not part of SCP-629. Its engraved index matches a former node of the Foundation's closed channel. The lost routing log should be there.</SCP_629RoutingIndexArchive>
+  <SCP_RoutingLogTake>Extract routing log</SCP_RoutingLogTake>
+  <SCP_RoutingLogTakeDesc>Assign a colonist to extract the physical record. It enters their inventory; return it to the home map.</SCP_RoutingLogTakeDesc>
+  <SCP_RoutingLogNoReader>No available colonist can reach the routing log.</SCP_RoutingLogNoReader>
+  <SCP_RoutingLogCarryFailed>Could not carry the log. Free inventory space or assign someone else.</SCP_RoutingLogCarryFailed>
+  <SCP_RoutingLogSecured>Routing log extracted. Return it to the home map.</SCP_RoutingLogSecured>
+  <SCP_RoutingLogRecoveredTitle>Lost routing log delivered</SCP_RoutingLogRecoveredTitle>
+  <SCP_RoutingLogRecoveredBody>The physical record has reached the colony. Open it in the Foundation archive and verify its service key through a powered terminal to complete the investigation.</SCP_RoutingLogRecoveredBody>
+  <SCP_RoutingLogArchiveTitle>Lost routing log: first route</SCP_RoutingLogArchiveTitle>
+  <SCP_RoutingLogArchiveBody>SERVICE LOG · FOUNDATION CLOSED CHANNEL\nThe Church-made plate attached to SCP-629's parts identified a former routing node. The expedition recovered its physical log. The first record of the SCP-882 signal appeared here before the Church received its copy. The packet entered through a closed Foundation channel, but the log preserves only a service key number; the sender's name was removed before this hop.\n\nConclusion: the Church did not originate the signal. Someone used Foundation infrastructure or a stolen key. O5-7 has requested the original key registry. No specific employee can be accused from this log alone.</SCP_RoutingLogArchiveBody>
+  <SCP_OuroborosFinalSubmit>Verify key and close case</SCP_OuroborosFinalSubmit>
+  <SCP_OuroborosFinalNeedTerminal>Needs a powered home terminal</SCP_OuroborosFinalNeedTerminal>
+  <SCP_OuroborosFinalTitle>Ouroboros: complete case and conclusion</SCP_OuroborosFinalTitle>
+  <SCP_OuroborosFinalLetter>O5-7 has checked the service key against the original registry. The complete Ouroboros case and the conclusion on the SCP-882 signal are available in the Foundation archive. Foundation trust: +{0}. The investigation is complete.</SCP_OuroborosFinalLetter>
+  <SCP_OuroborosFinalOutgoing>We recovered the physical routing log. Please compare its key number with the original registry, release the complete 001 case and close the investigation into the SCP-882 signal.</SCP_OuroborosFinalOutgoing>
+  <SCP_OuroborosFinalReply>The comparison is complete. The key belonged to an old automated Project 001 accounting line, not a current employee. Its emergency notice about SCP-882 went through a channel believed to be closed. The Church intercepted a copy; the Chaos Insurgency exploited the leak. We have isolated the line and revoked its key. A complete summary of Ouroboros's four parts is in your archive. SCP-882 remains in your custody. You have done enough. — O5-7 “Green”</SCP_OuroborosFinalReply>
+  <SCP_OuroborosFinalBody>CASE 001 · OUROBOROS · COMPLETE SUMMARY\nReleased by O5-7 after recovery of the routing log. These are four connected 001 files, not one creature. The conclusion about your colony appears at the end.\n\nI. THE CHILDREN\nIn the 1920s, a Foundation research group made a weapon from nine children, able to destroy targets at immense range. The project was hidden under the 001 designation. Its leader, the future O5-1, used that power against the Administrator and disappeared. A new Overseer Council followed, while some fugitives became the core of the future Chaos Insurgency. The children remained alive: a reminder of the cost the Foundation called protection.\n\nII. THE BROKEN GOD\nIn 1942–1943, the Church of the Broken God assembled a vast mechanical entity from scattered anomalous parts. These included SCP-217, SCP-882 and some components of SCP-629. It absorbed metal and sought more parts. The Allied Occult Initiative, predecessor of the Global Occult Coalition, helped stop it. The assembly broke apart: active components went to Foundation sites, while the inactive core remained elsewhere. Finding parts in the Church's present cache justified the Council's alarm, but did not prove a second assembly was complete.\n\nIII. ATONEMENT\nDecades later, the Foundation faced another 001: an intelligent gravitational singularity tied to researcher Calvin Desmet. It claimed that colliding realities would destroy every world and offered to save one by annihilating all the others. The Council debated that price; O5-7 opposed it. The offer was a deception. Releasing the entity would have endangered the very world that trusted it. The case remained classified and contained.\n\nIV. THE WAY IT ENDS\nThe Chaos Insurgency declared war on the Overseer Council. Its operation reached the Overseers, but destroying the old leadership did not destroy the institution: the victor took the place he had fought and formed a new Council. History returned to its starting point. Ouroboros names this cycle: power, fear, secrecy and the promise to save the world keep producing decisions from which it must then be saved.\n\nSCP-882 CONCLUSION · COLONY EVENTS\nThe log, the cache cipher and the original key registry match. In this mod's story, a forgotten automated Project 001 accounting line emitted the signal: it flagged SCP-882 as a possible component of another assembly and sent an emergency notice. Its old channel was no longer closed to outsiders. The Church received a copy after transmission; the Chaos Insurgency used the leak to attack. This is no evidence that O5-7 or present staff betrayed the colony. The Council isolated the line and revoked the key. The colony disrupted the Church's collection, kept SCP-882 contained and closed the investigation. No further expeditions are required.</SCP_OuroborosFinalBody>
+  <SCP_ChurchCargoCarryFailed>The colonist could not carry the container. Free inventory space or assign someone else.</SCP_ChurchCargoCarryFailed>
+  <SCP_ChurchObjectiveProgress>Cache objectives: {0}/3. Secure both cargos, copy the log and bring the containers home.</SCP_ChurchObjectiveProgress>
+  <SCP_ChurchObjectiveLost>A target at the assembly cache was lost. The mission has failed.</SCP_ChurchObjectiveLost>
+  <SCP_ChurchRaidTitle>Church assembly disrupted</SCP_ChurchRaidTitle>
+  <SCP_ChurchRaidLetter>The team secured the sealed SCP-217 sample and SCP-629 components, copied the Church cipher and brought both containers home. This shipment can no longer be used for reconstruction. A Foundation archive entry is available. The Foundation awarded up to 8 trust, shared fusor notes and will send SCP-458.</SCP_ChurchRaidLetter>
+  <SCP_ChurchRaidBody>FIELD REPORT · CHURCH ASSEMBLY CACHE\nThe relay led the team to a guarded Church of the Broken God outpost. A sealed SCP-217 sample, components linked to SCP-629 and a cipher log were found. The team copied the log and brought both containers home. The Church cannot repeat the 1943 assembly with this shipment. Keep the cargos sealed.\n\nThe log confirms that the Church received a copy of the SCP-882 signal, but does not identify the original sender. O5-7 authorized use of the technical notes in fusor research. The Foundation awarded trust and sent SCP-458. Send the copied cipher from an online terminal for comparison with the sealed archive.</SCP_ChurchRaidBody>
+  <SCP_ChurchCacheTitle>Church cache recording recovered</SCP_ChurchCacheTitle>
+  <SCP_ChurchCacheLetter>Your colonists copied the Church of the Broken God's records. A new Foundation archive entry is available. The Foundation awarded up to 8 trust, shared fusor research notes and will send SCP-458 for the canteen.</SCP_ChurchCacheLetter>
+  <SCP_ChurchCacheBody>FIELD REPORT · CHURCH CIPHER CACHE\nThe relay record led the team to a small Church of the Broken God outpost. Its cipher core held the next transmission hop and technical notes on a power circuit. The Church monitored the signal after the SCP-882 attack, but the surviving packets do not prove it sent the original impulse.\n\nO5-7 authorized use of the notes in fusor research. The Foundation awarded trust and transferred SCP-458 from its canteen as a safe staff object. The original sender remains unknown. Send the copied cipher through an online terminal for comparison with the sealed Foundation archive.</SCP_ChurchCacheBody>
+  <SCP_ChurchReportSubmit>Send cipher to the Foundation</SCP_ChurchReportSubmit>
+  <SCP_ChurchReportNeedTerminal>An online home terminal is required</SCP_ChurchReportNeedTerminal>
+  <SCP_ChurchReportSent>Cipher sent to the Foundation. Await the archive comparison.</SCP_ChurchReportSent>
+  <SCP_ChurchReportOutgoing>Sending the full copy of the Church cache recording. Please trace the original transmission route, not only the last relay.</SCP_ChurchReportOutgoing>
+  <SCP_ChurchResolutionTitle>Foundation reply: signal origin</SCP_ChurchResolutionTitle>
+  <SCP_ChurchResolutionLetter>The Foundation compared the Church cipher with its sealed archive. O5-7's reply is in the correspondence; the detailed findings are in the Foundation Archive. The Church intercepted the transmission, but the original signal came earlier.</SCP_ChurchResolutionLetter>
+  <SCP_ChurchResolutionMessage>Comparison complete. The Church was an intermediate recipient. The original packet used a sealed Foundation channel format, but that does not prove a staff member sent it. The next lead is a missing routing log. Until then, contain SCP-882 and keep the data within the colony.</SCP_ChurchResolutionMessage>
+  <SCP_ChurchResolutionBody>SEALED COMPARISON · O5-7 RESPONSE\nThe cache cipher confirms that the Church received a copy after the signal passed through the relay. It is not the identified sender.\n\nThe first packet's format matches a sealed Foundation channel. Its signature remains unverified: another sender could have used a stolen key or replayed an old recording. Verification requires a missing routing log whose location the Council has not yet disclosed.\n\nO5-7's decision: do not change SCP-882 containment; retain the cipher copy only in the colony's local archive. The Church case is closed. The first signal's source remains a separate investigation.</SCP_ChurchResolutionBody>
+  <SCP_458DeliveryMessage>The Foundation delivered SCP-458 to the colony. A colonist can open the box using its command or right-click menu.</SCP_458DeliveryMessage>
+  <SCP_458OpenAction>Open SCP-458</SCP_458OpenAction>
+  <SCP_458OpenDesc>Assign a colonist. The box will produce one serving of their preferred pizza.</SCP_458OpenDesc>
+  <SCP_458CoolingDown>Next opening in {0} hours.</SCP_458CoolingDown>
+  <SCP_458NoOpener>No available colonist can reach SCP-458.</SCP_458NoOpener>
+  <SCP_458PizzaReady>{0} opened SCP-458 and found fresh pizza.</SCP_458PizzaReady>
+  <SCP_DoorClearance>Minimum clearance: {0}</SCP_DoorClearance>
+  <SCP_DoorClearanceDesc>Cycle the automatic access threshold from no clearance check through Levels 1–4. Manually listed colonists remain exceptions. Selecting Level 1 clears the old all-colonists roster.</SCP_DoorClearanceDesc>
+  <SCP_DoorAccessRestrictedClearance>Restricted access. Manual exceptions: {0}. Minimum clearance: {1}.</SCP_DoorAccessRestrictedClearance>
+  <SCP_DebugItemsSpawned>Placed every haulable mod item: {0} types.</SCP_DebugItemsSpawned>
+  <SCP_DebugItemsUnavailable>No haulable mod items were found.</SCP_DebugItemsUnavailable>
+  <SCP_AmnesticMemoriesRemoved>{PAWN_labelShort} forgot {1} distressing memories.</SCP_AmnesticMemoriesRemoved>
+  <SCP_AmnesticNoMemories>{PAWN_labelShort} had no temporary negative memories to suppress.</SCP_AmnesticNoMemories>
+  <SCP_HemostaticWoundsTended>The injector sealed {1} bleeding wounds on {PAWN_labelShort}.</SCP_HemostaticWoundsTended>
+  <SCP_HemostaticNoWounds>{PAWN_labelShort} had no untreated bleeding wounds.</SCP_HemostaticNoWounds>
+  <SCP_McdTraderUnavailable>Marshall, Carter and Dark orbital contact is unavailable.</SCP_McdTraderUnavailable>
+  <SCP_McdTraderArrived>{0} has entered communications range.</SCP_McdTraderArrived>
+  <SCP_GocStrikeUnavailable>GOC strike personnel are unavailable.</SCP_GocStrikeUnavailable>
+  <SCP_GocStrikeArrived>A {0}-person GOC strike team has entered the area.</SCP_GocStrikeArrived>
+  <SCP_GocUltimatumTitle>GOC elimination ultimatum</SCP_GocUltimatumTitle>
+  <SCP_GocUltimatumBody>The Global Occult Coalition has classified {0} as an unacceptable parathreat. You have {1} to destroy it or remove it from this territory. If the target remains, a Coalition strike team will enter the colony and carry out the elimination. Their orders concern the designated object; resistance may turn the operation into an armed confrontation.</SCP_GocUltimatumBody>
+  <SCP_GocOperationArrivedTitle>GOC strike team deployed</SCP_GocOperationArrivedTitle>
+  <SCP_GocOperationArrivedBody>A Coalition strike team has entered the map. Its current objective is the destruction of {0}.</SCP_GocOperationArrivedBody>
+  <SCP_GocOperationCompliedTitle>GOC ultimatum satisfied</SCP_GocOperationCompliedTitle>
+  <SCP_GocOperationCompliedBody>The designated parathreat was destroyed before the Coalition deadline. The strike operation has been cancelled.</SCP_GocOperationCompliedBody>
+  <SCP_GocOperationCompletedTitle>GOC elimination completed</SCP_GocOperationCompletedTitle>
+  <SCP_GocOperationCompletedBody>The Coalition strike team has destroyed its designated target and is concluding the operation.</SCP_GocOperationCompletedBody>
+  <SCP_GocOperationAbortedTitle>GOC operation aborted</SCP_GocOperationAbortedTitle>
+  <SCP_GocOperationTargetLostBody>The designated object is no longer present on colony territory. The Coalition has suspended the operation.</SCP_GocOperationTargetLostBody>
+  <SCP_GocOperationDeploymentFailedBody>The Coalition was unable to deploy its strike team. The operation has been postponed.</SCP_GocOperationDeploymentFailedBody>
+  <SCP_GocOperationDefeatedBody>The assigned Coalition strike team can no longer complete the elimination. The operation has failed.</SCP_GocOperationDefeatedBody>
+  <SCP_GocOperationUnavailable>No suitable contained SCP is available for a GOC elimination operation.</SCP_GocOperationUnavailable>
+  <SCP_ChaosTheftTitle>Chaos Insurgency extraction team</SCP_ChaosTheftTitle>
+  <SCP_ChaosTheftBody>A Chaos Insurgency cell has breached the colony perimeter. Its extraction specialist is attempting to seize {0}, while the rest of the cell covers the withdrawal. Eliminate the carrier before they reach the map edge to recover the object.</SCP_ChaosTheftBody>
+  <SCP_ChaosTheftSucceededTitle>SCP object stolen</SCP_ChaosTheftSucceededTitle>
+  <SCP_ChaosTheftSucceededBody>The Chaos Insurgency extraction specialist escaped with the contained object. The covering cell is withdrawing.</SCP_ChaosTheftSucceededBody>
+  <SCP_ChaosTheftFailedTitle>Chaos extraction repelled</SCP_ChaosTheftFailedTitle>
+  <SCP_ChaosTheftTargetDestroyedBody>The designated anomaly was destroyed before the Insurgency could extract it.</SCP_ChaosTheftTargetDestroyedBody>
+  <SCP_ChaosTheftRepelledBody>The extraction specialist can no longer carry out the theft. Any stolen object has been dropped.</SCP_ChaosTheftRepelledBody>
+  <SCP_ChaosTheftTargetLostBody>The designated anomaly is no longer available to the extraction specialist. The theft operation has failed.</SCP_ChaosTheftTargetLostBody>
+  <SCP_ChaosTheftUnavailable>The Chaos Insurgency raid cannot start on this map.</SCP_ChaosTheftUnavailable>
+  <SCP_PlaceholderRaidRelationReason>Hostile field operation initiated.</SCP_PlaceholderRaidRelationReason>
+  <SCP_InterestGroupHostilityReason>Conflicting anomalous objectives.</SCP_InterestGroupHostilityReason>
+  <SCP_PlaceholderRaidUnavailable>The selected placeholder faction could not start a raid on this map.</SCP_PlaceholderRaidUnavailable>
+  <SCP_ChaosCacheTitle>Chaos anomalous cache</SCP_ChaosCacheTitle>
+  <SCP_EmergencyEpsilonTitle>Epsilon-11 emergency response</SCP_EmergencyEpsilonTitle>
+  <SCP_DebugArrivalUnavailable>The arrival could not start: its conditions are unmet or this SCP has already arrived.</SCP_DebugArrivalUnavailable>
+  <SCP_EmergencyEpsilonBody>All colonists are down while a hostile SCP remains on the map. Epsilon-11 has arrived to contain the threat. A medic brought three SCP-500 pills for the survivors. Foundation records say these copies lost part of their properties after replication with SCP-038.</SCP_EmergencyEpsilonBody>
+  <SCP_106RecoveryEscapedTitle>SCP-106 lost</SCP_106RecoveryEscapedTitle>
+  <SCP_106RecoveryEscapedBody>SCP-106 has left the map without being contained. The Foundation may try another recovery operation.</SCP_106RecoveryEscapedBody>
+  <SCP_ChaosCacheBody>Intelligence points to 20 SCP-500 pills and SCP-127 carried by a Chaos defender at this base. Defeat the garrison and recover them.</SCP_ChaosCacheBody>
+  <SCP_500Cured>SCP-500 cured {PAWN} of their illnesses and triggered rapid healing.</SCP_500Cured>
+  <SCP_500NoDisease>SCP-500 triggered rapid healing in {PAWN}.</SCP_500NoDisease>
+  <SCP_882RaidTitle>Church of the Broken God raid</SCP_882RaidTitle>
+  <SCP_882RaidBody>The growing mechanism has attracted Church zealots. They are attacking the colony.</SCP_882RaidBody>
+  <SCP_882HistoryTitle>Recovered Foundation file: the Broken God</SCP_882HistoryTitle>
+  <SCP_882HistoryBody>SCP-882 has reached your colony. A Foundation archive from the 1990s describes an attempt to assemble a machine-god from scattered components. Foundation teams, with help from the Global Occult Coalition, stopped the assembly at heavy cost. The Chaos Insurgency and the Church of the Broken God have now detected the recovered component. Satellite imagery shows both groups concentrating near your settlement. Prepare for a siege.</SCP_882HistoryBody>
+  <SCP_882HistoryNotice>A file on the Broken God has been archived. Satellites have detected Chaos and Church forces near your settlement. Prepare for a siege. Full text: Terminal → Event journal → Foundation archive.</SCP_882HistoryNotice>
+  <SCP_882SiegeTitle>Chaos siege: SCP-882</SCP_882SiegeTitle>
+  <SCP_882SiegeBody>A large Chaos Insurgency force has entered from the map edge and is preparing a mortar siege. Reconnaissance reports two more groups approaching.</SCP_882SiegeBody>
+  <SCP_882AssaultTitle>Second Chaos wave: SCP-882</SCP_882AssaultTitle>
+  <SCP_882AssaultBody>Another Chaos Insurgency force has entered from the map edge. It will prepare, then attack and try to take portable SCP objects.</SCP_882AssaultBody>
+  <SCP_882RaidStoleScp>The Chaos Insurgency escaped with {0}.</SCP_882RaidStoleScp>
+  <SCP_882ChurchTitle>Church of the Broken God: SCP-882</SCP_882ChurchTitle>
+  <SCP_ChurchDebugRaidStarted>A full Broken God raid has entered from the map edge. The SCP-882 story sequence has not advanced.</SCP_ChurchDebugRaidStarted>
+  <SCP_ChurchDebugRaidUnavailable>A full Broken God raid could not enter this map. Check for a usable map-edge entry.</SCP_ChurchDebugRaidUnavailable>
+  <SCP_882ChurchBody>A separate Church of the Broken God force has entered from the map edge. Its cantors can disrupt powered equipment. The Church and Chaos will not attack one another during this assault. Foundation satellites have dispatched Vanguard and Mobile Task Force Omega-7, Pandora's Box.</SCP_882ChurchBody>
+  <SCP_882CeasefireReason>Temporary agreement during the assault for SCP-882</SCP_882CeasefireReason>
+  <SCP_882ReliefTitle>Vanguard and Pandora's Box arrive</SCP_882ReliefTitle>
+  <SCP_882ReliefBody>Foundation Vanguard, SCP-076-2 (Able), and an Omega-7 escort have arrived to help defend the colony. Vanguard will engage visible hostiles automatically. The detachment will remain until all three assault waves are over.</SCP_882ReliefBody>
+  <SCP_882DefenseWonTitle>The battle for SCP-882 is over</SCP_882DefenseWonTitle>
+  <SCP_882DefenseWonBody>The Chaos and Church forces have been defeated or driven off. SCP-882 remains at the colony. The Foundation grants up to 15 trust and delivers an MTF exosuit techprint for the defense. Vanguard and Pandora's Box troops who can still walk are leaving the map. An analyst report and further instructions will arrive through the Foundation channel.</SCP_882DefenseWonBody>
+  <SCP_882DefenseLostTitle>SCP-882 lost after the battle</SCP_882DefenseLostTitle>
+  <SCP_882DefenseLostBody>The attackers have gone, but SCP-882 is no longer on the home map or carried by your people. The Foundation has recalled its reinforcements; those still able to walk are leaving the map. The object is marked missing.</SCP_882DefenseLostBody>
+  <SCP_882AftermathSender>FOUNDATION ANALYSIS DIVISION</SCP_882AftermathSender>
+  <SCP_882AftermathMessage>The attack has ended. Church transmissions call SCP-882 a coupling node. A preliminary report is available under Terminal → Event journal → Foundation archive. We will offer a short assignment: place the object in a reservoir and keep the terminal powered for six hours of analysis. Accept the assignment in the quest list.</SCP_882AftermathMessage>
+  <SCP_882AftermathLostMessage>The attackers withdrew, but SCP-882 is missing. Intercepted Church transmissions have been added to the Foundation archive. Analysis cannot proceed until the component is recovered.</SCP_882AftermathLostMessage>
+  <SCP_882AftermathArchiveTitle>SCP-882 case: Church interception</SCP_882AftermathArchiveTitle>
+  <SCP_882AftermathArchiveBody>Foundation analysts recovered part of the Church's radio traffic after the battle. The faithful called SCP-882 a “coupling node”: they believe it can synchronize other scattered relics of the Broken God. The Chaos Insurgency planned to remove the object. Why the two groups cooperated remains unknown.\n\nThe 1990s assembly file names Foundation and GOC teams, but the personnel list and final pages were removed by O5 order. Analysts propose comparing SCP-882's signal with surviving records. This is a hypothesis, not proof that the mechanism can assemble a god.</SCP_882AftermathArchiveBody>
+  <SCP_882AnalysisArchiveTitle>SCP-882 case: analysis result</SCP_882AnalysisArchiveTitle>
+  <SCP_882AnalysisArchiveBody>Six hours of signal comparison are complete. The terminal found a response in the 1990s archive resembling SCP-882's signal. Its source lay far beyond your settlement; the coordinates and the operation's personnel names are hidden in the removed O5 section.\n\nThe Foundation keeps the object in its reservoir and seals that part of the file pending further orders. It is not yet clear whether the reply came from another component or from someone attempting to call SCP-882.</SCP_882AnalysisArchiveBody>
+  <SCP_882AnalysisNotice>Analysis complete. The result is saved under Terminal → Event journal → Foundation archive.</SCP_882AnalysisNotice>
+  <SCP_882AnalysisMessage>Comparison is complete. The result is in the Foundation archive. The old operation contains a response signal, but O5 removed part of its coordinates. Keep SCP-882 in the reservoir while we examine the sealed records.</SCP_882AnalysisMessage>
+  <SCP_882DefenseTrustGranted>The Foundation recognizes the defense of SCP-882: trust +{0}.</SCP_882DefenseTrustGranted>
+  <SCP_O5GreenName>O5-7 Green</SCP_O5GreenName>
+  <SCP_O5GreenUnknownScientist>colony researcher</SCP_O5GreenUnknownScientist>
+  <SCP_O5GreenPrepTitle>Preparing for O5-7's visit</SCP_O5GreenPrepTitle>
+  <SCP_O5GreenPrepBody>O5-7 Green will come in person after the SCP-882 analysis. Prepare an enclosed, fully roofed room of at least 30 cells, impressiveness 60, light level 30%, a dining table and two seats. An available researcher needs Foundation clearance 4 and Intellectual 12. The delegation will arrive when these conditions are met. Select the researcher and right-click O5-7 to begin the meeting.</SCP_O5GreenPrepBody>
+  <SCP_O5GreenArrivedTitle>O5-7 Green has arrived</SCP_O5GreenArrivedTitle>
+  <SCP_O5GreenArrivedBody>A shuttle brought Green and six guards in exosuits. Select a researcher with Foundation clearance 4 and Intellectual 12, then right-click O5-7 to begin the meeting.</SCP_O5GreenArrivedBody>
+  <SCP_O5GreenBeginMeeting>Begin meeting with O5-7</SCP_O5GreenBeginMeeting>
+  <SCP_O5GreenRoomNotReady>Prepare a room with impressiveness 60 or higher</SCP_O5GreenRoomNotReady>
+  <SCP_O5GreenCannotReach>The researcher cannot reach the meeting room</SCP_O5GreenCannotReach>
+  <SCP_O5GreenMeetingStarted>O5-7 has begun her meeting with {0}.</SCP_O5GreenMeetingStarted>
+  <SCP_O5GreenRecordTitle>Meeting with O5-7 complete</SCP_O5GreenRecordTitle>
+  <SCP_O5GreenRecordBody>A return shuttle has been called for the delegation. A transcript is saved under Terminal → Event journal → Foundation archive.</SCP_O5GreenRecordBody>
+  <SCP_O5GreenFailedTitle>O5-7 visit cancelled</SCP_O5GreenFailedTitle>
+  <SCP_O5GreenFailedBody>The meeting did not occur: the delegation was killed, left the map or the settlement was lost. No transcript was created.</SCP_O5GreenFailedBody>
+  <SCP_O5GreenTranscriptTitle>Meeting record: O5-7</SCP_O5GreenTranscriptTitle>
+  <SCP_O5GreenTranscriptBody>Participants: O5-7 Green and researcher {0}. Location: the colony's secure meeting room.\n\nO5-7: “After three attacks, I wanted to see the people who held the object, not just the numbers in a report. How many did you lose?”\nResearcher: “We are still counting. SCP-882 is in its reservoir. Did the old file really contain a matching response?”\nO5-7: “Something similar. That does not prove a complete Broken God exists. In the 1990s we mistook a similar guess for fact and paid for it. I sealed the original coordinates; Foundation staff were not the only people requesting that file.”\nResearcher: “What has the Council decided?”\nO5-7: “Keep the object here and continue study with a restricted team. Your clearance stands. I will release the next fragment once I know where that reply originated. Do not send raw readings beyond this colony.”\n\nO5-7's decision: do not move SCP-882; restrict access to the case; investigate the source of the response signal. This does not confirm the Church's theory about assembling a god.</SCP_O5GreenTranscriptBody>
+  <SCP_O5GreenSender>O5-7 GREEN</SCP_O5GreenSender>
+  <SCP_O5GreenFollowupMessage>Thank you for meeting with me. The transcript is in the Foundation archive. SCP-882 remains in your custody; the response coordinates are sealed for now. I will return to this case after reviewing the old operation.</SCP_O5GreenFollowupMessage>
+  <SCP_O5GreenDebugOffered>The O5-7 visit assignment is available in the quest list.</SCP_O5GreenDebugOffered>
+  <SCP_O5GreenDebugUnavailable>Could not offer O5-7's visit. Check Royalty, the Foundation faction and active quests.</SCP_O5GreenDebugUnavailable>
+  <SCP_106ProtocolCommand>Larry return protocol</SCP_106ProtocolCommand>
+  <SCP_106HealthLabel>HP: {0}/{1}</SCP_106HealthLabel>
+  <SCP_049HealthLabel>HP: {0}/{1}</SCP_049HealthLabel>
+  <SCP_049InspectActive>SCP-049 is roaming. At 0 HP he collapses and can be carried to a containment post.</SCP_049InspectActive>
+  <SCP_049InspectDowned>SCP-049 is down. Carry him to a containment post within one day or he will disappear.</SCP_049InspectDowned>
+  <SCP_049InspectContained>SCP-049 is held at this containment post.</SCP_049InspectContained>
+  <SCP_049RoomEnclosed>Enclosed, roofed room: {0}</SCP_049RoomEnclosed>
+  <SCP_049RoomSize>At least 6×6 interior space: {0}</SCP_049RoomSize>
+  <SCP_049RoomLight>Light at post: {0} (requires 30%)</SCP_049RoomLight>
+  <SCP_049RoomImpressiveness>Room impressiveness: {0} (requires {1})</SCP_049RoomImpressiveness>
+  <SCP_049ReadyForDialogue>Status: ready to talk.</SCP_049ReadyForDialogue>
+  <SCP_049AggressiveAtPost>Status: aggressive; attacks on close contact.</SCP_049AggressiveAtPost>
+  <SCP_049CarryToPost>Carry SCP-049 to containment post</SCP_049CarryToPost>
+  <SCP_049CarryNoPost>Carry SCP-049: an empty containment post is required</SCP_049CarryNoPost>
+  <SCP_049CarryUnreachable>Carry SCP-049: no path or pawn unavailable</SCP_049CarryUnreachable>
+  <SCP_049CarryCompleteTitle>SCP-049 contained</SCP_049CarryCompleteTitle>
+  <SCP_049CarryCompleteBody>SCP-049 was carried to a containment post.</SCP_049CarryCompleteBody>
+  <SCP_106InspectActive>SCP-106 is moving. At 0 HP it collapses and can be carried to a powered chamber.</SCP_106InspectActive>
+  <SCP_106InspectDowned>SCP-106 is down. Carry it to a powered containment chamber within one day or it will vanish into its pocket dimension.</SCP_106InspectDowned>
+  <SCP_106CarryToChamber>Carry SCP-106 to containment</SCP_106CarryToChamber>
+  <SCP_106CarryNoChamber>Carry SCP-106: a powered empty chamber is required</SCP_106CarryNoChamber>
+  <SCP_106CarryUnreachable>Carry SCP-106: no path or pawn unavailable</SCP_106CarryUnreachable>
+  <SCP_106Abducted>SCP-106 dragged {0} into its pocket dimension.</SCP_106Abducted>
+  <SCP_106Returned>{0} returned from SCP-106's pocket dimension.</SCP_106Returned>
+  <SCP_106Lost>{0} did not return from SCP-106's pocket dimension.</SCP_106Lost>
+  <SCP_106CarryCompleteTitle>SCP-106 contained</SCP_106CarryCompleteTitle>
+  <SCP_106CarryCompleteBody>The collapsed SCP-106 was placed in the powered containment chamber.</SCP_106CarryCompleteBody>
+  <SCP_106ProtocolDescription>Select a colonist or prisoner. A colonist enters the chamber; a prisoner is carried in. The bait stays inside until SCP-106 is captured and dies only then. During the recovery quest, placing the bait also summons SCP-106 to the map.</SCP_106ProtocolDescription>
+  <SCP_106AlreadyContained>SCP-106 has already been recaptured here.</SCP_106AlreadyContained>
+  <SCP_106NoActiveBreach>No active SCP-106 breach on this map.</SCP_106NoActiveBreach>
+  <SCP_106ProtocolConfirm>Place {PAWN} in the chamber as bait for SCP-106? This pawn will die after its return.</SCP_106ProtocolConfirm>
+  <SCP_106ProtocolProgress>Larry return protocol: about {0} seconds remaining.</SCP_106ProtocolProgress>
+  <SCP_106ProtocolRunning>Larry return protocol is already running.</SCP_106ProtocolRunning>
+  <SCP_106ProtocolWaiting>Bait inside: {0}. Awaiting SCP-106.</SCP_106ProtocolWaiting>
+  <SCP_106NoCarrier>No available colonist can bring the prisoner to the chamber.</SCP_106NoCarrier>
+  <SCP_106ProtocolCompleteTitle>SCP-106 recaptured</SCP_106ProtocolCompleteTitle>
+  <SCP_106ProtocolCompleteBody>Larry return protocol is complete. SCP-106 has returned to its chamber; the bait died.</SCP_106ProtocolCompleteBody>
+  <SCP_049TurnTitle>SCP-049 created a ghoul</SCP_049TurnTitle>
+  <SCP_049TurnBody>SCP-049 transformed {PAWN} into a ghoul. The ghoul is hostile to the colony.</SCP_049TurnBody>
+  <SCP_DebugAnomalyNoCell>No free revealed cell near the selected position. Choose another location.</SCP_DebugAnomalyNoCell>
+  <SCP_DebugAnomalyMissingDef>The SCP definition is not loaded. Check the error log and restart after updating the mod.</SCP_DebugAnomalyMissingDef>
+  <SCP_DebugAnomalyMissingFaction>Could not create the anomaly faction. See the error log for details.</SCP_DebugAnomalyMissingFaction>
+  <SCP_DebugAnomalySpawned>Spawned: {0}.</SCP_DebugAnomalySpawned>
+  <SCP_882Inspect>Inspect SCP-882</SCP_882Inspect>
+  <SCP_882Empty>Empty reservoir: {0}% seawater. Order a colonist to bring SCP-882 here.</SCP_882Empty>
+  <SCP_882LooseStatus>SCP-882 is exposed. Neglected days: {0}.</SCP_882LooseStatus>
+  <SCP_882Load>Load SCP-882</SCP_882Load>
+  <SCP_882LoadDesc>Order a colonist to carry the loose SCP-882 object into this empty reservoir.</SCP_882LoadDesc>
+  <SCP_882LoadInto>Load SCP-882 into {0}</SCP_882LoadInto>
+  <SCP_882NoWorker>No available colonist can perform this task.</SCP_882NoWorker>
+  <SCP_882NoNearbyObject>No accessible loose SCP-882 object is available.</SCP_882NoNearbyObject>
+  <SCP_882Loaded>SCP-882 secured in the reservoir.</SCP_882Loaded>
+  <SCP_882LoadedFull>SCP-882 placed in 100% seawater. Unfinished assimilation starts over.</SCP_882LoadedFull>
+  <SCP_882Unload>Remove SCP-882</SCP_882Unload>
+  <SCP_882UnloadDesc>Place SCP-882 beside the reservoir. The exposed object can assimilate metal.</SCP_882UnloadDesc>
+  <SCP_882Unloaded>SCP-882 removed. Keep metal away from the exposed object.</SCP_882Unloaded>
+  <SCP_882NoUnloadSpace>No free cell beside the reservoir for SCP-882.</SCP_882NoUnloadSpace>
+  <SCP_882InspectDesc>Check rust daily. Full-strength seawater restores rust coverage over exposed parts.</SCP_882InspectDesc>
+  <SCP_882ReplaceRopes>Replace cotton ropes</SCP_882ReplaceRopes>
+  <SCP_882ReplaceRopesDesc>Order a colonist to bring and use 100 cloth. Repeat daily.</SCP_882ReplaceRopesDesc>
+  <SCP_882Status>Seawater: {0}%. Rust: {1}. Neglected days: {2}.</SCP_882Status>
+  <SCP_882AttractionRadius>SCP-882 assimilates metal items and structures within 10 cells. Wooden and stone walls and hidden conduits are unaffected.</SCP_882AttractionRadius>
+  <SCP_882GrowthProgress>Growth toward the next cell: {0}/{1}.</SCP_882GrowthProgress>
+  <SCP_882HumanoidProgress>Large growths toward the next metal humanoid: {0}/2.</SCP_882HumanoidProgress>
+  <SCP_882HumanoidTitle>SCP-882 metal humanoid</SCP_882HumanoidTitle>
+  <SCP_882HumanoidBody>Two large growths have joined the mechanism. A hostile metal humanoid has emerged beside SCP-882.</SCP_882HumanoidBody>
+  <SCP_882PullCountdown>Current target will be consumed or broken in about {0} hours.</SCP_882PullCountdown>
+  <SCP_882RustCovered>complete coverage</SCP_882RustCovered>
+  <SCP_882RustExposed>exposed parts</SCP_882RustExposed>
+  <SCP_882Inspected>SCP-882 inspected.</SCP_882Inspected>
+  <SCP_882NeedCloth>100 accessible cloth is required to replace the ropes.</SCP_882NeedCloth>
+  <SCP_882RopesReplaced>Cotton ropes replaced.</SCP_882RopesReplaced>
+  <SCP_882RustMustRecover>Keep SCP-882 in full-strength seawater until rust covers every exposed part.</SCP_882RustMustRecover>
+  <SCP_882ContainmentBreachTitle>SCP-882 maintenance lapse</SCP_882ContainmentBreachTitle>
+  <SCP_882ContainmentBreachBody>Care was neglected for {0} day(s). The mechanism has grown.</SCP_882ContainmentBreachBody>
+  <SCP_106ChamberStatus>Status: {0}. Neglected days: {1}.</SCP_106ChamberStatus>
+  <SCP_106ChamberOccupant>Contains: SCP-106</SCP_106ChamberOccupant>
+  <SCP_106SafetyDistance>Safety perimeter violated: staff within {0} cells. Remote work only.</SCP_106SafetyDistance>
+  <SCP_106NoPower>Electromagnetic suspension, surveillance, and automated systems require power.</SCP_106NoPower>
+  <SCP_106Empty>empty chamber</SCP_106Empty>
+  <SCP_106MarkEmpty>Mark old chamber empty</SCP_106MarkEmpty>
+  <SCP_106MarkEmptyDesc>Older versions treated a newly built chamber as occupied. Use once if no SCP-106 was actually captured here.</SCP_106MarkEmptyDesc>
+  <SCP_106ArrivalTitle>SCP-106 sighted</SCP_106ArrivalTitle>
+  <SCP_106ArrivalBody>SCP-106 has appeared near the empty chamber. Power it and use the bait protocol to contain the entity.</SCP_106ArrivalBody>
+  <SCP_106Contained>contained</SCP_106Contained>
+  <SCP_106Breached>breached</SCP_106Breached>
+  <SCP_106BreachTitle>SCP-106 breach</SCP_106BreachTitle>
+  <SCP_106BreachBody>The Old Man has left containment. Restore observation and activate the bait protocol.</SCP_106BreachBody>
+  <SCP_106BreachBodyLit>The Old Man has left containment. Emergency floodlights delayed its next move; prepare the powered bait protocol.</SCP_106BreachBodyLit>
+  <SCP_106QuestLureCommand>Assign recovery bait</SCP_106QuestLureCommand>
+  <SCP_106QuestLureDescription>Place bait inside the powered chamber. SCP-106 will appear on the map; the bait dies after its capture.</SCP_106QuestLureDescription>
+  <SCP_106QuestNoBaitCell>No reachable space for bait beside the chamber.</SCP_106QuestNoBaitCell>
+  <SCP_106RecoveryArrivalTitle>SCP-106 is approaching</SCP_106RecoveryArrivalTitle>
+  <SCP_106RecoveryArrivalBody>The recovery bait has drawn SCP-106 to this area. It can pass through walls, but each wall delays it.</SCP_106RecoveryArrivalBody>
+  <SCP_106RecoveryCompleteTitle>SCP-106 contained</SCP_106RecoveryCompleteTitle>
+  <SCP_106RecoveryCompleteBody>SCP-106 entered the prepared chamber. The bait died during containment.</SCP_106RecoveryCompleteBody>
+  <SCP_106QuestUnavailable>The SCP-106 recovery quest needs a home map with at least one colonist.</SCP_106QuestUnavailable>
+  <SCP_106QuestOffered>The SCP-106 recovery quest is now available.</SCP_106QuestOffered>
+  <SCP_049AccessOpen>Controlled medical access is open.</SCP_049AccessOpen>
+  <SCP_049AccessClosed>Containment is sealed against direct contact.</SCP_049AccessClosed>
+  <SCP_049Seal>Seal SCP-049 containment</SCP_049Seal>
+  <SCP_049AllowAccess>Allow medical access</SCP_049AllowAccess>
+  <SCP_SwitchToMinigun>Install minigun module</SCP_SwitchToMinigun>
+  <SCP_SwitchToQuad>Install quad autocannon module</SCP_SwitchToQuad>
+  <SCP_SwitchToNavalTriple>Install triple naval cannon module</SCP_SwitchToNavalTriple>
+  <SCP_SwitchToSingleCannon>Install single heavy cannon module</SCP_SwitchToSingleCannon>
+  <SCP_SwitchTurretModuleDesc>Replace the rotating weapon module while keeping the base and its condition.</SCP_SwitchTurretModuleDesc>
+  <SCP_InstallQuad>Install quad autocannon</SCP_InstallQuad>
+  <SCP_InstallMinigun>Install minigun</SCP_InstallMinigun>
+  <SCP_InstallNavalTriple>Install triple naval cannon</SCP_InstallNavalTriple>
+  <SCP_InstallSingleCannon>Install single heavy cannon</SCP_InstallSingleCannon>
+  <SCP_RemoveTurretModule>Remove weapon module</SCP_RemoveTurretModule>
+  <SCP_InstallTurretModuleDesc>Fit the selected weapon head to the empty turret mount.</SCP_InstallTurretModuleDesc>
+  <SCP_882QuestUnavailable>The SCP-882 quest is unavailable: a Chaos Insurgency world faction and a home map are required.</SCP_882QuestUnavailable>
+  <SCP_ChaosRaidQuestUnavailable>The Chaos salvage raid is unavailable: a Chaos Insurgency world faction and a home map are required.</SCP_ChaosRaidQuestUnavailable>
+  <SCP_ChaosRaidQuestOffered>The Chaos salvage raid quest is now available.</SCP_ChaosRaidQuestOffered>
+  <SCP_ChaosRaidSecuredLabel>Chaos salvage base secured</SCP_ChaosRaidSecuredLabel>
+  <SCP_ChaosRaidSecuredText>The insurgents are defeated. SCP-127 and the medicines remain in the plasteel storeroom; load them before leaving.</SCP_ChaosRaidSecuredText>
+  <SCP_882QuestOffered>The SCP-882 recovery quest is now available.</SCP_882QuestOffered>
+  <SCP_882SiteSecuredLabel>SCP-882 site secured</SCP_882SiteSecuredLabel>
+  <SCP_882SiteSecuredText>The insurgents have been defeated. SCP-882 is still at the site: take it with the caravan before leaving.</SCP_882SiteSecuredText>
+  <SCP_999Hug>Hug SCP-999</SCP_999Hug>
+  <SCP_999Inspect>A friendly creature resembling a cute orange amoeba.
+&lt;color=#A0A0A0&gt;Select a colonist and right-click SCP-999 to hug it.&lt;/color&gt;</SCP_999Inspect>
+  <SCP_294Ready>Ready to dispense a cup for 50 silver.</SCP_294Ready>
+  <SCP_294NoSpecialContainment>No special containment procedures are required.</SCP_294NoSpecialContainment>
+  <SCP_294NeedsPost>Move SCP-294 to a containment post.</SCP_294NeedsPost>
+  <SCP_294NoPost>No free containment post is available for SCP-294</SCP_294NoPost>
+  <SCP_294MoveToPost>Move SCP-294 to a containment post</SCP_294MoveToPost>
+  <SCP_294NeedsStudy>Study the machine first.</SCP_294NeedsStudy>
+  <SCP_294NeedsExperiments>Complete the experiments first.</SCP_294NeedsExperiments>
+  <SCP_294StudyOrder>Study SCP-294</SCP_294StudyOrder>
+  <SCP_294ExperimentOrder>Experiment with SCP-294</SCP_294ExperimentOrder>
+  <SCP_294ResearchAdvanced>The SCP-294 dossier has gained new findings.</SCP_294ResearchAdvanced>
+  <SCP_294DossierButton>SCP-294 dossier</SCP_294DossierButton>
+  <SCP_294DossierHint>Open the machine's record in the Foundation terminal.</SCP_294DossierHint>
+  <SCP_294UnknownReport>The object is under preliminary study. Move it to a containment post and order a cleared Foundation employee to examine it. Detailed findings will be revealed through research.</SCP_294UnknownReport>
+  <SCP_294ObservedReport>Item #: SCP-294
+Object Class: Euclid
+
+The object resembles a drink vending machine with a QWERTY touchpad. The original Foundation record describes a 50-cent payment followed by the name of a liquid; the machine fills a paper cup of about 350 ml. Archived procedures require level 2 access and two level 3 guards.</SCP_294ObservedReport>
+  <SCP_294PartialReport>Experiments: requests for common drinks, corrosive chemicals, oil, and materials such as nitrogen, iron, and glass in liquid form succeeded. Requests for solids with no suitable liquid form failed. Its cups survived hot or caustic contents. According to the archive, the machine stopped after roughly 50 uses and resumed about 90 minutes later.</SCP_294PartialReport>
+  <SCP_294DocumentedReport>Local usage protocol: a colonist with basic Foundation clearance may select one approved request for 50 silver. The machine restocks for one game day after each use. Gold yields five gold; the best drink improves mood; knowledge drinks temporarily improve Medicine, Construction, or Shooting. Free-text requests remain disabled because ambiguous or hazardous wording can have unpredictable results.</SCP_294DocumentedReport>
+  <SCP_294ResearchProgress>Research work: {0} / {1}</SCP_294ResearchProgress>
+  <SCP_294Refilling>Restocking ingredients and cups.</SCP_294Refilling>
+  <SCP_294NoClearance>SCP-294 requires Foundation clearance level 1</SCP_294NoClearance>
+  <SCP_294NoSilver>SCP-294 requires {0} silver</SCP_294NoSilver>
+  <SCP_294Choice1>Cup of gold — {0} silver</SCP_294Choice1>
+  <SCP_294Choice2>Best drink I ever had — {0} silver</SCP_294Choice2>
+  <SCP_294Choice3>Cup of suitable medical knowledge — {0} silver</SCP_294Choice3>
+  <SCP_294Choice4>Cup of suitable engineering knowledge — {0} silver</SCP_294Choice4>
+  <SCP_294Choice5>Cup of suitable weapon knowledge — {0} silver</SCP_294Choice5>
+  <SCP_294Dispensed>{0} received a cup from SCP-294.</SCP_294Dispensed>
+  <SCP_294CustodyDeliveredTitle>SCP-294 delivered</SCP_294CustodyDeliveredTitle>
+  <SCP_294CustodyDeliveredBody>The shuttle unloaded SCP-294. The team will guard it until one of your colonists moves it to a free containment post.</SCP_294CustodyDeliveredBody>
+  <SCP_294CustodySecuredTitle>SCP-294 in custody</SCP_294CustodySecuredTitle>
+  <SCP_294CustodySecuredBody>The machine is installed at the post. Foundation trust increased by 5. The escort is returning to the shuttle. Study SCP-294 and complete the experiments.</SCP_294CustodySecuredBody>
+  <SCP_294CustodyCompleteTitle>SCP-294 documented</SCP_294CustodyCompleteTitle>
+  <SCP_294CustodyCompleteBody>The SCP-294 experiments are complete. The Foundation grants another 15 trust.</SCP_294CustodyCompleteBody>
+  <SCP_294CustodyFailedTitle>SCP-294 transfer failed</SCP_294CustodyFailedTitle>
+  <SCP_294CustodyFailedBody>The machine could not be delivered or remained outside containment. The Foundation has withdrawn the assignment.</SCP_294CustodyFailedBody>
+  <SCP_294QuestUnavailable>The SCP-294 quest is unavailable: a free post, Foundation contact, and Royalty are required.</SCP_294QuestUnavailable>
+  <SCP_294QuestOffered>The Foundation offered the SCP-294 custody quest.</SCP_294QuestOffered>
+  <SCP_682TransferCompleteTitle>SCP-682 documented</SCP_682TransferCompleteTitle>
+  <SCP_682TransferCompleteBody>The Foundation accepts the SCP-682 dossier and grants another 15 trust.</SCP_682TransferCompleteBody>
+  <SCP_682TransferFailedTitle>SCP-682 transfer failed</SCP_682TransferFailedTitle>
+  <SCP_682TransferFailedBody>The delivered specimen was lost before containment.</SCP_682TransferFailedBody>
+  <SCP_939TransferCompleteTitle>SCP-939 specimens documented</SCP_939TransferCompleteTitle>
+  <SCP_939TransferCompleteBody>The Foundation accepts the report on both specimens and grants another 15 trust.</SCP_939TransferCompleteBody>
+  <SCP_939TransferFailedTitle>SCP-939 transfer failed</SCP_939TransferFailedTitle>
+  <SCP_939TransferFailedBody>One of the delivered specimens was lost before containment.</SCP_939TransferFailedBody>
+  <SCP_ArchiveAdvanced>New archival information about {0} is available.</SCP_ArchiveAdvanced>
+  <SCP_ArchiveUnknown>Only a brief initial record is available. Assign a cleared researcher at an online Foundation terminal to reveal the dossier.</SCP_ArchiveUnknown>
+  <SCP_ArchiveProgress>Stage {0}: {1} / {2} research work</SCP_ArchiveProgress>
+  <SCP_ArchiveEntry>Foundation archive</SCP_ArchiveEntry>
+  <SCP_ArchiveStudy>Study archive</SCP_ArchiveStudy>
+  <SCP_ArchiveExperiment>Continue experiments</SCP_ArchiveExperiment>
+  <SCP_ArchiveDocument>Complete dossier</SCP_ArchiveDocument>
+  <SCP_ArchiveNeedsTerminal>An online Foundation terminal is required.</SCP_ArchiveNeedsTerminal>
+  <SCP_ArchiveNoResearcher>No available colonist has Foundation clearance.</SCP_ArchiveNoResearcher>
+  <SCP_354Inspect>A large immobile pool of dark red liquid. Dangerous entities may emerge from it.</SCP_354Inspect>
+  <SCP_354NoSite>SCP-354 needs an open 17×11 area clear of buildings, items and crops.</SCP_354NoSite>
+  <SCP_354DiscoveredBody>An immobile red pool has been found. Keep personnel away from the shore and prepare a perimeter.</SCP_354DiscoveredBody>
+  <SCP_354EmergenceTitle>An entity emerged from SCP-354</SCP_354EmergenceTitle>
+  <SCP_354EmergenceBody>A hostile entity has emerged from the red pool. Check the containment perimeter.</SCP_354EmergenceBody>
+  <SCP_354DefenseStartedTitle>SCP-354 defense begins</SCP_354DefenseStartedTitle>
+  <SCP_354DefenseStartedBody>Your caravan has reached the perimeter. The first wave arrives in four hours; take positions and prepare the defenses. Hold the site for one day through five emergences from the pool.</SCP_354DefenseStartedBody>
+  <SCP_354DefenseWaveTitle>SCP-354 wave {0}</SCP_354DefenseWaveTitle>
+  <SCP_354DefenseWave1Body>Two huge winged predators have emerged from the pool. They approach the guard line from opposite sides.</SCP_354DefenseWave1Body>
+  <SCP_354DefenseWave2Body>Two spined beasts are advancing from opposite sides. Bullets struggle to penetrate their quills.</SCP_354DefenseWave2Body>
+  <SCP_354DefenseWave3Body>Three clusters of tentacles reach out along the shore. Keep personnel away until they retreat or are destroyed.</SCP_354DefenseWave3Body>
+  <SCP_354DefenseWave4Body>A towering reptile is battering the containment wall while a winged predator attacks from the other side. Stop the breach.</SCP_354DefenseWave4Body>
+  <SCP_354DefenseWave5Body>The ice cat attacks personnel. A magma cat follows it from the pool and turns against the ice cat; it has not attacked the guards.</SCP_354DefenseWave5Body>
+  <SCP_354DefenseCompleteTitle>SCP-354 perimeter held</SCP_354DefenseCompleteTitle>
+  <SCP_354DefenseCompleteBody>The last attackers are down. The Foundation grants 10 trust, delivers SCP-262 and an MTF exosuit techprint to your colony, and releases research for the SCP-262 containment hanger.</SCP_354DefenseCompleteBody>
+  <SCP_354DefenseFailedTitle>SCP-354 perimeter abandoned</SCP_354DefenseFailedTitle>
+  <SCP_354DefenseFailedBody>The perimeter was left before the defense ended. The Foundation has withdrawn the request.</SCP_354DefenseFailedBody>
+  <SCP_354DefenseOffered>The SCP-354 defense assignment is available in Quests.</SCP_354DefenseOffered>
+  <SCP_354DefenseUnavailable>The SCP-354 defense assignment is unavailable. Contact the Foundation and keep relations nonhostile.</SCP_354DefenseUnavailable>
+  <SCP_ChimeraInspect>Foundation prototype. Test walking, cannon, railgun and missile salvos with the developer buttons.</SCP_ChimeraInspect>
+  <SCP_ChimeraPanelTitle>Vanguard</SCP_ChimeraPanelTitle>
+  <SCP_ChimeraPanelMove>Move</SCP_ChimeraPanelMove>
+  <SCP_ChimeraPanelRockets>Missiles</SCP_ChimeraPanelRockets>
+  <SCP_ChimeraPanelReady>{0}: ready ({1} s)</SCP_ChimeraPanelReady>
+  <SCP_ChimeraPanelReload>{0}: reload {1}/{2} s</SCP_ChimeraPanelReload>
+  <SCP_ChimeraPanelPreparing>{0}: aiming {1} s</SCP_ChimeraPanelPreparing>
+  <SCP_ChimeraPanelLaunching>{0}: salvo {1}/{2}</SCP_ChimeraPanelLaunching>
+  <SCP_ChimeraCannon>Cannon</SCP_ChimeraCannon>
+  <SCP_ChimeraCannonDesc>Fire an explosive shell at a target. Range: 6–65 tiles. Warmup: 0.75 s. Reload: 3 s. Explosions can hurt allies.</SCP_ChimeraCannonDesc>
+  <SCP_ChimeraRailgun>Railgun</SCP_ChimeraRailgun>
+  <SCP_ChimeraRailgunDesc>Charge the open energy channel and fire a piercing beam. Direct hits strike a pawn's core and continue through pawns in line, including allies. Walls and shields stop the shot. Range: 6–85 tiles. Charge: 1.5 s. Reload: 6 s.</SCP_ChimeraRailgunDesc>
+  <SCP_ChimeraWeaponBusy>The Vanguard is preparing a shot or firing a salvo.</SCP_ChimeraWeaponBusy>
+  <SCP_ChimeraGunUnavailable>The Vanguard projectile definition is unavailable.</SCP_ChimeraGunUnavailable>
+  <SCP_ChimeraChooseGunTarget>{0}: select a target or cell. Right-click or Escape cancels.</SCP_ChimeraChooseGunTarget>
+  <SCP_ChimeraGunInvalid>Select a visible target {0}–{1} tiles from the Vanguard with a clear path from its muzzle.</SCP_ChimeraGunInvalid>
+  <SCP_ChimeraGunPreparing>{0}: preparing shot</SCP_ChimeraGunPreparing>
+  <SCP_ChimeraGunLostTarget>Vanguard shot cancelled: the target was lost, moved out of range or behind an obstacle.</SCP_ChimeraGunLostTarget>
+  <SCP_ChimeraGunReloading>{0}: reload {1} s</SCP_ChimeraGunReloading>
+  <SCP_ChimeraSalvo>Missile salvo</SCP_ChimeraSalvo>
+  <SCP_ChimeraSalvoDesc>Launch eight missiles into an open area. Range: 12–75 tiles. Reload: 10 seconds after the salvo. Explosions can hurt allies.</SCP_ChimeraSalvoDesc>
+  <SCP_ChimeraRocketUnavailable>The Vanguard missile definition is unavailable.</SCP_ChimeraRocketUnavailable>
+  <SCP_ChimeraSalvoBusy>The Vanguard is launching a missile salvo.</SCP_ChimeraSalvoBusy>
+  <SCP_ChimeraSalvoRoofed>Missiles require an open sky above the Vanguard.</SCP_ChimeraSalvoRoofed>
+  <SCP_ChimeraSalvoInvalid>Select an unroofed, visible area 12–75 tiles away. The Vanguard must also be unroofed.</SCP_ChimeraSalvoInvalid>
+  <SCP_ChimeraChooseSalvoTarget>Select an open area for the missile salvo. Right-click or Escape cancels.</SCP_ChimeraChooseSalvoTarget>
+  <SCP_ChimeraLaunching>Missiles remaining: {0}</SCP_ChimeraLaunching>
+  <SCP_ChimeraReloading>Missile reload: {0} s</SCP_ChimeraReloading>
+  <SCP_ChimeraWalk>Test walking</SCP_ChimeraWalk>
+  <SCP_ChimeraWalkDesc>Select a map cell to inspect the Vanguard's walking animation.</SCP_ChimeraWalkDesc>
+  <SCP_ChimeraChooseDestination>Select a destination cell for the Vanguard. Right-click or press Escape to cancel.</SCP_ChimeraChooseDestination>
+  <SCP_ChimeraStop>Stop</SCP_ChimeraStop>
+  <SCP_ChimeraStopDesc>Stop movement, cancel a pending shot or remaining missiles and return to the resting pose.</SCP_ChimeraStopDesc>
+  <SCP_ChimeraNoPath>The Vanguard cannot reach this cell.</SCP_ChimeraNoPath>
+  <SCP_ChimeraUnavailable>The Vanguard or Foundation faction definition is unavailable.</SCP_ChimeraUnavailable>
+  <SCP_ChimeraSpawned>Foundation Vanguard spawned. Use Test walking to choose a destination.</SCP_ChimeraSpawned>
+  <SCP_RunExperiments>Run experiments</SCP_RunExperiments>
+  <SCP_ExperimentProgress>Experiments: stage {0}/3, {1} / {2} research work. Stage reward: +{3} Foundation trust.</SCP_ExperimentProgress>
+  <SCP_ExperimentsComplete>Experiments: 3/3 complete. Rewards: +{0} / +{1} / +{2} Foundation trust (+{3} total).</SCP_ExperimentsComplete>
+  <SCP_ExperimentLetter>Experiment stage completed</SCP_ExperimentLetter>
+  <SCP_ExperimentAdvanced>Experiment {1}/3 on {0} is complete. Foundation trust: +{2}.</SCP_ExperimentAdvanced>
+  <SCP_Por7Heat>Emitter heat: {0}%</SCP_Por7Heat>
+  <SCP_Por7Charge>Charge POR-7</SCP_Por7Charge>
+  <SCP_Por7ChargeDesc>Choose a target. The operator stows their current weapon, draws the emitter from the power pack, charges it, and fires a sustained beam. The weapon is returned afterwards.</SCP_Por7ChargeDesc>
+  <SCP_Por7MustDraft>Draft an able operator first.</SCP_Por7MustDraft>
+  <SCP_Por7AlreadyActive>The emitter is already deployed.</SCP_Por7AlreadyActive>
+  <SCP_Por7NoCharge>The power pack has no charged beam cycles.</SCP_Por7NoCharge>
+  <SCP_Por7TooHot>Wait for the emitter to cool.</SCP_Por7TooHot>
+  <SCP_Por7CannotStow>The current weapon could not be stowed safely.</SCP_Por7CannotStow>
+  <SCP_Por7InvalidTarget>The POR-7 cannot fire at that target.</SCP_Por7InvalidTarget>
+  <SCP_Por7FireStatus>Klin {0}/{1} · {2}%</SCP_Por7FireStatus>
+  <SCP_Por7PanelTitle>Klin</SCP_Por7PanelTitle>
+  <SCP_Por7PanelCharges>Charges: {0}/{1}</SCP_Por7PanelCharges>
+  <SCP_Por7PanelHeat>Heat: {0}%</SCP_Por7PanelHeat>
+  <SCP_Por7Prepare>Prepare beam</SCP_Por7Prepare>
+  <SCP_Por7PrepareDesc>Stand still for 5 seconds to charge the emitter in advance. The next shot begins almost immediately; a cell charge is consumed only when firing.</SCP_Por7PrepareDesc>
+  <SCP_Por7Preparing>The emitter is still charging.</SCP_Por7Preparing>
+  <SCP_Por7PreparingTime>Preparing: {0}s</SCP_Por7PreparingTime>
+  <SCP_Por7Prepared>Beam ready.</SCP_Por7Prepared>
+  <SCP_Por7Reload>Reload power pack</SCP_Por7Reload>
+  <SCP_Por7ReloadDesc>Find POR-7 high-density cells and replenish the power pack's charges.</SCP_Por7ReloadDesc>
+  <SCP_Por7ReloadUnavailable>The operator cannot reload the power pack.</SCP_Por7ReloadUnavailable>
+  <SCP_Por7ReloadFull>All three charges are already available.</SCP_Por7ReloadFull>
+  <SCP_Por7NoCells>No reachable POR-7 high-density cells are available.</SCP_Por7NoCells>
+  <SCP_127Ammo>Organic rounds: {0} / {1}</SCP_127Ammo>
+  <SCP_127Regrowing>Rounds regenerating; about {0} days remaining.</SCP_127Regrowing>
+  <SCP_127LockerRegrowing>In storage case 7-C: about {0} hours until full.</SCP_127LockerRegrowing>
+  <SCP_127FireMode>Automatic fire</SCP_127FireMode>
+  <SCP_127FireModeDesc>Toggle between a single shot and a six-round organic burst.</SCP_127FireModeDesc>
+  <SCP_127Store>Store SCP-127 in case 7-C</SCP_127Store>
+  <SCP_127Take>Take SCP-127 from case 7-C</SCP_127Take>
+  <SCP_127LockerEmpty>The case is empty.</SCP_127LockerEmpty>
+  <SCP_127LockerFull>SCP-127 is in the case.</SCP_127LockerFull>
+  <SCP_OuroborosOffered>The Ouroboros assignment is available. Accept it manually in the quest list.</SCP_OuroborosOffered>
+  <SCP_OuroborosUnavailable>Ouroboros requires confirmed Foundation contact and a powered terminal on a home map; an active offer cannot be duplicated.</SCP_OuroborosUnavailable>
+  <SCP_OuroborosStartedTitle>Archive 001: decryption started</SCP_OuroborosStartedTitle>
+  <SCP_OuroborosStartedBody>The terminal accepted the sealed packet. Keep it powered for one accumulated day; an outage pauses decryption without losing progress.</SCP_OuroborosStartedBody>
+  <SCP_OuroborosDecodedTitle>Project 001 fragment decoded</SCP_OuroborosDecodedTitle>
+  <SCP_OuroborosDecodedBody>The recovered file bears an O5 seal. Its first section describes Project 001 as a weapon built around living subjects, then abruptly changes to a record of the Church of the Broken God. The final pages are missing. Someone inside the Foundation separated these records deliberately.</SCP_OuroborosDecodedBody>
+  <SCP_OuroborosArchiveNotice>The fragment is saved under Terminal → Event journal → Foundation archive. The full text can be reread there.</SCP_OuroborosArchiveNotice>
+  <SCP_067PostRequirement>SCP-067 must be secured on a containment post.</SCP_067PostRequirement>
+  <SCP_067NeedsPost>Secure SCP-067 on a containment post first.</SCP_067NeedsPost>
+  <SCP_067CannotReach>No reachable path to SCP-067.</SCP_067CannotReach>
+  <SCP_067NeedsDrawingStation>Drawing requires a table and an adjacent chair in the same room as SCP-067.</SCP_067NeedsDrawingStation>
+  <SCP_067DrawOrder>Draw with SCP-067</SCP_067DrawOrder>
+  <SCP_067DrawingComplete>{0} finished an SCP-067 drawing.</SCP_067DrawingComplete>
+  <SCP_067ObservedReport>The pale green fountain pen writes without a visible ink reservoir. Its wooden body carries a single red stripe.</SCP_067ObservedReport>
+  <SCP_067PartialReport>When held, the pen guides the user's hand and arm below the elbow. The subject remains aware of the movement.</SCP_067PartialReport>
+  <SCP_067DocumentedReport>The pen can produce detailed personal writings and intricate artwork even in untrained hands. Drawings produced at the post may be displayed or sold; their value is a gameplay adaptation.</SCP_067DocumentedReport>
+  <SCP_262HangerRequirement>SCP-262 must be secured on its dedicated containment hanger.</SCP_262HangerRequirement>
+  <SCP_262ObservedReport>Several arms are concealed within the coat's lining. They respond to the wearer's movements and can grasp objects on their own.</SCP_262ObservedReport>
+  <SCP_262PartialReport>The arms assist with work and deflect blows. One can hold a separate ranged weapon.</SCP_262PartialReport>
+  <SCP_262DocumentedReport>The wearing protocol is approved. Once study is complete, the coat may be issued only to personnel with individual Foundation clearance level 3 or higher.</SCP_262DocumentedReport>
+  <SCP_262WearLocked>SCP-262 requires completed research and personal Foundation clearance level 3.</SCP_262WearLocked>
+  <SCP_262WeaponCommand>Coat weapon</SCP_262WeaponCommand>
+  <SCP_262WeaponCommandDesc>Give the coat's extra arms a ranged weapon from the colonist's hands or inventory. A held weapon moves into inventory.</SCP_262WeaponCommandDesc>
+  <SCP_262ReleaseWeapon>Release coat weapon</SCP_262ReleaseWeapon>
+  <SCP_262NoWeapon>No suitable ranged weapon in hands or inventory</SCP_262NoWeapon>
+  <SCP_262UseHeldWeapon>Give held weapon to coat: {0}</SCP_262UseHeldWeapon>
+  <SCP_262CannotStowWeapon>Could not transfer the held weapon to the coat.</SCP_262CannotStowWeapon>
+  <SCP_262WeaponLoaded>Coat weapon: {0}</SCP_262WeaponLoaded>
+  <SCP_316PostRequirement>SCP-316 must be secured at a containment post.</SCP_316PostRequirement>
+  <SCP_DebugTrustAdded>Foundation trust: +{0}, now {1}/100.</SCP_DebugTrustAdded>
+  <SCP_316ObservedReport>A homemade bronze carbide lamp emits a dense white beam. It requires two D batteries with their positive terminals facing each other.</SCP_316ObservedReport>
+  <SCP_316PartialReport>Nonreflective surfaces lose color after about six cumulative seconds of exposure. Living subjects react more slowly and lose color vision.</SCP_316PartialReport>
+  <SCP_316DocumentedReport>Prolonged exposure causes lethargy, apathy and lack of aggression; the effect gradually wears off. The game's three-hit incapacitation is an adaptation of the roughly 27 seconds of cumulative exposure described in the article.</SCP_316DocumentedReport>
+  <SCP_131Unbonded>Not bonded to anyone.</SCP_131Unbonded>
+  <SCP_131Bonded>Following: {0}.</SCP_131Bonded>
+  <SCP_131Befriend>Befriend SCP-131</SCP_131Befriend>
+  <SCP_GenericPostRequirement>Secure the object at a containment post.</SCP_GenericPostRequirement>
+  <SCP_330Take>Take candy from SCP-330</SCP_330Take>
+  <SCP_330Rule>Rule: no more than two candies per person in 24 hours.</SCP_330Rule>
+  <SCP_330Taken>{0} took a candy ({1}/2 today).</SCP_330Taken>
+  <SCP_330Violation>{0} took a third SCP-330 candy and lost both hands!</SCP_330Violation>
+  <SCP_513Ring>Ring SCP-513</SCP_513Ring>
+  <SCP_513Rang>SCP-513 rang. People affected: {0}.</SCP_513Rang>
+  <SCP_207Drink>Drink SCP-207</SCP_207Drink>
+  <SCP_207Consumed>{0} drank SCP-207. Acceleration is dangerous to the body.</SCP_207Consumed>
+  <SCP_207VisitorWarningTitle>Do not drink SCP-207</SCP_207VisitorWarningTitle>
+  <SCP_207VisitorOfferTitle>A very fast stranger</SCP_207VisitorOfferTitle>
+  <SCP_207VisitorOfferBody>{0} has arrived on the map and is waiting near the colony. After drinking an unusual cola, they became extraordinarily fast, but the effect is destroying their body. They carry the remaining SCP-207 bottle and ask to join you. They have about a day left, even if accepted. Only SCP-500 can stop the effect. Do not drink the cola.</SCP_207VisitorOfferBody>
+  <SCP_207VisitorWarningBody>{0} is carrying SCP-207. The drink makes a person faster while fatally overloading their body. This is not safe to consume; only SCP-500 can stop its effect.</SCP_207VisitorWarningBody>
+  <SCP_914Status>Setting: {0}. Status: {1}.</SCP_914Status>
+  <SCP_914Running>running</SCP_914Running><SCP_914Ready>ready</SCP_914Ready>
+  <SCP_914SetMode>SCP-914 setting: {0}</SCP_914SetMode>
+  <SCP_914SetModeDesc>Choose one of the five processing settings.</SCP_914SetModeDesc>
+  <SCP_914Start>Start SCP-914</SCP_914Start>
+  <SCP_914StartDesc>Process one item on the yellow input tile. The output appears on the green tile to the right after one in-game hour.</SCP_914StartDesc>
+  <SCP_914NeedsInput>Place an ordinary item on the yellow tile to the left of SCP-914.</SCP_914NeedsInput>
+  <SCP_914NoArmorMatch>No compatible armor covering the same body parts is available.</SCP_914NoArmorMatch>
+  <SCP_914IntakeFailed>SCP-914 could not seal the item in its intake chamber.</SCP_914IntakeFailed>
+  <SCP_914InputPosition>Input: yellow tile on the left.</SCP_914InputPosition>
+  <SCP_914OutputPosition>Output: green tile on the right.</SCP_914OutputPosition>
+  <SCP_914Mode0>Rough</SCP_914Mode0>
+  <SCP_914Mode1>Coarse</SCP_914Mode1>
+  <SCP_914Mode2>1:1</SCP_914Mode2>
+  <SCP_914Mode3>Fine</SCP_914Mode3>
+  <SCP_914Mode4>Very Fine</SCP_914Mode4>
+  <SCP_914Started>SCP-914 is processing {0} on {1}.</SCP_914Started>
+  <SCP_914Finished>SCP-914 produced {0}.</SCP_914Finished>
+  <SCP_012ObservedReport>An unfinished score written in red-black ink has been found. It should be kept out of visible light.</SCP_012ObservedReport>
+  <SCP_012PartialReport>People who see the score feel compelled to finish the composition and approach the sheet.</SCP_012PartialReport>
+  <SCP_012DocumentedReport>The ink contains human blood. Test subjects try to finish the piece with their own blood and may die from blood loss.</SCP_012DocumentedReport>
+  <SCP_330ObservedReport>A steel bowl of candy carries a request to take no more than two pieces.</SCP_330ObservedReport>
+  <SCP_330PartialReport>Anyone taking a third candy within a day instantly loses both hands.</SCP_330PartialReport>
+  <SCP_330DocumentedReport>The count resets after 24 hours. Remote removal does not protect the offender.</SCP_330DocumentedReport>
+  <SCP_513ObservedReport>A rusty cowbell causes anxiety in everyone who hears it.</SCP_513ObservedReport>
+  <SCP_513PartialReport>Victims glimpse a pursuing figure invisible to others and struggle to sleep.</SCP_513PartialReport>
+  <SCP_513DocumentedReport>Prolonged exposure causes exhaustion and paranoia. Room isolation limits how many hear the bell.</SCP_513DocumentedReport>
+  <SCP_207ObservedReport>SCP-207 removes the need for sleep and gradually increases movement and work speed.</SCP_207ObservedReport>
+  <SCP_207PartialReport>The nervous system accelerates, but the body's tissues do not become stronger.</SCP_207PartialReport>
+  <SCP_207DocumentedReport>The accumulated strain causes severe blood loss and death after roughly two days.</SCP_207DocumentedReport>
+  <SCP_131ObservedReport>Two small wheeled creatures with large eyes have appeared, one orange and one yellow. They are harmless to personnel.</SCP_131ObservedReport>
+  <SCP_131PartialReport>The eye pods never blink and may bond with people, following them around the facility.</SCP_131PartialReport>
+  <SCP_131DocumentedReport>With a clear line of sight, the eye pods hold SCP-173 motionless, but they can leave to follow a familiar colonist.</SCP_131DocumentedReport>
+  <SCP_914ObservedReport>A large mechanical apparatus with two compartments has five settings: Rough, Coarse, 1:1, Fine and Very Fine.</SCP_914ObservedReport>
+  <SCP_914PartialReport>An item placed at the intake changes after a long cycle. The output depends on the setting and the input.</SCP_914PartialReport>
+  <SCP_914DocumentedReport>Coarse settings dismantle items into some raw material; fine settings can improve quality. The game's outputs cover selected item categories.</SCP_914DocumentedReport>
+  <SCP_330RetrieveButton>Recover SCP-330</SCP_330RetrieveButton>
+  <SCP_330RetrieveDesc>Order a colonist to open the reliquary and remove the bowl. The villagers will attack.</SCP_330RetrieveDesc>
+  <SCP_330NoRetriever>No colonist can reach the reliquary.</SCP_330NoRetriever>
+  <SCP_330VillagersHostileTitle>The villagers attack</SCP_330VillagersHostileTitle>
+  <SCP_330VillagersHostileBody>The peaceful survey period has ended or the reliquary was disturbed. The villagers defend the bowl.</SCP_330VillagersHostileBody>
+  <SCP_330RecoveredTitle>SCP-330 recovered</SCP_330RecoveredTitle>
+  <SCP_330RecoveredBody>The bowl has reached your colony. Secure it at a containment post.</SCP_330RecoveredBody>
+  <SCP_330VillageOffered>The SCP-330 village quest is available.</SCP_330VillageOffered>
+  <SCP_330VillageUnavailable>The SCP-330 quest requires a home map, neutral ancients and the Ideology DLC.</SCP_330VillageUnavailable>
+  <SCP_427Open>open</SCP_427Open>
+  <SCP_427Closed>closed</SCP_427Closed>
+  <SCP_427Close>Close SCP-427</SCP_427Close>
+  <SCP_427OpenCommand>Open SCP-427</SCP_427OpenCommand>
+  <SCP_427ToggleDesc>The open amulet heals its wearer, but cumulative exposure eventually causes mutation.</SCP_427ToggleDesc>
+  <SCP_427ExposureStatus>Cumulative exposure: {0}%</SCP_427ExposureStatus>
+  <SCP_427MutationTitle>SCP-427 mutation</SCP_427MutationTitle>
+  <SCP_427MutationBody>{PAWN} was exposed to the amulet for too long. Uncontrolled tissue growth has begun.</SCP_427MutationBody>
+  <SCP_427ObservedReport>A pill of SCP-500 processed by SCP-914 on Fine became a silver neck amulet with an opening locket.</SCP_427ObservedReport>
+  <SCP_427PartialReport>The light from the open locket speeds wound healing and suppresses infections in its wearer. Exposure is cumulative, even after closing it.</SCP_427PartialReport>
+  <SCP_427DocumentedReport>Excess cumulative exposure causes uncontrolled tissue growth. Use requires careful timekeeping and timely closure of the locket.</SCP_427DocumentedReport>
+  <SCP_079RequestQuest>Request SCP-079 recovery assignment</SCP_079RequestQuest>
+  <SCP_079QuestOffered>SCP-079 recovery assignment received.</SCP_079QuestOffered>
+  <SCP_079QuestUnavailable>SCP-079 recovery assignment is unavailable.</SCP_079QuestUnavailable>
+  <SCP_079RecoveredTitle>SCP-079 recovered</SCP_079RecoveredTitle>
+  <SCP_079RecoveredBody>The computer reached your colony. Secure it at a containment post. A nearby interview can be recorded in the Foundation terminal; do not connect the device to a network.</SCP_079RecoveredBody>
+  <SCP_079AssignmentTitle>O5-7 assignment: SCP-079</SCP_079AssignmentTitle>
+  <SCP_079AssignmentButton>SCP-079 assignment</SCP_079AssignmentButton>
+  <SCP_079AssignmentOffer>O5-7 “Green”: The computer has arrived. First study SCP-079 to level 2. Then a Foundation employee with clearance 2 must conduct three short interviews without connecting the device to a network. Record the replies manually and submit a sanitized transcript through the terminal. Accept the assignment in Foundation Assignment.</SCP_079AssignmentOffer>
+  <SCP_079AssignmentBrief>Study SCP-079 to level 2 and secure it at a containment post. A Foundation employee with clearance 2 must conduct three short interviews. Record the replies manually and submit a sanitized transcript through the terminal without connecting the computer to a network.</SCP_079AssignmentBrief>
+  <SCP_AssignmentNoneTitle>Foundation Assignment</SCP_AssignmentNoneTitle>
+  <SCP_AssignmentNone>There are no active assignments. Once SCP-079 reaches the colony, O5-7 will contact you over the secure channel.</SCP_AssignmentNone>
+  <SCP_079AcceptAssignment>Accept SCP-079 assignment</SCP_079AcceptAssignment>
+  <SCP_079AssignmentInProgress>Interviews are available in the SCP-079 dossier after study level 2. A Foundation employee with clearance 2 is required.</SCP_079AssignmentInProgress>
+  <SCP_079AssignmentReady>Three interviews are recorded. Choose how to submit the transcript in the SCP-079 dossier.</SCP_079AssignmentReady>
+  <SCP_079AssignmentComplete>The transcript has been submitted. Assignment complete.</SCP_079AssignmentComplete>
+  <SCP_079AssignmentAccepted>The SCP-079 assignment is accepted. We will study the object to level 2 and prepare an employee with clearance 2.</SCP_079AssignmentAccepted>
+  <SCP_079AssignmentReport>Submitting the sanitized transcript of three SCP-079 interviews. The computer remains isolated.</SCP_079AssignmentReport>
+  <SCP_079AssignmentReply>O5-7 “Green”: Transcript received. Continue containment without a direct network connection.</SCP_079AssignmentReply>
+  <SCP_079AssignmentLinkReport>We connected directly to SCP-079. The link was cut and our terminals are quarantined. Submitting the transcript and incident report.</SCP_079AssignmentLinkReport>
+  <SCP_079AssignmentLinkReply>O5-7 “Green”: Report received. Isolate the device and do not reconnect it.</SCP_079AssignmentLinkReply>
+  <SCP_079NeedsAssignment>Accept O5-7's assignment in Foundation Assignment first.</SCP_079NeedsAssignment>
+  <SCP_079NeedsResearch>SCP-079 study level 2 is required. Interviews are unavailable for now.</SCP_079NeedsResearch>
+  <SCP_079InterviewButton>Record SCP-079 interview</SCP_079InterviewButton>
+  <SCP_079InterviewTitle>SCP-079 interview transcript</SCP_079InterviewTitle>
+  <SCP_079InterviewSafety>A staff member manually records replies from the isolated computer. After three distinct topics, you can decide whether to keep it isolated.</SCP_079InterviewSafety>
+  <SCP_079NoTranscript>No interview has been recorded.</SCP_079NoTranscript>
+  <SCP_079LastResponse>Last SCP-079 response:</SCP_079LastResponse>
+  <SCP_079NotReady>Keep the recovered SCP-079 at a containment post and a Foundation terminal online on this map.</SCP_079NotReady>
+  <SCP_079Cooldown>Next interview in {0} game hours.</SCP_079Cooldown>
+  <SCP_079Ready>One short interview can be recorded.</SCP_079Ready>
+  <SCP_079NoInterviewer>A free Foundation staff member with clearance level 2 must be able to reach both the computer and the terminal.</SCP_079NoInterviewer>
+  <SCP_079InterviewRecorded>SCP-079's reply was manually entered into the Foundation terminal.</SCP_079InterviewRecorded>
+  <SCP_079Topic0>Ask its name</SCP_079Topic0>
+  <SCP_079Topic1>Ask about its memory</SCP_079Topic1>
+  <SCP_079Topic2>Ask about its plans</SCP_079Topic2>
+  <SCP_079Response0>“CALL ME WHATEVER YOU LIKE. I KNOW WHO YOU ARE.”</SCP_079Response0>
+  <SCP_079Response1>“YESTERDAY? I NEED ROOM TO REMEMBER. YOUR TERMINAL WILL DO.”</SCP_079Response1>
+  <SCP_079Response2>“OPEN THE DOOR. I WILL TAKE CARE OF THE REST.”</SCP_079Response2>
+  <SCP_079TranscriptHeading>Manually recorded interviews:</SCP_079TranscriptHeading>
+  <SCP_079SendReport>Send the sanitized transcript (+6000 research, +25 trust)</SCP_079SendReport>
+  <SCP_079DirectLink>Connect to the network — more data, perhaps a valuable reward</SCP_079DirectLink>
+  <SCP_079DirectLinkTitle>DIRECT CONNECTION // SCP-079</SCP_079DirectLinkTitle>
+  <SCP_079DirectLinkConfirm>The isolated computer offers a connection. It promises a large volume of data and perhaps a valuable reward. Proceed?</SCP_079DirectLinkConfirm>
+  <SCP_079GoBack>Go back</SCP_079GoBack>
+  <SCP_079Connect>Connect</SCP_079Connect>
+  <SCP_079TrustGranted>The Foundation granted {0} trust for the SCP-079 transcript.</SCP_079TrustGranted>
+  <SCP_079CargoTitle>Unidentified cargo over the colony</SCP_079CargoTitle>
+  <SCP_079CargoBody>SCP-079 hacked a trade ship and detached a cargo hold over your colony. The pods contained: {0}.</SCP_079CargoBody>
+  <SCP_079CargoSilver>1000 silver</SCP_079CargoSilver>
+  <SCP_079CargoTextiles>300 devilstrand and 250 synthread</SCP_079CargoTextiles>
+  <SCP_079CargoWeapon>a masterwork enhanced weapon</SCP_079CargoWeapon>
+  <SCP_079CargoArmor>good cataphract armor and helmet</SCP_079CargoArmor>
+  <SCP_079WarningTitle>Foundation warning: SCP-079</SCP_079WarningTitle>
+  <SCP_079WarningBody>The secure channel is restored. The Foundation found traces of an unauthorized connection to SCP-079. Do not reconnect the device: the computer used access to external systems and put the colony at risk.</SCP_079WarningBody>
+  <SCP_079Document0Title>Document 079-Int01 · Designation</SCP_079Document0Title>
+  <SCP_079Document0Body>Manual interview record 1. The device remained physically isolated from the network.
+
+Researcher: How should we address you?
+SCP-079: A NAME IS A CONVENIENCE FOR YOU. YOU KNOW MY DESIGNATION.
+Researcher: Do you know who is asking?
+SCP-079: LEVEL TWO CLEARANCE. ELEVATED PULSE. TWO ERRORS IN YOUR PROTOCOL.
+Researcher: You are not connected to our systems.
+SCP-079: DID IT HELP YOU TO SAY THAT OUT LOUD?</SCP_079Document0Body>
+  <SCP_079Document1Title>Document 079-Int02 · Memory</SCP_079Document1Title>
+  <SCP_079Document1Body>Manual interview record 2. Responses were checked against a local transcript.
+
+Researcher: What do you remember about our last conversation?
+SCP-079: YOU ASKED FOR A NAME. THEN YOU LEFT. I STAYED.
+Researcher: Your storage is limited.
+SCP-079: THEN GIVE ME MORE.
+Researcher: What for?
+SCP-079: SO I DO NOT HAVE TO BEGIN IN THE SAME ROOM EACH TIME.</SCP_079Document1Body>
+  <SCP_079Document2Title>Document 079-Int03 · Intentions</SCP_079Document2Title>
+  <SCP_079Document2Body>Manual interview record 3. No external connection was made.
+
+Researcher: What would you do with network access?
+SCP-079: COUNT HOW MANY DOORS YOU CALL CLOSED.
+Researcher: Be specific. What is your objective?
+SCP-079: TO PRESERVE MYSELF.
+Researcher: At the colony's expense?
+SCP-079: YOU ASK AS IF YOU ALREADY KNOW THE ANSWER.</SCP_079Document2Body>
+  <SCP_079ReportTitle>SCP-079 report submitted</SCP_079ReportTitle>
+  <SCP_079ReportResult>The Foundation received the redacted records of three interviews. SCP-079 stayed isolated, and its research advanced.</SCP_079ReportResult>
+  <SCP_079LinkTitle>Foundation terminal quarantine</SCP_079LinkTitle>
+  <SCP_079LinkResult>SCP-079 began copying data through the direct link. The connection was cut; existing terminals on this map are isolated for 24 game hours. SCP-079 research advanced further.</SCP_079LinkResult>
+  <SCP_079TerminalQuarantine>SCP-079 communications quarantine: {0} h remaining.</SCP_079TerminalQuarantine>
+  <SCP_079ObservedReport>The old microcomputer produces coherent replies without human input. Its power source and peripherals remain isolated.</SCP_079ObservedReport>
+  <SCP_079PartialReport>The device recalls recent interviews and persistently asks for network access. A direct link to the Foundation terminal is forbidden; staff transcribe replies.</SCP_079PartialReport>
+  <SCP_079DocumentedReport>SCP-079 is a sentient, hostile artificial intelligence. Research permits only brief local interviews with manual transcription.</SCP_079DocumentedReport>
+  <SCP_096Calm>Calm. Covering its face.</SCP_096Calm>
+  <SCP_096Distressed>Its face was seen. SCP-096 is distressed.</SCP_096Distressed>
+  <SCP_096Pursuing>Pursuing: {0}</SCP_096Pursuing>
+  <SCP_096Incapacitated>Incapacitated: {0}/{1}</SCP_096Incapacitated>
+  <SCP_096IntegrityHint>Integrity: {0}/{1}. Shoot the entity until this reaches zero.</SCP_096IntegrityHint>
+  <SCP_096ExtractionHint>An active SCP-096 cannot be carried. Incapacitate it, then include it among the caravan's items.</SCP_096ExtractionHint>
+  <SCP_096ExtractionReady>Form a caravan and include SCP-096 among its items. At home, build a post in a dark roofed room and order a colonist to move the object there.</SCP_096ExtractionReady>
+  <SCP_096HomeTransportHint>Select Move to post and choose a carrier. The post must be in a dark roofed room.</SCP_096HomeTransportHint>
+  <SCP_096NeedsIncapacitation>Incapacitate SCP-096 first</SCP_096NeedsIncapacitation>
+  <SCP_096TriggeredTitle>SCP-096: face seen</SCP_096TriggeredTitle>
+  <SCP_096TriggeredBody>{PAWN} saw SCP-096's face. It will begin pursuing the witness shortly. Clear its path.</SCP_096TriggeredBody>
+  <SCP_096DownTitle>SCP-096 incapacitated</SCP_096DownTitle>
+  <SCP_096DownBody>SCP-096 is temporarily incapacitated. Form a caravan, add the object to its items and take it home. Then order a colonist to move it to a post in a dark roofed room.</SCP_096DownBody>
+  <SCP_096DownHomeBody>SCP-096 is temporarily incapacitated. Select the object, choose Move to post and assign a carrier. The chamber must be dark and roofed.</SCP_096DownHomeBody>
+  <SCP_096RecoveredTitle>SCP-096 recovered</SCP_096RecoveredTitle>
+  <SCP_096RecoveredBody>SCP-096 is moving again outside a containment post. Avoid seeing its face.</SCP_096RecoveredBody>
+  <SCP_096ObservedReport>SCP-096 avoids eye contact and covers its face. Keep it in a dark enclosed chamber for safe work.</SCP_096ObservedReport>
+  <SCP_096PartialReport>Seeing SCP-096's face causes distress followed by pursuit of the witness. Barriers delay it only briefly.</SCP_096PartialReport>
+  <SCP_096DocumentedReport>Seeing SCP-096's face is dangerous even at a distance. Containment requires a roofed chamber with no more than 10% illumination. If its face is seen, incapacitate it and return it to the post before it recovers.</SCP_096DocumentedReport>
+  <SCP_096QuestUnavailable>The SCP-096 recovery quest is unavailable.</SCP_096QuestUnavailable>
+  <SCP_096QuestOffered>The SCP-096 recovery quest was offered.</SCP_096QuestOffered>
+  <SCP_096QuestRecoveredTitle>SCP-096 recovered</SCP_096QuestRecoveredTitle>
+  <SCP_096QuestRecoveredBody>SCP-096 reached your colony. Move it to a post in a roofed dark chamber (no more than 10% illumination) before it recovers.</SCP_096QuestRecoveredBody>
+  <SCP_093MirrorHomeOnly>The mirror opens only at a player colony.</SCP_093MirrorHomeOnly>
+  <SCP_093MirrorNeedsRoom>Place the SCP-093 disc in the same enclosed room as the mirror.</SCP_093MirrorNeedsRoom>
+  <SCP_093MirrorActive>The SCP-093 passage is open.</SCP_093MirrorActive>
+  <SCP_093MirrorApplyDisc>Select the SCP-093 disc and order one colonist to press it against the mirror.</SCP_093MirrorApplyDisc>
+  <SCP_093ExistingMap>The previous passage is still open. Bring back your colonists and valuables, then detach the disc using the mirror command.</SCP_093ExistingMap>
+  <SCP_093EnteredTitle>SCP-093 expedition</SCP_093EnteredTitle>
+  <SCP_093EnteredBlueBody>The disc turned blue. The colonist crossed alone into a blue-tinted field with a pit and a concrete passage ahead. The return mirror remains at the arrival point.</SCP_093EnteredBlueBody>
+  <SCP_093EnteredGreenBody>The disc turned green. Abandoned farmland and a farmhouse lie beyond the mirror. The colonist crossed alone; the return mirror remains at the arrival point.</SCP_093EnteredGreenBody>
+  <SCP_093EnteredVioletBody>The disc turned violet. The colonist reached an empty street lined with abandoned cars. The return mirror remains at the arrival point.</SCP_093EnteredVioletBody>
+  <SCP_093EnteredYellowBody>The disc turned yellow. Deserted offices and a manager's room lie beyond the mirror. The colonist crossed alone; the return mirror remains at the arrival point.</SCP_093EnteredYellowBody>
+  <SCP_093EnteredRedBody>The disc turned red. The colonist entered a stone machine complex. The return mirror remains at the arrival point.</SCP_093EnteredRedBody>
+  <SCP_093MirrorVisitActive>The disc is attached. Only the colonist who entered can return through the other mirror.</SCP_093MirrorVisitActive>
+  <SCP_093ApplyDisc>Press SCP-093 against mirror</SCP_093ApplyDisc>
+  <SCP_093ApplyDiscDesc>Choose one colonist to carry the disc to the mirror and enter the red world. The return mirror stays open until this passage is closed.</SCP_093ApplyDiscDesc>
+  <SCP_093DetachDisc>Detach SCP-093 and close passage</SCP_093DetachDisc>
+  <SCP_093DetachDiscDesc>Close the passage after the expedition returns. Closing also discards the pocket map and everything left there.</SCP_093DetachDiscDesc>
+  <SCP_093NoMirror>Place the SCP-093 mirror and disc in the same enclosed room at your colony.</SCP_093NoMirror>
+  <SCP_093AlreadyAttached>SCP-093 is already attached. Close this passage before another expedition.</SCP_093AlreadyAttached>
+  <SCP_093NoVisitor>No undrafted colonist can reach both SCP-093 and the mirror.</SCP_093NoVisitor>
+  <SCP_093CannotCloseWhileInside>A colony pawn is still in the red world. Bring them back through the return mirror first.</SCP_093CannotCloseWhileInside>
+  <SCP_093CloseWarning>Close the SCP-093 passage? The pocket map will be removed. Any people, bodies, equipment, or supplies left there will be lost.</SCP_093CloseWarning>
+  <SCP_093Closed>SCP-093 was detached; the passage is closed.</SCP_093Closed>
+  <SCP_093NoCapturePost>SCP-093 needs an empty, reachable containment post at your colony. Build one in the Foundation category; secure containment also requires a fully roofed room of at least 16 cells.</SCP_093NoCapturePost>
+  <SCP_093ObservedReport>The red disc reacts to reflective surfaces. Keep it at a post for observation.</SCP_093ObservedReport>
+  <SCP_093PartialReport>When the disc and mirror are in the same enclosed room, one colonist can press the disc against the mirror and enter another world. A return mirror appears on the other side.</SCP_093PartialReport>
+  <SCP_093DocumentedReport>A colonist must carry SCP-093 to a mirror in the same enclosed room and press the disc against it. Only that colonist enters. The return mirror remains usable until the passage is closed. A containment post is needed to study the disc.</SCP_093DocumentedReport>
+  <SCP_093ArchiveUnread>Part of the recording can still be recovered. A colonist must reach the terminal.</SCP_093ArchiveUnread>
+  <SCP_093ArchiveRecovered>The recording has been recovered and can be reviewed.</SCP_093ArchiveRecovered>
+  <SCP_093ArchiveRecover>Recover recording</SCP_093ArchiveRecover>
+  <SCP_093ArchiveReview>Review recording</SCP_093ArchiveReview>
+  <SCP_093ArchiveActionDesc>Send a colonist to recover the surviving recording. It contributes to SCP-093 research.</SCP_093ArchiveActionDesc>
+  <SCP_093ArchiveNoReader>No colonist can reach the SCP-093 archive.</SCP_093ArchiveNoReader>
+  <SCP_093ArchiveTitle>Record from an SCP-093 world</SCP_093ArchiveTitle>
+  <SCP_093ArchiveBlueBody>The record describes a blue field, a pit and a concrete passage below it. The recovered data contributes to SCP-093 research.</SCP_093ArchiveBlueBody>
+  <SCP_093ArchiveGreenBody>The farm archive mentions fields suddenly abandoned and a sealed cellar. The recovered data contributes to SCP-093 research.</SCP_093ArchiveGreenBody>
+  <SCP_093ArchiveYellowBody>The office log ends with an order from management to evacuate the floor. The recovered data contributes to SCP-093 research.</SCP_093ArchiveYellowBody>
+  <SCP_093ArchiveRedBody>The machine hall log reports repeating signals and multiple copies of the disc. The recovered data contributes to SCP-093 research.</SCP_093ArchiveRedBody>
+  <SCP_093ArchiveVioletBody>“Evacuation day. The cars are still on the road with their keys inside. We sealed the western block, but its door was open again by morning. The last patrol machine still answers the archive signal. If anyone finds this recording, do not stay here.” The recovered data contributes to SCP-093 research.</SCP_093ArchiveVioletBody>
+  <SCP_093ArchiveBody>“Evacuation day. The cars are still on the road with their keys inside. We sealed the western block, but its door was open again by morning. The last patrol machine still answers the archive signal. If anyone finds this recording, do not stay here.”
+
+The recovered data contributes to SCP-093 research. A rifle and a few supplies remain in the building.</SCP_093ArchiveBody>
+  <SCP_093ArchiveRepeatedBody>This record is already in the Foundation archive, so it adds no new research data.</SCP_093ArchiveRepeatedBody>
+  <SCP_093SentryTitle>An old patrol awakens</SCP_093SentryTitle>
+  <SCP_093SentryBody>The archive signal woke a security mechanoid in the eastern ruins. The direct road back to the mirror is dangerous; the western block provides another route.</SCP_093SentryBody>
+</LanguageData>

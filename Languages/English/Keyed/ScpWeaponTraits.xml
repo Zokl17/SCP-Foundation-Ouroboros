@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_WeaponSingleFire>Single fire</SCP_WeaponSingleFire>
+  <SCP_WeaponBurstFire>Burst fire</SCP_WeaponBurstFire>
+  <SCP_WeaponFireModeDesc>Switch the installed fire selector mode.</SCP_WeaponFireModeDesc>
+  <SCP_WeaponWorkshopButton>Modify weapon</SCP_WeaponWorkshopButton>
+  <SCP_WeaponWorkshopButtonDesc>Select a colonist and right-click the armory module. The customization window opens when the colonist arrives.</SCP_WeaponWorkshopButtonDesc>
+  <SCP_WeaponWorkshopTitle>Foundation weapon workshop</SCP_WeaponWorkshopTitle>
+  <SCP_WeaponWorkshopHelp>Click the weapon icon on the left. Equipped weapons come first, followed by weapons on the ground within three cells. Choose a category and upgrade. Drafted pawns keep their weapons until combat ends. Changed your mind? Click Cancel upgrade.</SCP_WeaponWorkshopHelp>
+  <SCP_WeaponWorkshopCancel>Cancel upgrade</SCP_WeaponWorkshopCancel>
+  <SCP_WeaponWorkshopNoWeapon>Select weapon</SCP_WeaponWorkshopNoWeapon>
+  <SCP_WeaponWorkshopInstalled>Installed upgrades</SCP_WeaponWorkshopInstalled>
+  <SCP_WeaponWorkshopBarrel>Barrel</SCP_WeaponWorkshopBarrel>
+  <SCP_WeaponWorkshopGrip>Grip</SCP_WeaponWorkshopGrip>
+  <SCP_WeaponWorkshopLauncher>Underbarrel</SCP_WeaponWorkshopLauncher>
+  <SCP_WeaponWorkshopAmmo>Ballistics</SCP_WeaponWorkshopAmmo>
+  <SCP_WeaponWorkshopMaterial>Material</SCP_WeaponWorkshopMaterial>
+  <SCP_WeaponWorkshopStock>Stock</SCP_WeaponWorkshopStock>
+  <SCP_WeaponWorkshopSights>Sights</SCP_WeaponWorkshopSights>
+  <SCP_WeaponWorkshopMechanism>Mechanism</SCP_WeaponWorkshopMechanism>
+  <SCP_WeaponWorkshopInstall>Install</SCP_WeaponWorkshopInstall>
+  <SCP_WeaponWorkshopNoCategory>None: no upgrades in this category for the selected weapon.</SCP_WeaponWorkshopNoCategory>
+  <SCP_WeaponWorkshopCurrentBuild>Current build</SCP_WeaponWorkshopCurrentBuild>
+  <SCP_WeaponWorkshopNoTraits>No upgrades installed.</SCP_WeaponWorkshopNoTraits>
+  <SCP_WeaponWorkshopCost>Materials</SCP_WeaponWorkshopCost>
+  <SCP_WeaponWorkshopIncompatible>Incompatible</SCP_WeaponWorkshopIncompatible>
+  <SCP_WeaponWorkshopQueued>Already queued</SCP_WeaponWorkshopQueued>
+  <SCP_WeaponWorkshopResearch>Research required</SCP_WeaponWorkshopResearch>
+  <SCP_WeaponWorkshopBench>Bench unavailable</SCP_WeaponWorkshopBench>
+  <SCP_WeaponWorkshopPawn>No suitable worker</SCP_WeaponWorkshopPawn>
+  <SCP_WeaponWorkshopSkill>Requires skill</SCP_WeaponWorkshopSkill>
+  <SCP_WeaponWorkshopReach>No path to bench</SCP_WeaponWorkshopReach>
+  <SCP_WeaponWorkshopUnavailable>Unavailable</SCP_WeaponWorkshopUnavailable>
+</LanguageData>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <HediffDef>
+    <defName>SCP_427Exposure</defName>
+    <label>SCP-427 exposure</label>
+    <description>Cumulative exposure to the open amulet. Closing it stops further exposure, but does not erase time already spent in its light.</description>
+    <isBad>true</isBad><initialSeverity>0.01</initialSeverity><maxSeverity>1</maxSeverity>
+    <stages><li><label>exposed</label></li></stages>
+  </HediffDef>
+  <HediffDef>
+    <defName>SCP_427Mutation</defName>
+    <label>SCP-427 flesh mutation</label>
+    <description>Uncontrolled tissue growth from prolonged exposure to SCP-427. The amulet can no longer heal this body.</description>
+    <isBad>true</isBad><initialSeverity>1</initialSeverity><chronic>true</chronic>
+    <stages><li><painFactor>1.5</painFactor><capMods><li><capacity>Moving</capacity><setMax>0.5</setMax></li><li><capacity>Manipulation</capacity><setMax>0.5</setMax></li></capMods></li></stages>
+  </HediffDef>
+</Defs>

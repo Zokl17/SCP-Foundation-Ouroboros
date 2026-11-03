@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="ApparelBase">
+    <defName>SCP_035Mask</defName><label>SCP-035 porcelain mask</label>
+    <description>A smiling porcelain mask. Anyone who sees it feels an increasingly powerful urge to put it on. The mask takes control of its wearer and destroys the body within two hours.</description>
+    <tickerType>Normal</tickerType>
+    <graphicData><texPath>Things/Item/ScpArtifacts/Scp035Mask</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>0.85</drawSize></graphicData>
+    <statBases><MaxHitPoints>100</MaxHitPoints><Mass>0.4</Mass><MarketValue>3000</MarketValue><Flammability>0</Flammability><EquipDelay>1</EquipDelay></statBases>
+    <tradeability>None</tradeability><stackLimit>1</stackLimit><burnableByRecipe>false</burnableByRecipe><smeltable>false</smeltable>
+    <apparel>
+      <bodyPartGroups><li>Eyes</li></bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Scp035/Scp035</wornGraphicPath>
+      <drawData>
+        <scale>0.45</scale>
+        <dataEast><offset>(0.08,0,0)</offset></dataEast>
+        <dataWest><offset>(-0.08,0,0)</offset></dataWest>
+      </drawData>
+      <layers><li>Overhead</li></layers>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+    </apparel>
+    <comps>
+      <li Class="ScpFoundation.Runtime.CompProperties_Scp"><anomaly>SCP_Anomaly035</anomaly><requireCapture>false</requireCapture></li>
+      <li Class="ScpFoundation.Interactions.CompProperties_ScpInteraction" />
+      <li Class="ScpFoundation.Anomalies.CompProperties_Scp035" />
+    </comps>
+  </ThingDef>
+</Defs>

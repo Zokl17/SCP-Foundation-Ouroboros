@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <QuestScriptDef>
+    <defName>SCP_354PerimeterDefense</defName>
+    <rootSelectionWeight>0.12</rootSelectionWeight>
+    <rootMinPoints>700</rootMinPoints>
+    <expireDaysRange>5~9</expireDaysRange>
+    <questNameRules><rulesStrings><li>questName->Hold the SCP-354 perimeter</li></rulesStrings></questNameRules>
+    <questDescriptionRules><rulesStrings>
+      <li>questDescription->Foundation guards are struggling to hold the SCP-354 perimeter. Send a caravan to their outpost and defend it for one day against five distinct emergences from the pool. The final emergence is the ice and magma cats. Leaving early fails the assignment. Success grants 10 Foundation trust, SCP-262 and research for its containment hanger.</li>
+    </rulesStrings></questDescriptionRules>
+    <root Class="QuestNode_Sequence"><nodes>
+      <li Class="QuestNode_GetMap" />
+      <li Class="QuestNode_GetSiteTile"><storeAs>siteTile</storeAs><preferCloserTiles>true</preferCloserTiles></li>
+      <li Class="ScpFoundation.Storytelling.QuestNode_Scp354DefenseSetup" />
+      <li Class="QuestNode_GetDefaultSitePartsParams">
+        <tile>$siteTile</tile><faction>$siteFaction</faction>
+        <sitePartDefs>$sitePartDefs</sitePartDefs><storeSitePartsParamsAs>sitePartsParams</storeSitePartsParamsAs>
+      </li>
+      <li Class="QuestNode_GenerateSite">
+        <sitePartsParams>$sitePartsParams</sitePartsParams>
+        <faction>$siteFaction</faction><tile>$siteTile</tile><storeAs>site</storeAs>
+        <worldObjectDef>SCP_354DefenseSite</worldObjectDef>
+      </li>
+      <li Class="ScpFoundation.Storytelling.QuestNode_Scp354DefenseClaimSite" />
+      <li Class="QuestNode_SpawnWorldObjects"><worldObjects>$site</worldObjects></li>
+      <li Class="ScpFoundation.Storytelling.QuestNode_Scp354DefenseTrack" />
+      <li Class="ScpFoundation.Storytelling.QuestNode_RecordScpArrival"><number>354</number></li>
+      <li Class="QuestNode_WorldObjectTimeout">
+        <worldObject>$site</worldObject><isQuestTimeout>true</isQuestTimeout>
+        <delayTicks>900000</delayTicks><inSignalDisable>site.MapGenerated</inSignalDisable>
+        <destroyOnCleanup>false</destroyOnCleanup>
+        <node Class="QuestNode_End"><outcome>Fail</outcome></node>
+      </li>
+      <li Class="QuestNode_Signal">
+        <inSignal>Scp354DefenseComplete</inSignal>
+        <node Class="QuestNode_Sequence"><nodes>
+          <li Class="QuestNode_Letter"><label TKey="SCP_354DefenseCompleteTitle">SCP-354 perimeter held</label><text TKey="SCP_354DefenseCompleteBody">The last attackers are down. The Foundation grants 10 trust and delivers SCP-262 to your colony.</text></li>
+          <li Class="QuestNode_End"><outcome>Success</outcome></li>
+        </nodes></node>
+      </li>
+      <li Class="QuestNode_Signal">
+        <inSignal>Scp354DefenseFailed</inSignal>
+        <node Class="QuestNode_Sequence"><nodes>
+          <li Class="QuestNode_Letter"><label TKey="SCP_354DefenseFailedTitle">SCP-354 perimeter abandoned</label><text TKey="SCP_354DefenseFailedBody">The perimeter was left before the defense ended. The Foundation has withdrawn the request.</text></li>
+          <li Class="QuestNode_End"><outcome>Fail</outcome></li>
+        </nodes></node>
+      </li>
+      <li Class="QuestNode_Signal"><inSignal>site.Destroyed</inSignal><node Class="QuestNode_End"><outcome>Fail</outcome></node></li>
+    </nodes></root>
+  </QuestScriptDef>
+</Defs>
