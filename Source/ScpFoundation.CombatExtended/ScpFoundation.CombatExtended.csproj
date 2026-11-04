@@ -6,13 +6,14 @@
     <CombatExtendedDir Condition="'$(CombatExtendedDir)' == ''">$(RimWorldDir)\Mods\Combat</CombatExtendedDir>
     <FoundationAssembly Condition="'$(FoundationAssembly)' == ''">$(MSBuildProjectDirectory)\..\..\Build\Assemblies\ScpFoundation.dll</FoundationAssembly>
     <ManagedDir>$(RimWorldDir)\RimWorldWin64_Data\Managed</ManagedDir>
+    <HarmonyAssembly Condition="'$(HarmonyAssembly)' == ''">$(RimWorldDir)\Mods\Harmony\1.6\Assemblies\0Harmony.dll</HarmonyAssembly>
     <OutputPath>$(MSBuildProjectDirectory)\..\..\Compat\CombatExtended\Assemblies</OutputPath>
   </PropertyGroup>
   <UsingTask TaskName="Csc" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll" />
   <ItemGroup>
     <Compile Include="Projectiles.cs;CeAmmoLoadoutNormalizer.cs;PatchOperationArmorFromReference.cs;Scp127CE.cs;CeWeaponTraitImpact.cs" />
     <Reference Include="$(ManagedDir)\mscorlib.dll;$(ManagedDir)\netstandard.dll;$(ManagedDir)\System.dll;$(ManagedDir)\System.Core.dll;$(ManagedDir)\System.Xml.dll;$(ManagedDir)\Assembly-CSharp.dll;$(ManagedDir)\UnityEngine.CoreModule.dll;$(CombatExtendedDir)\Assemblies\CombatExtended.dll;$(FoundationAssembly)" />
-    <Reference Include="$(MSBuildProjectDirectory)\..\..\1.6\Assemblies\0Harmony.dll" />
+    <Reference Include="$(HarmonyAssembly)" />
   </ItemGroup>
   <Target Name="Build">
     <Error Condition="!Exists('$(CombatExtendedDir)\Assemblies\CombatExtended.dll')" Text="Combat Extended assembly was not found." />

@@ -4,18 +4,20 @@
     <RootNamespace>ScpFoundation</RootNamespace>
     <RimWorldDir Condition="'$(RimWorldDir)' == ''">$(MSBuildProjectDirectory)\..\..\..\..</RimWorldDir>
     <ManagedDir>$(RimWorldDir)\RimWorldWin64_Data\Managed</ManagedDir>
+    <HarmonyAssembly Condition="'$(HarmonyAssembly)' == ''">$(RimWorldDir)\Mods\Harmony\1.6\Assemblies\0Harmony.dll</HarmonyAssembly>
     <OutputPath>$(MSBuildProjectDirectory)\..\..\1.6\Assemblies</OutputPath>
   </PropertyGroup>
   <UsingTask TaskName="Csc" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll" />
   <ItemGroup>
     <Compile Include="Definitions\*.cs;Containment\*.cs;Runtime\*.cs;Knowledge\*.cs;Debugging\*.cs;Properties\*.cs;Storytelling\*.cs;Interactions\*.cs;Anomalies\*.cs" />
     <Reference Include="$(ManagedDir)\mscorlib.dll;$(ManagedDir)\netstandard.dll;$(ManagedDir)\System.dll;$(ManagedDir)\System.Core.dll;$(ManagedDir)\Assembly-CSharp.dll;$(ManagedDir)\UnityEngine.CoreModule.dll;$(ManagedDir)\UnityEngine.IMGUIModule.dll" />
-    <Reference Include="$(MSBuildProjectDirectory)\..\..\1.6\Assemblies\0Harmony.dll" />
+    <Reference Include="$(HarmonyAssembly)" />
   </ItemGroup>
   <ItemGroup><Reference Include="$(ManagedDir)\Unity.Mathematics.dll" /></ItemGroup>
   <ItemGroup><Reference Include="$(ManagedDir)\UnityEngine.TextRenderingModule.dll" /></ItemGroup>
   <ItemGroup><Reference Include="$(ManagedDir)\System.Xml.dll" /></ItemGroup>
   <Target Name="Build">
+    <Error Condition="!Exists('$(HarmonyAssembly)')" Text="Install the separate Harmony mod or set HarmonyAssembly to its DLL. Do not bundle Harmony in SCP MOD." />
     <Error Condition="!Exists('$(ManagedDir)\Assembly-CSharp.dll')" Text="RimWorld assembly not found. Set RimWorldDir to the game directory." />
     <MakeDir Directories="$(OutputPath)" />
     <Csc Sources="@(Compile)" References="@(Reference)" OutputAssembly="$(OutputPath)\$(AssemblyName).dll" TargetType="Library" NoStandardLib="true" NoConfig="true" Optimize="true" WarningLevel="4" TreatWarningsAsErrors="true" />
