@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <QuestScriptDef>
+    <defName>SCP_914Custody</defName>
+    <rootSelectionWeight>0.12</rootSelectionWeight>
+    <rootMinPoints>350</rootMinPoints>
+    <expireDaysRange>5~8</expireDaysRange>
+    <questNameRules><rulesStrings><li>questName->Receive SCP-914</li></rulesStrings></questNameRules>
+    <questDescriptionRules><rulesStrings><li>questDescription->The Foundation offers SCP-914 in a large transport crate. Accept the assignment, then have two colonists carry and install it in a prepared, roofed room. The machine occupies 3 by 2 cells; its input and output require a total width of 5. Leave a clear 7 by 4 area around it and at least 35 cells in the room. Choose the installation position on the crate. The assignment ends when the machine is installed.</li></rulesStrings></questDescriptionRules>
+    <root Class="QuestNode_Sequence"><nodes>
+      <li Class="QuestNode_GetMap" />
+      <li Class="ScpFoundation.Storytelling.QuestNode_Scp914Custody" />
+      <li Class="ScpFoundation.Storytelling.QuestNode_RecordScpArrival"><number>914</number></li>
+      <li Class="QuestNode_Signal"><inSignal>Scp914Installed</inSignal><node Class="QuestNode_Sequence"><nodes>
+        <li Class="QuestNode_End"><outcome>Success</outcome></li>
+      </nodes></node></li>
+      <li Class="QuestNode_Signal"><inSignal>Scp914Lost</inSignal><node Class="QuestNode_Sequence"><nodes>
+        <li Class="QuestNode_Letter"><label TKey="SCP_914LostTitle">SCP-914 delivery lost</label><text TKey="SCP_914LostBody">The transport crate was destroyed before installation.</text></li>
+        <li Class="QuestNode_End"><outcome>Fail</outcome></li>
+      </nodes></node></li>
+    </nodes></root>
+  </QuestScriptDef>
+</Defs>

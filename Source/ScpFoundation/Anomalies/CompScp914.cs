@@ -1,16 +1,67 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using HarmonyLib;
 using RimWorld;
+using ScpFoundation.Definitions;
+using ScpFoundation.Knowledge;
+using ScpFoundation.Interactions;
 using ScpFoundation.Runtime;
 using UnityEngine;
 using Verse;
 
 namespace ScpFoundation.Anomalies
 {
+    public sealed class Building_Scp914 : Building
+    {
+        public override IEnumerable<Gizmo> GetGizmos()
+        {
+            CompScp914 machine = GetComp<CompScp914>();
+            if (machine == null) yield break;
+            foreach (Gizmo gizmo in machine.CompGetGizmosExtra()) yield return gizmo;
+        }
+    }
+
+    // Older saves deserialize the already installed machine as a plain Building.
+    [HarmonyPatch(typeof(Building), "GetGizmos")]
+    internal static class Scp914LegacyBuildingGizmosPatch
+    {
+        private static void Postfix(Building __instance, ref IEnumerable<Gizmo> __result)
+        {
+            if (__instance.def.defName != "SCP_914Machine") return;
+            CompScp914 machine = __instance.GetComp<CompScp914>();
+            __result = machine == null ? Enumerable.Empty<Gizmo>() : machine.CompGetGizmosExtra();
+        }
+    }
+
     public sealed class CompProperties_Scp914 : CompProperties
     {
         public CompProperties_Scp914() { compClass = typeof(CompScp914); }
+    }
+
+    // A gun may undergo one fine cycle in its lifetime, even if the machine is rebuilt.
+    public sealed class Scp914WeaponHistory : GameComponent
+    {
+        private List<string> refinedIds = new List<string>();
+
+        public Scp914WeaponHistory(Game game) { }
+
+        public bool WasRefined(Thing weapon)
+        {
+            return weapon != null && refinedIds.Contains(weapon.ThingID);
+        }
+
+        public void MarkRefined(Thing weapon)
+        {
+            if (weapon != null && !WasRefined(weapon)) refinedIds.Add(weapon.ThingID);
+        }
+
+        public override void ExposeData()
+        {
+            Scribe_Collections.Look(ref refinedIds, "scp914RefinedWeapons", LookMode.Value);
+            if (Scribe.mode == LoadSaveMode.PostLoadInit && refinedIds == null)
+                refinedIds = new List<string>();
+        }
     }
 
     [StaticConstructorOnStartup]
@@ -33,6 +84,18 @@ namespace ScpFoundation.Anomalies
         private int finishTick;
         private Thing input;
         private ThingOwner<Thing> heldInput;
+
+        private bool FullyStudied
+        {
+            get
+            {
+                ScpDef article = DefDatabase<ScpDef>.GetNamedSilentFail("SCP_Anomaly914");
+                ScpKnowledgeComponent knowledge = Current.Game == null ? null
+                    : Current.Game.GetComponent<ScpKnowledgeComponent>();
+                return article != null && knowledge != null
+                    && knowledge.LevelFor(article) >= KnowledgeLevel.Documented;
+            }
+        }
 
         public CompScp914() { heldInput = new ThingOwner<Thing>(this); }
 
@@ -110,6 +173,14 @@ namespace ScpFoundation.Anomalies
         {
             yield return new Command_Action
             {
+                defaultLabel = "SCP_914Dossier".Translate(),
+                defaultDesc = "SCP_914DossierDesc".Translate(),
+                icon = ScpIcons.Get(1),
+                action = () => MainTabWindow_ScpTerminal.OpenArticle(
+                    DefDatabase<ScpDef>.GetNamed("SCP_Anomaly914"))
+            };
+            yield return new Command_Action
+            {
                 defaultLabel = "SCP_914SetMode".Translate(("SCP_914Mode" + setting).Translate()),
                 defaultDesc = "SCP_914SetModeDesc".Translate(),
                 icon = ScpIcons.Get(4),
@@ -126,23 +197,32 @@ namespace ScpFoundation.Anomalies
                     Find.WindowStack.Add(new FloatMenu(options));
                 }
             };
-            yield return new Command_Action
+            Command_Action process = new Command_Action
             {
                 defaultLabel = "SCP_914Start".Translate(),
                 defaultDesc = "SCP_914StartDesc".Translate(),
                 icon = ScpIcons.Get(5),
                 action = StartProcess
             };
+            if (!FullyStudied) process.Disable("SCP_914NeedsFullStudy".Translate());
+            yield return process;
         }
 
         private void StartProcess()
         {
             if (!parent.Spawned || finishTick > 0 || heldInput.Count > 0) return;
+            if (!FullyStudied)
+            {
+                Messages.Message("SCP_914NeedsFullStudy".Translate(), parent,
+                    MessageTypeDefOf.RejectInput, false);
+                return;
+            }
             input = parent.Map.listerThings.AllThings
                 .Where(thing => thing != parent && thing.Spawned && thing.def.category == ThingCategory.Item
                     && thing.def.stackLimit > 0 && thing.Position == InputCell
                     && (!thing.def.defName.StartsWith("SCP_", StringComparison.Ordinal)
                         || (setting == 3 && thing.def.defName == "SCP_500Pill"))
+                    && (thing.def.ingestible == null || thing.GetStatValue(StatDefOf.Nutrition) <= 0f)
                     && thing.TryGetComp<ScpFoundation.Runtime.CompScp>() == null
                     && thing.GetStatValue(StatDefOf.MarketValue) >= ThingDefOf.Steel.BaseMarketValue)
                 .FirstOrDefault();
@@ -160,6 +240,24 @@ namespace ScpFoundation.Anomalies
                 if (!TryFindArmorResult(input, out result, out stuff, out quality))
                 {
                     Messages.Message("SCP_914NoArmorMatch".Translate(), parent, MessageTypeDefOf.RejectInput, false);
+                    input = null;
+                    return;
+                }
+            }
+            if (input.def.IsWeapon && setting >= 3)
+            {
+                Scp914WeaponHistory history = Current.Game.GetComponent<Scp914WeaponHistory>();
+                if (history.WasRefined(input))
+                {
+                    Messages.Message("SCP_914WeaponAlreadyRefined".Translate(), parent,
+                        MessageTypeDefOf.RejectInput, false);
+                    input = null;
+                    return;
+                }
+                if (AvailableWeaponTraits(input, setting == 4 ? 2 : 1) == null)
+                {
+                    Messages.Message("SCP_914NoWeaponTraits".Translate(), parent,
+                        MessageTypeDefOf.RejectInput, false);
                     input = null;
                     return;
                 }
@@ -237,6 +335,11 @@ namespace ScpFoundation.Anomalies
                 ProcessArmor(source);
                 return;
             }
+            if (source.def.IsWeapon)
+            {
+                ProcessWeapon(source);
+                return;
+            }
             float value = Math.Max(0f, source.GetStatValue(StatDefOf.MarketValue));
             Thing output = source.stackCount > 1 ? source.SplitOff(1) : source;
             if (output.Spawned) output.DeSpawn();
@@ -277,6 +380,88 @@ namespace ScpFoundation.Anomalies
         {
             if (!thing.def.IsApparel || thing.def.apparel == null) return false;
             return ArmorStats.Any(stat => thing.GetStatValue(stat) >= 0.05f);
+        }
+
+        private static List<WeaponTraitDef> AvailableWeaponTraits(Thing weapon, int count)
+        {
+            CompUniqueWeapon comp = weapon.TryGetComp<CompUniqueWeapon>();
+            if (!weapon.def.IsRangedWeapon || comp == null || comp.TraitsListForReading == null
+                || comp.TraitsListForReading.Count + count > 5)
+                return null;
+            List<WeaponTraitDef> traits = DefDatabase<RecipeDef>.AllDefsListForReading
+                .Select(RecipeWorker_InstallWeaponTrait.TraitFor)
+                .Where(trait => RecipeWorker_InstallWeaponTrait.CanInstall(weapon, trait))
+                .Distinct().ToList();
+            if (count == 1) return traits.Count > 0 ? traits : null;
+            for (int i = 0; i < traits.Count; i++)
+                for (int j = i + 1; j < traits.Count; j++)
+                    if (!traits[i].Overlaps(traits[j])) return traits;
+            return null;
+        }
+
+        private void ProcessWeapon(Thing weapon)
+        {
+            if (setting <= 1)
+            {
+                Dictionary<ThingDef, int> materials = new Dictionary<ThingDef, int>();
+                float fraction = setting == 0 ? 0.25f : 0.5f;
+                if (weapon.def.CostList != null)
+                    foreach (ThingDefCountClass cost in weapon.def.CostList)
+                        AddMaterial(materials, cost.thingDef, (int)Math.Floor(cost.count * fraction));
+                if (weapon.Stuff != null)
+                    AddMaterial(materials, weapon.Stuff,
+                        (int)Math.Floor(weapon.def.CostStuffCount * fraction));
+                if (materials.Count == 0)
+                    AddMaterial(materials, ThingDefOf.Steel, Math.Max(1,
+                        (int)(weapon.GetStatValue(StatDefOf.MarketValue) * fraction
+                            / ThingDefOf.Steel.BaseMarketValue)));
+                weapon.Destroy(DestroyMode.Vanish);
+                foreach (KeyValuePair<ThingDef, int> material in materials)
+                {
+                    int remaining = material.Value;
+                    while (remaining > 0)
+                    {
+                        Thing result = ThingMaker.MakeThing(material.Key);
+                        result.stackCount = Math.Min(remaining, material.Key.stackLimit);
+                        remaining -= result.stackCount;
+                        PlaceResult(result);
+                    }
+                }
+                return;
+            }
+
+            if (setting >= 3)
+            {
+                List<WeaponTraitDef> candidates = AvailableWeaponTraits(weapon, setting == 4 ? 2 : 1);
+                if (candidates == null)
+                {
+                    // Old saves can finish a cycle after available mods change.
+                    PlaceResult(weapon);
+                    return;
+                }
+                CompUniqueWeapon traits = weapon.TryGetComp<CompUniqueWeapon>();
+                List<WeaponTraitDef> firstChoices = setting == 4
+                    ? candidates.Where(firstTrait => candidates.Any(secondTrait =>
+                        firstTrait != secondTrait && !firstTrait.Overlaps(secondTrait))).ToList()
+                    : candidates;
+                WeaponTraitDef first = firstChoices.RandomElement();
+                traits.AddTrait(first);
+                if (setting == 4)
+                {
+                    List<WeaponTraitDef> second = candidates.Where(trait =>
+                        RecipeWorker_InstallWeaponTrait.CanInstall(weapon, trait)).ToList();
+                    if (second.Count > 0) traits.AddTrait(second.RandomElement());
+                }
+                traits.Setup(false);
+                weapon.Notify_ColorChanged();
+                CompQuality quality = weapon.TryGetComp<CompQuality>();
+                if (quality != null)
+                    quality.SetQuality((QualityCategory)Math.Min((int)QualityCategory.Legendary,
+                        (int)quality.Quality + (setting == 3 ? 1 : 2)), ArtGenerationContext.Colony);
+                Current.Game.GetComponent<Scp914WeaponHistory>().MarkRefined(weapon);
+            }
+            if (weapon.def.useHitPoints) weapon.HitPoints = weapon.MaxHitPoints;
+            PlaceResult(weapon);
         }
 
         private static bool SameArmorSlot(ThingDef source, ThingDef candidate)

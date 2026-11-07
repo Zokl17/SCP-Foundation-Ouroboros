@@ -1073,10 +1073,14 @@ The object resembles a drink vending machine with a QWERTY touchpad. The origina
   <SCP_914Status>Setting: {0}. Status: {1}.</SCP_914Status>
   <SCP_914Running>running</SCP_914Running><SCP_914Ready>ready</SCP_914Ready>
   <SCP_914SetMode>SCP-914 setting: {0}</SCP_914SetMode>
+  <SCP_914Dossier>Study SCP-914</SCP_914Dossier>
+  <SCP_914DossierDesc>Open the SCP-914 dossier in the Foundation terminal. Complete all three study levels before running experiments.</SCP_914DossierDesc>
+  <SCP_914ContinueStudy>Continue studying SCP-914</SCP_914ContinueStudy>
+  <SCP_914NeedsFullStudy>Complete all three SCP-914 study levels in the Foundation terminal first.</SCP_914NeedsFullStudy>
   <SCP_914SetModeDesc>Choose one of the five processing settings.</SCP_914SetModeDesc>
   <SCP_914Start>Start SCP-914</SCP_914Start>
-  <SCP_914StartDesc>Process one item on the yellow input tile. The output appears on the green tile to the right after one in-game hour.</SCP_914StartDesc>
-  <SCP_914NeedsInput>Place an ordinary item on the yellow tile to the left of SCP-914.</SCP_914NeedsInput>
+  <SCP_914StartDesc>Process one item on the yellow input tile. Ordinary cycles take 1 in-game hour, Fine takes 12 hours, and Very Fine takes 24 hours. The output appears on the right.</SCP_914StartDesc>
+  <SCP_914NeedsInput>Place an ordinary nonfood item on the yellow tile to the left of SCP-914.</SCP_914NeedsInput>
   <SCP_914NoArmorMatch>No compatible armor covering the same body parts is available.</SCP_914NoArmorMatch>
   <SCP_914IntakeFailed>SCP-914 could not seal the item in its intake chamber.</SCP_914IntakeFailed>
   <SCP_914InputPosition>Input: yellow tile on the left.</SCP_914InputPosition>
@@ -1088,6 +1092,8 @@ The object resembles a drink vending machine with a QWERTY touchpad. The origina
   <SCP_914Mode4>Very Fine</SCP_914Mode4>
   <SCP_914Started>SCP-914 is processing {0} on {1}.</SCP_914Started>
   <SCP_914Finished>SCP-914 produced {0}.</SCP_914Finished>
+  <SCP_914WeaponAlreadyRefined>This weapon has already undergone a fine SCP-914 cycle. It cannot be refined again.</SCP_914WeaponAlreadyRefined>
+  <SCP_914NoWeaponTraits>No compatible upgrades are available for this weapon: Fine requires one, Very Fine requires two. The 1:1 setting can still repair it.</SCP_914NoWeaponTraits>
   <SCP_012ObservedReport>An unfinished score written in red-black ink has been found. It should be kept out of visible light.</SCP_012ObservedReport>
   <SCP_012PartialReport>People who see the score feel compelled to finish the composition and approach the sheet.</SCP_012PartialReport>
   <SCP_012DocumentedReport>The ink contains human blood. Test subjects try to finish the piece with their own blood and may die from blood loss.</SCP_012DocumentedReport>

@@ -6,7 +6,7 @@
     <thingClass>ScpFoundation.Anomalies.Thing_Scp682</thingClass><category>Item</category><altitudeLayer>Item</altitudeLayer><useHitPoints>true</useHitPoints><size>(2,2)</size>
     <tickerType>Normal</tickerType><drawerType>RealtimeOnly</drawerType><selectable>true</selectable><stackLimit>1</stackLimit>
     <alwaysHaulable>false</alwaysHaulable><designateHaulable>false</designateHaulable><rotatable>true</rotatable>
-    <graphicData><texPath>Things/Item/Scp682</texPath><graphicClass>Graphic_Multi</graphicClass><drawRotated>false</drawRotated><drawSize>(3.2,3.2)</drawSize></graphicData>
+    <graphicData><texPath>Things/Item/Scp682</texPath><graphicClass>Graphic_Multi</graphicClass><drawRotated>false</drawRotated><drawSize>(4,4)</drawSize></graphicData>
     <statBases><MaxHitPoints>1200</MaxHitPoints><Mass>95</Mass><MarketValue>0</MarketValue><Flammability>0</Flammability></statBases>
     <tradeability>None</tradeability>
     <comps>

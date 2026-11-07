@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_914CargoArrivedTitle>Доставлен модуль SCP-914</SCP_914CargoArrivedTitle>
+  <SCP_914CargoArrivedBody>Большой транспортный ящик доставлен к колонии. Выберите его, назначьте колониста и укажите место установки в закрытой комнате. Второй колонист поможет перенести и установить машину.</SCP_914CargoArrivedBody>
+  <SCP_914InstalledTitle>SCP-914 установлен</SCP_914InstalledTitle>
+  <SCP_914InstalledBody>Часовой механизм передан колонии. Изучите SCP-914 через терминал Фонда, прежде чем запускать обработку. Жёлтая клетка слева служит входом, зелёная справа — выходом.</SCP_914InstalledBody>
+  <SCP_914LostTitle>Доставка SCP-914 сорвалась</SCP_914LostTitle>
+  <SCP_914LostBody>Транспортный модуль уничтожен до установки.</SCP_914LostBody>
+  <SCP_914Install>Установить SCP-914</SCP_914Install>
+  <SCP_914InstallDesc>Два колониста перенесут ящик и установят машину. Нужна закрытая комната под крышей площадью не менее 35 клеток и свободная площадка 7×4 без построек; вход и выход машины должны быть пусты.</SCP_914InstallDesc>
+  <SCP_914InstallRoomInvalid>Здесь нельзя установить SCP-914: проверьте размер комнаты, крышу, свободную площадку 7×4 и путь для колониста.</SCP_914InstallRoomInvalid>
+  <SCP_914InstallNoCarrier>Нет свободного колониста для переноса ящика.</SCP_914InstallNoCarrier>
+  <SCP_914InstallNoAssistant>Для установки SCP-914 нужен второй свободный колонист и доступ к машине с обеих сторон.</SCP_914InstallNoAssistant>
+  <SCP_914InstallInterrupted>Установка SCP-914 прервана. Ящик оставлен рядом с колонистом; проверьте проход и свободное место.</SCP_914InstallInterrupted>
+  <SCP_914QuestOffered>Поручение на приёмку SCP-914 доступно в списке заданий.</SCP_914QuestOffered>
+  <SCP_914QuestUnavailable>Поручение SCP-914 сейчас недоступно. Проверьте контакт с Фондом, появление SCP-650 и отсутствие SCP-914 на карте.</SCP_914QuestUnavailable>
+</LanguageData>

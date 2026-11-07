@@ -183,9 +183,9 @@ namespace ScpFoundation.Storytelling
         {
             if (squad == null || !cell.IsValid) return;
             bool moved = guardedCell != cell;
-            if (!moved && now - lastGuardOrderTick < 1200) return;
+            bool patrol = moved || now - lastGuardOrderTick >= 1200;
             guardedCell = cell;
-            lastGuardOrderTick = now;
+            if (patrol) lastGuardOrderTick = now;
             JobDef wait = DefDatabase<JobDef>.GetNamed("SCP_294GuardWait");
             JobDef move = DefDatabase<JobDef>.GetNamed("SCP_294GuardGoto");
             foreach (Pawn member in squad.Where(pawn => pawn != null && pawn.Spawned && !pawn.Dead && pawn.Map == map))
@@ -197,7 +197,7 @@ namespace ScpFoundation.Storytelling
                     || member.CurJob.def == JobDefOf.AttackMelee || member.CurJob.def == JobDefOf.Wait_Combat)) continue;
                 Job current = member.CurJob;
                 bool near = member.Position.DistanceToSquared(cell) <= 25;
-                if (!moved && current != null && ((current.def == wait && near)
+                if (!patrol && current != null && ((current.def == wait && near)
                     || (current.def == move && current.targetA.Cell.IsValid
                         && current.targetA.Cell.DistanceToSquared(cell) <= 25))) continue;
                 IntVec3 destination;

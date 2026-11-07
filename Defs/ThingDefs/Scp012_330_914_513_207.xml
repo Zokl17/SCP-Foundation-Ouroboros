@@ -30,12 +30,23 @@
   </ThingDef>
   <ThingDef ParentName="BuildingBase">
     <defName>SCP_914Machine</defName><label>SCP-914 clockwork</label>
+    <thingClass>ScpFoundation.Anomalies.Building_Scp914</thingClass>
     <building><claimable>false</claimable><deconstructible>false</deconstructible></building>
-    <description>A mechanical refiner with five settings. Place one ordinary item on the input tile to its left and start a cycle. The result appears on the output tile to its right. Biological and anomalous inputs are rejected.</description>
+    <description>A mechanical refiner with five settings. Place one ordinary nonfood item on the input tile to its left and start a cycle. The result appears on the output tile to its right. Biological and anomalous inputs are rejected.</description>
     <graphicData><texPath>Things/Item/ScpArtifacts/Scp914</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>(3.6,2.2)</drawSize></graphicData>
     <size>(3,2)</size><rotatable>false</rotatable><passability>Impassable</passability><fillPercent>1</fillPercent><tickerType>Rare</tickerType>
     <statBases><MaxHitPoints>1200</MaxHitPoints><Mass>3000</Mass><Flammability>0</Flammability></statBases>
     <comps><li Class="ScpFoundation.Anomalies.CompProperties_Scp914" /></comps>
+  </ThingDef>
+  <ThingDef>
+    <defName>SCP_914Transit</defName><label>SCP-914 transport crate</label>
+    <description>A large transport crate containing the clockwork machine. Two colonists must move and install it in a prepared room.</description>
+    <thingClass>ScpFoundation.Anomalies.Thing_Scp914Transit</thingClass><category>Item</category><altitudeLayer>Item</altitudeLayer>
+    <selectable>true</selectable><stackLimit>1</stackLimit><rotatable>false</rotatable>
+    <alwaysHaulable>false</alwaysHaulable><designateHaulable>false</designateHaulable>
+    <graphicData><texPath>Things/Item/Scp055ShippingCrate</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>(2.4,1.8)</drawSize></graphicData>
+    <statBases><MaxHitPoints>200</MaxHitPoints><Mass>35</Mass><MarketValue>0</MarketValue><Flammability>0</Flammability></statBases>
+    <tradeability>None</tradeability>
   </ThingDef>
   <ThingDef>
     <defName>SCP_513Bell</defName><label>SCP-513 cowbell</label>

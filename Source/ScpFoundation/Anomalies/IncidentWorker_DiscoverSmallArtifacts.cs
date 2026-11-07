@@ -1,5 +1,6 @@
 using System.Linq;
 using RimWorld;
+using RimWorld.QuestGen;
 using ScpFoundation.Knowledge;
 using ScpFoundation.Runtime;
 using ScpFoundation.Storytelling;
@@ -32,6 +33,12 @@ namespace ScpFoundation.Anomalies
                 || Current.Game.GetComponent<ScpArrivalRegistry>().HasArrived(def.defName.Substring(("SCP_" + "Discover").Length))
                 || map.mapPawns.FreeColonistsSpawnedCount < 2
                 || map.listerThings.ThingsOfDef(thingDef).Any()) return false;
+            if (def.defName == "SCP_Discover914")
+            {
+                QuestScriptDef script = DefDatabase<QuestScriptDef>.GetNamedSilentFail("SCP_914Custody");
+                if (script == null || Find.QuestManager.QuestsListForReading.Any(quest => quest.root == script
+                    && (quest.State == QuestState.NotYetAccepted || quest.State == QuestState.Ongoing))) return false;
+            }
             CompProperties_Scp properties = thingDef.GetCompProperties<CompProperties_Scp>();
             return properties == null || properties.anomaly == null
                 || !Current.Game.GetComponent<ScpKnowledgeComponent>().HasEncountered(properties.anomaly);
@@ -41,14 +48,20 @@ namespace ScpFoundation.Anomalies
         {
             if (!CanFireNowSub(parms)) return false;
             Map map = (Map)parms.target;
+            if (def.defName == "SCP_Discover914")
+            {
+                QuestScriptDef script = DefDatabase<QuestScriptDef>.GetNamedSilentFail("SCP_914Custody");
+                var slate = new Slate();
+                slate.Set("map", map);
+                slate.Set("points", StorytellerUtility.DefaultThreatPointsNow(map));
+                return script.CanRun(slate, map) && QuestUtility.GenerateQuestAndMakeAvailable(script, slate) != null;
+            }
             ThingDef thingDef = ObjectDef;
             IntVec3 cell;
             if (!CellFinderLoose.TryFindRandomNotEdgeCellWith(12,
                 candidate => ScpSpawnCells.FootprintClear(candidate, map, thingDef)
-                    && (thingDef.defName != "SCP_914Machine" || Scp914PadsClear(candidate, map, thingDef))
                     && map.reachability.CanReachColony(candidate), map, out cell)) return false;
             Thing thing = GenSpawn.Spawn(ThingMaker.MakeThing(thingDef), cell, map);
-            if (thingDef.defName == "SCP_914Machine") thing.SetFaction(Faction.OfPlayer);
             CompScp scp = thing.TryGetComp<CompScp>();
             if (scp != null) scp.NotifyDiscovered(false);
             Current.Game.GetComponent<ScpArrivalRegistry>().RecordArrival(def.defName.Substring(("SCP_" + "Discover").Length));
@@ -56,12 +69,5 @@ namespace ScpFoundation.Anomalies
             return true;
         }
 
-        private static bool Scp914PadsClear(IntVec3 origin, Map map, ThingDef machine)
-        {
-            CellRect rect = GenAdj.OccupiedRect(origin, Rot4.North, machine.size);
-            int z = (rect.minZ + rect.maxZ) / 2;
-            return ScpSpawnCells.FootprintClear(new IntVec3(rect.minX - 1, 0, z), map, ThingDefOf.Steel)
-                && ScpSpawnCells.FootprintClear(new IntVec3(rect.maxX + 1, 0, z), map, ThingDefOf.Steel);
-        }
     }
 }

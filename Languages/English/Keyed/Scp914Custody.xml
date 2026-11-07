@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_914CargoArrivedTitle>SCP-914 module delivered</SCP_914CargoArrivedTitle>
+  <SCP_914CargoArrivedBody>A large transport crate has reached the colony. Select it, assign a colonist, and choose an installation site in an enclosed room. A second colonist will help move and install the machine.</SCP_914CargoArrivedBody>
+  <SCP_914InstalledTitle>SCP-914 installed</SCP_914InstalledTitle>
+  <SCP_914InstalledBody>The clockwork machine is in your custody. Study SCP-914 at the Foundation terminal before processing items. The yellow pad on the left is the input; the green pad on the right is the output.</SCP_914InstalledBody>
+  <SCP_914LostTitle>SCP-914 delivery lost</SCP_914LostTitle>
+  <SCP_914LostBody>The transport module was destroyed before installation.</SCP_914LostBody>
+  <SCP_914Install>Install SCP-914</SCP_914Install>
+  <SCP_914InstallDesc>Two colonists will carry the crate and install the machine. An enclosed, roofed room of at least 35 cells and a clear 7 by 4 area are required. The input and output pads must be empty.</SCP_914InstallDesc>
+  <SCP_914InstallRoomInvalid>SCP-914 cannot be installed here. Check the room size, roof, clear 7 by 4 area, and colonist access.</SCP_914InstallRoomInvalid>
+  <SCP_914InstallNoCarrier>No colonist is available to carry the crate.</SCP_914InstallNoCarrier>
+  <SCP_914InstallNoAssistant>Installing SCP-914 needs a second available colonist and access to both sides of the machine.</SCP_914InstallNoAssistant>
+  <SCP_914InstallInterrupted>SCP-914 installation was interrupted. The crate was left near the colonist; check access and clear space.</SCP_914InstallInterrupted>
+  <SCP_914QuestOffered>The SCP-914 custody assignment is available in the quest list.</SCP_914QuestOffered>
+  <SCP_914QuestUnavailable>The SCP-914 assignment is unavailable. Check Foundation contact, the SCP-650 encounter, and whether SCP-914 is already on the map.</SCP_914QuestUnavailable>
+</LanguageData>

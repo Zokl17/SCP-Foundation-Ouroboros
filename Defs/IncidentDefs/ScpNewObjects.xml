@@ -7,7 +7,7 @@
   <IncidentDef><defName>SCP_Discover914</defName><label>SCP-914 found</label>
     <workerClass>ScpFoundation.Anomalies.IncidentWorker_DiscoverSmallArtifacts</workerClass><category>Misc</category>
     <targetTags><li>Map_PlayerHome</li></targetTags><baseChance>0.025</baseChance><earliestDay>35</earliestDay><minPopulation>3</minPopulation><minRefireDays>120</minRefireDays>
-    <letterDef>NeutralEvent</letterDef><letterLabel>SCP-914 found</letterLabel><letterText>A vast clockwork machine stands near the colony. Its five settings transform objects placed by its intake.</letterText></IncidentDef>
+    <letterDef>NeutralEvent</letterDef><letterLabel>SCP-914 transfer offered</letterLabel><letterText>The Foundation offers to deliver SCP-914 after you accept its custody assignment.</letterText></IncidentDef>
   <IncidentDef><defName>SCP_Discover513</defName><label>lost muffalo with SCP-513</label>
     <workerClass>ScpFoundation.Anomalies.IncidentWorker_Scp513Muffalo</workerClass><category>Misc</category>
     <targetTags><li>Map_PlayerHome</li></targetTags><baseChance>0.05</baseChance><earliestDay>25</earliestDay><minPopulation>2</minPopulation><minRefireDays>90</minRefireDays>

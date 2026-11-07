@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SCP_914Custody.questNameRules.rulesStrings><li>questName->Приёмка SCP-914</li></SCP_914Custody.questNameRules.rulesStrings>
+  <SCP_914Custody.questDescriptionRules.rulesStrings><li>questDescription->Фонд предлагает передать колонии SCP-914 в транспортном модуле. Примите поручение, затем перенесите модуль в закрытую комнату с крышей. Сам механизм занимает 3×2 клетки, а вместе с входом и выходом — 5×2. Для установки оставьте свободную площадку 7×4 и комнату не меньше 35 клеток. Выберите место через команду на модуле. Поручение завершится после установки.</li></SCP_914Custody.questDescriptionRules.rulesStrings>
+</LanguageData>

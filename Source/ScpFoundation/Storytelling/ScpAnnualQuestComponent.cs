@@ -24,6 +24,7 @@ namespace ScpFoundation.Storytelling
             new ScpAnnualQuestRoute("SCP_096Recovery", "096"),
             new ScpAnnualQuestRoute("SCP_106Recovery", "106"),
             new ScpAnnualQuestRoute("SCP_294Custody", "294"),
+            new ScpAnnualQuestRoute("SCP_914Custody", "914"),
             new ScpAnnualQuestRoute("SCP_330VillageRecovery", "330"),
             new ScpAnnualQuestRoute("SCP_354PerimeterDefense", "354"),
             new ScpAnnualQuestRoute("SCP_682Transfer", "682"),

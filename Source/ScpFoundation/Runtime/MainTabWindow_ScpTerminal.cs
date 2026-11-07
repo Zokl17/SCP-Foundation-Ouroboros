@@ -46,6 +46,19 @@ namespace ScpFoundation.Runtime
             window.detailScroll = Vector2.zero;
         }
 
+        public static void OpenArticle(ScpDef article)
+        {
+            MainButtonDef button = DefDatabase<MainButtonDef>.GetNamed("SCPTerminal");
+            Find.MainTabsRoot.SetCurrentTab(button, false);
+            MainTabWindow_ScpTerminal window = (MainTabWindow_ScpTerminal)button.TabWindow;
+            window.postsTab = false;
+            window.selected = null;
+            window.selectedArticle = article;
+            window.snapshotMap = Find.CurrentMap;
+            window.nextRefresh = 0;
+            window.detailScroll = Vector2.zero;
+        }
+
         public override void PostOpen()
         {
             base.PostOpen();
@@ -206,7 +219,9 @@ namespace ScpFoundation.Runtime
                 || !knowledge.ExperimentsComplete(selectedArticle)))
             {
                 KnowledgeLevel level = knowledge.LevelFor(selectedArticle);
-                string actionKey = level == KnowledgeLevel.Unknown ? "SCP_ArchiveStudy"
+                string actionKey = selectedArticle.scpId == "SCP-914" && level < KnowledgeLevel.Documented
+                    ? "SCP_914ContinueStudy"
+                    : level == KnowledgeLevel.Unknown ? "SCP_ArchiveStudy"
                     : level == KnowledgeLevel.Observed ? "SCP_ArchiveExperiment"
                     : level == KnowledgeLevel.PartiallyDocumented ? "SCP_ArchiveDocument" : "SCP_RunExperiments";
                 if (TerminalButton(new Rect(x, top, width, 28f), actionKey.Translate()))

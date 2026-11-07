@@ -73,6 +73,7 @@ namespace ScpFoundation.Debugging
                 new DebugActionNode("SCP-096 recovery", action: ScpDebugActions.OfferScp096RecoveryQuest),
                 new DebugActionNode("SCP-106 recovery", action: ScpDebugActions.OfferScp106RecoveryQuest),
                 new DebugActionNode("SCP-294 custody", action: ScpDebugActions.OfferScp294CustodyQuest),
+                new DebugActionNode("SCP-914 custody", action: ScpDebugActions.OfferScp914CustodyQuest),
                 new DebugActionNode("SCP-354 defense", action: ScpDebugActions.OfferScp354DefenseQuest),
                 new DebugActionNode("SCP-882 workshop", action: ScpDebugActions.OfferScp882WorkshopQuest),
                 new DebugActionNode("O5 Green visit", action: ScpDebugActions.TestO5GreenVisit),

@@ -150,6 +150,22 @@ namespace ScpFoundation.Debugging
                 quest == null ? MessageTypeDefOf.RejectInput : MessageTypeDefOf.PositiveEvent, false);
         }
 
+        public static void OfferScp914CustodyQuest()
+        {
+            Map map = Find.CurrentMap;
+            if (!Prefs.DevMode || map == null || !map.IsPlayerHome) return;
+            QuestScriptDef script = DefDatabase<QuestScriptDef>.GetNamedSilentFail("SCP_914Custody");
+            bool pending = script != null && Find.QuestManager.QuestsListForReading.Any(quest =>
+                quest.root == script && (quest.State == QuestState.NotYetAccepted
+                    || quest.State == QuestState.Ongoing));
+            Quest offered = pending || script == null ? null
+                : QuestUtility.GenerateQuestAndMakeAvailable(script, 1000f);
+            Messages.Message((pending || offered != null ? "SCP_914QuestOffered"
+                    : "SCP_914QuestUnavailable").Translate(),
+                pending || offered != null ? MessageTypeDefOf.PositiveEvent
+                    : MessageTypeDefOf.RejectInput, false);
+        }
+
         public static void OfferScp682Transfer() { OfferCreatureTransfer("682"); }
 
         public static void OfferScp939Transfer() { OfferCreatureTransfer("939"); }

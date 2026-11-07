@@ -1,8 +1,10 @@
+using System.Collections.Generic;
 using System.Linq;
 using RimWorld;
 using ScpFoundation.Interactions;
 using ScpFoundation.Runtime;
 using Verse;
+using UnityEngine;
 
 namespace ScpFoundation.Anomalies
 {
@@ -21,6 +23,9 @@ namespace ScpFoundation.Anomalies
         private int stunnedUntilTick;
         private int nextMoveTick;
         private int nextAttackTick;
+        private IntVec3 lastMoveFrom = IntVec3.Invalid;
+        private int lastMoveTick;
+        private int lastMoveDuration;
 
         public bool IsStunned { get { return Find.TickManager.TicksGame < stunnedUntilTick; } }
 
@@ -39,6 +44,21 @@ namespace ScpFoundation.Anomalies
             Scribe_Values.Look(ref stunnedUntilTick, "scp682StunnedUntil", 0);
             Scribe_Values.Look(ref nextMoveTick, "scp682NextMove", 0);
             Scribe_Values.Look(ref nextAttackTick, "scp682NextAttack", 0);
+            Scribe_Values.Look(ref lastMoveFrom, "scp682LastMoveFrom", IntVec3.Invalid);
+            Scribe_Values.Look(ref lastMoveTick, "scp682LastMoveTick", 0);
+            Scribe_Values.Look(ref lastMoveDuration, "scp682LastMoveDuration", 0);
+        }
+
+        public Vector3 DrawOffset
+        {
+            get
+            {
+                if (!lastMoveFrom.IsValid || lastMoveDuration <= 0) return Vector3.zero;
+                float remaining = 1f - Mathf.Clamp01((Find.TickManager.TicksGame - lastMoveTick)
+                    / (float)lastMoveDuration);
+                return new Vector3((lastMoveFrom.x - parent.Position.x) * remaining, 0f,
+                    (lastMoveFrom.z - parent.Position.z) * remaining);
+            }
         }
 
         public void OnDamaged()
@@ -72,10 +92,9 @@ namespace ScpFoundation.Anomalies
 
             Map map = parent.Map;
             Pawn target = map.mapPawns.AllPawnsSpawned
-                .Where(pawn => pawn != null && !pawn.Dead && !pawn.Downed && pawn.RaceProps.Humanlike
-                    && pawn.Position.DistanceToSquared(parent.Position) <= 900)
+                .Where(pawn => pawn != null && !pawn.Dead && pawn.RaceProps.Humanlike)
                 .OrderBy(pawn => pawn.Position.DistanceToSquared(parent.Position)).FirstOrDefault();
-            if (target != null && parent.Position.DistanceToSquared(target.Position) <= 2
+            if (target != null && DistanceToTarget(parent.Position, target.Position) <= 2
                 && ScpSurveillance.Sight(parent.Position, target.Position, map))
             {
                 if (now >= nextAttackTick)
@@ -86,20 +105,60 @@ namespace ScpFoundation.Anomalies
                 return;
             }
             if (now < nextMoveTick) return;
-            nextMoveTick = now + (target == null ? 240 : 60);
+            int moveDuration = target == null ? 240 : 60;
+            nextMoveTick = now + moveDuration;
             IntVec3 origin = parent.Position;
-            IntVec3? step = Directions.Select(direction => origin + direction)
-                .Where(cell => CanStep(cell, map))
-                .OrderBy(cell => target == null ? Rand.Value : cell.DistanceToSquared(target.Position))
-                .Select(cell => (IntVec3?)cell).FirstOrDefault();
-            if (target != null && (!step.HasValue || step.Value.DistanceToSquared(target.Position)
-                >= origin.DistanceToSquared(target.Position)) && BreakBlockingEdifice(origin, target.Position, map)) return;
+            IntVec3? step = target == null
+                ? Directions.Select(direction => origin + direction).Where(cell => CanStep(cell, map))
+                    .OrderBy(cell => Rand.Value).Select(cell => (IntVec3?)cell).FirstOrDefault()
+                : FindStepToward(target.Position, map);
+            if (target != null && !step.HasValue && BreakBlockingEdifice(origin, target.Position, map)) return;
             if (!step.HasValue) return;
             Rot4 facing = step.Value.x > origin.x ? Rot4.East
                 : step.Value.x < origin.x ? Rot4.West
                 : step.Value.z > origin.z ? Rot4.North : Rot4.South;
             parent.DeSpawn();
             GenSpawn.Spawn(parent, step.Value, map, facing);
+            lastMoveFrom = origin;
+            lastMoveTick = now;
+            lastMoveDuration = moveDuration;
+        }
+
+        private int DistanceToTarget(IntVec3 cell, IntVec3 target)
+        {
+            return GenAdj.OccupiedRect(cell, Rot4.North, parent.def.size)
+                .Min(occupied => occupied.DistanceToSquared(target));
+        }
+
+        private IntVec3? FindStepToward(IntVec3 target, Map map)
+        {
+            IntVec3 origin = parent.Position;
+            int initialDistance = DistanceToTarget(origin, target);
+            var queue = new Queue<IntVec3>();
+            var firstSteps = new Dictionary<IntVec3, IntVec3> { { origin, origin } };
+            queue.Enqueue(origin);
+            IntVec3 bestStep = IntVec3.Invalid;
+            int bestDistance = initialDistance;
+            while (queue.Count > 0 && firstSteps.Count < 2400)
+            {
+                IntVec3 current = queue.Dequeue();
+                foreach (IntVec3 direction in Directions)
+                {
+                    IntVec3 next = current + direction;
+                    if (firstSteps.ContainsKey(next) || !CanStep(next, map)) continue;
+                    IntVec3 first = current == origin ? next : firstSteps[current];
+                    firstSteps.Add(next, first);
+                    int distance = DistanceToTarget(next, target);
+                    if (distance < bestDistance)
+                    {
+                        bestDistance = distance;
+                        bestStep = first;
+                    }
+                    if (distance <= 2) return first;
+                    queue.Enqueue(next);
+                }
+            }
+            return bestStep.IsValid ? bestStep : (IntVec3?)null;
         }
 
         private bool BreakBlockingEdifice(IntVec3 origin, IntVec3 target, Map map)
@@ -118,9 +177,8 @@ namespace ScpFoundation.Anomalies
         {
             foreach (IntVec3 occupied in GenAdj.OccupiedRect(cell, Rot4.North, parent.def.size))
             {
-                if (!occupied.InBounds(map) || !occupied.Standable(map) || occupied.Fogged(map)
-                    || occupied.GetFirstPawn(map) != null
-                    || occupied.GetThingList(map).Any(thing => thing != parent && thing.def.category == ThingCategory.Item))
+                if (!occupied.InBounds(map) || !occupied.Standable(map)
+                    || occupied.GetFirstPawn(map) != null)
                     return false;
                 Building edifice = occupied.GetEdifice(map);
                 Building_Door door = edifice as Building_Door;
