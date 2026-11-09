@@ -36,6 +36,8 @@ namespace ScpFoundation.Anomalies
         public override string LabelNoCount { get { return "SCP-106"; } }
         public override string LabelShort { get { return "SCP-106"; } }
 
+        public override void DrawGUIOverlay() { }
+
         public override string GetInspectString()
         {
             return (Downed || integrity <= 0 ? "SCP_106InspectDowned" : "SCP_106InspectActive").Translate();
@@ -148,6 +150,11 @@ namespace ScpFoundation.Anomalies
             base.Tick();
             if (!Spawned || Dead || Map == null) return;
             int now = Find.TickManager.TicksGame;
+            if (now % 250 == 0 && needs != null)
+            {
+                if (needs.food != null) needs.food.CurLevel = needs.food.MaxLevel;
+                if (needs.rest != null) needs.rest.CurLevel = needs.rest.MaxLevel;
+            }
             if (integrity <= 0)
             {
                 if (!Downed) Collapse();

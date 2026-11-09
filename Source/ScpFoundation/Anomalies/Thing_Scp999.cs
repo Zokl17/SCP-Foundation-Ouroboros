@@ -81,8 +81,9 @@ namespace ScpFoundation.Anomalies
             Map map = Map;
             if (nextWanderTick - now > WanderInterval) nextWanderTick = now + WanderInterval;
             if (now < nextWanderTick && (now + thingIDNumber) % 120 != 0) return;
-            if (map.mapPawns.AllPawnsSpawned.Any(pawn => pawn.jobs != null
-                && pawn.jobs.curJob != null && pawn.jobs.curJob.def.defName == "SCP_999Hug"
+            if (map.mapPawns.AllPawnsSpawned.Any(pawn => pawn != null && pawn.jobs != null
+                && pawn.jobs.curJob != null && pawn.jobs.curJob.def != null
+                && pawn.jobs.curJob.def.defName == "SCP_999Hug"
                 && pawn.jobs.curJob.targetA.Thing == this)) return;
             if ((now + thingIDNumber) % 120 == 0 && TryCheerUp(map, now)) return;
             if (now < nextWanderTick) return;

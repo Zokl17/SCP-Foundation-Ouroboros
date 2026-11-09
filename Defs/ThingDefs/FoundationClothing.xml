@@ -11,7 +11,7 @@
     <statBases><MaxHitPoints>120</MaxHitPoints><WorkToMake>7000</WorkToMake><Mass>1.2</Mass><Insulation_Cold>8</Insulation_Cold><Insulation_Heat>6</Insulation_Heat><EquipDelay>2</EquipDelay></statBases>
     <apparel>
       <bodyPartGroups><li>Torso</li><li>Neck</li><li>Shoulders</li><li>Arms</li><li>Legs</li></bodyPartGroups>
-      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Duster/Duster</wornGraphicPath>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ResearchCoat/ResearchCoat</wornGraphicPath>
       <layers><li>Shell</li></layers><tags><li>SCP_ResearchClothing</li></tags>
     </apparel>
     <recipeMaker><researchPrerequisite>SCP_FoundationClothing</researchPrerequisite><recipeUsers><li>ElectricTailoringBench</li><li>HandTailoringBench</li></recipeUsers><displayPriority>208</displayPriority></recipeMaker>

@@ -19,7 +19,7 @@
       <RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
     </statBases>
     <verbs>
-      <li><verbClass>Verb_Shoot</verbClass><hasStandardCommand>true</hasStandardCommand>
+      <li><verbClass>ScpFoundation.Anomalies.Verb_Scp316Light</verbClass><hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>SCP_316Light</defaultProjectile><warmupTime>1.5</warmupTime><range>16</range>
         <soundCast>PsychicShockLanceCast</soundCast><muzzleFlashScale>6</muzzleFlashScale>
       </li>

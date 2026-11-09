@@ -2,6 +2,7 @@
 <Defs>
   <ThingDef ParentName="ApparelBase">
     <defName>SCP_427Amulet</defName>
+    <thingClass>ScpFoundation.Anomalies.Apparel_Scp427</thingClass>
     <label>SCP-427 neck amulet</label>
     <description>An ornate silver amulet on a chain. Opening its locket accelerates healing while worn, but prolonged exposure causes dangerous tissue growth. Close it before exposure reaches its limit.</description>
     <tickerType>Normal</tickerType>
@@ -11,6 +12,13 @@
     <apparel>
       <bodyPartGroups><li>Neck</li></bodyPartGroups>
       <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Scp427/Scp427</wornGraphicPath>
+      <drawData>
+        <scale>0.35</scale>
+        <dataNorth><offset>(0,0,-0.08)</offset></dataNorth>
+        <dataEast><offset>(0,0,-0.08)</offset></dataEast>
+        <dataSouth><offset>(0,0,-0.08)</offset></dataSouth>
+        <dataWest><offset>(0,0,-0.08)</offset></dataWest>
+      </drawData>
       <layers><li>SCP_Necklace</li></layers>
     </apparel>
     <comps>

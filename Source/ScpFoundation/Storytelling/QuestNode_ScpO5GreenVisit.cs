@@ -753,7 +753,7 @@ namespace ScpFoundation.Storytelling
     {
         private static void Postfix(ref List<FloatMenuOption> __result, ref FloatMenuContext context)
         {
-            if (__result == null || context.ClickedPawns == null) return;
+            if (__result == null || context == null || context.ClickedPawns == null) return;
             Pawn selected = context.FirstSelectedPawn;
             if (selected == null || selected.Faction != Faction.OfPlayer) return;
             QuestPart_ScpO5GreenVisit visit = context.ClickedPawns

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="SCP_882MetalHumanoid"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>left iron claw</label><labelNoLocation>iron claw</labelNoLocation>
+          <capacities><li>Cut</li></capacities>
+          <power>17</power><cooldownTime>2</cooldownTime>
+          <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+          <armorPenetrationSharp>2</armorPenetrationSharp>
+          <armorPenetrationBlunt>4</armorPenetrationBlunt>
+          <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>right iron claw</label><labelNoLocation>iron claw</labelNoLocation>
+          <capacities><li>Cut</li></capacities>
+          <power>17</power><cooldownTime>2</cooldownTime>
+          <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+          <armorPenetrationSharp>2</armorPenetrationSharp>
+          <armorPenetrationBlunt>4</armorPenetrationBlunt>
+          <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+</Patch>

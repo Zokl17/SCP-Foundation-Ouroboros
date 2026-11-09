@@ -14,8 +14,8 @@
     <apparelTags Inherit="False" />
     <apparelMoney>0~0</apparelMoney>
     <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
-    <apparelRequired Inherit="False"><li>Apparel_Pants</li></apparelRequired>
-    <apparelColor>(0.08, 0.08, 0.08)</apparelColor>
+    <apparelRequired Inherit="False"><li>Apparel_Pants</li><li>Apparel_Robe</li></apparelRequired>
+    <apparelColor>(0.96, 0.96, 0.94)</apparelColor>
     <weaponTags Inherit="False" />
     <skills><li><skill>Melee</skill><range>20~20</range></li></skills>
   </PawnKindDef>

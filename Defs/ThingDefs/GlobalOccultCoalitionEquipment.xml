@@ -15,7 +15,7 @@
       <layers><li>Middle</li><li>Shell</li></layers><tags Inherit="False"><li>SCP_GocBlackUniform</li></tags>
       <defaultOutfitTags><li>Soldier</li></defaultOutfitTags>
     </apparel>
-    <colorGenerator Class="ColorGenerator_Options"><options><li><only>(1,1,1)</only></li></options></colorGenerator>
+    <colorGenerator Class="ColorGenerator_Options"><options><li><only>(0.85,0.75,0.65)</only></li></options></colorGenerator>
   </ThingDef>
   <ThingDef ParentName="ArmorHelmetMakeableBase">
     <defName>SCP_GocBlackHelmet</defName><label>GOC black tactical helmet</label>
@@ -27,11 +27,11 @@
     <apparel>
       <countsAsClothingForNudity>false</countsAsClothingForNudity><bodyPartGroups><li>FullHead</li></bodyPartGroups>
       <wornGraphicPath>Things/Pawn/Humanlike/Apparel/GocBlackHelmet/GocBlackHelmet</wornGraphicPath>
-      <drawData><scale>0.60</scale><dataSouth><offset>(0.05,0,0.01)</offset></dataSouth><dataNorth><offset>(0.05,0,0.01)</offset></dataNorth><dataEast><offset>(0.02,0,-0.04)</offset></dataEast><dataWest><offset>(-0.02,0,-0.04)</offset></dataWest></drawData>
+      <drawData><scale>0.60</scale><dataSouth><offset>(0,0,0.01)</offset></dataSouth><dataNorth><offset>(0,0,0.01)</offset></dataNorth><dataEast><offset>(0.02,0,-0.04)</offset></dataEast><dataWest><offset>(-0.02,0,-0.04)</offset></dataWest></drawData>
       <layers><li>Overhead</li></layers><tags Inherit="False"><li>SCP_GocBlackUniform</li></tags>
       <defaultOutfitTags><li>Soldier</li></defaultOutfitTags>
     </apparel>
-    <colorGenerator Class="ColorGenerator_Options"><options><li><only>(1,1,1)</only></li></options></colorGenerator>
+    <colorGenerator Class="ColorGenerator_Options"><options><li><only>(0.85,0.75,0.65)</only></li></options></colorGenerator>
   </ThingDef>
   <ThingDef ParentName="ArmorMachineableBase">
     <defName>SCP_GocWhiteExosuit</defName>

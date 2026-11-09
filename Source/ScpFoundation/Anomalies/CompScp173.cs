@@ -46,6 +46,11 @@ namespace ScpFoundation.Anomalies
         public override string CompInspectStringExtra()
         {
             if (!parent.Spawned) return null;
+            Thing_Scp173 statue = parent as Thing_Scp173;
+            if (statue != null && statue.IsRuined)
+                return "SCP_173Ruined".Translate(
+                    ((statue.RuinedUntilTick - Find.TickManager.TicksGame)
+                        / (float)GenDate.TicksPerHour).ToString("0.#"));
             CompScp scp = parent.TryGetComp<CompScp>();
             if (scp != null && !ContainmentProtection.AllowsEscape(scp.IsInCustody,
                 scp.IsCaptureGraceActive, scp.IsBreached)) return "SCP_173Secured".Translate();
@@ -57,6 +62,12 @@ namespace ScpFoundation.Anomalies
         {
             if (!parent.Spawned) return;
             int now = Find.TickManager.TicksGame;
+            Thing_Scp173 statue = parent as Thing_Scp173;
+            if (statue != null)
+            {
+                statue.RestoreIfDue(now);
+                if (statue.IsRuined) return;
+            }
             if (now >= nextResidueTick)
             {
                 nextResidueTick = now + GenDate.TicksPerDay;

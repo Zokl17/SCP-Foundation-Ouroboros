@@ -17,9 +17,9 @@
   <PawnKindDef ParentName="SCP_InterestGroupFighterBase" Name="SCP_ChaosAssaultBase" Abstract="True">
     <defaultFactionDef>SCP_ChaosInsurgency</defaultFactionDef><label>Chaos Insurgency assault operative</label><labelPlural>Chaos Insurgency assault operatives</labelPlural>
     <combatPower>190</combatPower><itemQuality>Good</itemQuality><weaponMoney>2500~4000</weaponMoney><apparelMoney>1500~2400</apparelMoney>
-    <apparelTags Inherit="False"><li>IndustrialBasic</li></apparelTags><apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+    <apparelTags Inherit="False"><li>IndustrialBasic</li><li>SCP_ChaosArmor</li></apparelTags><apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
     <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
-    <apparelRequired><li MayRequire="Ludeon.RimWorld.Biotech">Apparel_GasMask</li></apparelRequired>
+    <apparelRequired><li>SCP_ChaosAssaultArmor</li><li MayRequire="Ludeon.RimWorld.Biotech">Apparel_GasMask</li></apparelRequired>
     <skills><li><skill>Shooting</skill><range>10~16</range></li><li><skill>Melee</skill><range>6~12</range></li></skills>
   </PawnKindDef>
   <PawnKindDef ParentName="SCP_ChaosAssaultBase"><defName>SCP_ChaosInsurgent</defName><weaponTags Inherit="False"><li>SCPChaosAKGL</li></weaponTags></PawnKindDef>

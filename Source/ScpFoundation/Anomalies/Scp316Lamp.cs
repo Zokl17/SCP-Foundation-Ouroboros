@@ -5,6 +5,14 @@ using Verse;
 
 namespace ScpFoundation.Anomalies
 {
+    public sealed class Verb_Scp316Light : Verb_Shoot
+    {
+        public override bool Available()
+        {
+            return base.Available() && ScpOperationalClearance.Allows(EquipmentSource);
+        }
+    }
+
     // The projectile represents a short pulse of the lamp, not a damaging bullet.
     public sealed class Projectile_Scp316Light : Projectile
     {

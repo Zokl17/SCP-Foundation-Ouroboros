@@ -14,6 +14,7 @@ namespace ScpFoundation.Anomalies
     public sealed class CompScp427 : ThingComp
     {
         private const float ExposurePerPulse = 0.1f;
+        private const float ExposurePerPulseWhenHealed = 0.05f;
         private bool open;
 
         private Pawn Wearer { get { Apparel apparel = parent as Apparel; return apparel == null ? null : apparel.Wearer; } }
@@ -40,13 +41,19 @@ namespace ScpFoundation.Anomalies
         {
             Pawn wearer = Wearer;
             if (wearer == null || !wearer.IsColonistPlayerControlled) yield break;
-            yield return new Command_Action
+            Command_Action command = new Command_Action
             {
                 defaultLabel = (open ? "SCP_427Close" : "SCP_427OpenCommand").Translate(),
                 defaultDesc = "SCP_427ToggleDesc".Translate(),
                 icon = ContentFinder<Texture2D>.Get("Things/Item/ScpArtifacts/Scp427Amulet"),
-                action = () => open = !open
+                action = () =>
+                {
+                    if (open || ScpOperationalClearance.Allows(parent)) open = !open;
+                }
             };
+            if (!open && !ScpOperationalClearance.Allows(parent))
+                command.Disable("SCP_RequiresResearchLevelTwo".Translate());
+            yield return command;
         }
 
         public override void CompTick()
@@ -55,21 +62,30 @@ namespace ScpFoundation.Anomalies
             Pawn wearer = Wearer;
             if (!open || wearer == null || wearer.Dead || wearer.health == null
                 || wearer.health.hediffSet == null) return;
+            if (!ScpOperationalClearance.Allows(parent)) { open = false; return; }
 
             HediffDef mutationDef = DefDatabase<HediffDef>.GetNamedSilentFail("SCP_427Mutation");
             if (mutationDef != null && wearer.health.hediffSet.HasHediff(mutationDef)) return;
 
+            bool needsHealing = false;
             foreach (Hediff_Injury wound in wearer.health.hediffSet.hediffs.OfType<Hediff_Injury>().ToList())
             {
                 HediffComp_GetsPermanent permanent = wound.GetComp<HediffComp_GetsPermanent>();
-                if (permanent == null || !permanent.IsPermanent) wound.Heal(1f);
+                if (permanent == null || !permanent.IsPermanent)
+                {
+                    needsHealing = true;
+                    wound.Heal(1f);
+                }
             }
 
             foreach (Hediff illness in wearer.health.hediffSet.hediffs.Where(hediff => hediff.def != null
                 && (hediff.def.isInfection || hediff.def.makesSickThought || hediff.def.chronic
                     || hediff.def == HediffDefOf.BloodLoss || hediff.def.defName == "SCP_207Overdrive")
                 && !(hediff is Hediff_Injury) && !(hediff is Hediff_MissingPart)).ToList())
+            {
+                needsHealing = true;
                 illness.Severity = System.Math.Max(0f, illness.Severity - 0.05f);
+            }
 
             HediffDef exposureDef = DefDatabase<HediffDef>.GetNamedSilentFail("SCP_427Exposure");
             if (exposureDef == null || mutationDef == null) return;
@@ -80,7 +96,7 @@ namespace ScpFoundation.Anomalies
                 exposure = wearer.health.hediffSet.GetFirstHediffOfDef(exposureDef);
             }
             if (exposure == null) return;
-            exposure.Severity += ExposurePerPulse;
+            exposure.Severity += needsHealing ? ExposurePerPulse : ExposurePerPulseWhenHealed;
             if (exposure.Severity < 1f) return;
 
             wearer.health.RemoveHediff(exposure);

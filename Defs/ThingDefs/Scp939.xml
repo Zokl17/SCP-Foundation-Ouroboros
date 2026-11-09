@@ -3,8 +3,8 @@
   <ThingDef Name="Scp939Base">
     <defName>SCP_939Object</defName><label>SCP-939-1</label>
     <description>A sedated red predator capable of imitating human speech. Move it to a prepared containment post before the sedative wears off. When loose, it stalks and bites people.</description>
-    <thingClass>ScpFoundation.Anomalies.Thing_ScpDirectional</thingClass><category>Item</category><altitudeLayer>Item</altitudeLayer><useHitPoints>true</useHitPoints>
-    <tickerType>Normal</tickerType><drawerType>RealtimeOnly</drawerType><selectable>true</selectable><stackLimit>1</stackLimit>
+    <thingClass>ScpFoundation.Anomalies.Thing_Scp939</thingClass><category>Item</category><altitudeLayer>Item</altitudeLayer><useHitPoints>true</useHitPoints><fillPercent>0.9</fillPercent>
+    <tickerType>Normal</tickerType><drawerType>RealtimeOnly</drawerType><selectable>true</selectable><isAutoAttackableMapObject>true</isAutoAttackableMapObject><stackLimit>1</stackLimit>
     <alwaysHaulable>false</alwaysHaulable><designateHaulable>false</designateHaulable><rotatable>true</rotatable>
     <graphicData><texPath>Things/Item/Scp939</texPath><graphicClass>Graphic_Multi</graphicClass><drawRotated>false</drawRotated><drawSize>(2.55,2.55)</drawSize></graphicData>
     <statBases><MaxHitPoints>450</MaxHitPoints><Mass>80</Mass><MarketValue>0</MarketValue><Flammability>0</Flammability></statBases>

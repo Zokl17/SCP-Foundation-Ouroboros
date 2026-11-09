@@ -54,6 +54,9 @@ namespace ScpFoundation.Debugging
             AddSquad(nodes, "Chaos - mixed (6)", "SCP_ChaosInsurgency", "SCP_ChaosInsurgent", "SCP_ChaosHeavy");
             AddSquad(nodes, "Foundation Nu-7 (6)", "SCP_Foundation", "SCP_MTF_Nu7", "SCP_MTF_Nu7Gunner");
             AddSquad(nodes, "Foundation Epsilon-11 (6)", "SCP_Foundation", "SCP_MTF_Epsilon11Rifleman", "SCP_MTF_Epsilon11Gunner");
+            AddSquad(nodes, "Foundation Omega-7 (6)", "SCP_Foundation", "SCP_MTF_Omega7Rifleman", "SCP_MTF_Omega7Gunner");
+            nodes.Add(new DebugActionNode("Foundation Omega-7 + Vanguard (6+1)", DebugActionType.ToolMap,
+                () => SpawnSquad("SCP_Foundation", "SCP_MTF_Omega7Rifleman", "SCP_MTF_Omega7Gunner", true)));
             AddSquad(nodes, "Church - mixed (6)", "SCP_ChurchBrokenGod", "SCP_BrokenGodZealot", "SCP_BrokenGodGuard");
             return nodes;
         }
@@ -123,7 +126,8 @@ namespace ScpFoundation.Debugging
             nodes.Add(new DebugActionNode(label, DebugActionType.ToolMap, () => SpawnSquad(faction, regular, heavy)));
         }
 
-        private static void SpawnSquad(string factionName, string regularName, string heavyName)
+        private static void SpawnSquad(string factionName, string regularName, string heavyName,
+            bool withVanguard = false)
         {
             Map map = Find.CurrentMap;
             if (!Prefs.DevMode || map == null || Find.FactionManager == null) return;
@@ -131,10 +135,18 @@ namespace ScpFoundation.Debugging
             if (!center.InBounds(map)) return;
             PawnKindDef regular = DefDatabase<PawnKindDef>.GetNamedSilentFail(regularName);
             PawnKindDef heavy = DefDatabase<PawnKindDef>.GetNamedSilentFail(heavyName);
+            PawnKindDef vanguard = withVanguard
+                ? DefDatabase<PawnKindDef>.GetNamedSilentFail("SCP_FoundationChimera") : null;
             FactionDef factionDef = DefDatabase<FactionDef>.GetNamedSilentFail(factionName);
-            if (regular == null || heavy == null || factionDef == null) return;
+            if (regular == null || heavy == null || factionDef == null || withVanguard && vanguard == null) return;
+            IntVec3 vanguardCell = IntVec3.Invalid;
+            if (withVanguard)
+                foreach (IntVec3 cell in GenRadial.RadialCellsAround(center, 8f, true))
+                    if (ScpSpawnCells.FootprintClear(cell, map, vanguard.race))
+                    { vanguardCell = cell; break; }
+            if (withVanguard && !vanguardCell.IsValid) return;
             List<IntVec3> cells = GenRadial.RadialCellsAround(center, 8f, true)
-                .Where(cell => ScpSpawnCells.FootprintClear(cell, map, regular.race)
+                .Where(cell => cell != vanguardCell && ScpSpawnCells.FootprintClear(cell, map, regular.race)
                     && ScpSpawnCells.FootprintClear(cell, map, heavy.race)).Take(6).ToList();
             if (cells.Count < 6) return;
             Faction faction = Find.FactionManager.FirstFactionOfDef(factionDef);
@@ -144,6 +156,9 @@ namespace ScpFoundation.Debugging
                 faction = Find.FactionManager.FirstFactionOfDef(factionDef);
             }
             if (faction == null) return;
+            Pawn_FoundationChimera machine = withVanguard
+                ? PawnGenerator.GeneratePawn(vanguard, faction) as Pawn_FoundationChimera : null;
+            if (withVanguard && machine == null) return;
             var pawns = new List<Pawn>();
             for (int i = 0; i < 6; i++)
             {
@@ -151,6 +166,11 @@ namespace ScpFoundation.Debugging
                 CombatExtendedLoadoutBridge.NormalizePrimaryAmmo(pawn);
                 GenSpawn.Spawn(pawn, cells[i], map);
                 pawns.Add(pawn);
+            }
+            if (machine != null)
+            {
+                GenSpawn.Spawn(machine, vanguardCell, map);
+                machine.EnableAutonomousEscort(60000);
             }
             // A local defend lord keeps photo squads together without advancing any story operation.
             LordMaker.MakeNewLord(faction, new LordJob_DefendPoint(center), map, pawns);

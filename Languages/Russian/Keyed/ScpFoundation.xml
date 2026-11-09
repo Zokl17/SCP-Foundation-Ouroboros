@@ -24,6 +24,7 @@ SCP-682 — крупное рептилоидное существо с искл
   <SCP_939Contained>SCP-939 удерживается на посту.</SCP_939Contained>
   <SCP_939Sedated>Под седацией: осталось {0}.</SCP_939Sedated>
   <SCP_939Hunting>Бодрствует и охотится. Не идите на голос.</SCP_939Hunting>
+  <SCP_939Incapacitated>Обездвижена. Восстановление через {0}.</SCP_939Incapacitated>
   <SCP_939VoiceMimic>Возле SCP-939 слышен человеческий голос. Уведите персонал.</SCP_939VoiceMimic>
   <SCP_939Breach>SCP-939 активен. Закройте двери и не подпускайте персонал к камере.</SCP_939Breach>
   <SCP_939DiscoveryUnavailable>Обнаружить SCP-939 здесь нельзя: нужна домашняя карта с двумя колонистами и доступной открытой клеткой.</SCP_939DiscoveryUnavailable>
@@ -68,6 +69,7 @@ SCP-504 — томатный куст, зрелые плоды которого 
   <SCP_173Observed>Прямой взгляд: объект неподвижен.</SCP_173Observed>
   <SCP_173Unobserved>Никто не смотрит прямо на объект.</SCP_173Unobserved>
   <SCP_173Secured>Содержание действует: объект остаётся на посту.</SCP_173Secured>
+  <SCP_173Ruined>Статуя разрушена. Восстановится примерно через {0} ч.</SCP_173Ruined>
   <SCP_173CarryNeedsObservers>Для переноса SCP-173 нужны два наблюдателя, которые видят скульптуру и друг друга.</SCP_173CarryNeedsObservers>
   <SCP_173TransportNeedsTeam>Для переноса SCP-173 нужны носильщик и два свободных зрячих сопровождающих.</SCP_173TransportNeedsTeam>
   <SCP_173TransportWaiting>Носильщик ждёт: два сопровождающих должны видеть SCP-173 при достаточном освещении.</SCP_173TransportWaiting>
@@ -976,14 +978,14 @@ SCP-504 — томатный куст, зрелые плоды которого 
   <SCP_ChimeraChooseSalvoTarget>Выберите открытую площадку для ракетного залпа. ПКМ или Escape — отмена.</SCP_ChimeraChooseSalvoTarget>
   <SCP_ChimeraLaunching>Ракет в залпе осталось: {0}</SCP_ChimeraLaunching>
   <SCP_ChimeraReloading>Перезарядка ракет: {0} с</SCP_ChimeraReloading>
-  <SCP_ChimeraWalk>Проверить ходьбу</SCP_ChimeraWalk>
-  <SCP_ChimeraWalkDesc>Выберите клетку карты, чтобы посмотреть анимацию ходьбы «Авангарда».</SCP_ChimeraWalkDesc>
+  <SCP_ChimeraWalk>Переместить</SCP_ChimeraWalk>
+  <SCP_ChimeraWalkDesc>Выберите клетку карты, куда направить «Авангард».</SCP_ChimeraWalkDesc>
   <SCP_ChimeraChooseDestination>Выберите клетку назначения для «Авангарда». ПКМ или Escape — отмена.</SCP_ChimeraChooseDestination>
   <SCP_ChimeraStop>Остановиться</SCP_ChimeraStop>
   <SCP_ChimeraStopDesc>Остановить движение, отменить подготовку выстрела или оставшиеся ракеты и вернуть позу покоя.</SCP_ChimeraStopDesc>
   <SCP_ChimeraNoPath>«Авангард» не может добраться до этой клетки.</SCP_ChimeraNoPath>
   <SCP_ChimeraUnavailable>Не найдено определение «Авангарда» или фракции Фонда.</SCP_ChimeraUnavailable>
-  <SCP_ChimeraSpawned>Создан «Авангард» Фонда. Нажмите «Проверить ходьбу» и выберите точку назначения.</SCP_ChimeraSpawned>
+  <SCP_ChimeraSpawned>«Авангард» Фонда появился на карте.</SCP_ChimeraSpawned>
   <SCP_RunExperiments>Провести эксперименты</SCP_RunExperiments>
   <SCP_ExperimentProgress>Эксперименты: этап {0}/3, {1} / {2} работы. После этапа: +{3} доверия Фонда.</SCP_ExperimentProgress>
   <SCP_ExperimentsComplete>Эксперименты: 3/3 завершены. Награды: +{0} / +{1} / +{2} доверия Фонда (всего +{3}).</SCP_ExperimentsComplete>
@@ -1122,6 +1124,7 @@ SCP-504 — томатный куст, зрелые плоды которого 
   <SCP_330VillageOffered>Задание по деревне SCP-330 доступно.</SCP_330VillageOffered>
   <SCP_330VillageUnavailable>Задание SCP-330 недоступно: нужна домашняя карта, нейтральные древние и DLC Ideology.</SCP_330VillageUnavailable>
   <SCP_427Open>открыт</SCP_427Open>
+  <SCP_RequiresResearchLevelTwo>Сначала изучите этот SCP до уровня 2</SCP_RequiresResearchLevelTwo>
   <SCP_427Closed>закрыт</SCP_427Closed>
   <SCP_427Close>Закрыть SCP-427</SCP_427Close>
   <SCP_427OpenCommand>Открыть SCP-427</SCP_427OpenCommand>

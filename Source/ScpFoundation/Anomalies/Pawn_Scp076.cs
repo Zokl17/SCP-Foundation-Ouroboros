@@ -37,7 +37,8 @@ namespace ScpFoundation.Anomalies
             for (int i = apparel.WornApparel.Count - 1; i >= 0; i--)
             {
                 Apparel worn = apparel.WornApparel[i];
-                if (worn.def.defName != "SCP_MTFNavyBackpack" && worn.def.defName != "SCP_MTFBlackBackpack") continue;
+                if (worn.def.defName != "SCP_MTFNavyBackpack" && worn.def.defName != "SCP_MTFBlackBackpack"
+                    && worn.def.defName != "SCP_ChaosOliveRucksack" && worn.def.defName != "SCP_Por7PowerPack") continue;
                 apparel.Remove(worn);
                 worn.Destroy(DestroyMode.Vanish);
             }

@@ -2,6 +2,7 @@
 <Defs>
   <HediffDef>
     <defName>SCP_427Exposure</defName>
+    <hediffClass>ScpFoundation.Anomalies.Hediff_Scp427Exposure</hediffClass>
     <label>SCP-427 exposure</label>
     <description>Cumulative exposure to the open amulet. Closing it stops further exposure, but does not erase time already spent in its light.</description>
     <isBad>true</isBad><initialSeverity>0.01</initialSeverity><maxSeverity>1</maxSeverity>

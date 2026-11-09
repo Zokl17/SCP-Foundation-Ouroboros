@@ -6,12 +6,32 @@ using ScpFoundation.Interactions;
 using ScpFoundation.Runtime;
 using UnityEngine;
 using Verse;
+using Verse.AI;
 
 namespace ScpFoundation.Anomalies
 {
-    public sealed class Thing_Scp096 : ThingWithComps
+    public sealed class Thing_Scp096 : ThingWithComps, IAttackTarget
     {
         private Graphic agitatedGraphic;
+        private Graphic incapacitatedGraphic;
+
+        Thing IAttackTarget.Thing { get { return this; } }
+        public LocalTargetInfo TargetCurrentlyAimingAt { get { return LocalTargetInfo.Invalid; } }
+        public float TargetPriorityFactor { get { return 1f; } }
+
+        public bool ThreatDisabled(IAttackTargetSearcher searcher)
+        {
+            CompScp scp = GetComp<CompScp>();
+            CompScp096 behavior = GetComp<CompScp096>();
+            return !Spawned || behavior == null || !behavior.IsAgitated
+                || scp != null && scp.IsInCustody && !scp.IsBreached;
+        }
+
+        public override void SpawnSetup(Map map, bool respawningAfterLoad)
+        {
+            base.SpawnSetup(map, respawningAfterLoad);
+            map.attackTargetsCache.UpdateTarget(this);
+        }
 
         public override Vector3 DrawPos
         {
@@ -30,7 +50,18 @@ namespace ScpFoundation.Anomalies
         {
             CompScp096 behavior = GetComp<CompScp096>();
             Graphic current = def.graphicData.Graphic;
-            if (behavior != null && behavior.IsAgitated)
+            Vector2 size = def.graphicData.drawSize;
+            if (behavior != null && behavior.IsIncapacitated)
+            {
+                if (incapacitatedGraphic == null)
+                    incapacitatedGraphic = GraphicDatabase.Get<Graphic_Single>(
+                        "Things/Item/Scp096Down", ShaderDatabase.Cutout,
+                        new Vector2(1.8f, 2.1f), Color.white);
+                current = incapacitatedGraphic;
+                size = new Vector2(1.8f, 2.1f);
+                drawLoc.z += Mathf.Sin(Find.TickManager.TicksGame * 0.035f) * 0.012f;
+            }
+            else if (behavior != null && behavior.IsAgitated)
             {
                 if (agitatedGraphic == null)
                     agitatedGraphic = GraphicDatabase.Get<Graphic_Multi>(
@@ -38,7 +69,6 @@ namespace ScpFoundation.Anomalies
                         def.graphicData.drawSize, Color.white);
                 current = agitatedGraphic;
             }
-            Vector2 size = def.graphicData.drawSize;
             Graphics.DrawMesh(MeshPool.plane10,
                 Matrix4x4.TRS(drawLoc, Quaternion.identity, new Vector3(size.x, 1f, size.y)),
                 current.MatAt(Rotation, this), 0);
@@ -48,7 +78,11 @@ namespace ScpFoundation.Anomalies
         public override void PreApplyDamage(ref DamageInfo dinfo, out bool absorbed)
         {
             CompScp096 behavior = GetComp<CompScp096>();
-            if (behavior != null) behavior.TakeIntegrityDamage(ScpIntegrityDamage.From(dinfo));
+            if (behavior != null)
+            {
+                behavior.TakeIntegrityDamage(ScpIntegrityDamage.From(dinfo));
+                behavior.ProvokeByAttacker(dinfo.Instigator as Pawn);
+            }
             absorbed = true;
         }
     }
@@ -138,6 +172,19 @@ namespace ScpFoundation.Anomalies
                 (parent.Map != null && parent.Map.IsPlayerHome
                     ? "SCP_096DownHomeBody" : "SCP_096DownBody").Translate(),
                 LetterDefOf.NeutralEvent, parent);
+        }
+
+        public void ProvokeByAttacker(Pawn attacker)
+        {
+            if (phase == 3 || attacker == null || !attacker.Spawned || attacker.Dead
+                || !attacker.RaceProps.Humanlike || attacker.Map != parent.Map) return;
+            if (!witnesses.Contains(attacker)) witnesses.Insert(0, attacker);
+            target = attacker;
+            phase = 2;
+            distressUntil = 0;
+            nextStepTick = Find.TickManager.TicksGame;
+            UpdateHaulingRestriction();
+            if (parent.Spawned) parent.Map.attackTargetsCache.UpdateTarget((IAttackTarget)parent);
         }
 
         public override void CompTick()

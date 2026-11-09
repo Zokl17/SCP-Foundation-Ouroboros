@@ -24,6 +24,7 @@ Build and power a six-by-three acid chamber and move SCP-682 to its center. The 
   <SCP_939Contained>SCP-939 is secured at its post.</SCP_939Contained>
   <SCP_939Sedated>Sedated: {0} remaining.</SCP_939Sedated>
   <SCP_939Hunting>Awake and hunting. Do not follow the voice.</SCP_939Hunting>
+  <SCP_939Incapacitated>Incapacitated. Recovery in {0}.</SCP_939Incapacitated>
   <SCP_939VoiceMimic>A human voice is heard near SCP-939. Keep personnel away.</SCP_939VoiceMimic>
   <SCP_939Breach>SCP-939 is active. Seal doors and keep personnel away from the chamber.</SCP_939Breach>
   <SCP_939DiscoveryUnavailable>SCP-939 cannot be discovered here: use a home map with two colonists and an accessible open cell.</SCP_939DiscoveryUnavailable>
@@ -68,6 +69,7 @@ At its post, the bush ripens one tomato per day, up to five. Test speech with tw
   <SCP_173Observed>Direct eye contact: the object is motionless.</SCP_173Observed>
   <SCP_173Unobserved>No one is looking directly at the object.</SCP_173Unobserved>
   <SCP_173Secured>Containment is active: the object remains at its post.</SCP_173Secured>
+  <SCP_173Ruined>The statue is shattered. It will reform in about {0} hours.</SCP_173Ruined>
   <SCP_173CarryNeedsObservers>Two observers who can see SCP-173 and each other are required before it can be moved.</SCP_173CarryNeedsObservers>
   <SCP_173TransportNeedsTeam>Moving SCP-173 requires a carrier and two available sighted escorts.</SCP_173TransportNeedsTeam>
   <SCP_173TransportWaiting>The carrier is waiting: two escorts must see SCP-173 in sufficient light.</SCP_173TransportWaiting>
@@ -976,14 +978,14 @@ The object resembles a drink vending machine with a QWERTY touchpad. The origina
   <SCP_ChimeraChooseSalvoTarget>Select an open area for the missile salvo. Right-click or Escape cancels.</SCP_ChimeraChooseSalvoTarget>
   <SCP_ChimeraLaunching>Missiles remaining: {0}</SCP_ChimeraLaunching>
   <SCP_ChimeraReloading>Missile reload: {0} s</SCP_ChimeraReloading>
-  <SCP_ChimeraWalk>Test walking</SCP_ChimeraWalk>
-  <SCP_ChimeraWalkDesc>Select a map cell to inspect the Vanguard's walking animation.</SCP_ChimeraWalkDesc>
+  <SCP_ChimeraWalk>Move</SCP_ChimeraWalk>
+  <SCP_ChimeraWalkDesc>Select a map cell for the Vanguard to move to.</SCP_ChimeraWalkDesc>
   <SCP_ChimeraChooseDestination>Select a destination cell for the Vanguard. Right-click or press Escape to cancel.</SCP_ChimeraChooseDestination>
   <SCP_ChimeraStop>Stop</SCP_ChimeraStop>
   <SCP_ChimeraStopDesc>Stop movement, cancel a pending shot or remaining missiles and return to the resting pose.</SCP_ChimeraStopDesc>
   <SCP_ChimeraNoPath>The Vanguard cannot reach this cell.</SCP_ChimeraNoPath>
   <SCP_ChimeraUnavailable>The Vanguard or Foundation faction definition is unavailable.</SCP_ChimeraUnavailable>
-  <SCP_ChimeraSpawned>Foundation Vanguard spawned. Use Test walking to choose a destination.</SCP_ChimeraSpawned>
+  <SCP_ChimeraSpawned>Foundation Vanguard has arrived on the map.</SCP_ChimeraSpawned>
   <SCP_RunExperiments>Run experiments</SCP_RunExperiments>
   <SCP_ExperimentProgress>Experiments: stage {0}/3, {1} / {2} research work. Stage reward: +{3} Foundation trust.</SCP_ExperimentProgress>
   <SCP_ExperimentsComplete>Experiments: 3/3 complete. Rewards: +{0} / +{1} / +{2} Foundation trust (+{3} total).</SCP_ExperimentsComplete>
@@ -1122,6 +1124,7 @@ The object resembles a drink vending machine with a QWERTY touchpad. The origina
   <SCP_330VillageOffered>The SCP-330 village quest is available.</SCP_330VillageOffered>
   <SCP_330VillageUnavailable>The SCP-330 quest requires a home map, neutral ancients and the Ideology DLC.</SCP_330VillageUnavailable>
   <SCP_427Open>open</SCP_427Open>
+  <SCP_RequiresResearchLevelTwo>Research this SCP to level 2 first</SCP_RequiresResearchLevelTwo>
   <SCP_427Closed>closed</SCP_427Closed>
   <SCP_427Close>Close SCP-427</SCP_427Close>
   <SCP_427OpenCommand>Open SCP-427</SCP_427OpenCommand>

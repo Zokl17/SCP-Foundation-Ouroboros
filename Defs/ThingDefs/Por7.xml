@@ -23,7 +23,24 @@
     <statBases><Mass>12</Mass><WorkToMake>55000</WorkToMake><MaxHitPoints>180</MaxHitPoints></statBases>
     <costList><Steel>130</Steel><Plasteel>70</Plasteel><ComponentIndustrial>10</ComponentIndustrial><ComponentSpacer>4</ComponentSpacer></costList>
     <recipeMaker><researchPrerequisite>SCP_FoundationSpecialArmament</researchPrerequisite><recipeUsers><li>SCP_FoundationLabModule</li></recipeUsers><skillRequirements><Crafting>10</Crafting></skillRequirements><displayPriority>214</displayPriority></recipeMaker>
-    <apparel><wornGraphicPath>Things/Pawn/Humanlike/Apparel/Por7PowerPack/Por7PowerPack</wornGraphicPath><tags><li>SCP_Por7Pack</li></tags></apparel>
+    <apparel>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Por7PowerPack/Por7PowerPack</wornGraphicPath>
+      <tags><li>SCP_Por7Pack</li></tags>
+      <wornGraphicData>
+        <east>
+          <offset>(-0.18,-0.05)</offset>
+          <thin><offset>(-0.2,0)</offset></thin><hulk><offset>(-0.2,0)</offset></hulk>
+          <fat><offset>(-0.16,0)</offset></fat>
+          <male><offset>(-0.18,0)</offset></male><female><offset>(-0.18,0)</offset></female>
+        </east>
+        <west>
+          <offset>(0.18,-0.05)</offset>
+          <thin><offset>(0.2,0)</offset></thin><hulk><offset>(0.2,0)</offset></hulk>
+          <fat><offset>(0.16,0)</offset></fat>
+          <male><offset>(0.18,0)</offset></male><female><offset>(0.18,0)</offset></female>
+        </west>
+      </wornGraphicData>
+    </apparel>
     <comps>
       <li Class="CompProperties_ApparelReloadable">
         <maxCharges>3</maxCharges><ammoDef>SCP_Por7PowerCell</ammoDef><ammoCountPerCharge>1</ammoCountPerCharge>

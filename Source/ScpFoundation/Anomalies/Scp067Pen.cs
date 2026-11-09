@@ -44,6 +44,11 @@ namespace ScpFoundation.Anomalies
         {
             if (pawn == null || !pawn.IsColonistPlayerControlled || pawn.Drafted || !parent.Spawned)
                 yield break;
+            if (!ScpOperationalClearance.Allows(parent))
+            {
+                yield return new FloatMenuOption("SCP_RequiresResearchLevelTwo".Translate(), null);
+                yield break;
+            }
             CompScp anomaly = parent.TryGetComp<CompScp>();
             if (anomaly == null || !anomaly.IsInCustody || !CompScpPost.IsObjectAtPost(parent))
             {
@@ -100,7 +105,8 @@ namespace ScpFoundation.Anomalies
         {
             this.FailOnDestroyedOrNull(TargetIndex.A);
             this.FailOnDespawnedOrNull(TargetIndex.B);
-            this.FailOn(() => originalPost == null || !originalPost.Spawned);
+            this.FailOn(() => originalPost == null || !originalPost.Spawned
+                || !ScpOperationalClearance.Allows(job.targetA.Thing));
             AddFinishAction(condition =>
             {
                 if (pawn.carryTracker.CarriedThing == job.targetA.Thing)

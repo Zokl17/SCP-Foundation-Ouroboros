@@ -55,7 +55,7 @@ namespace ScpFoundation.Anomalies
         protected override Job TryGiveJob(Pawn pawn)
         {
             Pawn_Scp131 pod = pawn as Pawn_Scp131;
-            if (pod == null || pawn.Map == null) return null;
+            if (pod == null || pawn.Map == null || pawn.Downed || pawn.Dead) return null;
             ThingDef statueDef = DefDatabase<ThingDef>.GetNamedSilentFail("SCP_173Object");
             Thing statue = statueDef == null ? null : pawn.Map.listerThings.ThingsOfDef(statueDef).FirstOrDefault();
             if (statue == null) return null;

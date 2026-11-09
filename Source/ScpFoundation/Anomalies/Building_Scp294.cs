@@ -42,7 +42,9 @@ namespace ScpFoundation.Anomalies
 
         public override IEnumerable<Gizmo> GetGizmos()
         {
-            foreach (Gizmo gizmo in base.GetGizmos()) yield return gizmo;
+            CompScp anomaly = GetComp<CompScp>();
+            if (anomaly != null)
+                foreach (Gizmo gizmo in anomaly.CompGetGizmosExtra()) yield return gizmo;
             if (!Spawned || Faction != Faction.OfPlayer) yield break;
             CompScp scp = GetComp<CompScp>();
             if (scp == null) yield break;

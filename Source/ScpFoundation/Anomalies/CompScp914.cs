@@ -93,7 +93,7 @@ namespace ScpFoundation.Anomalies
                 ScpKnowledgeComponent knowledge = Current.Game == null ? null
                     : Current.Game.GetComponent<ScpKnowledgeComponent>();
                 return article != null && knowledge != null
-                    && knowledge.LevelFor(article) >= KnowledgeLevel.Documented;
+                    && knowledge.LevelFor(article) >= KnowledgeLevel.PartiallyDocumented;
             }
         }
 
@@ -204,7 +204,7 @@ namespace ScpFoundation.Anomalies
                 icon = ScpIcons.Get(5),
                 action = StartProcess
             };
-            if (!FullyStudied) process.Disable("SCP_914NeedsFullStudy".Translate());
+            if (!FullyStudied) process.Disable("SCP_RequiresResearchLevelTwo".Translate());
             yield return process;
         }
 
@@ -213,7 +213,7 @@ namespace ScpFoundation.Anomalies
             if (!parent.Spawned || finishTick > 0 || heldInput.Count > 0) return;
             if (!FullyStudied)
             {
-                Messages.Message("SCP_914NeedsFullStudy".Translate(), parent,
+                Messages.Message("SCP_RequiresResearchLevelTwo".Translate(), parent,
                     MessageTypeDefOf.RejectInput, false);
                 return;
             }

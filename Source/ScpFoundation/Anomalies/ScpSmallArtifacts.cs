@@ -19,6 +19,11 @@ namespace ScpFoundation.Anomalies
                 : def.defName == "SCP_513Bell" ? "SCP_513Ring"
                 : def.defName == "SCP_207Bottle" ? "SCP_207Drink" : null;
             if (key == null) yield break;
+            if (!ScpOperationalClearance.Allows(this))
+            {
+                yield return new FloatMenuOption("SCP_RequiresResearchLevelTwo".Translate(), null);
+                yield break;
+            }
             bool reachable = pawn.CanReserveAndReach(this, PathEndMode.Touch, Danger.Some);
             yield return new FloatMenuOption(key.Translate(), reachable ? (Action)(() =>
             {
@@ -29,7 +34,8 @@ namespace ScpFoundation.Anomalies
 
         public void Use(Pawn pawn)
         {
-            if (!Spawned || pawn == null || pawn.Dead || pawn.Map != Map) return;
+            if (!Spawned || pawn == null || pawn.Dead || pawn.Map != Map
+                || !ScpOperationalClearance.Allows(this)) return;
             if (def.defName == "SCP_330Bowl")
             {
                 CompScp330 bowl = GetComp<CompScp330>();

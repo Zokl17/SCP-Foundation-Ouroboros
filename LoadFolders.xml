@@ -14,5 +14,6 @@
     <li IfModActive="Ludeon.RimWorld.Royalty">Compat/Royalty</li>
     <li IfModActive="Ludeon.RimWorld.Ideology">Compat/Ideology</li>
     <li IfModActive="Ludeon.RimWorld.Odyssey">Compat/Odyssey</li>
+    <li IfModActive="CETeam.CombatExtended">Compat/CombatExtended17</li>
   </v1.7>
 </loadFolders>

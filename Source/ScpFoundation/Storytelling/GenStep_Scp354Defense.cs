@@ -107,6 +107,12 @@ namespace ScpFoundation.Storytelling
                         ((Plant)thing).Growth = float.Parse(fields[7], CultureInfo.InvariantCulture);
                     if (thing.def.CanHaveFaction) thing.SetFaction(faction);
                     GenSpawn.Spawn(thing, cell, map, new Rot4(rotation));
+                    if (thingDef.defName == "Battery")
+                    {
+                        ThingWithComps batteryThing = thing as ThingWithComps;
+                        CompPowerBattery battery = batteryThing == null ? null : batteryThing.GetComp<CompPowerBattery>();
+                        if (battery != null) battery.SetStoredEnergyPct(1f);
+                    }
                 }
                 catch (Exception exception)
                 {

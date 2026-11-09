@@ -4,7 +4,7 @@
     <defName>SCP_096Object</defName><label>SCP-096</label>
     <description>A tall, emaciated humanoid that hides its face. Anyone who sees that face becomes its target.</description>
     <thingClass>ScpFoundation.Anomalies.Thing_Scp096</thingClass>
-    <category>Item</category><altitudeLayer>Item</altitudeLayer><useHitPoints>true</useHitPoints>
+    <category>Item</category><altitudeLayer>Item</altitudeLayer><useHitPoints>true</useHitPoints><fillPercent>0.9</fillPercent>
     <tickerType>Normal</tickerType><drawerType>RealtimeOnly</drawerType>
     <selectable>true</selectable><isAutoAttackableMapObject>true</isAutoAttackableMapObject><stackLimit>1</stackLimit>
     <alwaysHaulable>true</alwaysHaulable><designateHaulable>false</designateHaulable><rotatable>true</rotatable>

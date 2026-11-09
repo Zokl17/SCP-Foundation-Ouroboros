@@ -7,15 +7,11 @@ using Verse.AI;
 
 namespace ScpFoundation.Anomalies
 {
-    public sealed class Thing_Scp682 : Thing_ScpDirectional, IAttackTarget
+    public sealed class Thing_Scp682 : Thing_ScpDirectional
     {
         private readonly Graphic[] facingGraphics = new Graphic[4];
 
-        Thing IAttackTarget.Thing { get { return this; } }
-        public LocalTargetInfo TargetCurrentlyAimingAt { get { return LocalTargetInfo.Invalid; } }
-        public float TargetPriorityFactor { get { return 1f; } }
-
-        public bool ThreatDisabled(IAttackTargetSearcher searcher)
+        public override bool ThreatDisabled(IAttackTargetSearcher searcher)
         {
             CompScp682 movement = GetComp<CompScp682>();
             CompScp scp = GetComp<CompScp>();

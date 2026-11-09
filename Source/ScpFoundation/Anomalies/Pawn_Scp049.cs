@@ -35,6 +35,14 @@ namespace ScpFoundation.Anomalies
         public override string LabelNoCount { get { return "SCP-049"; } }
         public override string LabelShort { get { return "SCP-049"; } }
 
+        public override void DrawGUIOverlay() { }
+
+        public override void SpawnSetup(Map map, bool respawningAfterLoad)
+        {
+            base.SpawnSetup(map, respawningAfterLoad);
+            gender = Gender.Male;
+        }
+
         public override string GetInspectString()
         {
             if (containedPost == null)

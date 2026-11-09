@@ -5,7 +5,7 @@
     <label>GOC strike operative</label>
     <labelPlural>GOC strike operatives</labelPlural>
     <combatPower>215</combatPower>
-    <apparelColor>(1,1,1)</apparelColor>
+    <apparelColor>(0.85,0.75,0.65)</apparelColor>
     <itemQuality>Excellent</itemQuality>
     <weaponMoney>5000~8000</weaponMoney>
     <apparelTags Inherit="False"><li>SCP_GocBlackUniform</li></apparelTags>
@@ -34,6 +34,7 @@
     <label>GOC heavy operative</label>
     <labelPlural>GOC heavy operatives</labelPlural>
     <combatPower>285</combatPower>
+    <apparelColor>(1,1,1)</apparelColor>
     <apparelTags Inherit="False"><li>SCP_GocWhiteSuit</li></apparelTags>
     <apparelRequired Inherit="False"><li>SCP_GocWhiteExosuit</li><li>SCP_GocWhiteHelmet</li></apparelRequired>
     <weaponTags Inherit="False"><li>SCPNu7M249</li></weaponTags>
@@ -51,7 +52,7 @@
     <isFighter>false</isFighter>
     <weaponTags Inherit="False"><li>Revolver</li></weaponTags>
     <weaponMoney>350~600</weaponMoney>
-    <apparelColor>(1,1,1)</apparelColor>
+    <apparelColor>(0.85,0.75,0.65)</apparelColor>
     <apparelTags Inherit="False"><li>SCP_GocBlackUniform</li></apparelTags>
     <apparelRequired Inherit="False"><li>SCP_GocBlackSuit</li><li>SCP_GocBlackHelmet</li></apparelRequired>
     <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
@@ -79,7 +80,7 @@
     <factionLeader>true</factionLeader>
     <minGenerationAge>35</minGenerationAge>
     <combatPower>145</combatPower>
-    <apparelColor>(1,1,1)</apparelColor>
+    <apparelColor>(0.85,0.75,0.65)</apparelColor>
     <apparelTags Inherit="False"><li>SCP_GocBlackUniform</li></apparelTags>
     <isFighter>true</isFighter>
     <itemQuality>Excellent</itemQuality>

@@ -31,6 +31,9 @@ namespace ScpFoundation.Debugging
         [DebugAction("SCP Foundation", "Spawn SCP-012 at cursor", actionType = DebugActionType.ToolMap, allowedGameStates = AllowedGameStates.PlayingOnMap)]
         public static void Spawn012() { ScpAnomalyDebugSpawn.Spawn("SCP_012Score"); }
 
+        [DebugAction("SCP Foundation", "Spawn SCP-093 at cursor", actionType = DebugActionType.ToolMap, allowedGameStates = AllowedGameStates.PlayingOnMap)]
+        public static void Spawn093() { ScpAnomalyDebugSpawn.Spawn("SCP_093Disc"); }
+
         [DebugAction("SCP Foundation", "Spawn SCP-914 at cursor", actionType = DebugActionType.ToolMap, allowedGameStates = AllowedGameStates.PlayingOnMap)]
         public static void Spawn914() { ScpAnomalyDebugSpawn.Spawn("SCP_914Machine"); }
 

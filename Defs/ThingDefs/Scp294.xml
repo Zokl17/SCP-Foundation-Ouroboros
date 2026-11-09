@@ -5,6 +5,7 @@
     <label>SCP-294 coffee machine</label>
     <description>A vending machine that dispenses drinks on request.</description>
     <thingClass>ScpFoundation.Anomalies.Building_Scp294</thingClass>
+    <building><claimable>false</claimable><deconstructible>false</deconstructible></building>
     <graphicData><texPath>Things/Building/Scp294</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>(1.2,1.6)</drawSize></graphicData>
     <size>(1,1)</size><rotatable>false</rotatable><passability>Impassable</passability><fillPercent>1</fillPercent><tickerType>Rare</tickerType>
     <statBases><MaxHitPoints>350</MaxHitPoints><WorkToBuild>2500</WorkToBuild><Mass>35</Mass><Flammability>0</Flammability></statBases>
